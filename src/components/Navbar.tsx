@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-slate-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-[90px] md:h-[110px] py-2">
+        <div className="flex justify-between items-center h-[130px] md:h-[160px] py-2">
           <div className="flex items-center">
             <Link to="/" className="group">
               <Logo className="transition-transform group-hover:scale-105" />
