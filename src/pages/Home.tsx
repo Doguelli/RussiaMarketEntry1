@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="description" content="Sadece danışmanlık yapmıyoruz, doğrudan operasyon ortağınız olarak markanızı Rusya'nın en büyük pazar yerlerinde zirveye taşıyoruz. Rusya e-ticaret ve operasyon çözümleri." />
       </Helmet>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-transparent pt-32 pb-32 border-b border-slate-100">
+      <section className="relative overflow-hidden bg-transparent pt-8 pb-32 border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <div className="flex flex-col items-center justify-center gap-6">
             <motion.div
