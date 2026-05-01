@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import logoImage from "@/assets/logo.png";
 
 interface LogoProps {
   className?: string;
@@ -11,7 +10,7 @@ export default function Logo({ className, light = false }: LogoProps) {
     <div className={cn("flex flex-col items-center justify-center", className)}>
       <div className={cn("flex items-center justify-center", light && "bg-white p-2 rounded-xl")}>
         <img 
-          src={logoImage} 
+          src="/logo.png" 
           alt="Russia Market Entry" 
           className="h-[80px] md:h-[100px] w-auto object-contain"
         />
