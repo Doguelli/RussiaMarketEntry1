@@ -55,9 +55,9 @@ export default function Home() {
               <div className="mt-16 pt-10 border-t border-slate-200/60 max-w-[800px] mx-auto">
                 <p className="text-[13px] font-bold text-slate-400 uppercase tracking-widest mb-6">Entegre Olduğumuz Pazaryerleri</p>
                 <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16 opacity-70 hover:opacity-100 transition-opacity">
-                  <img src="/wildberries.png" alt="Wildberries" className="h-14 md:h-[112px] object-contain" />
-                  <img src="/lamoda.png" alt="Lamoda" className="h-[50px] md:h-[98px] object-contain" />
-                  <span className="text-[32px] md:text-[63px] font-extrabold text-[#005BFF] flex items-center tracking-tighter">OZON</span>
+                  <img src="/wildberries.png" alt="Wildberries" className="h-12 md:h-[80px] object-contain" />
+                  <img src="/lamoda.png" alt="Lamoda" className="h-[40px] md:h-[70px] object-contain" />
+                  <span className="text-[28px] md:text-[50px] font-extrabold text-[#005BFF] flex items-center tracking-tighter">OZON</span>
                 </div>
               </div>
             </motion.div>
