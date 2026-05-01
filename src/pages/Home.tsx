@@ -4,10 +4,6 @@ import { Helmet } from "react-helmet-async";
 import { ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Globe2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-import wildberriesLogo from "@/assets/wildberries.png";
-import lamodaLogo from "@/assets/lamoda.png";
-import banner1Image from "@/assets/banner1.png";
-
 const stats = [
   { number: "18+", text: "Yıllık Ticaret & Operasyon Deneyimi" },
   { number: "4+", text: "Yıllık Rusya E-Ticaret Operasyonu" },
@@ -59,8 +55,8 @@ export default function Home() {
               <div className="mt-16 pt-10 border-t border-slate-200/60 max-w-[800px] mx-auto">
                 <p className="text-[13px] font-bold text-slate-400 uppercase tracking-widest mb-6">Entegre Olduğumuz Pazaryerleri</p>
                 <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16 opacity-70 hover:opacity-100 transition-opacity">
-                  <img src={wildberriesLogo} alt="Wildberries" className="h-12 md:h-[80px] object-contain" />
-                  <img src={lamodaLogo} alt="Lamoda" className="h-[40px] md:h-[70px] object-contain" />
+                  <span className="text-[32px] md:text-[55px] font-bold text-[#cb11ab] flex items-center tracking-tight lowercase">wildberries</span>
+                  <span className="text-[28px] md:text-[46px] font-black text-black flex items-center tracking-widest uppercase">LAMODA</span>
                   <span className="text-[28px] md:text-[50px] font-extrabold text-[#005BFF] flex items-center tracking-tighter">OZON</span>
                 </div>
               </div>
@@ -148,9 +144,9 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-accent-500 rounded-3xl translate-x-4 translate-y-4 opacity-10" />
               <img 
-                src={banner1Image} 
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" 
                 alt="E-ticaret lojistik ve depo operasyonu" 
-                className="w-full h-auto object-contain rounded-3xl shadow-2xl relative z-10 bg-white"
+                className="w-full h-auto object-cover rounded-3xl shadow-2xl relative z-10 bg-white"
               />
             </motion.div>
           </div>
