@@ -13,7 +13,7 @@ export default function Logo({ className, light = false }: LogoProps) {
         <img 
           src={logoBase64} 
           alt="Russia Market Entry" 
-          className="h-[116px] md:h-[145px] w-auto object-contain"
+          className="h-[45px] md:h-[55px] w-auto object-contain"
         />
       </div>
     </div>
