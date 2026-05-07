@@ -50,8 +50,10 @@ export default function Contact() {
   return (
     <main className="pt-8 pb-24">
       <Helmet>
-        <title>İletişim | Russia Market Entry</title>
-        <meta name="description" content="Rusya operasyon süreçlerinizi başlatmak veya büyütmek için bizimle iletişime geçin. İstanbul ve Moskova ofisleri ile yanınızdayız." />
+        <title>İletişim | Rusya E-Ticaret Danışmanlık Firması</title>
+        <meta name="description" content="Rusya e-ticaret operasyonlarınızı başlatmak veya büyütmek için İstanbul ve Moskova ofislerimizle iletişime geçin. Uzman ekibimizle tanışın." />
+        <meta name="keywords" content="Russia Market Entry iletişim, Rusya e-ticaret danışmanı Türkiye, Moskova ofisi, İstanbul gümrük danışmanlık" />
+        <link rel="canonical" href="https://russiamarketentry.com/iletisim" />
       </Helmet>
       {/* Header */}
       <div className="bg-transparent py-20 mb-10 border-b border-slate-100">

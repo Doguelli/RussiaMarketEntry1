@@ -22,8 +22,10 @@ export default function WhyRussiaDetail() {
   return (
     <main className="bg-slate-50 min-h-screen pt-12 pb-24">
       <Helmet>
-        <title>Neden Rusya? Pazar Detayları | Russia Market Entry</title>
-        <meta name="description" content="Rusya e-ticaret pazarının hacmi, lojistik gücü, Türk markalarına olan yüksek talep ve rekabet avantajları hakkında kapsamlı analiz." />
+        <title>Neden Rusya Pazarı? | E-Ticaret ve İhracat Analizi</title>
+        <meta name="description" content="Rusya e-ticaret pazarının hacmi, Ozon ve Wildberries gibi platformların gücü, Türk tekstil markalarına olan yüksek talep analizi." />
+        <meta name="keywords" content="Neden Rusya, Rusya e-ticaret hacmi, Rusya pazar analizi, Türk markaları Rusya'da, Ozon satış verileri" />
+        <link rel="canonical" href="https://russiamarketentry.com/neden-rusya-detay" />
       </Helmet>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

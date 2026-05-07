@@ -37,8 +37,10 @@ export default function Home() {
   return (
     <main>
       <Helmet>
-        <title>Russia Market Entry | Rusya E-Ticaret ve Operasyon Çözümleri</title>
-        <meta name="description" content="Rusya pazarına girin, satışa başlayın, büyütün. Rusya e-ticaret pazarında markanız için uçtan uca operasyon kuruyor ve yönetiyoruz." />
+        <title>Rusya Pazarına Giriş | Ozon & Wildberries Türkiye Yönetimi</title>
+        <meta name="description" content="Türkiye'den Rusya'ya e-ticaret, Ozon ve Wildberries satış danışmanlığı, şirket kuruluşu, gümrük ve lojistik alanlarında uçtan uca operasyon rehberiniz." />
+        <meta name="keywords" content="Rusya e-ticaret, Rusya pazarına giriş, Ozon hesap açma, Wildberries Türkiye, Rusya şirket kurmak, Rusya ihracat" />
+        <link rel="canonical" href="https://russiamarketentry.com/" />
       </Helmet>
 
       {/* Hero Section */}
@@ -48,7 +50,7 @@ export default function Home() {
            {/* Image with CSS Mask for perfect fade */}
            <img 
             src="https://images.unsplash.com/photo-1513326738677-b964603b136d?q=80&w=2070&auto=format&fit=crop" 
-            alt="Moscow" 
+            alt="Moskova ve Rusya e-ticaret pazarı" 
             className="absolute right-0 top-0 w-full lg:w-[75%] h-full object-cover object-center lg:object-[80%_center] opacity-40 lg:opacity-90 [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] lg:[mask-image:linear-gradient(to_right,transparent_0%,black_40%,black_100%)]"
           />
            {/* Additional subtle gradient overlay for text readability */}
@@ -79,7 +81,7 @@ export default function Home() {
                 to="/iletisim"
                 className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-4 rounded-md font-bold text-[16px] flex items-center justify-center gap-3 w-full sm:w-auto uppercase tracking-wide"
               >
-                KAYIT OL <ArrowRight className="w-5 h-5" />
+                HEMEN BAŞVUR <ArrowRight className="w-5 h-5" />
               </Link>
             </motion.div>
           </div>

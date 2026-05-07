@@ -7,8 +7,10 @@ export default function OperationModel() {
   return (
     <main className="bg-slate-50 min-h-screen pt-12 pb-24">
       <Helmet>
-        <title>Operasyon Modeli ve Finansal Yapı | Russia Market Entry</title>
-        <meta name="description" content="Konsinye operasyon modeli ile Rusya pazarına minimum riskle girin. Vergi, hukuki süreçler ve finansal projeksiyonları inceleyin." />
+        <title>Rusya E-İhracat Operasyon Modeli | Lojistik ve Gümrük Çözümleri</title>
+        <meta name="description" content="Türkiye'den Rusya'ya güvenilir e-ihracat operasyon modeli. Konsinye satış, şeffaf vergi yönetimi ve lojistik entegrasyon sistemimiz." />
+        <meta name="keywords" content="Rusya e-ihracat, Rusya gümrük, konsinye satış Rusya, Rusya vergi sistemi, e-ticaret lojistik Türkiye" />
+        <link rel="canonical" href="https://russiamarketentry.com/operasyon-modeli" />
       </Helmet>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

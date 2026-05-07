@@ -7,8 +7,10 @@ export default function About() {
   return (
     <main className="pt-8 pb-24">
       <Helmet>
-        <title>Hakkımızda | Russia Market Entry</title>
-        <meta name="description" content="18 yıllık ticaret ve e-ticaret deneyimi ile Türkiye'den Rusya'ya uçtan uca operasyon ve pazaryeri yönetimi altyapısı sunan güçlü partneriniz." />
+        <title>Hakkımızda | Rusya Pazarına Giriş Danışmanlığı & Lojistik</title>
+        <meta name="description" content="18 yıllık ticaret deneyimi ile Türkiye'den Rusya'ya uçtan uca e-ticaret, Wildberries ve Ozon yönetim altyapısı sunan güçlü partneriniz." />
+        <meta name="keywords" content="hakkımızda, Rusya e-ticaret danışmanı, Ozon Türkiye partneri, Wildberries lojistik" />
+        <link rel="canonical" href="https://russiamarketentry.com/hakkimizda" />
       </Helmet>
       {/* Header */}
       <div className="bg-transparent py-20 mb-10 border-b border-slate-100">
@@ -26,7 +28,7 @@ export default function About() {
             transition={{ delay: 0.05 }}
             className="text-[48px] md:text-[56px] font-extrabold text-primary-500 mb-6 tracking-tight leading-tight"
           >
-            Hakkımızda
+            Rusya E-Ticaret ve İhracat Danışmanlığı
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 10 }}

@@ -7,8 +7,10 @@ export default function ForWhom() {
   return (
     <main className="bg-slate-50 min-h-screen pt-12 pb-24">
       <Helmet>
-        <title>Kimler İçin Oparasyon Kuruyoruz? | Russia Market Entry</title>
-        <meta name="description" content="Tekstil markaları, üreticiler ve e-ticaret girişimcileri için hazırlanan özel Rusya e-ticaret pazarına giriş stratejilerini inceleyin." />
+        <title>Kimler İçin? | Tekstil Üreticileri & E-Ticaret Firmaları</title>
+        <meta name="description" content="Türkiye'deki tekstil markaları, üreticiler ve e-ticaret girişimcileri için özel Rusya ihracat ve pazaryeri giriş çözümlerini inceleyin." />
+        <meta name="keywords" content="Tekstil ihracatı Rusya, Rusya'ya satış yapmak, Türk markaları Rusya, B2B e-ihracat, hazır giyim Rusya" />
+        <link rel="canonical" href="https://russiamarketentry.com/kimler-icin" />
       </Helmet>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

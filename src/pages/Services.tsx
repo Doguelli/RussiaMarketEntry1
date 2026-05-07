@@ -104,8 +104,10 @@ export default function Services() {
   return (
     <main className="bg-slate-50 min-h-screen pt-8 pb-24">
       <Helmet>
-        <title>Hizmetlerimiz | Ozon, Wildberries ve Uçtan Uca Operasyon</title>
-        <meta name="description" content="Rusya'da Ozon, Wildberries entegrasyonu, lojistik uzmanlığı, yerel Rus ekip ve uçtan uca pazar yeri operasyon hizmetlerimiz." />
+        <title>Hizmetlerimiz | Ozon & Wildberries Satış Yönetimi ve Şirket Kuruluşu</title>
+        <meta name="description" content="Türkiye'deki markalar için Rusya'da şirket kuruluşu, EAC sertifikasyonu, gümrük, Wildberries ve Ozon entegrasyonu, lojistik ve operasyon yönetimi." />
+        <meta name="keywords" content="Rusya şirket kurmak, EAC GOST sertifikası, Rusya lojistik şirketleri, Ozon barkod, Wildberries hesap yönetimi, Rusya ihracat" />
+        <link rel="canonical" href="https://russiamarketentry.com/hizmetler" />
       </Helmet>
       {/* Header */}
       <div className="bg-transparent py-16 mb-10">

@@ -7,8 +7,10 @@ export default function RussiaMarket() {
   return (
     <main className="bg-slate-50 min-h-screen pt-12 pb-24">
       <Helmet>
-        <title>Rusya Pazarı ve Pazaryeri Ekosistemi | Russia Market Entry</title>
-        <meta name="description" content="Wildberries, Ozon ve Lamoda pazaryeri ekosistemi. Neden Rusya pazarına girmelisiniz ve pazaryeri stratejinizi nasıl kurmalısınız?" />
+        <title>Rusya E-Ticaret Pazarı | Ozon ve Wildberries Satış Stratejileri</title>
+        <meta name="description" content="Wildberries, Ozon ve Lamoda ekosistemleri hakkında bilgi edinin. Neden Rusya e-ticaret pazarına girmelisiniz?" />
+        <meta name="keywords" content="Rusya e-ticaret hacmi, Wildberries satış, Ozon satış nasıl yapılır, Lamoda Türkiye, Rusya pazar analizi" />
+        <link rel="canonical" href="https://russiamarketentry.com/rusya-pazari" />
       </Helmet>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
