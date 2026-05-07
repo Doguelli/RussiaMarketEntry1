@@ -1,98 +1,121 @@
 import { motion } from "motion/react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 import { 
   Building2, 
-  BarChart4, 
-  ActivitySquare, 
-  Star, 
-  Users2, 
-  Truck, 
   Layers,
   ArrowRight,
-  CheckCircle2
+  CheckCircle2,
+  Settings,
+  ShoppingCart,
+  MonitorSmartphone,
+  TrendingUp,
+  Truck,
+  Star
 } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 const features = [
   {
-    icon: Building2,
-    title: "Türkiye + Rusya Entegre Yapı",
+    id: "operasyon-kurulumu",
+    icon: Settings,
+    title: "Operasyon Kurulumu",
     points: [
-      "Türkiye'den ürün çıkışı ve tedarik yönetimi",
-      "Rusya'da yerel operasyon ve satış süreçleri",
-      "Wildberries, Lamoda, Ozon vb. pazaryerleri ile tam entegrasyon"
+      "Şirket yapılandırması ve vergi kurulumu",
+      "Pazaryeri (Wildberries, Lamoda) hesap açılışları",
+      "Ürün hazırlık ve listeleme süreci"
     ],
-    result: "Süreçler hızlı ve kontrollü ilerler"
+    result: "En kısa sürede satışa hazır yapı"
   },
   {
-    icon: BarChart4,
-    title: "18 Yıllık Ticaret Tecrübesi",
+    id: "pazaryeri-yonetimi",
+    icon: ShoppingCart,
+    title: "Wildberries & Lamoda Satış Yönetimi",
     points: [
-      "Operasyonel süreçlerin doğru kurgulanması",
-      "Risklerin öngörülmesi",
-      "Sürdürülebilir sistem kurulumu"
+      "Ürün yükleme ve içerik optimizasyonu",
+      "Fiyatlandırma ve rekabet analizi",
+      "Kampanya ve reklam yönetimi"
     ],
-    result: "Tecrübe en büyük avantajdır"
+    result: "Daha fazla satış ve yüksek kârlılık"
   },
   {
-    icon: ActivitySquare,
-    title: "4 Yıllık Rusya Pazar Deneyimi",
-    points: [
-      "Yerel pazar bilgisi",
-      "Tüketici davranışı analizi",
-      "Satış ve büyüme stratejileri"
-    ],
-    result: "Sahada edinilmiş gerçek deneyim"
-  },
-  {
-    icon: Star,
-    title: "Güçlü Mağaza Performansı",
-    points: [
-      "Ortalama mağaza puanı: 4,7 / 5",
-      "Yüksek müşteri memnuniyeti",
-      "Başarılı sipariş ve iade yönetimi"
-    ],
-    result: "Operasyon kalitemizin göstergesi"
-  },
-  {
-    icon: Users2,
-    title: "Yerel Rus Ekip",
-    points: [
-      "Rus çalışan ekip",
-      "Yerel dil ve iletişim avantajı",
-      "Müşteri ve pazaryeri yönetimi"
-    ],
-    result: "Süreçler daha hızlı ve doğru ilerler"
-  },
-  {
+    id: "lojistik-ve-depo",
     icon: Truck,
-    title: "Dış Ticaret ve Lojistik Uzmanlığı",
+    title: "Lojistik ve Depo Yönetimi",
     points: [
-      "Gümrük ve sevkiyat yönetimi",
-      "Ürün giriş süreçleri",
-      "Lojistik planlama"
+      "Uluslararsı sevkiyat ve gümrükleme (DDP)",
+      "Pazaryeri depoları (FBO) ve hızlı teslimat",
+      "Çestniy Znak barkodlama ve iade yönetimi"
     ],
-    result: "Ürünler sorunsuz şekilde pazara ulaşır"
+    result: "Hızlı teslimat + daha fazla satış"
+  },
+  {
+    id: "sistem-ve-entegrasyon",
+    icon: MonitorSmartphone,
+    title: "Insales Entegrasyonu",
+    points: [
+      "Tüm siparişlerin tek panelde toplanması",
+      "Stokların anlık senkronizasyon ile güncellenmesi",
+      "Manuel operasyonlar yerine otomasyon"
+    ],
+    result: "Kontrol edilebilir ve ölçeklenebilir sistem"
+  },
+  {
+    id: "marka-buyutme",
+    icon: TrendingUp,
+    title: "Marka Büyütme ve Performans",
+    points: [
+      "Veri odaklı karar alma (Hangi ürün çok satıyor?)",
+      "Ürün ve kategori optimizasyonu",
+      "Pazaryeri reklam yönetimi ve bütçe optimizasyonu"
+    ],
+    result: "Sürdürülebilir büyüme"
+  },
+  {
+    id: "vergi-ve-finans",
+    icon: Building2,
+    title: "Vergi ve Finansal Yapı",
+    points: [
+      "Doğru fiyatlandırma ve komisyon hesaplama",
+      "Net kâr senaryosu oluşturma",
+      "Uluslararası para transferi ve risk yönetimi"
+    ],
+    result: "Risk minimize edilir, gelir güvenceye alınır"
   },
 ];
 
 export default function Services() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      setTimeout(() => {
+        const id = hash.replace("#", "");
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [hash]);
+
   return (
-    <main className="pt-8 pb-24">
+    <main className="bg-slate-50 min-h-screen pt-8 pb-24">
       <Helmet>
         <title>Hizmetlerimiz | Ozon, Wildberries ve Uçtan Uca Operasyon</title>
         <meta name="description" content="Rusya'da Ozon, Wildberries entegrasyonu, lojistik uzmanlığı, yerel Rus ekip ve uçtan uca pazar yeri operasyon hizmetlerimiz." />
       </Helmet>
       {/* Header */}
-      <div className="bg-transparent py-20 mb-10 border-b border-slate-100">
+      <div className="bg-transparent py-16 mb-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block px-4 py-2 bg-primary-50 text-primary-600 text-[13px] font-bold rounded-full mb-6 uppercase tracking-wider"
+            className="inline-block px-4 py-2 bg-primary-100 text-primary-600 text-[13px] font-bold rounded-full mb-6 uppercase tracking-wider"
           >
-            Çözümlerimiz
+            Hizmetlerimiz
           </motion.div>
           <motion.h1 
             initial={{ opacity: 0, y: 10 }}
@@ -100,7 +123,8 @@ export default function Services() {
             transition={{ delay: 0.05 }}
             className="text-[48px] md:text-[56px] font-extrabold text-primary-500 mb-6 tracking-tight leading-tight"
           >
-            Neden Biz? & Hizmetlerimiz
+            Sadece danışmanlık değil, <br className="hidden md:block" />
+            <span className="text-accent-500">entegre operasyon sistemi</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 10 }}
@@ -108,7 +132,7 @@ export default function Services() {
             transition={{ delay: 0.1 }}
             className="text-slate-500 max-w-3xl mx-auto text-[18px] leading-relaxed"
           >
-            Bizim farkımız, bu işi sadece anlatmak değil; bizzat sahada yönetiyor olmamızdır. Rusya pazarında başarı, doğru partner ile çalışmaktan geçer.
+            Sizin adınıza şirket yapılandırmasından stok yönetimine, gümrükten reklama kadar tüm süreci uçtan uca yönetiyoruz. Amacımız sizi en kısa sürede satış yapabilir hale getirmek ve ölçeklendirmektir.
           </motion.p>
         </div>
       </div>
@@ -176,12 +200,13 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, i) => (
             <motion.div
+              id={feature.id}
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="bg-white rounded-3xl p-8 border border-primary-50 hover:border-primary-200 transition-colors duration-300 flex flex-col group shadow-sm hover:shadow-md"
+              className="bg-white rounded-3xl p-8 border border-slate-100 hover:border-primary-200 transition-colors duration-300 flex flex-col group shadow-sm hover:shadow-md"
             >
               <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary-50 text-primary-500 mb-8 mt-2 group-hover:bg-primary-500 group-hover:text-white transition-colors">
                 <feature.icon className="w-5 h-5" />
@@ -196,8 +221,8 @@ export default function Services() {
                 ))}
             </ul>
               <div className="pt-6 border-t border-slate-100 mt-auto">
-                <p className="text-[13px] font-semibold text-primary-500 flex items-center gap-3 uppercase tracking-wider">
-                  <span className="text-xl">👉</span> {feature.result}
+                <p className="text-[13px] font-bold text-accent-500 flex items-center gap-3 uppercase tracking-wider">
+                  <ArrowRight className="w-4 h-4" /> {feature.result}
                 </p>
               </div>
             </motion.div>

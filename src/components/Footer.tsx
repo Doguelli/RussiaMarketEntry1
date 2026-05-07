@@ -23,7 +23,10 @@ export default function Footer() {
               {[
                 { name: "Ana Sayfa", path: "/" },
                 { name: "Hakkımızda", path: "/hakkimizda" },
-                { name: "Hizmetlerimiz", path: "/hizmetlerimiz" },
+                { name: "Rusya Pazarı", path: "/rusya-pazari" },
+                { name: "Hizmetler", path: "/hizmetler" },
+                { name: "Operasyon Modeli", path: "/operasyon-modeli" },
+                { name: "Kimler İçin?", path: "/kimler-icin" },
                 { name: "İletişim", path: "/iletisim" },
               ].map((link) => (
                 <li key={link.path}>

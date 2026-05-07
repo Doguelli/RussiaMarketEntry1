@@ -16,13 +16,16 @@ export default function Navbar() {
   const navLinks = [
     { name: "Ana Sayfa", path: "/" },
     { name: "Hakkımızda", path: "/hakkimizda" },
-    { name: "Hizmetlerimiz", path: "/hizmetlerimiz" },
+    { name: "Rusya Pazarı", path: "/rusya-pazari" },
+    { name: "Hizmetler", path: "/hizmetler" },
+    { name: "Operasyon Modeli", path: "/operasyon-modeli" },
+    { name: "Kimler İçin?", path: "/kimler-icin" },
     { name: "İletişim", path: "/iletisim" },
   ];
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-slate-100">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-slate-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-[80px] md:h-[100px] py-2">
           <div className="flex items-center">
             <Link to="/" className="group">
@@ -31,13 +34,13 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-10">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 className={cn(
-                  "text-[14px] font-medium tracking-wide transition-colors",
+                  "text-[13px] xl:text-[14px] font-medium tracking-wide transition-colors whitespace-nowrap",
                   location.pathname === link.path
                     ? "text-primary-500 font-semibold"
                     : "text-slate-500 hover:text-primary-500"
@@ -48,14 +51,14 @@ export default function Navbar() {
             ))}
             <Link
               to="/iletisim"
-              className="bg-accent-500 text-white px-7 py-[12px] rounded-full font-medium text-[14px] hover:bg-accent-600 transition-colors"
+              className="bg-accent-500 text-white px-6 xl:px-7 py-[10px] xl:py-[12px] rounded-full font-medium text-[13px] xl:text-[14px] hover:bg-accent-600 transition-colors whitespace-nowrap"
             >
               Başvuru Yap
             </Link>
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-slate-500 hover:text-slate-900 focus:outline-none p-2"
@@ -69,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-1 shadow-lg absolute w-full">
+        <div className="lg:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-1 shadow-lg absolute w-full">
           {navLinks.map((link) => (
             <Link
               key={link.path}

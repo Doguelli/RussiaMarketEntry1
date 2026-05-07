@@ -6,6 +6,10 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import RussiaMarket from "./pages/RussiaMarket";
+import WhyRussiaDetail from "./pages/WhyRussiaDetail";
+import OperationModel from "./pages/OperationModel";
+import ForWhom from "./pages/ForWhom";
 
 // Component to scroll to top on route change
 function ScrollToTop() {
@@ -28,7 +32,11 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/hakkimizda" element={<About />} />
-            <Route path="/hizmetlerimiz" element={<Services />} />
+            <Route path="/rusya-pazari" element={<RussiaMarket />} />
+            <Route path="/neden-rusya-detay" element={<WhyRussiaDetail />} />
+            <Route path="/hizmetler" element={<Services />} />
+            <Route path="/operasyon-modeli" element={<OperationModel />} />
+            <Route path="/kimler-icin" element={<ForWhom />} />
             <Route path="/iletisim" element={<Contact />} />
           </Routes>
         </div>

@@ -109,7 +109,7 @@ export default function About() {
               <p className="font-semibold text-white text-[18px] mb-8 tracking-tight leading-relaxed">
                 İle markalara ve üreticilere gerçek bir operasyon altyapısı sunuyoruz.
               </p>
-              <Link to="/hizmetlerimiz" className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-8 py-[14px] rounded-full font-bold text-[15px] inline-flex items-center gap-2">
+              <Link to="/hizmetler" className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-8 py-[14px] rounded-full font-bold text-[15px] inline-flex items-center gap-2">
                 Hizmetlerimizi İncele <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
