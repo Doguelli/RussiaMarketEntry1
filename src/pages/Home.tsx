@@ -67,14 +67,12 @@ export default function Home() {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl"
             >
-              <h1 className="text-[40px] sm:text-[52px] lg:text-[64px] leading-[1.1] font-bold text-white mb-6 tracking-tight">
-                Rusya Pazarına<br />
-                Güvenli ve Doğru<br />
-                Bir Giriş İçin<br />
-                <span className="text-accent-500">Doğru Adrestesiniz.</span>
+              <h1 className="text-[40px] sm:text-[48px] lg:text-[56px] leading-[1.1] font-bold text-white mb-6 tracking-tight">
+                Rusya Pazarına Giriş ve<br />
+                <span className="text-accent-500">E-Ticaret Danışmanlığı</span>
               </h1>
-              <p className="text-[18px] lg:text-[20px] text-slate-300 max-w-[500px] leading-relaxed mb-10 font-medium">
-                Markanız için en doğru strateji, operasyon ve büyüme modelini birlikte planlıyoruz.
+              <p className="text-[16px] lg:text-[18px] text-slate-300 max-w-[550px] leading-relaxed mb-10 font-medium">
+                Türkiye’deki markalar için Ozon, Wildberries, Lamoda, şirket kuruluşu, lojistik, sertifikasyon ve Rusya pazaryeri operasyonlarında uçtan uca çözüm.
               </p>
               
               <Link
@@ -350,6 +348,35 @@ export default function Home() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-slate-50 border-b border-slate-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-[32px] md:text-[40px] font-extrabold text-primary-500 mb-4 tracking-tight">Sık Sorulan Sorular</h2>
+            <p className="text-[18px] text-slate-500">Rusya pazarına giriş hakkında en çok merak edilenler.</p>
+          </div>
+          
+          <div className="space-y-4">
+             <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <h3 className="font-bold text-primary-500 text-[18px] mb-2">Türkiye’den Ozon’da satış yapılabilir mi?</h3>
+                <p className="text-slate-500 leading-relaxed text-[15px]">Evet, Türkiye'de yerleşik şirketiniz üzerinden Ozon Global C-B (Cross-Border) modeliyle doğrudan satış yapabilirsiniz. Daha güçlü ve hızlı büyüme için ise Rusya'da bir şirket kurup B2C (Konsinye) modeliyle pazarın yerel satıcısı gibi konumlanmanız en verimli yöntemdir.</p>
+             </div>
+             <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <h3 className="font-bold text-primary-500 text-[18px] mb-2">Wildberries’de Türk markaları satış yapabilir mi?</h3>
+                <p className="text-slate-500 leading-relaxed text-[15px]">Türk markaları doğrudan Türkiye'den bireysel olarak Wildberries'de satış yapamaz. Wildberries yerel depoları ve operasyonu şart koşar. O yüzden Rusya'da ya uçtan uca bir partnerle anlaşmalı ya da lokal şirket kurulumu yapmalısınız. Lojistik ve operasyonunuzu devralarak markanızı doğrudan Wildberries Rusya raflarına çıkarıyoruz.</p>
+             </div>
+             <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <h3 className="font-bold text-primary-500 text-[18px] mb-2">Rusya’da e-ticaret yapmak için şirket kurmak gerekir mi?</h3>
+                <p className="text-slate-500 leading-relaxed text-[15px]">Toptan veya sadece Global pazar yerlerinden (border out) gönderim yapıyorsanız şirket şart değildir. Fakat Wildberries, Lamoda gibi pazar yerlerine doğrudan girmek, depo kurmak ve karlı fiyatlarla B2C doğrudan satış yapmak istiyorsanız lokal bir varlık gereklidir.</p>
+             </div>
+             <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <h3 className="font-bold text-primary-500 text-[18px] mb-2">EAC sertifikası nedir, hangi ürünlerde gereklidir?</h3>
+                <p className="text-slate-500 leading-relaxed text-[15px]">EAC sertifikası (Avrasya Ekonomik Birliği uygunluk belgesi), tekstil, elektronik, kozmetik gibi pek çok kategoride gümrük girişinde ve pazar yerlerinde zorunludur. Tıpkı Avrupa'daki CE belgesi gibi çalışır. Bizimle çalıştığınızda sertifikasyon danışmanlığından uçtan uca destek alırsınız.</p>
+             </div>
           </div>
         </div>
       </section>

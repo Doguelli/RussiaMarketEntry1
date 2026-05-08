@@ -13,7 +13,7 @@ export default function Footer() {
               <Logo light />
             </Link>
             <p className="text-[14px] text-white/70 leading-relaxed max-w-sm mb-6">
-              Sadece bir danışman olarak değil, doğrudan operasyonun içinde yer alan bir model geliştiriyoruz. Türkiye ve Rusya arasında köprü kuruyoruz.
+              Russia Market Entry, Türkiye’deki markaların ve üreticilerin Rusya e-ticaret pazarına doğru, hızlı ve sürdürülebilir şekilde giriş yapmasını sağlayan; Ozon, Wildberries, Lamoda, şirket kuruluşu, lojistik, sertifikasyon ve pazaryeri operasyonları alanında uçtan uca danışmanlık sunan bir iş geliştirme ve e-ticaret operasyon platformudur.
             </p>
           </div>
 
