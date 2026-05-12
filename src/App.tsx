@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import ServiceDetail from "./pages/ServiceDetail";
 import Contact from "./pages/Contact";
 import RussiaMarket from "./pages/RussiaMarket";
 import WhyRussiaDetail from "./pages/WhyRussiaDetail";
@@ -35,6 +36,7 @@ export default function App() {
             <Route path="/rusya-pazari" element={<RussiaMarket />} />
             <Route path="/neden-rusya-detay" element={<WhyRussiaDetail />} />
             <Route path="/hizmetler" element={<Services />} />
+            <Route path="/hizmetler/:id" element={<ServiceDetail />} />
             <Route path="/operasyon-modeli" element={<OperationModel />} />
             <Route path="/kimler-icin" element={<ForWhom />} />
             <Route path="/iletisim" element={<Contact />} />

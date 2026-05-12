@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { useEffect } from "react";
 import { 
   Building2, 
   Layers,
@@ -85,22 +84,6 @@ const features = [
 ];
 
 export default function Services() {
-  const { hash } = useLocation();
-
-  useEffect(() => {
-    if (hash) {
-      setTimeout(() => {
-        const id = hash.replace("#", "");
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      }, 100);
-    } else {
-      window.scrollTo(0, 0);
-    }
-  }, [hash]);
-
   return (
     <main className="bg-slate-50 min-h-screen pt-8 pb-24">
       <Helmet>
@@ -201,33 +184,34 @@ export default function Services() {
         {/* Feature Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, i) => (
-            <motion.div
-              id={feature.id}
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-white rounded-3xl p-8 border border-slate-100 hover:border-primary-200 transition-colors duration-300 flex flex-col group shadow-sm hover:shadow-md"
-            >
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary-50 text-primary-500 mb-8 mt-2 group-hover:bg-primary-500 group-hover:text-white transition-colors">
-                <feature.icon className="w-5 h-5" />
-              </div>
-              <h3 className="text-[20px] font-extrabold text-primary-500 mb-6 tracking-tight leading-snug">{feature.title}</h3>
-              <ul className="space-y-4 mb-8 flex-grow">
-                {feature.points.map((point, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-slate-500">
-                    <div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-2 shrink-0 group-hover:bg-white transition-colors" />
-                    <span className="text-[15px] leading-relaxed">{point}</span>
-                  </li>
-                ))}
-            </ul>
-              <div className="pt-6 border-t border-slate-100 mt-auto">
-                <p className="text-[13px] font-bold text-accent-500 flex items-center gap-3 uppercase tracking-wider">
-                  <ArrowRight className="w-4 h-4" /> {feature.result}
-                </p>
-              </div>
-            </motion.div>
+            <Link to={`/hizmetler/${feature.id}`} key={i} className="block group outline-none h-full">
+              <motion.div
+                id={feature.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-white rounded-3xl p-8 border border-slate-100 group-hover:border-primary-200 transition-colors duration-300 flex flex-col shadow-sm group-hover:shadow-md cursor-pointer h-full"
+              >
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary-50 text-primary-500 mb-8 mt-2 group-hover:bg-primary-500 group-hover:text-white transition-colors">
+                  <feature.icon className="w-5 h-5" />
+                </div>
+                <h3 className="text-[20px] font-extrabold text-primary-500 mb-6 tracking-tight leading-snug">{feature.title}</h3>
+                <ul className="space-y-4 mb-8 flex-grow">
+                  {feature.points.map((point, idx) => (
+                    <li key={idx} className="flex items-start gap-3 text-slate-500">
+                      <div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-2 shrink-0 group-hover:bg-primary-300 transition-colors" />
+                      <span className="text-[15px] leading-relaxed">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="pt-6 border-t border-slate-100 mt-auto">
+                  <p className="text-[13px] font-bold text-accent-500 flex items-center justify-between uppercase tracking-wider">
+                    <span className="flex items-center gap-2"><ArrowRight className="w-4 h-4" /> Detaylı İncele</span>
+                  </p>
+                </div>
+              </motion.div>
+            </Link>
           ))}
         </div>
 
