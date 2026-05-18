@@ -1,19 +1,19 @@
 import { motion } from "motion/react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { ArrowRight, ShoppingBag, Factory, Users, CheckCircle2 } from "lucide-react";
+import { ArrowRight, ShoppingBag, Factory, Users, CheckCircle2, Droplets } from "lucide-react";
 
 export default function ForWhom() {
   return (
     <main className="bg-slate-50 min-h-screen pt-12 pb-24">
       <Helmet>
-        <title>Kimler İçin? | Tekstil Üreticileri & E-Ticaret Firmaları</title>
-        <meta name="description" content="Türkiye'deki tekstil markaları, üreticiler ve e-ticaret girişimcileri için özel Rusya ihracat ve pazaryeri giriş çözümlerini inceleyin." />
-        <meta name="keywords" content="Tekstil ihracatı Rusya, Rusya'ya satış yapmak, Türk markaları Rusya, B2B e-ihracat, hazır giyim Rusya" />
+        <title>Kimler İçin? | Tekstil & Kozmetik Üreticileri & E-Ticaret Firmaları</title>
+        <meta name="description" content="Türkiye'deki tekstil, kozmetik markaları, üreticiler ve e-ticaret girişimcileri için özel Rusya ihracat ve pazaryeri giriş çözümlerini inceleyin." />
+        <meta name="keywords" content="Tekstil ihracatı Rusya, Kozmetik ihracatı Rusya, Rusya'ya satış yapmak, Türk markaları Rusya, B2B e-ihracat, hazır giyim Rusya" />
         <link rel="canonical" href="https://russiamarketentry.com/kimler-icin" />
       </Helmet>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,7 @@ export default function ForWhom() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
           {/* Tekstil Markaları */}
           <motion.div
@@ -60,7 +60,7 @@ export default function ForWhom() {
                 <span className="text-[14px] font-medium text-slate-700">Marka konumlandırma ve reklam</span>
               </div>
             </div>
-            <Link to="/iletisim" className="mt-auto block text-center w-full bg-slate-100 hover:bg-primary-500 hover:text-white transition-colors text-primary-500 font-bold py-3 rounded-full text-[14px]">
+            <Link to="/kimler-icin/tekstil-markalari" className="mt-auto block text-center w-full bg-slate-100 hover:bg-primary-500 hover:text-white transition-colors text-primary-500 font-bold py-3 rounded-full text-[14px]">
               Markanızı Konumlandırın
             </Link>
           </motion.div>
@@ -94,7 +94,7 @@ export default function ForWhom() {
                 <span className="text-[14px] font-medium text-slate-700">Esnek ödeme ve lojistik (Risk minimize)</span>
               </div>
             </div>
-            <Link to="/iletisim" className="mt-auto block text-center w-full bg-slate-100 hover:bg-accent-500 hover:text-white transition-colors text-accent-500 font-bold py-3 rounded-full text-[14px]">
+            <Link to="/kimler-icin/ureticiler" className="mt-auto block text-center w-full bg-slate-100 hover:bg-accent-500 hover:text-white transition-colors text-accent-500 font-bold py-3 rounded-full text-[14px]">
               Üretiminizi Satışa Dönüştürün
             </Link>
           </motion.div>
@@ -128,7 +128,41 @@ export default function ForWhom() {
                 <span className="text-[14px] font-medium text-slate-700">Manuel operasyonlar yerine otomatik büyüme</span>
               </div>
             </div>
-            <Link to="/iletisim" className="mt-auto block text-center w-full bg-slate-100 hover:bg-[#005BFF] hover:text-white transition-colors text-[#005BFF] font-bold py-3 rounded-full text-[14px]">
+            <Link to="/kimler-icin/e-ticaret-girisimcileri" className="mt-auto block text-center w-full bg-slate-100 hover:bg-[#005BFF] hover:text-white transition-colors text-[#005BFF] font-bold py-3 rounded-full text-[14px]">
+              Sıfırdan Operasyon Kurun
+            </Link>
+          </motion.div>
+
+          {/* Kozmetik Üreticileri İçin */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="bg-white rounded-3xl p-8 border-t-4 border-[#FF007A] shadow-sm flex flex-col"
+          >
+            <div className="w-16 h-16 bg-pink-50 rounded-2xl flex items-center justify-center text-[#FF007A] mb-6">
+              <Droplets className="w-8 h-8" />
+            </div>
+            <h3 className="text-[24px] font-extrabold text-primary-500 mb-4">Kozmetik Üreticileri</h3>
+            <p className="text-slate-500 mb-8 flex-grow">
+              Rusya Kozmetik pazarı yüksek bir hacme sahiptir. Ürün kayıt, mevzuat ve pazaryeri süreçlerinizi uçtan uca yönetiyoruz.
+            </p>
+            <div className="space-y-3 mb-8">
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
+                <span className="text-[14px] font-medium text-slate-700">Ürün kayıt ve sertifikasyon</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
+                <span className="text-[14px] font-medium text-slate-700">Mevzuata uygun etiketleme</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
+                <span className="text-[14px] font-medium text-slate-700">Konsinye satış modeli</span>
+              </div>
+            </div>
+            <Link to="/kimler-icin/kozmetik-ureticileri" className="mt-auto block text-center w-full bg-slate-100 hover:bg-[#FF007A] hover:text-white transition-colors text-[#FF007A] font-bold py-3 rounded-full text-[14px]">
               Sıfırdan Operasyon Kurun
             </Link>
           </motion.div>

@@ -12,6 +12,7 @@ import RussiaMarket from "./pages/RussiaMarket";
 import WhyRussiaDetail from "./pages/WhyRussiaDetail";
 import OperationModel from "./pages/OperationModel";
 import ForWhom from "./pages/ForWhom";
+import ForWhomDetail from "./pages/ForWhomDetail";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -75,6 +76,7 @@ export default function App() {
             <Route path="/hizmetler/:id" element={<ServiceDetail />} />
             <Route path="/operasyon-modeli" element={<OperationModel />} />
             <Route path="/kimler-icin" element={<ForWhom />} />
+            <Route path="/kimler-icin/:slug" element={<ForWhomDetail />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/iletisim" element={<Contact />} />
