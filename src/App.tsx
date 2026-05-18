@@ -11,6 +11,7 @@ import RussiaMarket from "./pages/RussiaMarket";
 import WhyRussiaDetail from "./pages/WhyRussiaDetail";
 import OperationModel from "./pages/OperationModel";
 import ForWhom from "./pages/ForWhom";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 // Component to scroll to top on route change
 function ScrollToTop() {
@@ -46,6 +47,7 @@ export default function App() {
           </Routes>
         </div>
         <Footer />
+        <WhatsAppButton />
       </div>
     </BrowserRouter>
   );

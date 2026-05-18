@@ -129,14 +129,14 @@ export default function Services() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-[#0A101D] rounded-[32px] p-10 md:p-14 mb-24 border border-slate-800 shadow-2xl relative overflow-hidden"
+          className="bg-primary-900 rounded-[32px] p-10 md:p-14 mb-24 border border-slate-800 shadow-2xl relative overflow-hidden"
         >
           {/* Decorative glow line at top */}
           <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-accent-500 to-transparent opacity-60" />
           
           {/* Radial blur backgrounds */}
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-accent-600/10 rounded-full blur-[80px] pointer-events-none" />
-          <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#001738]/40 rounded-full blur-[80px] pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-primary-500/40 rounded-full blur-[80px] pointer-events-none" />
           
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="max-w-xl text-white">

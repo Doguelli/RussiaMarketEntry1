@@ -44,9 +44,9 @@ export default function Home() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#040b16] pt-20 pb-32 lg:pt-24 lg:pb-10 lg:min-h-[800px] flex flex-col justify-center border-b border-white/5">
+      <section className="relative overflow-hidden bg-primary-900 pt-20 pb-32 lg:pt-24 lg:pb-10 lg:min-h-[800px] flex flex-col justify-center border-b border-white/5">
         {/* Background Overlay & Image */}
-        <div className="absolute inset-0 w-full h-full bg-[#040b16]">
+        <div className="absolute inset-0 w-full h-full bg-primary-900">
            {/* Image with CSS Mask for perfect fade */}
            <img 
             src="https://images.unsplash.com/photo-1513326738677-b964603b136d?q=80&w=2070&auto=format&fit=crop" 
