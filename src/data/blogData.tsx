@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Rusya, 140 milyondan fazla nüfusu ve hızla büyüyen dijital ticaret hacmiyle Türk markaları ve üreticiler için dünyanın en önemli e-ihracat pazarlarından biridir.",
     publishedAt: "18 Mayıs 2026",
     readTime: "4 dk okuma",
-    imageUrl: "/blog-1.png",
+    imageUrl: "/blog2.jpeg",
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">Rusya, 140 milyondan fazla nüfusu ve hızla büyüyen dijital ticaret hacmiyle Türk markaları ve üreticiler için dünyanın en önemli e-ihracat pazarlarından biridir. Wildberries, Ozon ve Lamoda gibi dev platformlar sayesinde fiziksel mağaza açmadan milyonlarca müşteriye ulaşmak mümkündür.</p>
@@ -106,7 +106,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Wildberries, Rusya’nın en büyük pazaryeridir ve aylık yüz milyonlarca ziyaretçiyle markalara dev bir satış potansiyeli sunar.",
     publishedAt: "17 Mayıs 2026",
     readTime: "3 dk okuma",
-    imageUrl: "/blog-2.png",
+    imageUrl: "/blog1.jpeg",
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">Wildberries, Rusya’nın en büyük pazaryeridir ve aylık yüz milyonlarca ziyaretçiyle markalara dev bir satış potansiyeli sunar.</p>

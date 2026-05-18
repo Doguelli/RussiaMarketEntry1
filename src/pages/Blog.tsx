@@ -62,12 +62,12 @@ export default function Blog() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group"
               >
-                <Link to={`/blog/${post.slug}`} className="block relative aspect-[16/10] overflow-hidden bg-slate-100">
+                <Link to={`/blog/${post.slug}`} className="block relative aspect-video overflow-hidden bg-white">
                   {post.imageUrl ? (
                     <img 
                       src={post.imageUrl} 
                       alt={post.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-slate-400">

@@ -64,12 +64,12 @@ export default function BlogDetail() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="relative aspect-video rounded-3xl overflow-hidden shadow-xl"
+              className="relative aspect-video rounded-3xl overflow-hidden shadow-xl bg-white"
             >
               <img 
                 src={post.imageUrl} 
                 alt={post.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </motion.div>
           </div>
