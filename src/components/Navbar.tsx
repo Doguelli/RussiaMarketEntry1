@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: "Hizmetler", path: "/hizmetler" },
     { name: "Operasyon Modeli", path: "/operasyon-modeli" },
     { name: "Kimler İçin?", path: "/kimler-icin" },
+    { name: "Blog", path: "/blog" },
     { name: "İletişim", path: "/iletisim" },
   ];
 
