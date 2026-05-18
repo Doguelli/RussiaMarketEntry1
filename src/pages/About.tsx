@@ -90,6 +90,25 @@ export default function About() {
             <div className="relative z-10">
               <h3 className="text-[32px] font-extrabold mb-10 tracking-tight leading-tight">Bugün Geldiğimiz <br/>Noktada</h3>
               
+              <div className="grid grid-cols-2 gap-6 mb-10">
+                 <div>
+                   <div className="text-[32px] font-extrabold text-accent-500 mb-1">100+</div>
+                   <div className="text-white/80 text-[14px] leading-tight">Türk markasına danışmanlık</div>
+                 </div>
+                 <div>
+                   <div className="text-[32px] font-extrabold text-accent-500 mb-1">50+</div>
+                   <div className="text-white/80 text-[14px] leading-tight">Başarılı Rusya pazar girişi</div>
+                 </div>
+                 <div>
+                   <div className="text-[32px] font-extrabold text-accent-500 mb-1">$10M+</div>
+                   <div className="text-white/80 text-[14px] leading-tight">Yıllık satış hacmi</div>
+                 </div>
+                 <div>
+                   <div className="text-[32px] font-extrabold text-accent-500 mb-1">15+</div>
+                   <div className="text-white/80 text-[14px] leading-tight">Yıllık sektör deneyimi</div>
+                 </div>
+              </div>
+
               <div className="space-y-6">
                 {[
                   "Türkiye ve Rusya'da aktif şirket yapımız",

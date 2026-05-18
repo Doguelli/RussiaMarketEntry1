@@ -1,14 +1,14 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { ArrowRight, Globe2, ShieldCheck, TrendingUp, Users, CheckCircle2, Factory, LineChart, MoveRight, ShoppingBag, Target, Settings, ShoppingCart } from "lucide-react";
+import { ArrowRight, Globe2, ShieldCheck, TrendingUp, Users, CheckCircle2, Factory, LineChart, MoveRight, ShoppingBag, Target, Settings, ShoppingCart, Award, Flag } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const trustStats = [
-  { text: "300M+ aylık ziyaretçi trafiğine erişim", icon: Globe2 },
-  { text: "Uçtan uca operasyon yönetimi", icon: ShieldCheck },
-  { text: "Konsinye ve düşük riskli giriş modeli", icon: TrendingUp },
-  { text: "Türkiye + Rusya entegre yapı", icon: CheckCircle2 },
+  { value: "100+", text: "Türk markasına danışmanlık", icon: Users },
+  { value: "50+", text: "Başarılı Rusya pazar girişi", icon: Flag },
+  { value: "$10M+", text: "Yıllık satış hacmi", icon: TrendingUp },
+  { value: "15+", text: "Yıllık sektör deneyimi", icon: Award },
 ];
 
 const services = [
@@ -170,7 +170,8 @@ export default function Home() {
                 <div className="w-12 h-12 bg-primary-100 text-primary-500 rounded-full flex items-center justify-center mb-4">
                   <stat.icon className="w-6 h-6" />
                 </div>
-                <p className="font-semibold text-slate-700 text-[15px]">{stat.text}</p>
+                <div className="text-[32px] font-extrabold text-primary-500 mb-1">{stat.value}</div>
+                <p className="font-medium text-slate-500 text-[15px]">{stat.text}</p>
               </motion.div>
             ))}
           </div>
