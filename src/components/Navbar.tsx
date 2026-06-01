@@ -1,27 +1,34 @@
 import Logo from "./Logo";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   // Close mobile menu on route change
   useEffect(() => {
     setIsOpen(false);
   }, [location.pathname]);
 
+  const toggleLanguage = () => {
+    const newLang = i18n.language === "tr" ? "en" : "tr";
+    i18n.changeLanguage(newLang);
+  };
+
   const navLinks = [
-    { name: "Ana Sayfa", path: "/" },
-    { name: "Hakkımızda", path: "/hakkimizda" },
-    { name: "Rusya Pazarı", path: "/rusya-pazari" },
-    { name: "Hizmetler", path: "/hizmetler" },
-    { name: "Operasyon Modeli", path: "/operasyon-modeli" },
-    { name: "Kimler İçin?", path: "/kimler-icin" },
-    { name: "Blog", path: "/blog" },
-    { name: "İletişim", path: "/iletisim" },
+    { name: t('nav.home', 'Ana Sayfa'), path: "/" },
+    { name: t('nav.about', 'Hakkımızda'), path: "/hakkimizda" },
+    { name: t('nav.russia_market', 'Rusya Pazarı'), path: "/rusya-pazari" },
+    { name: t('nav.services', 'Hizmetler'), path: "/hizmetler" },
+    { name: t('nav.op_model', 'Operasyon Modeli'), path: "/operasyon-modeli" },
+    { name: t('nav.for_whom', 'Kimler İçin?'), path: "/kimler-icin" },
+    { name: t('nav.blog', 'Blog'), path: "/blog" },
+    { name: t('nav.contact', 'İletişim'), path: "/iletisim" },
   ];
 
   return (
@@ -54,8 +61,15 @@ export default function Navbar() {
               to="/iletisim"
               className="bg-accent-500 text-white px-6 xl:px-7 py-[10px] xl:py-[12px] rounded-full font-medium text-[13px] xl:text-[14px] hover:bg-accent-600 transition-colors whitespace-nowrap"
             >
-              Başvuru Yap
+              {t('nav.apply', 'Başvuru Yap')}
             </Link>
+            <button
+              onClick={toggleLanguage}
+              className="text-slate-500 hover:text-primary-500 flex items-center gap-1 font-medium text-[14px]"
+            >
+              <Globe className="w-4 h-4" />
+              {i18n.language === "tr" ? "EN" : "TR"}
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -88,13 +102,20 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <div className="pt-4 px-4">
+          <div className="pt-4 px-4 flex flex-col gap-3">
             <Link
               to="/iletisim"
               className="block w-full text-center bg-accent-500 text-white py-[14px] rounded-full font-medium text-[15px] hover:bg-accent-600 transition-colors"
             >
-              Başvuru Yap
+              {t('nav.apply', 'Başvuru Yap')}
             </Link>
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center justify-center gap-2 w-full text-slate-500 py-[14px] font-medium text-[15px] bg-slate-50 rounded-full"
+            >
+              <Globe className="w-5 h-5" />
+              {i18n.language === "tr" ? "Switch to English" : "Türkçe'ye Geç"}
+            </button>
           </div>
         </div>
       )}

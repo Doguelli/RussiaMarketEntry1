@@ -1,8 +1,10 @@
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
 import { MapPin, Mail, Phone, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-primary-500 border-t-4 border-accent-500 pt-20 pb-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,21 +15,21 @@ export default function Footer() {
               <Logo light />
             </Link>
             <p className="text-[14px] text-white/70 leading-relaxed max-w-sm mb-6">
-              Russia Market Entry, Türkiye’deki markaların ve üreticilerin Rusya e-ticaret pazarına doğru, hızlı ve sürdürülebilir şekilde giriş yapmasını sağlayan; Ozon, Wildberries, Lamoda, şirket kuruluşu, lojistik, sertifikasyon ve pazaryeri operasyonları alanında uçtan uca danışmanlık sunan bir iş geliştirme ve e-ticaret operasyon platformudur.
+              {t('footer.desc')}
             </p>
           </div>
 
           <div className="md:col-span-2 md:col-start-6">
-            <h3 className="text-white font-semibold mb-6 text-[14px]">Hızlı Linkler</h3>
+            <h3 className="text-white font-semibold mb-6 text-[14px]">{t('footer.quick_links')}</h3>
             <ul className="space-y-4">
               {[
-                { name: "Ana Sayfa", path: "/" },
-                { name: "Hakkımızda", path: "/hakkimizda" },
-                { name: "Rusya Pazarı", path: "/rusya-pazari" },
-                { name: "Hizmetler", path: "/hizmetler" },
-                { name: "Operasyon Modeli", path: "/operasyon-modeli" },
-                { name: "Kimler İçin?", path: "/kimler-icin" },
-                { name: "İletişim", path: "/iletisim" },
+                { name: t('nav.home'), path: "/" },
+                { name: t('nav.about'), path: "/hakkimizda" },
+                { name: t('nav.russia_market'), path: "/rusya-pazari" },
+                { name: t('nav.services'), path: "/hizmetler" },
+                { name: t('nav.op_model'), path: "/operasyon-modeli" },
+                { name: t('nav.for_whom'), path: "/kimler-icin" },
+                { name: t('nav.contact'), path: "/iletisim" },
               ].map((link) => (
                 <li key={link.path}>
                   <Link to={link.path} className="text-[14px] text-white/70 hover:text-white transition-colors">
@@ -39,7 +41,7 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-4 md:col-start-9">
-            <h3 className="text-white font-semibold mb-6 text-[14px]">İletişim</h3>
+            <h3 className="text-white font-semibold mb-6 text-[14px]">{t('footer.contact')}</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <span className="text-[14px] text-white/70">Podolsk, Domodedovskoye Shosse 20, Moskova</span>
@@ -61,10 +63,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-white/50">
-          <p>© {new Date().getFullYear()} Russia Market Entry. Tüm hakları saklıdır.</p>
+          <p>© {new Date().getFullYear()} Russia Market Entry. {t('footer.all_rights')}</p>
           <div className="flex gap-6">
-            <Link to="#" className="hover:text-white transition-colors">Gizlilik Politikası</Link>
-            <Link to="#" className="hover:text-white transition-colors">Kullanım Şartları</Link>
+            <Link to="#" className="hover:text-white transition-colors">{t('footer.privacy')}</Link>
+            <Link to="#" className="hover:text-white transition-colors">{t('footer.terms')}</Link>
           </div>
         </div>
       </div>

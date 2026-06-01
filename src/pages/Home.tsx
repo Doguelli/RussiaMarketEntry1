@@ -3,37 +3,40 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowRight, Globe2, ShieldCheck, TrendingUp, Users, CheckCircle2, Factory, LineChart, MoveRight, ShoppingBag, Target, Settings, ShoppingCart, Award, Flag } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const trustStats = [
-  { value: "100+", text: "Türk markasına danışmanlık", icon: Users },
-  { value: "50+", text: "Başarılı Rusya pazar girişi", icon: Flag },
-  { value: "$10M+", text: "Yıllık satış hacmi", icon: TrendingUp },
-  { value: "15+", text: "Yıllık sektör deneyimi", icon: Award },
-];
-
-const services = [
-  { id: "operasyon-kurulumu", title: "Operasyon Kurulumu", desc: "Rusya pazarına giriş için tüm altyapıyı kuruyoruz" },
-  { id: "pazaryeri-yonetimi", title: "Pazaryeri Yönetimi", desc: "Wildberries, Lamoda ve Ozon satış süreçlerini yönetiyoruz" },
-  { id: "lojistik-ve-depo", title: "Lojistik ve Depo", desc: "Türkiye'den Rusya'ya tüm sevkiyat ve fulfillment süreçleri" },
-  { id: "vergi-ve-finans", title: "Vergi ve Finans", desc: "Kârlı ve sürdürülebilir finansal yapı" },
-  { id: "sistem-ve-entegrasyon", title: "Sistem ve Entegrasyon", desc: "Insales altyapısı ile tüm operasyonu tek panelden yönetim" },
-  { id: "marka-buyutme", title: "Marka Büyütme", desc: "Reklam ve performans yönetimi ile satış artırma" },
-];
-
-const howWeWork = [
-  { step: "1", title: "Analiz ve Planlama", desc: "Ürün, pazar ve operasyon stratejisi belirlenir" },
-  { step: "2", title: "Kurulum", desc: "Tüm sistem ve operasyon altyapısı kurulur" },
-  { step: "3", title: "Satış ve Büyüme", desc: "Satış başlar ve veri ile büyüme sağlanır" },
-];
-
-const whyRussia = [
-  "Hızla büyüyen e-ticaret pazarı",
-  "Türk ürünlerine yüksek talep",
-  "Düşük rekabet + yüksek fırsat",
-  "Yüksek hacimli satış potansiyeli"
-];
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
+
+  const trustStats = [
+    { value: "100+", text: t('home.trust1'), icon: Users },
+    { value: "50+", text: t('home.trust2'), icon: Flag },
+    { value: "$10M+", text: t('home.trust3'), icon: TrendingUp },
+    { value: "15+", text: t('home.trust4'), icon: Award },
+  ];
+
+  const services = [
+    { id: "operasyon-kurulumu", title: t('home.services.op_setup'), desc: t('home.services.op_setup_desc') },
+    { id: "pazaryeri-yonetimi", title: t('home.services.marketplace'), desc: t('home.services.marketplace_desc') },
+    { id: "lojistik-ve-depo", title: t('home.services.logistics'), desc: t('home.services.logistics_desc') },
+    { id: "vergi-ve-finans", title: t('home.services.tax'), desc: t('home.services.tax_desc') },
+    { id: "sistem-ve-entegrasyon", title: t('home.services.system'), desc: t('home.services.system_desc') },
+    { id: "marka-buyutme", title: t('home.services.brand'), desc: t('home.services.brand_desc') },
+  ];
+
+  const howWeWork = [
+    { step: "1", title: t('home.step1'), desc: t('home.step1_desc') },
+    { step: "2", title: t('home.step2'), desc: t('home.step2_desc') },
+    { step: "3", title: t('home.step3'), desc: t('home.step3_desc') },
+  ];
+
+  const whyRussia = [
+    t('home.wr1'),
+    t('home.wr2'),
+    t('home.wr3'),
+    t('home.wr4')
+  ];
+
   return (
     <main>
       <Helmet>
@@ -68,18 +71,18 @@ export default function Home() {
               className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl"
             >
               <h1 className="text-[40px] sm:text-[48px] lg:text-[56px] leading-[1.1] font-bold text-white mb-6 tracking-tight">
-                Rusya Pazarına Giriş ve<br />
-                <span className="text-accent-500">E-Ticaret Danışmanlığı</span>
+                {t('home.title1')}<br />
+                <span className="text-accent-500">{t('home.title2')}</span>
               </h1>
               <p className="text-[16px] lg:text-[18px] text-slate-300 max-w-[550px] leading-relaxed mb-10 font-medium">
-                Türkiye’deki markalar için Ozon, Wildberries, Lamoda, şirket kuruluşu, lojistik, sertifikasyon ve Rusya pazaryeri operasyonlarında uçtan uca çözüm.
+                {t('home.desc')}
               </p>
               
               <Link
                 to="/iletisim"
                 className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-4 rounded-md font-bold text-[16px] flex items-center justify-center gap-3 w-full sm:w-auto uppercase tracking-wide"
               >
-                HEMEN BAŞVUR <ArrowRight className="w-5 h-5" />
+                {t('home.apply')} <ArrowRight className="w-5 h-5" />
               </Link>
             </motion.div>
           </div>
@@ -99,8 +102,8 @@ export default function Home() {
                     <Target className="w-8 h-8 lg:w-10 lg:h-10 group-hover:scale-110 transition-transform" />
                   </div>
                   <div>
-                    <h4 className="text-white font-bold mb-1 text-[15px] uppercase tracking-wide">PAZARA GİRİŞ</h4>
-                    <p className="text-slate-400 text-[13px] leading-relaxed">Doğru strateji ve<br className="hidden lg:block"/>yol haritası</p>
+                    <h4 className="text-white font-bold mb-1 text-[15px] uppercase tracking-wide">{t('home.f1_title')}</h4>
+                    <p className="text-slate-400 text-[13px] leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.f1_desc')}}></p>
                   </div>
                 </div>
 
@@ -110,8 +113,8 @@ export default function Home() {
                     <Settings className="w-8 h-8 lg:w-10 lg:h-10 group-hover:scale-110 transition-transform" />
                   </div>
                   <div>
-                    <h4 className="text-white font-bold mb-1 text-[15px] uppercase tracking-wide">OPERASYON</h4>
-                    <p className="text-slate-400 text-[13px] leading-relaxed">Şirket yapısı, lojistik<br className="hidden lg:block"/>ve operasyon altyapısı</p>
+                    <h4 className="text-white font-bold mb-1 text-[15px] uppercase tracking-wide">{t('home.f2_title')}</h4>
+                    <p className="text-slate-400 text-[13px] leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.f2_desc')}}></p>
                   </div>
                 </div>
 
@@ -121,8 +124,8 @@ export default function Home() {
                     <ShoppingCart className="w-8 h-8 lg:w-10 lg:h-10 group-hover:scale-110 transition-transform" />
                   </div>
                   <div>
-                    <h4 className="text-white font-bold mb-1 text-[15px] uppercase tracking-wide">PAZARYERLERİ</h4>
-                    <p className="text-slate-400 text-[13px] leading-relaxed">Wildberries, Ozon ve<br className="hidden lg:block"/>diğer kanallarda satış yapısı</p>
+                    <h4 className="text-white font-bold mb-1 text-[15px] uppercase tracking-wide">{t('home.f3_title')}</h4>
+                    <p className="text-slate-400 text-[13px] leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.f3_desc')}}></p>
                   </div>
                 </div>
 
@@ -132,8 +135,8 @@ export default function Home() {
                     <TrendingUp className="w-8 h-8 lg:w-10 lg:h-10 group-hover:scale-110 transition-transform" />
                   </div>
                   <div>
-                    <h4 className="text-white font-bold mb-1 text-[15px] uppercase tracking-wide">BÜYÜME</h4>
-                    <p className="text-slate-400 text-[13px] leading-relaxed">Pazarlama, marka konumlandırma<br className="hidden lg:block"/>ve sürdürülebilir büyüme</p>
+                    <h4 className="text-white font-bold mb-1 text-[15px] uppercase tracking-wide">{t('home.f4_title')}</h4>
+                    <p className="text-slate-400 text-[13px] leading-relaxed" dangerouslySetInnerHTML={{__html: t('home.f4_desc')}}></p>
                   </div>
                 </div>
 
@@ -182,8 +185,8 @@ export default function Home() {
       <section className="py-24 bg-primary-50/30 border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-[36px] md:text-[42px] font-extrabold text-primary-500 mb-4 tracking-tight">NE YAPIYORUZ?</h2>
-            <p className="text-[18px] text-slate-500">Rusya pazarında markanız için tüm süreci yönetiyoruz.</p>
+            <h2 className="text-[36px] md:text-[42px] font-extrabold text-primary-500 mb-4 tracking-tight">{t('home.what_we_do')}</h2>
+            <p className="text-[18px] text-slate-500">{t('home.what_we_do_desc')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, i) => (
@@ -214,8 +217,8 @@ export default function Home() {
             
             {/* KİMLER İÇİN */}
             <div>
-              <h2 className="text-[32px] font-extrabold text-primary-500 mb-4 tracking-tight">KİMLER İÇİN?</h2>
-              <p className="text-slate-500 mb-10">Her iş modeli için farklı çözümler sunuyoruz:</p>
+              <h2 className="text-[32px] font-extrabold text-primary-500 mb-4 tracking-tight">{t('home.for_whom')}</h2>
+              <p className="text-slate-500 mb-10">{t('home.for_whom_desc')}</p>
               
               <div className="space-y-6">
                 <Link to="/kimler-icin" className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
@@ -224,8 +227,8 @@ export default function Home() {
                       <ShoppingBag className="w-6 h-6" />
                     </div>
                     <div className="flex-grow">
-                      <h3 className="font-bold text-primary-500 text-[18px]">Tekstil Markaları İçin</h3>
-                      <p className="text-slate-500 text-[14px]">Markanızı Rusya'da konumlandırın ve büyütün</p>
+                      <h3 className="font-bold text-primary-500 text-[18px]">{t('home.fw1_title')}</h3>
+                      <p className="text-slate-500 text-[14px]">{t('home.fw1_desc')}</p>
                     </div>
                     <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-accent-500 transition-colors" />
                   </div>
@@ -237,8 +240,8 @@ export default function Home() {
                       <Factory className="w-6 h-6" />
                     </div>
                     <div className="flex-grow">
-                      <h3 className="font-bold text-primary-500 text-[18px]">Üreticiler İçin</h3>
-                      <p className="text-slate-500 text-[14px]">Üretiminizi doğrudan satışa dönüştürün</p>
+                      <h3 className="font-bold text-primary-500 text-[18px]">{t('home.fw2_title')}</h3>
+                      <p className="text-slate-500 text-[14px]">{t('home.fw2_desc')}</p>
                     </div>
                     <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-accent-500 transition-colors" />
                   </div>
@@ -250,8 +253,8 @@ export default function Home() {
                       <Users className="w-6 h-6" />
                     </div>
                     <div className="flex-grow">
-                      <h3 className="font-bold text-primary-500 text-[18px]">E-Ticaret Girişimcileri İçin</h3>
-                      <p className="text-slate-500 text-[14px]">Sıfırdan operasyon kurun ve büyütün</p>
+                      <h3 className="font-bold text-primary-500 text-[18px]">{t('home.fw3_title')}</h3>
+                      <p className="text-slate-500 text-[14px]">{t('home.fw3_desc')}</p>
                     </div>
                     <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-accent-500 transition-colors" />
                   </div>
@@ -261,7 +264,7 @@ export default function Home() {
 
             {/* NASIL ÇALIŞIYORUZ */}
             <div>
-              <h2 className="text-[32px] font-extrabold text-primary-500 mb-10 tracking-tight">NASIL ÇALIŞIYORUZ?</h2>
+              <h2 className="text-[32px] font-extrabold text-primary-500 mb-10 tracking-tight">{t('home.how_we_work')}</h2>
               
               <div className="relative border-l-2 border-slate-100 pl-8 space-y-12 ml-4">
                 {howWeWork.map((item, index) => (
@@ -287,7 +290,7 @@ export default function Home() {
             
             <div>
               <h3 className="text-[24px] font-bold mb-6 text-white tracking-tight flex items-center gap-3">
-                <Globe2 className="text-accent-500 w-8 h-8" /> NEDEN RUSYA?
+                <Globe2 className="text-accent-500 w-8 h-8" /> {t('home.why_russia')}
               </h3>
               <ul className="space-y-4">
                 {whyRussia.map((item, i) => (
@@ -301,50 +304,50 @@ export default function Home() {
 
             <div>
               <h3 className="text-[24px] font-bold mb-6 text-white tracking-tight flex items-center gap-3">
-                <ShieldCheck className="text-accent-500 w-8 h-8" /> OPERASYON MODELİ
+                <ShieldCheck className="text-accent-500 w-8 h-8" /> {t('home.op_model')}
               </h3>
               <ul className="space-y-4">
                 <li className="flex gap-3 text-primary-100">
                   <CheckCircle2 className="w-5 h-5 text-accent-500 flex-shrink-0" />
-                  <span>Konsinye model ile düşük riskli giriş</span>
+                  <span>{t('home.om1')}</span>
                 </li>
                 <li className="flex gap-3 text-primary-100">
                   <CheckCircle2 className="w-5 h-5 text-accent-500 flex-shrink-0" />
-                  <span>Kendi operasyonunu kurma imkânı</span>
+                  <span>{t('home.om2')}</span>
                 </li>
                 <li className="flex gap-3 text-primary-100">
                   <CheckCircle2 className="w-5 h-5 text-accent-500 flex-shrink-0" />
-                  <span>Esnek ödeme ve büyüme planı</span>
+                  <span>{t('home.om3')}</span>
                 </li>
               </ul>
               <div className="mt-6">
                 <Link to="/operasyon-modeli" className="text-accent-500 hover:text-white transition-colors font-bold flex items-center gap-2 text-[14px]">
-                  Modeli İncele <MoveRight className="w-4 h-4" />
+                  {t('home.om_link')} <MoveRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
 
             <div>
               <h3 className="text-[24px] font-bold mb-6 text-white tracking-tight flex items-center gap-3">
-                <LineChart className="text-accent-500 w-8 h-8" /> FİNANSAL GÜÇ
+                <LineChart className="text-accent-500 w-8 h-8" /> {t('home.finance')}
               </h3>
               <ul className="space-y-4">
                 <li className="flex gap-3 text-primary-100">
                   <CheckCircle2 className="w-5 h-5 text-accent-500 flex-shrink-0" />
-                  <span>Ortalama %20–30 kârlılık hedefi</span>
+                  <span>{t('home.fin1')}</span>
                 </li>
                 <li className="flex gap-3 text-primary-100">
                   <CheckCircle2 className="w-5 h-5 text-accent-500 flex-shrink-0" />
-                  <span>Kontrollü maliyet yönetimi</span>
+                  <span>{t('home.fin2')}</span>
                 </li>
                 <li className="flex gap-3 text-primary-100">
                   <CheckCircle2 className="w-5 h-5 text-accent-500 flex-shrink-0" />
-                  <span>Şeffaf raporlama sistemi</span>
+                  <span>{t('home.fin3')}</span>
                 </li>
               </ul>
               <div className="mt-6">
                 <Link to="/operasyon-modeli" className="text-accent-500 hover:text-white transition-colors font-bold flex items-center gap-2 text-[14px]">
-                  Finansal Detayları Gör <MoveRight className="w-4 h-4" />
+                  {t('home.fin_link')} <MoveRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -357,26 +360,26 @@ export default function Home() {
       <section className="py-24 bg-slate-50 border-b border-slate-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[32px] md:text-[40px] font-extrabold text-primary-500 mb-4 tracking-tight">Sık Sorulan Sorular</h2>
-            <p className="text-[18px] text-slate-500">Rusya pazarına giriş hakkında en çok merak edilenler.</p>
+            <h2 className="text-[32px] md:text-[40px] font-extrabold text-primary-500 mb-4 tracking-tight">{t('home.faq')}</h2>
+            <p className="text-[18px] text-slate-500">{t('home.faq_desc')}</p>
           </div>
           
           <div className="space-y-4">
              <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <h3 className="font-bold text-primary-500 text-[18px] mb-2">Türkiye’den Ozon’da satış yapılabilir mi?</h3>
-                <p className="text-slate-500 leading-relaxed text-[15px]">Evet, Türkiye'de yerleşik şirketiniz üzerinden Ozon Global C-B (Cross-Border) modeliyle doğrudan satış yapabilirsiniz. Daha güçlü ve hızlı büyüme için ise Rusya'da bir şirket kurup B2C (Konsinye) modeliyle pazarın yerel satıcısı gibi konumlanmanız en verimli yöntemdir.</p>
+                <h3 className="font-bold text-primary-500 text-[18px] mb-2">{t('home.faq1_q')}</h3>
+                <p className="text-slate-500 leading-relaxed text-[15px]">{t('home.faq1_a')}</p>
              </div>
              <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <h3 className="font-bold text-primary-500 text-[18px] mb-2">Wildberries’de Türk markaları satış yapabilir mi?</h3>
-                <p className="text-slate-500 leading-relaxed text-[15px]">Türk markaları doğrudan Türkiye'den bireysel olarak Wildberries'de satış yapamaz. Wildberries yerel depoları ve operasyonu şart koşar. O yüzden Rusya'da ya uçtan uca bir partnerle anlaşmalı ya da lokal şirket kurulumu yapmalısınız. Lojistik ve operasyonunuzu devralarak markanızı doğrudan Wildberries Rusya raflarına çıkarıyoruz.</p>
+                <h3 className="font-bold text-primary-500 text-[18px] mb-2">{t('home.faq2_q')}</h3>
+                <p className="text-slate-500 leading-relaxed text-[15px]">{t('home.faq2_a')}</p>
              </div>
              <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <h3 className="font-bold text-primary-500 text-[18px] mb-2">Rusya’da e-ticaret yapmak için şirket kurmak gerekir mi?</h3>
-                <p className="text-slate-500 leading-relaxed text-[15px]">Toptan veya sadece Global pazar yerlerinden (border out) gönderim yapıyorsanız şirket şart değildir. Fakat Wildberries, Lamoda gibi pazar yerlerine doğrudan girmek, depo kurmak ve karlı fiyatlarla B2C doğrudan satış yapmak istiyorsanız lokal bir varlık gereklidir.</p>
+                <h3 className="font-bold text-primary-500 text-[18px] mb-2">{t('home.faq3_q')}</h3>
+                <p className="text-slate-500 leading-relaxed text-[15px]">{t('home.faq3_a')}</p>
              </div>
              <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <h3 className="font-bold text-primary-500 text-[18px] mb-2">EAC sertifikası nedir, hangi ürünlerde gereklidir?</h3>
-                <p className="text-slate-500 leading-relaxed text-[15px]">EAC sertifikası (Avrasya Ekonomik Birliği uygunluk belgesi), tekstil, elektronik, kozmetik gibi pek çok kategoride gümrük girişinde ve pazar yerlerinde zorunludur. Tıpkı Avrupa'daki CE belgesi gibi çalışır. Bizimle çalıştığınızda sertifikasyon danışmanlığından uçtan uca destek alırsınız.</p>
+                <h3 className="font-bold text-primary-500 text-[18px] mb-2">{t('home.faq4_q')}</h3>
+                <p className="text-slate-500 leading-relaxed text-[15px]">{t('home.faq4_a')}</p>
              </div>
           </div>
         </div>
@@ -387,17 +390,17 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-5" />
         <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
           <h2 className="text-[42px] md:text-[56px] font-extrabold text-primary-500 mb-6 tracking-tight leading-tight">
-            Rusya pazarına giriş için hazır mısınız?
+            {t('home.cta')}
           </h2>
           <p className="text-[18px] text-slate-500 mb-10 max-w-2xl mx-auto">
-            Markanızı veya ürünlerinizi Rusya'da satışa açmak ve büyütmek için bizimle iletişime geçin.
+            {t('home.cta_desc')}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/iletisim"
               className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-5 rounded-full font-bold text-[18px] flex items-center gap-3 shadow-[0_10px_20px_-5px_rgba(238,42,36,0.4)] hover:shadow-[0_15px_25px_-5px_rgba(238,42,36,0.5)] transform hover:-translate-y-1"
             >
-              Başvuru Yap <ArrowRight className="w-5 h-5" />
+              {t('home.cta_btn')} <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
         </div>
