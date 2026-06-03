@@ -2,11 +2,15 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "motion/react";
 import { ArrowLeft, ArrowRight, Info } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { serviceDetails } from "../data/servicesData";
+import { serviceDetailsEN } from "../data/servicesDataEN";
 
 export default function ServiceDetail() {
   const { id } = useParams<{ id: string }>();
-  const service = id ? serviceDetails[id] : null;
+  const { t, i18n } = useTranslation();
+  const currentDetails = i18n.language === 'en' ? serviceDetailsEN : serviceDetails;
+  const service = id ? currentDetails[id] : null;
 
   if (!service) {
     return <Navigate to="/hizmetler" replace />;
@@ -24,7 +28,7 @@ export default function ServiceDetail() {
       {/* Hero Header */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         <Link to="/hizmetler" className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 font-medium text-[14px] mb-8 transition-colors">
-          <ArrowLeft className="w-4 h-4" /> Hizmetlere Dön
+          <ArrowLeft className="w-4 h-4" /> {i18n.language === 'en' ? 'Back to Services' : 'Hizmetlere Dön'}
         </Link>
         
         <motion.div
@@ -74,7 +78,9 @@ export default function ServiceDetail() {
                 transition={{ delay: 0.4 }}
                 className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm"
               >
-                <h2 className="text-[24px] font-bold text-primary-500 mb-6">Sıkça Sorulan Sorular</h2>
+                <h2 className="text-[24px] font-bold text-primary-500 mb-6">
+                  {i18n.language === 'en' ? 'Frequently Asked Questions' : 'Sıkça Sorulan Sorular'}
+                </h2>
                 <div className="space-y-6">
                   {service.faqs.map((faq: { q: string, a: string }, index: number) => (
                     <div key={index} className="border-b border-slate-100 last:border-0 pb-6 last:pb-0">
@@ -98,7 +104,7 @@ export default function ServiceDetail() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary-400 rounded-full blur-[40px] opacity-50" />
                 <h3 className="text-[20px] font-bold mb-4 relative z-10 flex items-center gap-2">
                   <Info className="w-5 h-5 text-accent-500" />
-                  Kimler İçin Uygun?
+                  {i18n.language === 'en' ? 'Who is it for?' : 'Kimler İçin Uygun?'}
                 </h3>
                 <div className="text-primary-100 leading-relaxed relative z-10">
                   {service.forWhom}
@@ -112,12 +118,14 @@ export default function ServiceDetail() {
               transition={{ delay: 0.3 }}
               className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm text-center"
             >
-              <h3 className="text-[20px] font-bold text-primary-500 mb-4 tracking-tight">Hemen Aksiyon Alın</h3>
+              <h3 className="text-[20px] font-bold text-primary-500 mb-4 tracking-tight">
+                {i18n.language === 'en' ? 'Take Action Now' : 'Hemen Aksiyon Alın'}
+              </h3>
               <p className="text-slate-500 text-[14px] mb-6 leading-relaxed">
-                Bu hizmet özelinde markanız için nasıl bir yapı kurabileceğimizi ücretsiz öğrenin.
+                {i18n.language === 'en' ? 'Learn for free how we can build a structure for your brand specifically for this service.' : 'Bu hizmet özelinde markanız için nasıl bir yapı kurabileceğimizi ücretsiz öğrenin.'}
               </p>
               <Link to="/iletisim" className="bg-accent-500 hover:bg-accent-600 transition-colors text-white font-bold py-3.5 px-6 rounded-xl w-full flex items-center justify-center gap-2 shadow-sm text-[15px]">
-                İletişime Geçin <ArrowRight className="w-4 h-4" />
+                {i18n.language === 'en' ? 'Contact Us' : 'İletişime Geçin'} <ArrowRight className="w-4 h-4" />
               </Link>
             </motion.div>
           </div>

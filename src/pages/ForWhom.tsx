@@ -2,15 +2,18 @@ import { motion } from "motion/react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowRight, ShoppingBag, Factory, Users, CheckCircle2, Droplets } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { forWhomData } from "@/data/forWhomData";
+import { forWhomDataEN } from "@/data/forWhomDataEN";
 
 export default function ForWhom() {
+  const { t, i18n } = useTranslation();
+  const currentData = i18n.language === 'en' ? forWhomDataEN : forWhomData;
   return (
     <main className="bg-slate-50 min-h-screen pt-12 pb-24">
       <Helmet>
-        <title>Kimler İçin? | Tekstil & Kozmetik Üreticileri & E-Ticaret Firmaları</title>
-        <meta name="description" content="Türkiye'deki tekstil, kozmetik markaları, üreticiler ve e-ticaret girişimcileri için özel Rusya ihracat ve pazaryeri giriş çözümlerini inceleyin." />
-        <meta name="keywords" content="Tekstil ihracatı Rusya, Kozmetik ihracatı Rusya, Rusya'ya satış yapmak, Türk markaları Rusya, B2B e-ihracat, hazır giyim Rusya" />
-        <link rel="canonical" href="https://russiamarketentry.com/kimler-icin" />
+        <title>{t('nav.for_whom')} | Russia Market Entry</title>
+        <meta name="description" content="Custom solutions for textile brands, manufacturers, and e-commerce entrepreneurs." />
       </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,173 +24,58 @@ export default function ForWhom() {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-[42px] md:text-[56px] font-extrabold text-primary-500 mb-6 tracking-tight leading-tight">
-              Her İş Modeli İçin <br />
-              <span className="text-accent-500">Özelleştirilmiş Çözümler</span>
+              {i18n.language === 'en' ? 'Customized Solutions' : 'Her İş Modeli İçin'} <br />
+              <span className="text-accent-500">{i18n.language === 'en' ? 'For Every Business Model' : 'Özelleştirilmiş Çözümler'}</span>
             </h1>
             <p className="text-[18px] text-slate-500 leading-relaxed">
-              Rusya pazarındaki potansiyel her sektöre farklı fırsatlar sunar. Markalı ürününüz olsun veya olmasın, sizin operasyon modelinize en uygun entegre yapıyı kuruyoruz.
+              {i18n.language === 'en' 
+                ? 'The potential in the Russian market offers different opportunities for each sector. Whether you have a branded product or not, we establish the most suitable integrated structure for your operational model.'
+                : 'Rusya pazarındaki potansiyel her sektöre farklı fırsatlar sunar. Markalı ürününüz olsun veya olmasın, sizin operasyon modelinize en uygun entegre yapıyı kuruyoruz.'}
             </p>
           </motion.div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
-          {/* Tekstil Markaları */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex"
-          >
-            <Link to="/kimler-icin/tekstil-markalari" className="bg-white rounded-3xl p-8 border-t-4 border-primary-500 shadow-sm flex flex-col w-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-              <div className="w-16 h-16 bg-primary-50 rounded-2xl flex items-center justify-center text-primary-500 mb-6 group-hover:bg-primary-500 group-hover:text-white transition-colors">
-                <ShoppingBag className="w-8 h-8" />
-              </div>
-              <h3 className="text-[24px] font-extrabold text-primary-500 mb-4 group-hover:text-primary-600 transition-colors">Tekstil Markaları İçin</h3>
-              <p className="text-slate-500 mb-8 flex-grow">
-                Türk tekstil markaları için Rusya en büyük büyüme fırsatıdır. Ancak başarı sadece ürün göndermekle değil; uçtan uca yönetilen bir operasyonla mümkündür.
-              </p>
-              <div className="space-y-3 mb-8">
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">Pazaryeri (WB, Lamoda) hesap kurulumu</span>
+          {currentData.map((dataItem, i) => (
+            <motion.div
+              key={dataItem.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="flex"
+            >
+              <Link to={`/kimler-icin/${dataItem.slug}`} className="bg-white rounded-3xl p-8 shadow-sm flex flex-col w-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group border-t-4" style={{borderTopColor: 'var('+dataItem.color+')'}}>
+                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-colors ${dataItem.lightColor} ${dataItem.color}`} style={{backgroundColor: 'var('+dataItem.lightColor+')'}}>
+                  {dataItem.icon}
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">Ürün listeleme ve içerik optimizasyonu</span>
+                <h3 className={`text-[24px] font-extrabold text-primary-500 mb-4 transition-colors`}>{dataItem.title}</h3>
+                <p className="text-slate-500 mb-8 flex-grow">
+                  {dataItem.description}
+                </p>
+                <div className="mt-auto block text-center w-full text-white font-bold py-3 rounded-full text-[14px] transition-colors" style={{backgroundColor: 'var(' + dataItem.bgColor.replace('bg-', '') + ', #000)'}}>
+                  {i18n.language === 'en' ? 'View Details' : 'Detayları İncele'}
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">Marka konumlandırma ve reklam</span>
-                </div>
-              </div>
-              <div className="mt-auto block text-center w-full bg-slate-100 group-hover:bg-primary-500 group-hover:text-white transition-colors text-primary-500 font-bold py-3 rounded-full text-[14px]">
-                Markanızı Konumlandırın
-              </div>
-            </Link>
-          </motion.div>
-
-          {/* Üreticiler İçin */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="flex"
-          >
-            <Link to="/kimler-icin/ureticiler" className="bg-white rounded-3xl p-8 border-t-4 border-accent-500 shadow-sm flex flex-col w-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-              <div className="w-16 h-16 bg-accent-50 rounded-2xl flex items-center justify-center text-accent-500 mb-6 group-hover:bg-accent-500 group-hover:text-white transition-colors">
-                <Factory className="w-8 h-8" />
-              </div>
-              <h3 className="text-[24px] font-extrabold text-primary-500 mb-4">Üreticiler İçin</h3>
-              <p className="text-slate-500 mb-8 flex-grow">
-                Sadece B2B ihracatla yetinmeyin. Konsinye model ile üretim gücünüzü doğrudan Rusya'daki son kullanıcıya ulaştırarak yüksek kârlılık elde edin.
-              </p>
-              <div className="space-y-3 mb-8">
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">İhracat yerine doğrudan B2C satış imkânı</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">Marka olmadan da ürün satış fırsatı</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">Esnek ödeme ve lojistik (Risk minimize)</span>
-                </div>
-              </div>
-              <div className="mt-auto block text-center w-full bg-slate-100 group-hover:bg-accent-500 group-hover:text-white transition-colors text-accent-500 font-bold py-3 rounded-full text-[14px]">
-                Üretiminizi Satışa Dönüştürün
-              </div>
-            </Link>
-          </motion.div>
-
-          {/* Girişimciler İçin */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="flex"
-          >
-            <Link to="/kimler-icin/e-ticaret-girisimcileri" className="bg-white rounded-3xl p-8 border-t-4 border-[#005BFF] shadow-sm flex flex-col w-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-              <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-[#005BFF] mb-6 group-hover:bg-[#005BFF] group-hover:text-white transition-colors">
-                <Users className="w-8 h-8" />
-              </div>
-              <h3 className="text-[24px] font-extrabold text-primary-500 mb-4">E-Ticaret Girişimcileri</h3>
-              <p className="text-slate-500 mb-8 flex-grow">
-                Sıfırdan e-ticaret kurmak karmaşıktır. Size doğru ürün seçimi, pazar yeri ve Insales entegrasyonu ile 'Anahtar Teslim' bir operasyon tasarlıyoruz.
-              </p>
-              <div className="space-y-3 mb-8">
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">Doğru ürün, doğru lokasyon kurgusu</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">Tek panelden sipariş ve stok yönetimi (Insales)</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">Manuel operasyonlar yerine otomatik büyüme</span>
-                </div>
-              </div>
-              <div className="mt-auto block text-center w-full bg-slate-100 group-hover:bg-[#005BFF] group-hover:text-white transition-colors text-[#005BFF] font-bold py-3 rounded-full text-[14px]">
-                Sıfırdan Operasyon Kurun
-              </div>
-            </Link>
-          </motion.div>
-
-          {/* Kozmetik Üreticileri İçin */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="flex"
-          >
-            <Link to="/kimler-icin/kozmetik-ureticileri" className="bg-white rounded-3xl p-8 border-t-4 border-[#FF007A] shadow-sm flex flex-col w-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-              <div className="w-16 h-16 bg-pink-50 rounded-2xl flex items-center justify-center text-[#FF007A] mb-6 group-hover:bg-[#FF007A] group-hover:text-white transition-colors">
-                <Droplets className="w-8 h-8" />
-              </div>
-              <h3 className="text-[24px] font-extrabold text-primary-500 mb-4">Kozmetik Üreticileri</h3>
-              <p className="text-slate-500 mb-8 flex-grow">
-                Rusya Kozmetik pazarı yüksek bir hacme sahiptir. Ürün kayıt, mevzuat ve pazaryeri süreçlerinizi uçtan uca yönetiyoruz.
-              </p>
-              <div className="space-y-3 mb-8">
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">Ürün kayıt ve sertifikasyon</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">Mevzuata uygun etiketleme</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-accent-500 shrink-0 mt-0.5" />
-                  <span className="text-[14px] font-medium text-slate-700">Konsinye satış modeli</span>
-                </div>
-              </div>
-              <div className="mt-auto block text-center w-full bg-slate-100 group-hover:bg-[#FF007A] group-hover:text-white transition-colors text-[#FF007A] font-bold py-3 rounded-full text-[14px]">
-                Sıfırdan Operasyon Kurun
-              </div>
-            </Link>
-          </motion.div>
-
+              </Link>
+            </motion.div>
+          ))}
         </div>
         
         {/* Big CTA summary */}
         <div className="mt-20 bg-primary-500 rounded-3xl p-10 md:p-14 text-center">
-          <h2 className="text-[32px] md:text-[40px] font-extrabold text-white mb-6">İş modeliniz hazır mı?</h2>
+          <h2 className="text-[32px] md:text-[40px] font-extrabold text-white mb-6">
+            {i18n.language === 'en' ? 'Is your business model ready?' : 'İş modeliniz hazır mı?'}
+          </h2>
           <p className="text-primary-100 max-w-2xl mx-auto mb-10 text-[18px]">
-            Hangi kategoride olursanız olun, size en uygun büyüme planını oluşturmak için bir ücretsiz görüşme planlayın.
+            {i18n.language === 'en' 
+              ? 'Schedule a free consultation to create the most suitable growth plan for you, regardless of your category.'
+              : 'Hangi kategoride olursanız olun, size en uygun büyüme planını oluşturmak için bir ücretsiz görüşme planlayın.'}
           </p>
           <Link
             to="/iletisim"
             className="inline-flex items-center gap-3 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-5 rounded-full font-bold text-[16px] shadow-lg transform hover:-translate-y-1"
           >
-            Ücretsiz Görüşme Al <ArrowRight className="w-5 h-5" />
+            {i18n.language === 'en' ? 'Get Free Consultation' : 'Ücretsiz Görüşme Al'} <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
 

@@ -2,10 +2,12 @@ import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "motion/react";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
 
 export default function BlogDetail() {
   const { slug } = useParams<{ slug: string }>();
+  const { t, i18n } = useTranslation();
   
   const post = blogPosts.find(p => p.slug === slug);
 
@@ -13,11 +15,16 @@ export default function BlogDetail() {
     return <Navigate to="/blog" replace />;
   }
 
+  const title = i18n.language === 'en' ? (post.titleEn || post.title) : post.title;
+  const content = i18n.language === 'en' ? (post.contentEn || post.content) : post.content;
+  const excerpt = i18n.language === 'en' ? (post.excerptEn || post.excerpt) : post.excerpt;
+  const metaTitle = i18n.language === 'en' && post.metaTitleEn ? post.metaTitleEn : post.metaTitle;
+
   return (
     <>
       <Helmet>
-        <title>{post.metaTitle} | Russia Market Entry</title>
-        <meta name="description" content={post.excerpt} />
+        <title>{metaTitle} | Russia Market Entry</title>
+        <meta name="description" content={excerpt} />
       </Helmet>
 
       {/* Hero Header */}
@@ -27,7 +34,7 @@ export default function BlogDetail() {
             to="/blog" 
             className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 transition-colors font-medium mb-8"
           >
-            <ArrowLeft className="w-5 h-5" /> Blog'a Dön
+            <ArrowLeft className="w-5 h-5" /> {i18n.language === 'en' ? 'Back to Blog' : "Blog'a Dön"}
           </Link>
           
           <motion.h1 
@@ -35,7 +42,7 @@ export default function BlogDetail() {
             animate={{ opacity: 1, y: 0 }}
             className="text-[32px] md:text-[44px] lg:text-[52px] font-extrabold text-primary-500 leading-[1.15] tracking-tight mb-8"
           >
-            {post.title}
+            {title}
           </motion.h1>
           
           <motion.div 
@@ -68,8 +75,8 @@ export default function BlogDetail() {
             >
               <img 
                 src={post.imageUrl} 
-                alt={post.title}
-                className="w-full h-full object-contain"
+                alt={title}
+                className="w-full h-full object-cover"
               />
             </motion.div>
           </div>
@@ -84,7 +91,7 @@ export default function BlogDetail() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            {post.content}
+            {content}
           </motion.div>
         </div>
       </section>

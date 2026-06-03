@@ -2,17 +2,24 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "motion/react";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { forWhomData } from "../data/forWhomData";
+import { forWhomDataEN } from "../data/forWhomDataEN";
 
 export default function ForWhomDetail() {
   const { slug } = useParams<{ slug: string }>();
-  const data = forWhomData.find((item) => item.slug === slug);
+  const { t, i18n } = useTranslation();
+  
+  const currentData = i18n.language === 'en' ? forWhomDataEN : forWhomData;
+  const data = currentData.find((item) => item.slug === slug);
 
   if (!data) {
     return <Navigate to="/kimler-icin" replace />;
   }
 
-  const defaultConclusionDesc = "Size en uygun operasyon modelini kurmak ve satışlara başlamak için bizimle iletişime geçin.";
+  const defaultConclusionDesc = i18n.language === 'en' 
+    ? "Contact us to set up the most suitable operation model for you and start selling."
+    : "Size en uygun operasyon modelini kurmak ve satışlara başlamak için bizimle iletişime geçin.";
 
   return (
     <main className="bg-slate-50 min-h-screen pt-24 pb-24">
@@ -27,7 +34,7 @@ export default function ForWhomDetail() {
         <div className="mb-8">
           <Link to="/kimler-icin" className="inline-flex items-center gap-2 text-slate-500 hover:text-primary-500 font-medium transition-colors">
             <ArrowLeft className="w-5 h-5" />
-            Kimler İçin Sayfasına Dön
+            {i18n.language === 'en' ? 'Back to Solutions' : 'Kimler İçin Sayfasına Dön'}
           </Link>
         </div>
 
@@ -40,7 +47,7 @@ export default function ForWhomDetail() {
           >
             <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full font-bold text-[14px] mb-6 ${data.lightColor} ${data.color}`}>
               {data.icon}
-              <span>Özel Çözüm</span>
+              <span>{i18n.language === 'en' ? 'Custom Solution' : 'Özel Çözüm'}</span>
             </div>
             
             <h1 className={`text-[32px] md:text-[48px] font-extrabold text-primary-500 leading-tight mb-8`}>
@@ -57,7 +64,7 @@ export default function ForWhomDetail() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full blur-[100px] opacity-20 pointer-events-none" />
               
               <h3 className="text-[28px] font-bold mb-6">
-                {data.conclusionTitle || "Sonuç"}
+                {data.conclusionTitle || (i18n.language === 'en' ? 'Conclusion' : 'Sonuç')}
               </h3>
               
               <p className="text-white/90 text-[18px] leading-relaxed mb-8 max-w-4xl">
@@ -66,14 +73,18 @@ export default function ForWhomDetail() {
 
               <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
-                  <h4 className="text-[22px] font-bold mb-2">Pazara Giriş İçin İlk Adımı Atın</h4>
-                  <p className="text-white/80">Yeni bir büyüme kanalı oluşturmak için bizimle iletişime geçin.</p>
+                  <h4 className="text-[22px] font-bold mb-2">
+                    {i18n.language === 'en' ? 'Take the First Step to Enter the Market' : 'Pazara Giriş İçin İlk Adımı Atın'}
+                  </h4>
+                  <p className="text-white/80">
+                    {i18n.language === 'en' ? 'Contact us to create a new growth channel.' : 'Yeni bir büyüme kanalı oluşturmak için bizimle iletişime geçin.'}
+                  </p>
                 </div>
                 <Link
                   to="/iletisim"
                   className="shrink-0 inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-100 transition-colors"
                 >
-                  Hemen Başvuru Yapın <ArrowRight className="w-5 h-5"/>
+                  {i18n.language === 'en' ? 'Apply Now' : 'Hemen Başvuru Yapın'} <ArrowRight className="w-5 h-5"/>
                 </Link>
               </div>
             </div>

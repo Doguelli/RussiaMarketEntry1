@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const trustStats = [
     { value: "100+", text: t('home.trust1'), icon: Users },
@@ -40,8 +40,8 @@ export default function Home() {
   return (
     <main>
       <Helmet>
-        <title>Rusya Pazarına Giriş | Ozon & Wildberries Türkiye Yönetimi</title>
-        <meta name="description" content="Türkiye'den Rusya'ya e-ticaret, Ozon ve Wildberries satış danışmanlığı, şirket kuruluşu, gümrük ve lojistik alanlarında uçtan uca operasyon rehberiniz." />
+        <title>{i18n.language === 'en' ? 'Russia Market Entry | Ozon & Wildberries Management' : 'Rusya Pazarına Giriş | Ozon & Wildberries Türkiye Yönetimi'}</title>
+        <meta name="description" content={i18n.language === 'en' ? 'End-to-end operation guide for e-commerce, Ozon and Wildberries sales consulting, company formation, customs and logistics from Turkey to Russia.' : "Türkiye'den Rusya'ya e-ticaret, Ozon ve Wildberries satış danışmanlığı, şirket kuruluşu, gümrük ve lojistik alanlarında uçtan uca operasyon rehberiniz."} />
         <meta name="keywords" content="Rusya e-ticaret, Rusya pazarına giriş, Ozon hesap açma, Wildberries Türkiye, Rusya şirket kurmak, Rusya ihracat" />
         <link rel="canonical" href="https://russiamarketentry.com/" />
       </Helmet>
@@ -150,7 +150,9 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2 text-slate-300 mt-4 md:mt-0 font-medium">
                   <ShieldCheck className="w-4 h-4 text-accent-500" />
-                  <span className="text-[13px] tracking-wide relative top-[1px]">Güvenli &middot; Şeffaf &middot; Sonuç Odaklı</span>
+                  <span className="text-[13px] tracking-wide relative top-[1px]">
+                    {i18n.language === 'en' ? 'Secure · Transparent · Result Oriented' : 'Güvenli · Şeffaf · Sonuç Odaklı'}
+                  </span>
                 </div>
              </div>
           </motion.div>

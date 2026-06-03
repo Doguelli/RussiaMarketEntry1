@@ -2,14 +2,16 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowRight, BookOpen } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
 
 export default function Blog() {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Blog - Rusya Pazarına Giriş Rehberleri | Russia Market Entry</title>
-        <meta name="description" content="Rusya'da e-ticaret, şirket kurulumu, lojistik ve pazaryeri yönetimi hakkında güncel rehberler ve ipuçları." />
+        <title>{t('blog.title')}</title>
+        <meta name="description" content={t('blog.desc_meta')} />
       </Helmet>
 
       {/* Hero Section */}
@@ -24,7 +26,7 @@ export default function Blog() {
               className="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-white/10 border border-white/10 text-white font-medium text-[14px] mb-6 backdrop-blur-sm"
             >
               <BookOpen className="w-4 h-4" />
-              <span>Blog & Rehberler</span>
+              <span>{t('blog.badge')}</span>
             </motion.div>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
@@ -32,9 +34,9 @@ export default function Blog() {
               transition={{ delay: 0.1 }}
               className="text-[40px] md:text-[56px] lg:text-[72px] font-extrabold text-white leading-[1.1] tracking-tight mb-8"
             >
-              E-ihracat ve <br/>
+              {t('blog.h1_1')} <br/>
               <span className="text-accent-500">
-                Pazar Rehberleri
+                {t('blog.h1_2')}
               </span>
             </motion.h1>
             <motion.p 
@@ -43,7 +45,7 @@ export default function Blog() {
               transition={{ delay: 0.2 }}
               className="text-[18px] md:text-[22px] text-primary-100 leading-relaxed max-w-2xl"
             >
-              Rusya pazarına giriş, Wildberries/Lamoda satış stratejileri ve e-ihracat operasyonları hakkında güncel bilgiler, uzman analizleri.
+              {t('blog.subtitle')}
             </motion.p>
           </div>
         </div>
@@ -67,7 +69,7 @@ export default function Blog() {
                     <img 
                       src={post.imageUrl} 
                       alt={post.title}
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-slate-400">
@@ -83,17 +85,17 @@ export default function Blog() {
                   </div>
                   <h2 className="text-[20px] font-bold text-primary-500 mb-4 line-clamp-2 group-hover:text-accent-500 transition-colors">
                     <Link to={`/blog/${post.slug}`}>
-                      {post.title}
+                      {i18n.language === 'en' ? (post.titleEn || post.title) : post.title}
                     </Link>
                   </h2>
                   <p className="text-slate-600 line-clamp-3 mb-6 text-[15px] leading-relaxed">
-                    {post.excerpt}
+                    {i18n.language === 'en' ? (post.excerptEn || post.excerpt) : post.excerpt}
                   </p>
                   <Link 
                     to={`/blog/${post.slug}`}
                     className="inline-flex items-center gap-2 text-[15px] font-bold text-accent-500 hover:text-accent-600 transition-colors"
                   >
-                    Devamını Oku <ArrowRight className="w-4 h-4" />
+                    {t('blog.read_more')} <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </motion.article>
