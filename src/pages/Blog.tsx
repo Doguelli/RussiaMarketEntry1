@@ -7,6 +7,24 @@ import { blogPosts } from "../data/blogData";
 
 export default function Blog() {
   const { t, i18n } = useTranslation();
+
+  const parseTurkishDate = (dateStr: string) => {
+    const months: { [key: string]: number } = {
+      Ocak: 1, Şubat: 2, Mart: 3, Nisan: 4, Mayıs: 5, Haziran: 6,
+      Temmuz: 7, Ağustos: 8, Eylül: 9, Ekim: 10, Kasım: 11, Aralık: 12
+    };
+    const parts = dateStr.split(" ");
+    if (parts.length < 3) return 0;
+    const day = parseInt(parts[0], 10);
+    const month = months[parts[1]] || 1;
+    const year = parseInt(parts[2], 10);
+    return new Date(year, month - 1, day).getTime();
+  };
+
+  const sortedBlogPosts = [...blogPosts].sort((a, b) => {
+    return parseTurkishDate(b.publishedAt) - parseTurkishDate(a.publishedAt);
+  });
+
   return (
     <>
       <Helmet>
@@ -55,7 +73,7 @@ export default function Blog() {
       <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post, index) => (
+            {sortedBlogPosts.map((post, index) => (
               <motion.article 
                 key={post.slug}
                 initial={{ opacity: 0, y: 20 }}
