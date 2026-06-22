@@ -427,5 +427,531 @@ export const blogPosts: BlogPost[] = [
         </div>
       </div>
     )
+  },
+  {
+    slug: "lamodaya-nasil-girilir",
+    metaTitle: "Lamoda’ya Nasıl Girilir? Türk Moda Markaları İçin Rehber",
+    metaTitleEn: "How to Enter Lamoda? Guide for Turkish Fashion Brands",
+    title: "Lamoda’ya Nasıl Girilir? Türk Moda Markaları İçin Rehber",
+    titleEn: "How to Enter Lamoda? Guide for Turkish Fashion Brands",
+    excerpt: "Rusya pazarında premium segmentte konumlanmak isteyen moda markaları için Lamoda, en önemli satış kanallarından biridir. Wildberries ve Ozon’dan farklı olarak Lamoda, seçici marka kabul politikası ve yüksek müşteri profiliyle öne çıkmaktadır.",
+    excerptEn: "For fashion brands wanting to position themselves in the premium segment in Russia, Lamoda is one of the most important sales channels. Unlike Wildberries and Ozon, Lamoda stands out with its selective brand acceptance policy and high customer profile.",
+    publishedAt: "22 Haziran 2026",
+    readTime: "4 dk okuma",
+    imageUrl: "/blog3.png",
+    content: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarında premium segmentte konumlanmak isteyen moda markaları için Lamoda, en önemli satış kanallarından biridir. Wildberries ve Ozon’dan farklı olarak Lamoda, seçici marka kabul politikası ve yüksek müşteri profiliyle öne çıkmaktadır.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Bu nedenle Lamoda’da yer almak yalnızca bir satış kanalı oluşturmak değil, aynı zamanda marka değerini yükseltmek anlamına gelir.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Bu rehberde Lamoda’ya giriş sürecini, kabul kriterlerini ve başarılı bir operasyon için dikkat edilmesi gereken noktaları ele alıyoruz.</p>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Lamoda Nedir?</h2>
+          <p className="text-slate-600 leading-relaxed text-lg">Lamoda, Rusya’nın en büyük moda odaklı e-ticaret platformlarından biridir.</p>
+          <p className="text-slate-600">Platform özellikle aşağıdaki kategorilerde faaliyet göstermektedir:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Kadın giyim</li>
+            <li>Erkek giyim</li>
+            <li>Ayakkabı</li>
+            <li>Çanta</li>
+            <li>Aksesuar</li>
+            <li>Premium lifestyle ürünleri</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed mt-2">Wildberries ve Ozon’un aksine Lamoda, daha seçici bir müşteri kitlesine hitap etmektedir.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Lamoda’nın Diğer Platformlardan Farkı Nedir?</h2>
+          <p className="text-slate-600 leading-relaxed">Lamoda bir hacim platformundan çok marka platformudur.</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-6">
+            <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <h3 className="text-lg font-bold text-[#cb11ab] mb-3">Wildberries</h3>
+              <ul className="space-y-1 text-sm text-slate-600">
+                <li>• Yüksek sipariş hacmi</li>
+                <li>• Fiyat odaklı müşteri kitlesi</li>
+                <li>• Yoğun rekabet</li>
+              </ul>
+            </div>
+            <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <h3 className="text-lg font-bold text-[#005BFF] mb-3">Ozon</h3>
+              <ul className="space-y-1 text-sm text-slate-600">
+                <li>• Çok kategorili yapı</li>
+                <li>• Güçlü lojistik</li>
+                <li>• Geniş müşteri kitlesi</li>
+              </ul>
+            </div>
+            <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <h3 className="text-lg font-bold text-black mb-3">Lamoda</h3>
+              <ul className="space-y-1 text-sm text-slate-600">
+                <li>• Premium müşteri profili</li>
+                <li>• Güçlü marka algısı</li>
+                <li>• Daha yüksek sepet ortalaması</li>
+                <li>• Seçici marka kabul süreci</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-slate-600 leading-relaxed">Bu nedenle birçok marka Lamoda’yı prestij kanalı olarak konumlandırmaktadır.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Kimler Lamoda İçin Uygundur?</h2>
+          <p className="text-slate-600 mb-3">Lamoda özellikle şu markalar için uygundur:</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-600">
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Moda markaları</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Tasarım odaklı markalar</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Premium segment üreticiler</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Kadın & Erkek giyim markaları</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Ayakkabı, çanta ve aksesuar markaları</li>
+          </ul>
+          <p className="text-slate-600 mt-3">Fast fashion ürünlerinden çok, marka kimliği olan koleksiyonlar ön plana çıkmaktadır.</p>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Lamoda’ya Giriş Süreci</h2>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Marka Değerlendirmesi</h3>
+              <p className="text-slate-600">İlk aşamada markanın koleksiyon yapısı, ürün kalitesi, marka kimliği ve fiyat segmenti değerlendirilir.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Seçimi</h3>
+              <p className="text-slate-600">Her ürün Lamoda için uygun olmayabilir. En güçlü SKU’lar belirlenir, koleksiyon optimize edilir ve fiyatlandırma planlanır.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">İçerik Hazırlığı</h3>
+              <p className="text-slate-600">Lamoda’da görsel kalite oldukça önemlidir. Profesyonel ürün fotoğrafları, açıklamalar, teknik bilgiler ve beden tabloları hazırlanır.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Operasyon ve Lojistik</h3>
+              <p className="text-slate-600">Ürünler Rusya operasyonuna dahil edilir. Depolama, barkodlama, fulfillment ve iade yönetimi profesyonel şekilde planlanır.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Satış ve Büyüme</h3>
+              <p className="text-slate-600">Satış başladıktan sonra koleksiyon performansı, dönüşüm oranları ve en çok satan ürünler analiz edilerek büyüme stratejisi oluşturulur.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
+          <div className="bg-primary-50 p-6 rounded-2xl">
+            <h2 className="text-xl font-bold text-primary-600 mb-3">Lamoda’nın Avantajları</h2>
+            <ul className="space-y-2 text-slate-700 text-sm">
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Güçlü Marka Algısı:</strong> Lamoda’da yer almak markanın premium algısını destekler.</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Daha Yüksek Sepet Ortalaması:</strong> Müşteri kitlesi kalite ve tasarım odaklıdır.</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Daha Düşük Fiyat Baskısı:</strong> Wildberries’e kıyasla agresif fiyat rekabeti düşüktür.</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Marka Bilinirliği:</strong> Rusya pazarında konumlandırma için güçlü bir platformdur.</li>
+            </ul>
+          </div>
+          
+          <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h2 className="text-xl font-bold text-slate-800 mb-3">Türk Markaları İçin Fırsatlar</h2>
+            <p className="text-slate-600 text-sm mb-3">Türk tekstil ürünleri Rusya’da güçlü bir algıya sahiptir. Özellikle aşağıdaki kategorilerde önemli fırsatlar bulunmaktadır:</p>
+            <ul className="space-y-1 text-slate-600 text-sm">
+              <li>• Kadın giyim & elbise</li>
+              <li>• Büyük beden koleksiyonları</li>
+              <li>• Dış giyim & triko</li>
+              <li>• Ayakkabı, çanta ve aksesuarlar</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Lamoda, yalnızca bir pazaryeri değil, aynı zamanda markalaşma platformudur. Rusya pazarında uzun vadeli büyüme hedefleyen moda markaları için Lamoda, Wildberries ve Ozon ile birlikte değerlendirilmesi gereken önemli bir satış kanalıdır. <strong>Russia Market Entry</strong> olarak markanızın Lamoda başvuru süreçlerini, operasyon kurulumunu, lojistik yönetimini ve satış stratejisini uçtan uca yönetiyoruz.</p>
+        </div>
+      </div>
+    ),
+    contentEn: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">For fashion brands wanting to position themselves in the premium segment in the Russian market, Lamoda is one of the most important sales channels. Unlike Wildberries and Ozon, Lamoda stands out with its selective brand acceptance policy and high customer profile.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Therefore, being on Lamoda is not just about creating a sales channel, but also boosting your overall brand value.</p>
+        <p className="text-lg leading-relaxed text-slate-600">In this guide, we cover the Lamoda onboarding process, acceptance criteria, and what to look out for to ensure a successful operation.</p>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">What is Lamoda?</h2>
+          <p className="text-slate-600 leading-relaxed text-lg">Lamoda is one of Russia's largest fashion-oriented e-commerce platforms.</p>
+          <p className="text-slate-600">The platform operates especially in the following categories:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Women's wear</li>
+            <li>Men's wear</li>
+            <li>Shoes</li>
+            <li>Bags</li>
+            <li>Accessories</li>
+            <li>Premium lifestyle products</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed mt-2">Unlike Wildberries and Ozon, Lamoda addresses a more selective customer segment.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">How Does Lamoda Differ From Other Platforms?</h2>
+          <p className="text-slate-600 leading-relaxed">Lamoda is a brand platform rather than a pure volume platform.</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-6">
+            <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <h3 className="text-lg font-bold text-[#cb11ab] mb-3">Wildberries</h3>
+              <ul className="space-y-1 text-sm text-slate-600">
+                <li>• High order volume</li>
+                <li>• Price-focused audience</li>
+                <li>• Intense competition</li>
+              </ul>
+            </div>
+            <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <h3 className="text-lg font-bold text-[#005BFF] mb-3">Ozon</h3>
+              <ul className="space-y-1 text-sm text-slate-600">
+                <li>• Multi-category setup</li>
+                <li>• Strong logistics</li>
+                <li>• Broad customer base</li>
+              </ul>
+            </div>
+            <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <h3 className="text-lg font-bold text-black mb-3">Lamoda</h3>
+              <ul className="space-y-1 text-sm text-slate-600">
+                <li>• Premium customer profile</li>
+                <li>• Strong brand perception</li>
+                <li>• Higher average basket size</li>
+                <li>• Selective onboarding process</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-slate-600 leading-relaxed">Hence, many brands position Lamoda as a prestige channel.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Who is Lamoda Suitable For?</h2>
+          <p className="text-slate-600 mb-3">Lamoda is especially suitable for:</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-600">
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Fashion brands</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Design-oriented brands</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Premium segment manufacturers</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Men's and Women's wear brands</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Shoes, bags, and accessory brands</li>
+          </ul>
+          <p className="text-slate-600 mt-3">Collections with a strong brand identity stand out much more than basic fast fashion products.</p>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Lamoda Entry Process</h2>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Brand Assessment</h3>
+              <p className="text-slate-600">At the first stage, the brand's collection structure, merchandise quality, brand identity, and price tier are evaluated.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Merchandise Selection</h3>
+              <p className="text-slate-600">Not all SKUs may be suitable for Lamoda. The strongest SKUs are selected, the collection is optimized, and pricing is planned.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Content Creation</h3>
+              <p className="text-slate-600">Visual quality is extremely critical on Lamoda. Professional photos, clear descriptions, technical details, and size charts are prepared.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Operation and Logistics</h3>
+              <p className="text-slate-600">Products are integrated into the Russian operation flow. Warehousing, barcode mapping, fulfillment, and return logistics are planned comprehensively.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Sales and Scaling</h3>
+              <p className="text-slate-600">Following the launch, collection performance, conversion rates, and bestsellers are monitored to drive dynamic growth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
+          <div className="bg-primary-50 p-6 rounded-2xl">
+            <h2 className="text-xl font-bold text-primary-600 mb-3">Advantages of Lamoda</h2>
+            <ul className="space-y-2 text-slate-700 text-sm">
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Strong Brand Value:</strong> Presence on Lamoda underscores premium positioning.</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Higher Cart value:</strong> The target group is highly quality & design oriented.</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Less Price War:</strong> Offers less aggressive price pressure compared to Wildberries.</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Brand Awareness:</strong> A solid anchor platform for positioning in the Russian market.</li>
+            </ul>
+          </div>
+          
+          <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h2 className="text-xl font-bold text-slate-800 mb-3">Opportunities for Turkish Brands</h2>
+            <p className="text-slate-600 text-sm mb-3">Turkish textile items benefit from high regard. Key opportunities are centered around:</p>
+            <ul className="space-y-1 text-slate-600 text-sm">
+              <li>• Women's apparel & dresses</li>
+              <li>• Plus size segments</li>
+              <li>• Outerwear & knitwear</li>
+              <li>• Premium shoes, bags, and leather works</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Conclusion</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Lamoda is not just an online store; it is a brand-building platform. For fashion labels targeting long-term expansion in Russia, Lamoda must be incorporated into the core multichannel strategy alongside Wildberries and Ozon. As <strong>Russia Market Entry</strong>, we manage your brand's Lamoda onboarding, logistics, pricing strategy, and local operations from end to end.</p>
+        </div>
+      </div>
+    )
+  },
+  {
+    slug: "ozonda-satis-yapmak",
+    metaTitle: "Ozon’da Satış Yapmak: 2026 Güncel Rehber",
+    metaTitleEn: "Selling on Ozon: 2026 Updated Guide",
+    title: "Ozon’da Satış Yapmak: 2026 Güncel Rehber",
+    titleEn: "Selling on Ozon: 2026 Updated Guide",
+    excerpt: "Rusya e-ticaret pazarında faaliyet gösteren markalar için Ozon, son yılların en hızlı büyüyen satış platformlarından biri haline gelmiştir. Genellikle “Rusya’nın Amazon’u” olarak anılan Ozon, milyonlarca aktif müşterisi ve gelişmiş lojistik altyapısıyla markalara ülke genelinde geniş erişim imkânı sunmaktadır.",
+    excerptEn: "For brands active in the Russian e-commerce market, Ozon has become one of the fastest growing sales platforms in recent years. Commonly referred to as 'Russia's Amazon', Ozon offers brands broad access nationwide with millions of active clients and advanced logistic systems.",
+    publishedAt: "22 Haziran 2026",
+    readTime: "3 dk okuma",
+    imageUrl: "/blog4.png",
+    content: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">Rusya e-ticaret pazarında faaliyet gösteren markalar için Ozon, son yılların en hızlı büyüyen satış platformlarından biri haline gelmiştir. Genellikle “Rusya’nın Amazon’u” olarak anılan Ozon, milyonlarca aktif müşterisi ve gelişmiş lojistik altyapısıyla markalara ülke genelinde geniş erişim imkânı sunmaktadır.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Bu rehberde Ozon’da satış yapmanın avantajlarını, süreçlerini ve dikkat edilmesi gereken noktaları adım adım ele alıyoruz.</p>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Ozon Nedir?</h2>
+          <p className="text-slate-600 leading-relaxed text-lg">Ozon, Rusya’nın en büyük çok kategorili e-ticaret platformlarından biridir. Moda, kozmetik, ev ürünleri, oyuncak, elektronik dışı tüketim ürünleri, aksesuar ve kişisel bakım kategorilerinde güçlü satış hacimlerine sahiptir.</p>
+          <p className="text-slate-600 leading-relaxed">Son yıllarda yaptığı lojistik yatırımları ve reklam araçları sayesinde hem yerel hem de uluslararası satıcılar için önemli bir satış kanalı haline gelmiştir.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Neden Ozon?</h2>
+          <p className="text-slate-600 leading-relaxed">Ozon’un en önemli avantajlarından biri geniş müşteri kitlesine ulaşabilmesidir. İşte başlıca avantajları:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Yüksek trafik hacmi ve geniş kitle</li>
+            <li>Güçlü lojistik altyapısı ve teslimat hızı</li>
+            <li>Geniş kategori çeşitliliği</li>
+            <li>Gelişmiş pazaryeri reklam araçları</li>
+            <li>Özelleştirilmiş marka mağazası (Rich Content) oluşturabilme</li>
+            <li>Rusya genelinde hızlı teslimat ağı</li>
+          </ul>
+          <p className="text-slate-600 mt-2">Özellikle tekstil, kozmetik, ev tekstili, oyuncak ve yaşam ürünleri kategorilerinde Türk üreticileri için önemli fırsatlar sunmaktadır.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Kimler Ozon’da Satış Yapabilir?</h2>
+          <p className="text-slate-600 mb-3">Ozon aşağıdaki sektörler için son derece uygundur:</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-600">
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Tekstil & Hazır Giyim</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Kozmetik & Kişisel Bakım</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Ev Tekstili & Züccaciye</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Ayakkabı, Çanta & Aksesuar</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Oyuncak & Bebek Ürünleri</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Mutfak & Yaşam Ürünleri</li>
+          </ul>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Ozon’da Satış Süreci Adımları</h2>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün ve Talep Analizi</h3>
+              <p className="text-slate-600">İlk aşamada ürünlerin Rusya pazarı için uygunluğu değerlendirilir. Talep, rakip fiyatlandırmaları ve kategori dinamikleri incelenir.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Hazırlığı ve Barkodlama</h3>
+              <p className="text-slate-600">Ürünlerin satış öncesi barkodlama, Çestniy Znak ve etiketleme hazırlıkları tamamlanır. Görseller ve Rusça açıklamalar organize edilir.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Lojistik ve Depolama</h3>
+              <p className="text-slate-600">Ürünler Rusya'daki depolara gönderilir ve fulfillment (FBO) sistemiyle yönetilir. Sipariş hazırlama, paketleme ve kargo merkezi sistemle yürütülür.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Listeleme</h3>
+              <p className="text-slate-600">Ürünler Ozon mağazasında yayınlanır. Profesyonel ürün içerikleri ve doğru kategori seçimi görünürlüğü doğrudan yükseltir.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Reklam ve Kampanya Optimizasyonu</h3>
+              <p className="text-slate-600">Satış başladıktan sonra sponsorlu reklamlar, Ozon kampanyaları, kuponlar ve dönüşüm analizleri ile satış hacmi katlanır.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-3">Ozon Fulfillment Sistemi FBO Nedir?</h2>
+          <p className="text-slate-700 leading-relaxed">Ozon’un en güçlü yönlerinden biri fulfillment altyapısıdır. Ürünleriniz Ozon depolarında (FBO) bulunduğunda: Daha hızlı teslimat sağlanır, sipariş hazırlama ve kargo süreçleri tam otomatikleşir, müşteri memnuniyeti ve dolayısıyla buy-box puanı yükselir. Bu nedenle başarılı satıcıların büyük bölümü fulfillment modeliyle çalışmaktadır.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+          <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h2 className="text-lg font-bold text-slate-800 mb-2">Ozon mu Wildberries mi?</h2>
+            <p className="text-sm text-slate-600 leading-relaxed mb-2">Bu sorunun tek bir cevabı yoktur. Her ikisi de farklı dinamiklere sahiptir:</p>
+            <ul className="text-xs text-slate-600 space-y-1">
+              <li>• <strong>Wildberries:</strong> Giyim ve moda kategorilerinde açık ara liderdir, sipariş hacmi devasadır ancak fiyat rekabeti daha yoğundur.</li>
+              <li>• <strong>Ozon:</strong> Nispeten daha dengeli bir tüketici profili sunar, çok kategorilidir, reklam araçları ve satıcı paneli son derece gelişmiştir.</li>
+            </ul>
+          </div>
+          <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h3 className="text-lg font-bold text-slate-800 mb-2">Türkiye’den Ozon’a Satış</h3>
+            <p className="text-sm text-slate-600 leading-relaxed">Coğrafi yakınlığımız, güçlü lojistik koridorlarımız ve Rus tüketicisinin Türk ürünlerine duyduğu yüksek ilgi, Ozon\'u kaçırılmayacak bir pazar haline getirmektedir. Doğru operasyonel süreç kurgulandığında Ozon markanız için güçlü bir büyüme motoru olur.</p>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Ozon, Rusya pazarına girmek isteyen her ölçekteki marka için devasa bir kapıdır. Ancak başarı için sadece sayfaya ürün yüklemek yetmez; doğru lojistik kurgusu, doğru fiyatlandırma, profesyonel mağaza yönetimi ve istikrarlı reklam yönetimi gereklidir. <strong>Russia Market Entry</strong> olarak markanızın Ozon operasyonlarını uçtan uca yürütüyor, ürünlerinizi satışa ve başarıya hazır hale getiriyoruz.</p>
+        </div>
+      </div>
+    ),
+    contentEn: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">For brands operating in the Russian e-commerce market, Ozon has become one of the fastest growing sales platforms in recent years. Commonly referred to as \'Russia\'s Amazon\', Ozon offers brands broad access nationwide with millions of active clients and advanced logistic systems.</p>
+        <p className="text-lg leading-relaxed text-slate-600">In this guide, we break down the benefits, processes, and core considerations of selling on Ozon step by step.</p>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">What is Ozon?</h2>
+          <p className="text-slate-600 leading-relaxed text-lg">Ozon is one of Russia\'s largest multi-category e-commerce marketplaces. It commands prominent sales volume in fashion, cosmetics, home goods, toys, non-electronic consumer items, accessories, and personal care.</p>
+          <p className="text-slate-600 leading-relaxed">Driven by robust logistics investments and precise advertising mechanisms, it has emerged as a premier route for domestic and cross-border merchants.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Why Choose Ozon?</h2>
+          <p className="text-slate-600 leading-relaxed">A main advantage of Ozon is massive consumer exposure. Key benefits include:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>High traffic and a highly connected customer base</li>
+            <li>Sturdy logistics networks ensuring fast dispatches</li>
+            <li>Balanced multi-category selling</li>
+            <li>Advanced marketing and promo dashboards</li>
+            <li>Ability to curate unique, rich-content storefronts</li>
+            <li>Rapid nationwide distribution</li>
+          </ul>
+          <p className="text-slate-600 mt-2">Turkish manufacturers in textile, home comfort, organic cosmetics, and toys will find a highly receptive market here.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Who Can Sell on Ozon?</h2>
+          <p className="text-slate-600 mb-3">Ozon is perfectly suited for:</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-600">
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Textile & Apparel labels</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Cosmetics & Self-care brands</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Home textile & Housewares</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Shoes, bags, and leather works</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Child care & Toys manufacturers</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Kitchen & Lifestyle decor</li>
+          </ul>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Steps to Onboard on Ozon</h2>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Product & Demand Assessment</h3>
+              <p className="text-slate-600">Confirm the product fit for Russian requirements. Review competitor listing benchmarks, local pricing guidelines, and category constraints.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Preparation & Labeling</h3>
+              <p className="text-slate-600">Process barcodes, coordinate Chestny ZNAK declarations, draft Russian translations for descriptions, and upload high-resolution photography.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Logistics & Warehousing</h3>
+              <p className="text-slate-600">Stock is securely routed to Russian warehouses via Ozon\'s FBO system. Order packing, shipping, and return processes run automatically.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Listing Execution</h3>
+              <p className="text-slate-600">Go live on your brand store page. Optimized categories coupled with expert translation yields instantaneous organic discoverability.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Marketing & Ad Optimization</h3>
+              <p className="text-slate-600">Deploy built-in sponsor campaigns, coupons, and seasonal price adjustments to accelerate sales momentum.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-3">What is Ozon\'s FBO Fulfillment Model?</h2>
+          <p className="text-slate-700 leading-relaxed">Fulfillment by Ozon (FBO) is a premier growth vehicle. When your goods reside inside regional Ozon warehouses: delivery speeds accelerate, operations run 24/7 without delays, client satisfaction improves, and your search relevancy index increases. Thus, majority of high-tier merchants rely exclusively on FBO.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+          <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h2 className="text-lg font-bold text-slate-800 mb-2">Ozon vs Wildberries?</h2>
+            <p className="text-sm text-slate-600 leading-relaxed mb-2">Both platforms have distinctive features. Consider:</p>
+            <ul className="text-xs text-slate-600 space-y-1">
+              <li>• <strong>Wildberries:</strong> Unequivocal leader in apparel & outerwear with massive volume, but has more aggressive price pressure.</li>
+              <li>• <strong>Ozon:</strong> Features a balanced demographic profile across categories with powerful marketing tools.</li>
+            </ul>
+          </div>
+          <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h3 className="text-lg font-bold text-slate-800 mb-2">Selling from Turkey to Ozon</h3>
+            <p className="text-sm text-slate-600 leading-relaxed">Geographic proximity, short-haul freight lines, and deep-seated appreciation of Turkish quality render Ozon an essential gateway. Structured correctly, it becomes a strong growth engine for your brand.</p>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Conclusion</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Ozon is a massive gateway for Turkish manufacturers of all sizes. Success relies on robust logistics, strategic price modeling, professional store management, and dynamic advertising campaigns. As <strong>Russia Market Entry</strong>, we manage your entire Ozon operation flow from end to end so you are ready to succeed.</p>
+        </div>
+      </div>
+    )
   }
 ];

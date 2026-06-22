@@ -76,7 +76,7 @@ export default function BlogDetail() {
               <img 
                 src={post.imageUrl} 
                 alt={title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </motion.div>
           </div>
