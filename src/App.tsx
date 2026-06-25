@@ -16,6 +16,7 @@ import ForWhomDetail from "./pages/ForWhomDetail";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import WhatsAppButton from "./components/WhatsAppButton";
+import AnalyticsTracker from "./components/AnalyticsTracker";
 
 // Component to scroll to top on route change
 function ScrollToTop() {
@@ -64,6 +65,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <AnalyticsTracker />
       <div className="min-h-screen flex flex-col font-sans">
         <Navbar />
         <div className="flex-grow">
