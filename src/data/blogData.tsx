@@ -953,5 +953,397 @@ export const blogPosts: BlogPost[] = [
         </div>
       </div>
     )
+  },
+  {
+    slug: "rusyada-sirket-kurmadan-satis-yapilabilir-mi",
+    metaTitle: "Rusya’da Şirket Kurmadan Satış Yapılabilir mi? 2026 Rehberi",
+    metaTitleEn: "Can You Sell in Russia Without Setting Up a Company? 2026 Guide",
+    title: "Rusya’da Şirket Kurmadan Satış Yapılabilir mi? 2026 Rehberi",
+    titleEn: "Can You Sell in Russia Without Setting Up a Company? 2026 Guide",
+    excerpt: "Rusya pazarına açılmak isteyen birçok üretici ve marka sahibinin ilk sorduğu soru şudur: “Rusya’da şirket kurmadan satış yapabilir miyim?” Cevap, doğru operasyon modeliyle evet.",
+    excerptEn: "Many manufacturers and brand owners wishing to expand into Russia ask: 'Can I sell in Russia without setting up a company?' With the right operational model, the answer is yes.",
+    publishedAt: "3 Temmuz 2026",
+    readTime: "3 dk okuma",
+    imageUrl: "/blog5.png",
+    content: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarına açılmak isteyen birçok üretici ve marka sahibinin ilk sorduğu soru şudur: “Rusya’da şirket kurmadan satış yapabilir miyim?” Cevap, doğru operasyon modeliyle evet.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Her marka için Rusya’da şirket kurmak ilk aşamada gerekli değildir. Özellikle pazarı test etmek isteyen üreticiler için operasyon ortaklığı ve konsinye modeli çok daha düşük riskli bir başlangıç sunmaktadır.</p>
+        
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Konsinye Model Nedir?</h2>
+          <p className="text-slate-600 leading-relaxed">Konsinye modelde üretici ürünlerini operasyon partnerine gönderir. Ürünler Rusya’da satışa sunulur ve satış gerçekleştikçe ödeme üreticiye aktarılır. Bu model sayesinde:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Büyük başlangıç yatırımı gerekmez.</li>
+            <li>Rusya şirketi kurma zorunluğunu ortadan kaldırır.</li>
+            <li>Pazar kolayca test edilebilir.</li>
+            <li>Marka bilinirliği oluşturulabilir.</li>
+          </ul>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Operasyon Nasıl İlerler?</h2>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Analizi</h3>
+              <p className="text-slate-600">Ürünlerin Rusya pazarı için uygunluğu değerlendirilir.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Lojistik</h3>
+              <p className="text-slate-600">Ürünler Rusya’ya sevk edilir.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Listeleme</h3>
+              <p className="text-slate-600">Wildberries, Ozon ve Lamoda gibi pazaryerlerinde profesyonel mağazalarda yayınlanır.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Satış</h3>
+              <p className="text-slate-600">Milyonlarca ziyaretçiye sahip pazaryerlerinde ürünler satışa çıkar.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Raporlama</h3>
+              <p className="text-slate-600">Satışlar aylık olarak raporlanır ve ödeme planı oluşturulur.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Neden Konsinye Model?</h2>
+          <ul className="space-y-3">
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Daha düşük finansal risk</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Pazarı test etme imkânı</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Marka bilinirliği oluşturma</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Profesyonel operasyon yönetimi</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Yerel ekip desteği</li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Russia Market Entry Modeli</h2>
+          <p className="text-lg leading-relaxed text-slate-600">Russia Market Entry olarak Türkiye ve Rusya’daki şirket altyapımızla markaların Rusya operasyonlarını uçtan uca yönetiyoruz. İster Türkiye’deki şirketiniz üzerinden çalışın, ister doğrudan ihracat yapın; size uygun operasyon modelini birlikte oluşturuyoruz.</p>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Rusya pazarına giriş için ilk adım her zaman şirket kurmak değildir. Doğru operasyon modeliyle pazarı test edebilir, satışlarınızı büyütebilir ve daha sonra kendi operasyonunuzu kurabilirsiniz.</p>
+        </div>
+      </div>
+    ),
+    contentEn: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">For many manufacturers and brand owners wishing to expand into the Russian market, the first question is: 'Can I sell in Russia without setting up a company?' The answer, with the right operational model, is yes.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Establishing a company in Russia is not necessary in the initial phase for every brand. Especially for manufacturers who want to test the market, operational partnership and consignment models offer a much lower-risk starting point.</p>
+        
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">What is the Consignment Model?</h2>
+          <p className="text-slate-600 leading-relaxed">In the consignment model, the manufacturer sends their products to the operational partner. The products are offered for sale in Russia, and as sales occur, payments are transferred to the manufacturer. Thanks to this model:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Large upfront investment is not required.</li>
+            <li>The obligation to establish a Russian company is eliminated.</li>
+            <li>The market can be tested.</li>
+            <li>Brand awareness can be established.</li>
+          </ul>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">How Does the Operation Work?</h2>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Product Analysis</h3>
+              <p className="text-slate-600">The suitability of the products for the Russian market is evaluated.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Logistics</h3>
+              <p className="text-slate-600">Products are shipped to Russia.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Listing</h3>
+              <p className="text-slate-600">Products are published in professional shops on marketplaces like Wildberries, Ozon, and Lamoda.</p>
+            </div>
+          </div>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Sales</h3>
+              <p className="text-slate-600">Products are offered for sale on marketplaces with millions of visitors.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Reporting</h3>
+              <p className="text-slate-600">Sales are reported monthly and a payment plan is established.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Why Consignment Model?</h2>
+          <ul className="space-y-3">
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Lower financial risk</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Opportunity to test the market</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Establishing brand awareness</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Professional operations management</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Local team support</li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">The Russia Market Entry Model</h2>
+          <p className="text-lg leading-relaxed text-slate-600">As Russia Market Entry, we manage the operations of brands in Russia end-to-end with our corporate infrastructure in Turkey and Russia. Whether you work through your company in Turkey or export directly; we build the right operation model for you together.</p>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Conclusion</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">The first step to entering the Russian market is not always establishing a company. With the right operational model, you can test the market, scale your sales, and establish your own operation later.</p>
+        </div>
+      </div>
+    )
+  },
+  {
+    slug: "wildberries-algoritmasi-nasil-calisir",
+    metaTitle: "Wildberries Algoritması Nasıl Çalışır? Satışları Artıran 10 Kritik Faktör",
+    metaTitleEn: "How Does the Wildberries Algorithm Work? 10 Critical Factors to Boost Sales",
+    title: "Wildberries Algoritması Nasıl Çalışır? Satışları Artıran 10 Kritik Faktör",
+    titleEn: "How Does the Wildberries Algorithm Work? 10 Critical Factors to Boost Sales",
+    excerpt: "Wildberries’de başarılı olmak yalnızca ürün yüklemekle mümkün değildir. Platformun algoritması; satış performansı, müşteri memnuniyeti ve operasyonel başarıya göre mağazaları sıralar.",
+    excerptEn: "Success on Wildberries is not possible simply by uploading products. The platform's algorithm ranks stores based on sales performance, customer satisfaction, and operational success.",
+    publishedAt: "3 Temmuz 2026",
+    readTime: "3 dk okuma",
+    imageUrl: "/blog6.png",
+    content: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">Wildberries’de başarılı olmak yalnızca ürün yüklemekle mümkün değildir. Platformun algoritması; satış performansı, müşteri memnuniyeti ve operasyonel başarıya göre mağazaları sıralar.</p>
+        <p className="text-lg leading-relaxed text-slate-600">İşte Wildberries algoritmasını etkileyen en önemli 10 kritik faktör.</p>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Satışları Artıran 10 Kritik Faktör</h2>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Stok Sürekliliği</h3>
+              <p className="text-slate-600">Stokta olmayan ürünler görünürlük kaybeder.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Hızlı Teslimat</h3>
+              <p className="text-slate-600">Fulfillment depolarında bulunan ürünler daha avantajlıdır.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Satış Hızı</h3>
+              <p className="text-slate-600">Kısa sürede yüksek satış yapan ürünler üst sıralara çıkar.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Dönüşüm Oranı</h3>
+              <p className="text-slate-600">Ürün sayfasını ziyaret eden kullanıcıların satın alma oranı önemlidir.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Fotoğrafları</h3>
+              <p className="text-slate-600">Profesyonel görseller tıklanma ve satış oranını artırır.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">6</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Reklam Yönetimi</h3>
+              <p className="text-slate-600">Sponsorlu reklamlar algoritmaya ilk ivmeyi kazandırır.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">7</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Müşteri Yorumları</h3>
+              <p className="text-slate-600">Olumlu yorumlar güven oluşturur.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">8</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">İade Oranı</h3>
+              <p className="text-slate-600">Düşük iade oranı mağaza performansını olumlu etkiler.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">9</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Bölgesel Depo Dağılımı</h3>
+              <p className="text-slate-600">Wildberries’in farklı fulfillment depolarına doğru stok dağıtımı teslimat sürelerini kısaltır ve satış performansını artırır.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">10</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Sürekli Optimizasyon</h3>
+              <p className="text-slate-600">Fiyat, reklam, stok ve ürün içerikleri düzenli olarak optimize edilmelidir.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşımı</h2>
+          <p className="text-slate-700 leading-relaxed">Biz yalnızca mağaza açmıyoruz. Ürünlerinizi Wildberries algoritmasına uygun şekilde konumlandırıyor, doğru depolara sevkiyat planlıyor ve satış performansını sürekli analiz ediyoruz.</p>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Wildberries’de başarı; ürün kalitesi, lojistik, reklam yönetimi ve operasyonun birlikte yönetilmesiyle mümkündür. Doğru stratejiyle ürünleriniz milyonlarca potansiyel müşteriye ulaşabilir.</p>
+        </div>
+      </div>
+    ),
+    contentEn: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">Success on Wildberries is not possible simply by uploading products. The platform's algorithm ranks stores based on sales performance, customer satisfaction, and operational success.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Here are the top 10 critical factors that influence the Wildberries algorithm.</p>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">10 Critical Factors to Boost Sales</h2>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Stock Continuity</h3>
+              <p className="text-slate-600">Out-of-stock products immediately lose visibility ranking.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Fast Delivery</h3>
+              <p className="text-slate-600">Products placed in local fulfillment warehouses gain higher preference.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Sales Velocity</h3>
+              <p className="text-slate-600">Products generating high sales volumes over a short period rise rapidly.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Conversion Rate</h3>
+              <p className="text-slate-600">The ratio of visitors purchasing your product after viewing its listing is critical.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Product Photography</h3>
+              <p className="text-slate-600">Professional visual assets directly drive click-through rates and sales conversion.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">6</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Advertising Management</h3>
+              <p className="text-slate-600">Sponsored internal ads provide the initial momentum needed for the algorithm.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">7</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Customer Reviews</h3>
+              <p className="text-slate-600">Positive ratings build social proof and consumer trust.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">8</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Return Rate</h3>
+              <p className="text-slate-600">Maintaining low return percentages keeps your overall store health in positive status.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">9</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Regional Warehouse Distribution</h3>
+              <p className="text-slate-600">Spreading your inventory across Wildberries' diverse fulfillment nodes cuts logistics times and raises rankings.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">10</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Continuous Optimization</h3>
+              <p className="text-slate-600">Finetuning pricing, promo budgets, stock counts, and text details must be standard daily protocol.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Strategy</h2>
+          <p className="text-slate-700 leading-relaxed">We don't just set up seller channels. We strategically place your product listings in tune with the Wildberries algorithm, forecast fulfillment stocking plans, and optimize parameters daily.</p>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Conclusion</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Successful selling on Wildberries hinges on harmonizing item excellence, smart stock levels, ads, and active store governance. Partnering with the right specialists lets your brand tap into millions of active buyers.</p>
+        </div>
+      </div>
+    )
   }
 ];
