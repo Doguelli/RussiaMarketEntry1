@@ -1345,5 +1345,387 @@ export const blogPosts: BlogPost[] = [
         </div>
       </div>
     )
+  },
+  {
+    slug: "rusyada-en-cok-satan-urunler-2026",
+    metaTitle: "Rusya'da En Çok Satan Ürünler (2026 Güncel Liste)",
+    metaTitleEn: "Top Selling Products in Russia (2026 Updated List)",
+    title: "Rusya'da En Çok Satan Ürünler (2026 Güncel Liste)",
+    titleEn: "Top Selling Products in Russia (2026 Updated List)",
+    excerpt: "Rusya e-ticaret pazarı hızla büyürken, 2026'da öne çıkan ürün gruplarını, kategorileri ve Türk üreticiler için en avantajlı pazaryeri fırsatlarını analiz ediyoruz.",
+    excerptEn: "While the Russian e-commerce market expands rapidly, we analyze the leading product groups, growing categories, and best marketplace opportunities in 2026.",
+    publishedAt: "13 Temmuz 2026",
+    readTime: "4 dk okuma",
+    imageUrl: "/blog7.png",
+    content: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">Rusya e-ticaret pazarı büyümeye devam ederken, doğru ürün kategorisini seçmek başarılı bir satış operasyonunun temelini oluşturuyor. Özellikle Wildberries, Ozon ve Lamoda gibi pazaryerlerinde tüketici alışkanlıklarını analiz etmek, yeni pazara giriş yapacak markalar için büyük avantaj sağlar.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Peki 2026 yılında Rusya'da en çok hangi ürünler satılıyor? Hangi kategoriler büyüyor? Türk üreticileri hangi alanlarda rekabet avantajına sahip? Bu rehberde Rusya e-ticaret pazarının öne çıkan ürün gruplarını ve fırsatlarını inceliyoruz.</p>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Öne Çıkan Ürün Kategorileri</h2>
+          
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">1.</span> Tekstil ve Hazır Giyim
+            </h3>
+            <p className="text-slate-600 mb-4">Rusya'da online alışveriş denildiğinde ilk akla gelen kategori hazır giyimdir. Wildberries başta olmak üzere many marketplaces'da en yüksek işlem hacmi tekstil ürünlerinden oluşmaktadır.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Oversize Tişört", "Sweatshirt", "Hoodie", "Jean", "Kadın Elbiseleri", "Büyük Beden Giyim", "Çocuk Giyim", "İç Giyim", "Spor Giyim"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+            <p className="text-sm italic text-slate-500 mt-3">Türk tekstil ürünleri kalite/fiyat dengesi sayesinde Rus tüketicisi tarafından güçlü bir şekilde tercih edilmektedir.</p>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">2.</span> Kozmetik ve Kişisel Bakım
+            </h3>
+            <p className="text-slate-600 mb-4">Son yıllarda en hızlı büyüyen kategorilerden biri kozmetiktir. Tekrar satın alma oranlarının yüksek olması nedeniyle sürdürülebilir satış için önemli bir kategoridir.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Cilt bakım ürünleri", "Şampuan", "Saç bakım ürünleri", "Serum", "Güneş kremi", "Makyaj ürünleri", "Organik kozmetik", "Dermokozmetik"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">3.</span> Ev Tekstili
+            </h3>
+            <p className="text-slate-600 mb-4">Rus tüketicisi ev dekorasyonu ve yaşam ürünlerine yüksek bütçe ayırmaktadır.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Nevresim takımları", "Havlu", "Bornoz", "Pike", "Battaniye", "Masa örtüsü", "Dekoratif yastık", "Perde"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">4.</span> Ayakkabı ve Çanta
+            </h3>
+            <p className="text-slate-600 mb-4">Moda kategorisinin en güçlü alanlarından biridir.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Sneaker", "Günlük ayakkabı", "Bot", "Kadın çantaları", "Cüzdan", "Sırt çantaları", "Valiz"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">5.</span> Ev ve Mutfak Ürünleri
+            </h3>
+            <p className="text-slate-600 mb-4">Ozon başta olmak üzere birçok platformda bu kategori hızla büyümektedir.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Saklama kapları", "Cam ürünler", "Baharatlıklar", "Mutfak organizerleri", "Sunum ürünleri", "Kahve ekipmanları"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">6.</span> Oyuncak ve Çocuk Ürünleri
+            </h3>
+            <p className="text-slate-600 mb-4">Ailelerin online alışverişe yönelmesiyle birlikte oyuncak kategorisi sürekli büyümektedir.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Ahşap oyuncaklar", "Eğitici oyuncaklar", "Puzzle", "Peluş oyuncaklar", "Montessori ürünleri"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">7.</span> Saat, Gözlük ve Aksesuar
+            </h3>
+            <p className="text-slate-600 mb-4">Düşük lojistik maliyeti ve yüksek kâr marjı nedeniyle dikkat çeken kategorilerdendir.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Güneş gözlüğü", "Optik çerçeve", "Kol saati", "Takı", "Kemer", "Şapka"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Türkiye'den Rusya'ya En Avantajlı Ürünler</h2>
+          <p className="text-slate-600 mb-4">Türkiye'nin üretim gücü sayesinde aşağıdaki kategoriler hem lojistik hem de maliyet açısından rekabet avantajı sunmaktadır:</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Tekstil & Giyim</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Ev Tekstili</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Kozmetik & Kişisel Bakım</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Ayakkabı & Çanta</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Aksesuar & Gözlük</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Çocuk Oyuncakları</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Mutfak Gereçleri</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Ev Dekorasyonu</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Hangi Ürünler İçin Doğru Pazaryeri?</h2>
+          <div className="overflow-x-auto rounded-2xl border border-slate-200">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-slate-50 border-b border-slate-200">
+                  <th className="p-4 font-bold text-slate-700 text-sm">Ürün Grubu</th>
+                  <th className="p-4 font-bold text-slate-700 text-sm text-center">Wildberries</th>
+                  <th className="p-4 font-bold text-slate-700 text-sm text-center">Ozon</th>
+                  <th className="p-4 font-bold text-slate-700 text-sm text-center">Lamoda</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Tekstil</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Kozmetik</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐</td>
+                </tr>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Ev Tekstili</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐</td>
+                </tr>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Oyuncak</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐</td>
+                </tr>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Ayakkabı</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Aksesuar</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Başarılı Olmak İçin Sadece Doğru Ürün Yetmez</h2>
+          <p className="text-slate-600">Rusya pazarında başarılı olmak için sadece ürünü yüklemek yetmez. Aşağıdaki başlıklar bütüncül olarak planlanmalıdır:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li><strong>Doğru Fiyatlandırma:</strong> Rakip analizleri ile optimum fiyat tespiti.</li>
+            <li><strong>Profesyonel Ürün Listeleme:</strong> Rusça dilinde mükemmel açıklamalar ve SEO optimizasyonu.</li>
+            <li><strong>Fulfillment Yönetimi:</strong> Rusya içindeki depolama ve teslimat entegrasyonu.</li>
+            <li><strong>Reklam Optimizasyonu:</strong> Platform içi kampanyalar ve sponsorlu gösterimlerin yönetimi.</li>
+            <li><strong>Bölgesel Depo Planlaması:</strong> Siparişlerin yoğun olduğu şehirlere yakın depolarda stok bulundurma.</li>
+            <li><strong>Düzenli Stok Yönetimi:</strong> Satış hızına uygun sürekli tedarik zinciri.</li>
+          </ul>
+          <p className="text-slate-600">Ürün ne kadar iyi olursa olsun, operasyon doğru yönetilmediğinde sürdürülebilir büyüme sağlamak mümkün değildir.</p>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Rusya pazarı, Türk üreticileri ve markaları için önemli fırsatlar sunmaya devam ediyor. Özellikle tekstil, kozmetik, ev tekstili, ayakkabı ve yaşam ürünleri kategorileri büyümesini sürdürmektedir. Doğru ürün seçimi ve profesyonel operasyon yönetimiyle markanızı milyonlarca müşteriye ulaştırabilirsiniz.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry olarak ürün analizi, pazaryeri kurulumu, lojistik, fulfillment, reklam yönetimi ve operasyon süreçlerini uçtan uca yönetiyor; markanızın Rusya pazarında sürdürülebilir büyümesini sağlıyoruz.</p>
+        </div>
+      </div>
+    ),
+    contentEn: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">As the Russian e-commerce market continues to grow, choosing the right product category forms the basis of a successful sales operation. Analyzing consumer habits on marketplaces like Wildberries, Ozon, and Lamoda provides a massive advantage for brands entering this new market.</p>
+        <p className="text-lg leading-relaxed text-slate-600">What are the best-selling products in Russia in 2026? Which categories are growing? In which areas do Turkish manufacturers have a competitive advantage? In this guide, we examine the prominent product groups and opportunities in the Russian e-commerce market.</p>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Leading Product Categories</h2>
+          
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">1.</span> Apparel & Textiles
+            </h3>
+            <p className="text-slate-600 mb-4">Ready-to-wear clothing is the primary category that comes to mind for online shopping in Russia. The highest transaction volume across marketplaces, especially Wildberries, consists of textile products.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Oversized T-Shirts", "Sweatshirts", "Hoodies", "Jeans", "Women's Dresses", "Plus Size Clothing", "Kids Clothing", "Underwear", "Activewear"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+            <p className="text-sm italic text-slate-500 mt-3">Turkish textile products are heavily preferred by Russian consumers due to their perfect price-to-quality ratio.</p>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">2.</span> Cosmetics & Personal Care
+            </h3>
+            <p className="text-slate-600 mb-4">One of the fastest-growing categories in recent years is cosmetics. High repeat-purchase rates make it a crucial category for sustainable sales.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Skin Care Products", "Shampoos", "Hair Care Products", "Serums", "Sunscreen", "Makeup Products", "Organic Cosmetics", "Dermocosmetics"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">3.</span> Home Textiles
+            </h3>
+            <p className="text-slate-600 mb-4">Russian consumers allocate high budgets for home decor, bedroom accessories, and lifestyle items.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Bedding Sets", "Towels", "Bathrobes", "Pique Blankets", "Blankets", "Tablecloths", "Decorative Pillows", "Curtains"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">4.</span> Footwear & Bags
+            </h3>
+            <p className="text-slate-600 mb-4">One of the most powerful subcategories within the fashion vertical.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Sneakers", "Casual Shoes", "Boots", "Handbags", "Wallets", "Backpacks", "Suitcases"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">5.</span> Home & Kitchenware
+            </h3>
+            <p className="text-slate-600 mb-4">This category is growing exponentially, particularly on Ozon and similar platforms.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Storage Containers", "Glassware", "Spice Racks", "Kitchen Organizers", "Serving Sets", "Coffee Equipment"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">6.</span> Toys & Children's Products
+            </h3>
+            <p className="text-slate-600 mb-4">With families shifting to digital commerce, the toy vertical sees continuous year-on-year gains.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Wooden Toys", "Educational Toys", "Puzzles", "Plush Toys", "Montessori Products"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+              <span className="text-accent-500">7.</span> Watches, Glasses & Accessories
+            </h3>
+            <p className="text-slate-600 mb-4">Gains high interest due to low weight (saving shipping costs) and high retail margins.</p>
+            <div className="flex flex-wrap gap-2">
+              {["Sunglasses", "Optical Frames", "Watches", "Jewelry", "Belts", "Hats"].map((item) => (
+                <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Most Advantageous Products from Turkey to Russia</h2>
+          <p className="text-slate-600 mb-4">Turkey's strong manufacturing base offers incredible competitive advantages in both shipping logistics and product cost for these key categories:</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Textiles & Garments</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Home Textiles</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Cosmetics & Skin Care</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Footwear & Leather Bags</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Accessories & Eyewear</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Kids' Educational Toys</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Kitchen Utilities & Glass</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Home Decoration</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">The Right Marketplace for the Right Product</h2>
+          <div className="overflow-x-auto rounded-2xl border border-slate-200">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-slate-50 border-b border-slate-200">
+                  <th className="p-4 font-bold text-slate-700 text-sm">Product Group</th>
+                  <th className="p-4 font-bold text-slate-700 text-sm text-center">Wildberries</th>
+                  <th className="p-4 font-bold text-slate-700 text-sm text-center">Ozon</th>
+                  <th className="p-4 font-bold text-slate-700 text-sm text-center">Lamoda</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Textiles</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Cosmetics</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐</td>
+                </tr>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Home Textiles</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐</td>
+                </tr>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Toys</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐</td>
+                </tr>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Footwear</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 text-sm font-medium text-slate-800">Accessories</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                  <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Having the Right Product is Just the Start</h2>
+          <p className="text-slate-600">To achieve true longevity in the Russian market, uploading listings is not enough. You must coordinate multiple operational factors:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li><strong>Optimum Pricing:</strong> Competitive and cost-aware retail price mapping.</li>
+            <li><strong>Professional Listings:</strong> Impeccable Russian copy and localized SEO keywords.</li>
+            <li><strong>Fulfillment Management:</strong> Seamless warehousing and courier handoffs inside Russia.</li>
+            <li><strong>Advertising Optimization:</strong> Native promo actions and pay-per-click optimization.</li>
+            <li><strong>Regional Warehouse Stocking:</strong> Positioning assets close to highly active shopper centers.</li>
+            <li><strong>Supply Chain Frequency:</strong> Maintaining healthy stock counts aligned with sales velocities.</li>
+          </ul>
+          <p className="text-slate-600">Regardless of how excellent a product is, sustainable growth is impossible without professional day-to-day operations.</p>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Conclusion</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">The Russian market continues to present rich possibilities for Turkish manufacturers and brands. Categories like apparel, personal care, bedding, and kitchenware show persistent growth. Localizing products and using correct operations channels lets you capture millions of shoppers.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry coordinates item analyses, seller profiles, shipping routes, fulfillment, promotions, and ongoing administration end-to-end to drive your scale sustainably in Russia.</p>
+        </div>
+      </div>
+    )
   }
 ];
