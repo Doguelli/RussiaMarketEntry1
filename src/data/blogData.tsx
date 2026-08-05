@@ -1861,5 +1861,525 @@ export const blogPosts: BlogPost[] = [
         </div>
       </div>
     )
+  },
+  {
+    slug: "wildberries-ozon-lojistik-yonetimi-stok-stratejisi",
+    metaTitle: "Wildberries ve Ozon'da Lojistik Yönetimi: Satışı Artıran Stok Stratejisi",
+    metaTitleEn: "Logistics Management on Wildberries & Ozon: Inventory Strategy to Boost Sales",
+    title: "Wildberries ve Ozon'da Lojistik Yönetimi: Satışı Artıran Stok Stratejisi",
+    titleEn: "Logistics Management on Wildberries & Ozon: Inventory Strategy to Boost Sales",
+    excerpt: "Rusya pazarında başarı, yalnızca ürün göndermekle değil; doğru ürünü, doğru depoda, doğru zamanda bulundurmakla başlar. Wildberries ve Ozon e-ticaret lojistiğinde veriye dayalı stok yönetim rehberi.",
+    excerptEn: "Success in the Russian market begins by placing the right product in the right warehouse at the right time. A data-driven inventory management guide for Wildberries and Ozon.",
+    publishedAt: "4 Ağustos 2026",
+    readTime: "5 dk okuma",
+    imageUrl: "/blog9.png",
+    content: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarında başarı, yalnızca ürün göndermekle değil; doğru ürünü, doğru depoda, doğru zamanda bulundurmakla başlar.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Birçok marka Rusya pazarına giriş yaparken lojistik sürecini yalnızca ürünlerini bir depoya göndermek olarak değerlendirir. Oysa başarılı bir e-ticaret operasyonunun temelinde yalnızca sevkiyat değil, veriye dayalı stok yönetimi ve lojistik planlama yer alır.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Wildberries ve Ozon gibi büyük pazaryerleri, Rusya'nın farklı bölgelerine hizmet veren geniş fulfillment ağlarına sahiptir. Bu yapı, doğru yönetildiğinde satış performansını önemli ölçüde artırabilir; yanlış planlandığında ise stok tükenmesi, yüksek lojistik maliyetleri ve satış kayıplarına neden olabilir.</p>
+        <p className="text-lg leading-relaxed text-slate-600 font-medium">Russia Market Entry olarak biz yalnızca ürünlerinizi Rusya'ya göndermiyoruz. Satış verilerini analiz ediyor, hangi ürünün hangi depoda bulunması gerektiğini planlıyor ve tüm lojistik operasyonunuzu uçtan uca yönetiyoruz.</p>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Fulfillment Bir Seçenektir, Operasyon Yönetimi Daha Fazlasıdır</h2>
+          <p className="text-slate-600 leading-relaxed">Fulfillment (FBO veya FBS), siparişlerin depolanması, hazırlanması ve müşteriye ulaştırılmasını sağlayan operasyon modelleridir. Ancak başarılı bir operasyon, fulfillment modelini seçmekten çok daha fazlasını gerektirir.</p>
+          <p className="text-slate-600 font-semibold mb-2">Asıl önemli olan sorular şunlardır:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Hangi ürün hangi depoda bulunmalı?</li>
+            <li>Hangi bölgedeki talep artıyor?</li>
+            <li>Hangi depoda stok tükenmek üzere?</li>
+            <li>Hangi ürün hangi pazaryerinde daha hızlı satıyor?</li>
+            <li>Yeni sevkiyat hangi depoya yönlendirilmeli?</li>
+            <li>Depolar arasında transfer ne zaman yapılmalı?</li>
+          </ul>
+          <p className="text-slate-600 font-medium mt-2">İşte bu soruların doğru cevaplanması, operasyonun başarısını belirler.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Veriye Dayalı Depo Planlaması</h2>
+          <p className="text-slate-600 leading-relaxed">Rusya gibi geniş bir coğrafyada her bölgenin tüketici alışkanlığı, teslimat süresi ve satış potansiyeli farklıdır. Bu nedenle her ürünü tüm depolara göndermek doğru strateji değildir.</p>
+          <p className="text-slate-600 font-semibold mb-2">Biz sevkiyat planlarını oluştururken yalnızca mevcut stok miktarını değil;</p>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 my-4">
+            {["Geçmiş satış performansını", "Bölgesel talep yoğunluğunu", "Teslimat sürelerini", "Mevsimsel değişimleri", "Kampanya dönemlerini", "Ürün bazlı satış hızını", "Stok devir oranlarını"].map((item) => (
+              <li key={item} className="flex items-center gap-2 bg-slate-50 p-3 rounded-xl text-slate-700 text-sm font-medium border border-slate-100">
+                <span className="w-2 h-2 rounded-full bg-accent-500" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-slate-600 leading-relaxed">birlikte analiz ediyoruz. Bu sayede ürünler doğru zamanda doğru bölgede hazır bulunur ve müşteriye daha hızlı ulaşır.</p>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8 border border-primary-100">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Merkezi Stok Yönetimi ile Esnek Operasyon</h2>
+          <p className="text-slate-600 mb-4">Her marka için tüm ürünleri tüm depolarda bulundurmak maliyet açısından verimli değildir. Bu nedenle birçok operasyonda merkezi stok yönetimi modeli uygulanmaktadır.</p>
+          <p className="text-slate-700 font-semibold mb-2">Bu modelde:</p>
+          <ul className="space-y-2.5 text-slate-700">
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Ana stok tek merkezde tutulur.</li>
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Satış performansı günlük olarak takip edilir.</li>
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Bölgesel ihtiyaç oluştuğunda ilgili depoya transfer gerçekleştirilir.</li>
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Gereksiz stok maliyetleri azaltılır.</li>
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Stok tükenme riski minimum seviyeye indirilir.</li>
+          </ul>
+          <p className="text-slate-600 mt-4">Bu yaklaşım hem lojistik maliyetlerini optimize eder hem de operasyonel esneklik sağlar.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Wildberries ve Ozon Aynı Şekilde Yönetilmez</h2>
+          <p className="text-slate-600 leading-relaxed">Her pazaryerinin lojistik modeli ve çalışma dinamikleri farklıdır. Wildberries'te başarılı olan bir stok dağılımı, Ozon'da aynı sonucu vermeyebilir.</p>
+          <p className="text-slate-600 font-semibold mb-2">Bu nedenle operasyon planlaması yapılırken;</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Pazaryerinin lojistik yapısı</li>
+            <li>Ürün kategorisi</li>
+            <li>Satış hacmi</li>
+            <li>Teslimat performansı</li>
+            <li>Bölgesel talep</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed font-medium">ayrı ayrı değerlendirilmelidir. Biz her platform için bağımsız stok stratejileri geliştirerek operasyonu optimize ediyoruz.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Transfer Yönetimi Operasyonun Kalbidir</h2>
+          <p className="text-slate-600 leading-relaxed">Başarılı lojistik yalnızca ilk sevkiyatı planlamak değildir. Asıl başarı, stok hareketlerini doğru zamanda yönetebilmektir. Satış hacimleri değiştikçe ürünlerin depolar arasında yeniden dağıtılması gerekir.</p>
+          <p className="text-slate-600 font-semibold mb-2">Doğru transfer planlaması sayesinde;</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Satış kayıpları önlenir.</li>
+            <li>Teslimat süreleri korunur.</li>
+            <li>Fazla stok oluşması engellenir.</li>
+            <li>Depolardaki ürün dengesi sağlanır.</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed">Transfer süreçlerinin düzenli olarak analiz edilmesi, sürdürülebilir büyümenin en önemli unsurlarından biridir.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Operasyon Kararları Verilerle Alınmalıdır</h2>
+          <p className="text-slate-600 leading-relaxed">Başarılı markalar sezgilerle değil, verilerle yönetilir. Russia Market Entry olarak operasyonlarımızda düzenli olarak aşağıdaki metrikleri analiz ediyoruz:</p>
+          <div className="flex flex-wrap gap-2.5 my-4">
+            {["SKU bazlı satış performansı", "Bölgesel satış dağılımı", "Depo bazlı stok seviyeleri", "Stok devir hızı", "Sipariş yoğunluğu", "Transfer ihtiyaçları", "Kampanya etkileri", "Teslimat performansı"].map((item) => (
+              <span key={item} className="bg-slate-100 text-slate-700 text-sm font-medium px-3.5 py-2 rounded-xl border border-slate-200">{item}</span>
+            ))}
+          </div>
+          <p className="text-slate-600 leading-relaxed">Bu analizler sayesinde operasyon sürekli geliştirilir ve lojistik süreçleri satış performansını destekleyecek şekilde optimize edilir.</p>
+        </div>
+
+        <div className="bg-white border border-slate-200 p-8 rounded-3xl my-8 shadow-sm">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Bu Yaklaşım Markalara Ne Kazandırır?</h2>
+          <p className="text-slate-600 mb-4">Doğru lojistik yönetimi yalnızca operasyonel kolaylık sağlamaz. Aynı zamanda aşağıdaki kritik avantajları sunar:</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-700">
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha hızlı teslimat</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha yüksek müşteri memnuniyeti</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha güçlü mağaza performansı</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha düşük lojistik maliyetleri</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha kontrollü stok yönetimi</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha yüksek satış hacmi</li>
+          </ul>
+          <p className="text-slate-600 mt-4 italic">Bugünün e-ticaret dünyasında lojistik, yalnızca ürün taşımak değil; satış performansını yöneten stratejik bir süreçtir.</p>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Farkı</h2>
+          <p className="text-slate-600 mb-4">Biz kendimizi yalnızca bir lojistik sağlayıcısı olarak görmüyoruz. Markalarımız için:</p>
+          <ul className="space-y-2 text-slate-700">
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Rusya operasyonunu planlıyor,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Stok stratejisini oluşturuyor,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Wildberries ve Ozon operasyonlarını birlikte yönetiyor,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Depo dağılımını optimize ediyor,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Transfer süreçlerini planlıyor,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Satış verilerini analiz ediyor,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Operasyonun her aşamasını düzenli olarak raporluyoruz.</li>
+          </ul>
+          <p className="text-slate-700 font-medium mt-4">Amacımız yalnızca ürünlerinizi Rusya'ya ulaştırmak değil; doğru lojistik planlamasıyla satışlarınızı sürdürülebilir şekilde büyütecek bir operasyon modeli kurmaktır.</p>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Rusya pazarında başarılı olmak için iyi bir ürün üretmek yeterli değildir. Doğru lojistik stratejisi, etkin stok yönetimi ve veriye dayalı operasyon planlaması, uzun vadeli başarının temelini oluşturur.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Wildberries ve Ozon gibi büyük pazaryerlerinde rekabet avantajı elde etmek isteyen markalar için lojistik artık bir maliyet kalemi değil, büyümenin en önemli unsurlarından biridir.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry, markaların Rusya operasyonlarını uçtan uca planlayarak; doğru ürünü, doğru depoda, doğru zamanda buluşturur ve satış performansını veriye dayalı kararlarla sürekli geliştirir.</p>
+        </div>
+      </div>
+    ),
+    contentEn: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">Success in the Russian market begins not just by shipping items, but by placing the right product in the right warehouse at the right time.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Many brands entering Russia view logistics merely as sending goods to a storage unit. However, the backbone of a high-performing e-commerce business relies on data-driven inventory management and tactical fulfillment planning.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Major marketplaces like Wildberries and Ozon operate expansive fulfillment networks spanning Russia's vast territory. Managed properly, this infrastructure skyrockets sales performance; mismanaged, it leads to stockouts, sky-high logistics fees, and lost revenue.</p>
+        <p className="text-lg leading-relaxed text-slate-600 font-medium">At Russia Market Entry, we don't just ship your items. We analyze sales data, map out inventory placement per warehouse, and oversee your entire logistics operation end-to-end.</p>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Fulfillment is an Option, Operations Management is Everything</h2>
+          <p className="text-slate-600 leading-relaxed">Fulfillment models (FBO or FBS) handle warehousing, pick-and-pack, and courier delivery. But a successful operation requires much more than simply choosing FBO or FBS.</p>
+          <p className="text-slate-600 font-semibold mb-2">The crucial questions you must answer include:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Which SKU should be stocked in which warehouse?</li>
+            <li>Which region is experiencing surging demand?</li>
+            <li>Which warehouse is about to run out of stock?</li>
+            <li>Which product sells faster on which marketplace?</li>
+            <li>Where should new stock consignments be routed?</li>
+            <li>When should inter-warehouse transfers occur?</li>
+          </ul>
+          <p className="text-slate-600 font-medium mt-2">Answering these questions accurately defines your operational success.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Data-Driven Warehouse Allocation</h2>
+          <p className="text-slate-600 leading-relaxed">Across a geography as massive as Russia, consumer habits, delivery SLAs, and sales potentials vary greatly by region. Thus, shipping all products to every warehouse is inefficient.</p>
+          <p className="text-slate-600 font-semibold mb-2">When building shipment blueprints, we analyze:</p>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 my-4">
+            {["Historical sales performance", "Regional demand density", "Courier transit SLAs", "Seasonal velocity shifts", "Promo event schedules", "SKU-level sell-through rate", "Stock turnover ratios"].map((item) => (
+              <li key={item} className="flex items-center gap-2 bg-slate-50 p-3 rounded-xl text-slate-700 text-sm font-medium border border-slate-100">
+                <span className="w-2 h-2 rounded-full bg-accent-500" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-slate-600 leading-relaxed">This ensures inventory is pre-positioned in the right region at the right time, reaching buyers faster.</p>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8 border border-primary-100">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Centralized Stock Governance for Operational Agility</h2>
+          <p className="text-slate-600 mb-4">Stocking every single SKU across all fulfillment nodes is cost-prohibitive. That is why we employ a centralized stock management strategy for many clients.</p>
+          <p className="text-slate-700 font-semibold mb-2">In this model:</p>
+          <ul className="space-y-2.5 text-slate-700">
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Primary inventory is anchored at a central hub.</li>
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Daily sales velocity is closely monitored.</li>
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Stock is transferred to regional hubs when local demand spikes.</li>
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Unnecessary holding costs are slashed.</li>
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Stockout risks are kept at a minimum.</li>
+          </ul>
+          <p className="text-slate-600 mt-4">This approach optimizes logistics expense while maintaining complete operational flexibility.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Wildberries and Ozon Require Distinct Strategies</h2>
+          <p className="text-slate-600 leading-relaxed">Each marketplace features unique logistics algorithms and buyer demographics. An inventory breakdown that works on Wildberries might underperform on Ozon.</p>
+          <p className="text-slate-600 font-semibold mb-2">Operational planning must evaluate:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Platform-specific fulfillment structures</li>
+            <li>Product category dynamics</li>
+            <li>Channel sales volume</li>
+            <li>Delivery speed ratings</li>
+            <li>Regional buyer preference</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed font-medium">We build dedicated stock strategies tailored to each platform to maximize yield.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Transfer Management is the Heartbeat of Operations</h2>
+          <p className="text-slate-600 leading-relaxed">Great logistics isn't just about the initial cargo delivery. Real mastery lies in orchestrating stock movements over time. As regional demand shifts, inventory must be rebalanced between warehouses.</p>
+          <p className="text-slate-600 font-semibold mb-2">Smart transfer management delivers:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Prevention of missed sales</li>
+            <li>Consistent short delivery times</li>
+            <li>Elimination of dead stock accumulation</li>
+            <li>Optimal stock balance across regional hubs</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed">Regular analysis of transfer workflows is essential for sustainable growth.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Operational Decisions Driven by Data</h2>
+          <p className="text-slate-600 leading-relaxed">Winning brands rely on analytics, not intuition. At Russia Market Entry, we continuously measure key metrics across operations:</p>
+          <div className="flex flex-wrap gap-2.5 my-4">
+            {["SKU-level sales velocity", "Regional sales distribution", "Warehouse stock levels", "Inventory turn rate", "Order density spikes", "Transfer requirements", "Campaign impact", "Delivery performance SLAs"].map((item) => (
+              <span key={item} className="bg-slate-100 text-slate-700 text-sm font-medium px-3.5 py-2 rounded-xl border border-slate-200">{item}</span>
+            ))}
+          </div>
+          <p className="text-slate-600 leading-relaxed">These analytics power continuous optimization, aligning logistics directly with top-line growth.</p>
+        </div>
+
+        <div className="bg-white border border-slate-200 p-8 rounded-3xl my-8 shadow-sm">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">What Brands Gain From This Approach</h2>
+          <p className="text-slate-600 mb-4">Proper logistics governance provides far more than mere convenience. It unlocks critical competitive advantages:</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-700">
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Faster shipping times</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Higher customer satisfaction ratings</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Elevated marketplace store ranking</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Lower operational logistics overhead</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Controlled, predictable inventory</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Substantially higher overall sales volume</li>
+          </ul>
+          <p className="text-slate-600 mt-4 italic">In modern e-commerce, logistics is not just moving boxes—it is a core strategic driver of sales velocity.</p>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">The Russia Market Entry Advantage</h2>
+          <p className="text-slate-600 mb-4">We are far more than a logistics supplier. For our partner brands, we:</p>
+          <ul className="space-y-2 text-slate-700">
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Architect overall Russia operational strategy,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Formulate data-led inventory plans,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Co-manage Wildberries and Ozon channel operations,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Optimize warehouse allocation,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Schedule inter-facility stock transfers,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Analyze real-time sales performance,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Deliver transparent performance reporting at every stage.</li>
+          </ul>
+          <p className="text-slate-700 font-medium mt-4">Our mission isn't just delivering your product to Russia—it is establishing a high-efficiency operational engine that scales your revenue sustainably.</p>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Conclusion</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Building great products is only half the equation in Russia. Intelligent logistics strategy, active inventory control, and data-backed operational planning lay the foundation for long-term market leadership.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">For brands seeking a competitive edge on Wildberries and Ozon, logistics is no longer an expense item—it is the ultimate lever for growth.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry aligns your end-to-end operational roadmap, placing the right product in the right warehouse at the right time to continually elevate sales performance.</p>
+        </div>
+      </div>
+    )
+  },
+  {
+    slug: "cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur",
+    metaTitle: "Çestniy Znak Nedir? Rusya'da Hangi Ürünlerde Zorunludur? (2026 Güncel Rehber)",
+    metaTitleEn: "What is Chestny ZNAK? Which Products Require It in Russia? (2026 Guide)",
+    title: "Çestniy Znak Nedir? Rusya'da Hangi Ürünlerde Zorunludur? (2026 Güncel Rehber)",
+    titleEn: "What is Chestny ZNAK? Which Products Require It in Russia? (2026 Guide)",
+    excerpt: "Çestniy Znak sistemi nedir? Hangi ürünlerde zorunludur? Rusya'ya ihracat yapan markalar için etiketleme süreci, DataMatrix kodları ve dikkat edilmesi gereken tüm detaylar bu rehberde.",
+    excerptEn: "What is the Chestny ZNAK system? Which products require compliance? A comprehensive guide on DataMatrix coding, labelling, and mandatory compliance for exporting to Russia.",
+    publishedAt: "5 Ağustos 2026",
+    readTime: "5 dk okuma",
+    imageUrl: "/blog10.png",
+    content: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarına ihracat yapmak isteyen birçok üretici için en kritik konulardan biri Çestniy Znak (Честный ЗНАК) sistemidir.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Çestniy Znak, Rusya Federasyonu tarafından geliştirilen ulusal dijital ürün izlenebilirlik sistemidir. Amaç; sahte ürünleri önlemek, kayıt dışı ticareti azaltmak ve ürünlerin üretimden son kullanıcıya kadar takip edilmesini sağlamaktır.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Sistem kapsamında belirli ürün gruplarında her ürün için benzersiz bir DataMatrix kodu oluşturulur ve bu kod ürün ambalajına uygulanır. Rusya'da bu sisteme tabi ürünler, gerekli kodlar olmadan piyasaya sunulamaz.</p>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Çestniy Znak Neden Önemlidir?</h2>
+          <p className="text-slate-600 leading-relaxed">Rusya'ya ürün göndermek isteyen birçok firma, gümrük işlemlerini tamamladıktan sonra satışa başlayabileceğini düşünür. Ancak Çestniy Znak kapsamındaki ürünlerde süreç bundan çok daha fazlasını içerir.</p>
+          <p className="text-slate-700 font-semibold mb-2">Kodlama yapılmayan ürünler:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Rusya'da satışa açılamaz.</li>
+            <li>Marketplace depolarına kabul edilmeyebilir.</li>
+            <li>İthalat sürecinde sorun yaşayabilir.</li>
+            <li>Ciddi idari yaptırımlarla karşılaşabilir.</li>
+          </ul>
+          <p className="text-slate-600 font-medium mt-2">Bu nedenle Çestniy Znak süreci, Rusya operasyon planının ilk aşamalarından biri olarak ele alınmalıdır.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Hangi Ürünlerde Çestniy Znak Zorunludur?</h2>
+          <p className="text-slate-600 leading-relaxed">Çestniy Znak kapsamı zaman içinde genişlemektedir. Güncel mevzuata göre birçok sektörde zorunluluk bulunmaktadır.</p>
+          <p className="text-slate-700 font-semibold mb-2">Başlıca ürün grupları:</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 my-4">
+            {[
+              "Tekstil ve hazır giyim",
+              "Ayakkabı",
+              "Parfüm ve kozmetik",
+              "Lastik",
+              "Fotoğraf ekipmanları",
+              "İlaç ve tıbbi gereçler",
+              "Tütün ürünleri",
+              "Süt ürünleri",
+              "Su ve içecek kategorileri",
+              "Bisiklet",
+              "Hafif sanayi ürünleri"
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100 text-slate-700 text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-accent-500 shrink-0" />
+                {item}
+              </div>
+            ))}
+          </div>
+          <p className="text-slate-500 text-sm italic">Her GTİP (HS) kodu için zorunluluk durumu ayrıca değerlendirilmelidir.</p>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8 border border-primary-100">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Çestniy Znak Süreci Nasıl İşler?</h2>
+          <p className="text-slate-600 mb-4">Genel operasyon akışı şu adımlardan oluşur:</p>
+          <ol className="space-y-3 text-slate-700">
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">1</span> Ürünün Çestniy Znak kapsamına girip girmediği belirlenir.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">2</span> Gerekli uygunluk belgeleri ve deklarasyonlar hazırlanır.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">3</span> Ürün için benzersiz DataMatrix kodları oluşturulur.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">4</span> Kodlar ürün veya ambalaja standartlara uygun uygulanır.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">5</span> Ürün ithalat gümrük süreci tamamlanır.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">6</span> Marketplace veya satış kanalına ürün kabul edilir.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">7</span> Satış gerçekleştikçe sistem üzerinden ürün hareketleri düşülür.</li>
+          </ol>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">DataMatrix Kodu Nedir?</h2>
+          <p className="text-slate-600 leading-relaxed">Çestniy Znak sisteminde kullanılan 2D kare barkod yapısına DataMatrix adı verilir. Bu kod; ürün kimliğini, üretim bilgisini ve izlenebilirlik verilerini içeren benzersiz bir dijital kimliktir.</p>
+          <div className="bg-amber-50 border border-amber-200 p-5 rounded-2xl text-amber-900 text-sm leading-relaxed">
+            <strong>EAN Barkodu ile Karıştırılmamalıdır:</strong> EAN barkodu genel ürün modelini tanımlarken, DataMatrix kodu her bir tekil fiziki ürüne özel oluşturulur. Birçok üründe hem EAN barkodu hem de Çestniy Znak DataMatrix kodu birlikte kullanılır.
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Wildberries ve Ozon'da Çestniy Znak</h2>
+          <p className="text-slate-600 leading-relaxed">Wildberries ve Ozon gibi pazaryerleri, Çestniy Znak zorunluluğu bulunan ürünlerde gerekli kodlamaların eksiksiz yapılmasını bekler.</p>
+          <p className="text-slate-600 leading-relaxed">Eksik veya hatalı etiketleme; ürün kabulünün reddedilmesine, satış gecikmelerine ve operasyon maliyetlerinin artmasına neden olabilir. Bu nedenle etiketleme süreci, marketplace operasyonunun ayrılmaz bir parçasıdır.</p>
+        </div>
+
+        <div className="bg-white border border-slate-200 p-8 rounded-3xl my-8 shadow-sm">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşımı</h2>
+          <p className="text-slate-600 mb-4">Russia Market Entry olarak Çestniy Znak sürecini yalnızca bir etiketleme işlemi olarak görmüyoruz. Başarılı bir operasyon için aşağıdaki süreçleri bütüncül olarak yönetiyoruz:</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-700">
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Ürün uygunluk ve GTİP analizi</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Belgelendirme ve deklarasyon planlaması</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> DataMatrix kod temin ve basım süreçleri</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Lojistik ve etiketleme koordinasyonu</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Marketplace depo kabul entegrasyonu</li>
+          </ul>
+          <p className="text-slate-600 mt-4 italic">Yanlış planlanan bir kodlama süreci, sevkiyatın gümrükte veya depoda gecikmesine ve doğrudan satış kayıplarına neden olur.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+          <div className="bg-red-50/70 border border-red-100 p-6 rounded-3xl">
+            <h3 className="text-lg font-bold text-red-700 mb-3">Sık Yapılan Hatalar</h3>
+            <ul className="space-y-2 text-sm text-red-900">
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Çestniy Znak kapsamının GTİP bazlı kontrol edilmemesi</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> DataMatrix ile standart EAN barkodunun karıştırılması</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Kodların ambalaj üzerinde yanlış veya okunamayan alana basılması</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> İthalat tamamlandıktan sonra kodlama yapılmaya çalışılması</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Pazaryeri özel etiketleme gereksinimlerinin göz ardı edilmesi</li>
+            </ul>
+          </div>
+
+          <div className="bg-emerald-50/70 border border-emerald-100 p-6 rounded-3xl">
+            <h3 className="text-lg font-bold text-emerald-800 mb-3">Sevkiyat Öncesi Kontrol Listesi</h3>
+            <ul className="space-y-2 text-sm text-emerald-950">
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Ürün Çestniy Znak kapsamına giriyor mu?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> GTİP kodu doğrulandı mı?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Gerekli uygunluk belgeleri ve deklarasyonlar hazır mı?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> DataMatrix kodları üretilip tanımlandı mı?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Fiziksel etiketleme ve marketplace depo kuralları kontrol edildi mi?</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Çestniy Znak sistemi, Rusya pazarına girişte yalnızca yasal bir zorunluluk değil, aynı zamanda başarılı bir operasyonun temel bileşenlerinden biridir.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Ürün grubuna göre doğru planlama yapmak, belge süreçlerini zamanında tamamlamak ve DataMatrix kodlarını doğru şekilde yönetmek; hem ithalat sürecinin sorunsuz ilerlemesini hem de Wildberries, Ozon ve diğer satış kanallarında operasyonun kesintisiz devam etmesini sağlar.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry, tüm etiketleme, belgelendirme ve entegrasyon süreçlerinizi uçtan uca yöneterek markanızın Rusya pazarında güvenle büyümesini destekler.</p>
+        </div>
+      </div>
+    ),
+    contentEn: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">For manufacturers aiming to export to the Russian market, understanding the Chestny ZNAK (Честный ЗНАК) compliance system is paramount.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Chestny ZNAK is the national digital product track-and-trace system created by the Russian Federation. Its core purpose is to combat counterfeit goods, suppress illicit trade, and provide end-to-end transparency from factory floor to end-consumer.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Under this framework, every single product item in designated categories must carry a unique 2D DataMatrix code printed on its packaging. Products requiring compliance cannot be legally commercialized in Russia without these active codes.</p>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Why is Chestny ZNAK Crucial?</h2>
+          <p className="text-slate-600 leading-relaxed">Many exporters mistakenly assume that clearing customs is the final hurdle to selling in Russia. However, for products under Chestny ZNAK mandates, customs clearance is only part of the equation.</p>
+          <p className="text-slate-700 font-semibold mb-2">Items without proper digital codes:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Cannot be activated for sale in Russia.</li>
+            <li>Will be rejected at marketplace fulfillment hubs.</li>
+            <li>Risk severe customs hold-ups and delays.</li>
+            <li>Expose sellers to significant administrative fines and penalties.</li>
+          </ul>
+          <p className="text-slate-600 font-medium mt-2">Hence, Chestny ZNAK compliance must be integrated into the initial phase of your Russia market entry blueprint.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Which Product Categories Require Mandatory Chestny ZNAK?</h2>
+          <p className="text-slate-600 leading-relaxed">The mandatory scope of Chestny ZNAK continues to expand every year. Under 2026 regulations, a vast array of industries fall under compulsory tagging.</p>
+          <p className="text-slate-700 font-semibold mb-2">Key covered sectors include:</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 my-4">
+            {[
+              "Apparel & Apparel Textiles",
+              "Footwear & Shoes",
+              "Perfumes & Cosmetics",
+              "Tires & Rubber Goods",
+              "Photographic Equipment",
+              "Pharmaceuticals & Medical Items",
+              "Tobacco Products",
+              "Dairy Products",
+              "Bottled Water & Beverages",
+              "Bicycles",
+              "Light Industry Items"
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100 text-slate-700 text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-accent-500 shrink-0" />
+                {item}
+              </div>
+            ))}
+          </div>
+          <p className="text-slate-500 text-sm italic">Mandatory status must be verified individually against each product's specific HS / Customs code.</p>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl my-8 border border-primary-100">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">How Does the Chestny ZNAK Process Work?</h2>
+          <p className="text-slate-600 mb-4">The standard operational workflow involves the following sequence:</p>
+          <ol className="space-y-3 text-slate-700">
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">1</span> Confirm whether the product HS code falls under mandatory tagging.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">2</span> Prepare necessary conformity certificates and EAC declarations.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">3</span> Generate unique DataMatrix digital codes via the official registry.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">4</span> Print and affix DataMatrix codes onto item packaging according to technical specs.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">5</span> Complete customs import clearance procedures in Russia.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">6</span> Hand over inventory to Wildberries or Ozon fulfillment centers.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">7</span> Record digital code retirements automatically upon retail sale to buyers.</li>
+          </ol>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">What is a DataMatrix Code?</h2>
+          <p className="text-slate-600 leading-relaxed">The 2D square barcode used in the Chestny ZNAK system is called a DataMatrix code. It represents a unique digital identity containing item origin, batch data, and verification keys.</p>
+          <div className="bg-amber-50 border border-amber-200 p-5 rounded-2xl text-amber-900 text-sm leading-relaxed">
+            <strong>Do Not Confuse With EAN Barcodes:</strong> Standard EAN barcodes identify a product SKU universally, whereas a DataMatrix code is serialized specifically for every single physical unit. Most compliant products feature both the EAN barcode and Chestny ZNAK DataMatrix label side-by-side.
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Chestny ZNAK on Wildberries and Ozon</h2>
+          <p className="text-slate-600 leading-relaxed">Leading e-commerce platforms like Wildberries and Ozon strictly enforce Chestny ZNAK compliance. Inbound shipments lacking valid codes will be flatly turned away at warehouse gates.</p>
+          <p className="text-slate-600 leading-relaxed">Missing or unreadable tags result in cargo rejections, expensive re-handling fees, and severe loss of sales momentum. Flawless labelling is a prerequisite for marketplace fulfillment.</p>
+        </div>
+
+        <div className="bg-white border border-slate-200 p-8 rounded-3xl my-8 shadow-sm">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">The Russia Market Entry Approach</h2>
+          <p className="text-slate-600 mb-4">At Russia Market Entry, we handle Chestny ZNAK not as an isolated task, but as part of an integrated trade operation:</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-700">
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> HS Code classification & compliance review</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> EAC certification & documentation setup</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> DataMatrix code acquisition and printing</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Logistics & pre-shipment labelling oversight</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Marketplace intake integration</li>
+          </ul>
+          <p className="text-slate-600 mt-4 italic">Proactive planning prevents costly customs holdups and ensures immediate marketplace store activation upon arrival.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+          <div className="bg-red-50/70 border border-red-100 p-6 rounded-3xl">
+            <h3 className="text-lg font-bold text-red-700 mb-3">Common Pitfalls</h3>
+            <ul className="space-y-2 text-sm text-red-900">
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Failing to verify HS codes against Chestny ZNAK lists</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Confusing DataMatrix codes with standard EAN barcodes</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Placing labels on unreadable or easily damaged packaging zones</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Attempting tag generation after customs clearance</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Ignoring marketplace-specific labeling dimensions</li>
+            </ul>
+          </div>
+
+          <div className="bg-emerald-50/70 border border-emerald-100 p-6 rounded-3xl">
+            <h3 className="text-lg font-bold text-emerald-800 mb-3">Pre-Shipment Checklist</h3>
+            <ul className="space-y-2 text-sm text-emerald-950">
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Is the product HS code subject to Chestny ZNAK?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Have HS customs classifications been verified?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Are EAC certificates and declarations issued?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Are DataMatrix digital codes generated and linked?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Have physical labels and warehouse intake rules been audited?</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Conclusion</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Chestny ZNAK compliance is not merely a legal hurdle in Russia—it is a cornerstone of operational excellence and seller trustworthiness.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Accurate pre-planning, timely certification, and meticulous DataMatrix code management guarantee smooth customs entry and uninterrupted sales across Wildberries, Ozon, and retail channels.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry manages your compliance, labelling, and marketplace logistics end-to-end so your brand expands in Russia with complete confidence.</p>
+        </div>
+      </div>
+    )
   }
 ];
+
+
