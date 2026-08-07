@@ -3,15 +3,27 @@ import { Helmet } from "react-helmet-async";
 import { ShieldCheck, ArrowRight, BarChart3, Calculator, Receipt, Landmark } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { createBreadcrumbSchema } from "@/utils/seo";
 
 export default function OperationModel() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
+    { name: t('nav.op_model'), url: '/operasyon-modeli' }
+  ]);
 
   return (
     <main className="bg-slate-50 min-h-screen pt-12 pb-24">
       <Helmet>
         <title>{t('op_model_page.title')}</title>
         <meta name="description" content={t('op_model_page.desc_meta')} />
+        <link rel="canonical" href="https://russiamarketentry.com/operasyon-modeli" />
+        <meta property="og:title" content={t('op_model_page.title')} />
+        <meta property="og:description" content={t('op_model_page.desc_meta')} />
+        <meta property="og:url" content="https://russiamarketentry.com/operasyon-modeli" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

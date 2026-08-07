@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
+import { createBreadcrumbSchema, createArticleSchema } from "@/utils/seo";
 
 export default function BlogDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -20,12 +21,40 @@ export default function BlogDetail() {
   const excerpt = i18n.language === 'en' ? (post.excerptEn || post.excerpt) : post.excerpt;
   const metaTitle = i18n.language === 'en' && post.metaTitleEn ? post.metaTitleEn : post.metaTitle;
 
+  const canonicalUrl = `https://russiamarketentry.com/blog/${post.slug}`;
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
+    { name: t('nav.blog'), url: '/blog' },
+    { name: title, url: `/blog/${post.slug}` }
+  ]);
+
+  const articleSchema = createArticleSchema(
+    title,
+    excerpt,
+    post.slug,
+    post.publishedAt,
+    post.imageUrl
+  );
+
+  const fullImageUrl = post.imageUrl
+    ? (post.imageUrl.startsWith("http") ? post.imageUrl : `https://russiamarketentry.com${post.imageUrl}`)
+    : "https://russiamarketentry.com/og-image.jpg";
+
   return (
-    <>
-      <Helmet>
-        <title>{metaTitle} | Russia Market Entry</title>
-        <meta name="description" content={excerpt} />
-      </Helmet>
+    <main>
+      <article>
+        <Helmet>
+          <title>{`${metaTitle} | Russia Market Entry`}</title>
+          <meta name="description" content={excerpt} />
+          <link rel="canonical" href={canonicalUrl} />
+          <meta property="og:title" content={`${metaTitle} | Russia Market Entry`} />
+          <meta property="og:description" content={excerpt} />
+          <meta property="og:url" content={canonicalUrl} />
+          <meta property="og:type" content="article" />
+          <meta property="og:image" content={fullImageUrl} />
+          <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+          <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+        </Helmet>
 
       {/* Hero Header */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-24 bg-slate-50">
@@ -95,6 +124,7 @@ export default function BlogDetail() {
           </motion.div>
         </div>
       </section>
-    </>
+      </article>
+    </main>
   );
 }

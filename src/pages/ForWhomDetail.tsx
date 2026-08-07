@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { forWhomData } from "../data/forWhomData";
 import { forWhomDataEN } from "../data/forWhomDataEN";
+import { createBreadcrumbSchema } from "@/utils/seo";
 
 export default function ForWhomDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -21,11 +22,24 @@ export default function ForWhomDetail() {
     ? "Contact us to set up the most suitable operation model for you and start selling."
     : "Size en uygun operasyon modelini kurmak ve satışlara başlamak için bizimle iletişime geçin.";
 
+  const canonicalUrl = `https://russiamarketentry.com/kimler-icin/${slug}`;
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
+    { name: t('nav.for_whom'), url: '/kimler-icin' },
+    { name: data.shortTitle, url: `/kimler-icin/${slug}` }
+  ]);
+
   return (
     <main className="bg-slate-50 min-h-screen pt-24 pb-24">
       <Helmet>
-        <title>{data.shortTitle} | Russia Market Entry</title>
+        <title>{`${data.title} | Russia Market Entry`}</title>
         <meta name="description" content={data.description} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={`${data.title} | Russia Market Entry`} />
+        <meta property="og:description" content={data.description} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

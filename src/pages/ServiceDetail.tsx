@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, Info } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { serviceDetails } from "../data/servicesData";
 import { serviceDetailsEN } from "../data/servicesDataEN";
+import { createBreadcrumbSchema, createServiceSchema } from "@/utils/seo";
 
 export default function ServiceDetail() {
   const { id } = useParams<{ id: string }>();
@@ -17,12 +18,28 @@ export default function ServiceDetail() {
   }
 
   const Icon = service.icon;
+  const canonicalUrl = `https://russiamarketentry.com/hizmetler/${id}`;
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
+    { name: t('nav.services'), url: '/hizmetler' },
+    { name: service.title, url: `/hizmetler/${id}` }
+  ]);
+
+  const serviceSchema = createServiceSchema(service.title, service.description, canonicalUrl);
 
   return (
     <main className="bg-slate-50 min-h-screen pt-12 pb-24">
       <Helmet>
         <title>{service.metaTitle}</title>
         <meta name="description" content={service.metaDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={service.metaTitle} />
+        <meta property="og:description" content={service.metaDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
       </Helmet>
 
       {/* Hero Header */}

@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { serviceDetails } from "@/data/servicesData";
 import { serviceDetailsEN } from "@/data/servicesDataEN";
+import { createBreadcrumbSchema } from "@/utils/seo";
 
 const iconsMap: Record<string, any> = {
   "operasyon-kurulumu": Settings,
@@ -29,6 +30,11 @@ const iconsMap: Record<string, any> = {
 export default function Services() {
   const { t, i18n } = useTranslation();
   const currentDetails = i18n.language === 'en' ? serviceDetailsEN : serviceDetails;
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
+    { name: t('nav.services'), url: '/hizmetler' }
+  ]);
   
   const featuresList = Object.entries(currentDetails).map(([key, data]) => ({
     id: key,
@@ -37,11 +43,25 @@ export default function Services() {
     points: data.contentSections?.[0]?.content?.props?.children?.[1]?.props?.children?.map((li: any) => li.props.children) || []
   }));
 
+  const metaTitle = i18n.language === 'en'
+    ? "Our Services - End-to-End E-Commerce & Export Solutions | Russia Market Entry"
+    : "Hizmetlerimiz - Rusya E-Ticaret & İhracat Çözümleri | Russia Market Entry";
+
+  const metaDesc = i18n.language === 'en'
+    ? "End-to-end e-commerce consulting, Wildberries, Ozon and Lamoda marketplace management, logistics, company formation and finance in Russia."
+    : "Türkiye'den Rusya'ya e-ticaret, Ozon, Wildberries, Lamoda entegrasyonu, şirket kuruluşu, gümrük, sertifikasyon, lojistik ve uçtan uca operasyon yönetimi hizmetlerimiz.";
+
   return (
     <main className="bg-slate-50 min-h-screen pt-8 pb-24">
       <Helmet>
-        <title>{t('nav.services')} | Russia Market Entry</title>
-        <meta name="description" content="End-to-end ecommerce and export consulting for the Russian market." />
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDesc} />
+        <link rel="canonical" href="https://russiamarketentry.com/hizmetler" />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDesc} />
+        <meta property="og:url" content="https://russiamarketentry.com/hizmetler" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       {/* Header */}
       <div className="bg-transparent py-16 mb-10">

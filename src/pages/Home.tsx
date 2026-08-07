@@ -5,8 +5,15 @@ import { ArrowRight, Globe2, ShieldCheck, TrendingUp, Users, CheckCircle2, Facto
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
 
+import { createOrganizationSchema, createBreadcrumbSchema } from "@/utils/seo";
+
 export default function Home() {
   const { t, i18n } = useTranslation();
+
+  const orgSchema = createOrganizationSchema();
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' }
+  ]);
 
   const trustStats = [
     { value: "100+", text: t('home.trust1'), icon: Users },
@@ -44,6 +51,12 @@ export default function Home() {
         <meta name="description" content={i18n.language === 'en' ? 'End-to-end operation guide for e-commerce, Ozon and Wildberries sales consulting, company formation, customs and logistics from Turkey to Russia.' : "Türkiye'den Rusya'ya e-ticaret, Ozon ve Wildberries satış danışmanlığı, şirket kuruluşu, gümrük ve lojistik alanlarında uçtan uca operasyon rehberiniz."} />
         <meta name="keywords" content="Rusya e-ticaret, Rusya pazarına giriş, Ozon hesap açma, Wildberries Türkiye, Rusya şirket kurmak, Rusya ihracat" />
         <link rel="canonical" href="https://russiamarketentry.com/" />
+        <meta property="og:title" content={i18n.language === 'en' ? 'Russia Market Entry | Ozon & Wildberries Management' : 'Rusya Pazarına Giriş | Ozon & Wildberries Türkiye Yönetimi'} />
+        <meta property="og:description" content={i18n.language === 'en' ? 'End-to-end operation guide for e-commerce, Ozon and Wildberries sales consulting, company formation, customs and logistics from Turkey to Russia.' : "Türkiye'den Rusya'ya e-ticaret, Ozon ve Wildberries satış danışmanlığı, şirket kuruluşu, gümrük ve lojistik alanlarında uçtan uca operasyon rehberiniz."} />
+        <meta property="og:url" content="https://russiamarketentry.com/" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       {/* Hero Section */}

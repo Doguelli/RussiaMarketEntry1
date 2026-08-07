@@ -5,15 +5,36 @@ import { ArrowRight, ShoppingBag, Factory, Users, CheckCircle2, Droplets } from 
 import { useTranslation } from "react-i18next";
 import { forWhomData } from "@/data/forWhomData";
 import { forWhomDataEN } from "@/data/forWhomDataEN";
+import { createBreadcrumbSchema } from "@/utils/seo";
 
 export default function ForWhom() {
   const { t, i18n } = useTranslation();
   const currentData = i18n.language === 'en' ? forWhomDataEN : forWhomData;
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
+    { name: t('nav.for_whom'), url: '/kimler-icin' }
+  ]);
+
+  const metaTitle = i18n.language === 'en'
+    ? "Who Is It For? - Solutions for Every Business Model | Russia Market Entry"
+    : "Kimler İçin? - Her İş Modeli İçin Çözümler | Russia Market Entry";
+
+  const metaDesc = i18n.language === 'en'
+    ? "Custom e-commerce entry solutions for textile brands, manufacturers, e-commerce entrepreneurs, and cosmetics brands in Russia."
+    : "Tekstil markaları, üreticiler, e-ticaret girişimcileri ve kozmetik markaları için özelleştirilmiş Rusya e-ticaret ve pazar giriş çözümleri.";
+
   return (
     <main className="bg-slate-50 min-h-screen pt-12 pb-24">
       <Helmet>
-        <title>{t('nav.for_whom')} | Russia Market Entry</title>
-        <meta name="description" content="Custom solutions for textile brands, manufacturers, and e-commerce entrepreneurs." />
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDesc} />
+        <link rel="canonical" href="https://russiamarketentry.com/kimler-icin" />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDesc} />
+        <meta property="og:url" content="https://russiamarketentry.com/kimler-icin" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

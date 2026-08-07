@@ -5,10 +5,17 @@ import { TrendingUp, Globe2, Truck, ShieldCheck, ArrowRight, BarChart3, Users, P
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { createBreadcrumbSchema } from "@/utils/seo";
 
 export default function WhyRussiaDetail() {
   const { hash } = useLocation();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
+    { name: t('nav.russia_market'), url: '/rusya-pazari' },
+    { name: i18n.language === 'en' ? 'Why Russia Analysis' : 'Neden Rusya Analizi', url: '/neden-rusya-detay' }
+  ]);
 
   useEffect(() => {
     if (hash) {
@@ -26,6 +33,12 @@ export default function WhyRussiaDetail() {
       <Helmet>
         <title>{t('why_russia_detail.title')}</title>
         <meta name="description" content={t('why_russia_detail.desc_meta')} />
+        <link rel="canonical" href="https://russiamarketentry.com/neden-rusya-detay" />
+        <meta property="og:title" content={t('why_russia_detail.title')} />
+        <meta property="og:description" content={t('why_russia_detail.desc_meta')} />
+        <meta property="og:url" content="https://russiamarketentry.com/neden-rusya-detay" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

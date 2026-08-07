@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { ArrowRight, BookOpen } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
+import { createBreadcrumbSchema } from "@/utils/seo";
 
 export default function Blog() {
   const { t, i18n } = useTranslation();
@@ -25,11 +26,22 @@ export default function Blog() {
     return parseTurkishDate(b.publishedAt) - parseTurkishDate(a.publishedAt);
   });
 
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
+    { name: t('nav.blog'), url: '/blog' }
+  ]);
+
   return (
-    <>
+    <main>
       <Helmet>
         <title>{t('blog.title')}</title>
         <meta name="description" content={t('blog.desc_meta')} />
+        <link rel="canonical" href="https://russiamarketentry.com/blog" />
+        <meta property="og:title" content={t('blog.title')} />
+        <meta property="og:description" content={t('blog.desc_meta')} />
+        <meta property="og:url" content="https://russiamarketentry.com/blog" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       {/* Hero Section */}
@@ -121,6 +133,6 @@ export default function Blog() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }

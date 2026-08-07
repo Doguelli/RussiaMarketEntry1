@@ -3,9 +3,15 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import { createBreadcrumbSchema } from "@/utils/seo";
 
 export default function About() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
+    { name: t('nav.about'), url: '/hakkimizda' }
+  ]);
+
   return (
     <main className="pt-8 pb-24">
       <Helmet>
@@ -13,6 +19,11 @@ export default function About() {
         <meta name="description" content={t('about.desc_meta')} />
         <meta name="keywords" content="hakkımızda, Rusya e-ticaret danışmanı, Ozon Türkiye partneri, Wildberries lojistik" />
         <link rel="canonical" href="https://russiamarketentry.com/hakkimizda" />
+        <meta property="og:title" content={t('about.title')} />
+        <meta property="og:description" content={t('about.desc_meta')} />
+        <meta property="og:url" content="https://russiamarketentry.com/hakkimizda" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       {/* Header */}
       <div className="bg-transparent py-20 mb-10 border-b border-slate-100">

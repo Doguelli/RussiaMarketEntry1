@@ -3,15 +3,26 @@ import { Helmet } from "react-helmet-async";
 import { ShoppingBag, TrendingUp, Globe2, Truck, ShieldCheck, CheckCircle2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { createBreadcrumbSchema } from "@/utils/seo";
 
 export default function RussiaMarket() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
+    { name: t('nav.russia_market'), url: '/rusya-pazari' }
+  ]);
 
   return (
     <main className="bg-slate-50 min-h-screen pt-12 pb-24">
       <Helmet>
         <title>{t('russia_market_page.title')}</title>
         <meta name="description" content={t('russia_market_page.desc_meta')} />
+        <link rel="canonical" href="https://russiamarketentry.com/rusya-pazari" />
+        <meta property="og:title" content={t('russia_market_page.title')} />
+        <meta property="og:description" content={t('russia_market_page.desc_meta')} />
+        <meta property="og:url" content="https://russiamarketentry.com/rusya-pazari" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

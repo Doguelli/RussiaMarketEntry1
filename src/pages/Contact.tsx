@@ -3,9 +3,14 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Mail, MapPin, Phone, ArrowRight, Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { createBreadcrumbSchema } from "@/utils/seo";
 
 export default function Contact() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
+    { name: t('nav.contact'), url: '/iletisim' }
+  ]);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -56,6 +61,11 @@ export default function Contact() {
         <meta name="description" content={t('contact.desc_meta')} />
         <meta name="keywords" content="Russia Market Entry iletişim, Rusya e-ticaret danışmanı Türkiye, Moskova ofisi, İstanbul gümrük danışmanlık" />
         <link rel="canonical" href="https://russiamarketentry.com/iletisim" />
+        <meta property="og:title" content={t('contact.title')} />
+        <meta property="og:description" content={t('contact.desc_meta')} />
+        <meta property="og:url" content="https://russiamarketentry.com/iletisim" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       {/* Header */}
       <div className="bg-transparent py-20 mb-10 border-b border-slate-100">
