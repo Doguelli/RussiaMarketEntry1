@@ -46,6 +46,16 @@ const routesToPrerender = [
     let html = template;
 
     if (helmet) {
+      // Clean up any default head tags from template to avoid duplicates
+      html = html
+        .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
+        .replace(/<link[^>]*rel=["']canonical["'][^>]*\/?>/gi, "")
+        .replace(/<meta[^>]*name=["']description["'][^>]*\/?>/gi, "")
+        .replace(/<meta[^>]*property=["']og:title["'][^>]*\/?>/gi, "")
+        .replace(/<meta[^>]*property=["']og:description["'][^>]*\/?>/gi, "")
+        .replace(/<meta[^>]*property=["']og:url["'][^>]*\/?>/gi, "")
+        .replace(/<meta[^>]*property=["']og:type["'][^>]*\/?>/gi, "");
+
       const headTags = [
         helmet.title?.toString(),
         helmet.meta?.toString(),
