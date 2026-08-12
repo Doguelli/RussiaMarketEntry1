@@ -2379,6 +2379,355 @@ export const blogPosts: BlogPost[] = [
         </div>
       </div>
     )
+  },
+  {
+    slug: "eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey",
+    metaTitle: "EAC Belgesi Nedir? Rusya'ya İhracat İçin Bilmeniz Gereken Her Şey",
+    metaTitleEn: "What is EAC Certificate? Everything You Need to Know for Exporting to Russia",
+    title: "EAC Belgesi Nedir? Rusya'ya İhracat İçin Bilmeniz Gereken Her Şey",
+    titleEn: "What is EAC Certificate? Everything You Need to Know for Exporting to Russia",
+    excerpt: "EAC belgesi nedir, hangi ürünlerde gereklidir ve Rusya'ya ihracat sürecinde nasıl alınır? Türk üreticiler için EAC uygunluk sürecini adım adım açıklıyoruz.",
+    excerptEn: "What is the EAC certificate, which products require it, and how is it obtained during export to Russia? We explain the EAC conformity process step by step for Turkish manufacturers.",
+    publishedAt: "10 Ağustos 2026",
+    readTime: "5 dk okuma",
+    imageUrl: "/blog11.png",
+    content: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">Rusya'ya ürün ihraç etmek isteyen Türk üreticilerin karşılaştığı en önemli konulardan biri EAC uygunluk sürecidir. EAC, Eurasian Conformity anlamına gelir ve Avrasya Ekonomik Birliği (EAEU) pazarında ürünün ilgili teknik düzenlemelerin gerekliliklerine uygun olduğunu gösteren işarettir.</p>
+        
+        <div className="bg-amber-50 border border-amber-200 p-6 rounded-2xl text-amber-900 leading-relaxed space-y-2">
+          <strong className="text-lg font-bold block text-amber-950">Önemli Bir Ayrım:</strong>
+          <p>EAC tek başına bir "sertifika" değildir. Ürünün hangi uygunluk değerlendirmesine tabi olduğu; ürünün niteliğine, ilgili teknik düzenlemeye ve uygulanan uygunluk şemasına göre belirlenir.</p>
+          <p>EAEU sisteminde zorunlu uygunluk değerlendirmesi temel olarak <strong>Uygunluk Beyanı (Declaration of Conformity)</strong> ve <strong>Uygunluk Sertifikasyonu (Certificate of Conformity)</strong> şeklinde uygulanır.</p>
+        </div>
+
+        <p className="text-lg leading-relaxed text-slate-600 font-medium">Bu nedenle Rusya'ya ihracat planlayan bir üreticinin ilk sorusu "EAC belgesini nasıl alırım?" değil, "Ürünüm hangi EAEU teknik düzenlemesine tabi ve hangi uygunluk değerlendirmesi gerekiyor?" olmalıdır.</p>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">EAC Neden Gereklidir?</h2>
+          <p className="text-slate-600 leading-relaxed">EAEU ülkelerinde ürün güvenliği ve teknik uygunluk, ürün gruplarına göre belirlenen teknik düzenlemeler üzerinden yönetilir. EAEU'nun teknik düzenlemeleri arasında:</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 my-4">
+            {[
+              "Makine ve ekipman",
+              "Alçak gerilim ekipmanları",
+              "Elektromanyetik uyumluluk",
+              "Ambalaj",
+              "Oyuncaklar",
+              "Parfüm ve kozmetik",
+              "Hafif sanayi ürünleri (Tekstil)",
+              "Mobilya",
+              "Gıda ürünleri"
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100 text-slate-700 text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-accent-500 shrink-0" />
+                {item}
+              </div>
+            ))}
+          </div>
+          <p className="text-slate-600 leading-relaxed">için farklı düzenlemeler bulunmaktadır. EAEU Komisyonu güncel teknik düzenlemelerin ve bunlara ilişkin standartların listesini yayımlar. Dolayısıyla her ürün için aynı EAC prosedürü uygulanmaz.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+          <div className="bg-primary-50/70 border border-primary-100 p-6 rounded-3xl space-y-3">
+            <h3 className="text-xl font-bold text-primary-600">Uygunluk Sertifikası</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">Bazı ürünlerde uygunluğun, yetkili bir uygunluk değerlendirme kuruluşı tarafından sertifikasyon yoluyla doğrulanması gerekir. Bu durumda ürün için <strong>Certificate of Conformity</strong> düzenlenir.</p>
+          </div>
+          <div className="bg-slate-50 border border-slate-200 p-6 rounded-3xl space-y-3">
+            <h3 className="text-xl font-bold text-slate-800">Uygunluk Beyanı</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">Bazı ürünlerde ise üretici veya mevzuat kapsamında yetkilendirilmiş başvuru sahibi, ürünün ilgili teknik düzenlemelere uygunluğunu beyan eder. Bu durumda <strong>Declaration of Conformity</strong> kullanılır.</p>
+          </div>
+        </div>
+        <p className="text-slate-600 italic text-sm">EAEU'nun resmi açıklamasına göre zorunlu uygunluk değerlendirmesinin hangi yöntemle yapılacağı ilgili teknik düzenleme tarafından belirlenir. Bu nedenle yalnızca ürün kategorisine bakarak "kesin sertifika gerekir" veya "kesin deklarasyon yeterlidir" demek doğru değildir.</p>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">EAC Süreci Nasıl İşler?</h2>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Tanımlanır</h3>
+              <p className="text-slate-600">Öncelikle ürünün teknik özellikleri, kullanım amacı, ürün tipi, üretim şekli ve GTİP / ürün sınıflandırması incelenir.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">İlgili Teknik Düzenleme Belirlenir</h3>
+              <p className="text-slate-600">Ürünün hangi EAEU teknik düzenlemesinin kapsamına girdiği belirlenir. Yanlış teknik düzenleme üzerinden başlatılan bir süreç daha sonra yeniden yapılmak zorunda kalabilir.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Uygunluk Değerlendirme Yöntemi Belirlenir</h3>
+              <p className="text-slate-600">Ürüne göre uygunluk sertifikası, uygunluk beyanı, devlet kayıt işlemleri veya ilgili teknik düzenlemede öngörülen başka bir değerlendirme yöntemi gerekebilir.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Teknik Belgeler Hazırlanır</h3>
+              <p className="text-slate-600">Ürünün niteliğine göre teknik dosyada; ürün teknik özellikleri, kullanım kılavuzu, üretim bilgileri, test raporları, etiket bilgileri, üretici bilgileri, ürün fotoğrafları ve mevcut sertifikalar talep edilebilir.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Test ve Değerlendirme</h3>
+              <p className="text-slate-600">Uygulanacak şemaya göre ürün üzerinde testler veya teknik değerlendirmeler gerçekleştirilir.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">6</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Belge Kaydı</h3>
+              <p className="text-slate-600">Gerekli uygunluk belgesi düzenlendikten veya uygunluk beyanı kaydedildikten sonra EAEU ortak kayıt sistemi üzerinden doğrulanabilir.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">7</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">EAC İşareti</h3>
+              <p className="text-slate-600">Uygunluk süreci tamamlandıktan sonra, ilgili gereklilikler kapsamında ürün üzerinde kurallara uygun biçimde EAC işareti kullanılabilir.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Türkiye'deki CE ile EAC Aynı Şey mi?</h2>
+          <p className="text-slate-700 leading-relaxed mb-3"><strong>Hayır.</strong> CE ve EAC benzer bir mantığa sahip olsa da aynı sistem değildir.</p>
+          <ul className="space-y-2 text-slate-600">
+            <li>• <strong>CE:</strong> Avrupa Birliği pazarındaki ilgili mevzuat çerçevesinde kullanılan uygunluk işaretidir.</li>
+            <li>• <strong>EAC:</strong> Avrasya Ekonomik Birliği (EAEU) pazarında geçerli teknik düzenlemeler kapsamında kullanılan uygunluk işaretidir.</li>
+          </ul>
+          <p className="text-slate-700 leading-relaxed mt-4">Bu nedenle <em>"Ürünümüz CE belgeli, o halde Rusya'ya direkt satabiliriz."</em> yaklaşımı doğru değildir. Ürünün Rusya/EAEU pazarına girişinden önce ilgili EAEU teknik düzenlemelerinin ayrıca değerlendirilmesi gerekir.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Türk Üreticiler İçin Neden Önemli?</h2>
+          <p className="text-slate-600 leading-relaxed">Türkiye'den Rusya'ya ürün gönderen bir üretici açısından EAC süreci yalnızca bir belge hazırlama işlemi değildir. Aslında süreç şu zincirin vazgeçilmez bir parçasıdır:</p>
+          <div className="flex flex-wrap items-center justify-center gap-2 bg-primary-50 p-6 rounded-2xl text-slate-800 font-semibold text-center my-4">
+            <span>Ürün</span> <span className="text-accent-500">→</span>
+            <span>Teknik Düzenleme</span> <span className="text-accent-500">→</span>
+            <span>Uygunluk Değerlendirmesi</span> <span className="text-accent-500">→</span>
+            <span>Belgelendirme</span> <span className="text-accent-500">→</span>
+            <span>Etiketleme</span> <span className="text-accent-500">→</span>
+            <span>İthalat</span> <span className="text-accent-500">→</span>
+            <span>Marketplace</span>
+          </div>
+          <p className="text-slate-600 leading-relaxed">Örneğin Wildberries veya Ozon üzerinden satış planlanıyorsa, ürünün yalnızca marketplace'e yüklenmesi yeterli değildir. Ürünün Rusya'da yasal olarak piyasaya sunulabilmesi için ilgili ürün mevzuatının baştan değerlendirilmesi gerekir.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+          <div className="bg-white border border-slate-200 p-6 rounded-3xl shadow-sm space-y-3">
+            <h3 className="text-xl font-bold text-primary-600">EAC</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">Ürünün ilgili EAEU teknik düzenlemelerine ve güvenlik standartlarına uygunluğuyla ilgilidir.</p>
+          </div>
+          <div className="bg-white border border-slate-200 p-6 rounded-3xl shadow-sm space-y-3">
+            <h3 className="text-xl font-bold text-accent-500">Çestniy Znak</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">Belirli ürün gruplarında dijital ürün işaretleme ve izlenebilirlik (DataMatrix) sistemidir.</p>
+          </div>
+        </div>
+        <p className="text-slate-600 text-sm italic">Yani bir ürün için hem EAC uygunluk süreci hem de Çestniy Znak yükümlülüğü söz konusu olabilir. Bunları tek bir işlem gibi değerlendirmek doğru değildir.</p>
+
+        <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100 my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşımı</h2>
+          <p className="text-slate-700 leading-relaxed mb-4">Rusya'ya girişte EAC sürecinin sevkiyattan hemen önce ele alınması en sık karşılaşılan operasyonel hatalardan biridir. Doğru yaklaşım:</p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-slate-800 font-medium text-sm text-center">
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Ürün seçimi</span>
+            <span className="text-accent-500 font-bold">↓</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Ürün uygunluk analizi</span>
+            <span className="text-accent-500 font-bold">↓</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">EAC / Uygunluk</span>
+            <span className="text-accent-500 font-bold">↓</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Çestniy Znak</span>
+            <span className="text-accent-500 font-bold">↓</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">İthalat</span>
+            <span className="text-accent-500 font-bold">↓</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Marketplace</span>
+          </div>
+          <p className="text-slate-600 mt-4">Uygunluk süreci, ürün Rusya'ya geldikten sonra değil, pazara giriş planının en başında ele alınmalıdır.</p>
+        </div>
+
+        <div className="bg-white border border-slate-200 p-8 rounded-3xl my-8 shadow-sm">
+          <h3 className="text-xl font-bold text-primary-600 mb-4">EAC Sevkiyat Öncesi Kontrol Listesi</h3>
+          <ul className="space-y-2.5 text-slate-700">
+            {[
+              "Ürün doğru şekilde sınıflandırıldı mı?",
+              "İlgili EAEU teknik düzenlemesi belirlendi mi?",
+              "Uygunluk değerlendirme yöntemi belirlendi mi?",
+              "Gerekli teknik belgeler hazır mı?",
+              "Gerekli testler tamamlandı mı?",
+              "Sertifika veya deklarasyon süreci tamamlandı mı?",
+              "EAC işareti gereklilikleri kontrol edildi mi?",
+              "Çestniy Znak kapsamı ayrıca kontrol edildi mi?",
+              "Marketplace gereklilikleri kontrol edildi mi?"
+            ].map((check) => (
+              <li key={check} className="flex items-center gap-3">
+                <span className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-xs">✓</span>
+                <span>{check}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">EAC süreci, Rusya'ya ihracat yapan Türk üreticiler için yalnızca bir sertifika alma işlemi değildir.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Doğru ürün sınıflandırması, doğru teknik düzenleme, doğru uygunluk değerlendirmesi ve doğru etiketleme; Rusya pazarına girişin temel yapı taşlarıdır. Russia Market Entry olarak tüm uygunluk ve pazaryeri süreçlerinizi uçtan uca yönetiyoruz.</p>
+        </div>
+      </div>
+    ),
+    contentEn: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">For Turkish manufacturers wishing to export products to Russia, understanding the EAC conformity process is paramount. EAC stands for Eurasian Conformity and signifies that a product satisfies the technical regulations of the Eurasian Economic Union (EAEU) market.</p>
+        
+        <div className="bg-amber-50 border border-amber-200 p-6 rounded-2xl text-amber-900 leading-relaxed space-y-2">
+          <strong className="text-lg font-bold block text-amber-950">A Crucial Distinction:</strong>
+          <p>EAC is not simply a single "certificate". The mandatory assessment type depends on the product's nature, the applicable technical regulation, and the designated conformity scheme.</p>
+          <p>In the EAEU framework, mandatory conformity assessment is primarily executed as either a <strong>Declaration of Conformity</strong> or a <strong>Certificate of Conformity</strong>.</p>
+        </div>
+
+        <p className="text-lg leading-relaxed text-slate-600 font-medium">Therefore, the first question for an exporter is not "How do I get an EAC certificate?", but "Which EAEU technical regulation applies to my product and what type of conformity assessment is required?"</p>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Why is EAC Required?</h2>
+          <p className="text-slate-600 leading-relaxed">Product safety and technical compliance in EAEU member states are governed by specific technical regulations per product category, including:</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 my-4">
+            {[
+              "Machinery & Equipment",
+              "Low Voltage Equipment",
+              "Electromagnetic Compatibility",
+              "Packaging",
+              "Toys",
+              "Perfumes & Cosmetics",
+              "Light Industry (Textiles)",
+              "Furniture",
+              "Food Products"
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100 text-slate-700 text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-accent-500 shrink-0" />
+                {item}
+              </div>
+            ))}
+          </div>
+          <p className="text-slate-600 leading-relaxed">Each category is governed by distinct regulations. The EAEU Commission publishes updated lists of technical rules and standards, meaning a uniform EAC procedure does not apply across all goods.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+          <div className="bg-primary-50/70 border border-primary-100 p-6 rounded-3xl space-y-3">
+            <h3 className="text-xl font-bold text-primary-600">Certificate of Conformity</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">Required when technical rules specify third-party verification through an accredited certification body. In this case, a <strong>Certificate of Conformity</strong> is issued.</p>
+          </div>
+          <div className="bg-slate-50 border border-slate-200 p-6 rounded-3xl space-y-3">
+            <h3 className="text-xl font-bold text-slate-800">Declaration of Conformity</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">Used when the manufacturer or authorized applicant declares compliance with technical regulations based on technical files and test reports. In this case, a <strong>Declaration of Conformity</strong> is registered.</p>
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">How Does the EAC Workflow Progress?</h2>
+          
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Product Identification</h3>
+              <p className="text-slate-600">Technical specs, intended use, product type, manufacturing details, and HS / Customs classification are thoroughly reviewed.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Determine Applicable Technical Regulations</h3>
+              <p className="text-slate-600">The specific EAEU Technical Regulation covering the item is pinpointed to avoid misclassification delays.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Select Assessment Method</h3>
+              <p className="text-slate-600">Depending on the item, a certificate, declaration, or state registration path is determined.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Prepare Technical Documentation</h3>
+              <p className="text-slate-600">Compiling technical dossiers including user manuals, production specs, test reports, label mockups, and manufacturer credentials.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Testing & Evaluation</h3>
+              <p className="text-slate-600">Laboratory testing or technical evaluations are executed according to the prescribed scheme.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">6</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Document Registration</h3>
+              <p className="text-slate-600">Once issued or registered, conformity records are validated through the official EAEU public registry.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">7</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">EAC Mark Affixing</h3>
+              <p className="text-slate-600">After successful registration, the official EAC mark is affixed to packaging in accordance with technical formatting rules.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Are CE and EAC the Same Thing?</h2>
+          <p className="text-slate-700 leading-relaxed mb-3"><strong>No.</strong> While CE and EAC share underlying compliance principles, they belong to different regulatory jurisdictions.</p>
+          <ul className="space-y-2 text-slate-600">
+            <li>• <strong>CE:</strong> Mandatory conformity mark for products in the European Economic Area.</li>
+            <li>• <strong>EAC:</strong> Mandatory conformity mark for products within the Eurasian Economic Union (EAEU).</li>
+          </ul>
+          <p className="text-slate-700 leading-relaxed mt-4">Having a CE mark does not grant automatic entry into Russia; EAEU technical regulations must be evaluated independently.</p>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100 my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">The Russia Market Entry Approach</h2>
+          <p className="text-slate-700 leading-relaxed mb-4">Leaving EAC compliance until right before shipment is a common operational pitfall. The correct sequential roadmap is:</p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-slate-800 font-medium text-sm text-center">
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Product Selection</span>
+            <span className="text-accent-500 font-bold">↓</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Compliance Audit</span>
+            <span className="text-accent-500 font-bold">↓</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">EAC / Assessment</span>
+            <span className="text-accent-500 font-bold">↓</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Chestny ZNAK</span>
+            <span className="text-accent-500 font-bold">↓</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Import Clearance</span>
+            <span className="text-accent-500 font-bold">↓</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Marketplace Launch</span>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Conclusion</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">EAC compliance is much more than obtaining a certificate—it is the foundation of legitimate, scalable trade with Russia.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry manages your compliance, labelling, and marketplace integration end-to-end to drive your growth safely and efficiently.</p>
+        </div>
+      </div>
+    )
   }
 ];
 

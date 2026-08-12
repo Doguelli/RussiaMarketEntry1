@@ -36,41 +36,49 @@ const routesToPrerender = [
   "/blog/rusyada-en-cok-satan-urunler-2026",
   "/blog/wildberries-depo-stratejisi-basarili-satis",
   "/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi",
-  "/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur"
+  "/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur",
+  "/blog/eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey"
 ];
 
 (async () => {
   for (const url of routesToPrerender) {
-    const { html: appHtml, helmet } = render(url);
+    const { html: appHtml } = render(url);
+
+    // Extract head elements rendered by React for this route
+    const titles = appHtml.match(/<title[^>]*>[\s\S]*?<\/title>/gi) || [];
+    const metas = appHtml.match(/<meta[^>]*\/?>/gi) || [];
+    const links = appHtml.match(/<link[^>]*\/?>/gi) || [];
+    const jsonLd = appHtml.match(/<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi) || [];
+
+    // Clean appHtml from extracted head elements so they don't remain in #root
+    let cleanAppHtml = appHtml
+      .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
+      .replace(/<meta[^>]*\/?>/gi, "")
+      .replace(/<link[^>]*\/?>/gi, "")
+      .replace(/<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, "");
 
     let html = template;
 
-    if (helmet) {
-      // Clean up any default head tags from template to avoid duplicates
-      html = html
-        .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
-        .replace(/<link[^>]*rel=["']canonical["'][^>]*\/?>/gi, "")
-        .replace(/<meta[^>]*name=["']description["'][^>]*\/?>/gi, "")
-        .replace(/<meta[^>]*property=["']og:title["'][^>]*\/?>/gi, "")
-        .replace(/<meta[^>]*property=["']og:description["'][^>]*\/?>/gi, "")
-        .replace(/<meta[^>]*property=["']og:url["'][^>]*\/?>/gi, "")
-        .replace(/<meta[^>]*property=["']og:type["'][^>]*\/?>/gi, "");
+    // Clean up default/fallback head tags from template to avoid duplicates
+    html = html
+      .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
+      .replace(/<link[^>]*rel=["']canonical["'][^>]*\/?>/gi, "")
+      .replace(/<meta[^>]*name=["']description["'][^>]*\/?>/gi, "")
+      .replace(/<meta[^>]*property=["']og:title["'][^>]*\/?>/gi, "")
+      .replace(/<meta[^>]*property=["']og:description["'][^>]*\/?>/gi, "")
+      .replace(/<meta[^>]*property=["']og:url["'][^>]*\/?>/gi, "")
+      .replace(/<meta[^>]*property=["']og:type["'][^>]*\/?>/gi, "")
+      .replace(/<meta[^>]*property=["']og:image["'][^>]*\/?>/gi, "");
 
-      const headTags = [
-        helmet.title?.toString(),
-        helmet.meta?.toString(),
-        helmet.link?.toString(),
-        helmet.script?.toString()
-      ].filter(Boolean).join("\n    ");
+    const routeHeadTags = [...titles, ...metas, ...links, ...jsonLd].join("\n    ");
 
-      if (headTags) {
-        html = html.replace("</head>", `  ${headTags}\n</head>`);
-      }
+    if (routeHeadTags) {
+      html = html.replace("</head>", `  ${routeHeadTags}\n</head>`);
     }
 
     html = html.replace(
       '<div id="root"></div>',
-      `<div id="root">${appHtml}</div>`
+      `<div id="root">${cleanAppHtml}</div>`
     );
 
     const filePath =
