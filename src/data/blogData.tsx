@@ -2728,7 +2728,368 @@ export const blogPosts: BlogPost[] = [
         </div>
       </div>
     )
+  },
+  {
+    slug: "rusyada-ooo-sirketi-nasil-kurulur-turk-markalari-icin-2026-rehberi",
+    metaTitle: "Rusya'da OOO Şirketi Nasıl Kurulur? Türk Markaları İçin 2026 Rehberi",
+    metaTitleEn: "How to Establish an OOO Company in Russia? 2026 Guide for Turkish Brands",
+    title: "Rusya'da OOO Şirketi Nasıl Kurulur? Türk Markaları İçin 2026 Rehberi",
+    titleEn: "How to Establish an OOO Company in Russia? 2026 Guide for Turkish Brands",
+    excerpt: "Rusya'da OOO şirket nedir, yabancı şirketler nasıl kurabilir, bankacılık ve FNS kayıt süreçleri nasıl işler? Türk markaları için 2026 adım adım OOO şirket kurulum rehberi.",
+    excerptEn: "What is an OOO company in Russia, how can foreign entities establish one, and how do banking and FNS registration workflows operate? Step-by-step 2026 guide for Turkish brands.",
+    publishedAt: "13 Ağustos 2026",
+    readTime: "6 dk okuma",
+    imageUrl: "/blog12.jpeg",
+    content: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">
+          Rusya'da şirket kurmak isteyen yabancı girişimcilerin en sık karşılaştığı şirket türlerinden biri <strong>OOO — Общество с ограниченной ответственностью</strong>'dur. Türk hukukundaki Limited Şirket (Ltd. Şti.) yapısına benzer bir sermaye şirketi olarak düşünülebilir.
+        </p>
+
+        <p className="text-slate-600 leading-relaxed">
+          Rusya Federal Vergi Servisi (FNS), OOO'yu Rusya'daki en yaygın tüzel kişi türlerinden biri olarak tanımlıyor ve küçük ile orta ölçekli işletmeler açısından son derece uygun bir yapı olarak gösteriyor.
+        </p>
+
+        <div className="bg-primary-50/70 border border-primary-100 p-6 rounded-3xl space-y-3">
+          <h2 className="text-xl font-bold text-primary-600">Türk Şirketi Rusya'da OOO Kurabilir mi?</h2>
+          <p className="text-slate-700 leading-relaxed">
+            <strong>Evet, yabancı yatırımcıların Rusya'da tüzel kişilik oluşturması mümkündür.</strong> Yabancı bir şirketin OOO'da kurucu olması halinde, FNS kayıt sürecinde yabancı tüzel kişinin statüsünü doğrulayan resmi belgeler de talep edilir.
+          </p>
+          <p className="text-slate-600 text-sm leading-relaxed">
+            FNS'nin resmi kayıt dokümanlarında yabancı tüzel kişinin kurucu olması durumunda bunu kanıtlayan belgenin sunulması gerektiği belirtiliyor. Ancak yabancı ortaklı kuruluş, yalnızca standart bir Rus vatandaşının OOO kurması kadar basit değildir. Belge hazırlama, noter onaylı tercüme, apostil/legalizasyon, yetkilendirme ve bankacılık süreçleri önceden titizlikle planlanmalıdır.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">OOO Ne Zaman Mantıklı?</h2>
+          <p className="text-slate-600 leading-relaxed">
+            Her Türk markasının Rusya'da doğrudan şirket kurması gerekmez. Örneğin pazarı test etmek isteyen bir üretici için:
+          </p>
+          <div className="bg-slate-100 p-4 rounded-2xl text-slate-800 font-semibold text-center my-2">
+            Türkiye → Rusya Partneri → Marketplace / Satış
+          </div>
+          <p className="text-slate-600 leading-relaxed">
+            modeli çok daha düşük başlangıç maliyetli ve hızlı olabilir. Ancak Rusya'da uzun vadeli kalıcı bir operasyon kurulacaksa OOO kurmak anlamlı hale gelir. Özellikle şu hedeflerde OOO yapısı değerlendirilmelidir:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4">
+            {[
+              "Yerel yerleşik ekip çalıştırmak",
+              "Rusya'da doğrudan banka hesabı kullanmak",
+              "İthalat operasyonunu yerelleştirmek",
+              "Marketplace operasyonunu doğrudan yönetmek",
+              "Yerel distribütörlük ağı oluşturmak",
+              "Uzun vadeli kalıcı ticari yapı kurmak"
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100 text-slate-700 text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-accent-500 shrink-0" />
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">OOO Kuruluşunda Temel Adımlar</h2>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Şirket Yapısı Belirlenir</h3>
+              <p className="text-slate-600">Öncelikle kurucu/ortaklar, ortaklık oranları, şirket genel müdürü (Gendirektor) ve temel faaliyet alanları kararlaştırılır.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Şirket Adresi (Yuridicheskiy Adres) Belirlenir</h3>
+              <p className="text-slate-600">Rusya'da tüzel kişinin resmi kayıt adresi bulunmalıdır. FNS, kayıt adresini şirketin sürekli faaliyet gösteren yürütme organının bulunduğu yerle ilişkilendirir. Bu nedenle yalnızca sahte "adres satın almak" yerine şirketle gerçekten ilişkilendirilebilir ve resmi tebligatlara uygun bir adres oluşturulmalıdır.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Şirket Unvanı Belirlenir</h3>
+              <p className="text-slate-600">Şirketin resmi Rusça ticari unvanı belirlenir. Marka adı ile tüzel kişi adının birebir aynı olması gerekmez. Örneğin markanız "BRAND" iken şirket adınız <strong>ООО «XXX»</strong> şeklinde tescil edilebilir.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Faaliyet Kodları (OKVED) Belirlenir</h3>
+              <p className="text-slate-600">OOO'nun gerçekleştireceği faaliyetler için uygun OKVED kodları seçilir. Özellikle marketplace, ithalat, toptan satış ve perakendenin birlikte yürütüleceği yapılarda doğru kod seçimi kritik önem taşır.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Kuruluş Belgeleri Hazırlanır</h3>
+              <p className="text-slate-600">FNS'nin güncel prosedüründe R11001 başvuru formu, şirketin kurulmasına ilişkin karar/protokol ve ana sözleşme (Ustav) yer alır. Elektronik veya belirli noter başvurularında devlet harcı muafiyetleri uygulanabilmektedir.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">6</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Yabancı Ortak İçin Ek Belgeler</h3>
+              <p className="text-slate-600">Türk şirketinin Rus OOO'suna ortak olması durumunda; ticaret sicil gazetesi, faaliyet belgesi ve imza sirküleri gibi belgelerin apostilli/konsolosluk onaylı Rusça noter tercümeleri sunulmalıdır.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">7</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Devlet Kaydı (FNS)</h3>
+              <p className="text-slate-600">Belgeler sunulduktan sonra FNS devlet kaydını kural olarak 3 iş günü içinde tamamlar. Ancak yabancı evrakların hazırlanması ve doğrulanması nedeniyle toplam hazırlık süreci 3 günün üzerindedir.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">8</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Banka Hesabı Açılışı</h3>
+              <p className="text-slate-600">Şirket tescilinden sonra ticari tahsilatlar, ithalat ödemeleri, vergi ve pazaryeri gelirlerinin yönetimi için Rusya'da kurumsal banka hesabı açılır ve sermaye transferi gerçekleştirilir.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-amber-50 border border-amber-200 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-amber-950 mb-3">OOO Kurmak Rusya'da Satış Yapmanın Ön Koşulu mu?</h2>
+          <p className="text-amber-900 leading-relaxed">
+            <strong>Her durumda değil!</strong> Bu, Russia Market Entry olarak özellikle vurguladığımız kritik bir konudur. Rusya'ya giriş modeli; ürün, satış kanalı, ithalat yapısı, pazaryeri modeli, ödeme altyapısı, vergi ve lojistiğe göre değişkenlik gösterir.
+          </p>
+          <p className="text-amber-900 leading-relaxed mt-2 font-medium">
+            "Rusya'da satış yapmak istiyorsanız mutlaka OOO kurmalısınız" genellemesi yanlıştır. Önce iş modeli netleştirilmeli, ardından gerekli hukuki yapı belirlenmelidir.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+          <div className="bg-white border border-slate-200 p-6 rounded-3xl shadow-sm space-y-3">
+            <h3 className="text-xl font-bold text-primary-600">OOO'nun Avantajları</h3>
+            <ul className="space-y-2 text-slate-600 text-sm">
+              <li className="flex items-center gap-2"><span className="text-emerald-500 font-bold">✓</span> Yerel ticari operasyon kurabilme</li>
+              <li className="flex items-center gap-2"><span className="text-emerald-500 font-bold">✓</span> Doğrudan Rus banka hesabı altyapısı</li>
+              <li className="flex items-center gap-2"><span className="text-emerald-500 font-bold">✓</span> Yerel personel istihdam imkanı</li>
+              <li className="flex items-center gap-2"><span className="text-emerald-500 font-bold">✓</span> Pazaryeri operasyonlarını doğrudan yürütme</li>
+            </ul>
+          </div>
+          <div className="bg-white border border-slate-200 p-6 rounded-3xl shadow-sm space-y-3">
+            <h3 className="text-xl font-bold text-slate-800">Sorumluluklar</h3>
+            <ul className="space-y-2 text-slate-600 text-sm">
+              <li className="flex items-center gap-2"><span className="text-amber-500 font-bold">•</span> Düzenli muhasebe ve defter tutma</li>
+              <li className="flex items-center gap-2"><span className="text-amber-500 font-bold">•</span> Vergi ve FNS raporlama yükümlülükleri</li>
+              <li className="flex items-center gap-2"><span className="text-amber-500 font-bold">•</span> Şirket müdürü ve adres maliyetleri</li>
+              <li className="flex items-center gap-2"><span className="text-amber-500 font-bold">•</span> Banka mevzuatı ve döviz kontrol takibi</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100 my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşımı</h2>
+          <p className="text-slate-700 leading-relaxed mb-4">
+            Bizim açımızdan temel soru <em>"OOO kurabilir miyiz?"</em> değil, <strong>"OOO bizim iş modelimiz için gerekli mi?"</strong> sorusudur.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-slate-800 font-medium text-sm text-center my-4">
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">İş Modeli</span>
+            <span className="text-accent-500 font-bold">→</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Giriş Modeli</span>
+            <span className="text-accent-500 font-bold">→</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Hukuki Yapı</span>
+            <span className="text-accent-500 font-bold">→</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Vergi & Banka</span>
+            <span className="text-accent-500 font-bold">→</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Operasyon</span>
+          </div>
+          <p className="text-slate-600 text-sm mt-2">
+            Şirket kuruluşunu pazara giriş stratejisinden bağımsız tekil bir işlem olarak ele almayıp bütünsel olarak yönetiyoruz.
+          </p>
+        </div>
+
+        <div className="bg-white border border-slate-200 p-8 rounded-3xl my-8 shadow-sm">
+          <h3 className="text-xl font-bold text-primary-600 mb-4">OOO Kuruluş Checklist</h3>
+          <ul className="space-y-2.5 text-slate-700">
+            {[
+              "Rusya'daki iş modeli belirlendi mi?",
+              "OOO gerekliliği değerlendirildi mi?",
+              "Ortaklık yapısı ve sermaye kararlaştırıldı mı?",
+              "Şirket müdürü (Gendirektor) belirlendi mi?",
+              "Resmi şirket kayıt adresi sağlandı mı?",
+              "OKVED faaliyet kodları seçildi mi?",
+              "R11001 başvuru formu ve karar/protokol hazırlandı mı?",
+              "Ana sözleşme (Ustav) tanzim edildi mi?",
+              "Yabancı ortak belgeleri ve Rusça tercümeleri tamamlandı mı?",
+              "Devlet kayıt başvurusu yapıldı mı?",
+              "Banka hesabı ve sermaye transferi planlandı mı?",
+              "Vergi ve muhasebe altyapısı oluşturuldu mu?"
+            ].map((check) => (
+              <li key={check} className="flex items-center gap-3">
+                <span className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-xs">✓</span>
+                <span>{check}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">
+            Rusya'da OOO kurmak, Türk markalarının pazara girişinde güçlü bir seçenek olabilir; ancak her marka için ilk adım olmak zorunda değildir.
+          </p>
+          <p className="text-sm text-slate-400 relative z-10 border-t border-slate-800 pt-4 mt-6">
+            <strong>Not:</strong> Şirket kuruluşu, vergi ve yabancı ortaklık kuralları güncel mevzuata ve somut şirket yapısına göre değişebilir. Bu içerik genel bilgilendirme amaçlıdır; kuruluş öncesinde güncel FNS gereklilikleri ve profesyonel hukuk/muhasebe danışmanlığı ayrıca kontrol edilmelidir.
+          </p>
+        </div>
+      </div>
+    ),
+    contentEn: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">
+          When foreign entrepreneurs seek to establish a business entity in Russia, the most common corporate form encountered is the <strong>OOO — Общество с ограниченной ответственностью</strong> (Limited Liability Company). It functions similarly to an Ltd. or LLC in international jurisdiction.
+        </p>
+
+        <p className="text-slate-600 leading-relaxed">
+          The Federal Tax Service of Russia (FNS) classifies the OOO as the most versatile legal structure for small and medium-sized commercial enterprises entering the Russian market.
+        </p>
+
+        <div className="bg-primary-50/70 border border-primary-100 p-6 rounded-3xl space-y-3">
+          <h2 className="text-xl font-bold text-primary-600">Can a Foreign Entity Found an OOO in Russia?</h2>
+          <p className="text-slate-700 leading-relaxed">
+            <strong>Yes, foreign legal entities and individuals can act as founders of a Russian OOO.</strong> When a foreign corporation is a founder, official documentation verifying its legal existence in its home country is mandatory during FNS submission.
+          </p>
+          <p className="text-slate-600 text-sm leading-relaxed">
+            While legally straightforward, establishing a company with foreign ownership involves specialized steps including notarized translations, apostille/consular legalization, power of attorney execution, and banking compliance protocols.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">When Does Establishing an OOO Make Sense?</h2>
+          <p className="text-slate-600 leading-relaxed">
+            Not every brand needs a Russian company on day one. For initial market testing, an indirect model (e.g., Exporter → Local Russian Partner → Marketplaces) often offers lower upfront commitment.
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            However, an OOO is recommended when you intend to build a permanent, self-sustaining Russian operation, specifically for:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4">
+            {[
+              "Hiring local resident employees",
+              "Operating direct local Russian bank accounts",
+              "Localizing import and customs clearance",
+              "Directly managing Wildberries/Ozon accounts",
+              "Establishing a domestic distribution network",
+              "Building long-term corporate presence"
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100 text-slate-700 text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-accent-500 shrink-0" />
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Key Steps in OOO Formation</h2>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Define Corporate Structure</h3>
+              <p className="text-slate-600">Determining founders, shareholding percentages, General Director appointment, and primary activity scopes.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Legal Address (Yuridicheskiy Adres)</h3>
+              <p className="text-slate-600">A verifiable, compliant legal registration address in Russia must be secured for official correspondence and tax audits.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Trade & Company Name</h3>
+              <p className="text-slate-600">Selecting the official Russian corporate name (e.g., OOO "XXX"). Brand names do not need to be identical to legal entity names.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">OKVED Activity Codes</h3>
+              <p className="text-slate-600">Selecting official Russian economic activity classification codes for wholesale, e-commerce, retail, and logistics.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Document Drafting (Form R11001 & Charter)</h3>
+              <p className="text-slate-600">Preparing state registration application R11001, foundation resolution/protocol, and Company Charter (Ustav).</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">6</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Foreign Corporate Documents & Legalization</h3>
+              <p className="text-slate-600">Apostilled or consular-certified corporate certificates, trade registry extracts, and notarized Russian translations.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">7</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">FNS State Registration</h3>
+              <p className="text-slate-600">Once submitted, FNS typically processes state entry within 3 business days, following document verification.</p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">8</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Corporate Bank Account Setup</h3>
+              <p className="text-slate-600">Opening local Russian corporate accounts for revenue collection, customs duties, tax payments, and marketplace payouts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100 my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">The Russia Market Entry Approach</h2>
+          <p className="text-slate-700 leading-relaxed mb-4">
+            We evaluate entity creation within a holistic framework:
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-slate-800 font-medium text-sm text-center my-4">
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Business Model</span>
+            <span className="text-accent-500 font-bold">→</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Entry Strategy</span>
+            <span className="text-accent-500 font-bold">→</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Legal Structure</span>
+            <span className="text-accent-500 font-bold">→</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Tax & Banking</span>
+            <span className="text-accent-500 font-bold">→</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Operations</span>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Conclusion</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">
+            Establishing an OOO in Russia provides foreign brands with full operational autonomy and direct market control.
+          </p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">
+            Russia Market Entry assists your corporate setup, banking, and marketplace deployment end-to-end for seamless market expansion.
+          </p>
+        </div>
+      </div>
+    )
   }
 ];
+
 
 

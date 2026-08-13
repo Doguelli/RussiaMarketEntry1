@@ -37,7 +37,8 @@ const routesToPrerender = [
   "/blog/wildberries-depo-stratejisi-basarili-satis",
   "/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi",
   "/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur",
-  "/blog/eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey"
+  "/blog/eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey",
+  "/blog/rusyada-ooo-sirketi-nasil-kurulur-turk-markalari-icin-2026-rehberi"
 ];
 
 (async () => {
