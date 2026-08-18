@@ -22,6 +22,12 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+User-agent: Yandex
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 

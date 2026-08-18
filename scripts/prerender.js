@@ -39,7 +39,39 @@ const routesToPrerender = [
   "/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur",
   "/blog/eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey",
   "/blog/rusyada-ooo-sirketi-nasil-kurulur-turk-markalari-icin-2026-rehberi",
-  "/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber"
+  "/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber",
+  
+  // Russian Infrastructure & Commercial Pages
+  "/ru",
+  "/ru/hakkimizda",
+  "/ru/rusya-pazari",
+  "/ru/neden-rusya-detay",
+  "/ru/hizmetler",
+  "/ru/hizmetler/operasyon-kurulumu",
+  "/ru/hizmetler/pazaryeri-yonetimi",
+  "/ru/hizmetler/lojistik-ve-depo",
+  "/ru/hizmetler/sistem-ve-entegrasyon",
+  "/ru/hizmetler/marka-buyutme",
+  "/ru/hizmetler/vergi-ve-finans",
+  "/ru/operasyon-modeli",
+  "/ru/kimler-icin",
+  "/ru/kimler-icin/tekstil-markalari",
+  "/ru/kimler-icin/ureticiler",
+  "/ru/kimler-icin/e-ticaret-girisimcileri",
+  "/ru/kimler-icin/kozmetik-ureticileri",
+  "/ru/iletisim",
+  "/ru/kompaniya-v-turtsii",
+  "/ru/blog",
+  
+  // Russian Blog Cluster (8 posts)
+  "/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026",
+  "/blog/otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits",
+  "/blog/nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya",
+  "/blog/vnzh-ikamet-i-rabochaya-viza-v-turtsii-pri-otkrytii-biznesa",
+  "/blog/torgovlya-i-logistika-mezhdu-turtsiey-i-rossiey-tamozhnya-i-raschety",
+  "/blog/yuridicheskiy-adres-i-buhgalter-mali-musavir-v-turtsii",
+  "/blog/eksport-iz-turtsii-na-marketpleysy-wildberries-ozon",
+  "/blog/limited-sirket-protiv-anonim-sirket-sravnenie-form-biznesa-v-turtsii"
 ];
 
 (async () => {

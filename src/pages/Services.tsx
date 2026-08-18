@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { serviceDetails } from "@/data/servicesData";
 import { serviceDetailsEN } from "@/data/servicesDataEN";
+import { serviceDetailsRU } from "@/data/servicesDataRU";
 import { createBreadcrumbSchema } from "@/utils/seo";
 
 const iconsMap: Record<string, any> = {
@@ -24,7 +25,8 @@ const iconsMap: Record<string, any> = {
   "lojistik-ve-depo": Truck,
   "sistem-ve-entegrasyon": MonitorSmartphone,
   "marka-buyutme": TrendingUp,
-  "vergi-ve-finans": Building2
+  "vergi-ve-finans": Building2,
+  "kompaniya-v-turtsii": Building2
 };
 
 function extractListPoints(element: any): string[] {
@@ -60,11 +62,16 @@ function extractListPoints(element: any): string[] {
 
 export default function Services() {
   const { t, i18n } = useTranslation();
-  const currentDetails = i18n.language === 'en' ? serviceDetailsEN : serviceDetails;
+  let currentDetails = serviceDetails;
+  if (i18n.language === 'ru') {
+    currentDetails = serviceDetailsRU;
+  } else if (i18n.language === 'en') {
+    currentDetails = serviceDetailsEN;
+  }
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
-    { name: t('nav.services'), url: '/hizmetler' }
+    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : '/' },
+    { name: t('nav.services'), url: i18n.language === 'ru' ? '/ru/hizmetler' : '/hizmetler' }
   ]);
   
   const featuresList = Object.entries(currentDetails).map(([key, data]) => ({
@@ -74,13 +81,17 @@ export default function Services() {
     points: extractListPoints(data.contentSections?.[0]?.content)
   }));
 
-  const metaTitle = i18n.language === 'en'
-    ? "Our Services - End-to-End E-Commerce & Export Solutions | Russia Market Entry"
-    : "Hizmetlerimiz - Rusya E-Ticaret & İhracat Çözümleri | Russia Market Entry";
+  const metaTitle = i18n.language === 'ru'
+    ? "Наши услуги — Регистрация компании в Турции, ВЭД и маркетплейсы | Russia Market Entry"
+    : (i18n.language === 'en'
+      ? "Our Services - End-to-End E-Commerce & Export Solutions | Russia Market Entry"
+      : "Hizmetlerimiz - Rusya E-Ticaret & İhracat Çözümleri | Russia Market Entry");
 
-  const metaDesc = i18n.language === 'en'
-    ? "End-to-end e-commerce consulting, Wildberries, Ozon and Lamoda marketplace management, logistics, company formation and finance in Russia."
-    : "Türkiye'den Rusya'ya e-ticaret, Ozon, Wildberries, Lamoda entegrasyonu, şirket kuruluşu, gümrük, sertifikasyon, lojistik ve uçtan uca operasyon yönetimi hizmetlerimiz.";
+  const metaDesc = i18n.language === 'ru'
+    ? "Регистрация компаний в Турции для иностранцев, открытие банковских счетов, логистика, фулфилмент, Wildberries, Ozon и налоговое сопровождение под ключ."
+    : (i18n.language === 'en'
+      ? "End-to-end e-commerce consulting, Wildberries, Ozon and Lamoda marketplace management, logistics, company formation and finance in Russia."
+      : "Türkiye'den Rusya'ya e-ticaret, Ozon, Wildberries, Lamoda entegrasyonu, şirket kuruluşu, gümrük, sertifikasyon, lojistik ve uçtan uca operasyon yönetimi hizmetlerimiz.");
 
   return (
     <main className="bg-slate-50 min-h-screen pt-8 pb-24">
@@ -88,6 +99,10 @@ export default function Services() {
         <title>{metaTitle}</title>
         <meta name="description" content={metaDesc} />
         <link rel="canonical" href="https://russiamarketentry.com/hizmetler" />
+        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/hizmetler" />
+        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/hizmetler" />
+        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/hizmetler" />
+        <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/hizmetler" />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDesc} />
         <meta property="og:url" content="https://russiamarketentry.com/hizmetler" />

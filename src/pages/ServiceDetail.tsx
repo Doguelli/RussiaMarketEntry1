@@ -5,24 +5,30 @@ import { ArrowLeft, ArrowRight, Info } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { serviceDetails } from "../data/servicesData";
 import { serviceDetailsEN } from "../data/servicesDataEN";
+import { serviceDetailsRU } from "../data/servicesDataRU";
 import { createBreadcrumbSchema, createServiceSchema } from "@/utils/seo";
 
 export default function ServiceDetail() {
   const { id } = useParams<{ id: string }>();
   const { t, i18n } = useTranslation();
-  const currentDetails = i18n.language === 'en' ? serviceDetailsEN : serviceDetails;
+  let currentDetails = serviceDetails;
+  if (i18n.language === 'ru') {
+    currentDetails = serviceDetailsRU;
+  } else if (i18n.language === 'en') {
+    currentDetails = serviceDetailsEN;
+  }
   const service = id ? currentDetails[id] : null;
 
   if (!service) {
-    return <Navigate to="/hizmetler" replace />;
+    return <Navigate to={i18n.language === 'ru' ? '/ru/hizmetler' : '/hizmetler'} replace />;
   }
 
   const Icon = service.icon;
   const canonicalUrl = `https://russiamarketentry.com/hizmetler/${id}`;
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
-    { name: t('nav.services'), url: '/hizmetler' },
+    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : '/' },
+    { name: t('nav.services'), url: i18n.language === 'ru' ? '/ru/hizmetler' : '/hizmetler' },
     { name: service.title, url: `/hizmetler/${id}` }
   ]);
 
@@ -34,6 +40,10 @@ export default function ServiceDetail() {
         <title>{service.metaTitle}</title>
         <meta name="description" content={service.metaDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        <link rel="alternate" hrefLang="tr" href={`https://russiamarketentry.com/hizmetler/${id}`} />
+        <link rel="alternate" hrefLang="en" href={`https://russiamarketentry.com/hizmetler/${id}`} />
+        <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/hizmetler/${id}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://russiamarketentry.com/hizmetler/${id}`} />
         <meta property="og:title" content={service.metaTitle} />
         <meta property="og:description" content={service.metaDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -44,8 +54,8 @@ export default function ServiceDetail() {
 
       {/* Hero Header */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-        <Link to="/hizmetler" className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 font-medium text-[14px] mb-8 transition-colors">
-          <ArrowLeft className="w-4 h-4" /> {i18n.language === 'en' ? 'Back to Services' : 'Hizmetlere Dön'}
+        <Link to={i18n.language === 'ru' ? '/ru/hizmetler' : '/hizmetler'} className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 font-medium text-[14px] mb-8 transition-colors">
+          <ArrowLeft className="w-4 h-4" /> {i18n.language === 'ru' ? 'Назад к услугам' : (i18n.language === 'en' ? 'Back to Services' : 'Hizmetlere Dön')}
         </Link>
         
         <motion.div

@@ -16,15 +16,31 @@ export default function BlogDetail() {
     return <Navigate to="/blog" replace />;
   }
 
-  const title = i18n.language === 'en' ? (post.titleEn || post.title) : post.title;
-  const content = i18n.language === 'en' ? (post.contentEn || post.content) : post.content;
-  const excerpt = i18n.language === 'en' ? (post.excerptEn || post.excerpt) : post.excerpt;
-  const metaTitle = i18n.language === 'en' && post.metaTitleEn ? post.metaTitleEn : post.metaTitle;
+  let title = post.title;
+  let content = post.content;
+  let excerpt = post.excerpt;
+  let metaTitle = post.metaTitle;
+  let publishedDate = post.publishedAt;
+  let readTimeStr = post.readTime;
+
+  if (i18n.language === 'ru') {
+    title = post.titleRu || post.title;
+    content = post.contentRu || post.content;
+    excerpt = post.excerptRu || post.excerpt;
+    metaTitle = post.metaTitleRu || post.metaTitle;
+    publishedDate = post.publishedAtRu || post.publishedAt;
+    readTimeStr = post.readTimeRu || post.readTime;
+  } else if (i18n.language === 'en') {
+    title = post.titleEn || post.title;
+    content = post.contentEn || post.content;
+    excerpt = post.excerptEn || post.excerpt;
+    metaTitle = post.metaTitleEn || post.metaTitle;
+  }
 
   const canonicalUrl = `https://russiamarketentry.com/blog/${post.slug}`;
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
-    { name: t('nav.blog'), url: '/blog' },
+    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : '/' },
+    { name: t('nav.blog'), url: i18n.language === 'ru' ? '/ru/blog' : '/blog' },
     { name: title, url: `/blog/${post.slug}` }
   ]);
 
@@ -47,6 +63,10 @@ export default function BlogDetail() {
           <title>{`${metaTitle} | Russia Market Entry`}</title>
           <meta name="description" content={excerpt} />
           <link rel="canonical" href={canonicalUrl} />
+          <link rel="alternate" hrefLang="tr" href={`https://russiamarketentry.com/blog/${post.slug}`} />
+          <link rel="alternate" hrefLang="en" href={`https://russiamarketentry.com/blog/${post.slug}`} />
+          <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/blog/${post.slug}`} />
+          <link rel="alternate" hrefLang="x-default" href={`https://russiamarketentry.com/blog/${post.slug}`} />
           <meta property="og:title" content={`${metaTitle} | Russia Market Entry`} />
           <meta property="og:description" content={excerpt} />
           <meta property="og:url" content={canonicalUrl} />
@@ -60,10 +80,10 @@ export default function BlogDetail() {
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-24 bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <Link 
-            to="/blog" 
+            to={i18n.language === 'ru' ? '/ru/blog' : '/blog'} 
             className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 transition-colors font-medium mb-8"
           >
-            <ArrowLeft className="w-5 h-5" /> {i18n.language === 'en' ? 'Back to Blog' : "Blog'a Dön"}
+            <ArrowLeft className="w-5 h-5" /> {i18n.language === 'ru' ? 'Назад в блог' : (i18n.language === 'en' ? 'Back to Blog' : "Blog'a Dön")}
           </Link>
           
           <motion.h1 
@@ -82,11 +102,11 @@ export default function BlogDetail() {
           >
             <div className="flex items-center gap-2">
               <Calendar className="w-5 h-5" />
-              {post.publishedAt}
+              {publishedDate}
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-5 h-5" />
-              {post.readTime}
+              {readTimeStr}
             </div>
           </motion.div>
         </div>

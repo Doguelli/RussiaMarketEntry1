@@ -26,9 +26,31 @@ export default function Blog() {
     return parseTurkishDate(b.publishedAt) - parseTurkishDate(a.publishedAt);
   });
 
+  const getPostTitle = (post: any) => {
+    if (i18n.language === 'ru') return post.titleRu || post.title;
+    if (i18n.language === 'en') return post.titleEn || post.title;
+    return post.title;
+  };
+
+  const getPostExcerpt = (post: any) => {
+    if (i18n.language === 'ru') return post.excerptRu || post.excerpt;
+    if (i18n.language === 'en') return post.excerptEn || post.excerpt;
+    return post.excerpt;
+  };
+
+  const getPostDate = (post: any) => {
+    if (i18n.language === 'ru') return post.publishedAtRu || post.publishedAt;
+    return post.publishedAt;
+  };
+
+  const getPostReadTime = (post: any) => {
+    if (i18n.language === 'ru') return post.readTimeRu || post.readTime;
+    return post.readTime;
+  };
+
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
-    { name: t('nav.blog'), url: '/blog' }
+    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : '/' },
+    { name: t('nav.blog'), url: i18n.language === 'ru' ? '/ru/blog' : '/blog' }
   ]);
 
   return (
@@ -37,6 +59,10 @@ export default function Blog() {
         <title>{t('blog.title')}</title>
         <meta name="description" content={t('blog.desc_meta')} />
         <link rel="canonical" href="https://russiamarketentry.com/blog" />
+        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/blog" />
+        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/blog" />
+        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/blog" />
+        <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/blog" />
         <meta property="og:title" content={t('blog.title')} />
         <meta property="og:description" content={t('blog.desc_meta')} />
         <meta property="og:url" content="https://russiamarketentry.com/blog" />
@@ -120,17 +146,17 @@ export default function Blog() {
                 </Link>
                 <div className="p-8">
                   <div className="flex items-center gap-4 text-[13px] font-medium text-slate-500 mb-4">
-                    <span>{post.publishedAt}</span>
+                    <span>{getPostDate(post)}</span>
                     <span className="w-1 h-1 rounded-full bg-slate-300" />
-                    <span>{post.readTime}</span>
+                    <span>{getPostReadTime(post)}</span>
                   </div>
                   <h2 className="text-[20px] font-bold text-primary-500 mb-4 line-clamp-2 group-hover:text-accent-500 transition-colors">
                     <Link to={`/blog/${post.slug}`}>
-                      {i18n.language === 'en' ? (post.titleEn || post.title) : post.title}
+                      {getPostTitle(post)}
                     </Link>
                   </h2>
                   <p className="text-slate-600 line-clamp-3 mb-6 text-[15px] leading-relaxed">
-                    {i18n.language === 'en' ? (post.excerptEn || post.excerpt) : post.excerpt}
+                    {getPostExcerpt(post)}
                   </p>
                   <Link 
                     to={`/blog/${post.slug}`}

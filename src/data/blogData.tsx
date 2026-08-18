@@ -1,21 +1,29 @@
 import { ReactNode } from "react";
+import { blogPostsRU } from "./blogDataRU";
 
 export interface BlogPost {
   slug: string;
   metaTitle: string;
   metaTitleEn?: string;
+  metaTitleRu?: string;
   title: string;
   titleEn?: string;
+  titleRu?: string;
   excerpt: string;
   excerptEn?: string;
+  excerptRu?: string;
   content: ReactNode;
   contentEn?: ReactNode;
+  contentRu?: ReactNode;
   imageUrl: string;
   publishedAt: string;
+  publishedAtRu?: string;
   readTime: string;
+  readTimeRu?: string;
+  lang?: "tr" | "en" | "ru";
 }
 
-export const blogPosts: BlogPost[] = [
+const baseBlogPosts: BlogPost[] = [
   {
     slug: "rusyada-e-ticaret-nasil-yapilir",
     metaTitle: "Rusya’da E-Ticaret Nasıl Yapılır? 2026 Güncel Rehber",
@@ -3451,6 +3459,9 @@ export const blogPosts: BlogPost[] = [
     )
   }
 ];
+
+export const blogPosts: BlogPost[] = [...baseBlogPosts, ...blogPostsRU];
+export { blogPostsRU };
 
 
 
