@@ -9,21 +9,31 @@ import { createBreadcrumbSchema } from "@/utils/seo";
 export default function Blog() {
   const { t, i18n } = useTranslation();
 
-  const parseTurkishDate = (dateStr: string) => {
+  const parseDate = (dateStr?: string) => {
+    if (!dateStr) return 0;
     const months: { [key: string]: number } = {
-      Ocak: 1, Şubat: 2, Mart: 3, Nisan: 4, Mayıs: 5, Haziran: 6,
-      Temmuz: 7, Ağustos: 8, Eylül: 9, Ekim: 10, Kasım: 11, Aralık: 12
+      ocak: 1, şubat: 2, mart: 3, nisan: 4, mayıs: 5, haziran: 6,
+      temmuz: 7, ağustos: 8, eylül: 9, ekim: 10, kasım: 11, aralık: 12,
+      january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
+      july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+      января: 1, февраля: 2, марта: 3, апреля: 4, мая: 5, июня: 6,
+      июля: 7, августа: 8, сентября: 9, октября: 10, ноября: 11, декабря: 12,
+      январь: 1, февраль: 2, март: 3, апрель: 4, май: 5, июнь: 6,
+      июль: 7, август: 8, сентябрь: 9, октябрь: 10, ноябрь: 11, декабрь: 12
     };
-    const parts = dateStr.split(" ");
+    const parts = dateStr.trim().split(/\s+/);
     if (parts.length < 3) return 0;
     const day = parseInt(parts[0], 10);
-    const month = months[parts[1]] || 1;
+    const monthKey = (parts[1] || "").toLowerCase();
+    const month = months[monthKey] || 1;
     const year = parseInt(parts[2], 10);
     return new Date(year, month - 1, day).getTime();
   };
 
   const sortedBlogPosts = [...blogPosts].sort((a, b) => {
-    return parseTurkishDate(b.publishedAt) - parseTurkishDate(a.publishedAt);
+    const dateA = i18n.language === 'ru' ? (a.publishedAtRu || a.publishedAt) : a.publishedAt;
+    const dateB = i18n.language === 'ru' ? (b.publishedAtRu || b.publishedAt) : b.publishedAt;
+    return parseDate(dateB) - parseDate(dateA);
   });
 
   const getPostTitle = (post: any) => {

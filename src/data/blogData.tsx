@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { blogPostsRU } from "./blogDataRU";
+import { blogTranslationsRU } from "./blogTranslationsRU";
 
 export interface BlogPost {
   slug: string;
@@ -3460,7 +3461,23 @@ const baseBlogPosts: BlogPost[] = [
   }
 ];
 
-export const blogPosts: BlogPost[] = [...baseBlogPosts, ...blogPostsRU];
+const enrichedBaseBlogPosts: BlogPost[] = baseBlogPosts.map(post => {
+  const ruTrans = blogTranslationsRU[post.slug];
+  if (ruTrans) {
+    return {
+      ...post,
+      titleRu: ruTrans.titleRu,
+      excerptRu: ruTrans.excerptRu,
+      metaTitleRu: ruTrans.metaTitleRu,
+      contentRu: ruTrans.contentRu,
+      publishedAtRu: ruTrans.publishedAtRu,
+      readTimeRu: ruTrans.readTimeRu
+    };
+  }
+  return post;
+});
+
+export const blogPosts: BlogPost[] = [...enrichedBaseBlogPosts, ...blogPostsRU];
 export { blogPostsRU };
 
 

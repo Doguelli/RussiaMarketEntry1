@@ -30,6 +30,7 @@ const routesToPrerender = [
   "/blog",
   "/blog/rusyada-e-ticaret-nasil-yapilir",
   "/blog/wildberriesde-satis-yapmak",
+  "/blog/ozonda-satis-yapmak",
   "/blog/lamodaya-nasil-girilir",
   "/blog/rusyada-sirket-kurmadan-satis-yapilabilir-mi",
   "/blog/wildberries-algoritmasi-nasil-calisir",
