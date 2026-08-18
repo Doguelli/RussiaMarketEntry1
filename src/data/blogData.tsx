@@ -3088,6 +3088,367 @@ export const blogPosts: BlogPost[] = [
         </div>
       </div>
     )
+  },
+  {
+    slug: "rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber",
+    metaTitle: "Rusya'ya İthalat Süreci: Türk Markaları İçin Adım Adım Rehber | 2026",
+    metaTitleEn: "Import Process to Russia: Step-by-Step Guide for Turkish Brands | 2026",
+    title: "Rusya'ya İthalat Süreci: Türk Markaları İçin Adım Adım Rehber",
+    titleEn: "Import Process to Russia: Step-by-Step Guide for Turkish Brands",
+    excerpt: "Türkiye'den Rusya'ya ürün ithalatı nasıl yapılır? TN VED kodları, EAC uygunluk belgeleri, Çestniy Znak, gümrük beyanı, vergiler ve marketplace depo süreçleri.",
+    excerptEn: "How to import commercial goods from Turkey to Russia? TN VED EAEU classification, EAC compliance, Chestny ZNAK, customs declaration, duties, and marketplace fulfillment.",
+    publishedAt: "17 Ağustos 2026",
+    readTime: "7 dk okuma",
+    imageUrl: "/blog13.png",
+    content: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">
+          Rusya pazarına girmek isteyen Türk üreticiler için en kritik aşamalardan biri, ürünlerin Türkiye'den Rusya'ya doğru şekilde ithal edilmesidir. Ancak ithalat yalnızca ürünlerin bir kamyonla Rusya sınırına gönderilmesinden ibaret değildir.
+        </p>
+
+        <p className="text-slate-600 leading-relaxed">
+          Ürün sınıflandırması, gerekli uygunluk belgeleri, gümrük kıymeti, taşıma belgeleri, gümrük beyannamesi, vergiler ve ürünün Rusya'da satışa hazır hale getirilmesi birbirine bağlı süreçlerdir. Özellikle <strong>Wildberries, Ozon</strong> veya diğer pazaryerlerinde satış planlanıyorsa, ithalat operasyonunun daha ürün sevk edilmeden planlanması gerekir.
+        </p>
+
+        <div className="bg-primary-50/70 border border-primary-100 p-6 rounded-3xl space-y-3">
+          <h2 className="text-xl font-bold text-primary-600">Rusya'ya İthalat Süreci Neden Önemli?</h2>
+          <p className="text-slate-700 leading-relaxed">
+            Bir ürünün Rusya'ya ulaşmış olması, ürünün satışa hazır olduğu anlamına gelmez. İthalat sürecinde ürünün doğru sınıflandırılması, gümrük beyannamesinin hazırlanması, gümrük kıymetinin doğru belirlenmesi, gerekli izin ve uygunluk belgelerinin bulunması, gümrük vergileri ve diğer ödemelerin hesaplanması ile ürünün gümrükten çekilmesi gibi birçok aşama bulunur.
+          </p>
+          <p className="text-slate-600 text-sm leading-relaxed">
+            Avrasya Ekonomik Birliği (EAEU) Gümrük Kodu'nda gümrük beyanı; mallar, seçilen gümrük prosedürü ve gerekli diğer bilgiler hakkında gümrük idaresine beyan verilmesi olarak tanımlanıyor. Dolayısıyla ithalat, lojistik operasyonun yalnızca bir parçası değil; hukuki, finansal ve operasyonel bir süreçtir.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Türkiye'den Rusya'ya İthalat Nasıl Yapılır?</h2>
+          <p className="text-slate-600 leading-relaxed">
+            Genel operasyonel akış şu aşamalarla ilerler. Bu adımlardan birinin eksik planlanması, sonraki aşamalarda gecikme veya ek maliyet yaratabilir:
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 my-4">
+            {[
+              "1. Ürün Analizi",
+              "2. Ürün Sınıflandırması",
+              "3. Uygunluk & İzin Kontrolü",
+              "4. Ticari Evrakların Tanzimi",
+              "5. Taşıma ve Sevkiyat",
+              "6. Gümrük Beyanı",
+              "7. Gümrük Kontrolü",
+              "8. Vergi & Gümrük Ödemesi",
+              "9. Gümrükten Çekim",
+              "10. Rusya Merkezi Depo",
+              "11. Marketplace Operasyonu",
+              "12. Son Tüketici Teslimi"
+            ].map((step, idx) => (
+              <div key={idx} className="bg-slate-50 border border-slate-100 p-3 rounded-2xl text-slate-800 text-xs font-semibold flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-accent-500 shrink-0" />
+                <span>{step}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Adım Adım İthalat Süreci</h2>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">1. Ürünün İthalata Uygunluğu Kontrol Edilir</h3>
+              <p className="text-slate-600 leading-relaxed">
+                İlk aşamada ürünün Rusya'ya ithal edilip edilemeyeceği ve hangi şartlara tabi olduğu belirlenmelidir. Burada yalnızca ürünün ticari adı yeterli değildir; teknik özellikleri, kullanım amacı, bileşimi, üretim şekli, ürün kategorisi, menşei ve GTİP / TN VED EAEU kodu birlikte değerlendirilmelidir. Benzer ticari isimlere sahip ürünler farklı gümrük kodlarına tabi olabilir.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">2. TN VED EAEU Kodu Belirlenir</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Rusya ve EAEU gümrük sisteminde ürünler <strong>ТН ВЭД ЕАЭС (TN VED EAEU)</strong> kodlarıyla sınıflandırılır. Bu kod; gümrük vergilerinin, bazı ithalat kısıtlamalarının, izin ve uygunluk gerekliliklerinin ve istatistiksel kayıtların belirlenmesinde rol oynar. Türkiye'deki GTİP sınıflandırması ile EAEU'daki TN VED sınıflandırmasının operasyon açısından ayrıca karşılaştırılması gerekir.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">3. EAC ve Diğer Uygunluk Gereklilikleri Kontrol Edilir</h3>
+              <p className="text-slate-600 leading-relaxed">
+                İthalattan önce ürünün teknik düzenlemelere tabi olup olmadığı netleştirilmelidir. Uygunluk sertifikası (Sertifikat Sootvetstviya), uygunluk beyanı (Deklaratsiya), ürün güvenliği belgeleri veya özel izinler gerekebilir. EAC süreci ürün Rusya'ya geldikten sonra değil; <em>Ürün → Uygunluk → İthalat</em> sıralamasıyla yürütülmelidir.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">4. Çestniy Znak Kontrolü Yapılır</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Ürünün Çestniy Znak dijital takip sistemine tabi olup olmadığı ithalat öncesinde belirlenmelidir. Belirli tekstil, ayakkabı, kozmetik ve diğer kategorilerde Data Matrix kodlama gereklidir. Çestniy Znak ile gümrük işlemleri aynı şey değildir; gümrükten geçmek ile Rusya pazarında satışa hazır olmak iki ayrı aşamadır.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">5. Ticari Belgeler Hazırlanır</h3>
+              <p className="text-slate-600 leading-relaxed">
+                İthalat dosyasında temel olarak: Ticari fatura (Invoice), Çeki/Paketleme listesi (Packing List), Taşıma belgesi (CMR, Konşimento vb.), Dış ticaret sözleşmesi, Menşe belgesi (Certificate of Origin), Uygunluk belgeleri (EAC) ve Gümrük beyannamesi verileri yer alır.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">6</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">6. Gümrük Kıymeti Belirlenir</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Gümrük kıymeti yalnızca faturadaki ürün fiyatından ibaret olmayabilir. EAEU kurallarına göre taşıma, sigorta, paketleme ve belirli ek maliyetler gümrük kıymetine dahil edilebilir. Toplam maliyet formülü: <em>Ürün Maliyeti + Taşıma/Sigorta + Gümrük Vergileri + Diğer İthalat Giderleri</em> şeklinde ele alınmalıdır.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">7</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">7. Ürün Rusya'ya Taşınır</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Karayolu, denizyolu, demiryolu veya multimodal lojistik hatları üzerinden taşıma organize edilir. Ürünün gümrük çıkışından sonra doğrudan pazaryeri deposuna mı, yoksa merkezi ara depoya mı sevk edileceği sevkiyattan önce kararlaştırılmalıdır.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">8</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">8. Gümrük Beyannamesi Verilir</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Ürün gümrük sınırına ulaştığında ithalatçı, ihracatçı, TN VED kodu, miktar, net/brüt ağırlık, gümrük değeri, menşe ve seçilen gümrük rejimi beyan edilir.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">9</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">9. Gümrük Kontrolü</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Gümrük idaresi beyan edilen ürün sınıflandırmasını, değerini, belgelerini ve fiziki uygunluğunu denetler. Belgelerdeki bilgilerin fiziki ürünle ve etiketlerle birebir uyuşması gecikmeleri önler.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">10</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">10. Gümrük Vergileri ve Diğer Ödemeler</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Gümrük vergisi, KDV (NDS), gümrük işlem harçları ve varsa ek harçlar ödenir. Oranlar ürünün TN VED EAEU koduna, menşeine ve kıymetine göre ürün bazında hesaplanır.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">11</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">11. Gümrükten Çıkış ve Serbest Dolaşım</h3>
+              <p className="text-slate-600 leading-relaxed">
+                İşlemler tamamlandıktan sonra ürün serbest dolaşıma girer. Ancak satışa sunulmadan önce ürünün yerel Rusça etiketleme, barkod ve marketplace kabul kriterlerine tam uygunluğu sağlanmalıdır.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-start">
+            <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">12</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">12. Rusya Depo ve Pazaryeri Operasyonu</h3>
+              <p className="text-slate-600 leading-relaxed">
+                İthal edilen ürünler merkezi depoya, doğrudan marketplace deposuna (FBO) veya hibrit depolama modeline göre dağıtılır. Satış hızına göre ana depodan bölgesel pazaryeri depolarına ikmal yapılır.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-amber-50 border border-amber-200 p-8 rounded-3xl my-8">
+          <h2 className="text-2xl font-bold text-amber-950 mb-3">İthalat ile Lojistik Aynı Şey Değildir</h2>
+          <p className="text-amber-900 leading-relaxed">
+            <strong>İthalat, ürünün Rusya'ya yasal olarak sokulması sürecidir.</strong> Lojistik ise ürünün Rusya içerisinde doğru noktalara ulaştırılması ve stokların dinamik yönetilmesidir.
+          </p>
+          <div className="bg-white/80 p-4 rounded-2xl text-amber-950 font-medium text-center my-3 border border-amber-200">
+            Türkiye → Rusya Gümrüğü → Merkezi Depo → Wildberries / Ozon Depoları → Son Kullanıcı
+          </div>
+          <p className="text-amber-900 text-sm leading-relaxed">
+            Bu entegre model sayesinde pazaryeri depolarında fazla bekleme ücreti ödemeden, satış hızına uygun optimum stok yönetimi sağlanır.
+          </p>
+        </div>
+
+        <div className="bg-white border border-slate-200 p-8 rounded-3xl shadow-sm my-8">
+          <h3 className="text-xl font-bold text-red-600 mb-4">Türk Markalarının En Sık Yaptığı 6 Hata</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700 text-sm">
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <strong className="text-slate-900 block mb-1">1. İthalatı sadece nakliye olarak görmek</strong>
+              Taşıma, ithalat zincirinin yalnızca bir bileşenidir; gümrük ve uygunluk asıl belirleyicidir.
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <strong className="text-slate-900 block mb-1">2. TN VED kodunu son aşamada kontrol etmek</strong>
+              Yanlış sınıflandırma gümrükte cezalara, ek vergilere ve günlerce gecikmeye yol açar.
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <strong className="text-slate-900 block mb-1">3. EAC sertifikasını sevkiyattan sonra düşünmek</strong>
+              Uygunluk ve güvenlik belgeleri ürün Rusya sınırına gelmeden tamamlanmış olmalıdır.
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <strong className="text-slate-900 block mb-1">4. Çestniy Znak işaretlemesini unutmak</strong>
+              Gümrükten geçen ürün, Data Matrix kodları olmadan pazaryerinde satışa açılamaz.
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <strong className="text-slate-900 block mb-1">5. Tüm stokları tek seferde pazaryerine göndermek</strong>
+              Satış hacmi oturmadan yapılan toplu transferler yüksek depo saklama maliyeti doğurur.
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <strong className="text-slate-900 block mb-1">6. Maliyeti yalnızca ürün fiyatından hesaplamak</strong>
+              Navlun, gümrük vergileri, harçlar ve yerel depolama toplam maliyet denklemine eklenmelidir.
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100 my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşımı</h2>
+          <p className="text-slate-700 leading-relaxed mb-4">
+            Bizim yaklaşımımızda ithalat, pazaryeri ve stok operasyonundan bağımsız planlanmaz. Markanın Rusya'ya girişinde tüm adımlar uçtan uca senkronize edilir:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-slate-800 text-xs font-semibold text-center my-3">
+            <span className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm">Ürün Giriş Uygunluğu</span>
+            <span className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm">EAC & Gümrük Maliyeti</span>
+            <span className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm">Pazaryeri & Stok Planı</span>
+            <span className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm">Dinamik Depo İkmali</span>
+          </div>
+        </div>
+
+        <div className="bg-white border border-slate-200 p-8 rounded-3xl my-8 shadow-sm">
+          <h3 className="text-xl font-bold text-primary-600 mb-4">Türkiye'den Rusya'ya İthalat Checklist</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700 text-sm">
+            {[
+              "Ürün teknik analizi ve sınıflandırması yapıldı",
+              "TN VED EAEU kodu doğrulandı",
+              "Menşe belgesi ve bilgisi teyit edildi",
+              "EAC uygunluk ve sertifika gereklilikleri tamamlandı",
+              "Çestniy Znak dijital takip kodları hazırlandı",
+              "Dış ticaret sözleşmesi imzalandı",
+              "Ticari fatura (Invoice) düzenlendi",
+              "Çeki listesi (Packing List) hazırlandı",
+              "Uluslararası taşıma planı ve belgeleri oluşturuldu",
+              "Gümrük kıymeti ve harçlar hesaplandı",
+              "Gümrük vergileri ve KDV bütçelendi",
+              "Gümrük beyannamesi verileri hazırlandı",
+              "Gümrükleme operasyonu organize edildi",
+              "Rusya merkezi depo entegrasyonu sağlandı",
+              "Marketplace depo kabul planı oluşturuldu",
+              "İlk stok dağılımı ve ikmal stratejisi belirlendi"
+            ].map((check) => (
+              <div key={check} className="flex items-center gap-2">
+                <span className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-xs shrink-0">✓</span>
+                <span>{check}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">
+            Türkiye'den Rusya'ya ürün ithal etmek, yalnızca ürünleri sınırdan geçirmekten ibaret değildir. Başarılı bir operasyonun hedefi <em>"ürünü Rusya'ya sokmak"</em> değil, <strong>"ürünü doğru maliyetle Rusya'ya getirip pazaryerlerinde satışa hazır hale getirmek"</strong>tir.
+          </p>
+          <p className="text-sm text-slate-400 relative z-10 border-t border-slate-800 pt-4 mt-6">
+            <strong>Not:</strong> Bu içerik, Russia Market Entry Playbook kapsamında genel bilgilendirme amacıyla hazırlanmıştır. İthalat ve gümrük gereklilikleri ürün, menşe, işlem yapısı ve güncel mevzuata göre değişebilir. Ticari sevkiyat öncesinde ürün bazlı gümrük ve mevzuat kontrolü yapılmalıdır.
+          </p>
+        </div>
+      </div>
+    ),
+    contentEn: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">
+          For Turkish manufacturers and global brands entering the Russian market, establishing an airtight import process is one of the most critical operational pillars. Importing is not merely shipping freight across borders; it involves meticulous customs classification, conformity certifications, valuation, declaration, duties, and marketplace fulfillment.
+        </p>
+
+        <p className="text-slate-600 leading-relaxed">
+          Especially when selling on <strong>Wildberries, Ozon</strong>, or Lamoda, the entire import chain must be mapped out before cargo leaves the production facility.
+        </p>
+
+        <div className="bg-primary-50/70 border border-primary-100 p-6 rounded-3xl space-y-3">
+          <h2 className="text-xl font-bold text-primary-600">Why the Russian Import Workflow Matters</h2>
+          <p className="text-slate-700 leading-relaxed">
+            Arrival at the border does not equal market readiness. Under the Eurasian Economic Union (EAEU) Customs Code, customs clearance requires formal declaration, HS/TN VED code determination, customs valuation, conformity verification (EAC), Chestny ZNAK digital tagging, and duty settlement.
+          </p>
+          <p className="text-slate-600 text-sm leading-relaxed">
+            Importing is therefore a legal, financial, and operational continuum that dictates your bottom-line profitability and delivery speed.
+          </p>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Key Steps in Commercial Import to Russia</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <h3 className="font-bold text-slate-900 mb-1">1. Product Feasibility & Classification</h3>
+              <p className="text-slate-600 text-sm">Evaluating composition, technical specs, origin, and matching with TN VED EAEU classification codes.</p>
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <h3 className="font-bold text-slate-900 mb-1">2. EAC Conformity & Licensing</h3>
+              <p className="text-slate-600 text-sm">Obtaining mandatory EAC Declaration or Certificate of Conformity before dispatch.</p>
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <h3 className="font-bold text-slate-900 mb-1">3. Chestny ZNAK Digital Tagging</h3>
+              <p className="text-slate-600 text-sm">Generating and applying Data Matrix track-and-trace barcodes for mandatory commodity groups.</p>
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <h3 className="font-bold text-slate-900 mb-1">4. Trade Documents & Contracts</h3>
+              <p className="text-slate-600 text-sm">Preparing commercial invoices, packing lists, transport waybills (CMR), and foreign trade contracts.</p>
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <h3 className="font-bold text-slate-900 mb-1">5. Customs Valuation & Duty Calculation</h3>
+              <p className="text-slate-600 text-sm">Factoring freight, insurance, and duties to determine total landed cost.</p>
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <h3 className="font-bold text-slate-900 mb-1">6. Fulfillment & Marketplace Integration</h3>
+              <p className="text-slate-600 text-sm">Transferring cleared stock from central transit hubs to Wildberries and Ozon fulfillment centers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100 my-8">
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">The Russia Market Entry Advantage</h2>
+          <p className="text-slate-700 leading-relaxed mb-4">
+            We merge customs clearance with marketplace fulfillment into a seamless operational pipeline:
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-slate-800 font-medium text-sm text-center">
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Origin Clearance</span>
+            <span className="text-accent-500 font-bold">→</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">EAEU Customs Entry</span>
+            <span className="text-accent-500 font-bold">→</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Central Russian Hub</span>
+            <span className="text-accent-500 font-bold">→</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Marketplace Depots</span>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
+          <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Conclusion</h2>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">
+            Importing into Russia is successful when structured from day one around compliance, landed cost optimization, and marketplace availability.
+          </p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">
+            Russia Market Entry handles your end-to-end import, certification, logistics, and account operations to accelerate your commercial expansion.
+          </p>
+        </div>
+      </div>
+    )
   }
 ];
 
