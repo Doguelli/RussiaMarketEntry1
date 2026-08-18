@@ -270,5 +270,11 @@
     "strat_title": "Our Strategic Approach",
     "strat_desc": "In our operation model, we don't stick to a single platform: <br className=\"hidden md:block\" /> We generate strong sales volume with <strong className=\"text-white\">Wildberries</strong>, elevate your brand value with <strong className=\"text-white\">Lamoda</strong>, and maximize your reach with <strong className=\"text-white\">Ozon</strong>.",
     "cta": "Let's Set Up Your Operation"
+  },
+  "whatsapp": {
+    "button_text": "Chat on WhatsApp",
+    "aria_label": "WhatsApp Live Support",
+    "tooltip": "WhatsApp Live Support",
+    "default_message": "Hello! I would like to get information about Russia market entry and e-commerce consultancy."
   }
 }

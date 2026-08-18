@@ -270,5 +270,11 @@
     "strat_title": "Stratejik Yaklaşımımız",
     "strat_desc": "Bizim operasyon modelimizde tek bir platforma bağlı kalmıyoruz: <br className=\"hidden md:block\" /> <strong className=\"text-white\">Wildberries</strong> ile güçlü satış hacmi oluşturuyor, <strong className=\"text-white\">Lamoda</strong> ile marka değerinizi yükseltiyor, <strong className=\"text-white\">Ozon</strong> ile erişiminizi zirveye çıkarıyoruz.",
     "cta": "Operasyonunuzu Kuralım"
+  },
+  "whatsapp": {
+    "button_text": "Hemen İletişime Geçin",
+    "aria_label": "WhatsApp Canlı Destek",
+    "tooltip": "WhatsApp Canlı Destek Hattı",
+    "default_message": "Merhaba! Rusya pazarına giriş ve e-ticaret danışmanlığı hakkında bilgi almak istiyorum."
   }
 }

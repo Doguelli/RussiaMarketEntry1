@@ -273,5 +273,12 @@
     "strat_title": "Наш стратегический подход",
     "strat_desc": "Мы выстраиваем продажи на нескольких каналах одновременно: формируем массовый оборот на <strong className=\"text-white\">Wildberries</strong>, усиливаем статус бренда на <strong className=\"text-white\">Lamoda</strong> и расширяем охват на <strong className=\"text-white\">Ozon</strong>.",
     "cta": "Запустить продажи"
+  },
+  "whatsapp": {
+    "button_text": "Написать в WhatsApp",
+    "aria_label": "Написать в WhatsApp",
+    "tooltip": "Консультация в WhatsApp",
+    "default_message": "Здравствуйте! Хочу получить консультацию по выходу на рынок и услугам компании.",
+    "company_turkey_message": "Здравствуйте! Хочу проконсультироваться по поводу регистрации компании в Турции."
   }
 }

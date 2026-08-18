@@ -666,7 +666,7 @@ export default function CompanyInTurkey() {
               Заказать регистрацию компании
             </a>
             <a
-              href="https://wa.me/905320000000?text=Здравствуйте!%20Хочу%20проконсультироваться%20по%20поводу%20регистрации%20компании%20в%20Турции"
+              href="https://wa.me/905327852420?text=Здравствуйте!%20Хочу%20проконсультироваться%20по%20поводу%20регистрации%20компании%20в%20Турции"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-7 py-4 rounded-xl font-semibold transition-colors text-[15px]"
