@@ -22,7 +22,7 @@ export function createOrganizationSchema() {
     "@type": "Organization",
     "name": "Russia Market Entry",
     "url": "https://russiamarketentry.com",
-    "logo": "https://russiamarketentry.com/favicon.svg",
+    "logo": "https://russiamarketentry.com/favicon.png",
     "description": "Türkiye'den Rusya'ya uçtan uca e-ticaret, Ozon, Wildberries, Lamoda entegrasyonu, lojistik ve şirket kurulumu.",
     "address": [
       {
@@ -120,7 +120,7 @@ export function createArticleSchema(
       "name": "Russia Market Entry",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://russiamarketentry.com/favicon.svg"
+        "url": "https://russiamarketentry.com/favicon.png"
       }
     },
     "mainEntityOfPage": {
