@@ -27,6 +27,37 @@ const iconsMap: Record<string, any> = {
   "vergi-ve-finans": Building2
 };
 
+function extractListPoints(element: any): string[] {
+  if (!element) return [];
+  const points: string[] = [];
+
+  function traverse(node: any) {
+    if (!node) return;
+    if (Array.isArray(node)) {
+      node.forEach(traverse);
+      return;
+    }
+    if (node.type === "li") {
+      const extractText = (c: any): string => {
+        if (typeof c === "string") return c;
+        if (typeof c === "number") return String(c);
+        if (Array.isArray(c)) return c.map(extractText).join("");
+        if (c?.props?.children) return extractText(c.props.children);
+        return "";
+      };
+      const text = extractText(node.props?.children).trim();
+      if (text) points.push(text);
+      return;
+    }
+    if (node.props?.children) {
+      traverse(node.props.children);
+    }
+  }
+
+  traverse(element);
+  return points;
+}
+
 export default function Services() {
   const { t, i18n } = useTranslation();
   const currentDetails = i18n.language === 'en' ? serviceDetailsEN : serviceDetails;
@@ -40,7 +71,7 @@ export default function Services() {
     id: key,
     icon: iconsMap[key] || Settings,
     title: data.title,
-    points: data.contentSections?.[0]?.content?.props?.children?.[1]?.props?.children?.map((li: any) => li.props.children) || []
+    points: extractListPoints(data.contentSections?.[0]?.content)
   }));
 
   const metaTitle = i18n.language === 'en'

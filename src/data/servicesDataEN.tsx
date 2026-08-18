@@ -558,12 +558,13 @@ export const serviceDetailsEN: Record<string, any> = {
         title: "Tax and Financial System",
         content: (
           <div className="space-y-4 text-slate-600">
+            <p>A solid financial and tax framework determines the long-term profitability and compliance of Russian e-commerce:</p>
             <ul className="list-disc pl-5 space-y-3">
-              <li>Selection of the most advantageous tax model (OSN, USN) in Russia according to the company structure.</li>
-              <li>Clear calculation of profit margins (Customs + Logistics + Marketplace Commission + Marketing).</li>
-              <li>E-commerce accounting services (Z reports, return invoicing).</li>
-              <li>Transfer of funds (Ruble, Yuan, etc.) accumulated in the bank account in Russia to your country perfectly in accordance with international legal regulations.</li>
-              <li>Corporate tax planning according to double taxation prevention agreements.</li>
+              <li>Selection of the most advantageous tax model (OSN, USN) in Russia according to the company structure</li>
+              <li>Clear calculation of profit margins (Customs + Logistics + Marketplace Commission + Marketing)</li>
+              <li>E-commerce accounting services (Z reports, return invoicing)</li>
+              <li>Transfer of accumulated funds (Ruble, Yuan, etc.) in Russian bank accounts to Turkey in accordance with international legal regulations</li>
+              <li>Corporate tax planning according to double taxation prevention agreements</li>
             </ul>
           </div>
         )

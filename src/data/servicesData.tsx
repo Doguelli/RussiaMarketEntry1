@@ -699,12 +699,13 @@ export const serviceDetails: Record<string, any> = {
         title: "Vergi ve Finansal Yapı",
         content: (
           <div className="space-y-4 text-slate-600">
+            <p>Rusya e-ticaretinde doğru finansal ve vergi kurgusu operasyonun kârlılığını ve yasal güvenliğini belirler:</p>
             <ul className="list-disc pl-5 space-y-3">
-              <li>Rusya içindeki en avantajlı vergi modelinin (OSN, USN) şirket yapısına göre seçimi.</li>
-              <li>Kar marjlarının (Gümrük + Lojistik + Pazaryeri Komisyonu + Pazarlama) net şekilde hesaplanması.</li>
-              <li>E-ticaret muhasebesi hizmetleri (Z raporları, iade faturalandırmaları).</li>
-              <li>Rusya'daki banka hesabında biriken fonların (Ruble, Yuan vb.) uluslararası yasal mevzuatlara uygun şeklide Türkiye'ye aktarımı.</li>
-              <li>Çift vergilendirmeyi önleme anlaşmalarına göre kurumsal vergi planlaması.</li>
+              <li>Rusya içindeki en avantajlı vergi modelinin (OSN, USN) şirket yapısına göre seçimi</li>
+              <li>Kâr marjlarının (Gümrük + Lojistik + Pazaryeri Komisyonu + Pazarlama) net şekilde hesaplanması</li>
+              <li>E-ticaret muhasebesi hizmetleri (Z raporları, iade faturalandırmaları)</li>
+              <li>Rusya'daki banka hesabında biriken fonların (Ruble, Yuan vb.) uluslararası yasal mevzuatlara uygun şekilde Türkiye'ye aktarımı</li>
+              <li>Çift vergilendirmeyi önleme anlaşmalarına göre kurumsal vergi planlaması</li>
             </ul>
           </div>
         )
