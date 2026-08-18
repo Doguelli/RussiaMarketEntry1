@@ -4,6 +4,7 @@ import { Menu, X, Globe, ChevronDown } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
+import { setManualLanguageChoice, SupportedLanguage } from "@/utils/geoLanguageDetector";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +32,7 @@ export default function Navbar() {
   }, []);
 
   const changeLanguage = (lang: string) => {
+    setManualLanguageChoice(lang as SupportedLanguage);
     i18n.changeLanguage(lang);
     setLangDropdownOpen(false);
     

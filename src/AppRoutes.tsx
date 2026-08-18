@@ -1,5 +1,5 @@
-import { Routes, Route, useLocation, Navigate, Link } from "react-router-dom";
-import { useEffect } from "react";
+import { Routes, Route, useLocation, useNavigate, Navigate, Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
@@ -19,10 +19,17 @@ import BlogDetail from "./pages/BlogDetail";
 import CompanyInTurkey from "./pages/CompanyInTurkey";
 import WhatsAppButton from "./components/WhatsAppButton";
 import AnalyticsTracker from "./components/AnalyticsTracker";
+import {
+  getManuallySelectedLanguage,
+  detectCountryFromIP,
+  getLanguageForCountry,
+} from "./utils/geoLanguageDetector";
 
 function ScrollToTopAndLangSync() {
   const { pathname } = useLocation();
+  const navigate = useNavigate();
   const { i18n } = useTranslation();
+  const geoCheckedRef = useRef(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -34,6 +41,34 @@ function ScrollToTopAndLangSync() {
       }
     }
   }, [pathname, i18n]);
+
+  // One-time GeoIP check on initial visit if user hasn't chosen manually
+  useEffect(() => {
+    if (geoCheckedRef.current) return;
+    geoCheckedRef.current = true;
+
+    const manual = getManuallySelectedLanguage();
+    if (manual) return;
+
+    if (pathname === "/" || pathname === "") {
+      detectCountryFromIP()
+        .then((countryCode) => {
+          if (!countryCode) return;
+          const targetLang = getLanguageForCountry(countryCode);
+          if (targetLang === "ru") {
+            i18n.changeLanguage("ru");
+            navigate("/ru", { replace: true });
+          } else if (targetLang === "en") {
+            i18n.changeLanguage("en");
+          } else if (targetLang === "tr") {
+            i18n.changeLanguage("tr");
+          }
+        })
+        .catch(() => {
+          // Ignore network errors
+        });
+    }
+  }, [pathname, i18n, navigate]);
 
   return null;
 }
