@@ -7,10 +7,12 @@ import { createBreadcrumbSchema } from "@/utils/seo";
 
 export default function OperationModel() {
   const { t, i18n } = useTranslation();
+  const isRu = i18n.language === 'ru';
+  const isEn = i18n.language === 'en';
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
-    { name: t('nav.op_model'), url: '/operasyon-modeli' }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: isRu ? '/ru' : '/' },
+    { name: t('nav.op_model'), url: isRu ? '/ru/operasyon-modeli' : '/operasyon-modeli' }
   ]);
 
   return (
@@ -18,10 +20,14 @@ export default function OperationModel() {
       <Helmet>
         <title>{t('op_model_page.title')}</title>
         <meta name="description" content={t('op_model_page.desc_meta')} />
-        <link rel="canonical" href="https://russiamarketentry.com/operasyon-modeli" />
+        <link rel="canonical" href={isRu ? "https://russiamarketentry.com/ru/operasyon-modeli" : "https://russiamarketentry.com/operasyon-modeli"} />
+        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/operasyon-modeli" />
+        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/operasyon-modeli" />
+        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/operasyon-modeli" />
+        <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/operasyon-modeli" />
         <meta property="og:title" content={t('op_model_page.title')} />
         <meta property="og:description" content={t('op_model_page.desc_meta')} />
-        <meta property="og:url" content="https://russiamarketentry.com/operasyon-modeli" />
+        <meta property="og:url" content={isRu ? "https://russiamarketentry.com/ru/operasyon-modeli" : "https://russiamarketentry.com/operasyon-modeli"} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>

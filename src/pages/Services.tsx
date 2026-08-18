@@ -125,8 +125,8 @@ export default function Services() {
             transition={{ delay: 0.05 }}
             className="text-[48px] md:text-[56px] font-extrabold text-primary-500 mb-6 tracking-tight leading-tight"
           >
-            {i18n.language === 'en' ? 'End-to-End' : 'Sadece danışmanlık değil,'} <br className="hidden md:block" />
-            <span className="text-accent-500">{i18n.language === 'en' ? 'Operational System' : 'entegre operasyon sistemi'}</span>
+            {i18n.language === 'ru' ? 'Не просто консалтинг,' : (i18n.language === 'en' ? 'End-to-End' : 'Sadece danışmanlık değil,')} <br className="hidden md:block" />
+            <span className="text-accent-500">{i18n.language === 'ru' ? 'интегрированная система операций' : (i18n.language === 'en' ? 'Operational System' : 'entegre operasyon sistemi')}</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 10 }}
@@ -134,9 +134,11 @@ export default function Services() {
             transition={{ delay: 0.1 }}
             className="text-slate-500 max-w-3xl mx-auto text-[18px] leading-relaxed"
           >
-            {i18n.language === 'en' 
-              ? 'We manage the entire process end-to-end on your behalf, from company structuring to inventory management, customs to advertising.'
-              : 'Sizin adınıza şirket yapılandırmasından stok yönetimine, gümrükten reklama kadar tüm süreci uçtan uca yönetiyoruz. Amacımız sizi en kısa sürede satış yapabilir hale getirmek ve ölçeklendirmektir.'}
+            {i18n.language === 'ru'
+              ? 'Мы берем на себя управление всеми процессами под ключ: от регистрации компании и открытия счетов до фулфилмента, таможни и рекламы. Наша цель — вывести ваш бизнес на стабильную прибыль.'
+              : (i18n.language === 'en' 
+                ? 'We manage the entire process end-to-end on your behalf, from company structuring to inventory management, customs to advertising.'
+                : 'Sizin adınıza şirket yapılandırmasından stok yönetimine, gümrükten reklama kadar tüm süreci uçtan uca yönetiyoruz. Amacımız sizi en kısa sürede satış yapabilir hale getirmek ve ölçeklendirmektir.')}
           </motion.p>
         </div>
       </div>
@@ -160,21 +162,26 @@ export default function Services() {
             <div className="max-w-xl text-white">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/5 bg-white/5 mb-6 text-[13px] font-medium text-slate-300 backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-accent-500 animate-[pulse_2s_ease-in-out_infinite]" /> 
-                {i18n.language === 'en' ? 'Uninterrupted Operational Power' : 'Operasyonda Kesintisiz Güç'}
+                {i18n.language === 'ru' ? 'Непрерывная операционная надежность' : (i18n.language === 'en' ? 'Uninterrupted Operational Power' : 'Operasyonda Kesintisiz Güç')}
               </div>
               <h2 className="text-[34px] md:text-[42px] font-extrabold mb-6 tracking-tight leading-[1.15]">
-                {i18n.language === 'en' ? 'You Produce, Leave' : 'Siz Üretin, Gerisini'}<br />
+                {i18n.language === 'ru' ? 'Фокусируйтесь на продукте,' : (i18n.language === 'en' ? 'You Produce, Leave' : 'Siz Üretin, Gerisini')}<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">
-                  {i18n.language === 'en' ? 'The Rest to Us.' : 'Bize Bırakın.'}
+                  {i18n.language === 'ru' ? 'остальное мы берем на себя.' : (i18n.language === 'en' ? 'The Rest to Us.' : 'Bize Bırakın.')}
                 </span>
               </h2>
               <p className="text-slate-400 text-[17px] mb-8 leading-relaxed">
-                {i18n.language === 'en'
-                  ? 'We eliminate the complexity of the Russian e-commerce market by managing setup, operation, logistics, and growth steps from a single point.'
-                  : 'Kurulum, operasyon, lojistik ve büyüme adımlarını tek noktadan yöneterek Rusya e-ticaret pazarındaki karmaşayı ortadan kaldırıyoruz.'}
+                {i18n.language === 'ru'
+                  ? 'Мы устраняем сложности международной торговли и e-commerce, управляя всеми этапами регистрации, логистики и продвижения из единого центра.'
+                  : (i18n.language === 'en'
+                    ? 'We eliminate the complexity of the Russian e-commerce market by managing setup, operation, logistics, and growth steps from a single point.'
+                    : 'Kurulum, operasyon, lojistik ve büyüme adımlarını tek noktadan yöneterek Rusya e-ticaret pazarındaki karmaşayı ortadan kaldırıyoruz.')}
               </p>
               <div className="flex flex-wrap gap-3">
-                {(i18n.language === 'en' ? ['Store Setup', 'Logistics', 'Marketing & Growth'] : ['Mağaza Kurulumu', 'Lojistik Yönetimi', 'Pazarlama & Büyüme']).map((step, idx) => (
+                {(i18n.language === 'ru' 
+                  ? ['Открытие юрлица и счетов', 'Логистика и таможня', 'Маркетплейсы и маркетинг']
+                  : (i18n.language === 'en' ? ['Store Setup', 'Logistics', 'Marketing & Growth'] : ['Mağaza Kurulumu', 'Lojistik Yönetimi', 'Pazarlama & Büyüme'])
+                ).map((step, idx) => (
                   <div key={idx} className="flex items-center gap-2 bg-white/[0.03] border border-white/5 text-slate-300 rounded-xl px-4 py-2.5 text-[14px] font-medium">
                     <CheckCircle2 className="w-4 h-4 text-accent-500" />
                     {step}
@@ -192,10 +199,10 @@ export default function Services() {
                 ))}
               </div>
               <Link 
-                to="/iletisim" 
+                to={i18n.language === 'ru' ? "/ru/iletisim" : "/iletisim"} 
                 className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-8 py-4 rounded-2xl font-bold text-[15px] flex items-center gap-3 shadow-[0_0_20px_rgba(238,42,36,0.3)] hover:shadow-[0_0_25px_rgba(238,42,36,0.4)]"
               >
-                {i18n.language === 'en' ? 'Get Free Analysis' : 'Ücretsiz Analiz İsteyin'} <ArrowRight className="w-5 h-5" />
+                {i18n.language === 'ru' ? 'Получить бесплатный анализ' : (i18n.language === 'en' ? 'Get Free Analysis' : 'Ücretsiz Analiz İsteyin')} <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </div>
@@ -209,8 +216,12 @@ export default function Services() {
               ? feature.points.filter(p => typeof p === 'string').slice(0, 3) 
               : [];
              
+             const servicePath = feature.id === "kompaniya-v-turtsii" && i18n.language === 'ru'
+               ? "/ru/kompaniya-v-turtsii"
+               : (i18n.language === 'ru' ? `/ru/hizmetler/${feature.id}` : `/hizmetler/${feature.id}`);
+
              return (
-              <Link to={`/hizmetler/${feature.id}`} key={i} className="block group outline-none h-full">
+              <Link to={servicePath} key={i} className="block group outline-none h-full">
                 <motion.div
                   id={feature.id}
                   initial={{ opacity: 0, y: 20 }}
@@ -233,7 +244,7 @@ export default function Services() {
                   </ul>
                   <div className="pt-6 border-t border-slate-100 mt-auto">
                     <p className="text-[13px] font-bold text-accent-500 flex items-center justify-between uppercase tracking-wider">
-                      <span className="flex items-center gap-2"><ArrowRight className="w-4 h-4" /> {i18n.language === 'en' ? 'View Details' : 'Detaylı İncele'}</span>
+                      <span className="flex items-center gap-2"><ArrowRight className="w-4 h-4" /> {i18n.language === 'ru' ? 'Подробнее' : (i18n.language === 'en' ? 'View Details' : 'Detaylı İncele')}</span>
                     </p>
                   </div>
                 </motion.div>

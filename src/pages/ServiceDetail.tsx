@@ -106,7 +106,7 @@ export default function ServiceDetail() {
                 className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm"
               >
                 <h2 className="text-[24px] font-bold text-primary-500 mb-6">
-                  {i18n.language === 'en' ? 'Frequently Asked Questions' : 'Sıkça Sorulan Sorular'}
+                  {i18n.language === 'ru' ? 'Часто задаваемые вопросы' : (i18n.language === 'en' ? 'Frequently Asked Questions' : 'Sıkça Sorulan Sorular')}
                 </h2>
                 <div className="space-y-6">
                   {service.faqs.map((faq: { q: string, a: string }, index: number) => (
@@ -131,7 +131,7 @@ export default function ServiceDetail() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary-400 rounded-full blur-[40px] opacity-50" />
                 <h3 className="text-[20px] font-bold mb-4 relative z-10 flex items-center gap-2">
                   <Info className="w-5 h-5 text-accent-500" />
-                  {i18n.language === 'en' ? 'Who is it for?' : 'Kimler İçin Uygun?'}
+                  {i18n.language === 'ru' ? 'Для кого подходит?' : (i18n.language === 'en' ? 'Who is it for?' : 'Kimler İçin Uygun?')}
                 </h3>
                 <div className="text-primary-100 leading-relaxed relative z-10">
                   {service.forWhom}
@@ -146,13 +146,17 @@ export default function ServiceDetail() {
               className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm text-center"
             >
               <h3 className="text-[20px] font-bold text-primary-500 mb-4 tracking-tight">
-                {i18n.language === 'en' ? 'Take Action Now' : 'Hemen Aksiyon Alın'}
+                {i18n.language === 'ru' ? 'Начните прямо сейчас' : (i18n.language === 'en' ? 'Take Action Now' : 'Hemen Aksiyon Alın')}
               </h3>
               <p className="text-slate-500 text-[14px] mb-6 leading-relaxed">
-                {i18n.language === 'en' ? 'Learn for free how we can build a structure for your brand specifically for this service.' : 'Bu hizmet özelinde markanız için nasıl bir yapı kurabileceğimizi ücretsiz öğrenin.'}
+                {i18n.language === 'ru' 
+                  ? 'Узнайте бесплатно, какую структуру мы можем выстроить для вашего бренда в рамках этой услуги.'
+                  : (i18n.language === 'en' 
+                    ? 'Learn for free how we can build a structure for your brand specifically for this service.' 
+                    : 'Bu hizmet özelinde markanız için nasıl bir yapı kurabileceğimizi ücretsiz öğrenin.')}
               </p>
-              <Link to="/iletisim" className="bg-accent-500 hover:bg-accent-600 transition-colors text-white font-bold py-3.5 px-6 rounded-xl w-full flex items-center justify-center gap-2 shadow-sm text-[15px]">
-                {i18n.language === 'en' ? 'Contact Us' : 'İletişime Geçin'} <ArrowRight className="w-4 h-4" />
+              <Link to={i18n.language === 'ru' ? "/ru/iletisim" : "/iletisim"} className="bg-accent-500 hover:bg-accent-600 transition-colors text-white font-bold py-3.5 px-6 rounded-xl w-full flex items-center justify-center gap-2 shadow-sm text-[15px]">
+                {i18n.language === 'ru' ? 'Связаться с нами' : (i18n.language === 'en' ? 'Contact Us' : 'İletişime Geçin')} <ArrowRight className="w-4 h-4" />
               </Link>
             </motion.div>
           </div>

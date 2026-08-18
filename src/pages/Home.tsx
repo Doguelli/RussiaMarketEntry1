@@ -10,9 +10,12 @@ import { createOrganizationSchema, createBreadcrumbSchema } from "@/utils/seo";
 export default function Home() {
   const { t, i18n } = useTranslation();
 
+  const isRu = i18n.language === 'ru';
+  const isEn = i18n.language === 'en';
+
   const orgSchema = createOrganizationSchema();
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: isRu ? '/ru' : '/' }
   ]);
 
   const trustStats = [
@@ -44,16 +47,30 @@ export default function Home() {
     t('home.wr4')
   ];
 
+  const metaTitle = isRu
+    ? "Russia Market Entry | Услуги выхода на рынок, ВЭД и маркетплейсы"
+    : (isEn ? 'Russia Market Entry | Ozon & Wildberries Management' : 'Rusya Pazarına Giriş | Ozon & Wildberries Türkiye Yönetimi');
+
+  const metaDesc = isRu
+    ? "Комплексные решения для выхода на рынок Турции и России: регистрация компаний, банковские счета, управление Wildberries и Ozon, таможня и фулфилмент."
+    : (isEn 
+      ? 'End-to-end operation guide for e-commerce, Ozon and Wildberries sales consulting, company formation, customs and logistics from Turkey to Russia.' 
+      : "Türkiye'den Rusya'ya e-ticaret, Ozon ve Wildberries satış danışmanlığı, şirket kuruluşu, gümrük ve lojistik alanlarında uçtan uca operasyon rehberiniz.");
+
   return (
     <main>
       <Helmet>
-        <title>{i18n.language === 'en' ? 'Russia Market Entry | Ozon & Wildberries Management' : 'Rusya Pazarına Giriş | Ozon & Wildberries Türkiye Yönetimi'}</title>
-        <meta name="description" content={i18n.language === 'en' ? 'End-to-end operation guide for e-commerce, Ozon and Wildberries sales consulting, company formation, customs and logistics from Turkey to Russia.' : "Türkiye'den Rusya'ya e-ticaret, Ozon ve Wildberries satış danışmanlığı, şirket kuruluşu, gümrük ve lojistik alanlarında uçtan uca operasyon rehberiniz."} />
-        <meta name="keywords" content="Rusya e-ticaret, Rusya pazarına giriş, Ozon hesap açma, Wildberries Türkiye, Rusya şirket kurmak, Rusya ihracat" />
-        <link rel="canonical" href="https://russiamarketentry.com/" />
-        <meta property="og:title" content={i18n.language === 'en' ? 'Russia Market Entry | Ozon & Wildberries Management' : 'Rusya Pazarına Giriş | Ozon & Wildberries Türkiye Yönetimi'} />
-        <meta property="og:description" content={i18n.language === 'en' ? 'End-to-end operation guide for e-commerce, Ozon and Wildberries sales consulting, company formation, customs and logistics from Turkey to Russia.' : "Türkiye'den Rusya'ya e-ticaret, Ozon ve Wildberries satış danışmanlığı, şirket kuruluşu, gümrük ve lojistik alanlarında uçtan uca operasyon rehberiniz."} />
-        <meta property="og:url" content="https://russiamarketentry.com/" />
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDesc} />
+        <meta name="keywords" content={isRu ? "регистрация компании в турции, wildberries ozon турция, выход на рынок, банковский счет в турции" : "Rusya e-ticaret, Rusya pazarına giriş, Ozon hesap açma, Wildberries Türkiye, Rusya şirket kurmak, Rusya ihracat"} />
+        <link rel="canonical" href={isRu ? "https://russiamarketentry.com/ru" : "https://russiamarketentry.com/"} />
+        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/" />
+        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/" />
+        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru" />
+        <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/" />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDesc} />
+        <meta property="og:url" content={isRu ? "https://russiamarketentry.com/ru" : "https://russiamarketentry.com/"} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
@@ -164,7 +181,7 @@ export default function Home() {
                 <div className="flex items-center gap-2 text-slate-300 mt-4 md:mt-0 font-medium">
                   <ShieldCheck className="w-4 h-4 text-accent-500" />
                   <span className="text-[13px] tracking-wide relative top-[1px]">
-                    {i18n.language === 'en' ? 'Secure · Transparent · Result Oriented' : 'Güvenli · Şeffaf · Sonuç Odaklı'}
+                    {isRu ? 'Надежно · Прозрачно · Ориентировано на результат' : (isEn ? 'Secure · Transparent · Result Oriented' : 'Güvenli · Şeffaf · Sonuç Odaklı')}
                   </span>
                 </div>
              </div>

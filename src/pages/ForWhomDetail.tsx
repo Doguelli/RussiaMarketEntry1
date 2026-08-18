@@ -5,28 +5,33 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { forWhomData } from "../data/forWhomData";
 import { forWhomDataEN } from "../data/forWhomDataEN";
+import { forWhomDataRU } from "../data/forWhomDataRU";
 import { createBreadcrumbSchema } from "@/utils/seo";
 
 export default function ForWhomDetail() {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
+  const isRu = i18n.language === 'ru';
+  const isEn = i18n.language === 'en';
   
-  const currentData = i18n.language === 'en' ? forWhomDataEN : forWhomData;
+  const currentData = isRu ? forWhomDataRU : (isEn ? forWhomDataEN : forWhomData);
   const data = currentData.find((item) => item.slug === slug);
 
   if (!data) {
-    return <Navigate to="/kimler-icin" replace />;
+    return <Navigate to={isRu ? "/ru/kimler-icin" : "/kimler-icin"} replace />;
   }
 
-  const defaultConclusionDesc = i18n.language === 'en' 
-    ? "Contact us to set up the most suitable operation model for you and start selling."
-    : "Size en uygun operasyon modelini kurmak ve satışlara başlamak için bizimle iletişime geçin.";
+  const defaultConclusionDesc = isRu
+    ? "Свяжитесь с нами, чтобы настроить наиболее эффективную модель продаж и начать масштабирование."
+    : (isEn 
+      ? "Contact us to set up the most suitable operation model for you and start selling."
+      : "Size en uygun operasyon modelini kurmak ve satışlara başlamak için bizimle iletişime geçin.");
 
   const canonicalUrl = `https://russiamarketentry.com/kimler-icin/${slug}`;
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'en' ? 'Home' : 'Ana Sayfa', url: '/' },
-    { name: t('nav.for_whom'), url: '/kimler-icin' },
-    { name: data.shortTitle, url: `/kimler-icin/${slug}` }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: isRu ? '/ru' : '/' },
+    { name: isRu ? 'Для кого' : (isEn ? 'Who Is It For?' : t('nav.for_whom')), url: isRu ? '/ru/kimler-icin' : '/kimler-icin' },
+    { name: data.shortTitle, url: isRu ? `/ru/kimler-icin/${slug}` : `/kimler-icin/${slug}` }
   ]);
 
   return (
@@ -46,9 +51,9 @@ export default function ForWhomDetail() {
         
         {/* Back Button */}
         <div className="mb-8">
-          <Link to="/kimler-icin" className="inline-flex items-center gap-2 text-slate-500 hover:text-primary-500 font-medium transition-colors">
+          <Link to={isRu ? "/ru/kimler-icin" : "/kimler-icin"} className="inline-flex items-center gap-2 text-slate-500 hover:text-primary-500 font-medium transition-colors">
             <ArrowLeft className="w-5 h-5" />
-            {i18n.language === 'en' ? 'Back to Solutions' : 'Kimler İçin Sayfasına Dön'}
+            {isRu ? 'Назад к решениям' : (isEn ? 'Back to Solutions' : 'Kimler İçin Sayfasına Dön')}
           </Link>
         </div>
 
@@ -61,7 +66,7 @@ export default function ForWhomDetail() {
           >
             <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full font-bold text-[14px] mb-6 ${data.lightColor} ${data.color}`}>
               {data.icon}
-              <span>{i18n.language === 'en' ? 'Custom Solution' : 'Özel Çözüm'}</span>
+              <span>{isRu ? 'Персональное решение' : (isEn ? 'Custom Solution' : 'Özel Çözüm')}</span>
             </div>
             
             <h1 className={`text-[32px] md:text-[48px] font-extrabold text-primary-500 leading-tight mb-8`}>
@@ -78,7 +83,7 @@ export default function ForWhomDetail() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full blur-[100px] opacity-20 pointer-events-none" />
               
               <h3 className="text-[28px] font-bold mb-6">
-                {data.conclusionTitle || (i18n.language === 'en' ? 'Conclusion' : 'Sonuç')}
+                {data.conclusionTitle || (isRu ? 'Итог' : (isEn ? 'Conclusion' : 'Sonuç'))}
               </h3>
               
               <p className="text-white/90 text-[18px] leading-relaxed mb-8 max-w-4xl">
@@ -88,17 +93,17 @@ export default function ForWhomDetail() {
               <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
                   <h4 className="text-[22px] font-bold mb-2">
-                    {i18n.language === 'en' ? 'Take the First Step to Enter the Market' : 'Pazara Giriş İçin İlk Adımı Atın'}
+                    {isRu ? 'Сделайте первый шаг для выхода на рынок' : (isEn ? 'Take the First Step to Enter the Market' : 'Pazara Giriş İçin İlk Adımı Atın')}
                   </h4>
                   <p className="text-white/80">
-                    {i18n.language === 'en' ? 'Contact us to create a new growth channel.' : 'Yeni bir büyüme kanalı oluşturmak için bizimle iletişime geçin.'}
+                    {isRu ? 'Свяжитесь с нами, чтобы запустить новый канал масштабирования продаж.' : (isEn ? 'Contact us to create a new growth channel.' : 'Yeni bir büyüme kanalı oluşturmak için bizimle iletişime geçin.')}
                   </p>
                 </div>
                 <Link
-                  to="/iletisim"
+                  to={isRu ? "/ru/iletisim" : "/iletisim"}
                   className="shrink-0 inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-100 transition-colors"
                 >
-                  {i18n.language === 'en' ? 'Apply Now' : 'Hemen Başvuru Yapın'} <ArrowRight className="w-5 h-5"/>
+                  {isRu ? 'Оставить заявку' : (isEn ? 'Apply Now' : 'Hemen Başvuru Yapın')} <ArrowRight className="w-5 h-5"/>
                 </Link>
               </div>
             </div>
