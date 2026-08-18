@@ -105,6 +105,16 @@ export default function BlogDetail() {
               <img 
                 src={post.imageUrl} 
                 alt={title}
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (post.imageUrl.endsWith('.png') && !target.dataset.triedFallback) {
+                    target.dataset.triedFallback = 'true';
+                    target.src = post.imageUrl.replace(/\.png$/, '.jpeg');
+                  } else if (post.imageUrl.endsWith('.jpeg') && !target.dataset.triedFallback) {
+                    target.dataset.triedFallback = 'true';
+                    target.src = post.imageUrl.replace(/\.jpeg$/, '.png');
+                  }
+                }}
                 className="w-full h-full object-contain"
               />
             </motion.div>

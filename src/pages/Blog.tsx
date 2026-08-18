@@ -99,6 +99,17 @@ export default function Blog() {
                     <img 
                       src={post.imageUrl} 
                       alt={post.title}
+                      loading="lazy"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (post.imageUrl.endsWith('.png') && !target.dataset.triedFallback) {
+                          target.dataset.triedFallback = 'true';
+                          target.src = post.imageUrl.replace(/\.png$/, '.jpeg');
+                        } else if (post.imageUrl.endsWith('.jpeg') && !target.dataset.triedFallback) {
+                          target.dataset.triedFallback = 'true';
+                          target.src = post.imageUrl.replace(/\.jpeg$/, '.png');
+                        }
+                      }}
                       className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-102"
                     />
                   ) : (
