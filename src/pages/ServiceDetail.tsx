@@ -42,7 +42,7 @@ export default function ServiceDetail() {
         <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href={`https://russiamarketentry.com/hizmetler/${id}`} />
         <link rel="alternate" hrefLang="en" href={`https://russiamarketentry.com/hizmetler/${id}`} />
-        <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/hizmetler/${id}`} />
+        <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/ru/hizmetler/${id}`} />
         <link rel="alternate" hrefLang="x-default" href={`https://russiamarketentry.com/hizmetler/${id}`} />
         <meta property="og:title" content={service.metaTitle} />
         <meta property="og:description" content={service.metaDescription} />

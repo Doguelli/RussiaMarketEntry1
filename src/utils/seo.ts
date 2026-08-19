@@ -95,10 +95,14 @@ export function createArticleSchema(
     const parts = dateStr.trim().split(" ");
     if (parts.length === 3) {
       const day = parts[0].padStart(2, "0");
+      if (!months[parts[1]]) {
+        console.warn(`createArticleSchema: tanınmayan ay adı "${parts[1]}" (girdi: "${dateStr}"), Ocak varsayıldı.`);
+      }
       const month = months[parts[1]] || "01";
       const year = parts[2];
       return `${year}-${month}-${day}`;
     }
+    console.warn(`createArticleSchema: tarih ayrıştırılamadı ("${dateStr}"), sabit bir tarihe düşülüyor.`);
     return "2026-08-01";
   };
 

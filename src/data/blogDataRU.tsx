@@ -14,7 +14,7 @@ export const blogPostsRU: BlogPost[] = [
     publishedAtRu: "20 мая 2026",
     readTime: "7 dk okuma",
     readTimeRu: "7 мин чтения",
-    imageUrl: "/blog1.png",
+    imageUrl: "/blog1.jpeg",
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">
@@ -86,7 +86,7 @@ export const blogPostsRU: BlogPost[] = [
     publishedAtRu: "19 мая 2026",
     readTime: "6 dk okuma",
     readTimeRu: "6 мин чтения",
-    imageUrl: "/blog3.jpeg",
+    imageUrl: "/blog3.png",
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">
@@ -151,7 +151,7 @@ export const blogPostsRU: BlogPost[] = [
     publishedAtRu: "18 мая 2026",
     readTime: "6 dk okuma",
     readTimeRu: "6 мин чтения",
-    imageUrl: "/blog4.jpeg",
+    imageUrl: "/blog4.png",
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">
@@ -212,7 +212,7 @@ export const blogPostsRU: BlogPost[] = [
     publishedAtRu: "17 мая 2026",
     readTime: "5 dk okuma",
     readTimeRu: "5 мин чтения",
-    imageUrl: "/blog5.jpeg",
+    imageUrl: "/blog5.png",
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">
@@ -270,7 +270,7 @@ export const blogPostsRU: BlogPost[] = [
     publishedAtRu: "16 мая 2026",
     readTime: "8 dk okuma",
     readTimeRu: "8 мин чтения",
-    imageUrl: "/blog6.jpeg",
+    imageUrl: "/blog6.png",
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">
@@ -321,7 +321,7 @@ export const blogPostsRU: BlogPost[] = [
     publishedAtRu: "15 мая 2026",
     readTime: "5 dk okuma",
     readTimeRu: "5 мин чтения",
-    imageUrl: "/blog7.jpeg",
+    imageUrl: "/blog7.png",
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">
@@ -379,7 +379,7 @@ export const blogPostsRU: BlogPost[] = [
     publishedAtRu: "14 мая 2026",
     readTime: "6 dk okuma",
     readTimeRu: "6 мин чтения",
-    imageUrl: "/blog8.jpeg",
+    imageUrl: "/blog8.png",
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">
@@ -431,7 +431,7 @@ export const blogPostsRU: BlogPost[] = [
     publishedAtRu: "13 мая 2026",
     readTime: "5 dk okuma",
     readTimeRu: "5 мин чтения",
-    imageUrl: "/blog9.jpeg",
+    imageUrl: "/blog9.png",
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">
