@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export const blogPostsRU: BlogPost[] = [
   {
+    lang: "ru",
     slug: "registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026",
     metaTitle: "Регистрация компании в Турции для иностранцев (Limited Şirket) 2026",
     metaTitleRu: "Регистрация компании в Турции для иностранцев (Limited Şirket) 2026",
@@ -75,6 +76,7 @@ export const blogPostsRU: BlogPost[] = [
   },
 
   {
+    lang: "ru",
     slug: "otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits",
     metaTitle: "Открытие банковского счета в Турции для компаний и физлиц 2026",
     metaTitleRu: "Открытие банковского счета в Турции для компаний и физлиц 2026",
@@ -140,6 +142,7 @@ export const blogPostsRU: BlogPost[] = [
   },
 
   {
+    lang: "ru",
     slug: "nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya",
     metaTitle: "Налоги в Турции для бизнеса: Kurumlar, KDV и СИДН 2026",
     metaTitleRu: "Налоги в Турции для бизнеса: Kurumlar, KDV и СИДН 2026",
@@ -201,6 +204,7 @@ export const blogPostsRU: BlogPost[] = [
   },
 
   {
+    lang: "ru",
     slug: "vnzh-ikamet-i-rabochaya-viza-v-turtsii-pri-otkrytii-biznesa",
     metaTitle: "ВНЖ (Икамет) и рабочая виза в Турции при открытии бизнеса 2026",
     metaTitleRu: "ВНЖ (Икамет) и рабочая виза в Турции при открытии бизнеса 2026",
@@ -259,6 +263,7 @@ export const blogPostsRU: BlogPost[] = [
   },
 
   {
+    lang: "ru",
     slug: "torgovlya-i-logistika-mezhdu-turtsiey-i-rossiey-tamozhnya-i-raschety",
     metaTitle: "Торговля и логистика Турция — Россия: таможня и расчеты 2026",
     metaTitleRu: "Торговля и логистика Турция — Россия: таможня и расчеты 2026",
@@ -310,6 +315,7 @@ export const blogPostsRU: BlogPost[] = [
   },
 
   {
+    lang: "ru",
     slug: "yuridicheskiy-adres-i-buhgalter-mali-musavir-v-turtsii",
     metaTitle: "Юридический адрес и бухгалтер (Mali Müşavir) в Турции 2026",
     metaTitleRu: "Юридический адрес и бухгалтер (Mali Müşavir) в Турции 2026",
@@ -368,6 +374,7 @@ export const blogPostsRU: BlogPost[] = [
   },
 
   {
+    lang: "ru",
     slug: "eksport-iz-turtsii-na-marketpleysy-wildberries-ozon",
     metaTitle: "Экспорт из Турции на Wildberries и Ozon через турецкое юрлицо 2026",
     metaTitleRu: "Экспорт из Турции на Wildberries и Ozon через турецкое юрлицо 2026",
@@ -420,6 +427,7 @@ export const blogPostsRU: BlogPost[] = [
   },
 
   {
+    lang: "ru",
     slug: "limited-sirket-protiv-anonim-sirket-sravnenie-form-biznesa-v-turtsii",
     metaTitle: "Limited Şirket (ООО) vs Anonim Şirket (АО) в Турции 2026",
     metaTitleRu: "Limited Şirket (ООО) vs Anonim Şirket (АО) в Турции 2026",

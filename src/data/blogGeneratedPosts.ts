@@ -125,6 +125,10 @@ export const generatedBlogPosts: BlogPost[] = Object.entries(mdFiles).map(([file
     contentBlocks: base?.blocks,
     contentBlocksEn: perLang.en?.blocks,
     contentBlocksRu: perLang.ru?.blocks,
+    // No TR/EN content at all — this post is Russian-only, so hide it from
+    // the TR/EN blog list (see Blog.tsx's language filter) the same way the
+    // hand-authored blogPostsRU cluster is hidden.
+    lang: baseLang === "ru" ? "ru" : undefined,
   };
 
   return post;

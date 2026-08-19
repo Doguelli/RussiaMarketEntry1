@@ -30,7 +30,15 @@ export default function Blog() {
     return new Date(year, month - 1, day).getTime();
   };
 
-  const sortedBlogPosts = [...blogPosts].sort((a, b) => {
+  // Russian-only posts (e.g. the "setting up a company in Turkey" cluster
+  // aimed at Russian readers) have no Turkish/English content at all — only
+  // show them when the site itself is being viewed in Russian, otherwise
+  // they show up as out-of-place Russian-titled cards mixed into a
+  // Turkish/English list.
+  const visibleBlogPosts =
+    i18n.language === 'ru' ? blogPosts : blogPosts.filter((p) => p.lang !== 'ru');
+
+  const sortedBlogPosts = [...visibleBlogPosts].sort((a, b) => {
     const dateA = i18n.language === 'ru' ? (a.publishedAtRu || a.publishedAt) : a.publishedAt;
     const dateB = i18n.language === 'ru' ? (b.publishedAtRu || b.publishedAt) : b.publishedAt;
     return parseDate(dateB) - parseDate(dateA);
