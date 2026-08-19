@@ -30,12 +30,12 @@
       "address": [
         {
           "@type": "PostalAddress",
-          "addressCountry": "Türkiye",
+          "addressCountry": "TR",
           "addressLocality": "İstanbul"
         },
         {
           "@type": "PostalAddress",
-          "addressCountry": "Rusya",
+          "addressCountry": "RU",
           "addressLocality": "Moskova"
         }
       ],
@@ -98,6 +98,20 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Netlify Identity: handles invite/password-recovery links that land on
+         the root domain instead of /admin (standard Decap CMS + Identity setup). -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
 

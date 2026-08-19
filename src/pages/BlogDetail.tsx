@@ -5,6 +5,7 @@ import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
 import { createBreadcrumbSchema, createArticleSchema } from "@/utils/seo";
+import BlockRenderer from "../components/BlockRenderer";
 
 export default function BlogDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -22,6 +23,8 @@ export default function BlogDetail() {
   let metaTitle = post.metaTitle;
   let publishedDate = post.publishedAt;
   let readTimeStr = post.readTime;
+  let blocks = post.contentBlocks;
+  let imageUrl = post.imageUrl;
 
   if (i18n.language === 'ru') {
     title = post.titleRu || post.title;
@@ -30,11 +33,17 @@ export default function BlogDetail() {
     metaTitle = post.metaTitleRu || post.metaTitle;
     publishedDate = post.publishedAtRu || post.publishedAt;
     readTimeStr = post.readTimeRu || post.readTime;
+    blocks = post.contentBlocksRu || post.contentBlocks;
+    imageUrl = post.imageUrlRu || post.imageUrl;
   } else if (i18n.language === 'en') {
     title = post.titleEn || post.title;
     content = post.contentEn || post.content;
     excerpt = post.excerptEn || post.excerpt;
     metaTitle = post.metaTitleEn || post.metaTitle;
+    publishedDate = post.publishedAtEn || post.publishedAt;
+    readTimeStr = post.readTimeEn || post.readTime;
+    blocks = post.contentBlocksEn || post.contentBlocks;
+    imageUrl = post.imageUrlEn || post.imageUrl;
   }
 
   const canonicalUrl = `https://russiamarketentry.com/blog/${post.slug}`;
@@ -49,11 +58,11 @@ export default function BlogDetail() {
     excerpt,
     post.slug,
     post.publishedAt,
-    post.imageUrl
+    imageUrl
   );
 
-  const fullImageUrl = post.imageUrl
-    ? (post.imageUrl.startsWith("http") ? post.imageUrl : `https://russiamarketentry.com${post.imageUrl}`)
+  const fullImageUrl = imageUrl
+    ? (imageUrl.startsWith("http") ? imageUrl : `https://russiamarketentry.com${imageUrl}`)
     : "https://russiamarketentry.com/og-image.jpg";
 
   return (
@@ -65,7 +74,7 @@ export default function BlogDetail() {
           <link rel="canonical" href={canonicalUrl} />
           <link rel="alternate" hrefLang="tr" href={`https://russiamarketentry.com/blog/${post.slug}`} />
           <link rel="alternate" hrefLang="en" href={`https://russiamarketentry.com/blog/${post.slug}`} />
-          <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/blog/${post.slug}`} />
+          <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/ru/blog/${post.slug}`} />
           <link rel="alternate" hrefLang="x-default" href={`https://russiamarketentry.com/blog/${post.slug}`} />
           <meta property="og:title" content={`${metaTitle} | Russia Market Entry`} />
           <meta property="og:description" content={excerpt} />
@@ -85,8 +94,8 @@ export default function BlogDetail() {
           >
             <ArrowLeft className="w-5 h-5" /> {i18n.language === 'ru' ? 'Назад в блог' : (i18n.language === 'en' ? 'Back to Blog' : "Blog'a Dön")}
           </Link>
-          
-          <motion.h1 
+
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-[32px] md:text-[44px] lg:text-[52px] font-extrabold text-primary-500 leading-[1.15] tracking-tight mb-8"
@@ -113,26 +122,26 @@ export default function BlogDetail() {
       </section>
 
       {/* Featured Image */}
-      {post.imageUrl && (
+      {imageUrl && (
         <section className="bg-slate-50 pb-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
               className="relative aspect-video rounded-3xl overflow-hidden shadow-xl bg-white"
             >
-              <img 
-                src={post.imageUrl} 
+              <img
+                src={imageUrl}
                 alt={title}
                 onError={(e) => {
                   const target = e.currentTarget;
-                  if (post.imageUrl.endsWith('.png') && !target.dataset.triedFallback) {
+                  if (imageUrl.endsWith('.png') && !target.dataset.triedFallback) {
                     target.dataset.triedFallback = 'true';
-                    target.src = post.imageUrl.replace(/\.png$/, '.jpeg');
-                  } else if (post.imageUrl.endsWith('.jpeg') && !target.dataset.triedFallback) {
+                    target.src = imageUrl.replace(/\.png$/, '.jpeg');
+                  } else if (imageUrl.endsWith('.jpeg') && !target.dataset.triedFallback) {
                     target.dataset.triedFallback = 'true';
-                    target.src = post.imageUrl.replace(/\.jpeg$/, '.png');
+                    target.src = imageUrl.replace(/\.jpeg$/, '.png');
                   }
                 }}
                 className="w-full h-full object-contain"
@@ -150,7 +159,11 @@ export default function BlogDetail() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            {content}
+            {blocks && blocks.length > 0 ? (
+              <BlockRenderer blocks={blocks} category={post.category} />
+            ) : (
+              content
+            )}
           </motion.div>
         </div>
       </section>

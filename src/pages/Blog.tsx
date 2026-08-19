@@ -36,6 +36,12 @@ export default function Blog() {
     return parseDate(dateB) - parseDate(dateA);
   });
 
+  const getPostImage = (post: any) => {
+    if (i18n.language === 'ru') return post.imageUrlRu || post.imageUrl;
+    if (i18n.language === 'en') return post.imageUrlEn || post.imageUrl;
+    return post.imageUrl;
+  };
+
   const getPostTitle = (post: any) => {
     if (i18n.language === 'ru') return post.titleRu || post.title;
     if (i18n.language === 'en') return post.titleEn || post.title;
@@ -50,11 +56,13 @@ export default function Blog() {
 
   const getPostDate = (post: any) => {
     if (i18n.language === 'ru') return post.publishedAtRu || post.publishedAt;
+    if (i18n.language === 'en') return post.publishedAtEn || post.publishedAt;
     return post.publishedAt;
   };
 
   const getPostReadTime = (post: any) => {
     if (i18n.language === 'ru') return post.readTimeRu || post.readTime;
+    if (i18n.language === 'en') return post.readTimeEn || post.readTime;
     return post.readTime;
   };
 
@@ -131,19 +139,20 @@ export default function Blog() {
                 className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group"
               >
                 <Link to={`/blog/${post.slug}`} className="block relative aspect-video overflow-hidden bg-white">
-                  {post.imageUrl ? (
-                    <img 
-                      src={post.imageUrl} 
-                      alt={post.title}
+                  {getPostImage(post) ? (
+                    <img
+                      src={getPostImage(post)}
+                      alt={getPostTitle(post)}
                       loading="lazy"
                       onError={(e) => {
                         const target = e.currentTarget;
-                        if (post.imageUrl.endsWith('.png') && !target.dataset.triedFallback) {
+                        const src = getPostImage(post);
+                        if (src.endsWith('.png') && !target.dataset.triedFallback) {
                           target.dataset.triedFallback = 'true';
-                          target.src = post.imageUrl.replace(/\.png$/, '.jpeg');
-                        } else if (post.imageUrl.endsWith('.jpeg') && !target.dataset.triedFallback) {
+                          target.src = src.replace(/\.png$/, '.jpeg');
+                        } else if (src.endsWith('.jpeg') && !target.dataset.triedFallback) {
                           target.dataset.triedFallback = 'true';
-                          target.src = post.imageUrl.replace(/\.jpeg$/, '.png');
+                          target.src = src.replace(/\.jpeg$/, '.png');
                         }
                       }}
                       className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-102"

@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import { blogPostsRU } from "./blogDataRU";
 import { blogTranslationsRU } from "./blogTranslationsRU";
+import { generatedBlogPosts } from "./blogGeneratedPosts";
+import type { ContentBlock } from "../components/BlockRenderer";
 
 export interface BlogPost {
   slug: string;
@@ -13,15 +15,26 @@ export interface BlogPost {
   excerpt: string;
   excerptEn?: string;
   excerptRu?: string;
-  content: ReactNode;
+  content?: ReactNode;
   contentEn?: ReactNode;
   contentRu?: ReactNode;
   imageUrl: string;
   publishedAt: string;
+  publishedAtEn?: string;
   publishedAtRu?: string;
   readTime: string;
+  readTimeEn?: string;
   readTimeRu?: string;
   lang?: "tr" | "en" | "ru";
+  // Admin-panel authored posts (see blogGeneratedPosts.ts): AI-structured,
+  // whitelisted content blocks rendered via <BlockRenderer>. When present,
+  // these take priority over `content`/`contentEn`/`contentRu` above.
+  category?: string;
+  contentBlocks?: ContentBlock[];
+  contentBlocksEn?: ContentBlock[];
+  contentBlocksRu?: ContentBlock[];
+  imageUrlEn?: string;
+  imageUrlRu?: string;
 }
 
 const baseBlogPosts: BlogPost[] = [
@@ -3477,7 +3490,7 @@ const enrichedBaseBlogPosts: BlogPost[] = baseBlogPosts.map(post => {
   return post;
 });
 
-export const blogPosts: BlogPost[] = [...enrichedBaseBlogPosts, ...blogPostsRU];
+export const blogPosts: BlogPost[] = [...enrichedBaseBlogPosts, ...blogPostsRU, ...generatedBlogPosts];
 export { blogPostsRU };
 
 

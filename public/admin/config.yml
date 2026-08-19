@@ -1,0 +1,90 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# When this admin page is opened from localhost AND a decap-cms-proxy-server
+# is running (npm run cms-proxy), Decap automatically uses that local proxy
+# instead of git-gateway — no Netlify Identity login needed, and saves write
+# straight to content/blog/*.md in this working copy for local testing.
+# On the real deployed site (non-localhost) this has no effect; git-gateway
+# is used as configured above.
+local_backend: true
+
+# Drafts go through a Netlify deploy preview before publishing, so the admin
+# can see how the AI structured the plain text on the real site design before
+# it goes live.
+publish_mode: editorial_workflow
+
+media_folder: "public/uploads/blog"
+public_folder: "/uploads/blog"
+
+locale: "tr"
+
+collections:
+  - name: "blog"
+    label: "Blog Yazıları"
+    label_singular: "Blog Yazısı"
+    folder: "content/blog"
+    create: true
+    delete: true
+    identifier_field: urlSlug
+    slug: "{{fields.urlSlug}}"
+    summary: "{{urlSlug}}"
+    sortable_fields: ["publishedAt", "urlSlug"]
+    fields:
+      - label: "✍️ Blog Yazınız"
+        name: "bodyTr"
+        widget: "text"
+        required: false
+        hint: "Yazınızı buraya, düz metin olarak yazmanız yeterlidir — biçimlendirme, başlıklandırma, listeleme, konuya göre renklendirme yapay zeka tarafından otomatik yapılır."
+
+      - label: "🤖 İngilizce ve Rusçayı yukarıdaki metinden AI ile otomatik oluştur"
+        name: "autoTranslate"
+        widget: "boolean"
+        default: true
+        hint: "Açık bırakırsanız (önerilen): sadece yukarıya yazmanız yeterli, İngilizce ve Rusça versiyonlar otomatik çevrilip aynı şekilde yapılandırılır. Aşağıdaki İngilizce/Rusça alanlarına kendiniz bir şey yazarsanız, o dil için AI çevirisi devre dışı kalır ve sizin yazdığınız kullanılır."
+
+      # --- Aşağıdaki alanların tamamı isteğe bağlıdır ---
+
+      - label: "URL Parçası (slug)"
+        name: "urlSlug"
+        widget: "string"
+        pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Sadece küçük harf, rakam ve tire (-) kullanın, boşluk/Türkçe karakter olmaz"]
+        hint: "Yazının adresi bu olacak: russiamarketentry.com/blog/<bu-metin>. Örn: ozonda-magaza-nasil-acilir"
+
+      - { label: "Başlık (opsiyonel)", name: "titleTr", widget: "string", required: false, hint: "Boş bırakılırsa yazınızdan yapay zeka otomatik bir başlık çıkarır." }
+      - { label: "Özet (opsiyonel)", name: "excerptTr", widget: "text", required: false, hint: "Boş bırakılırsa yapay zeka otomatik bir özet çıkarır." }
+
+      - label: "Yayın Tarihi (opsiyonel)"
+        name: "publishedAt"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        required: false
+
+      - label: "Okuma Süresi (opsiyonel)"
+        name: "readTime"
+        widget: "string"
+        required: false
+        hint: "Boş bırakılırsa metin uzunluğuna göre otomatik hesaplanır."
+
+      - { label: "Kapak Görseli (opsiyonel)", name: "image", widget: "image", required: false, hint: "JPG/PNG/WebP. Aşağıda dil bazlı ayrı görsel yüklemezsen tüm dillerde bu görsel kullanılır." }
+
+      - { label: "🇬🇧 Kapak Görseli (İngilizce, opsiyonel)", name: "imageEn", widget: "image", required: false }
+      - { label: "🇬🇧 Başlık (İngilizce, opsiyonel — override)", name: "titleEn", widget: "string", required: false }
+      - { label: "🇬🇧 Özet (İngilizce, opsiyonel — override)", name: "excerptEn", widget: "text", required: false }
+      - label: "🇬🇧 İçerik (İngilizce, düz metin, opsiyonel — override)"
+        name: "bodyEn"
+        widget: "text"
+        required: false
+        hint: "Boş bırakın, otomatik çeviri açıksa AI doldurur. Sadece Türkçe'den tamamen farklı, özel bir İngilizce içerik girmek isterseniz buraya yazın."
+
+      - { label: "🇷🇺 Kapak Görseli (Rusça, opsiyonel)", name: "imageRu", widget: "image", required: false }
+      - { label: "🇷🇺 Başlık (Rusça, opsiyonel — override)", name: "titleRu", widget: "string", required: false }
+      - { label: "🇷🇺 Özet (Rusça, opsiyonel — override)", name: "excerptRu", widget: "text", required: false }
+      - label: "🇷🇺 İçerik (Rusça, düz metin, opsiyonel — override)"
+        name: "bodyRu"
+        widget: "text"
+        required: false
+        hint: "Boş bırakın, otomatik çeviri açıksa AI doldurur. Sadece Türkçe'den tamamen farklı, özel bir Rusça içerik girmek isterseniz buraya yazın."

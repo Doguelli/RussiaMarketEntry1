@@ -1,14 +1,14 @@
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, "..", p);
 
 const template = fs.readFileSync(toAbsolute("dist/index.html"), "utf-8");
-const { render } = await import(toAbsolute("dist/server/entry-server.js"));
+const { render, blogSlugs } = await import(pathToFileURL(toAbsolute("dist/server/entry-server.js")));
 
-const routesToPrerender = [
+const staticRoutesToPrerender = [
   "/",
   "/hakkimizda",
   "/rusya-pazari",
@@ -28,20 +28,8 @@ const routesToPrerender = [
   "/kimler-icin/kozmetik-ureticileri",
   "/iletisim",
   "/blog",
-  "/blog/rusyada-e-ticaret-nasil-yapilir",
-  "/blog/wildberriesde-satis-yapmak",
-  "/blog/ozonda-satis-yapmak",
-  "/blog/lamodaya-nasil-girilir",
-  "/blog/rusyada-sirket-kurmadan-satis-yapilabilir-mi",
-  "/blog/wildberries-algoritmasi-nasil-calisir",
-  "/blog/rusyada-en-cok-satan-urunler-2026",
-  "/blog/wildberries-depo-stratejisi-basarili-satis",
-  "/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi",
-  "/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur",
-  "/blog/eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey",
-  "/blog/rusyada-ooo-sirketi-nasil-kurulur-turk-markalari-icin-2026-rehberi",
-  "/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber",
-  
+  "/kompaniya-v-turtsii",
+
   // Russian Infrastructure & Commercial Pages
   "/ru",
   "/ru/hakkimizda",
@@ -63,17 +51,18 @@ const routesToPrerender = [
   "/ru/iletisim",
   "/ru/kompaniya-v-turtsii",
   "/ru/blog",
-  
-  // Russian Blog Cluster (8 posts)
-  "/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026",
-  "/blog/otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits",
-  "/blog/nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya",
-  "/blog/vnzh-ikamet-i-rabochaya-viza-v-turtsii-pri-otkrytii-biznesa",
-  "/blog/torgovlya-i-logistika-mezhdu-turtsiey-i-rossiey-tamozhnya-i-raschety",
-  "/blog/yuridicheskiy-adres-i-buhgalter-mali-musavir-v-turtsii",
-  "/blog/eksport-iz-turtsii-na-marketpleysy-wildberries-ozon",
-  "/blog/limited-sirket-protiv-anonim-sirket-sravnenie-form-biznesa-v-turtsii"
 ];
+
+// Every blog post's own detail page is derived from blogPosts (src/data/blogData.tsx,
+// via the built SSR bundle's exported blogSlugs) instead of being hand-maintained
+// here, so newly added posts (including ones added through the admin panel) are
+// automatically prerendered. Both the bare /blog/:slug and the /ru/blog/:slug
+// route (AppRoutes.tsx) are prerendered — BlogDetail switches language by
+// i18n state, and the /ru prefix is what tells the app to render in Russian
+// on first load for a non-JS crawler.
+const blogRoutesToPrerender = blogSlugs.flatMap((slug) => [`/blog/${slug}`, `/ru/blog/${slug}`]);
+
+const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender];
 
 (async () => {
   for (const url of routesToPrerender) {
@@ -134,6 +123,41 @@ const routesToPrerender = [
   if (fs.existsSync(toAbsolute("dist/server"))) {
     fs.rmSync(toAbsolute("dist/server"), { recursive: true, force: true });
   }
+
+  // Regenerate sitemap.xml so newly added blog posts (e.g. via the admin panel)
+  // are automatically included instead of relying on the hand-maintained
+  // public/sitemap.xml staying in sync. Priority/changefreq are assigned by
+  // route pattern (mirrors the tiers the old hand-maintained sitemap used);
+  // lastmod uses the build date for every URL, same coarse granularity the
+  // old hand-maintained sitemap used (a single date for all entries).
+  const siteOrigin = "https://russiamarketentry.com";
+  const buildDate = new Date().toISOString().slice(0, 10);
+
+  function sitemapMeta(url) {
+    if (url === "/" || url === "/ru") return { priority: "1.0", changefreq: "weekly" };
+    if (url === "/blog" || url === "/ru/blog" || url === "/hizmetler" || url === "/ru/hizmetler") {
+      return { priority: "0.9", changefreq: "weekly" };
+    }
+    if (url.startsWith("/hizmetler/") || url.startsWith("/ru/hizmetler/")) {
+      return { priority: "0.8", changefreq: "weekly" };
+    }
+    if (url.startsWith("/blog/") || url.startsWith("/ru/blog/")) {
+      return { priority: "0.6", changefreq: "monthly" };
+    }
+    if (url.startsWith("/kimler-icin") || url.startsWith("/ru/kimler-icin")) {
+      return { priority: "0.7", changefreq: "monthly" };
+    }
+    return { priority: "0.7", changefreq: "monthly" };
+  }
+
+  const sitemapUrls = routesToPrerender
+    .map((url) => {
+      const { priority, changefreq } = sitemapMeta(url);
+      return `  <url><loc>${siteOrigin}${url}</loc><lastmod>${buildDate}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`;
+    })
+    .join("\n");
+  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls}\n</urlset>\n`;
+  fs.writeFileSync(toAbsolute("dist/sitemap.xml"), sitemapXml);
 
   console.log(`Prerendering complete! Generated static HTML for ${routesToPrerender.length} routes in dist/.`);
 })();
