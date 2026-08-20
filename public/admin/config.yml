@@ -103,16 +103,10 @@ collections:
         pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Sadece küçük harf, rakam ve tire (-) kullanın, boşluk/Türkçe karakter olmaz"]
         hint: "Yazının adresi bu olacak: russiamarketentry.com/blog/<bu-metin>. Örn: ozonda-magaza-nasil-acilir"
 
-      - label: "Yayın Tarihi (opsiyonel)"
+      - label: "Yayın Tarihi"
         name: "publishedAt"
         widget: "datetime"
         format: "YYYY-MM-DD"
         date_format: "YYYY-MM-DD"
         time_format: false
-        required: false
-
-      - label: "Okuma Süresi (opsiyonel)"
-        name: "readTime"
-        widget: "string"
-        required: false
-        hint: "Boş bırakılırsa metin uzunluğuna göre otomatik hesaplanır."
+        default: "{{now}}"
