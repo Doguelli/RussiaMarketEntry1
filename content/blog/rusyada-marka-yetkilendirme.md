@@ -1,6 +1,6 @@
 ---
 bodyTr: >-
-  ürk markalarının Rusya pazarına girişinde marka yetkilendirmesi neden
+  Türk markalarının Rusya pazarına girişinde marka yetkilendirmesi neden
   önemlidir? Distribütör, lisans sahibi ve marketplace satıcısı arasındaki
   farklar nelerdir? Rusya'da marka kullanım hakkı nasıl düzenlenmelidir?
 
