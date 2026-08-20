@@ -346,24 +346,37 @@ async function main() {
 
       if (isAuthored) {
         const fixedCategory = lang === sourceLang ? undefined : category;
+        const alreadyStructured = fs.existsSync(outPath);
         let result;
         try {
           result = ai
             ? await structureText(ai, manual[lang].body, lang, manual[lang].title, manual[lang].excerpt, fixedCategory)
+            : alreadyStructured
+              ? null // keep the committed version below instead of downgrading it
+              : {
+                  title: manual[lang].title || "",
+                  excerpt: manual[lang].excerpt || "",
+                  category: fixedCategory || "genel",
+                  blocks: fallbackBlocks(manual[lang].body),
+                };
+        } catch (err) {
+          console.error(`Gemini hata verdi (${slug}, ${lang}):`, err.message);
+          // If this post was already successfully structured in a previous
+          // build (and committed to content/blog-generated/), a transient
+          // failure here (e.g. quota exhaustion) should NOT downgrade it back
+          // to a plain fallback paragraph — keep the last good version.
+          result = alreadyStructured
+            ? null
             : {
                 title: manual[lang].title || "",
                 excerpt: manual[lang].excerpt || "",
                 category: fixedCategory || "genel",
                 blocks: fallbackBlocks(manual[lang].body),
               };
-        } catch (err) {
-          console.error(`Gemini hata verdi (${slug}, ${lang}):`, err.message);
-          result = {
-            title: manual[lang].title || "",
-            excerpt: manual[lang].excerpt || "",
-            category: fixedCategory || "genel",
-            blocks: fallbackBlocks(manual[lang].body),
-          };
+        }
+        if (result === null) {
+          console.log(`Korundu: ${slug}.${lang}.json (yeni üretim başarısız/atlandı, mevcut içerik korundu)`);
+          continue;
         }
         if (lang === sourceLang) category = result.category;
         fs.writeFileSync(outPath, JSON.stringify(result, null, 2));
@@ -391,9 +404,14 @@ async function main() {
         console.log(`Üretildi: ${slug}.${lang}.json (AI çevirisi, kategori: ${category}, ${result.blocks.length} blok)`);
       } catch (err) {
         console.error(`Gemini çeviri hatası (${slug}, ${sourceLang}->${lang}):`, err.message);
-        // Don't publish a mislabeled/untranslated fallback under the wrong
-        // language — leave this language absent for this post instead.
-        if (fs.existsSync(outPath)) fs.rmSync(outPath);
+        // If a translation already exists (committed from a previous
+        // successful build), keep it instead of deleting it on a transient
+        // failure. Only skip publishing this language if nothing exists yet —
+        // we never publish a mislabeled/untranslated fallback under the
+        // wrong language, so a first-time failure just leaves it absent.
+        if (fs.existsSync(outPath)) {
+          console.log(`Korundu: ${slug}.${lang}.json (yeni çeviri başarısız, mevcut çeviri korundu)`);
+        }
       }
     }
   }

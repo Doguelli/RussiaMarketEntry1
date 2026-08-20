@@ -1,0 +1,108 @@
+{
+  "title": "Rusya'da Marka Yetkilendirme: Türk Markaları İçin Yetkilendirme Süreci ve Sözleşmeler",
+  "excerpt": "Türk markalarının Rusya pazarına girişinde marka yetkilendirmesi neden önemlidir? Distribütör, lisans sahibi ve marketplace satıcısı arasındaki farklar nelerdir? Rusya'da marka kullanım hakkı nasıl düzenlenmelidir?",
+  "category": "hukuk-sirket",
+  "blocks": [
+    { "type": "paragraph", "text": "Türk markalarının Rusya pazarına girişinde marka yetkilendirmesi neden önemlidir? Distribütör, lisans sahibi ve marketplace satıcısı arasındaki farklar nelerdir? Rusya'da marka kullanım hakkı nasıl düzenlenmelidir?" },
+    { "type": "paragraph", "text": "Türkiye'den Rusya pazarına girmek isteyen markalar için ürünün Rusya'ya gönderilmesi ve bir marketplace'te satışa açılması, operasyonun yalnızca ticari kısmıdır. Markanın Rusya'da kim tarafından temsil edileceği, kim tarafından kullanılacağı ve hangi ürünlerde satış hakkına sahip olunacağı da en baştan belirlenmelidir." },
+    { "type": "calloutBox", "text": "Özellikle Wildberries, Ozon ve diğer marketplace'lerde marka adına satış yapılırken, satıcının marka ile olan ilişkisinin ve ürünlerin orijinalliğinin belgelerle kanıtlanması gerekebilir. Bu nedenle Rusya'ya giriş planında marka yetkilendirme sözleşmesi, distribütörlük sözleşmesi ve gerektiğinde lisans sözleşmesi önemli bir yer tutar." },
+
+    { "type": "heading", "level": 2, "text": "Marka Yetkilendirme Nedir?" },
+    { "type": "paragraph", "text": "Marka yetkilendirmesi, marka sahibinin Rusya'daki bir şirket veya iş ortağına belirli koşullar altında markayı temsil etme, ürünlerini satma veya marka ile ilgili belirli ticari faaliyetleri yürütme yetkisi vermesidir." },
+    { "type": "calloutBox", "title": "Önemli Ayrım", "text": "Markayı temsil etmek ile markanın kullanım hakkını devretmek aynı şey değildir." },
+    {
+      "type": "bulletList",
+      "title": "Bir Türk üretici Rusya'daki partnerine şu yetkileri verebilir",
+      "items": ["Ürünlerini satma", "Marketplace'te satış yapma", "Markayı tanıtma", "Pazarlama faaliyetleri yürütme", "Distribütörlük yapma", "Belirli bölgelerde temsil etme"]
+    },
+    { "type": "paragraph", "text": "Bu yetkilerin kapsamı sözleşmede açık şekilde tanımlanmalıdır." },
+
+    { "type": "heading", "level": 2, "text": "Rusya'ya Girerken Marka Yetkilendirmesi Neden Önemli?" },
+    { "type": "paragraph", "text": "Rusya'daki satış operasyonunda marka ile ilgili belgelerin eksik veya belirsiz olması, özellikle marketplace operasyonlarında sorun yaratabilir. Örneğin bir satıcı \"Bu ürünleri markanın Türkiye'deki üreticisinden alıyorum\" diyebilir. Ancak marketplace açısından daha önemli soru şudur: \"Bu markayı kullanarak bu ürünleri satma hakkınızı nasıl kanıtlıyorsunuz?\"" },
+    { "type": "paragraph", "text": "Wildberries'in güncel kurallarında marka sahibi, lisans sahibi, distribütör, bayi ve reseller gibi farklı statüler için farklı belge setleri bulunuyor. Marketplace, gerektiğinde marka hakkını veya ürünlerin orijinalliğini kanıtlayan belgeler isteyebiliyor." },
+    { "type": "calloutBox", "text": "Marka yetkilendirmesi, Rusya'da satışa başladıktan sonra çözülecek bir konu olarak değil, pazara giriş planının başlangıç aşamasında ele alınmalıdır." },
+
+    { "type": "heading", "level": 2, "text": "Marka Yetkilendirmesi ile Distribütörlük Aynı Şey mi?" },
+    { "type": "paragraph", "text": "Hayır. Bu iki kavram çoğu zaman birlikte kullanılsa da hukuki ve ticari açıdan farklı amaçlara hizmet edebilir." },
+    { "type": "heading", "level": 3, "text": "Marka Yetkilendirmesi" },
+    { "type": "paragraph", "text": "Marka sahibinin karşı tarafa markayı belirli amaçlarla temsil etme veya kullanma yetkisi vermesidir. Örneğin: \"X şirketi, Rusya Federasyonu sınırları içerisinde markamızın yetkili temsilcisidir\" gibi bir yetkilendirme yapılabilir." },
+    { "type": "heading", "level": 3, "text": "Distribütörlük" },
+    { "type": "paragraph", "text": "Distribütör ise ürünlerin satın alınması, ithal edilmesi, dağıtılması ve satılması gibi daha geniş bir ticari operasyon üstlenebilir. Distribütörlük ilişkisinde ürün tedariği, satış, dağıtım ve ticari hedefler birlikte düzenlenebilir. Dolayısıyla bir Rus şirketinin markanın yetkili distribütörü olması, aynı zamanda marka kullanım haklarının da açık şekilde düzenlenmesini gerektirebilir." },
+
+    { "type": "heading", "level": 2, "text": "Rusya'da Hangi Marka Yetkilendirme Modelleri Kullanılabilir?" },
+    { "type": "paragraph", "text": "Tek bir model bütün markalar için doğru değildir. Türk üreticinin Rusya'daki operasyon modeline göre farklı yapılar kurulabilir." },
+    { "type": "heading", "level": 3, "text": "1. Yetkili Satıcı Modeli" },
+    { "type": "paragraph", "text": "Rusya'daki şirket markanın ürünlerini satın alır ve belirlenen kanallarda satar: Türkiye'deki Marka → Rusya'daki Yetkili Satıcı → Wildberries / Ozon. Bu model özellikle marketplace satışına başlanırken uygulanabilir." },
+    { "type": "heading", "level": 3, "text": "2. Distribütörlük Modeli" },
+    { "type": "paragraph", "text": "Rus partner belirli bir bölge veya kanal için distribütör olarak atanabilir. Bu modelde sözleşmeye şu maddeler eklenebilir:" },
+    { "type": "bulletList", "items": ["Satış bölgesi", "Satış kanalları", "Minimum satın alma miktarı", "Satış hedefleri", "Pazarlama sorumlulukları", "Fiyat politikası", "Stok yükümlülükleri", "Raporlama"] },
+    { "type": "heading", "level": 3, "text": "3. Münhasır Distribütörlük" },
+    { "type": "paragraph", "text": "Marka sahibi Rusya'da belirli bir partneri tek distribütör olarak atayabilir. Ancak bu karar verilmeden önce çok dikkatli olunmalıdır, çünkü münhasırlık \"bu bölgede sadece bu partner satış yapabilir\" anlamına gelebilecek ticari sonuçlar doğurabilir." },
+    { "type": "calloutBox", "text": "Münhasır distribütörlük verilecekse bölge, süre, kanal, satış hedefi ve performans şartları birlikte tanımlanmalıdır." },
+    { "type": "heading", "level": 3, "text": "4. Münhasır Olmayan Yetkilendirme" },
+    { "type": "paragraph", "text": "Marka sahibi aynı pazarda birden fazla satıcı veya distribütör ile çalışabilir, örneğin: Wildberries partneri, Ozon partneri, B2B distribütör, Yetkili bayi gibi farklı kanallar oluşturulabilir. Rusya pazarına yeni giren markalar açısından bu model, pazarı test etmek için daha esnek olabilir." },
+
+    { "type": "heading", "level": 2, "text": "Marka Yetkilendirme Sözleşmesinde Neler Bulunmalı?" },
+    { "type": "paragraph", "text": "İyi hazırlanmış bir yetkilendirme sözleşmesi yalnızca \"bu firma markamızı Rusya'da satabilir\" dememelidir. Yetkinin kapsamı mümkün olduğunca açık olmalıdır." },
+    { "type": "bulletList", "title": "1. Tarafların Bilgileri", "items": ["Marka sahibi", "Yetkili şirket", "Şirket bilgileri", "Vergi / kayıt bilgileri", "Yetkili kişiler"] },
+    { "type": "bulletList", "title": "2. Marka Bilgileri", "items": ["Marka adı", "Logo", "Marka tescil bilgileri", "Ürün kategorileri"] },
+    { "type": "paragraph", "text": "Rusya'da marka hakkının korunması açısından markanın ilgili ülkedeki hukuki statüsünün ayrıca kontrol edilmesi önemlidir. Rospatent, Rusya'da marka tescili için başvuru ve inceleme süreçlerini yürütmektedir." },
+    { "type": "bulletList", "title": "3. Yetkinin Kapsamı — En önemli maddelerden biri", "items": ["Markayı kullanabilir mi?", "Logo kullanabilir mi?", "Ürün görsellerini kullanabilir mi?", "Marketplace mağazası açabilir mi?", "Reklam verebilir mi?", "Sosyal medya hesabı açabilir mi?", "Markayı üçüncü taraflara tanıtabilir mi?"] },
+    { "type": "paragraph", "text": "4. Bölge: Yetki, Rusya'nın tamamı veya belirli bölgeler / satış kanalları ile sınırlandırılabilir. Örneğin \"Russian Federation\" şeklinde açık bir coğrafi kapsam belirlenebilir." },
+    { "type": "bulletList", "title": "5. Satış Kanalları", "items": ["Wildberries", "Ozon", "Lamoda", "Kendi web sitesi", "B2B", "Offline mağazalar"] },
+    { "type": "paragraph", "text": "Örneğin bir partnerin yalnızca Wildberries'de satış yapmasına izin verilirken başka bir partner Ozon'dan sorumlu olabilir." },
+    { "type": "paragraph", "text": "6. Süre: Yetkilendirme süresiz bırakılmak zorunda değildir. Örneğin 12 ay veya 24 ay gibi belirli bir süre tanımlanabilir. Sözleşmenin yenilenme koşulları da ayrıca belirlenmelidir." },
+    { "type": "paragraph", "text": "7. Münhasırlık: Eğer partner münhasır distribütör olacaksa bu konu mutlaka açık şekilde yazılmalıdır (örn. \"Rusya Federasyonu'nda markanın münhasır distribütörü\")." },
+    { "type": "calloutBox", "text": "Münhasırlığın yanında minimum yıllık satış hedefi gibi performans şartları belirlemek marka sahibini koruyabilir." },
+    { "type": "heading", "level": 3, "text": "8. Marketplace Yetkisi" },
+    { "type": "paragraph", "text": "Wildberries'in güncel sisteminde marka sahibi veya lisans sahibi olarak marka temsilciliği için belirli belgeler sunulması gerekiyor. Lisans sahiplerinden lisans sözleşmesi veya vekaletname gibi belgeler istenebiliyor. Ayrıca marka temsilcileri, markaları altında satış yapan satıcıları görebiliyor ve belirli durumlarda ürünlerin orijinalliğini onaylayabiliyor." },
+    { "type": "paragraph", "text": "Dolayısıyla sözleşmede \"yetkili taraf, markayı Wildberries ve Ozon gibi marketplace'lerde kullanabilir\" gibi açık hükümler bulunması operasyon açısından faydalı olabilir." },
+    { "type": "bulletList", "title": "9. Pazarlama ve Reklam Yetkisi", "items": ["Google / Yandex", "VK", "Telegram", "Marketplace reklamları", "Influencer marketing", "YouTube", "Offline reklam"] },
+    { "type": "paragraph", "text": "Özellikle marka görsellerinin kullanımı için marka sahibinin onay mekanizması oluşturulabilir." },
+    { "type": "bulletList", "title": "10. Marka Standartları", "items": ["Logo kullanımı", "Görsel standartlar", "Ürün fotoğrafları", "Reklam dili", "Marka mesajları", "Ambalaj kullanımı"] },
+    { "type": "paragraph", "text": "11. Yetkinin Başka Firmalara Devredilmesi: Yetkili distribütörün aldığı hakkı başka bir firmaya devretmesi veya alt distribütör ataması istenmiyorsa bu açıkça belirtilmelidir. Bu madde özellikle kontrolün marka sahibinde kalması açısından önemlidir." },
+    { "type": "bulletList", "title": "12. Sözleşmenin Sona Ermesi — nasıl yönetilecek?", "items": ["Marketplace hesapları", "Marka görselleri", "Reklam hesapları", "Sosyal medya hesapları", "Depodaki stok", "Kullanım hakkı", "Devam eden siparişler", "Marka içerikleri"] },
+
+    { "type": "heading", "level": 2, "text": "Rusya'da Marka Tescili Neden Ayrıca Değerlendirilmeli?" },
+    { "type": "paragraph", "text": "Türkiye'de markanın tescilli olması, Rusya'da otomatik olarak aynı korumayı sağladığı anlamına gelmez. Rusya'daki marka koruması ayrıca değerlendirilmelidir. Rospatent, Rusya'da marka tescil başvurularını kabul ediyor ve marka hakkının devri ile kullanım hakkının lisans sözleşmesi yoluyla verilmesine ilişkin işlemleri de kayıt altına alıyor." },
+    { "type": "calloutBox", "text": "Rusya'ya uzun vadeli giriş planlayan markalar için: Marka araştırması → Marka tescili → Yetkilendirme → Marketplace zincirini birlikte değerlendirmek daha doğru olur." },
+
+    { "type": "heading", "level": 2, "text": "Wildberries'te Marka Yetkilendirmesi Neden Önemli?" },
+    { "type": "paragraph", "text": "Wildberries'in güncel belgelerinde satıcının marka ile ilişkisini kanıtlamak için farklı statülere göre belge talepleri bulunuyor." },
+    { "type": "bulletList", "title": "Distribütör veya bayi için istenebilecek belgeler", "items": ["Geçerli distribütörlük / bayi sözleşmesi", "Sevk belgeleri", "Fatura", "İthalat varsa gümrük beyannamesi veya uluslararası taşıma belgesi"] },
+    { "type": "paragraph", "text": "Yabancı marka sahibi veya lisans sahibi açısından ise marka tescil belgesi ve lisans sözleşmesi / vekaletname gibi belgeler gündeme gelebiliyor. Bu nedenle \"ürünü Türkiye'den satın aldık\" tek başına her durumda yeterli bir marka yetkilendirme dokümantasyonu olarak görülmemelidir. Ürünlerin orijinal olması ile markayı hangi hakla kullandığınızın belgelenmesi farklı konulardır." },
+
+    { "type": "heading", "level": 2, "text": "Türk Markaları İçin Önerdiğimiz Yapı" },
+    { "type": "paragraph", "text": "Rusya'ya yeni giren bir Türk markası için süreci şu şekilde planlamak mümkün:" },
+    { "type": "bulletList", "items": ["1. Marka ve ürün analizi", "2. Rusya'daki marka / fikri mülkiyet durumu", "3. Rusya'daki satış modeli", "4. Partner veya şirket yapısının belirlenmesi", "5. Yetkilendirme / distribütörlük sözleşmesi", "6. İthalat ve uyum süreçleri", "7. Marketplace başvuruları", "8. Satış ve operasyon"] },
+    { "type": "paragraph", "text": "Bu yapı sayesinde hukuki ve ticari süreçler birbirinden kopuk ilerlemez." },
+
+    { "type": "heading", "level": 2, "text": "Konsinye Modelinde Yetkilendirme" },
+    { "type": "paragraph", "text": "Özellikle Türk markalarının Rusya'ya konsinye satış modeliyle giriş yaptığı durumlarda marka yetkilendirmesi daha da dikkatli planlanmalıdır. Çünkü burada marka sahibi ile Rusya'daki operasyonu yürüten şirket aynı kişi olmayabilir. Dolayısıyla sözleşmelerde aşağıdaki konuların birbirinden ayrılması gerekir:" },
+    { "type": "bulletList", "items": ["Ürün mülkiyeti", "Satış yetkisi", "Marka kullanım hakkı", "Marketplace yetkisi", "Tahsilat", "Stok sorumluluğu", "İade", "Hasar", "Pazarlama", "Raporlama"] },
+    { "type": "paragraph", "text": "Bu nedenle konsinye sözleşmesi ile marka yetkilendirme sözleşmesinin aynı şey olduğunu düşünmemek gerekir." },
+
+    { "type": "heading", "level": 2, "text": "En Sık Yapılan Hatalar" },
+    {
+      "type": "bulletList",
+      "items": [
+        "\"Distribütörlük sözleşmemiz var, marka kullanımına gerek yok.\" — Her sözleşmenin kapsamı aynı değildir; marka kullanım hakkının açıkça düzenlenip düzenlenmediği kontrol edilmelidir.",
+        "\"Türkiye'deki marka tescili yeterli.\" — Rusya'daki marka koruması ayrıca değerlendirilmelidir.",
+        "\"Marketplace zaten belge istemez.\" — Marketplace'ler marka ve orijinallik konusunda belge talep edebilir; Wildberries'in güncel uygulaması bunun açık bir örneğidir.",
+        "\"Münhasır distribütör verelim, satış hedeflerini sonra konuşuruz.\" — Münhasırlık verilecekse performans şartlarının da sözleşmeye bağlanması markanın kontrolünü korumaya yardımcı olur.",
+        "\"Yetkiyi verdik, artık bütün Rusya operasyonu onun sorumluluğunda.\" — Marka sahibi; fiyat, marka iletişimi, pazarlama, marketplace ve müşteri deneyimi gibi alanlarda hangi seviyede kontrol sahibi olacağını baştan belirlemelidir."
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Rusya Pazarına Girerken Marka Yetkilendirme Checklist" },
+    { "type": "bulletList", "title": "Marka", "items": ["Marka sahibi belirlendi", "Rusya'daki marka durumu kontrol edildi", "Ürün sınıfları kontrol edildi"] },
+    { "type": "bulletList", "title": "Partner", "items": ["Yetkili şirket belirlendi", "Partnerin ticari yapısı kontrol edildi", "Distribütör / bayi / lisans sahibi statüsü belirlendi"] },
+    { "type": "bulletList", "title": "Sözleşme", "items": ["Yetki kapsamı", "Bölge", "Süre", "Münhasırlık", "Satış kanalları", "Marketplace yetkisi", "Pazarlama yetkisi", "Marka kullanım kuralları", "Alt distribütör / alt lisans şartları", "Fesih koşulları"] },
+    { "type": "bulletList", "title": "Marketplace", "items": ["Marka belgeleri", "Yetkilendirme / lisans belgeleri", "Distribütörlük belgeleri", "Fatura / sevk belgeleri", "İthalat belgeleri"] },
+
+    { "type": "heading", "level": 2, "text": "Sonuç: Marka Yetkilendirmesi Rusya'ya Giriş Stratejisinin Parçasıdır" },
+    { "type": "paragraph", "text": "Rusya'ya ürün göndermek ve marketplace'te satışa başlamak, markanın pazara girdiği anlamına gelmez. Markanın kimin tarafından temsil edildiği, hangi kanallarda satıldığı, hangi bölgelerde kullanıldığı, hangi pazarlama faaliyetlerinin yapılabildiği ve marka sahibinin ne kadar kontrol sahibi olduğu en baştan belirlenmelidir." },
+    { "type": "paragraph", "text": "Özellikle Wildberries ve diğer marketplace'lerde marka ve ürün orijinalliğinin belgelenmesi gerektiğinden, marka yetkilendirmesi yalnızca hukuki bir belge değil, operasyonel bir gereklilik haline gelebilir." },
+    { "type": "calloutBox", "title": "Rusya pazarına giriş planınızı birlikte oluşturalım", "text": "Russia Market Entry olarak Türkiye'den Rusya'ya giriş yapan markaların pazar araştırması, giriş modeli, ithalat, marketplace, lojistik ve operasyon süreçlerini birlikte planlıyoruz. Markanızın Rusya'daki satış modelini oluştururken yetkilendirme, distribütörlük ve operasyon yapısını birlikte değerlendirebiliriz." }
+  ]
+}
