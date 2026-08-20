@@ -2,8 +2,8 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { 
-  Building2, 
+import {
+  Building2,
   Layers,
   ArrowRight,
   CheckCircle2,
@@ -12,7 +12,10 @@ import {
   MonitorSmartphone,
   TrendingUp,
   Truck,
-  Star
+  Star,
+  Landmark,
+  PackageCheck,
+  Target
 } from "lucide-react";
 import { serviceDetails } from "@/data/servicesData";
 import { serviceDetailsEN } from "@/data/servicesDataEN";
@@ -26,7 +29,10 @@ const iconsMap: Record<string, any> = {
   "sistem-ve-entegrasyon": MonitorSmartphone,
   "marka-buyutme": TrendingUp,
   "vergi-ve-finans": Building2,
-  "kompaniya-v-turtsii": Building2
+  "kompaniya-v-turtsii": Building2,
+  "turkiyede-sirket-kurulumu": Landmark,
+  "ithalat-ve-gumruk-yonetimi": PackageCheck,
+  "pazar-arastirmasi-ve-strateji": Target
 };
 
 function extractListPoints(element: any): string[] {

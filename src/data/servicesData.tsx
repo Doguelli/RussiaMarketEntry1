@@ -4,7 +4,10 @@ import {
   Truck,
   MonitorSmartphone,
   TrendingUp,
-  Building2
+  Building2,
+  Landmark,
+  PackageCheck,
+  Target
 } from "lucide-react";
 
 export const serviceDetails: Record<string, any> = {
@@ -715,5 +718,388 @@ export const serviceDetails: Record<string, any> = {
       { q: "Rusya pazar yerlerinin komisyonları ne kadar?", a: "Kategoriye göre değişmekle birlikte genelde %10 ile %25 arasında değişen hizmet ve lojistik komisyonları (FBO durumunda) yansır." },
       { q: "Paramı güvenle Türkiye'ye getirebilir miyim?", a: "Evet, aktif olarak kullanılan Ruble ve Yuan para birimi üzerinden işlem yapan bankalar aracılığıyla şirketinize ve yasal ihracatınıza bağlı olarak fonlama ve geri ödeme güvenle yapılmaktadır." }
     ]
+  },
+
+  "turkiyede-sirket-kurulumu": {
+    icon: Landmark,
+    title: "Türkiye'de İşinizi Kuruyor, Ticari Faaliyetinizi Başlatıyoruz",
+    metaTitle: "Türkiye'de Şirket Kuruluşu ve Ticari Faaliyet Başlatma",
+    metaDescription: "Türkiye'de şirket kurmak isteyen Rusya ve CIS bölgesindeki girişimcilere; kuruluş, muhasebe, banka hesabı, oturum ve ticari altyapı süreçlerinde uçtan uca destek sağlıyoruz.",
+    description: "Türkiye'de şirket kurmak isteyen Rusya ve CIS bölgesindeki girişimcilere, yalnızca şirket kuruluşu değil; şirketin faaliyete geçmesi için gereken ticari ve operasyonel süreçlerde de destek sağlıyoruz.",
+    forWhom: (
+      <ul className="list-disc pl-5 space-y-2 text-[15px]">
+        <li>Türkiye'de şirket kurmak isteyen Rusya ve CIS bölgesindeki girişimciler</li>
+        <li>Şirket kuruluşundan ticari faaliyete geçişe kadar uçtan uca destek arayanlar</li>
+        <li>Hazır şirket devralmayı değerlendiren yabancı yatırımcılar</li>
+      </ul>
+    ),
+    contentSections: [
+      {
+        title: "Türkiye'de İş Kurarken Karşılaşılan Temel Sorunlar",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Şirket kuruluşundan muhasebe ve vergi süreçlerine, banka hesabı açılışından oturum süreçlerine ve ticari altyapının kurulmasına kadar ihtiyaç duyulan süreçleri tek bir yapı üzerinden koordine ediyoruz.</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Şirket kuruluş sürecinin ve gerekli belgelerin bilinmemesi</li>
+              <li>Doğru şirket yapısının belirlenememesi</li>
+              <li>Bankacılık ve finansal süreçlerin yönetilmesi</li>
+              <li>Muhasebe ve vergi yükümlülüklerinin takip edilmesi</li>
+              <li>Oturum ve ilgili resmi süreçlerin koordinasyonu</li>
+              <li>Şirket kurulduktan sonra ticari faaliyetin nasıl başlatılacağının bilinmemesi</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Şirket Kuruluşu",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Türkiye'de yeni bir şirket kurmak isteyen yabancı girişimciler için kuruluş sürecini planlıyor ve gerekli profesyonellerle koordineli şekilde yürütüyoruz.</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Şirket türünün belirlenmesi</li>
+              <li>Kuruluş süreci</li>
+              <li>Gerekli belgelerin hazırlanması</li>
+              <li>Resmi süreçlerin koordinasyonu</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Hazır Şirket Devri",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Sıfırdan şirket kurmak yerine mevcut bir şirketi devralmak isteyen girişimciler için uygun şirketlerin değerlendirilmesi ve devir sürecinin koordinasyonunda destek sağlıyoruz.</p>
+            <p>Şirketin geçmişi, mevcut durumu ve devre ilişkin kontroller yapılmadan yalnızca "hazır şirket" satın alınmasını önermiyoruz.</p>
+          </div>
+        )
+      },
+      {
+        title: "Muhasebe ve Vergi",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Şirket kurulduktan sonra devam eden muhasebe ve vergi süreçlerinin mali müşavir partnerimiz aracılığıyla düzenli şekilde yürütülmesini sağlıyoruz.</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Muhasebe takibi</li>
+              <li>Vergi süreçleri</li>
+              <li>Beyanname süreçleri</li>
+              <li>Finansal yükümlülüklerin takibi</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Banka Hesabı",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Türkiye'de ticari faaliyet gösterecek şirket için banka hesabı açılış sürecinde gerekli dokümantasyonun hazırlanması ve süreç koordinasyonunda destek sağlıyoruz.</p>
+          </div>
+        )
+      },
+      {
+        title: "Oturum Süreçleri",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Türkiye'de yaşamak veya ticari faaliyet yürütmek isteyen yabancı girişimciler için uygun oturum süreçlerinde başvuru ve belge hazırlığı konusunda destek sağlıyoruz.</p>
+          </div>
+        )
+      },
+      {
+        title: "Ticari Faaliyetin Kurulması",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Şirket kurulduktan sonra asıl hedef ticari faaliyetin başlamasıdır. Bu noktada Türkiye'deki e-ticaret ve dijital operasyon tecrübemiz devreye giriyor.</p>
+            <p>İhtiyaca göre aşağıdaki ticari altyapıların kurulmasına da destek sağlayabiliyoruz:</p>
+            <ul className="list-disc pl-5 space-y-2 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:space-y-2">
+              <li>E-ticaret altyapısı</li>
+              <li>Web sitesi</li>
+              <li>Marketplace</li>
+              <li>Dijital pazarlama</li>
+              <li>Reklam yönetimi</li>
+              <li>SEO</li>
+              <li>Sosyal medya</li>
+              <li>İçerik</li>
+              <li>ERP ve entegrasyon</li>
+              <li>Veri ve operasyon yönetimi</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Süreç Nasıl İlerliyor?",
+        content: (
+          <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
+            {["İhtiyaç Analizi", "Şirket Modelinin Belirlenmesi", "Kuruluş veya Hazır Şirket Seçeneği", "Muhasebe & Vergi Yapısının Kurulması", "Banka Süreçleri", "Oturum Süreçleri", "Ticari Altyapının Kurulması", "Faaliyete Başlama"].map((step, i, arr) => (
+              <span key={step} className="inline-flex items-center gap-2">
+                <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
+                {i < arr.length - 1 && <span className="text-accent-500">→</span>}
+              </span>
+            ))}
+          </div>
+        )
+      },
+      {
+        title: "Neden Biz?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Türkiye'deki şirket kuruluş sürecini Rusya operasyonundan bağımsız görmüyoruz.</p>
+            <p>Türkiye ve Rusya arasındaki ticaret, e-ticaret ve operasyon deneyimimiz sayesinde şirket kuruluşundan sonraki ticari süreci de planlayabiliyoruz.</p>
+            <p><strong>Şirket kurmak ilk adımdır. Bizim hedefimiz şirketinizin gerçekten çalışmaya başlamasıdır.</strong></p>
+          </div>
+        )
+      }
+    ],
+    faqs: []
+  },
+
+  "ithalat-ve-gumruk-yonetimi": {
+    icon: PackageCheck,
+    title: "Ürünlerinizin Rusya'ya Girişini ve Satışa Hazırlanmasını Yönetiyoruz",
+    metaTitle: "Rusya'ya İthalat, Gümrük ve Ürün Uygunluk Yönetimi",
+    metaDescription: "Ürünün Türkiye'den çıkışından Rusya'daki satışa hazır hale gelmesine kadar gümrük, EAC, Çestniy Znak ve etiketleme süreçlerini uçtan uca yönetiyoruz.",
+    description: "Türkiye'den Rusya'ya ürün göndermek yalnızca lojistik operasyon değildir. Ürünün doğru şekilde sınıflandırılması, gerekli belgelerin hazırlanması, gümrük süreçlerinin yönetilmesi ve ürünün Rusya'da satışa hazır hale getirilmesi birbirine bağlı süreçlerdir; biz bu süreci Türkiye'den çıkıştan Rusya'daki satış operasyonuna kadar planlıyoruz.",
+    forWhom: (
+      <ul className="list-disc pl-5 space-y-2 text-[15px]">
+        <li>Rusya'ya ürün göndermeyi planlayan ihracatçı ve üreticiler</li>
+        <li>Gümrük ve uygunluk süreçlerini hatasız yönetmek isteyen markalar</li>
+        <li>Rusya pazarına ilk kez ürün gönderecek firmalar</li>
+      </ul>
+    ),
+    contentSections: [
+      {
+        title: "Rusya'ya Ürün Gönderirken Karşılaşılan Temel Sorunlar",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Ürünün doğru gümrük sınıflandırmasının yapılamaması</li>
+              <li>Gerekli uygunluk belgelerinin önceden belirlenmemesi</li>
+              <li>EAC gerekliliklerinin gözden kaçırılması</li>
+              <li>Çestniy Znak kapsamının kontrol edilmemesi</li>
+              <li>Etiketleme gerekliliklerinin son aşamada fark edilmesi</li>
+              <li>Gümrük ve lojistik süreçlerinin birbirinden bağımsız planlanması</li>
+              <li>İthalat maliyetlerinin doğru hesaplanmaması</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Ürün ve İthalat Analizi",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Ürünün Rusya'ya gönderilmesinden önce ürün kategorisi, teknik özellikleri ve ithalat sürecinde dikkate alınması gereken temel gereklilikleri değerlendiriyoruz.</p>
+          </div>
+        )
+      },
+      {
+        title: "Gümrük ve İthalat Süreci",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Türkiye'den Rusya'ya yapılacak ticari sevkiyatın gümrük ve lojistik sürecinin planlanmasına destek oluyoruz.</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Ticari evraklar</li>
+              <li>Ürün bilgileri</li>
+              <li>Gümrük süreci</li>
+              <li>Sevkiyat koordinasyonu</li>
+              <li>Rusya'daki teslim noktası</li>
+            </ul>
+            <p>Bu adımların tamamı birlikte planlanır.</p>
+          </div>
+        )
+      },
+      {
+        title: "EAC ve Uygunluk",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Ürün grubunun ilgili uygunluk gerekliliklerini değerlendiriyor ve gerekli süreçlerin doğru şekilde planlanmasına destek oluyoruz.</p>
+            <p>Amaç, ürün Rusya'ya ulaştıktan sonra belge veya uygunluk problemiyle karşılaşmamak.</p>
+          </div>
+        )
+      },
+      {
+        title: "Çestniy Znak",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Çestniy Znak kapsamına giren ürünlerde işaretleme ve ürünlerin satışa hazırlanması sürecini planlıyoruz.</p>
+          </div>
+        )
+      },
+      {
+        title: "Etiketleme ve Ürün Hazırlığı",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Ürünün Rusya pazarında satışa sunulabilmesi için gerekli ürün bilgileri, etiketleme ve marketplace gerekliliklerini birlikte değerlendiriyoruz.</p>
+          </div>
+        )
+      },
+      {
+        title: "İthalat Sonrası Operasyon",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>İthalat bizim için sürecin sonu değil. Ürün Rusya'ya ulaştıktan sonra aşağıdaki zincirin nasıl çalışacağı önceden planlanır:</p>
+            <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
+              {["Gümrük", "Depo", "Marketplace", "Stok", "Satış"].map((step, i, arr) => (
+                <span key={step} className="inline-flex items-center gap-2">
+                  <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
+                  {i < arr.length - 1 && <span className="text-accent-500">→</span>}
+                </span>
+              ))}
+            </div>
+            <p>Bu sayede ithalat operasyonunu doğrudan satış ve lojistik operasyonuyla birleştiriyoruz.</p>
+          </div>
+        )
+      },
+      {
+        title: "Süreç Nasıl İlerliyor?",
+        content: (
+          <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
+            {["Ürün Analizi", "Ürün Sınıflandırması", "Uyum ve Belgelendirme Kontrolü", "İthalat & Gümrük Planı", "Sevkiyat", "Rusya Gümrüğü", "Depo / Lojistik Operasyonu", "Marketplace'e Hazırlık"].map((step, i, arr) => (
+              <span key={step} className="inline-flex items-center gap-2">
+                <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
+                {i < arr.length - 1 && <span className="text-accent-500">→</span>}
+              </span>
+            ))}
+          </div>
+        )
+      },
+      {
+        title: "Neden Biz?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Biz ithalatı yalnızca bir gümrük işlemi olarak görmüyoruz. Türkiye'den çıkan ürünün Rusya'da satışa hazır hale gelmesine kadar olan operasyonun tamamını değerlendiriyoruz.</p>
+            <p>Bu yaklaşım, özellikle Rusya'ya ilk kez giren markalar için gereksiz maliyet ve operasyonel risklerin azaltılmasına yardımcı oluyor.</p>
+          </div>
+        )
+      }
+    ],
+    faqs: []
+  },
+
+  "pazar-arastirmasi-ve-strateji": {
+    icon: Target,
+    title: "Rusya Pazarına Girmeden Önce Doğru Stratejiyi Oluşturuyoruz",
+    metaTitle: "Rusya Pazar Araştırması ve Giriş Stratejisi Danışmanlığı",
+    metaDescription: "Ürün, kategori, rakip ve fiyat verilerine dayalı analizlerle Rusya pazarına doğru marketplace ve giriş stratejisiyle girmenizi sağlıyoruz.",
+    description: "Her ürün Rusya'da aynı şekilde satılmaz. Rusya pazarına giriş kararını tahminlerle değil, mümkün olduğunca ürün, kategori, rakip, fiyat ve satış verileri üzerinden planlıyoruz.",
+    forWhom: (
+      <ul className="list-disc pl-5 space-y-2 text-[15px]">
+        <li>Rusya pazarına girmeden önce doğru stratejiyi oluşturmak isteyen markalar</li>
+        <li>Doğru marketplace ve ürün gamını belirlemek isteyen üreticiler</li>
+        <li>Fiyatlandırma ve ilk stok planını veriye dayalı kurmak isteyen firmalar</li>
+      </ul>
+    ),
+    contentSections: [
+      {
+        title: "Rusya Pazarına Girerken Karşılaşılan Temel Sorunlar",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Ürünün gerçek pazar potansiyelinin bilinmemesi</li>
+              <li>Yanlış marketplace seçimi</li>
+              <li>Rakiplerin ve fiyat seviyelerinin yeterince analiz edilmemesi</li>
+              <li>Ürünün Rusya'daki konumlandırmasının yanlış yapılması</li>
+              <li>İlk stok miktarının doğru belirlenememesi</li>
+              <li>Pazara giriş maliyetlerinin önceden hesaplanmaması</li>
+              <li>Satış hedefleri ile lojistik planın birbirinden kopuk olması</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Pazar Analizi",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Ürününüzün Rusya'daki kategori yapısını, rakiplerini ve pazar fırsatlarını değerlendiriyoruz.</p>
+          </div>
+        )
+      },
+      {
+        title: "Ürün ve Kategori Analizi",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Hangi ürünlerin pazara giriş için daha uygun olabileceğini değerlendiriyor; ürün gamının Rusya pazarına göre önceliklendirilmesine yardımcı oluyoruz.</p>
+          </div>
+        )
+      },
+      {
+        title: "Rakip Analizi",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Rakip markaları aşağıdaki kriterler üzerinden inceliyoruz:</p>
+            <ul className="list-disc pl-5 space-y-2 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:space-y-2">
+              <li>Fiyat</li>
+              <li>Ürün çeşitliliği</li>
+              <li>Satış performansı</li>
+              <li>Değerlendirmeler</li>
+              <li>İçerik</li>
+              <li>Kampanyalar</li>
+              <li>Marketplace konumlandırması</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Marketplace Seçimi",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Rusya'da her marketplace aynı müşteri kitlesine ve satış modeline sahip değildir.</p>
+            <p className="font-semibold text-primary-500">Ürününüz için Wildberries · Ozon · Lamoda gibi kanalların hangilerinin öncelikli olması gerektiğini değerlendiriyoruz.</p>
+          </div>
+        )
+      },
+      {
+        title: "Fiyatlandırma ve Ticari Model",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Ürünün Rusya'daki satış fiyatını yalnızca rakip fiyatlarına bakarak belirlemiyoruz.</p>
+            <p>Ürün maliyeti, lojistik, marketplace maliyetleri, vergiler, reklam ve hedeflenen kârlılık birlikte değerlendirilerek ticari model oluşturuyoruz.</p>
+          </div>
+        )
+      },
+      {
+        title: "İlk Stok ve Operasyon Planı",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Pazara giriş stratejisinin önemli bir parçası da ilk stok planıdır. Bu soruları giriş stratejisinin bir parçası olarak ele alıyoruz:</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Ne kadar ürün gönderilmeli?</li>
+              <li>Hangi ürünlerden başlanmalı?</li>
+              <li>Stok nerede tutulmalı?</li>
+              <li>Hangi marketplace'e ne kadar ürün gönderilmeli?</li>
+              <li>Satış hacmine göre stoklar nasıl transfer edilmeli?</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Pazara Giriş Stratejisi Nasıl Oluşturuluyor?",
+        content: (
+          <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
+            {["Ürün Analizi", "Rusya Pazar Analizi", "Kategori & Rakip Analizi", "Marketplace Seçimi", "Fiyat & Kârlılık Modeli", "İlk Ürün Gamı", "Stok & Lojistik Planı", "Pazara Giriş", "Satış Verilerine Göre Optimizasyon"].map((step, i, arr) => (
+              <span key={step} className="inline-flex items-center gap-2">
+                <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
+                {i < arr.length - 1 && <span className="text-accent-500">→</span>}
+              </span>
+            ))}
+          </div>
+        )
+      },
+      {
+        title: "Neden Biz?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Biz pazar araştırmasını yalnızca bir rapor olarak bırakmıyoruz. Araştırmanın sonucunu operasyona bağlıyoruz:</p>
+            <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
+              {["Marketplace", "Lojistik", "Stok", "Fiyat", "Pazarlama", "Satış"].map((step, i, arr) => (
+                <span key={step} className="inline-flex items-center gap-2">
+                  <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
+                  {i < arr.length - 1 && <span className="text-accent-500">→</span>}
+                </span>
+              ))}
+            </div>
+            <p><strong>Çünkü iyi bir pazar araştırmasının gerçek değeri, uygulanabilir bir giriş planına dönüşmesidir.</strong></p>
+          </div>
+        )
+      }
+    ],
+    faqs: []
   }
 };
