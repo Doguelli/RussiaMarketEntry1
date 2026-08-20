@@ -98,8 +98,11 @@ export const generatedBlogPosts: BlogPost[] = Object.entries(mdFiles).map(([file
   const baseLang = LANGS.find((l) => perLang[l]) ?? "tr";
   const base = perLang[baseLang];
 
-  const imageByLang = { tr: data.image, en: data.imageEn, ru: data.imageRu } as Record<string, string | undefined>;
-  const baseImage = imageByLang[baseLang] || data.image || data.imageEn || data.imageRu || "";
+  const imageByLang = { tr: data.tr?.image, en: data.en?.image, ru: data.ru?.image } as Record<
+    string,
+    string | undefined
+  >;
+  const baseImage = imageByLang[baseLang] || data.tr?.image || data.en?.image || data.ru?.image || "";
 
   const post: BlogPost = {
     slug,
@@ -113,8 +116,8 @@ export const generatedBlogPosts: BlogPost[] = Object.entries(mdFiles).map(([file
     excerptEn: perLang.en?.excerpt,
     excerptRu: perLang.ru?.excerpt,
     imageUrl: baseImage,
-    imageUrlEn: data.imageEn || baseImage,
-    imageUrlRu: data.imageRu || baseImage,
+    imageUrlEn: data.en?.image || baseImage,
+    imageUrlRu: data.ru?.image || baseImage,
     publishedAt: formatDate(data.publishedAt, "tr-TR"),
     publishedAtEn: formatDate(data.publishedAt, "en-US"),
     publishedAtRu: formatDate(data.publishedAt, "ru-RU"),

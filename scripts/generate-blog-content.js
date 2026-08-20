@@ -302,12 +302,22 @@ async function main() {
     const slug = file.replace(/\.md$/, "");
     const raw = fs.readFileSync(path.join(CONTENT_DIR, file), "utf-8");
     const { data } = parseFrontmatter(raw);
-    const autoTranslate = data.autoTranslate !== false; // defaults to on
+
+    // Per-language "is this language published at all" toggle — replaces the
+    // old single autoTranslate flag. A disabled language is never published,
+    // even if it has manually authored text sitting in it. An enabled
+    // language with no manual text gets auto-translated from whichever other
+    // language has text (preferring TR as the source when available).
+    const enabled = {
+      tr: data.enableTr !== false,
+      en: data.enableEn !== false,
+      ru: data.enableRu !== false,
+    };
 
     const manual = {
-      tr: { title: data.titleTr, excerpt: data.excerptTr, body: data.bodyTr },
-      en: { title: data.titleEn, excerpt: data.excerptEn, body: data.bodyEn },
-      ru: { title: data.titleRu, excerpt: data.excerptRu, body: data.bodyRu },
+      tr: { title: data.tr?.title, excerpt: data.tr?.excerpt, body: data.tr?.body },
+      en: { title: data.en?.title, excerpt: data.en?.excerpt, body: data.en?.body },
+      ru: { title: data.ru?.title, excerpt: data.ru?.excerpt, body: data.ru?.body },
     };
 
     const authoredLangs = LANGS.filter((l) => isNonEmptyString(manual[l].body));
@@ -325,6 +335,13 @@ async function main() {
 
     for (const lang of LANGS) {
       const outPath = path.join(OUTPUT_DIR, `${slug}.${lang}.json`);
+
+      if (!enabled[lang]) {
+        if (fs.existsSync(outPath)) fs.rmSync(outPath);
+        console.log(`Atlandı: ${slug}.${lang}.json (bu dil kapalı)`);
+        continue;
+      }
+
       const isAuthored = isNonEmptyString(manual[lang].body);
 
       if (isAuthored) {
@@ -354,9 +371,10 @@ async function main() {
         continue;
       }
 
-      // Not authored by hand. Only fill in via translation if requested, an
-      // API key is available, and this isn't the source language itself.
-      if (!autoTranslate || !ai || lang === sourceLang) {
+      // Not authored by hand, but this language is enabled. Only fill in via
+      // translation if an API key is available and this isn't the source
+      // language itself (which would already have been handled above).
+      if (!ai || lang === sourceLang) {
         if (fs.existsSync(outPath)) fs.rmSync(outPath);
         continue;
       }

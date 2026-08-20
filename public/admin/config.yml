@@ -32,28 +32,76 @@ collections:
     summary: "{{urlSlug}}"
     sortable_fields: ["publishedAt", "urlSlug"]
     fields:
-      - label: "✍️ Blog Yazınız"
-        name: "bodyTr"
-        widget: "text"
-        required: false
-        hint: "Yazınızı buraya, düz metin olarak yazmanız yeterlidir — biçimlendirme, başlıklandırma, listeleme, konuya göre renklendirme yapay zeka tarafından otomatik yapılır."
-
-      - label: "🤖 İngilizce ve Rusçayı yukarıdaki metinden AI ile otomatik oluştur"
-        name: "autoTranslate"
+      - label: "🇹🇷 Türkçe"
+        name: "enableTr"
         widget: "boolean"
         default: true
-        hint: "Açık bırakırsanız (önerilen): sadece yukarıya yazmanız yeterli, İngilizce ve Rusça versiyonlar otomatik çevrilip aynı şekilde yapılandırılır. Aşağıdaki İngilizce/Rusça alanlarına kendiniz bir şey yazarsanız, o dil için AI çevirisi devre dışı kalır ve sizin yazdığınız kullanılır."
+        hint: "Kapalıysa Türkçe hiç yayınlanmaz (aşağıdaki Türkçe bölümüne bir şey yazsanız bile)."
 
-      # --- Aşağıdaki alanların tamamı isteğe bağlıdır ---
+      - label: "🇬🇧 İngilizce"
+        name: "enableEn"
+        widget: "boolean"
+        default: true
+        hint: "Açık ve boşsa, aktif olan başka bir dilden otomatik çevrilir. Kapalıysa İngilizce hiç yayınlanmaz."
+
+      - label: "🇷🇺 Rusça"
+        name: "enableRu"
+        widget: "boolean"
+        default: true
+        hint: "Açık ve boşsa, aktif olan başka bir dilden otomatik çevrilir. Kapalıysa Rusça hiç yayınlanmaz."
+
+      - label: "🇹🇷 Türkçe İçerik"
+        name: "tr"
+        widget: "object"
+        collapsed: false
+        required: false
+        fields:
+          - { label: "Kapak Görseli (opsiyonel)", name: "image", widget: "image", required: false, hint: "Diğer dillerde ayrı görsel yüklemezseniz bu görsel tüm dillerde kullanılır." }
+          - { label: "Başlık (opsiyonel)", name: "title", widget: "string", required: false, hint: "Boş bırakılırsa yapay zeka metinden otomatik bir başlık çıkarır." }
+          - { label: "Özet (opsiyonel)", name: "excerpt", widget: "text", required: false, hint: "Boş bırakılırsa yapay zeka otomatik bir özet çıkarır." }
+          - label: "İçerik (düz metin)"
+            name: "body"
+            widget: "text"
+            required: false
+            hint: "Sadece düz metin yazın — başlıklandırma, listeleme ve renklendirmeyi yapay zeka otomatik yapacak."
+
+      - label: "🇬🇧 İngilizce İçerik (aktifse ve boşsa otomatik çevrilir)"
+        name: "en"
+        widget: "object"
+        collapsed: true
+        required: false
+        fields:
+          - { label: "Kapak Görseli (opsiyonel)", name: "image", widget: "image", required: false }
+          - { label: "Başlık (opsiyonel)", name: "title", widget: "string", required: false }
+          - { label: "Özet (opsiyonel)", name: "excerpt", widget: "text", required: false }
+          - label: "İçerik (düz metin, opsiyonel)"
+            name: "body"
+            widget: "text"
+            required: false
+            hint: "Boş bırakırsanız (ve İngilizce aktifse) başka bir dilden otomatik çevrilir. Kendiniz özel bir metin de girebilirsiniz."
+
+      - label: "🇷🇺 Rusça İçerik (aktifse ve boşsa otomatik çevrilir)"
+        name: "ru"
+        widget: "object"
+        collapsed: true
+        required: false
+        fields:
+          - { label: "Kapak Görseli (opsiyonel)", name: "image", widget: "image", required: false }
+          - { label: "Başlık (opsiyonel)", name: "title", widget: "string", required: false }
+          - { label: "Özet (opsiyonel)", name: "excerpt", widget: "text", required: false }
+          - label: "İçerik (düz metin, opsiyonel)"
+            name: "body"
+            widget: "text"
+            required: false
+            hint: "Boş bırakırsanız (ve Rusça aktifse) başka bir dilden otomatik çevrilir. Kendiniz özel bir metin de girebilirsiniz."
+
+      # --- Diğer ayarlar (isteğe bağlı) ---
 
       - label: "URL Parçası (slug)"
         name: "urlSlug"
         widget: "string"
         pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Sadece küçük harf, rakam ve tire (-) kullanın, boşluk/Türkçe karakter olmaz"]
         hint: "Yazının adresi bu olacak: russiamarketentry.com/blog/<bu-metin>. Örn: ozonda-magaza-nasil-acilir"
-
-      - { label: "Başlık (opsiyonel)", name: "titleTr", widget: "string", required: false, hint: "Boş bırakılırsa yazınızdan yapay zeka otomatik bir başlık çıkarır." }
-      - { label: "Özet (opsiyonel)", name: "excerptTr", widget: "text", required: false, hint: "Boş bırakılırsa yapay zeka otomatik bir özet çıkarır." }
 
       - label: "Yayın Tarihi (opsiyonel)"
         name: "publishedAt"
@@ -68,23 +116,3 @@ collections:
         widget: "string"
         required: false
         hint: "Boş bırakılırsa metin uzunluğuna göre otomatik hesaplanır."
-
-      - { label: "Kapak Görseli (opsiyonel)", name: "image", widget: "image", required: false, hint: "JPG/PNG/WebP. Aşağıda dil bazlı ayrı görsel yüklemezsen tüm dillerde bu görsel kullanılır." }
-
-      - { label: "🇬🇧 Kapak Görseli (İngilizce, opsiyonel)", name: "imageEn", widget: "image", required: false }
-      - { label: "🇬🇧 Başlık (İngilizce, opsiyonel — override)", name: "titleEn", widget: "string", required: false }
-      - { label: "🇬🇧 Özet (İngilizce, opsiyonel — override)", name: "excerptEn", widget: "text", required: false }
-      - label: "🇬🇧 İçerik (İngilizce, düz metin, opsiyonel — override)"
-        name: "bodyEn"
-        widget: "text"
-        required: false
-        hint: "Boş bırakın, otomatik çeviri açıksa AI doldurur. Sadece Türkçe'den tamamen farklı, özel bir İngilizce içerik girmek isterseniz buraya yazın."
-
-      - { label: "🇷🇺 Kapak Görseli (Rusça, opsiyonel)", name: "imageRu", widget: "image", required: false }
-      - { label: "🇷🇺 Başlık (Rusça, opsiyonel — override)", name: "titleRu", widget: "string", required: false }
-      - { label: "🇷🇺 Özet (Rusça, opsiyonel — override)", name: "excerptRu", widget: "text", required: false }
-      - label: "🇷🇺 İçerik (Rusça, düz metin, opsiyonel — override)"
-        name: "bodyRu"
-        widget: "text"
-        required: false
-        hint: "Boş bırakın, otomatik çeviri açıksa AI doldurur. Sadece Türkçe'den tamamen farklı, özel bir Rusça içerik girmek isterseniz buraya yazın."

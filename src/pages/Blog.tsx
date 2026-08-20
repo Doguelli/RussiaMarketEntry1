@@ -30,13 +30,18 @@ export default function Blog() {
     return new Date(year, month - 1, day).getTime();
   };
 
-  // Russian-only posts (e.g. the "setting up a company in Turkey" cluster
-  // aimed at Russian readers) have no Turkish/English content at all — only
-  // show them when the site itself is being viewed in Russian, otherwise
-  // they show up as out-of-place Russian-titled cards mixed into a
-  // Turkish/English list.
-  const visibleBlogPosts =
-    i18n.language === 'ru' ? blogPosts : blogPosts.filter((p) => p.lang !== 'ru');
+  // A post only belongs in a language's list if it has real content in that
+  // language — not just a fallback to another language's text. Without this,
+  // a Turkish-only post (no Russian translation) would still show up on the
+  // Russian list showing its Turkish title/body (BlogDetail's fallback logic
+  // is meant for someone opening a direct link, not for list browsing), and
+  // Russian-only posts would show up mixed into the Turkish/English list.
+  const hasRussianContent = (p: (typeof blogPosts)[number]) =>
+    p.lang === 'ru' || Boolean(p.titleRu || p.contentRu || p.contentBlocksRu);
+
+  const visibleBlogPosts = blogPosts.filter((p) =>
+    i18n.language === 'ru' ? hasRussianContent(p) : p.lang !== 'ru'
+  );
 
   const sortedBlogPosts = [...visibleBlogPosts].sort((a, b) => {
     const dateA = i18n.language === 'ru' ? (a.publishedAtRu || a.publishedAt) : a.publishedAt;
