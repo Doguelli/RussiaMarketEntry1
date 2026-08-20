@@ -1,10 +1,10 @@
 ---
-autoTranslate: true
+autoTranslate: false
 urlSlug: kak-otkryt-kompaniyu-v-turcii
 publishedAt: 2026-08-20
 imageRu: /uploads/blog/blog-1-ru.png
 titleRu: Как открыть компанию в Турции иностранцу в 2026 году?
-bodyRu: >+
+bodyRu: >
   Как открыть компанию в Турции иностранцу в 2026 году?
 
   Регистрация компании в Турции для иностранцев: пошаговое руководство
