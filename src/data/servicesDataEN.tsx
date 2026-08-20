@@ -5,7 +5,10 @@ import {
   Truck,
   MonitorSmartphone,
   TrendingUp,
-  Building2
+  Building2,
+  Landmark,
+  PackageCheck,
+  Target
 } from "lucide-react";
 
 export const serviceDetailsEN: Record<string, any> = {
@@ -574,5 +577,388 @@ export const serviceDetailsEN: Record<string, any> = {
       { q: "How much are the commission rates on Russian marketplaces?", a: "Although it varies by category, service and logistics commissions generally ranging from 10% to 25% (in the case of FBO) are reflected." },
       { q: "Can I bring my money back safely?", a: "Yes, depending on your company and legal exports, funding and repayment are safely carried out through banks that process active Ruble and Yuan transactions." }
     ]
+  },
+
+  "turkiyede-sirket-kurulumu": {
+    icon: Landmark,
+    title: "We Set Up Your Business in Turkey and Launch Your Commercial Operations",
+    metaTitle: "Company Formation and Business Launch in Turkey",
+    metaDescription: "For entrepreneurs from Russia and the CIS region who want to set up a company in Turkey, we support not only the incorporation but also the commercial and operational processes needed to get the business running.",
+    description: "For entrepreneurs from Russia and the CIS region who want to set up a company in Turkey, we support not only the incorporation but also the commercial and operational processes needed to get the business running.",
+    forWhom: (
+      <ul className="list-disc pl-5 space-y-2 text-[15px]">
+        <li>Entrepreneurs from Russia and the CIS region looking to set up a company in Turkey</li>
+        <li>Those seeking end-to-end support from incorporation through to commercial launch</li>
+        <li>Foreign investors considering taking over an existing company</li>
+      </ul>
+    ),
+    contentSections: [
+      {
+        title: "Key Challenges When Starting a Business in Turkey",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We coordinate everything you need — from incorporation and accounting/tax processes to opening a bank account, residency procedures, and building your commercial infrastructure — through a single structure.</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Not knowing the incorporation process and required documents</li>
+              <li>Difficulty determining the right company structure</li>
+              <li>Managing banking and financial processes</li>
+              <li>Keeping up with accounting and tax obligations</li>
+              <li>Coordinating residency and related official procedures</li>
+              <li>Not knowing how to launch commercial activity once the company is formed</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Company Formation",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>For foreign entrepreneurs setting up a new company in Turkey, we plan the incorporation process and carry it out in coordination with the necessary professionals.</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Determining the company type</li>
+              <li>Incorporation process</li>
+              <li>Preparing the required documents</li>
+              <li>Coordinating official procedures</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Taking Over an Existing Company",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>For entrepreneurs who prefer to take over an existing company rather than starting from scratch, we support the evaluation of suitable companies and coordinate the transfer process.</p>
+            <p>We don't recommend simply buying a "ready-made company" without checks on its history, current status, and the transfer itself.</p>
+          </div>
+        )
+      },
+      {
+        title: "Accounting and Tax",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We ensure the ongoing accounting and tax processes after incorporation are handled regularly through our certified accountant partner.</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Bookkeeping</li>
+              <li>Tax processes</li>
+              <li>Tax return filings</li>
+              <li>Tracking financial obligations</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Bank Account",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We support the preparation of the required documentation and coordination of the process for opening a bank account for the company that will operate commercially in Turkey.</p>
+          </div>
+        )
+      },
+      {
+        title: "Residency Procedures",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>For foreign entrepreneurs who want to live in Turkey or carry out commercial activity there, we support the application and document preparation for the appropriate residency process.</p>
+          </div>
+        )
+      },
+      {
+        title: "Setting Up Commercial Operations",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Once the company is formed, the real goal is to launch commercial activity. This is where our e-commerce and digital operations experience in Turkey comes in.</p>
+            <p>Depending on your needs, we can also support setting up the following commercial infrastructure:</p>
+            <ul className="list-disc pl-5 space-y-2 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:space-y-2">
+              <li>E-commerce infrastructure</li>
+              <li>Website</li>
+              <li>Marketplace</li>
+              <li>Digital marketing</li>
+              <li>Ad management</li>
+              <li>SEO</li>
+              <li>Social media</li>
+              <li>Content</li>
+              <li>ERP and integration</li>
+              <li>Data and operations management</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "How Does the Process Work?",
+        content: (
+          <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
+            {["Needs Analysis", "Determining the Company Model", "Incorporation or Existing-Company Option", "Setting Up Accounting & Tax Structure", "Banking Processes", "Residency Processes", "Building Commercial Infrastructure", "Launching Operations"].map((step, i, arr) => (
+              <span key={step} className="inline-flex items-center gap-2">
+                <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
+                {i < arr.length - 1 && <span className="text-accent-500">→</span>}
+              </span>
+            ))}
+          </div>
+        )
+      },
+      {
+        title: "Why Us?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We don't see the company formation process in Turkey as separate from your Russia operations.</p>
+            <p>Thanks to our trade, e-commerce, and operations experience between Turkey and Russia, we can also plan the commercial process that follows incorporation.</p>
+            <p><strong>Forming a company is the first step. Our goal is for your company to actually start operating.</strong></p>
+          </div>
+        )
+      }
+    ],
+    faqs: []
+  },
+
+  "ithalat-ve-gumruk-yonetimi": {
+    icon: PackageCheck,
+    title: "We Manage Your Products' Entry Into Russia and Prepare Them for Sale",
+    metaTitle: "Import, Customs and Product Compliance Management for Russia",
+    metaDescription: "We manage the entire process — from customs and EAC to Chestny ZNAK and labeling — from your product leaving Turkey to it being ready for sale in Russia.",
+    description: "Shipping products from Turkey to Russia is not just a logistics operation. Correctly classifying the product, preparing the required documents, managing customs processes, and getting the product ready for sale in Russia are interlinked processes — we plan this from departure in Turkey through to the sales operation in Russia.",
+    forWhom: (
+      <ul className="list-disc pl-5 space-y-2 text-[15px]">
+        <li>Exporters and manufacturers planning to ship products to Russia</li>
+        <li>Brands that want to manage customs and compliance processes without errors</li>
+        <li>Companies shipping to the Russian market for the first time</li>
+      </ul>
+    ),
+    contentSections: [
+      {
+        title: "Key Challenges When Shipping Products to Russia",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Incorrect customs classification of the product</li>
+              <li>Compliance documents not identified in advance</li>
+              <li>EAC requirements being overlooked</li>
+              <li>Chestny ZNAK scope not checked</li>
+              <li>Labeling requirements discovered too late</li>
+              <li>Customs and logistics processes planned independently of each other</li>
+              <li>Import costs not calculated correctly</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Product and Import Analysis",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Before a product is shipped to Russia, we assess its category, technical specifications, and the key requirements to consider during the import process.</p>
+          </div>
+        )
+      },
+      {
+        title: "Customs and Import Process",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We support the planning of the customs and logistics process for the commercial shipment from Turkey to Russia.</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Commercial documents</li>
+              <li>Product information</li>
+              <li>Customs process</li>
+              <li>Shipment coordination</li>
+              <li>Delivery point in Russia</li>
+            </ul>
+            <p>All of these steps are planned together.</p>
+          </div>
+        )
+      },
+      {
+        title: "EAC and Compliance",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We assess the relevant compliance requirements for the product group and support the correct planning of the necessary processes.</p>
+            <p>The goal is to avoid document or compliance issues once the product reaches Russia.</p>
+          </div>
+        )
+      },
+      {
+        title: "Chestny ZNAK",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>For products within the scope of Chestny ZNAK, we plan the marking process and preparing the products for sale.</p>
+          </div>
+        )
+      },
+      {
+        title: "Labeling and Product Preparation",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We jointly assess the product information, labeling, and marketplace requirements needed for the product to be offered for sale in the Russian market.</p>
+          </div>
+        )
+      },
+      {
+        title: "Post-Import Operations",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>For us, import is not the end of the process. How the following chain will work once the product reaches Russia is planned in advance:</p>
+            <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
+              {["Customs", "Warehouse", "Marketplace", "Stock", "Sales"].map((step, i, arr) => (
+                <span key={step} className="inline-flex items-center gap-2">
+                  <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
+                  {i < arr.length - 1 && <span className="text-accent-500">→</span>}
+                </span>
+              ))}
+            </div>
+            <p>This way, we connect the import operation directly with the sales and logistics operation.</p>
+          </div>
+        )
+      },
+      {
+        title: "How Does the Process Work?",
+        content: (
+          <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
+            {["Product Analysis", "Product Classification", "Compliance & Documentation Check", "Import & Customs Plan", "Shipment", "Russian Customs", "Warehouse / Logistics Operation", "Marketplace Preparation"].map((step, i, arr) => (
+              <span key={step} className="inline-flex items-center gap-2">
+                <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
+                {i < arr.length - 1 && <span className="text-accent-500">→</span>}
+              </span>
+            ))}
+          </div>
+        )
+      },
+      {
+        title: "Why Us?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We don't see import as merely a customs transaction. We assess the entire operation, from the product leaving Turkey to it being ready for sale in Russia.</p>
+            <p>This approach helps reduce unnecessary costs and operational risks, especially for brands entering the Russian market for the first time.</p>
+          </div>
+        )
+      }
+    ],
+    faqs: []
+  },
+
+  "pazar-arastirmasi-ve-strateji": {
+    icon: Target,
+    title: "We Build the Right Strategy Before You Enter the Russian Market",
+    metaTitle: "Russia Market Research and Market-Entry Strategy Consulting",
+    metaDescription: "Through analysis based on product, category, competitor, and pricing data, we help you enter the Russian market with the right marketplace and entry strategy.",
+    description: "Not every product sells the same way in Russia. We plan the decision to enter the Russian market based on product, category, competitor, price, and sales data rather than guesswork, wherever possible.",
+    forWhom: (
+      <ul className="list-disc pl-5 space-y-2 text-[15px]">
+        <li>Brands that want to build the right strategy before entering the Russian market</li>
+        <li>Manufacturers who want to determine the right marketplace and product range</li>
+        <li>Companies that want to build their pricing and initial stock plan on data</li>
+      </ul>
+    ),
+    contentSections: [
+      {
+        title: "Key Challenges When Entering the Russian Market",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Not knowing the product's real market potential</li>
+              <li>Choosing the wrong marketplace</li>
+              <li>Insufficient analysis of competitors and price levels</li>
+              <li>Incorrect positioning of the product in Russia</li>
+              <li>Failing to determine the right initial stock quantity</li>
+              <li>Not calculating market-entry costs in advance</li>
+              <li>Sales targets being disconnected from the logistics plan</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Market Analysis",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We assess your product's category structure, competitors, and market opportunities in Russia.</p>
+          </div>
+        )
+      },
+      {
+        title: "Product and Category Analysis",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We assess which products may be more suitable for market entry and help prioritize your product range for the Russian market.</p>
+          </div>
+        )
+      },
+      {
+        title: "Competitor Analysis",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We examine competing brands based on the following criteria:</p>
+            <ul className="list-disc pl-5 space-y-2 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:space-y-2">
+              <li>Price</li>
+              <li>Product range</li>
+              <li>Sales performance</li>
+              <li>Reviews</li>
+              <li>Content</li>
+              <li>Campaigns</li>
+              <li>Marketplace positioning</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "Marketplace Selection",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>Not every marketplace in Russia has the same customer base or sales model.</p>
+            <p className="font-semibold text-primary-500">For your product, we assess which of the channels — Wildberries · Ozon · Lamoda — should be prioritized.</p>
+          </div>
+        )
+      },
+      {
+        title: "Pricing and Commercial Model",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We don't determine your product's sale price in Russia by looking at competitor prices alone.</p>
+            <p>We build the commercial model by jointly evaluating product cost, logistics, marketplace fees, taxes, advertising, and target profitability.</p>
+          </div>
+        )
+      },
+      {
+        title: "Initial Stock and Operations Plan",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>An important part of the market-entry strategy is the initial stock plan. We address these questions as part of the entry strategy:</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>How much product should be shipped?</li>
+              <li>Which products should we start with?</li>
+              <li>Where should stock be held?</li>
+              <li>How much product should go to each marketplace?</li>
+              <li>How should stock be transferred based on sales volume?</li>
+            </ul>
+          </div>
+        )
+      },
+      {
+        title: "How Is the Market-Entry Strategy Built?",
+        content: (
+          <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
+            {["Product Analysis", "Russia Market Analysis", "Category & Competitor Analysis", "Marketplace Selection", "Pricing & Profitability Model", "Initial Product Range", "Stock & Logistics Plan", "Market Entry", "Optimization Based on Sales Data"].map((step, i, arr) => (
+              <span key={step} className="inline-flex items-center gap-2">
+                <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
+                {i < arr.length - 1 && <span className="text-accent-500">→</span>}
+              </span>
+            ))}
+          </div>
+        )
+      },
+      {
+        title: "Why Us?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>We don't leave market research as just a report. We connect the outcome of the research to the operation:</p>
+            <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
+              {["Marketplace", "Logistics", "Stock", "Price", "Marketing", "Sales"].map((step, i, arr) => (
+                <span key={step} className="inline-flex items-center gap-2">
+                  <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
+                  {i < arr.length - 1 && <span className="text-accent-500">→</span>}
+                </span>
+              ))}
+            </div>
+            <p><strong>Because the real value of good market research is that it turns into an actionable entry plan.</strong></p>
+          </div>
+        )
+      }
+    ],
+    faqs: []
   }
 };
