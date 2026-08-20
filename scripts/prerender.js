@@ -30,6 +30,10 @@ const staticRoutesToPrerender = [
   "/blog",
   "/kompaniya-v-turtsii",
 
+  // English Blog List (only blog gets its own English URL tree; every
+  // other page still shares its URL between Turkish and English)
+  "/en/blog",
+
   // Russian Infrastructure & Commercial Pages
   "/ru",
   "/ru/hakkimizda",
@@ -56,11 +60,15 @@ const staticRoutesToPrerender = [
 // Every blog post's own detail page is derived from blogPosts (src/data/blogData.tsx,
 // via the built SSR bundle's exported blogSlugs) instead of being hand-maintained
 // here, so newly added posts (including ones added through the admin panel) are
-// automatically prerendered. Both the bare /blog/:slug and the /ru/blog/:slug
-// route (AppRoutes.tsx) are prerendered — BlogDetail switches language by
-// i18n state, and the /ru prefix is what tells the app to render in Russian
-// on first load for a non-JS crawler.
-const blogRoutesToPrerender = blogSlugs.flatMap((slug) => [`/blog/${slug}`, `/ru/blog/${slug}`]);
+// automatically prerendered. The bare /blog/:slug, /en/blog/:slug, and
+// /ru/blog/:slug routes (AppRoutes.tsx) are all prerendered — the URL prefix
+// is what tells the app which language to render on first load for a non-JS
+// crawler.
+const blogRoutesToPrerender = blogSlugs.flatMap((slug) => [
+  `/blog/${slug}`,
+  `/en/blog/${slug}`,
+  `/ru/blog/${slug}`,
+]);
 
 const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender];
 
@@ -135,13 +143,13 @@ const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender]
 
   function sitemapMeta(url) {
     if (url === "/" || url === "/ru") return { priority: "1.0", changefreq: "weekly" };
-    if (url === "/blog" || url === "/ru/blog" || url === "/hizmetler" || url === "/ru/hizmetler") {
+    if (url === "/blog" || url === "/en/blog" || url === "/ru/blog" || url === "/hizmetler" || url === "/ru/hizmetler") {
       return { priority: "0.9", changefreq: "weekly" };
     }
     if (url.startsWith("/hizmetler/") || url.startsWith("/ru/hizmetler/")) {
       return { priority: "0.8", changefreq: "weekly" };
     }
-    if (url.startsWith("/blog/") || url.startsWith("/ru/blog/")) {
+    if (url.startsWith("/blog/") || url.startsWith("/en/blog/") || url.startsWith("/ru/blog/")) {
       return { priority: "0.6", changefreq: "monthly" };
     }
     if (url.startsWith("/kimler-icin") || url.startsWith("/ru/kimler-icin")) {

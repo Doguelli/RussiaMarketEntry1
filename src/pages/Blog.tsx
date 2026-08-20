@@ -8,6 +8,7 @@ import { createBreadcrumbSchema } from "@/utils/seo";
 
 export default function Blog() {
   const { t, i18n } = useTranslation();
+  const langPrefix = i18n.language === 'ru' ? '/ru' : i18n.language === 'en' ? '/en' : '';
 
   const parseDate = (dateStr?: string) => {
     if (!dateStr) return 0;
@@ -80,8 +81,8 @@ export default function Blog() {
   };
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : '/' },
-    { name: t('nav.blog'), url: i18n.language === 'ru' ? '/ru/blog' : '/blog' }
+    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : (i18n.language === 'en' ? '/en' : '/') },
+    { name: t('nav.blog'), url: `${langPrefix}/blog` }
   ]);
 
   return (
@@ -89,14 +90,14 @@ export default function Blog() {
       <Helmet>
         <title>{t('blog.title')}</title>
         <meta name="description" content={t('blog.desc_meta')} />
-        <link rel="canonical" href="https://russiamarketentry.com/blog" />
+        <link rel="canonical" href={`https://russiamarketentry.com${langPrefix}/blog`} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/blog" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/blog" />
+        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/en/blog" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/blog" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/blog" />
         <meta property="og:title" content={t('blog.title')} />
         <meta property="og:description" content={t('blog.desc_meta')} />
-        <meta property="og:url" content="https://russiamarketentry.com/blog" />
+        <meta property="og:url" content={`https://russiamarketentry.com${langPrefix}/blog`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -151,7 +152,7 @@ export default function Blog() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group"
               >
-                <Link to={`/blog/${post.slug}`} className="block relative aspect-video overflow-hidden bg-white">
+                <Link to={`${langPrefix}/blog/${post.slug}`} className="block relative aspect-video overflow-hidden bg-white">
                   {getPostImage(post) ? (
                     <img
                       src={getPostImage(post)}
@@ -183,7 +184,7 @@ export default function Blog() {
                     <span>{getPostReadTime(post)}</span>
                   </div>
                   <h2 className="text-[20px] font-bold text-primary-500 mb-4 line-clamp-2 group-hover:text-accent-500 transition-colors">
-                    <Link to={`/blog/${post.slug}`}>
+                    <Link to={`${langPrefix}/blog/${post.slug}`}>
                       {getPostTitle(post)}
                     </Link>
                   </h2>
@@ -191,7 +192,7 @@ export default function Blog() {
                     {getPostExcerpt(post)}
                   </p>
                   <Link 
-                    to={`/blog/${post.slug}`}
+                    to={`${langPrefix}/blog/${post.slug}`}
                     className="inline-flex items-center gap-2 text-[15px] font-bold text-accent-500 hover:text-accent-600 transition-colors"
                   >
                     {t('blog.read_more')} <ArrowRight className="w-4 h-4" />

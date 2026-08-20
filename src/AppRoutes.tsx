@@ -39,6 +39,10 @@ function ScrollToTopAndLangSync() {
       if (i18n.language !== "ru") {
         i18n.changeLanguage("ru");
       }
+    } else if (pathname.startsWith("/en")) {
+      if (i18n.language !== "en") {
+        i18n.changeLanguage("en");
+      }
     }
   }, [pathname, i18n]);
 
@@ -133,6 +137,12 @@ export default function AppRoutes() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/iletisim" element={<Contact />} />
+
+            {/* English Blog Routes (/en/blog/*) — every other page still
+                shares its URL between Turkish and English; only blog posts
+                get a dedicated English URL. */}
+            <Route path="/en/blog" element={<Blog />} />
+            <Route path="/en/blog/:slug" element={<BlogDetail />} />
             
             {/* Russian Language Routes (/ru/*) */}
             <Route path="/ru" element={<Home />} />

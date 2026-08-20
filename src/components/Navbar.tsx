@@ -38,6 +38,18 @@ export default function Navbar() {
     
     // URL prefix adjustment
     const currentPath = location.pathname;
+
+    // Blog pages have a dedicated URL per language (/blog, /en/blog,
+    // /ru/blog and their :slug variants) — recompute the exact equivalent
+    // URL instead of the generic tr/en-share-a-URL rule below.
+    const blogMatch = currentPath.match(/^(?:\/(en|ru))?\/blog(\/.*)?$/);
+    if (blogMatch) {
+      const rest = blogMatch[2] || "";
+      const newPrefix = lang === "tr" ? "" : `/${lang}`;
+      navigate(`${newPrefix}/blog${rest}`);
+      return;
+    }
+
     if (lang === "ru") {
       if (!currentPath.startsWith("/ru")) {
         if (currentPath === "/") {
@@ -55,6 +67,7 @@ export default function Navbar() {
   };
 
   const isRu = i18n.language === "ru";
+  const isEn = i18n.language === "en";
   const prefix = isRu ? "/ru" : "";
 
   const navLinks = isRu
@@ -74,7 +87,7 @@ export default function Navbar() {
         { name: t('nav.services', 'Hizmetler'), path: "/hizmetler" },
         { name: t('nav.op_model', 'Operasyon Modeli'), path: "/operasyon-modeli" },
         { name: t('nav.for_whom', 'Kimler İçin?'), path: "/kimler-icin" },
-        { name: t('nav.blog', 'Blog'), path: "/blog" },
+        { name: t('nav.blog', 'Blog'), path: isEn ? "/en/blog" : "/blog" },
         { name: t('nav.contact', 'İletişim'), path: "/iletisim" },
       ];
 

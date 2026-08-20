@@ -12,9 +12,10 @@ export default function BlogDetail() {
   const { t, i18n } = useTranslation();
   
   const post = blogPosts.find(p => p.slug === slug);
+  const langPrefix = i18n.language === 'ru' ? '/ru' : i18n.language === 'en' ? '/en' : '';
 
   if (!post) {
-    return <Navigate to="/blog" replace />;
+    return <Navigate to={`${langPrefix}/blog`} replace />;
   }
 
   let title = post.title;
@@ -46,11 +47,11 @@ export default function BlogDetail() {
     imageUrl = post.imageUrlEn || post.imageUrl;
   }
 
-  const canonicalUrl = `https://russiamarketentry.com/blog/${post.slug}`;
+  const canonicalUrl = `https://russiamarketentry.com${langPrefix}/blog/${post.slug}`;
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : '/' },
-    { name: t('nav.blog'), url: i18n.language === 'ru' ? '/ru/blog' : '/blog' },
-    { name: title, url: `/blog/${post.slug}` }
+    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : (i18n.language === 'en' ? '/en' : '/') },
+    { name: t('nav.blog'), url: `${langPrefix}/blog` },
+    { name: title, url: `${langPrefix}/blog/${post.slug}` }
   ]);
 
   const articleSchema = createArticleSchema(
@@ -73,7 +74,7 @@ export default function BlogDetail() {
           <meta name="description" content={excerpt} />
           <link rel="canonical" href={canonicalUrl} />
           <link rel="alternate" hrefLang="tr" href={`https://russiamarketentry.com/blog/${post.slug}`} />
-          <link rel="alternate" hrefLang="en" href={`https://russiamarketentry.com/blog/${post.slug}`} />
+          <link rel="alternate" hrefLang="en" href={`https://russiamarketentry.com/en/blog/${post.slug}`} />
           <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/ru/blog/${post.slug}`} />
           <link rel="alternate" hrefLang="x-default" href={`https://russiamarketentry.com/blog/${post.slug}`} />
           <meta property="og:title" content={`${metaTitle} | Russia Market Entry`} />
@@ -88,8 +89,8 @@ export default function BlogDetail() {
       {/* Hero Header */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-24 bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <Link 
-            to={i18n.language === 'ru' ? '/ru/blog' : '/blog'} 
+          <Link
+            to={`${langPrefix}/blog`}
             className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 transition-colors font-medium mb-8"
           >
             <ArrowLeft className="w-5 h-5" /> {i18n.language === 'ru' ? 'Назад в блог' : (i18n.language === 'en' ? 'Back to Blog' : "Blog'a Dön")}
