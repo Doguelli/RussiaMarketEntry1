@@ -143,4 +143,5 @@ Dijital izlenebilirlik sistemi, DataMatrix kodlama süreçleri, gümrük ve etik
 - Web: https://russiamarketentry.com
 - E-posta: hello@russiamarketentry.com
 - İletişim Formu: https://russiamarketentry.com/iletisim
-- Kayıtlı adres: 423571, Республика Татарстан, Нижнекамский район, г. Нижнекамск, проспект Мира, д. 50, кв. 179, Россия
+- Kayıtlı (yasal) adres: 423571, Республика Татарстан, Нижнекамский район, г. Нижнекамск, проспект Мира, д. 50, кв. 179, Россия
+- Moskova operasyon / fulfillment: Podolsk, Domodedovskoye Shosse 20

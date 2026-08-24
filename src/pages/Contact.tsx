@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Mail, MapPin, Phone, ArrowRight, Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { createBreadcrumbSchema, VERIFIED_CONTACT } from "@/utils/seo";
+import { createBreadcrumbSchema, VERIFIED_CONTACT, OPERATIONAL_LOCATION } from "@/utils/seo";
 import { contactPath, absoluteUrl, homePath } from "@/utils/ruPaths";
 import { FORMSPREE_ENDPOINT } from "@/utils/formspree";
 
@@ -124,6 +124,15 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary-500 mb-1 text-[16px]">{t('contact.op_centers')}</h4>
+                  <p className="text-[13px] font-semibold text-slate-600 mb-1">{t('contact.op_location_label')}</p>
+                  <p className="text-[14px] text-slate-500 leading-relaxed">
+                    {isRu
+                      ? OPERATIONAL_LOCATION.displayRu
+                      : isEn
+                        ? OPERATIONAL_LOCATION.displayEn
+                        : OPERATIONAL_LOCATION.displayTr}
+                  </p>
+                  <p className="text-[13px] font-semibold text-slate-600 mt-4 mb-1">{t('contact.registered_address_label')}</p>
                   <p className="text-[14px] text-slate-500 leading-relaxed">
                     {VERIFIED_CONTACT.fullAddressRu}
                   </p>

@@ -13,11 +13,17 @@ import {
   termsPath,
   cookiesPath,
 } from "@/utils/ruPaths";
-import { VERIFIED_CONTACT } from "@/utils/seo";
+import { VERIFIED_CONTACT, OPERATIONAL_LOCATION } from "@/utils/seo";
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === "ru";
+  const isEn = i18n.language === "en";
+  const operationalAddress = isRu
+    ? OPERATIONAL_LOCATION.displayRu
+    : isEn
+      ? OPERATIONAL_LOCATION.displayEn
+      : OPERATIONAL_LOCATION.displayTr;
 
   return (
     <footer className="bg-primary-500 border-t-4 border-accent-500 pt-20 pb-10">
@@ -57,9 +63,12 @@ export default function Footer() {
           <div className="md:col-span-4 md:col-start-9">
             <h3 className="text-white font-semibold mb-6 text-[14px]">{t('footer.contact')}</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+              <li className="flex flex-col gap-1">
+                <span className="text-[12px] font-semibold text-white/90 uppercase tracking-wide">
+                  {t('footer.op_location_label')}
+                </span>
                 <span className="text-[14px] text-white/70 leading-relaxed">
-                  {VERIFIED_CONTACT.fullAddressRu}
+                  {operationalAddress}
                 </span>
               </li>
               <li className="flex flex-col gap-2">

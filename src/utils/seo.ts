@@ -16,8 +16,8 @@ export function createBreadcrumbSchema(items: BreadcrumbItem[]) {
   };
 }
 
-// Registered seat of ООО «НАСЕЛЬ ТЕКСТИЛЬ» — the only legal entity named on
-// the site's legal pages. No Turkish street address is published in schema.
+// Registered seat of ООО «НАСЕЛЬ ТЕКСТИЛЬ» — used on legal pages and as the
+// Organization JSON-LD PostalAddress. This is NOT the Moscow fulfillment site.
 export const VERIFIED_CONTACT = {
   email: "hello@russiamarketentry.com",
   phoneTr: "+90 532 785 24 20",
@@ -27,13 +27,26 @@ export const VERIFIED_CONTACT = {
   addressRegion: "Республика Татарстан",
   postalCode: "423571",
   addressCountry: "RU",
-  /** Full registered address as published on legal and contact surfaces */
+  /** Full registered address as published on legal and company-identification surfaces */
   fullAddressRu:
     "423571, Республика Татарстан, Нижнекамский район, г. Нижнекамск, проспект Мира, д. 50, кв. 179, Россия",
   legalName: "ООО «НАСЕЛЬ ТЕКСТИЛЬ»",
   inn: "1651099520",
   kpp: "165101001",
   ogrn: "1251600038513",
+};
+
+/**
+ * Moscow-area operational / fulfillment location used in commercial and
+ * logistics copy. Must never be described as the registered / legal address.
+ */
+export const OPERATIONAL_LOCATION = {
+  streetAddress: "Domodedovskoye Shosse 20",
+  addressLocality: "Podolsk",
+  /** Compact display used in footer / contact (Latin) */
+  displayEn: "Podolsk, Domodedovskoye Shosse 20, Moscow area",
+  displayTr: "Podolsk, Domodedovskoye Shosse 20, Moskova bölgesi",
+  displayRu: "Подольск, Домодедовское шоссе 20, Москва (операционная / fulfillment-инфраструктура)",
 };
 
 export interface OrganizationSchemaOptions {
