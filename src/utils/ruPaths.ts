@@ -18,6 +18,9 @@ export const TR_TO_RU_PAGE: Record<string, string> = {
   "/iletisim": "/ru/kontakty",
   "/kompaniya-v-turtsii": "/ru/kompaniya-v-turtsii",
   "/blog": "/ru/blog",
+  "/gizlilik-politikasi": "/ru/politika-konfidentsialnosti",
+  "/kullanim-sartlari": "/ru/usloviya-ispolzovaniya",
+  "/cerez-politikasi": "/ru/politika-cookie",
 };
 
 /** Russian path → Turkish path (inverse of TR_TO_RU_PAGE) */
@@ -142,6 +145,18 @@ export function operationModelPath(isRu: boolean): string {
 
 export function homePath(isRu: boolean): string {
   return isRu ? "/ru" : "/";
+}
+
+export function privacyPath(isRu: boolean): string {
+  return isRu ? "/ru/politika-konfidentsialnosti" : "/gizlilik-politikasi";
+}
+
+export function termsPath(isRu: boolean): string {
+  return isRu ? "/ru/usloviya-ispolzovaniya" : "/kullanim-sartlari";
+}
+
+export function cookiesPath(isRu: boolean): string {
+  return isRu ? "/ru/politika-cookie" : "/cerez-politikasi";
 }
 
 export function absoluteUrl(path: string): string {

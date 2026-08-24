@@ -32,6 +32,9 @@ const staticRoutesToPrerender = [
   "/kimler-icin/e-ticaret-girisimcileri",
   "/kimler-icin/kozmetik-ureticileri",
   "/iletisim",
+  "/gizlilik-politikasi",
+  "/kullanim-sartlari",
+  "/cerez-politikasi",
   "/blog",
   "/kompaniya-v-turtsii",
 
@@ -61,6 +64,9 @@ const staticRoutesToPrerender = [
   "/ru/dlya-kogo/online-torgovlya",
   "/ru/dlya-kogo/proizvoditeli-kosmetiki",
   "/ru/kontakty",
+  "/ru/politika-konfidentsialnosti",
+  "/ru/usloviya-ispolzovaniya",
+  "/ru/politika-cookie",
   "/ru/kompaniya-v-turtsii",
   "/ru/blog",
 ];
@@ -163,6 +169,16 @@ const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender]
     }
     if (url.startsWith("/kimler-icin") || url.startsWith("/ru/dlya-kogo")) {
       return { priority: "0.7", changefreq: "monthly" };
+    }
+    if (
+      url.includes("gizlilik") ||
+      url.includes("kullanim-sartlari") ||
+      url.includes("cerez") ||
+      url.includes("politika-konfidentsialnosti") ||
+      url.includes("usloviya-ispolzovaniya") ||
+      url.includes("politika-cookie")
+    ) {
+      return { priority: "0.3", changefreq: "yearly" };
     }
     return { priority: "0.7", changefreq: "monthly" };
   }

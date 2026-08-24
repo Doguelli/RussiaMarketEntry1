@@ -127,7 +127,8 @@
     "contact": "İletişim",
     "all_rights": "Tüm hakları saklıdır.",
     "privacy": "Gizlilik Politikası",
-    "terms": "Kullanım Şartları"
+    "terms": "Kullanım Şartları",
+    "cookies": "Çerez Politikası"
   },
   "about": {
     "title": "Hakkımızda | Rusya Pazarına Giriş Danışmanlığı & Lojistik",
@@ -153,7 +154,7 @@
   },
   "contact": {
     "title": "İletişim | Rusya E-Ticaret Danışmanlık Firması",
-    "desc_meta": "Rusya e-ticaret operasyonlarınızı başlatmak veya büyütmek için İstanbul ve Moskova ofislerimizle iletişime geçin. Uzman ekibimizle tanışın.",
+    "desc_meta": "Rusya e-ticaret operasyonlarınızı başlatmak veya büyütmek için bizimle iletişime geçin. Uzman ekibimizle tanışın.",
     "badge": "İletişim",
     "h1": "Birlikte Büyüyelim",
     "subtitle": "Rusya pazarına giriş yapmak veya mevcut operasyonunuzu büyütmek için bizimle iletişime geçin.",

@@ -16,16 +16,24 @@ export function createBreadcrumbSchema(items: BreadcrumbItem[]) {
   };
 }
 
-// Verified against the contact page and the footer, which are the only places
-// the business publishes this. Nothing here is inferred: there is no Turkish
-// street address on the site, so the schema carries none.
-const VERIFIED_CONTACT = {
+// Registered seat of ООО «НАСЕЛЬ ТЕКСТИЛЬ» — the only legal entity named on
+// the site's legal pages. No Turkish street address is published in schema.
+export const VERIFIED_CONTACT = {
   email: "hello@russiamarketentry.com",
   phoneTr: "+90 532 785 24 20",
   phoneRu: "+7 993 406-72-58",
-  streetAddress: "Domodedovskoye Shosse 20",
-  addressLocality: "Podolsk",
+  streetAddress: "проспект Мира, д. 50, кв. 179",
+  addressLocality: "Нижнекамск",
+  addressRegion: "Республика Татарстан",
+  postalCode: "423571",
   addressCountry: "RU",
+  /** Full registered address as published on legal and contact surfaces */
+  fullAddressRu:
+    "423571, Республика Татарстан, Нижнекамский район, г. Нижнекамск, проспект Мира, д. 50, кв. 179, Россия",
+  legalName: "ООО «НАСЕЛЬ ТЕКСТИЛЬ»",
+  inn: "1651099520",
+  kpp: "165101001",
+  ogrn: "1251600038513",
 };
 
 export interface OrganizationSchemaOptions {
@@ -50,16 +58,20 @@ export function createOrganizationSchema(options: OrganizationSchemaOptions = {}
     "@context": "https://schema.org",
     "@type": ["Organization", "ConsultingBusiness"],
     "name": "Russia Market Entry",
+    "legalName": VERIFIED_CONTACT.legalName,
     "url": url ? (url.startsWith("http") ? url : `https://russiamarketentry.com${url}`) : "https://russiamarketentry.com",
     "logo": "https://russiamarketentry.com/favicon.png",
     "description":
       description ??
       "Türkiye'den Rusya'ya uçtan uca e-ticaret, Ozon, Wildberries, Lamoda entegrasyonu, lojistik ve şirket kurulumu.",
     "email": VERIFIED_CONTACT.email,
+    "taxID": VERIFIED_CONTACT.inn,
     "address": {
       "@type": "PostalAddress",
       "streetAddress": VERIFIED_CONTACT.streetAddress,
       "addressLocality": VERIFIED_CONTACT.addressLocality,
+      "addressRegion": VERIFIED_CONTACT.addressRegion,
+      "postalCode": VERIFIED_CONTACT.postalCode,
       "addressCountry": VERIFIED_CONTACT.addressCountry
     },
     "areaServed": [

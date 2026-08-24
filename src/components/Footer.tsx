@@ -1,6 +1,5 @@
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
-import { MapPin, Mail, Phone, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import {
   homePath,
@@ -10,7 +9,11 @@ import {
   operationModelPath,
   forWhomPath,
   contactPath,
+  privacyPath,
+  termsPath,
+  cookiesPath,
 } from "@/utils/ruPaths";
+import { VERIFIED_CONTACT } from "@/utils/seo";
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
@@ -55,18 +58,20 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-6 text-[14px]">{t('footer.contact')}</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <span className="text-[14px] text-white/70">Podolsk, Domodedovskoye Shosse 20, Moskova</span>
+                <span className="text-[14px] text-white/70 leading-relaxed">
+                  {VERIFIED_CONTACT.fullAddressRu}
+                </span>
               </li>
               <li className="flex flex-col gap-2">
                 <span className="text-[14px] text-white/70 flex items-center gap-2">
-                  <span className="font-semibold text-white/90">TR:</span> +90 532 785 24 20
+                  <span className="font-semibold text-white/90">TR:</span> {VERIFIED_CONTACT.phoneTr}
                 </span>
                 <span className="text-[14px] text-white/70 flex items-center gap-2">
-                  <span className="font-semibold text-white/90">RU:</span> +7 993 406-72-58
+                  <span className="font-semibold text-white/90">RU:</span> {VERIFIED_CONTACT.phoneRu}
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[14px] text-white/70">hello@russiamarketentry.com</span>
+                <span className="text-[14px] text-white/70">{VERIFIED_CONTACT.email}</span>
               </li>
             </ul>
           </div>
@@ -75,11 +80,16 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-white/50">
           <p>© {new Date().getFullYear()} Russia Market Entry. {t('footer.all_rights')}</p>
-          {/* Plain labels until the legal pages themselves are written — as links
-              they resolved to "#", which React Router sent to the homepage. */}
-          <div className="flex gap-6">
-            <span>{t('footer.privacy')}</span>
-            <span>{t('footer.terms')}</span>
+          <div className="flex flex-wrap justify-center gap-6">
+            <Link to={privacyPath(isRu)} className="hover:text-white transition-colors">
+              {t('footer.privacy')}
+            </Link>
+            <Link to={termsPath(isRu)} className="hover:text-white transition-colors">
+              {t('footer.terms')}
+            </Link>
+            <Link to={cookiesPath(isRu)} className="hover:text-white transition-colors">
+              {t('footer.cookies')}
+            </Link>
           </div>
         </div>
       </div>

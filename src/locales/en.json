@@ -127,7 +127,8 @@
     "contact": "Contact",
     "all_rights": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Use"
+    "terms": "Terms of Use",
+    "cookies": "Cookie Policy"
   },
   "about": {
     "title": "About Us | Russia Market Entry & Logistics Consulting",
@@ -153,7 +154,7 @@
   },
   "contact": {
     "title": "Contact | Russia E-Commerce Consulting Firm",
-    "desc_meta": "Contact our Istanbul and Moscow offices to start or grow your e-commerce operations in Russia. Meet our expert team.",
+    "desc_meta": "Contact us to start or grow your e-commerce operations in Russia. Meet our expert team.",
     "badge": "Contact",
     "h1": "Let's Grow Together",
     "subtitle": "Contact us to enter the Russian market or expand your existing operations.",

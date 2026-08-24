@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Mail, MapPin, Phone, ArrowRight, Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { createBreadcrumbSchema } from "@/utils/seo";
+import { createBreadcrumbSchema, VERIFIED_CONTACT } from "@/utils/seo";
 import { contactPath, absoluteUrl, homePath } from "@/utils/ruPaths";
 import { FORMSPREE_ENDPOINT } from "@/utils/formspree";
 
@@ -62,7 +62,7 @@ export default function Contact() {
       <Helmet>
         <title>{t('contact.title')}</title>
         <meta name="description" content={t('contact.desc_meta')} />
-        <meta name="keywords" content={isRu ? "контакты, регистрация компании в турции, консультация wildberries ozon" : "Russia Market Entry iletişim, Rusya e-ticaret danışmanı Türkiye, Moskova ofisi, İstanbul gümrük danışmanlık"} />
+        <meta name="keywords" content={isRu ? "контакты, регистрация компании в турции, консультация wildberries ozon" : "Russia Market Entry iletişim, Rusya e-ticaret danışmanı Türkiye, iletişim formu"} />
         <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/iletisim" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/kontakty" />
@@ -125,7 +125,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-bold text-primary-500 mb-1 text-[16px]">{t('contact.op_centers')}</h4>
                   <p className="text-[14px] text-slate-500 leading-relaxed">
-                    {isRu ? 'Подольск, Домодедовское шоссе 20, Москва / Стамбул' : (isEn ? 'Podolsk, Domodedovskoye Shosse 20, Moscow / Istanbul' : 'Podolsk, Domodedovskoye Shosse 20, Moskova / İstanbul')}
+                    {VERIFIED_CONTACT.fullAddressRu}
                   </p>
                 </div>
               </div>
@@ -136,8 +136,8 @@ export default function Contact() {
                 <div>
                   <h4 className="font-bold text-primary-500 mb-1 text-[16px]">{t('contact.phone')}</h4>
                   <p className="text-[14px] text-slate-500 leading-relaxed">
-                    TR: +90 532 785 24 20<br/>
-                    RU: +7 993 406-72-58
+                    TR: {VERIFIED_CONTACT.phoneTr}<br/>
+                    RU: {VERIFIED_CONTACT.phoneRu}
                   </p>
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary-500 mb-1 text-[16px]">{t('contact.email')}</h4>
-                  <p className="text-[14px] text-slate-500 leading-relaxed">hello@russiamarketentry.com</p>
+                  <p className="text-[14px] text-slate-500 leading-relaxed">{VERIFIED_CONTACT.email}</p>
                 </div>
               </div>
             </div>
