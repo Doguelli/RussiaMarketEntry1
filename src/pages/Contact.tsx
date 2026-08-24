@@ -5,6 +5,7 @@ import { Mail, MapPin, Phone, ArrowRight, Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
 import { contactPath, absoluteUrl, homePath } from "@/utils/ruPaths";
+import { FORMSPREE_ENDPOINT } from "@/utils/formspree";
 
 export default function Contact() {
   const { t, i18n } = useTranslation();
@@ -31,10 +32,6 @@ export default function Contact() {
     setStatus("submitting");
 
     try {
-      // BURAYA FORMSPREE ENDPOINT LINKINIZI YAZACAKSINIZ
-      // Örnek: "https://formspree.io/f/xabcdxyz"
-      const FORMSPREE_ENDPOINT = "https://formspree.io/f/xqenkoky";
-
       const response = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
         headers: {
