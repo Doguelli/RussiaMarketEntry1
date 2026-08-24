@@ -117,7 +117,6 @@ export default function Services() {
         <meta name="description" content={metaDesc} />
         <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/hizmetler" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/hizmetler" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/uslugi" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/hizmetler" />
         <meta property="og:title" content={metaTitle} />

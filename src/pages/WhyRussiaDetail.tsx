@@ -40,7 +40,6 @@ export default function WhyRussiaDetail() {
         <meta name="description" content={t('home.why_russia_detail.desc_meta')} />
         <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/neden-rusya-detay" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/neden-rusya-detay" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/pochemu-rossiya" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/neden-rusya-detay" />
         <meta property="og:title" content={t('home.why_russia_detail.title')} />

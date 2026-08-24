@@ -56,7 +56,6 @@ export default function ServiceDetail() {
         <meta name="description" content={service.metaDescription} />
         <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href={trServiceUrl} />
-        <link rel="alternate" hrefLang="en" href={trServiceUrl} />
         <link rel="alternate" hrefLang="ru" href={ruServiceUrl} />
         <link rel="alternate" hrefLang="x-default" href={trServiceUrl} />
         <meta property="og:title" content={service.metaTitle} />

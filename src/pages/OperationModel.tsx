@@ -25,7 +25,6 @@ export default function OperationModel() {
         <meta name="description" content={t('op_model_page.desc_meta')} />
         <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/operasyon-modeli" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/operasyon-modeli" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/model-raboty" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/operasyon-modeli" />
         <meta property="og:title" content={t('op_model_page.title')} />

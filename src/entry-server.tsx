@@ -7,6 +7,10 @@ import i18n, { resolveLanguageFromPath } from "./i18n";
 import { blogPosts } from "./data/blogData";
 import { BLOG_LANGS, blogDetailPath, hasBlogContentFor } from "./utils/blogLanguages";
 
+// Re-exported so scripts/prerender.js sets <html lang> from the same function
+// the client uses for og:locale.
+export { pageLanguageForPath } from "./utils/pageLanguage";
+
 // Exposed so scripts/prerender.js (run outside Vite) can read the current
 // blog routes from this already Vite-built SSR bundle, where
 // import.meta.glob-based content (content/blog/*.md) has already been

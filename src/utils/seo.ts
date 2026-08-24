@@ -16,6 +16,18 @@ export function createBreadcrumbSchema(items: BreadcrumbItem[]) {
   };
 }
 
+// Verified against the contact page and the footer, which are the only places
+// the business publishes this. Nothing here is inferred: there is no Turkish
+// street address on the site, so the schema carries none.
+const VERIFIED_CONTACT = {
+  email: "hello@russiamarketentry.com",
+  phoneTr: "+90 532 785 24 20",
+  phoneRu: "+7 993 406-72-58",
+  streetAddress: "Domodedovskoye Shosse 20",
+  addressLocality: "Podolsk",
+  addressCountry: "RU",
+};
+
 export interface OrganizationSchemaOptions {
   /** Business description in the language of the page emitting the schema. */
   description?: string;
@@ -43,29 +55,36 @@ export function createOrganizationSchema(options: OrganizationSchemaOptions = {}
     "description":
       description ??
       "Türkiye'den Rusya'ya uçtan uca e-ticaret, Ozon, Wildberries, Lamoda entegrasyonu, lojistik ve şirket kurulumu.",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "addressCountry": "TR",
-        "addressLocality": "İstanbul"
-      },
-      {
-        "@type": "PostalAddress",
-        "addressCountry": "RU",
-        "addressLocality": "Moskova"
-      }
-    ],
+    "email": VERIFIED_CONTACT.email,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": VERIFIED_CONTACT.streetAddress,
+      "addressLocality": VERIFIED_CONTACT.addressLocality,
+      "addressCountry": VERIFIED_CONTACT.addressCountry
+    },
     "areaServed": [
       { "@type": "Country", "name": "TR" },
       { "@type": "Country", "name": "RU" }
     ],
     ...(knowsAbout && knowsAbout.length > 0 ? { knowsAbout } : {}),
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+90 (212) 000 00 00",
-      "contactType": "customer service",
-      "availableLanguage": ["Turkish", "English", "Russian"]
-    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": VERIFIED_CONTACT.phoneTr,
+        "email": VERIFIED_CONTACT.email,
+        "contactType": "customer service",
+        "areaServed": "TR",
+        "availableLanguage": ["Turkish", "English", "Russian"]
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": VERIFIED_CONTACT.phoneRu,
+        "email": VERIFIED_CONTACT.email,
+        "contactType": "customer service",
+        "areaServed": "RU",
+        "availableLanguage": ["Turkish", "English", "Russian"]
+      }
+    ],
     "sameAs": [
       "https://www.linkedin.com/company/russia-market-entry"
     ]

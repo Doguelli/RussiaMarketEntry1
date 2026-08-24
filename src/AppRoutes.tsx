@@ -28,6 +28,7 @@ import {
   SERVICE_ID_TO_RU_SLUG,
   FORWHOM_SLUG_TO_RU,
 } from "./utils/ruPaths";
+import { OG_LOCALE, pageLanguageForPath } from "./utils/pageLanguage";
 
 function ScrollToTopAndLangSync() {
   const { pathname } = useLocation();
@@ -79,6 +80,18 @@ function ScrollToTopAndLangSync() {
   }, [pathname, i18n, navigate]);
 
   return null;
+}
+
+// og:locale is emitted here rather than in index.html, which the prerenderer
+// copies into every route and which therefore declared tr_TR on the Russian
+// and English pages too.
+function OgLocaleMeta() {
+  const { pathname } = useLocation();
+  return (
+    <Helmet>
+      <meta property="og:locale" content={OG_LOCALE[pageLanguageForPath(pathname)]} />
+    </Helmet>
+  );
 }
 
 function OldRouteRedirect({ to }: { to: string }) {
@@ -135,6 +148,7 @@ export default function AppRoutes() {
   return (
     <>
       <ScrollToTopAndLangSync />
+      <OgLocaleMeta />
       <AnalyticsTracker />
       <div className="min-h-screen flex flex-col font-sans">
         <Navbar />

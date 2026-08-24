@@ -6,7 +6,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, "..", p);
 
 const template = fs.readFileSync(toAbsolute("dist/index.html"), "utf-8");
-const { render, blogRoutes } = await import(pathToFileURL(toAbsolute("dist/server/entry-server.js")));
+const { render, blogRoutes, pageLanguageForPath } = await import(
+  pathToFileURL(toAbsolute("dist/server/entry-server.js"))
+);
 
 const staticRoutesToPrerender = [
   "/",
@@ -75,19 +77,6 @@ const blogRoutesToPrerender = blogRoutes;
 
 const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender];
 
-// Paths outside the /ru tree whose page is nevertheless written entirely in
-// Russian. /kompaniya-v-turtsii is the original public URL of the Russian
-// company-formation landing page (kept live, and canonicalised to
-// /ru/kompaniya-v-turtsii); claiming lang="tr" there would misdeclare it.
-const RUSSIAN_CONTENT_TR_PATHS = new Set(["/kompaniya-v-turtsii"]);
-
-function htmlLangForUrl(url) {
-  if (url === "/ru" || url.startsWith("/ru/")) return "ru";
-  if (url === "/en" || url.startsWith("/en/")) return "en";
-  if (RUSSIAN_CONTENT_TR_PATHS.has(url)) return "ru";
-  return "tr";
-}
-
 (async () => {
   for (const url of routesToPrerender) {
     const { html: appHtml } = await render(url);
@@ -108,7 +97,7 @@ function htmlLangForUrl(url) {
     let html = template;
 
     // Set <html lang> from the prerender URL (Helmet htmlAttributes are not in #root HTML)
-    const pageLang = htmlLangForUrl(url);
+    const pageLang = pageLanguageForPath(url);
     html = html.replace(/<html\s+lang="[^"]*"/i, `<html lang="${pageLang}"`);
 
     // Clean up default/fallback head tags from template to avoid duplicates

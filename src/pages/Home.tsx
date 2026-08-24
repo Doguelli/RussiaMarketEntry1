@@ -85,8 +85,9 @@ export default function Home() {
         <meta name="description" content={metaDesc} />
         <meta name="keywords" content={isRu ? "регистрация компании в турции, wildberries ozon турция, выход на рынок, банковский счет в турции" : "Rusya e-ticaret, Rusya pazarına giriş, Ozon hesap açma, Wildberries Türkiye, Rusya şirket kurmak, Rusya ihracat"} />
         <link rel="canonical" href={isRu ? "https://russiamarketentry.com/ru" : "https://russiamarketentry.com/"} />
+        {/* No en alternate: English is served from the Turkish URL, so it has
+            no distinct URL of its own to advertise. */}
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/" />
         <meta property="og:title" content={metaTitle} />

@@ -68,7 +68,6 @@ export default function Contact() {
         <meta name="keywords" content={isRu ? "контакты, регистрация компании в турции, консультация wildberries ozon" : "Russia Market Entry iletişim, Rusya e-ticaret danışmanı Türkiye, Moskova ofisi, İstanbul gümrük danışmanlık"} />
         <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/iletisim" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/iletisim" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/kontakty" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/iletisim" />
         <meta property="og:title" content={t('contact.title')} />

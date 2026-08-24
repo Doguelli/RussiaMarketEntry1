@@ -26,7 +26,6 @@ export default function About() {
         <meta name="keywords" content={isRu ? "о нас, регистрация компании в турции, wildberries ozon турция" : "hakkımızda, Rusya e-ticaret danışmanı, Ozon Türkiye partneri, Wildberries lojistik"} />
         <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/hakkimizda" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/hakkimizda" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/o-nas" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/hakkimizda" />
         <meta property="og:title" content={t('about.title')} />

@@ -25,7 +25,6 @@ export default function RussiaMarket() {
         <meta name="description" content={t('russia_market_page.desc_meta')} />
         <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/rusya-pazari" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/rusya-pazari" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/rynok-rossii" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/rusya-pazari" />
         <meta property="og:title" content={t('russia_market_page.title')} />
