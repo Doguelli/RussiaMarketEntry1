@@ -6,7 +6,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, "..", p);
 
 const template = fs.readFileSync(toAbsolute("dist/index.html"), "utf-8");
-const { render, blogSlugs } = await import(pathToFileURL(toAbsolute("dist/server/entry-server.js")));
+const { render, blogRoutes } = await import(pathToFileURL(toAbsolute("dist/server/entry-server.js")));
 
 const staticRoutesToPrerender = [
   "/",
@@ -64,23 +64,27 @@ const staticRoutesToPrerender = [
 ];
 
 // Every blog post's own detail page is derived from blogPosts (src/data/blogData.tsx,
-// via the built SSR bundle's exported blogSlugs) instead of being hand-maintained
+// via the built SSR bundle's exported blogRoutes) instead of being hand-maintained
 // here, so newly added posts (including ones added through the admin panel) are
-// automatically prerendered. The bare /blog/:slug, /en/blog/:slug, and
-// /ru/blog/:slug routes (AppRoutes.tsx) are all prerendered — the URL prefix
-// is what tells the app which language to render on first load for a non-JS
-// crawler.
-const blogRoutesToPrerender = blogSlugs.flatMap((slug) => [
-  `/blog/${slug}`,
-  `/en/blog/${slug}`,
-  `/ru/blog/${slug}`,
-]);
+// automatically prerendered. The URL prefix on the bare /blog/:slug,
+// /en/blog/:slug and /ru/blog/:slug routes (AppRoutes.tsx) is what tells the
+// app which language to render on first load for a non-JS crawler — so a post
+// is only listed here for the languages it actually has content in
+// (src/utils/blogLanguages.ts).
+const blogRoutesToPrerender = blogRoutes;
 
 const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender];
+
+// Paths outside the /ru tree whose page is nevertheless written entirely in
+// Russian. /kompaniya-v-turtsii is the original public URL of the Russian
+// company-formation landing page (kept live, and canonicalised to
+// /ru/kompaniya-v-turtsii); claiming lang="tr" there would misdeclare it.
+const RUSSIAN_CONTENT_TR_PATHS = new Set(["/kompaniya-v-turtsii"]);
 
 function htmlLangForUrl(url) {
   if (url === "/ru" || url.startsWith("/ru/")) return "ru";
   if (url === "/en" || url.startsWith("/en/")) return "en";
+  if (RUSSIAN_CONTENT_TR_PATHS.has(url)) return "ru";
   return "tr";
 }
 

@@ -2,7 +2,8 @@
 enableTr: false
 enableEn: false
 enableRu: true
-tr:
+ru:
+  image: /uploads/blog/blog-2-ru.png
   body: >+
     ООО или АО в Турции: какую компанию выбрать иностранцу?
 
@@ -199,8 +200,6 @@ tr:
     Поэтому правильный выбор начинается не с регистрации, а с бизнес-модели.
 
   title: "ООО или АО в Турции: какую компанию выбрать иностранцу?"
-ru:
-  image: /uploads/blog/blog-2-ru.png
 urlSlug: ooo-ili-ao-v-turcii
 publishedAt: 2026-08-22
 ---

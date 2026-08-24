@@ -206,8 +206,10 @@ export default function CompanyInTurkey() {
           content="Открыть компанию в Турции для граждан РФ и нерезидентов под ключ: регистрация Limited Şirket (ООО), открытие мультивалютных счетов в банках (USD, EUR, TRY, RUB), юр. адрес в Стамбуле, ВНЖ и бухгалтерское сопровождение."
         />
         <link rel="canonical" href="https://russiamarketentry.com/ru/kompaniya-v-turtsii" />
-        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/hizmetler/vergi-ve-finans" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/hizmetler/tax-and-finance" />
+        {/* This landing page exists in Russian only. The previous Turkish and
+            English alternates pointed at an unrelated service page and at a
+            route that does not exist, so the cluster is a single self-reference
+            until a genuine translation is published. */}
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/kompaniya-v-turtsii" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/ru/kompaniya-v-turtsii" />
         <meta property="og:title" content="Регистрация компании в Турции для иностранцев | Russia Market Entry" />

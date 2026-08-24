@@ -50,6 +50,11 @@ export default function ForWhomDetail() {
         <title>{`${data.title} | Russia Market Entry`}</title>
         <meta name="description" content={data.description} />
         <link rel="canonical" href={canonicalUrl} />
+        {/* Turkish and Russian are the only real versions of this page — English
+            is served from the Turkish URL, so it gets no alternate of its own. */}
+        <link rel="alternate" hrefLang="tr" href={absoluteUrl(forWhomDetailPath(slug, false))} />
+        <link rel="alternate" hrefLang="ru" href={absoluteUrl(forWhomDetailPath(slug, true))} />
+        <link rel="alternate" hrefLang="x-default" href={absoluteUrl(forWhomDetailPath(slug, false))} />
         <meta property="og:title" content={`${data.title} | Russia Market Entry`} />
         <meta property="og:description" content={data.description} />
         <meta property="og:url" content={canonicalUrl} />

@@ -16,14 +16,33 @@ export function createBreadcrumbSchema(items: BreadcrumbItem[]) {
   };
 }
 
-export function createOrganizationSchema() {
+export interface OrganizationSchemaOptions {
+  /** Business description in the language of the page emitting the schema. */
+  description?: string;
+  /** Topic list in the language of the page emitting the schema. */
+  knowsAbout?: string[];
+  /** Canonical URL of the page emitting the schema. */
+  url?: string;
+}
+
+/**
+ * One business entity typed as both Organization and ConsultingBusiness. This
+ * used to be two separate blocks — a hardcoded Turkish ConsultingBusiness in
+ * index.html (which leaked onto every prerendered page, including the Russian
+ * and English ones) plus this Organization. Callers now pass the page's own
+ * language for every human-readable field.
+ */
+export function createOrganizationSchema(options: OrganizationSchemaOptions = {}) {
+  const { description, knowsAbout, url } = options;
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["Organization", "ConsultingBusiness"],
     "name": "Russia Market Entry",
-    "url": "https://russiamarketentry.com",
+    "url": url ? (url.startsWith("http") ? url : `https://russiamarketentry.com${url}`) : "https://russiamarketentry.com",
     "logo": "https://russiamarketentry.com/favicon.png",
-    "description": "Türkiye'den Rusya'ya uçtan uca e-ticaret, Ozon, Wildberries, Lamoda entegrasyonu, lojistik ve şirket kurulumu.",
+    "description":
+      description ??
+      "Türkiye'den Rusya'ya uçtan uca e-ticaret, Ozon, Wildberries, Lamoda entegrasyonu, lojistik ve şirket kurulumu.",
     "address": [
       {
         "@type": "PostalAddress",
@@ -36,6 +55,11 @@ export function createOrganizationSchema() {
         "addressLocality": "Moskova"
       }
     ],
+    "areaServed": [
+      { "@type": "Country", "name": "TR" },
+      { "@type": "Country", "name": "RU" }
+    ],
+    ...(knowsAbout && knowsAbout.length > 0 ? { knowsAbout } : {}),
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+90 (212) 000 00 00",
@@ -45,6 +69,26 @@ export function createOrganizationSchema() {
     "sameAs": [
       "https://www.linkedin.com/company/russia-market-entry"
     ]
+  };
+}
+
+/**
+ * FAQPage for the questions actually rendered on the page, in that page's
+ * language. Google requires the schema to mirror visible content, which the
+ * previous index.html-wide Turkish FAQ block violated on every non-home page.
+ */
+export function createFaqSchema(items: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": items.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
   };
 }
 

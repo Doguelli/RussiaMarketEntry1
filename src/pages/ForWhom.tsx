@@ -47,6 +47,11 @@ export default function ForWhom() {
         <title>{metaTitle}</title>
         <meta name="description" content={metaDesc} />
         <link rel="canonical" href={canonicalUrl} />
+        {/* Turkish and Russian are the only real versions of this page — English
+            is served from the Turkish URL, so it gets no alternate of its own. */}
+        <link rel="alternate" hrefLang="tr" href={absoluteUrl(forWhomPath(false))} />
+        <link rel="alternate" hrefLang="ru" href={absoluteUrl(forWhomPath(true))} />
+        <link rel="alternate" hrefLang="x-default" href={absoluteUrl(forWhomPath(false))} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDesc} />
         <meta property="og:url" content={canonicalUrl} />

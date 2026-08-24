@@ -18,82 +18,11 @@
 
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
-    
-    <!-- Structured Data (JSON-LD) for Search Engines & Generative AI indexing -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ConsultingBusiness",
-      "name": "Russia Market Entry - Türkiye & Rusya",
-      "description": "Rusya e-ticaret pazarına giriş, Ozon, Wildberries hesap yönetimi, şirket kuruluşu, EAC sertifikasyonu ve lojistik alanlarında Türkiye'deki tekstil ve e-ticaret firmalarına uçtan uca danışmanlık sağlayan rehber.",
-      "url": "https://russiamarketentry.com",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "addressCountry": "TR",
-          "addressLocality": "İstanbul"
-        },
-        {
-          "@type": "PostalAddress",
-          "addressCountry": "RU",
-          "addressLocality": "Moskova"
-        }
-      ],
-      "serviceArea": {
-        "@type": "Country",
-        "name": ["Türkiye", "Rusya"]
-      },
-      "knowsAbout": [
-        "Rusya Pazar Yeri",
-        "Rusya E-ticaret",
-        "Ozon Türkiye Satış",
-        "Wildberries Türkiye Satış",
-        "EAC Sertifikasyonu Türkiye",
-        "Rusya Şirket Kuruluşu",
-        "Rusya Lojistik ve Gümrük Türkiye"
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Türkiye’den Ozon’da satış yapılabilir mi?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Evet, Türkiye'de yerleşik şirketiniz üzerinden Ozon Global C-B (Cross-Border) modeliyle doğrudan satış yapabilirsiniz. Daha güçlü ve hızlı büyüme için ise Rusya'da bir şirket kurup B2C (Konsinye) modeliyle pazarın yerel satıcısı gibi konumlanmanız en verimli yöntemdir."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Wildberries’de Türk markaları satış yapabilir mi?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Türk markaları doğrudan Türkiye'den bireysel olarak Wildberries'de satış yapamaz. Wildberries yerel depoları ve operasyonu şart koşar. O yüzden Rusya'da ya uçtan uca bir partnerle anlaşmalı ya da lokal şirket kurulumu yapmalısınız. Lojistik ve operasyonunuzu devralarak markanızı doğrudan Wildberries Rusya raflarına çıkarıyoruz."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Rusya’da e-ticaret yapmak için şirket kurmak gerekir mi?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Toptan veya sadece Global pazar yerlerinden (border out) gönderim yapıyorsanız şirket şart değildir. Fakat Wildberries, Lamoda gibi pazar yerlerine doğrudan girmek, depo kurmak ve karlı fiyatlarla B2C doğrudan satış yapmak istiyorsanız lokal bir varlık gereklidir."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "EAC sertifikası nedir, hangi ürünlerde gereklidir?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "EAC sertifikası (Avrasya Ekonomik Birliği uygunluk belgesi), tekstil, elektronik, kozmetik gibi pek çok kategoride gümrük girişinde ve pazar yerlerinde zorunludur. Tıpkı Avrupa'daki CE belgesi gibi çalışır. Bizimle çalıştığınızda sertifikasyon danışmanlığından uçtan uca destek alırsınız."
-          }
-        }
-      ]
-    }
-    </script>
+
+    <!-- Structured data is emitted per page via react-helmet (see src/utils/seo.ts).
+         It must not live here: scripts/prerender.js copies this template into every
+         route, so anything in it would claim the homepage's Turkish business and
+         FAQ markup on all Russian, English, service and blog pages too. -->
   </head>
   <body>
     <div id="root"></div>

@@ -5,7 +5,7 @@ import { ArrowRight, Globe2, ShieldCheck, TrendingUp, Users, CheckCircle2, Facto
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
 
-import { createOrganizationSchema, createBreadcrumbSchema } from "@/utils/seo";
+import { createOrganizationSchema, createBreadcrumbSchema, createFaqSchema } from "@/utils/seo";
 import {
   contactPath,
   forWhomPath,
@@ -20,7 +20,6 @@ export default function Home() {
   const isRu = i18n.language === 'ru';
   const isEn = i18n.language === 'en';
 
-  const orgSchema = createOrganizationSchema();
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) }
   ]);
@@ -64,6 +63,21 @@ export default function Home() {
       ? 'End-to-end operation guide for e-commerce, Ozon and Wildberries sales consulting, company formation, customs and logistics from Turkey to Russia.' 
       : "Türkiye'den Rusya'ya e-ticaret, Ozon ve Wildberries satış danışmanlığı, şirket kuruluşu, gümrük ve lojistik alanlarında uçtan uca operasyon rehberiniz.");
 
+  // The business and FAQ schema live here rather than in index.html so each
+  // language's homepage describes itself, and so no service/blog/RU/EN page
+  // inherits a homepage FAQ it does not display.
+  const faqs = [1, 2, 3, 4].map((n) => ({
+    question: t(`home.faq${n}_q`),
+    answer: t(`home.faq${n}_a`),
+  }));
+
+  const orgSchema = createOrganizationSchema({
+    description: metaDesc,
+    knowsAbout: services.map((service) => service.title),
+    url: homePath(isRu),
+  });
+  const faqSchema = createFaqSchema(faqs);
+
   return (
     <main>
       <Helmet>
@@ -81,6 +95,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
       {/* Hero Section */}

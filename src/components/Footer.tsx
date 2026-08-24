@@ -75,9 +75,11 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-white/50">
           <p>© {new Date().getFullYear()} Russia Market Entry. {t('footer.all_rights')}</p>
+          {/* Plain labels until the legal pages themselves are written — as links
+              they resolved to "#", which React Router sent to the homepage. */}
           <div className="flex gap-6">
-            <Link to="#" className="hover:text-white transition-colors">{t('footer.privacy')}</Link>
-            <Link to="#" className="hover:text-white transition-colors">{t('footer.terms')}</Link>
+            <span>{t('footer.privacy')}</span>
+            <span>{t('footer.terms')}</span>
           </div>
         </div>
       </div>
