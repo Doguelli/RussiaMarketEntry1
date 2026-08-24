@@ -25,9 +25,10 @@ import { blogDetailPath } from "@/utils/blogLanguages";
 
 export default function CompanyInTurkey() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
+  // Phone (WhatsApp/Telegram) is deliberately the only contact channel this
+  // form asks for — there is no email input, so no email key is submitted.
   const [formState, setFormState] = useState({
     name: "",
-    email: "",
     phone: "",
     businessType: "Limited Şirket (ООО)",
     message: ""

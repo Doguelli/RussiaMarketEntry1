@@ -15,6 +15,12 @@
 // - If the API key is missing or a call fails, the post falls back to a single
 //   plain paragraph block (untranslated content is never mislabeled as a
 //   translation — a language that can't be produced is simply left absent).
+//
+// Output already committed under content/blog-generated/ is never downgraded:
+// whenever a run cannot produce real structure — no key, a thrown error, or a
+// call that returns nothing usable — the existing file is kept as-is. So a
+// hand-corrected JSON survives every subsequent build, while editing the .md
+// body still regenerates normally.
 import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
@@ -160,6 +166,16 @@ function fallbackBlocks(plainText) {
   return [{ type: "paragraph", text: plainText.trim() }];
 }
 
+// Category of a file we're about to keep rather than regenerate, so the other
+// languages of the same post stay on the colour scheme already published.
+function keptCategory(outPath, fallback) {
+  try {
+    return validCategory(JSON.parse(fs.readFileSync(outPath, "utf-8")).category);
+  } catch {
+    return fallback;
+  }
+}
+
 const genConfig = (schema) => ({
   responseMimeType: "application/json",
   responseSchema: schema,
@@ -231,6 +247,10 @@ ${plainText.trim()}
     // Never trust the AI's echo blindly, even when a fixed category was given.
     category: fixedCategory ? validCategory(fixedCategory) : validCategory(raw.category),
     blocks: blocks.length > 0 ? blocks : fallbackBlocks(plainText),
+    // A call can succeed and still yield nothing usable (empty or all-invalid
+    // blocks). The caller needs to tell that apart from real structure, because
+    // the flat paragraph below must never overwrite a good previous result.
+    usedFallback: blocks.length === 0,
   };
 }
 
@@ -280,6 +300,9 @@ ${source.body.trim()}
     title: isNonEmptyString(raw.title) ? raw.title : source.title || "",
     excerpt: isNonEmptyString(raw.excerpt) ? raw.excerpt : source.excerpt || "",
     blocks: blocks.length > 0 ? blocks : fallbackBlocks(source.body),
+    // Here a fallback would be the *source* language's text sitting under the
+    // target language, so the caller must refuse to publish it at all.
+    usedFallback: blocks.length === 0,
   };
 }
 
@@ -375,12 +398,23 @@ async function main() {
               };
         }
         if (result === null) {
+          if (lang === sourceLang) category = keptCategory(outPath, category);
           console.log(`Korundu: ${slug}.${lang}.json (yeni üretim başarısız/atlandı, mevcut içerik korundu)`);
           continue;
         }
+        // The call came back, but with no usable structure — so `result` is the
+        // flat one-paragraph fallback. Publishing it would erase headings and
+        // lists that are already live, which is strictly worse than keeping
+        // what we have. Only write a fallback when there is nothing to lose.
+        if (result.usedFallback && alreadyStructured) {
+          if (lang === sourceLang) category = keptCategory(outPath, category);
+          console.log(`Korundu: ${slug}.${lang}.json (yeni üretim yapısız döndü, mevcut yapılandırılmış içerik korundu)`);
+          continue;
+        }
         if (lang === sourceLang) category = result.category;
-        fs.writeFileSync(outPath, JSON.stringify(result, null, 2));
-        console.log(`Üretildi: ${slug}.${lang}.json (yazıldı, kategori: ${result.category}, ${result.blocks.length} blok)`);
+        const { usedFallback, ...authored } = result;
+        fs.writeFileSync(outPath, JSON.stringify(authored, null, 2));
+        console.log(`Üretildi: ${slug}.${lang}.json (yazıldı, kategori: ${authored.category}, ${authored.blocks.length} blok)`);
         continue;
       }
 
@@ -399,7 +433,19 @@ async function main() {
           category,
           lang
         );
-        const result = { ...translated, category };
+        // An unstructured translation is the source language's own text, which
+        // would be published under the wrong language. Never do that: keep any
+        // existing translation, otherwise leave this language absent.
+        if (translated.usedFallback) {
+          console.log(
+            fs.existsSync(outPath)
+              ? `Korundu: ${slug}.${lang}.json (yeni çeviri yapısız döndü, mevcut çeviri korundu)`
+              : `Atlandı: ${slug}.${lang}.json (çeviri yapılandırılamadı, bu dil yayınlanmadı)`
+          );
+          continue;
+        }
+        const { usedFallback, ...rest } = translated;
+        const result = { ...rest, category };
         fs.writeFileSync(outPath, JSON.stringify(result, null, 2));
         console.log(`Üretildi: ${slug}.${lang}.json (AI çevirisi, kategori: ${category}, ${result.blocks.length} blok)`);
       } catch (err) {
