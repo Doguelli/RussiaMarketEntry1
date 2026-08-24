@@ -44,7 +44,7 @@ export default function CompanyInTurkey() {
 
   const breadcrumbs = createBreadcrumbSchema([
     { name: "Главная", url: "/ru" },
-    { name: "Услуги", url: "/ru/hizmetler" },
+    { name: "Услуги", url: "/ru/uslugi" },
     { name: "Регистрация компании в Турции", url: "/ru/kompaniya-v-turtsii" }
   ]);
 

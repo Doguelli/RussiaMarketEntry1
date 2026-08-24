@@ -6,17 +6,20 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { russiaMarketPath, whyRussiaPath, absoluteUrl, homePath, contactPath } from "@/utils/ruPaths";
 
 export default function WhyRussiaDetail() {
   const { hash } = useLocation();
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === 'ru';
   const isEn = i18n.language === 'en';
+  const pagePath = whyRussiaPath(isRu);
+  const canonicalUrl = absoluteUrl(pagePath);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: isRu ? '/ru' : '/' },
-    { name: t('nav.russia_market'), url: isRu ? '/ru/rusya-pazari' : '/rusya-pazari' },
-    { name: isRu ? 'Анализ рынка' : (isEn ? 'Why Russia Analysis' : 'Neden Rusya Analizi'), url: isRu ? '/ru/neden-rusya-detay' : '/neden-rusya-detay' }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) },
+    { name: t('nav.russia_market'), url: russiaMarketPath(isRu) },
+    { name: isRu ? 'Анализ рынка' : (isEn ? 'Why Russia Analysis' : 'Neden Rusya Analizi'), url: pagePath }
   ]);
 
   useEffect(() => {
@@ -35,14 +38,14 @@ export default function WhyRussiaDetail() {
       <Helmet>
         <title>{t('why_russia_detail.title')}</title>
         <meta name="description" content={t('why_russia_detail.desc_meta')} />
-        <link rel="canonical" href={isRu ? "https://russiamarketentry.com/ru/neden-rusya-detay" : "https://russiamarketentry.com/neden-rusya-detay"} />
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/neden-rusya-detay" />
         <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/neden-rusya-detay" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/neden-rusya-detay" />
+        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/pochemu-rossiya" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/neden-rusya-detay" />
         <meta property="og:title" content={t('why_russia_detail.title')} />
         <meta property="og:description" content={t('why_russia_detail.desc_meta')} />
-        <meta property="og:url" content={isRu ? "https://russiamarketentry.com/ru/neden-rusya-detay" : "https://russiamarketentry.com/neden-rusya-detay"} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -171,7 +174,7 @@ export default function WhyRussiaDetail() {
              {t('why_russia_detail.cta_desc')}
            </p>
            <Link
-             to="/iletisim"
+             to={contactPath(isRu)}
              className="inline-flex items-center gap-3 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-4 rounded-full font-bold text-[16px] shadow-lg transform hover:-translate-y-1"
            >
              {t('why_russia_detail.cta_btn')} <ArrowRight className="w-5 h-5" />

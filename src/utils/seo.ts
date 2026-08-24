@@ -79,9 +79,11 @@ export function createArticleSchema(
   description: string,
   slug: string,
   publishedAt: string,
-  imageUrl?: string
+  imageUrl?: string,
+  /** Language URL prefix: '' (TR), '/ru', or '/en' */
+  pathPrefix: string = ""
 ) {
-  const fullUrl = `https://russiamarketentry.com/blog/${slug}`;
+  const fullUrl = `https://russiamarketentry.com${pathPrefix}/blog/${slug}`;
   const fullImageUrl = imageUrl
     ? (imageUrl.startsWith("http") ? imageUrl : `https://russiamarketentry.com${imageUrl}`)
     : "https://russiamarketentry.com/og-image.jpg";

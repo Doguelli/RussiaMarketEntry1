@@ -21,6 +21,13 @@ import { serviceDetails } from "@/data/servicesData";
 import { serviceDetailsEN } from "@/data/servicesDataEN";
 import { serviceDetailsRU } from "@/data/servicesDataRU";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import {
+  servicesPath,
+  servicePath,
+  contactPath,
+  absoluteUrl,
+  homePath,
+} from "@/utils/ruPaths";
 
 const iconsMap: Record<string, any> = {
   "operasyon-kurulumu": Settings,
@@ -76,8 +83,8 @@ export default function Services() {
   }
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : '/' },
-    { name: t('nav.services'), url: i18n.language === 'ru' ? '/ru/hizmetler' : '/hizmetler' }
+    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: homePath(i18n.language === 'ru') },
+    { name: t('nav.services'), url: servicesPath(i18n.language === 'ru') }
   ]);
   
   const featuresList = Object.entries(currentDetails).map(([key, data]) => ({
@@ -99,19 +106,23 @@ export default function Services() {
       ? "End-to-end e-commerce consulting, Wildberries, Ozon and Lamoda marketplace management, logistics, company formation and finance in Russia."
       : "Türkiye'den Rusya'ya e-ticaret, Ozon, Wildberries, Lamoda entegrasyonu, şirket kuruluşu, gümrük, sertifikasyon, lojistik ve uçtan uca operasyon yönetimi hizmetlerimiz.");
 
+  const isRu = i18n.language === 'ru';
+  const pagePath = servicesPath(isRu);
+  const canonicalUrl = absoluteUrl(pagePath);
+
   return (
     <main className="bg-slate-50 min-h-screen pt-8 pb-24">
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDesc} />
-        <link rel="canonical" href="https://russiamarketentry.com/hizmetler" />
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/hizmetler" />
         <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/hizmetler" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/hizmetler" />
+        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/uslugi" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/hizmetler" />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDesc} />
-        <meta property="og:url" content="https://russiamarketentry.com/hizmetler" />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -205,7 +216,7 @@ export default function Services() {
                 ))}
               </div>
               <Link 
-                to={i18n.language === 'ru' ? "/ru/iletisim" : "/iletisim"} 
+                to={contactPath(isRu)} 
                 className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-8 py-4 rounded-2xl font-bold text-[15px] flex items-center gap-3 shadow-[0_0_20px_rgba(238,42,36,0.3)] hover:shadow-[0_0_25px_rgba(238,42,36,0.4)]"
               >
                 {i18n.language === 'ru' ? 'Получить бесплатный анализ' : (i18n.language === 'en' ? 'Get Free Analysis' : 'Ücretsiz Analiz İsteyin')} <ArrowRight className="w-5 h-5" />
@@ -222,12 +233,12 @@ export default function Services() {
               ? feature.points.filter(p => typeof p === 'string').slice(0, 3) 
               : [];
              
-             const servicePath = feature.id === "kompaniya-v-turtsii" && i18n.language === 'ru'
+             const detailPath = feature.id === "kompaniya-v-turtsii" && isRu
                ? "/ru/kompaniya-v-turtsii"
-               : (i18n.language === 'ru' ? `/ru/hizmetler/${feature.id}` : `/hizmetler/${feature.id}`);
+               : servicePath(feature.id, isRu);
 
              return (
-              <Link to={servicePath} key={i} className="block group outline-none h-full">
+              <Link to={detailPath} key={i} className="block group outline-none h-full">
                 <motion.div
                   id={feature.id}
                   initial={{ opacity: 0, y: 20 }}

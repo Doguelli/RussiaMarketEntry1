@@ -37,28 +37,28 @@ const staticRoutesToPrerender = [
   // other page still shares its URL between Turkish and English)
   "/en/blog",
 
-  // Russian Infrastructure & Commercial Pages
+  // Russian Infrastructure & Commercial Pages (Russian Latin path segments)
   "/ru",
-  "/ru/hakkimizda",
-  "/ru/rusya-pazari",
-  "/ru/neden-rusya-detay",
-  "/ru/hizmetler",
-  "/ru/hizmetler/operasyon-kurulumu",
-  "/ru/hizmetler/pazaryeri-yonetimi",
-  "/ru/hizmetler/lojistik-ve-depo",
-  "/ru/hizmetler/sistem-ve-entegrasyon",
-  "/ru/hizmetler/marka-buyutme",
-  "/ru/hizmetler/vergi-ve-finans",
-  "/ru/hizmetler/turkiyede-sirket-kurulumu",
-  "/ru/hizmetler/ithalat-ve-gumruk-yonetimi",
-  "/ru/hizmetler/pazar-arastirmasi-ve-strateji",
-  "/ru/operasyon-modeli",
-  "/ru/kimler-icin",
-  "/ru/kimler-icin/tekstil-markalari",
-  "/ru/kimler-icin/ureticiler",
-  "/ru/kimler-icin/e-ticaret-girisimcileri",
-  "/ru/kimler-icin/kozmetik-ureticileri",
-  "/ru/iletisim",
+  "/ru/o-nas",
+  "/ru/rynok-rossii",
+  "/ru/pochemu-rossiya",
+  "/ru/uslugi",
+  "/ru/uslugi/nastroika-operatsii",
+  "/ru/uslugi/upravlenie-marketpleisami",
+  "/ru/uslugi/logistika-i-fulfiliment",
+  "/ru/uslugi/integratsiya-i-avtomatizatsiya",
+  "/ru/uslugi/prodvizhenie-brenda",
+  "/ru/uslugi/nalogi-i-finansy",
+  "/ru/uslugi/registratsiya-biznesa-v-turtsii",
+  "/ru/uslugi/import-i-tamozhnya",
+  "/ru/uslugi/issledovanie-rynka",
+  "/ru/model-raboty",
+  "/ru/dlya-kogo",
+  "/ru/dlya-kogo/tekstilnye-brendy",
+  "/ru/dlya-kogo/proizvoditeli",
+  "/ru/dlya-kogo/online-torgovlya",
+  "/ru/dlya-kogo/proizvoditeli-kosmetiki",
+  "/ru/kontakty",
   "/ru/kompaniya-v-turtsii",
   "/ru/blog",
 ];
@@ -78,9 +78,15 @@ const blogRoutesToPrerender = blogSlugs.flatMap((slug) => [
 
 const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender];
 
+function htmlLangForUrl(url) {
+  if (url === "/ru" || url.startsWith("/ru/")) return "ru";
+  if (url === "/en" || url.startsWith("/en/")) return "en";
+  return "tr";
+}
+
 (async () => {
   for (const url of routesToPrerender) {
-    const { html: appHtml } = render(url);
+    const { html: appHtml } = await render(url);
 
     // Extract head elements rendered by React for this route
     const titles = appHtml.match(/<title[^>]*>[\s\S]*?<\/title>/gi) || [];
@@ -96,6 +102,10 @@ const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender]
       .replace(/<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, "");
 
     let html = template;
+
+    // Set <html lang> from the prerender URL (Helmet htmlAttributes are not in #root HTML)
+    const pageLang = htmlLangForUrl(url);
+    html = html.replace(/<html\s+lang="[^"]*"/i, `<html lang="${pageLang}"`);
 
     // Clean up default/fallback head tags from template to avoid duplicates
     html = html
@@ -149,16 +159,16 @@ const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender]
 
   function sitemapMeta(url) {
     if (url === "/" || url === "/ru") return { priority: "1.0", changefreq: "weekly" };
-    if (url === "/blog" || url === "/en/blog" || url === "/ru/blog" || url === "/hizmetler" || url === "/ru/hizmetler") {
+    if (url === "/blog" || url === "/en/blog" || url === "/ru/blog" || url === "/hizmetler" || url === "/ru/uslugi") {
       return { priority: "0.9", changefreq: "weekly" };
     }
-    if (url.startsWith("/hizmetler/") || url.startsWith("/ru/hizmetler/")) {
+    if (url.startsWith("/hizmetler/") || url.startsWith("/ru/uslugi/")) {
       return { priority: "0.8", changefreq: "weekly" };
     }
     if (url.startsWith("/blog/") || url.startsWith("/en/blog/") || url.startsWith("/ru/blog/")) {
       return { priority: "0.6", changefreq: "monthly" };
     }
-    if (url.startsWith("/kimler-icin") || url.startsWith("/ru/kimler-icin")) {
+    if (url.startsWith("/kimler-icin") || url.startsWith("/ru/dlya-kogo")) {
       return { priority: "0.7", changefreq: "monthly" };
     }
     return { priority: "0.7", changefreq: "monthly" };

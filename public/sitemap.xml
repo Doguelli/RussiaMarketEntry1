@@ -206,10 +206,76 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://russiamarketentry.com/ru/hizmetler</loc>
-    <lastmod>2026-08-20</lastmod>
+    <loc>https://russiamarketentry.com/ru/o-nas</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/pochemu-rossiya</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/uslugi</loc>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/uslugi/nastroika-operatsii</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/uslugi/upravlenie-marketpleisami</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/uslugi/logistika-i-fulfiliment</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/uslugi/integratsiya-i-avtomatizatsiya</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/uslugi/prodvizhenie-brenda</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/uslugi/nalogi-i-finansy</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/uslugi/registratsiya-biznesa-v-turtsii</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/uslugi/import-i-tamozhnya</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/uslugi/issledovanie-rynka</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://russiamarketentry.com/ru/blog</loc>
@@ -218,20 +284,50 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://russiamarketentry.com/ru/rusya-pazari</loc>
-    <lastmod>2026-08-20</lastmod>
+    <loc>https://russiamarketentry.com/ru/rynok-rossii</loc>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://russiamarketentry.com/ru/operasyon-modeli</loc>
-    <lastmod>2026-08-20</lastmod>
+    <loc>https://russiamarketentry.com/ru/model-raboty</loc>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://russiamarketentry.com/ru/iletisim</loc>
-    <lastmod>2026-08-20</lastmod>
+    <loc>https://russiamarketentry.com/ru/dlya-kogo</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/dlya-kogo/tekstilnye-brendy</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/dlya-kogo/proizvoditeli</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/dlya-kogo/online-torgovlya</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/dlya-kogo/proizvoditeli-kosmetiki</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://russiamarketentry.com/ru/kontakty</loc>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -4,15 +4,18 @@ import { Helmet } from "react-helmet-async";
 import { Mail, MapPin, Phone, ArrowRight, Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { contactPath, absoluteUrl, homePath } from "@/utils/ruPaths";
 
 export default function Contact() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === 'ru';
   const isEn = i18n.language === 'en';
+  const pagePath = contactPath(isRu);
+  const canonicalUrl = absoluteUrl(pagePath);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: isRu ? '/ru' : '/' },
-    { name: t('nav.contact'), url: isRu ? '/ru/iletisim' : '/iletisim' }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) },
+    { name: t('nav.contact'), url: pagePath }
   ]);
   const [formData, setFormData] = useState({
     name: "",
@@ -63,14 +66,14 @@ export default function Contact() {
         <title>{t('contact.title')}</title>
         <meta name="description" content={t('contact.desc_meta')} />
         <meta name="keywords" content={isRu ? "контакты, регистрация компании в турции, консультация wildberries ozon" : "Russia Market Entry iletişim, Rusya e-ticaret danışmanı Türkiye, Moskova ofisi, İstanbul gümrük danışmanlık"} />
-        <link rel="canonical" href={isRu ? "https://russiamarketentry.com/ru/iletisim" : "https://russiamarketentry.com/iletisim"} />
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/iletisim" />
         <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/iletisim" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/iletisim" />
+        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/kontakty" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/iletisim" />
         <meta property="og:title" content={t('contact.title')} />
         <meta property="og:description" content={t('contact.desc_meta')} />
-        <meta property="og:url" content={isRu ? "https://russiamarketentry.com/ru/iletisim" : "https://russiamarketentry.com/iletisim"} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>

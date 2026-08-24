@@ -59,7 +59,8 @@ export default function BlogDetail() {
     excerpt,
     post.slug,
     post.publishedAt,
-    imageUrl
+    imageUrl,
+    langPrefix
   );
 
   const fullImageUrl = imageUrl

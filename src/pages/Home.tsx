@@ -6,6 +6,13 @@ import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
 
 import { createOrganizationSchema, createBreadcrumbSchema } from "@/utils/seo";
+import {
+  contactPath,
+  forWhomPath,
+  operationModelPath,
+  servicePath,
+  homePath,
+} from "@/utils/ruPaths";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -15,7 +22,7 @@ export default function Home() {
 
   const orgSchema = createOrganizationSchema();
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: isRu ? '/ru' : '/' }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) }
   ]);
 
   const trustStats = [
@@ -109,7 +116,7 @@ export default function Home() {
               </p>
               
               <Link
-                to="/iletisim"
+                to={contactPath(isRu)}
                 className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-4 rounded-md font-bold text-[16px] flex items-center justify-center gap-3 w-full sm:w-auto uppercase tracking-wide"
               >
                 {t('home.apply')} <ArrowRight className="w-5 h-5" />
@@ -222,7 +229,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, i) => (
-              <Link to={`/hizmetler/${service.id}`} key={i}>
+              <Link to={servicePath(service.id, isRu)} key={i}>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -253,7 +260,7 @@ export default function Home() {
               <p className="text-slate-500 mb-10">{t('home.for_whom_desc')}</p>
               
               <div className="space-y-6">
-                <Link to="/kimler-icin" className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
+                <Link to={forWhomPath(isRu)} className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent-500 shadow-sm">
                       <ShoppingBag className="w-6 h-6" />
@@ -266,7 +273,7 @@ export default function Home() {
                   </div>
                 </Link>
 
-                <Link to="/kimler-icin" className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
+                <Link to={forWhomPath(isRu)} className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent-500 shadow-sm">
                       <Factory className="w-6 h-6" />
@@ -279,7 +286,7 @@ export default function Home() {
                   </div>
                 </Link>
 
-                <Link to="/kimler-icin" className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
+                <Link to={forWhomPath(isRu)} className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent-500 shadow-sm">
                       <Users className="w-6 h-6" />
@@ -353,7 +360,7 @@ export default function Home() {
                 </li>
               </ul>
               <div className="mt-6">
-                <Link to="/operasyon-modeli" className="text-accent-500 hover:text-white transition-colors font-bold flex items-center gap-2 text-[14px]">
+                <Link to={operationModelPath(isRu)} className="text-accent-500 hover:text-white transition-colors font-bold flex items-center gap-2 text-[14px]">
                   {t('home.om_link')} <MoveRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -378,7 +385,7 @@ export default function Home() {
                 </li>
               </ul>
               <div className="mt-6">
-                <Link to="/operasyon-modeli" className="text-accent-500 hover:text-white transition-colors font-bold flex items-center gap-2 text-[14px]">
+                <Link to={operationModelPath(isRu)} className="text-accent-500 hover:text-white transition-colors font-bold flex items-center gap-2 text-[14px]">
                   {t('home.fin_link')} <MoveRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -429,7 +436,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              to="/iletisim"
+              to={contactPath(isRu)}
               className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-5 rounded-full font-bold text-[18px] flex items-center gap-3 shadow-[0_10px_20px_-5px_rgba(238,42,36,0.4)] hover:shadow-[0_15px_25px_-5px_rgba(238,42,36,0.5)] transform hover:-translate-y-1"
             >
               {t('home.cta_btn')} <ArrowRight className="w-5 h-5" />

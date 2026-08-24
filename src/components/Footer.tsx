@@ -2,16 +2,27 @@ import Logo from "./Logo";
 import { Link } from "react-router-dom";
 import { MapPin, Mail, Phone, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import {
+  homePath,
+  aboutPath,
+  russiaMarketPath,
+  servicesPath,
+  operationModelPath,
+  forWhomPath,
+  contactPath,
+} from "@/utils/ruPaths";
 
 export default function Footer() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRu = i18n.language === "ru";
+
   return (
     <footer className="bg-primary-500 border-t-4 border-accent-500 pt-20 pb-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
           
           <div className="md:col-span-4">
-            <Link to="/" className="inline-block mb-6">
+            <Link to={homePath(isRu)} className="inline-block mb-6">
               <Logo light />
             </Link>
             <p className="text-[14px] text-white/70 leading-relaxed max-w-sm mb-6">
@@ -23,13 +34,13 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-6 text-[14px]">{t('footer.quick_links')}</h3>
             <ul className="space-y-4">
               {[
-                { name: t('nav.home'), path: "/" },
-                { name: t('nav.about'), path: "/hakkimizda" },
-                { name: t('nav.russia_market'), path: "/rusya-pazari" },
-                { name: t('nav.services'), path: "/hizmetler" },
-                { name: t('nav.op_model'), path: "/operasyon-modeli" },
-                { name: t('nav.for_whom'), path: "/kimler-icin" },
-                { name: t('nav.contact'), path: "/iletisim" },
+                { name: t('nav.home'), path: homePath(isRu) },
+                { name: t('nav.about'), path: aboutPath(isRu) },
+                { name: t('nav.russia_market'), path: russiaMarketPath(isRu) },
+                { name: t('nav.services'), path: servicesPath(isRu) },
+                { name: t('nav.op_model'), path: operationModelPath(isRu) },
+                { name: t('nav.for_whom'), path: forWhomPath(isRu) },
+                { name: t('nav.contact'), path: contactPath(isRu) },
               ].map((link) => (
                 <li key={link.path}>
                   <Link to={link.path} className="text-[14px] text-white/70 hover:text-white transition-colors">

@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
 import { setManualLanguageChoice, SupportedLanguage } from "@/utils/geoLanguageDetector";
+import { pathForLanguage, contactPath, homePath } from "@/utils/ruPaths";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,50 +36,26 @@ export default function Navbar() {
     setManualLanguageChoice(lang as SupportedLanguage);
     i18n.changeLanguage(lang);
     setLangDropdownOpen(false);
-    
-    // URL prefix adjustment
-    const currentPath = location.pathname;
 
-    // Blog pages have a dedicated URL per language (/blog, /en/blog,
-    // /ru/blog and their :slug variants) — recompute the exact equivalent
-    // URL instead of the generic tr/en-share-a-URL rule below.
-    const blogMatch = currentPath.match(/^(?:\/(en|ru))?\/blog(\/.*)?$/);
-    if (blogMatch) {
-      const rest = blogMatch[2] || "";
-      const newPrefix = lang === "tr" ? "" : `/${lang}`;
-      navigate(`${newPrefix}/blog${rest}`);
-      return;
-    }
-
-    if (lang === "ru") {
-      if (!currentPath.startsWith("/ru")) {
-        if (currentPath === "/") {
-          navigate("/ru");
-        } else {
-          navigate(`/ru${currentPath}`);
-        }
-      }
-    } else {
-      if (currentPath.startsWith("/ru")) {
-        const newPath = currentPath.replace(/^\/ru/, "") || "/";
-        navigate(newPath);
-      }
+    const target = lang === "ru" || lang === "en" || lang === "tr" ? lang : "tr";
+    const nextPath = pathForLanguage(location.pathname, target);
+    if (nextPath !== location.pathname) {
+      navigate(nextPath);
     }
   };
 
   const isRu = i18n.language === "ru";
   const isEn = i18n.language === "en";
-  const prefix = isRu ? "/ru" : "";
 
   const navLinks = isRu
     ? [
         { name: t('nav.home', 'Главная'), path: "/ru" },
         { name: "Регистрация компании в Турции", path: "/ru/kompaniya-v-turtsii" },
-        { name: t('nav.services', 'Услуги'), path: "/ru/hizmetler" },
-        { name: t('nav.russia_market', 'Рынок и ВЭД'), path: "/ru/rusya-pazari" },
-        { name: t('nav.op_model', 'Модель работы'), path: "/ru/operasyon-modeli" },
+        { name: t('nav.services', 'Услуги'), path: "/ru/uslugi" },
+        { name: t('nav.russia_market', 'Рынок и ВЭД'), path: "/ru/rynok-rossii" },
+        { name: t('nav.op_model', 'Модель работы'), path: "/ru/model-raboty" },
         { name: t('nav.blog', 'Блог'), path: "/ru/blog" },
-        { name: t('nav.contact', 'Контакты'), path: "/ru/iletisim" },
+        { name: t('nav.contact', 'Контакты'), path: "/ru/kontakty" },
       ]
     : [
         { name: t('nav.home', 'Ana Sayfa'), path: "/" },
@@ -92,13 +69,15 @@ export default function Navbar() {
       ];
 
   const currentLangLabel = i18n.language === "ru" ? "RU" : (i18n.language === "en" ? "EN" : "TR");
+  const applyPath = contactPath(isRu);
+  const logoPath = homePath(isRu);
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-[80px] md:h-[100px] py-2">
           <div className="flex items-center">
-            <Link to={prefix || "/"} className="group">
+            <Link to={logoPath} className="group">
               <Logo className="transition-transform group-hover:scale-105" />
             </Link>
           </div>
@@ -120,7 +99,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              to={isRu ? "/ru/iletisim" : "/iletisim"}
+              to={applyPath}
               className="bg-accent-500 text-white px-5 xl:px-7 py-[10px] xl:py-[12px] rounded-full font-medium text-[13px] xl:text-[14px] hover:bg-accent-600 transition-colors whitespace-nowrap shadow-sm"
             >
               {t('nav.apply', 'Başvuru Yap')}
@@ -214,7 +193,7 @@ export default function Navbar() {
           ))}
           <div className="pt-4 px-4 flex flex-col gap-3">
             <Link
-              to={isRu ? "/ru/iletisim" : "/iletisim"}
+              to={applyPath}
               className="block w-full text-center bg-accent-500 text-white py-[14px] rounded-full font-medium text-[15px] hover:bg-accent-600 transition-colors shadow-sm"
             >
               {t('nav.apply', 'Başvuru Yap')}

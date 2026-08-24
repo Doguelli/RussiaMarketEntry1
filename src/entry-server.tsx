@@ -3,7 +3,7 @@ import { renderToString } from "react-dom/server";
 import { MemoryRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import AppRoutes from "./AppRoutes";
-import "./i18n";
+import i18n, { resolveLanguageFromPath } from "./i18n";
 import { blogPosts } from "./data/blogData";
 
 // Exposed so scripts/prerender.js (run outside Vite) can read the current
@@ -12,7 +12,10 @@ import { blogPosts } from "./data/blogData";
 // resolved into static data.
 export const blogSlugs = blogPosts.map((post) => post.slug);
 
-export function render(url: string) {
+export async function render(url: string) {
+  const lang = resolveLanguageFromPath(url);
+  await i18n.changeLanguage(lang);
+
   const helmetContext: any = {};
   const html = renderToString(
     <HelmetProvider context={helmetContext}>
