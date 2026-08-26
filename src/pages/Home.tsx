@@ -5,7 +5,14 @@ import { ArrowRight, Globe2, ShieldCheck, TrendingUp, Users, CheckCircle2, Facto
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
 
-import { createOrganizationSchema, createBreadcrumbSchema } from "@/utils/seo";
+import { createOrganizationSchema, createBreadcrumbSchema, createFaqSchema } from "@/utils/seo";
+import {
+  contactPath,
+  forWhomPath,
+  operationModelPath,
+  servicePath,
+  homePath,
+} from "@/utils/ruPaths";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -13,9 +20,8 @@ export default function Home() {
   const isRu = i18n.language === 'ru';
   const isEn = i18n.language === 'en';
 
-  const orgSchema = createOrganizationSchema();
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: isRu ? '/ru' : '/' }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) }
   ]);
 
   const trustStats = [
@@ -57,6 +63,21 @@ export default function Home() {
       ? 'End-to-end operation guide for e-commerce, Ozon and Wildberries sales consulting, company formation, customs and logistics from Turkey to Russia.' 
       : "Türkiye'den Rusya'ya e-ticaret, Ozon ve Wildberries satış danışmanlığı, şirket kuruluşu, gümrük ve lojistik alanlarında uçtan uca operasyon rehberiniz.");
 
+  // The business and FAQ schema live here rather than in index.html so each
+  // language's homepage describes itself, and so no service/blog/RU/EN page
+  // inherits a homepage FAQ it does not display.
+  const faqs = [1, 2, 3, 4].map((n) => ({
+    question: t(`home.faq${n}_q`),
+    answer: t(`home.faq${n}_a`),
+  }));
+
+  const orgSchema = createOrganizationSchema({
+    description: metaDesc,
+    knowsAbout: services.map((service) => service.title),
+    url: homePath(isRu),
+  });
+  const faqSchema = createFaqSchema(faqs);
+
   return (
     <main>
       <Helmet>
@@ -64,8 +85,9 @@ export default function Home() {
         <meta name="description" content={metaDesc} />
         <meta name="keywords" content={isRu ? "регистрация компании в турции, wildberries ozon турция, выход на рынок, банковский счет в турции" : "Rusya e-ticaret, Rusya pazarına giriş, Ozon hesap açma, Wildberries Türkiye, Rusya şirket kurmak, Rusya ihracat"} />
         <link rel="canonical" href={isRu ? "https://russiamarketentry.com/ru" : "https://russiamarketentry.com/"} />
+        {/* No en alternate: English is served from the Turkish URL, so it has
+            no distinct URL of its own to advertise. */}
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/" />
         <meta property="og:title" content={metaTitle} />
@@ -74,6 +96,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
       {/* Hero Section */}
@@ -109,7 +132,7 @@ export default function Home() {
               </p>
               
               <Link
-                to="/iletisim"
+                to={contactPath(isRu)}
                 className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-4 rounded-md font-bold text-[16px] flex items-center justify-center gap-3 w-full sm:w-auto uppercase tracking-wide"
               >
                 {t('home.apply')} <ArrowRight className="w-5 h-5" />
@@ -222,7 +245,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, i) => (
-              <Link to={`/hizmetler/${service.id}`} key={i}>
+              <Link to={servicePath(service.id, isRu)} key={i}>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -253,7 +276,7 @@ export default function Home() {
               <p className="text-slate-500 mb-10">{t('home.for_whom_desc')}</p>
               
               <div className="space-y-6">
-                <Link to="/kimler-icin" className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
+                <Link to={forWhomPath(isRu)} className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent-500 shadow-sm">
                       <ShoppingBag className="w-6 h-6" />
@@ -266,7 +289,7 @@ export default function Home() {
                   </div>
                 </Link>
 
-                <Link to="/kimler-icin" className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
+                <Link to={forWhomPath(isRu)} className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent-500 shadow-sm">
                       <Factory className="w-6 h-6" />
@@ -279,7 +302,7 @@ export default function Home() {
                   </div>
                 </Link>
 
-                <Link to="/kimler-icin" className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
+                <Link to={forWhomPath(isRu)} className="group block bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-accent-500/30 hover:bg-white hover:shadow-lg transition-all">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent-500 shadow-sm">
                       <Users className="w-6 h-6" />
@@ -353,7 +376,7 @@ export default function Home() {
                 </li>
               </ul>
               <div className="mt-6">
-                <Link to="/operasyon-modeli" className="text-accent-500 hover:text-white transition-colors font-bold flex items-center gap-2 text-[14px]">
+                <Link to={operationModelPath(isRu)} className="text-accent-500 hover:text-white transition-colors font-bold flex items-center gap-2 text-[14px]">
                   {t('home.om_link')} <MoveRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -378,7 +401,7 @@ export default function Home() {
                 </li>
               </ul>
               <div className="mt-6">
-                <Link to="/operasyon-modeli" className="text-accent-500 hover:text-white transition-colors font-bold flex items-center gap-2 text-[14px]">
+                <Link to={operationModelPath(isRu)} className="text-accent-500 hover:text-white transition-colors font-bold flex items-center gap-2 text-[14px]">
                   {t('home.fin_link')} <MoveRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -429,7 +452,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              to="/iletisim"
+              to={contactPath(isRu)}
               className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-5 rounded-full font-bold text-[18px] flex items-center gap-3 shadow-[0_10px_20px_-5px_rgba(238,42,36,0.4)] hover:shadow-[0_15px_25px_-5px_rgba(238,42,36,0.5)] transform hover:-translate-y-1"
             >
               {t('home.cta_btn')} <ArrowRight className="w-5 h-5" />

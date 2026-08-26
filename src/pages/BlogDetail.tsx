@@ -5,6 +5,7 @@ import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
 import { createBreadcrumbSchema, createArticleSchema } from "@/utils/seo";
+import { hasBlogContentFor, type BlogLang } from "@/utils/blogLanguages";
 import BlockRenderer from "../components/BlockRenderer";
 
 export default function BlogDetail() {
@@ -13,6 +14,7 @@ export default function BlogDetail() {
   
   const post = blogPosts.find(p => p.slug === slug);
   const langPrefix = i18n.language === 'ru' ? '/ru' : i18n.language === 'en' ? '/en' : '';
+  const currentLang: BlogLang = i18n.language === 'ru' ? 'ru' : i18n.language === 'en' ? 'en' : 'tr';
 
   if (!post) {
     return <Navigate to={`${langPrefix}/blog`} replace />;
@@ -48,18 +50,29 @@ export default function BlogDetail() {
   }
 
   const canonicalUrl = `https://russiamarketentry.com${langPrefix}/blog/${post.slug}`;
+  // English has no landing page of its own — /en/blog is the root of the only
+  // English URL tree, so it starts the trail instead of a nonexistent /en.
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : (i18n.language === 'en' ? '/en' : '/') },
+    ...(currentLang === 'en'
+      ? []
+      : [{ name: currentLang === 'ru' ? 'Главная' : 'Ana Sayfa', url: currentLang === 'ru' ? '/ru' : '/' }]),
     { name: t('nav.blog'), url: `${langPrefix}/blog` },
     { name: title, url: `${langPrefix}/blog/${post.slug}` }
   ]);
+
+  // Only advertise the language trees this post is really published in, so the
+  // alternates can't lead a crawler to a URL carrying fallback text.
+  const hasTr = hasBlogContentFor(post, 'tr');
+  const hasEn = hasBlogContentFor(post, 'en');
+  const hasRu = hasBlogContentFor(post, 'ru');
 
   const articleSchema = createArticleSchema(
     title,
     excerpt,
     post.slug,
     post.publishedAt,
-    imageUrl
+    imageUrl,
+    langPrefix
   );
 
   const fullImageUrl = imageUrl
@@ -73,10 +86,10 @@ export default function BlogDetail() {
           <title>{`${metaTitle} | Russia Market Entry`}</title>
           <meta name="description" content={excerpt} />
           <link rel="canonical" href={canonicalUrl} />
-          <link rel="alternate" hrefLang="tr" href={`https://russiamarketentry.com/blog/${post.slug}`} />
-          <link rel="alternate" hrefLang="en" href={`https://russiamarketentry.com/en/blog/${post.slug}`} />
-          <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/ru/blog/${post.slug}`} />
-          <link rel="alternate" hrefLang="x-default" href={`https://russiamarketentry.com/blog/${post.slug}`} />
+          {hasTr && <link rel="alternate" hrefLang="tr" href={`https://russiamarketentry.com/blog/${post.slug}`} />}
+          {hasEn && <link rel="alternate" hrefLang="en" href={`https://russiamarketentry.com/en/blog/${post.slug}`} />}
+          {hasRu && <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/ru/blog/${post.slug}`} />}
+          <link rel="alternate" hrefLang="x-default" href={hasTr ? `https://russiamarketentry.com/blog/${post.slug}` : canonicalUrl} />
           <meta property="og:title" content={`${metaTitle} | Russia Market Entry`} />
           <meta property="og:description" content={excerpt} />
           <meta property="og:url" content={canonicalUrl} />

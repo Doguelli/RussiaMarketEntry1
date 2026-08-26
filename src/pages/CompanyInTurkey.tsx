@@ -20,31 +20,48 @@ import {
   ChevronDown
 } from "lucide-react";
 import { createBreadcrumbSchema, createServiceSchema } from "@/utils/seo";
+import { FORMSPREE_ENDPOINT } from "@/utils/formspree";
+import { blogDetailPath } from "@/utils/blogLanguages";
 
 export default function CompanyInTurkey() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
+  // Phone (WhatsApp/Telegram) is deliberately the only contact channel this
+  // form asks for — there is no email input, so no email key is submitted.
   const [formState, setFormState] = useState({
     name: "",
-    email: "",
     phone: "",
     businessType: "Limited Şirket (ООО)",
     message: ""
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 800);
+    setStatus("submitting");
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        // Both lead forms share one inbox, so name the source in the subject.
+        body: JSON.stringify({
+          ...formState,
+          _subject: "Заявка: регистрация компании в Турции",
+        }),
+      });
+
+      setStatus(response.ok ? "success" : "error");
+    } catch (error) {
+      setStatus("error");
+    }
   };
 
   const breadcrumbs = createBreadcrumbSchema([
     { name: "Главная", url: "/ru" },
-    { name: "Услуги", url: "/ru/hizmetler" },
+    { name: "Услуги", url: "/ru/uslugi" },
     { name: "Регистрация компании в Турции", url: "/ru/kompaniya-v-turtsii" }
   ]);
 
@@ -206,8 +223,10 @@ export default function CompanyInTurkey() {
           content="Открыть компанию в Турции для граждан РФ и нерезидентов под ключ: регистрация Limited Şirket (ООО), открытие мультивалютных счетов в банках (USD, EUR, TRY, RUB), юр. адрес в Стамбуле, ВНЖ и бухгалтерское сопровождение."
         />
         <link rel="canonical" href="https://russiamarketentry.com/ru/kompaniya-v-turtsii" />
-        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/hizmetler/vergi-ve-finans" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/hizmetler/tax-and-finance" />
+        {/* This landing page exists in Russian only. The previous Turkish and
+            English alternates pointed at an unrelated service page and at a
+            route that does not exist, so the cluster is a single self-reference
+            until a genuine translation is published. */}
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/kompaniya-v-turtsii" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/ru/kompaniya-v-turtsii" />
         <meta property="og:title" content="Регистрация компании в Турции для иностранцев | Russia Market Entry" />
@@ -284,7 +303,7 @@ export default function CompanyInTurkey() {
                   <p className="text-sm text-slate-500 mt-1">Ответим на вопросы по налогообложению, банкам и процедуре открытия за 15 минут.</p>
                 </div>
 
-                {isSubmitted ? (
+                {status === "success" ? (
                   <div className="p-6 bg-emerald-50 rounded-xl border border-emerald-200 text-center space-y-3">
                     <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
                     <h4 className="font-bold text-emerald-900 text-lg">Заявка принята!</h4>
@@ -292,6 +311,11 @@ export default function CompanyInTurkey() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
+                    {status === "error" && (
+                      <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg text-sm font-medium">
+                        Произошла ошибка при отправке. Пожалуйста, попробуйте еще раз или напишите нам напрямую в мессенджер.
+                      </div>
+                    )}
                     <div>
                       <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Ваше имя</label>
                       <input
@@ -339,11 +363,11 @@ export default function CompanyInTurkey() {
                     </div>
                     <button
                       type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-accent-500 hover:bg-accent-600 text-white font-bold py-3.5 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm text-sm"
+                      disabled={status === "submitting"}
+                      className="w-full bg-accent-500 hover:bg-accent-600 disabled:opacity-70 disabled:cursor-not-allowed text-white font-bold py-3.5 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm text-sm"
                     >
                       <Send className="w-4 h-4" />
-                      {isSubmitting ? "Отправка..." : "Получить консультацию и расчет"}
+                      {status === "submitting" ? "Отправка..." : "Получить консультацию и расчет"}
                     </button>
                   </form>
                 )}
@@ -599,7 +623,7 @@ export default function CompanyInTurkey() {
             {relatedArticles.map((art, idx) => (
               <Link
                 key={idx}
-                to={`/blog/${art.slug}`}
+                to={blogDetailPath(art.slug, "ru")}
                 className="bg-white p-5 rounded-xl border border-slate-200 hover:border-primary-500 transition-all hover:shadow-md flex flex-col justify-between group"
               >
                 <div>

@@ -6,7 +6,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, "..", p);
 
 const template = fs.readFileSync(toAbsolute("dist/index.html"), "utf-8");
-const { render, blogSlugs } = await import(pathToFileURL(toAbsolute("dist/server/entry-server.js")));
+const { render, blogRoutes, pageLanguageForPath } = await import(
+  pathToFileURL(toAbsolute("dist/server/entry-server.js"))
+);
 
 const staticRoutesToPrerender = [
   "/",
@@ -30,6 +32,9 @@ const staticRoutesToPrerender = [
   "/kimler-icin/e-ticaret-girisimcileri",
   "/kimler-icin/kozmetik-ureticileri",
   "/iletisim",
+  "/gizlilik-politikasi",
+  "/kullanim-sartlari",
+  "/cerez-politikasi",
   "/blog",
   "/kompaniya-v-turtsii",
 
@@ -37,50 +42,50 @@ const staticRoutesToPrerender = [
   // other page still shares its URL between Turkish and English)
   "/en/blog",
 
-  // Russian Infrastructure & Commercial Pages
+  // Russian Infrastructure & Commercial Pages (Russian Latin path segments)
   "/ru",
-  "/ru/hakkimizda",
-  "/ru/rusya-pazari",
-  "/ru/neden-rusya-detay",
-  "/ru/hizmetler",
-  "/ru/hizmetler/operasyon-kurulumu",
-  "/ru/hizmetler/pazaryeri-yonetimi",
-  "/ru/hizmetler/lojistik-ve-depo",
-  "/ru/hizmetler/sistem-ve-entegrasyon",
-  "/ru/hizmetler/marka-buyutme",
-  "/ru/hizmetler/vergi-ve-finans",
-  "/ru/hizmetler/turkiyede-sirket-kurulumu",
-  "/ru/hizmetler/ithalat-ve-gumruk-yonetimi",
-  "/ru/hizmetler/pazar-arastirmasi-ve-strateji",
-  "/ru/operasyon-modeli",
-  "/ru/kimler-icin",
-  "/ru/kimler-icin/tekstil-markalari",
-  "/ru/kimler-icin/ureticiler",
-  "/ru/kimler-icin/e-ticaret-girisimcileri",
-  "/ru/kimler-icin/kozmetik-ureticileri",
-  "/ru/iletisim",
+  "/ru/o-nas",
+  "/ru/rynok-rossii",
+  "/ru/pochemu-rossiya",
+  "/ru/uslugi",
+  "/ru/uslugi/nastroika-operatsii",
+  "/ru/uslugi/upravlenie-marketpleisami",
+  "/ru/uslugi/logistika-i-fulfiliment",
+  "/ru/uslugi/integratsiya-i-avtomatizatsiya",
+  "/ru/uslugi/prodvizhenie-brenda",
+  "/ru/uslugi/nalogi-i-finansy",
+  "/ru/uslugi/registratsiya-biznesa-v-turtsii",
+  "/ru/uslugi/import-i-tamozhnya",
+  "/ru/uslugi/issledovanie-rynka",
+  "/ru/model-raboty",
+  "/ru/dlya-kogo",
+  "/ru/dlya-kogo/tekstilnye-brendy",
+  "/ru/dlya-kogo/proizvoditeli",
+  "/ru/dlya-kogo/online-torgovlya",
+  "/ru/dlya-kogo/proizvoditeli-kosmetiki",
+  "/ru/kontakty",
+  "/ru/politika-konfidentsialnosti",
+  "/ru/usloviya-ispolzovaniya",
+  "/ru/politika-cookie",
   "/ru/kompaniya-v-turtsii",
   "/ru/blog",
 ];
 
 // Every blog post's own detail page is derived from blogPosts (src/data/blogData.tsx,
-// via the built SSR bundle's exported blogSlugs) instead of being hand-maintained
+// via the built SSR bundle's exported blogRoutes) instead of being hand-maintained
 // here, so newly added posts (including ones added through the admin panel) are
-// automatically prerendered. The bare /blog/:slug, /en/blog/:slug, and
-// /ru/blog/:slug routes (AppRoutes.tsx) are all prerendered — the URL prefix
-// is what tells the app which language to render on first load for a non-JS
-// crawler.
-const blogRoutesToPrerender = blogSlugs.flatMap((slug) => [
-  `/blog/${slug}`,
-  `/en/blog/${slug}`,
-  `/ru/blog/${slug}`,
-]);
+// automatically prerendered. The URL prefix on the bare /blog/:slug,
+// /en/blog/:slug and /ru/blog/:slug routes (AppRoutes.tsx) is what tells the
+// app which language to render on first load for a non-JS crawler — so a post
+// is only listed here for the languages it actually has content in
+// (src/utils/blogLanguages.ts).
+const blogRoutesToPrerender = blogRoutes;
 
 const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender];
 
 (async () => {
   for (const url of routesToPrerender) {
-    const { html: appHtml } = render(url);
+    const { html: appHtml } = await render(url);
 
     // Extract head elements rendered by React for this route
     const titles = appHtml.match(/<title[^>]*>[\s\S]*?<\/title>/gi) || [];
@@ -96,6 +101,10 @@ const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender]
       .replace(/<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, "");
 
     let html = template;
+
+    // Set <html lang> from the prerender URL (Helmet htmlAttributes are not in #root HTML)
+    const pageLang = pageLanguageForPath(url);
+    html = html.replace(/<html\s+lang="[^"]*"/i, `<html lang="${pageLang}"`);
 
     // Clean up default/fallback head tags from template to avoid duplicates
     html = html
@@ -149,17 +158,27 @@ const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender]
 
   function sitemapMeta(url) {
     if (url === "/" || url === "/ru") return { priority: "1.0", changefreq: "weekly" };
-    if (url === "/blog" || url === "/en/blog" || url === "/ru/blog" || url === "/hizmetler" || url === "/ru/hizmetler") {
+    if (url === "/blog" || url === "/en/blog" || url === "/ru/blog" || url === "/hizmetler" || url === "/ru/uslugi") {
       return { priority: "0.9", changefreq: "weekly" };
     }
-    if (url.startsWith("/hizmetler/") || url.startsWith("/ru/hizmetler/")) {
+    if (url.startsWith("/hizmetler/") || url.startsWith("/ru/uslugi/")) {
       return { priority: "0.8", changefreq: "weekly" };
     }
     if (url.startsWith("/blog/") || url.startsWith("/en/blog/") || url.startsWith("/ru/blog/")) {
       return { priority: "0.6", changefreq: "monthly" };
     }
-    if (url.startsWith("/kimler-icin") || url.startsWith("/ru/kimler-icin")) {
+    if (url.startsWith("/kimler-icin") || url.startsWith("/ru/dlya-kogo")) {
       return { priority: "0.7", changefreq: "monthly" };
+    }
+    if (
+      url.includes("gizlilik") ||
+      url.includes("kullanim-sartlari") ||
+      url.includes("cerez") ||
+      url.includes("politika-konfidentsialnosti") ||
+      url.includes("usloviya-ispolzovaniya") ||
+      url.includes("politika-cookie")
+    ) {
+      return { priority: "0.3", changefreq: "yearly" };
     }
     return { priority: "0.7", changefreq: "monthly" };
   }

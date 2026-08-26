@@ -127,7 +127,9 @@
     "contact": "İletişim",
     "all_rights": "Tüm hakları saklıdır.",
     "privacy": "Gizlilik Politikası",
-    "terms": "Kullanım Şartları"
+    "terms": "Kullanım Şartları",
+    "cookies": "Çerez Politikası",
+    "op_location_label": "Moskova — operasyon / fulfillment"
   },
   "about": {
     "title": "Hakkımızda | Rusya Pazarına Giriş Danışmanlığı & Lojistik",
@@ -153,7 +155,7 @@
   },
   "contact": {
     "title": "İletişim | Rusya E-Ticaret Danışmanlık Firması",
-    "desc_meta": "Rusya e-ticaret operasyonlarınızı başlatmak veya büyütmek için İstanbul ve Moskova ofislerimizle iletişime geçin. Uzman ekibimizle tanışın.",
+    "desc_meta": "Rusya e-ticaret operasyonlarınızı başlatmak veya büyütmek için bizimle iletişime geçin. Uzman ekibimizle tanışın.",
     "badge": "İletişim",
     "h1": "Birlikte Büyüyelim",
     "subtitle": "Rusya pazarına giriş yapmak veya mevcut operasyonunuzu büyütmek için bizimle iletişime geçin.",
@@ -161,6 +163,8 @@
     "result_desc": "Rusya pazarında başarı, doğru strateji ve doğru partner ile mümkündür. Biz, markanız veya üretiminiz için sadece bir hizmet sağlayıcı değil;",
     "result_strong": " doğrudan operasyon ortağıyız.",
     "op_centers": "Operasyon Merkezleri",
+    "op_location_label": "Moskova — operasyon ve fulfillment altyapısı",
+    "registered_address_label": "Kayıtlı (yasal) adres",
     "phone": "Telefon",
     "email": "E-posta",
     "form_title": "Başvuru Yap",

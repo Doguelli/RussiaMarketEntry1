@@ -5,10 +5,12 @@ import { ArrowRight, BookOpen } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { hasBlogContentFor, type BlogLang } from "@/utils/blogLanguages";
 
 export default function Blog() {
   const { t, i18n } = useTranslation();
   const langPrefix = i18n.language === 'ru' ? '/ru' : i18n.language === 'en' ? '/en' : '';
+  const currentLang: BlogLang = i18n.language === 'ru' ? 'ru' : i18n.language === 'en' ? 'en' : 'tr';
 
   const parseDate = (dateStr?: string) => {
     if (!dateStr) return 0;
@@ -37,12 +39,8 @@ export default function Blog() {
   // Russian list showing its Turkish title/body (BlogDetail's fallback logic
   // is meant for someone opening a direct link, not for list browsing), and
   // Russian-only posts would show up mixed into the Turkish/English list.
-  const hasRussianContent = (p: (typeof blogPosts)[number]) =>
-    p.lang === 'ru' || Boolean(p.titleRu || p.contentRu || p.contentBlocksRu);
-
-  const visibleBlogPosts = blogPosts.filter((p) =>
-    i18n.language === 'ru' ? hasRussianContent(p) : p.lang !== 'ru'
-  );
+  // Same predicate decides which detail URLs get prerendered.
+  const visibleBlogPosts = blogPosts.filter((p) => hasBlogContentFor(p, currentLang));
 
   const sortedBlogPosts = [...visibleBlogPosts].sort((a, b) => {
     const dateA = i18n.language === 'ru' ? (a.publishedAtRu || a.publishedAt) : a.publishedAt;
@@ -80,8 +78,12 @@ export default function Blog() {
     return post.readTime;
   };
 
+  // English has no landing page of its own — /en/blog is the root of the only
+  // English URL tree, so it starts the trail instead of a nonexistent /en.
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : (i18n.language === 'en' ? '/en' : '/') },
+    ...(currentLang === 'en'
+      ? []
+      : [{ name: currentLang === 'ru' ? 'Главная' : 'Ana Sayfa', url: currentLang === 'ru' ? '/ru' : '/' }]),
     { name: t('nav.blog'), url: `${langPrefix}/blog` }
   ]);
 

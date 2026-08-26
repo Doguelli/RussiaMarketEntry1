@@ -4,15 +4,18 @@ import { ShieldCheck, ArrowRight, BarChart3, Calculator, Receipt, Landmark } fro
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { operationModelPath, absoluteUrl, homePath, contactPath } from "@/utils/ruPaths";
 
 export default function OperationModel() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === 'ru';
   const isEn = i18n.language === 'en';
+  const pagePath = operationModelPath(isRu);
+  const canonicalUrl = absoluteUrl(pagePath);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: isRu ? '/ru' : '/' },
-    { name: t('nav.op_model'), url: isRu ? '/ru/operasyon-modeli' : '/operasyon-modeli' }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) },
+    { name: t('nav.op_model'), url: pagePath }
   ]);
 
   return (
@@ -20,14 +23,13 @@ export default function OperationModel() {
       <Helmet>
         <title>{t('op_model_page.title')}</title>
         <meta name="description" content={t('op_model_page.desc_meta')} />
-        <link rel="canonical" href={isRu ? "https://russiamarketentry.com/ru/operasyon-modeli" : "https://russiamarketentry.com/operasyon-modeli"} />
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/operasyon-modeli" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/operasyon-modeli" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/operasyon-modeli" />
+        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/model-raboty" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/operasyon-modeli" />
         <meta property="og:title" content={t('op_model_page.title')} />
         <meta property="og:description" content={t('op_model_page.desc_meta')} />
-        <meta property="og:url" content={isRu ? "https://russiamarketentry.com/ru/operasyon-modeli" : "https://russiamarketentry.com/operasyon-modeli"} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -169,7 +171,7 @@ export default function OperationModel() {
         {/* CTA */}
         <div className="text-center mt-12">
           <Link
-            to="/iletisim"
+            to={contactPath(isRu)}
             className="inline-flex items-center gap-3 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-5 rounded-full font-bold text-[16px] shadow-lg transform hover:-translate-y-1"
           >
             {t('op_model_page.cta')} <ArrowRight className="w-5 h-5" />

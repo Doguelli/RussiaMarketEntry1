@@ -7,29 +7,44 @@ import { serviceDetails } from "../data/servicesData";
 import { serviceDetailsEN } from "../data/servicesDataEN";
 import { serviceDetailsRU } from "../data/servicesDataRU";
 import { createBreadcrumbSchema, createServiceSchema } from "@/utils/seo";
+import {
+  resolveServiceId,
+  servicePath as localizedServicePath,
+  servicesPath,
+  contactPath,
+  absoluteUrl,
+  homePath,
+} from "@/utils/ruPaths";
 
 export default function ServiceDetail() {
-  const { id } = useParams<{ id: string }>();
+  const { id: idParam } = useParams<{ id: string }>();
   const { t, i18n } = useTranslation();
+  const isRu = i18n.language === 'ru';
+  const isEn = i18n.language === 'en';
+  const id = resolveServiceId(idParam);
+
   let currentDetails = serviceDetails;
-  if (i18n.language === 'ru') {
+  if (isRu) {
     currentDetails = serviceDetailsRU;
-  } else if (i18n.language === 'en') {
+  } else if (isEn) {
     currentDetails = serviceDetailsEN;
   }
   const service = id ? currentDetails[id] : null;
 
-  if (!service) {
-    return <Navigate to={i18n.language === 'ru' ? '/ru/hizmetler' : '/hizmetler'} replace />;
+  if (!service || !id) {
+    return <Navigate to={servicesPath(isRu)} replace />;
   }
 
   const Icon = service.icon;
-  const canonicalUrl = `https://russiamarketentry.com/hizmetler/${id}`;
+  const pagePath = localizedServicePath(id, isRu);
+  const canonicalUrl = absoluteUrl(pagePath);
+  const trServiceUrl = absoluteUrl(`/hizmetler/${id}`);
+  const ruServiceUrl = absoluteUrl(localizedServicePath(id, true));
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: i18n.language === 'ru' ? 'Главная' : (i18n.language === 'en' ? 'Home' : 'Ana Sayfa'), url: i18n.language === 'ru' ? '/ru' : '/' },
-    { name: t('nav.services'), url: i18n.language === 'ru' ? '/ru/hizmetler' : '/hizmetler' },
-    { name: service.title, url: `/hizmetler/${id}` }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) },
+    { name: t('nav.services'), url: servicesPath(isRu) },
+    { name: service.title, url: pagePath }
   ]);
 
   const serviceSchema = createServiceSchema(service.title, service.description, canonicalUrl);
@@ -40,10 +55,9 @@ export default function ServiceDetail() {
         <title>{service.metaTitle}</title>
         <meta name="description" content={service.metaDescription} />
         <link rel="canonical" href={canonicalUrl} />
-        <link rel="alternate" hrefLang="tr" href={`https://russiamarketentry.com/hizmetler/${id}`} />
-        <link rel="alternate" hrefLang="en" href={`https://russiamarketentry.com/hizmetler/${id}`} />
-        <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/ru/hizmetler/${id}`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://russiamarketentry.com/hizmetler/${id}`} />
+        <link rel="alternate" hrefLang="tr" href={trServiceUrl} />
+        <link rel="alternate" hrefLang="ru" href={ruServiceUrl} />
+        <link rel="alternate" hrefLang="x-default" href={trServiceUrl} />
         <meta property="og:title" content={service.metaTitle} />
         <meta property="og:description" content={service.metaDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -54,8 +68,8 @@ export default function ServiceDetail() {
 
       {/* Hero Header */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-        <Link to={i18n.language === 'ru' ? '/ru/hizmetler' : '/hizmetler'} className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 font-medium text-[14px] mb-8 transition-colors">
-          <ArrowLeft className="w-4 h-4" /> {i18n.language === 'ru' ? 'Назад к услугам' : (i18n.language === 'en' ? 'Back to Services' : 'Hizmetlere Dön')}
+        <Link to={servicesPath(isRu)} className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 font-medium text-[14px] mb-8 transition-colors">
+          <ArrowLeft className="w-4 h-4" /> {isRu ? 'Назад к услугам' : (isEn ? 'Back to Services' : 'Hizmetlere Dön')}
         </Link>
         
         <motion.div
@@ -155,7 +169,7 @@ export default function ServiceDetail() {
                     ? 'Learn for free how we can build a structure for your brand specifically for this service.' 
                     : 'Bu hizmet özelinde markanız için nasıl bir yapı kurabileceğimizi ücretsiz öğrenin.')}
               </p>
-              <Link to={i18n.language === 'ru' ? "/ru/iletisim" : "/iletisim"} className="bg-accent-500 hover:bg-accent-600 transition-colors text-white font-bold py-3.5 px-6 rounded-xl w-full flex items-center justify-center gap-2 shadow-sm text-[15px]">
+              <Link to={contactPath(isRu)} className="bg-accent-500 hover:bg-accent-600 transition-colors text-white font-bold py-3.5 px-6 rounded-xl w-full flex items-center justify-center gap-2 shadow-sm text-[15px]">
                 {i18n.language === 'ru' ? 'Связаться с нами' : (i18n.language === 'en' ? 'Contact Us' : 'İletişime Geçin')} <ArrowRight className="w-4 h-4" />
               </Link>
             </motion.div>

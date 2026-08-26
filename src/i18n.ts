@@ -20,9 +20,24 @@ const resources = {
   },
 };
 
-// If URL has /ru prefix, prioritize ru, otherwise use browser/location detection
-const isRuPath = typeof window !== 'undefined' && window.location.pathname.startsWith('/ru');
-const initialLanguage = isRuPath ? 'ru' : detectLanguageFromBrowser();
+/** Map a public pathname to the site language used for that URL tree. */
+export function resolveLanguageFromPath(pathname: string): 'tr' | 'ru' | 'en' {
+  const path = (pathname.split('?')[0] || '/').replace(/\/+$/, '') || '/';
+  if (path === '/ru' || path.startsWith('/ru/')) return 'ru';
+  if (path === '/en' || path.startsWith('/en/')) return 'en';
+  return 'tr';
+}
+
+// Client: /ru and /en URL trees force language; other paths keep browser/geo detection.
+// SSR always starts as 'tr' here — entry-server sets language from the prerender URL before render.
+const initialLanguage =
+  typeof window !== 'undefined'
+    ? (() => {
+        const fromPath = resolveLanguageFromPath(window.location.pathname);
+        if (fromPath === 'ru' || fromPath === 'en') return fromPath;
+        return detectLanguageFromBrowser();
+      })()
+    : 'tr';
 
 i18n
   .use(LanguageDetector)

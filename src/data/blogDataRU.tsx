@@ -66,9 +66,9 @@ export const blogPostsRU: BlogPost[] = [
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Связанные практические статьи:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
-            <li><Link to="/blog/otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits" className="hover:underline">→ Открытие корпоративного и личного банковского счета в Турции</Link></li>
-            <li><Link to="/blog/nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya" className="hover:underline">→ Налоговая система Турции: налог на прибыль (Kurumlar) и НДС</Link></li>
-            <li><Link to="/blog/vnzh-ikamet-i-rabochaya-viza-v-turtsii-pri-otkrytii-biznesa" className="hover:underline">→ Оформление ВНЖ (Икамет) при открытии бизнеса</Link></li>
+            <li><Link to="/ru/blog/otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits" className="hover:underline">→ Открытие корпоративного и личного банковского счета в Турции</Link></li>
+            <li><Link to="/ru/blog/nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya" className="hover:underline">→ Налоговая система Турции: налог на прибыль (Kurumlar) и НДС</Link></li>
+            <li><Link to="/ru/blog/vnzh-ikamet-i-rabochaya-viza-v-turtsii-pri-otkrytii-biznesa" className="hover:underline">→ Оформление ВНЖ (Икамет) при открытии бизнеса</Link></li>
           </ul>
         </div>
       </div>
@@ -133,8 +133,8 @@ export const blogPostsRU: BlogPost[] = [
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
-            <li><Link to="/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация компании в Турции: пошаговое руководство</Link></li>
-            <li><Link to="/blog/torgovlya-i-logistika-mezhdu-turtsiey-i-rossiey-tamozhnya-i-raschety" className="hover:underline">→ Торговля и логистика между Турцией и Россией</Link></li>
+            <li><Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация компании в Турции: пошаговое руководство</Link></li>
+            <li><Link to="/ru/blog/torgovlya-i-logistika-mezhdu-turtsiey-i-rossiey-tamozhnya-i-raschety" className="hover:underline">→ Торговля и логистика между Турцией и Россией</Link></li>
           </ul>
         </div>
       </div>
@@ -195,8 +195,8 @@ export const blogPostsRU: BlogPost[] = [
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Связанные статьи:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
-            <li><Link to="/blog/yuridicheskiy-adres-i-buhgalter-mali-musavir-v-turtsii" className="hover:underline">→ Юридический адрес и бухгалтер (Mali Müşavir) в Турции</Link></li>
-            <li><Link to="/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Пошаговое руководство по регистрации компании</Link></li>
+            <li><Link to="/ru/blog/yuridicheskiy-adres-i-buhgalter-mali-musavir-v-turtsii" className="hover:underline">→ Юридический адрес и бухгалтер (Mali Müşavir) в Турции</Link></li>
+            <li><Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Пошаговое руководство по регистрации компании</Link></li>
           </ul>
         </div>
       </div>
@@ -254,8 +254,8 @@ export const blogPostsRU: BlogPost[] = [
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
-            <li><Link to="/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация компании в Турции: пошаговое руководство</Link></li>
-            <li><Link to="/blog/otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits" className="hover:underline">→ Открытие банковского счета в Турции</Link></li>
+            <li><Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация компании в Турции: пошаговое руководство</Link></li>
+            <li><Link to="/ru/blog/otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits" className="hover:underline">→ Открытие банковского счета в Турции</Link></li>
           </ul>
         </div>
       </div>
@@ -306,8 +306,8 @@ export const blogPostsRU: BlogPost[] = [
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
-            <li><Link to="/blog/eksport-iz-turtsii-na-marketpleysy-wildberries-ozon" className="hover:underline">→ Экспорт товаров из Турции на маркетплейсы WB и Ozon</Link></li>
-            <li><Link to="/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Открытие компании в Турции для ВЭД</Link></li>
+            <li><Link to="/ru/blog/eksport-iz-turtsii-na-marketpleysy-wildberries-ozon" className="hover:underline">→ Экспорт товаров из Турции на маркетплейсы WB и Ozon</Link></li>
+            <li><Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Открытие компании в Турции для ВЭД</Link></li>
           </ul>
         </div>
       </div>
@@ -365,8 +365,8 @@ export const blogPostsRU: BlogPost[] = [
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
-            <li><Link to="/blog/nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya" className="hover:underline">→ Налоги в Турции: налог на прибыль и НДС</Link></li>
-            <li><Link to="/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация компании в Турции</Link></li>
+            <li><Link to="/ru/blog/nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya" className="hover:underline">→ Налоги в Турции: налог на прибыль и НДС</Link></li>
+            <li><Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация компании в Турции</Link></li>
           </ul>
         </div>
       </div>
@@ -418,8 +418,8 @@ export const blogPostsRU: BlogPost[] = [
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
-            <li><Link to="/blog/torgovlya-i-logistika-mezhdu-turtsiey-i-rossiey-tamozhnya-i-raschety" className="hover:underline">→ Логистика и таможня Турция — Россия</Link></li>
-            <li><Link to="/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация компании в Турции под ключ</Link></li>
+            <li><Link to="/ru/blog/torgovlya-i-logistika-mezhdu-turtsiey-i-rossiey-tamozhnya-i-raschety" className="hover:underline">→ Логистика и таможня Турция — Россия</Link></li>
+            <li><Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация компании в Турции под ключ</Link></li>
           </ul>
         </div>
       </div>
@@ -498,8 +498,8 @@ export const blogPostsRU: BlogPost[] = [
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
-            <li><Link to="/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация Limited Şirket в Турции: пошагово</Link></li>
-            <li><Link to="/blog/nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya" className="hover:underline">→ Налоги для бизнеса в Турции</Link></li>
+            <li><Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация Limited Şirket в Турции: пошагово</Link></li>
+            <li><Link to="/ru/blog/nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya" className="hover:underline">→ Налоги для бизнеса в Турции</Link></li>
           </ul>
         </div>
       </div>

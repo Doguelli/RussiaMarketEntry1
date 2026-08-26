@@ -127,7 +127,9 @@
     "contact": "Contact",
     "all_rights": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Use"
+    "terms": "Terms of Use",
+    "cookies": "Cookie Policy",
+    "op_location_label": "Moscow — operations / fulfillment"
   },
   "about": {
     "title": "About Us | Russia Market Entry & Logistics Consulting",
@@ -153,7 +155,7 @@
   },
   "contact": {
     "title": "Contact | Russia E-Commerce Consulting Firm",
-    "desc_meta": "Contact our Istanbul and Moscow offices to start or grow your e-commerce operations in Russia. Meet our expert team.",
+    "desc_meta": "Contact us to start or grow your e-commerce operations in Russia. Meet our expert team.",
     "badge": "Contact",
     "h1": "Let's Grow Together",
     "subtitle": "Contact us to enter the Russian market or expand your existing operations.",
@@ -161,6 +163,8 @@
     "result_desc": "Success in the Russian market is possible with the right strategy and the right partner. We are not just a service provider for your brand or production; we are your",
     "result_strong": " direct operational partner.",
     "op_centers": "Operation Centers",
+    "op_location_label": "Moscow — operations and fulfillment infrastructure",
+    "registered_address_label": "Registered (legal) address",
     "phone": "Phone",
     "email": "Email",
     "form_title": "Apply",

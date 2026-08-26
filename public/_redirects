@@ -1,2 +1,26 @@
+# Russian URL migration: permanent redirects (old Turkish-under-/ru paths to Russian Latin paths).
+# These must stay above the SPA catch-all: Netlify applies the first matching rule,
+# so the /* 200 rewrite below would otherwise serve old RU URLs with a 200 instead of a 301.
+/ru/hakkimizda                                /ru/o-nas                                301!
+/ru/rusya-pazari                              /ru/rynok-rossii                         301!
+/ru/neden-rusya-detay                         /ru/pochemu-rossiya                      301!
+/ru/hizmetler                                 /ru/uslugi                               301!
+/ru/hizmetler/operasyon-kurulumu              /ru/uslugi/nastroika-operatsii           301!
+/ru/hizmetler/pazaryeri-yonetimi              /ru/uslugi/upravlenie-marketpleisami     301!
+/ru/hizmetler/lojistik-ve-depo                /ru/uslugi/logistika-i-fulfiliment       301!
+/ru/hizmetler/sistem-ve-entegrasyon           /ru/uslugi/integratsiya-i-avtomatizatsiya 301!
+/ru/hizmetler/marka-buyutme                   /ru/uslugi/prodvizhenie-brenda           301!
+/ru/hizmetler/vergi-ve-finans                 /ru/uslugi/nalogi-i-finansy              301!
+/ru/hizmetler/turkiyede-sirket-kurulumu       /ru/uslugi/registratsiya-biznesa-v-turtsii 301!
+/ru/hizmetler/ithalat-ve-gumruk-yonetimi      /ru/uslugi/import-i-tamozhnya            301!
+/ru/hizmetler/pazar-arastirmasi-ve-strateji   /ru/uslugi/issledovanie-rynka            301!
+/ru/operasyon-modeli                          /ru/model-raboty                         301!
+/ru/kimler-icin                               /ru/dlya-kogo                            301!
+/ru/kimler-icin/tekstil-markalari             /ru/dlya-kogo/tekstilnye-brendy          301!
+/ru/kimler-icin/ureticiler                    /ru/dlya-kogo/proizvoditeli              301!
+/ru/kimler-icin/e-ticaret-girisimcileri       /ru/dlya-kogo/online-torgovlya           301!
+/ru/kimler-icin/kozmetik-ureticileri          /ru/dlya-kogo/proizvoditeli-kosmetiki    301!
+/ru/iletisim                                  /ru/kontakty                             301!
+
 /admin/*  /admin/index.html  200
 /* /index.html 200

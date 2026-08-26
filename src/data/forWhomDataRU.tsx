@@ -25,7 +25,7 @@ export const forWhomDataRU: ForWhomContent[] = [
             Мы выводим ваш бренд на ведущие маркетплейсы (Wildberries, Ozon, Lamoda) и профессионально управляем всеми операциями от склада до выручки.
           </p>
           <div className="mt-4">
-            <Link to="/ru/iletisim" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
+            <Link to="/ru/kontakty" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
               👉 Оставить заявку
             </Link>
           </div>
@@ -94,7 +94,7 @@ export const forWhomDataRU: ForWhomContent[] = [
             Объедините ваши производственные мощности с нашим операционным опытом, и мы доставим вашу продукцию прямо покупателю.
           </p>
           <div className="mt-4">
-            <Link to="/ru/iletisim" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
+            <Link to="/ru/kontakty" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
               👉 Оставить заявку
             </Link>
           </div>
@@ -140,7 +140,7 @@ export const forWhomDataRU: ForWhomContent[] = [
             Готовая инфраструктура для превращения бизнес-идеи в стабильные продажи. Работайте надежно и предсказуемо.
           </p>
           <div className="mt-4">
-            <Link to="/ru/iletisim" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
+            <Link to="/ru/kontakty" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
               👉 Оставить заявку
             </Link>
           </div>
@@ -209,7 +209,7 @@ export const forWhomDataRU: ForWhomContent[] = [
             Мы выводим косметическую продукцию на рынок и комплексно сопровождаем все нормативные и логистические этапы.
           </p>
           <div className="mt-4">
-            <Link to="/ru/iletisim" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
+            <Link to="/ru/kontakty" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
               👉 Оставить заявку
             </Link>
           </div>

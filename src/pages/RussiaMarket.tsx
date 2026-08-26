@@ -4,15 +4,18 @@ import { ShoppingBag, TrendingUp, Globe2, Truck, ShieldCheck, CheckCircle2, Arro
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { russiaMarketPath, absoluteUrl, homePath, contactPath } from "@/utils/ruPaths";
 
 export default function RussiaMarket() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === 'ru';
   const isEn = i18n.language === 'en';
+  const pagePath = russiaMarketPath(isRu);
+  const canonicalUrl = absoluteUrl(pagePath);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: isRu ? '/ru' : '/' },
-    { name: t('nav.russia_market'), url: isRu ? '/ru/rusya-pazari' : '/rusya-pazari' }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) },
+    { name: t('nav.russia_market'), url: pagePath }
   ]);
 
   return (
@@ -20,14 +23,13 @@ export default function RussiaMarket() {
       <Helmet>
         <title>{t('russia_market_page.title')}</title>
         <meta name="description" content={t('russia_market_page.desc_meta')} />
-        <link rel="canonical" href={isRu ? "https://russiamarketentry.com/ru/rusya-pazari" : "https://russiamarketentry.com/rusya-pazari"} />
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/rusya-pazari" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/rusya-pazari" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/rusya-pazari" />
+        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/rynok-rossii" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/rusya-pazari" />
         <meta property="og:title" content={t('russia_market_page.title')} />
         <meta property="og:description" content={t('russia_market_page.desc_meta')} />
-        <meta property="og:url" content={isRu ? "https://russiamarketentry.com/ru/rusya-pazari" : "https://russiamarketentry.com/rusya-pazari"} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -226,7 +228,7 @@ export default function RussiaMarket() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              to="/iletisim"
+              to={contactPath(isRu)}
               className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-8 py-4 rounded-full font-bold text-[16px] inline-flex items-center gap-2"
             >
               {t('russia_market_page.cta')} <ArrowRight className="w-5 h-5" />

@@ -7,6 +7,13 @@ import { forWhomData } from "@/data/forWhomData";
 import { forWhomDataEN } from "@/data/forWhomDataEN";
 import { forWhomDataRU } from "@/data/forWhomDataRU";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import {
+  forWhomPath,
+  forWhomDetailPath,
+  contactPath,
+  absoluteUrl,
+  homePath,
+} from "@/utils/ruPaths";
 
 export default function ForWhom() {
   const { t, i18n } = useTranslation();
@@ -14,9 +21,12 @@ export default function ForWhom() {
   const isRu = i18n.language === 'ru';
   const isEn = i18n.language === 'en';
 
+  const pagePath = forWhomPath(isRu);
+  const canonicalUrl = absoluteUrl(pagePath);
+
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: isRu ? '/ru' : '/' },
-    { name: isRu ? 'Для кого' : (isEn ? 'Who Is It For?' : t('nav.for_whom')), url: isRu ? '/ru/kimler-icin' : '/kimler-icin' }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) },
+    { name: isRu ? 'Для кого' : (isEn ? 'Who Is It For?' : t('nav.for_whom')), url: pagePath }
   ]);
 
   const metaTitle = isRu
@@ -36,10 +46,15 @@ export default function ForWhom() {
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDesc} />
-        <link rel="canonical" href="https://russiamarketentry.com/kimler-icin" />
+        <link rel="canonical" href={canonicalUrl} />
+        {/* Turkish and Russian are the only real versions of this page — English
+            is served from the Turkish URL, so it gets no alternate of its own. */}
+        <link rel="alternate" hrefLang="tr" href={absoluteUrl(forWhomPath(false))} />
+        <link rel="alternate" hrefLang="ru" href={absoluteUrl(forWhomPath(true))} />
+        <link rel="alternate" hrefLang="x-default" href={absoluteUrl(forWhomPath(false))} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDesc} />
-        <meta property="og:url" content="https://russiamarketentry.com/kimler-icin" />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -75,7 +90,7 @@ export default function ForWhom() {
               transition={{ delay: i * 0.1 }}
               className="flex"
             >
-              <Link to={isRu ? `/ru/kimler-icin/${dataItem.slug}` : `/kimler-icin/${dataItem.slug}`} className="bg-white rounded-3xl p-8 shadow-sm flex flex-col w-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group border-t-4" style={{borderTopColor: 'var('+dataItem.color+')'}}>
+              <Link to={forWhomDetailPath(dataItem.slug, isRu)} className="bg-white rounded-3xl p-8 shadow-sm flex flex-col w-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group border-t-4" style={{borderTopColor: 'var('+dataItem.color+')'}}>
                 <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-colors ${dataItem.lightColor} ${dataItem.color}`} style={{backgroundColor: 'var('+dataItem.lightColor+')'}}>
                   {dataItem.icon}
                 </div>
@@ -104,7 +119,7 @@ export default function ForWhom() {
                 : 'Hangi kategoride olursanız olun, size en uygun büyüme planını oluşturmak için bir ücretsiz görüşme planlayın.')}
           </p>
           <Link
-            to={isRu ? "/ru/iletisim" : "/iletisim"}
+            to={contactPath(isRu)}
             className="inline-flex items-center gap-3 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-5 rounded-full font-bold text-[16px] shadow-lg transform hover:-translate-y-1"
           >
             {isRu ? 'Получить консультацию' : (isEn ? 'Get Free Consultation' : 'Ücretsiz Görüşme Al')} <ArrowRight className="w-5 h-5" />

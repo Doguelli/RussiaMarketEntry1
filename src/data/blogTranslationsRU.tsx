@@ -348,8 +348,8 @@ export const blogTranslationsRU: Record<string, BlogTranslationRU> = {
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
-            <li><Link to="/blog/wildberriesde-satis-yapmak" className="hover:underline">→ Как продавать на Wildberries: пошаговый гид</Link></li>
-            <li><Link to="/blog/eksport-iz-turtsii-na-marketpleysy-wildberries-ozon" className="hover:underline">→ Экспорт товаров из Турции на Wildberries и Ozon</Link></li>
+            <li><Link to="/ru/blog/wildberriesde-satis-yapmak" className="hover:underline">→ Как продавать на Wildberries: пошаговый гид</Link></li>
+            <li><Link to="/ru/blog/eksport-iz-turtsii-na-marketpleysy-wildberries-ozon" className="hover:underline">→ Экспорт товаров из Турции на Wildberries и Ozon</Link></li>
             <li><Link to="/ru/kompaniya-v-turtsii" className="hover:underline">→ Регистрация компании в Турции для международной торговли</Link></li>
           </ul>
         </div>

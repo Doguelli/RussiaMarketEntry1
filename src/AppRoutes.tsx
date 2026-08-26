@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation, useNavigate, Navigate, Link } from "react-router-dom";
+import { Routes, Route, useLocation, useNavigate, Navigate, Link, useParams } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
@@ -17,6 +17,7 @@ import ForWhomDetail from "./pages/ForWhomDetail";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import CompanyInTurkey from "./pages/CompanyInTurkey";
+import LegalDocument from "./pages/LegalDocument";
 import WhatsAppButton from "./components/WhatsAppButton";
 import AnalyticsTracker from "./components/AnalyticsTracker";
 import {
@@ -24,6 +25,11 @@ import {
   detectCountryFromIP,
   getLanguageForCountry,
 } from "./utils/geoLanguageDetector";
+import {
+  SERVICE_ID_TO_RU_SLUG,
+  FORWHOM_SLUG_TO_RU,
+} from "./utils/ruPaths";
+import { OG_LOCALE, pageLanguageForPath } from "./utils/pageLanguage";
 
 function ScrollToTopAndLangSync() {
   const { pathname } = useLocation();
@@ -77,6 +83,18 @@ function ScrollToTopAndLangSync() {
   return null;
 }
 
+// og:locale is emitted here rather than in index.html, which the prerenderer
+// copies into every route and which therefore declared tr_TR on the Russian
+// and English pages too.
+function OgLocaleMeta() {
+  const { pathname } = useLocation();
+  return (
+    <Helmet>
+      <meta property="og:locale" content={OG_LOCALE[pageLanguageForPath(pathname)]} />
+    </Helmet>
+  );
+}
+
 function OldRouteRedirect({ to }: { to: string }) {
   return (
     <>
@@ -86,6 +104,18 @@ function OldRouteRedirect({ to }: { to: string }) {
       <Navigate to={to} replace />
     </>
   );
+}
+
+function LegacyRuServiceRedirect() {
+  const { id } = useParams<{ id: string }>();
+  const ruSlug = id ? SERVICE_ID_TO_RU_SLUG[id] || id : "";
+  return <OldRouteRedirect to={ruSlug ? `/ru/uslugi/${ruSlug}` : "/ru/uslugi"} />;
+}
+
+function LegacyRuForWhomRedirect() {
+  const { slug } = useParams<{ slug: string }>();
+  const ruSlug = slug ? FORWHOM_SLUG_TO_RU[slug] || slug : "";
+  return <OldRouteRedirect to={ruSlug ? `/ru/dlya-kogo/${ruSlug}` : "/ru/dlya-kogo"} />;
 }
 
 function NotFound() {
@@ -119,6 +149,7 @@ export default function AppRoutes() {
   return (
     <>
       <ScrollToTopAndLangSync />
+      <OgLocaleMeta />
       <AnalyticsTracker />
       <div className="min-h-screen flex flex-col font-sans">
         <Navbar />
@@ -137,6 +168,9 @@ export default function AppRoutes() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/iletisim" element={<Contact />} />
+            <Route path="/gizlilik-politikasi" element={<LegalDocument kind="privacy" isRu={false} />} />
+            <Route path="/kullanim-sartlari" element={<LegalDocument kind="terms" isRu={false} />} />
+            <Route path="/cerez-politikasi" element={<LegalDocument kind="cookies" isRu={false} />} />
 
             {/* English Blog Routes (/en/blog/*) — every other page still
                 shares its URL between Turkish and English; only blog posts
@@ -144,24 +178,38 @@ export default function AppRoutes() {
             <Route path="/en/blog" element={<Blog />} />
             <Route path="/en/blog/:slug" element={<BlogDetail />} />
             
-            {/* Russian Language Routes (/ru/*) */}
+            {/* Russian Language Routes (/ru/*) — Russian Latin path segments */}
             <Route path="/ru" element={<Home />} />
-            <Route path="/ru/hakkimizda" element={<About />} />
-            <Route path="/ru/rusya-pazari" element={<RussiaMarket />} />
-            <Route path="/ru/neden-rusya-detay" element={<WhyRussiaDetail />} />
-            <Route path="/ru/hizmetler" element={<Services />} />
-            <Route path="/ru/hizmetler/:id" element={<ServiceDetail />} />
-            <Route path="/ru/operasyon-modeli" element={<OperationModel />} />
-            <Route path="/ru/kimler-icin" element={<ForWhom />} />
-            <Route path="/ru/kimler-icin/:slug" element={<ForWhomDetail />} />
+            <Route path="/ru/o-nas" element={<About />} />
+            <Route path="/ru/rynok-rossii" element={<RussiaMarket />} />
+            <Route path="/ru/pochemu-rossiya" element={<WhyRussiaDetail />} />
+            <Route path="/ru/uslugi" element={<Services />} />
+            <Route path="/ru/uslugi/:id" element={<ServiceDetail />} />
+            <Route path="/ru/model-raboty" element={<OperationModel />} />
+            <Route path="/ru/dlya-kogo" element={<ForWhom />} />
+            <Route path="/ru/dlya-kogo/:slug" element={<ForWhomDetail />} />
             <Route path="/ru/blog" element={<Blog />} />
             <Route path="/ru/blog/:slug" element={<BlogDetail />} />
-            <Route path="/ru/iletisim" element={<Contact />} />
+            <Route path="/ru/kontakty" element={<Contact />} />
+            <Route path="/ru/politika-konfidentsialnosti" element={<LegalDocument kind="privacy" isRu={true} />} />
+            <Route path="/ru/usloviya-ispolzovaniya" element={<LegalDocument kind="terms" isRu={true} />} />
+            <Route path="/ru/politika-cookie" element={<LegalDocument kind="cookies" isRu={true} />} />
             
             {/* Phase 2: Commercial Landing Page for Foreigners registering company in Turkey */}
             <Route path="/ru/kompaniya-v-turtsii" element={<CompanyInTurkey />} />
             <Route path="/kompaniya-v-turtsii" element={<CompanyInTurkey />} />
             
+            {/* Soft SPA fallbacks for old RU paths (production uses Netlify 301) */}
+            <Route path="/ru/hakkimizda" element={<OldRouteRedirect to="/ru/o-nas" />} />
+            <Route path="/ru/rusya-pazari" element={<OldRouteRedirect to="/ru/rynok-rossii" />} />
+            <Route path="/ru/neden-rusya-detay" element={<OldRouteRedirect to="/ru/pochemu-rossiya" />} />
+            <Route path="/ru/hizmetler" element={<OldRouteRedirect to="/ru/uslugi" />} />
+            <Route path="/ru/hizmetler/:id" element={<LegacyRuServiceRedirect />} />
+            <Route path="/ru/operasyon-modeli" element={<OldRouteRedirect to="/ru/model-raboty" />} />
+            <Route path="/ru/kimler-icin" element={<OldRouteRedirect to="/ru/dlya-kogo" />} />
+            <Route path="/ru/kimler-icin/:slug" element={<LegacyRuForWhomRedirect />} />
+            <Route path="/ru/iletisim" element={<OldRouteRedirect to="/ru/kontakty" />} />
+
             {/* 301 Redirects & Noindex for old demo pages */}
             <Route path="/contact" element={<OldRouteRedirect to="/iletisim" />} />
             <Route path="/contact/*" element={<OldRouteRedirect to="/iletisim" />} />

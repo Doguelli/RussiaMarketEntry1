@@ -4,15 +4,18 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { aboutPath, absoluteUrl, homePath, servicesPath } from "@/utils/ruPaths";
 
 export default function About() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === 'ru';
   const isEn = i18n.language === 'en';
+  const pagePath = aboutPath(isRu);
+  const canonicalUrl = absoluteUrl(pagePath);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: isRu ? '/ru' : '/' },
-    { name: t('nav.about'), url: isRu ? '/ru/hakkimizda' : '/hakkimizda' }
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) },
+    { name: t('nav.about'), url: pagePath }
   ]);
 
   return (
@@ -21,14 +24,13 @@ export default function About() {
         <title>{t('about.title')}</title>
         <meta name="description" content={t('about.desc_meta')} />
         <meta name="keywords" content={isRu ? "о нас, регистрация компании в турции, wildberries ozon турция" : "hakkımızda, Rusya e-ticaret danışmanı, Ozon Türkiye partneri, Wildberries lojistik"} />
-        <link rel="canonical" href={isRu ? "https://russiamarketentry.com/ru/hakkimizda" : "https://russiamarketentry.com/hakkimizda"} />
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/hakkimizda" />
-        <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/hakkimizda" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/hakkimizda" />
+        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/o-nas" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/hakkimizda" />
         <meta property="og:title" content={t('about.title')} />
         <meta property="og:description" content={t('about.desc_meta')} />
-        <meta property="og:url" content={isRu ? "https://russiamarketentry.com/ru/hakkimizda" : "https://russiamarketentry.com/hakkimizda"} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -147,7 +149,7 @@ export default function About() {
               <p className="font-semibold text-white text-[18px] mb-8 tracking-tight leading-relaxed">
                 {t('about.today_footer')}
               </p>
-              <Link to="/hizmetler" className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-8 py-[14px] rounded-full font-bold text-[15px] inline-flex items-center gap-2">
+              <Link to={servicesPath(isRu)} className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-8 py-[14px] rounded-full font-bold text-[15px] inline-flex items-center gap-2">
                 {t('about.btn')} <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
