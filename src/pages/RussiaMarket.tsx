@@ -4,7 +4,7 @@ import { ShoppingBag, TrendingUp, Globe2, Truck, ShieldCheck, CheckCircle2, Arro
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
-import { russiaMarketPath, absoluteUrl, homePath, contactPath } from "@/utils/ruPaths";
+import { russiaMarketPath, absoluteUrl, homePath, contactPath, whyRussiaPath } from "@/utils/ruPaths";
 
 export default function RussiaMarket() {
   const { t, i18n } = useTranslation();
@@ -81,7 +81,7 @@ export default function RussiaMarket() {
               desc: t('russia_market_page.feat4_desc')
             }
           ].map((item, i) => (
-            <Link to={`/neden-rusya-detay#${item.id}`} key={i}>
+            <Link to={`${whyRussiaPath(isRu)}#${item.id}`} key={i}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

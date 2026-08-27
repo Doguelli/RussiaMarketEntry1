@@ -186,6 +186,15 @@ export function pathForLanguage(
     return `/${targetLang}/blog${rest}`;
   }
 
+  // Russian-only company landing: switching to TR/EN must leave the RU page
+  // for the shared company-formation service URL (content stays locale-correct).
+  if (
+    (path === "/kompaniya-v-turtsii" || path === "/ru/kompaniya-v-turtsii") &&
+    targetLang !== "ru"
+  ) {
+    return "/hizmetler/turkiyede-sirket-kurulumu";
+  }
+
   // Strip language prefix to get a TR-shaped path for mapping
   let trPath = path;
   if (path === "/ru" || path.startsWith("/ru/")) {

@@ -30,6 +30,7 @@ import {
   FORWHOM_SLUG_TO_RU,
 } from "./utils/ruPaths";
 import { OG_LOCALE, pageLanguageForPath } from "./utils/pageLanguage";
+import { resolveI18nLanguageForPath } from "./i18n";
 
 function ScrollToTopAndLangSync() {
   const { pathname } = useLocation();
@@ -41,14 +42,12 @@ function ScrollToTopAndLangSync() {
     if (typeof window !== "undefined") {
       window.scrollTo(0, 0);
     }
-    if (pathname.startsWith("/ru")) {
-      if (i18n.language !== "ru") {
-        i18n.changeLanguage("ru");
-      }
-    } else if (pathname.startsWith("/en")) {
-      if (i18n.language !== "en") {
-        i18n.changeLanguage("en");
-      }
+    // Keep i18n aligned with the URL tree on every SPA navigation.
+    // Critical: leaving /ru/* for a TR path must drop sticky "ru" language
+    // (e.g. /ru/... → /rusya-pazari must not keep Russian UI).
+    const targetLang = resolveI18nLanguageForPath(pathname, i18n.language);
+    if (i18n.language !== targetLang) {
+      i18n.changeLanguage(targetLang);
     }
   }, [pathname, i18n]);
 

@@ -109,23 +109,10 @@ export default function About() {
             <div className="relative z-10">
               <h3 className="text-[32px] font-extrabold mb-10 tracking-tight leading-tight" dangerouslySetInnerHTML={{__html: t('about.today_heading')}}></h3>
               
-              <div className="grid grid-cols-2 gap-6 mb-10">
-                 <div>
-                   <div className="text-[32px] font-extrabold text-accent-500 mb-1">100+</div>
-                   <div className="text-white/80 text-[14px] leading-tight">{t('home.trust1')}</div>
-                 </div>
-                 <div>
-                   <div className="text-[32px] font-extrabold text-accent-500 mb-1">50+</div>
-                   <div className="text-white/80 text-[14px] leading-tight">{t('home.trust2')}</div>
-                 </div>
-                 <div>
-                   <div className="text-[32px] font-extrabold text-accent-500 mb-1">$10M+</div>
-                   <div className="text-white/80 text-[14px] leading-tight">{t('home.trust3')}</div>
-                 </div>
-                 <div>
-                   <div className="text-[32px] font-extrabold text-accent-500 mb-1">15+</div>
-                   <div className="text-white/80 text-[14px] leading-tight">{t('home.trust4')}</div>
-                 </div>
+              <div className="mb-10 rounded-2xl border border-white/10 bg-white/5 p-6">
+                <div className="text-[32px] font-extrabold text-accent-500 mb-2">15+</div>
+                <div className="text-white font-semibold text-[16px] mb-1">{t("home.trust_exp_title")}</div>
+                <div className="text-white/80 text-[14px] leading-relaxed">{t("home.trust_exp_desc")}</div>
               </div>
 
               <div className="space-y-6">

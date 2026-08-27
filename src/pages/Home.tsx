@@ -36,7 +36,7 @@ export default function Home() {
 
   const isRu = i18n.language === "ru";
   const isEn = i18n.language === "en";
-  const blogIndexPath = isRu ? "/ru/blog" : "/blog";
+  const blogIndexPath = isRu ? "/ru/blog" : isEn ? "/en/blog" : "/blog";
 
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(isRu) },
@@ -183,7 +183,7 @@ export default function Home() {
         <div className="absolute inset-0 w-full h-full bg-primary-900">
           <img
             src="https://images.unsplash.com/photo-1513326738677-b964603b136d?q=80&w=2070&auto=format&fit=crop"
-            alt="Moskova ve Rusya e-ticaret pazarı"
+            alt={isRu ? "Москва и рынок электронной коммерции России" : isEn ? "Moscow and the Russian e-commerce market" : "Moskova ve Rusya e-ticaret pazarı"}
             className="absolute right-0 top-0 w-full lg:w-[75%] h-full object-cover object-center lg:object-[80%_center] opacity-40 lg:opacity-90 [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] lg:[mask-image:linear-gradient(to_right,transparent_0%,black_40%,black_100%)]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#040b16] from-10% via-[#040b16]/80 to-transparent z-10 hidden lg:block" />

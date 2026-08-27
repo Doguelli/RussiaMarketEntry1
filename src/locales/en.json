@@ -216,6 +216,7 @@
     "form_success_desc": "We will review your information and get back to you.",
     "form_error": "Something went wrong while sending the form. Please try again later or reach us by email or phone.",
     "goals_error": "Please select at least one Russia goal.",
+    "field_required": "This field is required.",
     "name_label": "Full Name",
     "name_placeholder": "Your full name",
     "email_label": "Email",

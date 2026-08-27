@@ -50,7 +50,7 @@ export default function Navbar() {
   const navLinks = isRu
     ? [
         { name: t('nav.home', 'Главная'), path: "/ru" },
-        { name: "Регистрация компании в Турции", path: "/ru/kompaniya-v-turtsii" },
+        { name: t('nav.company_turkey', 'Регистрация компании в Турции'), path: "/ru/kompaniya-v-turtsii" },
         { name: t('nav.services', 'Услуги'), path: "/ru/uslugi" },
         { name: t('nav.russia_market', 'Рынок и ВЭД'), path: "/ru/rynok-rossii" },
         { name: t('nav.op_model', 'Модель работы'), path: "/ru/model-raboty" },

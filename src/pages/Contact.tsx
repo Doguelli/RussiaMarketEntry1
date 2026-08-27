@@ -92,6 +92,13 @@ export default function Contact() {
   ) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
+    if ("setCustomValidity" in e.target) {
+      e.target.setCustomValidity("");
+    }
+  };
+
+  const handleInvalid = (e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    e.currentTarget.setCustomValidity(t("contact.field_required"));
   };
 
   const toggleGoal = (key: GoalKey) => {
@@ -168,7 +175,9 @@ export default function Contact() {
           content={
             isRu
               ? "контакты, регистрация компании в турции, консультация wildberries ozon"
-              : "Russia Market Entry iletişim, Rusya e-ticaret danışmanı Türkiye, iletişim formu"
+              : isEn
+                ? "Russia Market Entry contact, Russia e-commerce consulting, contact form"
+                : "Russia Market Entry iletişim, Rusya e-ticaret danışmanı Türkiye, iletişim formu"
           }
         />
         <link rel="canonical" href={canonicalUrl} />
@@ -315,6 +324,7 @@ export default function Contact() {
                         type="text"
                         id="name"
                         required
+                        onInvalid={handleInvalid}
                         autoComplete="name"
                         value={formData.name}
                         onChange={handleChange}
@@ -330,6 +340,7 @@ export default function Contact() {
                         type="text"
                         id="company"
                         required
+                        onInvalid={handleInvalid}
                         autoComplete="organization"
                         value={formData.company}
                         onChange={handleChange}
@@ -348,6 +359,7 @@ export default function Contact() {
                         type="email"
                         id="email"
                         required
+                        onInvalid={handleInvalid}
                         autoComplete="email"
                         value={formData.email}
                         onChange={handleChange}
@@ -363,6 +375,7 @@ export default function Contact() {
                         type="tel"
                         id="phone"
                         required
+                        onInvalid={handleInvalid}
                         autoComplete="tel"
                         value={formData.phone}
                         onChange={handleChange}
@@ -401,6 +414,7 @@ export default function Contact() {
                     <select
                       id="industry"
                       required
+                      onInvalid={handleInvalid}
                       value={formData.industry}
                       onChange={handleChange}
                       className={inputClass}
@@ -455,6 +469,7 @@ export default function Contact() {
                     <textarea
                       id="message"
                       required
+                      onInvalid={handleInvalid}
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}

@@ -1,22 +1,40 @@
-import { useParams, Navigate, Link } from "react-router-dom";
+import { useParams, Navigate, Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "motion/react";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
 import { createBreadcrumbSchema, createArticleSchema } from "@/utils/seo";
-import { hasBlogContentFor, type BlogLang } from "@/utils/blogLanguages";
+import { hasBlogContentFor, blogDetailPath, type BlogLang } from "@/utils/blogLanguages";
 import BlockRenderer from "../components/BlockRenderer";
 
 export default function BlogDetail() {
   const { slug } = useParams<{ slug: string }>();
-  const { t, i18n } = useTranslation();
+  const { pathname } = useLocation();
+  const { t } = useTranslation();
   
   const post = blogPosts.find(p => p.slug === slug);
-  const langPrefix = i18n.language === 'ru' ? '/ru' : i18n.language === 'en' ? '/en' : '';
-  const currentLang: BlogLang = i18n.language === 'ru' ? 'ru' : i18n.language === 'en' ? 'en' : 'tr';
+  // Blog language is defined by the URL tree, not sticky i18n state.
+  const currentLang: BlogLang = pathname.startsWith("/ru/")
+    ? "ru"
+    : pathname.startsWith("/en/")
+      ? "en"
+      : "tr";
+  const langPrefix = currentLang === "tr" ? "" : `/${currentLang}`;
 
   if (!post) {
+    return <Navigate to={`${langPrefix}/blog`} replace />;
+  }
+
+  // Never render fallback text from another language on a language-specific URL.
+  if (!hasBlogContentFor(post, currentLang)) {
+    const fallbackOrder: BlogLang[] = ["ru", "tr", "en"];
+    const fallback = fallbackOrder.find(
+      (lang) => lang !== currentLang && hasBlogContentFor(post, lang)
+    );
+    if (fallback) {
+      return <Navigate to={blogDetailPath(post.slug, fallback)} replace />;
+    }
     return <Navigate to={`${langPrefix}/blog`} replace />;
   }
 
@@ -29,7 +47,7 @@ export default function BlogDetail() {
   let blocks = post.contentBlocks;
   let imageUrl = post.imageUrl;
 
-  if (i18n.language === 'ru') {
+  if (currentLang === 'ru') {
     title = post.titleRu || post.title;
     content = post.contentRu || post.content;
     excerpt = post.excerptRu || post.excerpt;
@@ -38,7 +56,7 @@ export default function BlogDetail() {
     readTimeStr = post.readTimeRu || post.readTime;
     blocks = post.contentBlocksRu || post.contentBlocks;
     imageUrl = post.imageUrlRu || post.imageUrl;
-  } else if (i18n.language === 'en') {
+  } else if (currentLang === 'en') {
     title = post.titleEn || post.title;
     content = post.contentEn || post.content;
     excerpt = post.excerptEn || post.excerpt;
@@ -106,7 +124,7 @@ export default function BlogDetail() {
             to={`${langPrefix}/blog`}
             className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 transition-colors font-medium mb-8"
           >
-            <ArrowLeft className="w-5 h-5" /> {i18n.language === 'ru' ? 'Назад в блог' : (i18n.language === 'en' ? 'Back to Blog' : "Blog'a Dön")}
+            <ArrowLeft className="w-5 h-5" /> {currentLang === 'ru' ? 'Назад в блог' : (currentLang === 'en' ? 'Back to Blog' : "Blog'a Dön")}
           </Link>
 
           <motion.h1

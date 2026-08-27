@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowRight, BookOpen } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -8,9 +8,15 @@ import { createBreadcrumbSchema } from "@/utils/seo";
 import { hasBlogContentFor, type BlogLang } from "@/utils/blogLanguages";
 
 export default function Blog() {
-  const { t, i18n } = useTranslation();
-  const langPrefix = i18n.language === 'ru' ? '/ru' : i18n.language === 'en' ? '/en' : '';
-  const currentLang: BlogLang = i18n.language === 'ru' ? 'ru' : i18n.language === 'en' ? 'en' : 'tr';
+  const { t } = useTranslation();
+  const { pathname } = useLocation();
+  // Blog language is defined by the URL tree (/blog, /en/blog, /ru/blog).
+  const currentLang: BlogLang = pathname.startsWith("/ru/")
+    ? "ru"
+    : pathname.startsWith("/en/")
+      ? "en"
+      : "tr";
+  const langPrefix = currentLang === "tr" ? "" : `/${currentLang}`;
 
   const parseDate = (dateStr?: string) => {
     if (!dateStr) return 0;
@@ -43,38 +49,38 @@ export default function Blog() {
   const visibleBlogPosts = blogPosts.filter((p) => hasBlogContentFor(p, currentLang));
 
   const sortedBlogPosts = [...visibleBlogPosts].sort((a, b) => {
-    const dateA = i18n.language === 'ru' ? (a.publishedAtRu || a.publishedAt) : a.publishedAt;
-    const dateB = i18n.language === 'ru' ? (b.publishedAtRu || b.publishedAt) : b.publishedAt;
+    const dateA = currentLang === 'ru' ? (a.publishedAtRu || a.publishedAt) : a.publishedAt;
+    const dateB = currentLang === 'ru' ? (b.publishedAtRu || b.publishedAt) : b.publishedAt;
     return parseDate(dateB) - parseDate(dateA);
   });
 
   const getPostImage = (post: any) => {
-    if (i18n.language === 'ru') return post.imageUrlRu || post.imageUrl;
-    if (i18n.language === 'en') return post.imageUrlEn || post.imageUrl;
+    if (currentLang === 'ru') return post.imageUrlRu || post.imageUrl;
+    if (currentLang === 'en') return post.imageUrlEn || post.imageUrl;
     return post.imageUrl;
   };
 
   const getPostTitle = (post: any) => {
-    if (i18n.language === 'ru') return post.titleRu || post.title;
-    if (i18n.language === 'en') return post.titleEn || post.title;
+    if (currentLang === 'ru') return post.titleRu || post.title;
+    if (currentLang === 'en') return post.titleEn || post.title;
     return post.title;
   };
 
   const getPostExcerpt = (post: any) => {
-    if (i18n.language === 'ru') return post.excerptRu || post.excerpt;
-    if (i18n.language === 'en') return post.excerptEn || post.excerpt;
+    if (currentLang === 'ru') return post.excerptRu || post.excerpt;
+    if (currentLang === 'en') return post.excerptEn || post.excerpt;
     return post.excerpt;
   };
 
   const getPostDate = (post: any) => {
-    if (i18n.language === 'ru') return post.publishedAtRu || post.publishedAt;
-    if (i18n.language === 'en') return post.publishedAtEn || post.publishedAt;
+    if (currentLang === 'ru') return post.publishedAtRu || post.publishedAt;
+    if (currentLang === 'en') return post.publishedAtEn || post.publishedAt;
     return post.publishedAt;
   };
 
   const getPostReadTime = (post: any) => {
-    if (i18n.language === 'ru') return post.readTimeRu || post.readTime;
-    if (i18n.language === 'en') return post.readTimeEn || post.readTime;
+    if (currentLang === 'ru') return post.readTimeRu || post.readTime;
+    if (currentLang === 'en') return post.readTimeEn || post.readTime;
     return post.readTime;
   };
 
@@ -175,7 +181,7 @@ export default function Blog() {
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-slate-400">
-                      Görsel Bekleniyor
+                      {currentLang === "ru" ? "Изображение скоро" : currentLang === "en" ? "Image coming soon" : "Görsel Bekleniyor"}
                     </div>
                   )}
                 </Link>
