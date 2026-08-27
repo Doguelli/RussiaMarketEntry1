@@ -1,12 +1,11 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import type { CSSProperties } from "react";
 import {
   ArrowRight,
   Globe2,
   ShieldCheck,
-  TrendingUp,
-  Users,
   CheckCircle2,
   Factory,
   LineChart,
@@ -15,7 +14,6 @@ import {
   Settings,
   ShoppingCart,
   Award,
-  Flag,
   Megaphone,
   HeartPulse,
   Building2,
@@ -44,13 +42,11 @@ export default function Home() {
     { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(isRu) },
   ]);
 
-  // Pre-existing homepage figures — kept as-is; not newly invented for this update.
-  const trustStats = [
-    { value: "100+", text: t("home.trust1"), icon: Users },
-    { value: "50+", text: t("home.trust2"), icon: Flag },
-    { value: "$10M+", text: t("home.trust3"), icon: TrendingUp },
-    { value: "15+", text: t("home.trust4"), icon: Award },
-  ];
+  const trustExperience = {
+    title: t("home.trust_exp_title"),
+    text: t("home.trust_exp_desc"),
+    icon: Award,
+  };
 
   const services = [
     {
@@ -288,26 +284,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Block */}
+      {/* Trust / experience */}
       <section className="py-16 bg-white border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {trustStats.map((stat, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="flex flex-col items-center text-center p-6 bg-slate-50 rounded-2xl border border-slate-100"
-              >
-                <div className="w-12 h-12 bg-primary-100 text-primary-500 rounded-full flex items-center justify-center mb-4">
-                  <stat.icon className="w-6 h-6" />
-                </div>
-                <div className="text-[32px] font-extrabold text-primary-500 mb-1">{stat.value}</div>
-                <p className="font-medium text-slate-500 text-[15px]">{stat.text}</p>
-              </motion.div>
-            ))}
+          <div className="flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center text-center p-6 bg-slate-50 rounded-2xl border border-slate-100 max-w-md w-full"
+            >
+              <div className="w-12 h-12 bg-primary-100 text-primary-500 rounded-full flex items-center justify-center mb-4">
+                <trustExperience.icon className="w-6 h-6" />
+              </div>
+              <div className="text-[22px] sm:text-[24px] font-extrabold text-primary-500 mb-2 leading-snug">
+                {trustExperience.title}
+              </div>
+              <p className="font-medium text-slate-500 text-[15px]">{trustExperience.text}</p>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -409,7 +404,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <div className="inline-flex items-center gap-2 text-accent-500 font-bold text-[13px] uppercase tracking-wider mb-4">
-                <ShoppingCart className="w-4 h-4" /> E-Commerce
+                <ShoppingCart className="w-4 h-4" /> {t("home.ecommerce_eyebrow")}
               </div>
               <h2 className="text-[32px] md:text-[40px] font-extrabold text-primary-500 mb-6 tracking-tight">
                 {t("home.ecommerce_title")}
@@ -427,22 +422,77 @@ export default function Home() {
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              {["Wildberries", "Ozon", "Yandex Market", "Lamoda"].map((name) => (
+              {[
+                {
+                  name: "Wildberries",
+                  accent: "#CB11AB",
+                  soft: "rgba(203, 17, 171, 0.08)",
+                  mark: "linear-gradient(180deg, #CB11AB 0%, #8B1FA8 100%)",
+                },
+                {
+                  name: "Ozon",
+                  accent: "#005BFF",
+                  soft: "rgba(0, 91, 255, 0.07)",
+                  mark: "#005BFF",
+                },
+                {
+                  name: "Yandex Market",
+                  accent: "#111111",
+                  soft: "rgba(255, 204, 0, 0.14)",
+                  mark: "linear-gradient(180deg, #FFCC00 55%, #111111 55%)",
+                },
+                {
+                  name: "Lamoda",
+                  accent: "#1A1A1A",
+                  soft: "rgba(26, 26, 26, 0.05)",
+                  mark: "#1A1A1A",
+                },
+                {
+                  name: "Yandex Ads",
+                  accent: "#FC3F1D",
+                  soft: "rgba(252, 63, 29, 0.07)",
+                  mark: "#FC3F1D",
+                },
+                {
+                  name: "VK Ads",
+                  accent: "#0077FF",
+                  soft: "rgba(0, 119, 255, 0.07)",
+                  mark: "#0077FF",
+                },
+                {
+                  name: "Telegram Native",
+                  accent: "#229ED9",
+                  soft: "rgba(34, 158, 217, 0.08)",
+                  mark: "#229ED9",
+                  wide: true,
+                },
+              ].map((platform) => (
                 <div
-                  key={name}
-                  className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm flex items-center justify-center text-center"
-                >
-                  <span className="font-bold text-primary-500 text-[16px]">{name}</span>
-                </div>
-              ))}
-              {["Yandex Ads", "VK Ads", "Telegram Native"].map((name) => (
-                <div
-                  key={name}
-                  className={`bg-primary-500 text-white rounded-2xl p-6 shadow-sm flex items-center justify-center text-center ${
-                    name === "Telegram Native" ? "col-span-2" : ""
+                  key={platform.name}
+                  className={`group relative bg-white border border-slate-100 rounded-2xl p-6 shadow-sm flex items-center justify-center text-center overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-[color:var(--platform-accent)] hover:bg-[color:var(--platform-soft)] ${
+                    platform.wide ? "col-span-2" : ""
                   }`}
+                  style={
+                    {
+                      "--platform-accent": platform.accent,
+                      "--platform-soft": platform.soft,
+                      "--platform-mark": platform.mark,
+                    } as CSSProperties
+                  }
                 >
-                  <span className="font-bold text-[15px]">{name}</span>
+                  <span
+                    aria-hidden
+                    className="absolute left-0 top-0 bottom-0 w-[3px]"
+                    style={{ background: platform.mark }}
+                  />
+                  <span
+                    aria-hidden
+                    className="absolute top-3 right-3 w-2 h-2 rounded-full opacity-70 transition-opacity group-hover:opacity-100"
+                    style={{ background: platform.accent }}
+                  />
+                  <span className="font-bold text-primary-500 text-[15px] sm:text-[16px] tracking-tight transition-colors duration-300 group-hover:text-slate-900">
+                    {platform.name}
+                  </span>
                 </div>
               ))}
             </div>
@@ -455,7 +505,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-12">
             <div className="inline-flex items-center gap-2 text-accent-500 font-bold text-[13px] uppercase tracking-wider mb-4">
-              <HeartPulse className="w-4 h-4" /> B2B · Medical
+              <HeartPulse className="w-4 h-4" /> {t("home.b2b_eyebrow")}
             </div>
             <h2 className="text-[32px] md:text-[40px] font-extrabold text-primary-500 mb-6 tracking-tight">
               {t("home.b2b_title")}
