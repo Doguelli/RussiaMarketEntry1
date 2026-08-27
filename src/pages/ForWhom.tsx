@@ -42,7 +42,7 @@ export default function ForWhom() {
       : "Tekstil markaları, üreticiler, e-ticaret girişimcileri ve kozmetik markaları için özelleştirilmiş Rusya e-ticaret ve pazar giriş çözümleri.");
 
   return (
-    <main className="bg-slate-50 min-h-screen pt-12 pb-24">
+    <main className="bg-slate-50 min-h-screen pt-8 pb-12 md:pb-16">
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDesc} />
@@ -60,17 +60,17 @@ export default function ForWhom() {
       </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-[42px] md:text-[56px] font-extrabold text-primary-500 mb-6 tracking-tight leading-tight">
+            <h1 className="text-[30px] sm:text-[40px] md:text-[48px] font-extrabold text-primary-500 mb-4 tracking-tight leading-tight">
               {isRu ? 'Индивидуальные решения' : (isEn ? 'Customized Solutions' : 'Her İş Modeli İçin')} <br />
               <span className="text-accent-500">{isRu ? 'Для любой бизнес-модели' : (isEn ? 'For Every Business Model' : 'Özelleştirilmiş Çözümler')}</span>
             </h1>
-            <p className="text-[18px] text-slate-500 leading-relaxed">
+            <p className="text-[15px] md:text-[17px] text-slate-500 leading-relaxed">
               {isRu
                 ? 'Потенциал российского рынка открывает уникальные возможности для каждого сектора. Независимо от того, есть ли у вас готовый бренд, мы выстраиваем оптимальную инфраструктуру под вашу модель.'
                 : (isEn 
@@ -80,7 +80,7 @@ export default function ForWhom() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
           {currentData.map((dataItem, i) => (
             <motion.div
               key={dataItem.id}
@@ -90,12 +90,12 @@ export default function ForWhom() {
               transition={{ delay: i * 0.1 }}
               className="flex"
             >
-              <Link to={forWhomDetailPath(dataItem.slug, isRu)} className="bg-white rounded-3xl p-8 shadow-sm flex flex-col w-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group border-t-4" style={{borderTopColor: 'var('+dataItem.color+')'}}>
-                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-colors ${dataItem.lightColor} ${dataItem.color}`} style={{backgroundColor: 'var('+dataItem.lightColor+')'}}>
+              <Link to={forWhomDetailPath(dataItem.slug, isRu)} className="bg-white rounded-3xl p-6 md:p-7 shadow-sm flex flex-col w-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group border-t-4" style={{borderTopColor: 'var('+dataItem.color+')'}}>
+                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 transition-colors ${dataItem.lightColor} ${dataItem.color}`} style={{backgroundColor: 'var('+dataItem.lightColor+')'}}>
                   {dataItem.icon}
                 </div>
-                <h3 className={`text-[24px] font-extrabold text-primary-500 mb-4 transition-colors`}>{dataItem.title}</h3>
-                <p className="text-slate-500 mb-8 flex-grow">
+                <h3 className={`text-[20px] md:text-[22px] font-extrabold text-primary-500 mb-3 transition-colors`}>{dataItem.title}</h3>
+                <p className="text-slate-500 mb-6 flex-grow text-[14px] md:text-[15px] leading-relaxed">
                   {dataItem.description}
                 </p>
                 <div className="mt-auto block text-center w-full text-white font-bold py-3 rounded-full text-[14px] transition-colors" style={{backgroundColor: 'var(' + dataItem.bgColor.replace('bg-', '') + ', #000)'}}>
@@ -107,11 +107,11 @@ export default function ForWhom() {
         </div>
         
         {/* Big CTA summary */}
-        <div className="mt-20 bg-primary-500 rounded-3xl p-10 md:p-14 text-center">
-          <h2 className="text-[32px] md:text-[40px] font-extrabold text-white mb-6">
+        <div className="mt-10 md:mt-12 bg-primary-500 rounded-3xl px-5 py-8 md:px-10 md:py-10 text-center">
+          <h2 className="text-[24px] md:text-[36px] font-extrabold text-white mb-3 md:mb-4 leading-tight">
             {isRu ? 'Ваша бизнес-модель готова к росту?' : (isEn ? 'Is your business model ready?' : 'İş modeliniz hazır mı?')}
           </h2>
-          <p className="text-primary-100 max-w-2xl mx-auto mb-10 text-[18px]">
+          <p className="text-primary-100 max-w-2xl mx-auto mb-6 md:mb-7 text-[14px] md:text-[17px]">
             {isRu
               ? 'Запишитесь на бесплатную консультацию, чтобы получить персонализированный план масштабирования ваших продаж.'
               : (isEn 

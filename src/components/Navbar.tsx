@@ -63,7 +63,6 @@ export default function Navbar() {
         { name: t('nav.russia_market', 'Rusya Pazarı'), path: "/rusya-pazari" },
         { name: t('nav.services', 'Hizmetler'), path: "/hizmetler" },
         { name: t('nav.op_model', 'Operasyon Modeli'), path: "/operasyon-modeli" },
-        { name: t('nav.for_whom', 'Kimler İçin?'), path: "/kimler-icin" },
         { name: t('nav.blog', 'Blog'), path: isEn ? "/en/blog" : "/blog" },
         { name: t('nav.contact', 'İletişim'), path: "/iletisim" },
       ];
@@ -84,20 +83,24 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center space-x-3 xl:space-x-6">
-            {navLinks.map((link) => (
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.path;
+              return (
               <Link
                 key={link.path}
                 to={link.path}
+                aria-current={isActive ? "page" : undefined}
                 className={cn(
-                  "text-[13px] xl:text-[14px] font-medium tracking-wide transition-colors whitespace-nowrap",
-                  location.pathname === link.path
-                    ? "text-primary-500 font-semibold"
-                    : "text-slate-500 hover:text-primary-500"
+                  "relative text-[13px] xl:text-[14px] tracking-wide transition-colors duration-200 whitespace-nowrap rounded-md px-1.5 py-1",
+                  isActive
+                    ? "text-primary-500 font-semibold hover:text-primary-500 after:absolute after:left-1.5 after:right-1.5 after:-bottom-0.5 after:h-[2px] after:rounded-full after:bg-primary-500"
+                    : "text-slate-500 font-medium hover:bg-primary-50 hover:text-primary-500/80"
                 )}
               >
                 {link.name}
               </Link>
-            ))}
+              );
+            })}
             <Link
               to={applyPath}
               className="bg-accent-500 text-white px-5 xl:px-7 py-[10px] xl:py-[12px] rounded-full font-medium text-[13px] xl:text-[14px] hover:bg-accent-600 transition-colors whitespace-nowrap shadow-sm"
@@ -177,20 +180,24 @@ export default function Navbar() {
       {/* Mobile Nav */}
       {isOpen && (
         <div className="lg:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-1 shadow-lg absolute w-full max-h-[85vh] overflow-y-auto">
-          {navLinks.map((link) => (
+          {navLinks.map((link) => {
+            const isActive = location.pathname === link.path;
+            return (
             <Link
               key={link.path}
               to={link.path}
+              aria-current={isActive ? "page" : undefined}
               className={cn(
-                "block px-4 py-3 rounded-lg font-medium text-[15px] tracking-wide",
-                location.pathname === link.path
-                  ? "bg-primary-50 text-primary-500"
-                  : "text-slate-500 hover:bg-primary-50 hover:text-primary-500"
+                "block px-4 py-3 rounded-lg text-[15px] tracking-wide transition-colors duration-200",
+                isActive
+                  ? "bg-primary-100 text-primary-500 font-semibold hover:bg-primary-100 hover:text-primary-500"
+                  : "text-slate-500 font-medium hover:bg-primary-50 hover:text-primary-500/80"
               )}
             >
               {link.name}
             </Link>
-          ))}
+            );
+          })}
           <div className="pt-4 px-4 flex flex-col gap-3">
             <Link
               to={applyPath}

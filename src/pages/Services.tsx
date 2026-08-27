@@ -153,7 +153,7 @@ export default function Services() {
   ];
 
   return (
-    <main className="bg-slate-50 min-h-screen pt-8 pb-24">
+    <main className="bg-slate-50 min-h-screen pt-6 pb-12 md:pb-16">
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDesc} />
@@ -168,12 +168,12 @@ export default function Services() {
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
-      <section className="bg-transparent py-16 md:py-20 border-b border-slate-100">
+      <section className="bg-transparent py-10 md:py-14 border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block px-4 py-2 bg-primary-100 text-primary-600 text-[13px] font-bold rounded-full mb-6 uppercase tracking-wider"
+            className="inline-block px-4 py-2 bg-primary-100 text-primary-600 text-[13px] font-bold rounded-full mb-4 uppercase tracking-wider"
           >
             {t("nav.services")}
           </motion.div>
@@ -181,7 +181,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.05 }}
-            className="text-[36px] sm:text-[44px] md:text-[52px] font-extrabold text-primary-500 mb-6 tracking-tight leading-[1.15] max-w-4xl mx-auto"
+            className="text-[28px] sm:text-[40px] md:text-[48px] font-extrabold text-primary-500 mb-4 md:mb-5 tracking-tight leading-[1.15] max-w-4xl mx-auto"
           >
             {t("services_page.h1")}
           </motion.h1>
@@ -189,7 +189,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-slate-600 max-w-3xl mx-auto text-[17px] md:text-[18px] leading-relaxed mb-4 font-medium"
+            className="text-slate-600 max-w-3xl mx-auto text-[15px] md:text-[17px] leading-relaxed mb-3 font-medium"
           >
             {t("services_page.hero_lead")}
           </motion.p>
@@ -197,7 +197,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15 }}
-            className="text-slate-500 max-w-2xl mx-auto text-[16px] leading-relaxed mb-10"
+            className="text-slate-500 max-w-2xl mx-auto text-[14px] md:text-[16px] leading-relaxed mb-7"
           >
             {t("services_page.hero_sub")}
           </motion.p>
@@ -212,22 +212,22 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[28px] md:text-[34px] font-extrabold text-primary-500 mb-5 tracking-tight leading-snug">
+          <h2 className="text-[24px] md:text-[32px] font-extrabold text-primary-500 mb-4 tracking-tight leading-snug">
             {t("services_page.intro_h2")}
           </h2>
-          <p className="text-slate-500 text-[17px] leading-relaxed">{t("services_page.intro_text")}</p>
+          <p className="text-slate-500 text-[15px] md:text-[16px] leading-relaxed">{t("services_page.intro_text")}</p>
         </div>
       </section>
 
-      <section className="pb-20">
+      <section className="pb-12 md:pb-14">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-[13px] font-bold uppercase tracking-wider text-accent-500 mb-8 text-center">
+          <p className="text-[13px] font-bold uppercase tracking-wider text-accent-500 mb-6 text-center">
             {t("services_page.categories_eyebrow")}
           </p>
 
-          <div className="space-y-8">
+          <div className="space-y-5 md:space-y-6">
             {categories.map((cat, i) => (
               <motion.article
                 key={cat.id}
@@ -241,10 +241,10 @@ export default function Services() {
                 }`}
               >
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
-                  <div className="lg:col-span-2 p-8 md:p-10 bg-primary-50/40 border-b lg:border-b-0 lg:border-r border-slate-100">
-                    <div className="flex items-center gap-3 mb-5">
+                  <div className="lg:col-span-2 p-5 md:p-8 bg-primary-50/40 border-b lg:border-b-0 lg:border-r border-slate-100">
+                    <div className="flex items-center gap-3 mb-4">
                       <div
-                        className={`w-12 h-12 rounded-xl flex items-center justify-center ${
+                        className={`w-11 h-11 rounded-xl flex items-center justify-center ${
                           cat.featured ? "bg-accent-500 text-white" : "bg-primary-500 text-white"
                         }`}
                       >
@@ -252,12 +252,12 @@ export default function Services() {
                       </div>
                       <span className="text-[13px] font-extrabold text-slate-400 tracking-widest">{cat.num}</span>
                     </div>
-                    <h3 className="text-[24px] md:text-[28px] font-extrabold text-primary-500 mb-3 tracking-tight leading-snug">
+                    <h3 className="text-[22px] md:text-[26px] font-extrabold text-primary-500 mb-2 tracking-tight leading-snug">
                       {cat.title}
                     </h3>
-                    <p className="text-slate-600 text-[15px] leading-relaxed mb-6">{cat.desc}</p>
+                    <p className="text-slate-600 text-[14px] md:text-[15px] leading-relaxed mb-5">{cat.desc}</p>
                     {"trust" in cat && cat.trust ? (
-                      <p className="text-[13px] font-semibold text-primary-500/80 mb-6 border-l-4 border-accent-500 pl-3">
+                      <p className="text-[13px] font-semibold text-primary-500/80 mb-5 border-l-4 border-accent-500 pl-3">
                         {cat.trust}
                       </p>
                     ) : null}
@@ -281,8 +281,8 @@ export default function Services() {
                       </div>
                     )}
                   </div>
-                  <div className="lg:col-span-3 p-8 md:p-10">
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
+                  <div className="lg:col-span-3 p-5 md:p-8">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
                       {cat.items.map((item) => (
                         <li key={item} className="flex items-start gap-2.5 text-slate-600 text-[14px] leading-snug">
                           <CheckCircle2 className="w-4 h-4 text-accent-500 mt-0.5 shrink-0" />
@@ -298,26 +298,26 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="pb-20">
+      <section className="pb-12 md:pb-14">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary-500 text-white rounded-[32px] p-8 md:p-12 overflow-hidden relative">
+          <div className="bg-primary-500 text-white rounded-[32px] p-6 md:p-10 overflow-hidden relative">
             <div className="absolute top-0 right-0 w-[320px] h-[320px] bg-accent-500/10 rounded-full blur-[80px] pointer-events-none" />
             <div className="relative z-10">
-              <h2 className="text-[28px] md:text-[36px] font-extrabold mb-3 tracking-tight leading-snug">
+              <h2 className="text-[24px] md:text-[34px] font-extrabold mb-2 tracking-tight leading-snug">
                 {t("services_page.corridor_title")}
               </h2>
-              <p className="text-accent-400 font-semibold text-[16px] mb-4">{t("services_page.corridor_subtitle")}</p>
-              <p className="text-primary-100 text-[15px] md:text-[16px] leading-relaxed max-w-3xl mb-10">
+              <p className="text-accent-400 font-semibold text-[15px] mb-3">{t("services_page.corridor_subtitle")}</p>
+              <p className="text-primary-100 text-[14px] md:text-[16px] leading-relaxed max-w-3xl mb-7">
                 {t("services_page.corridor_text")}
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                  <h3 className="font-extrabold text-[18px] mb-4 flex items-center gap-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 mb-6">
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+                  <h3 className="font-extrabold text-[16px] md:text-[18px] mb-3 flex items-center gap-2">
                     <Building2 className="w-5 h-5 text-accent-500" />
                     {t("services_page.corridor_tr_ru_title")}
                   </h3>
-                  <ul className="space-y-2.5">
+                  <ul className="space-y-2">
                     {corridorTrRu.map((item) => (
                       <li key={item} className="flex items-center gap-2 text-primary-100 text-[14px]">
                         <CheckCircle2 className="w-4 h-4 text-accent-500 shrink-0" />
@@ -326,12 +326,12 @@ export default function Services() {
                     ))}
                   </ul>
                 </div>
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                  <h3 className="font-extrabold text-[18px] mb-4 flex items-center gap-2">
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+                  <h3 className="font-extrabold text-[16px] md:text-[18px] mb-3 flex items-center gap-2">
                     <Building2 className="w-5 h-5 text-accent-500" />
                     {t("services_page.corridor_ru_tr_title")}
                   </h3>
-                  <ul className="space-y-2.5">
+                  <ul className="space-y-2">
                     {corridorRuTr.map((item) => (
                       <li key={item} className="flex items-center gap-2 text-primary-100 text-[14px]">
                         <CheckCircle2 className="w-4 h-4 text-accent-500 shrink-0" />
@@ -361,18 +361,18 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="pb-20">
+      <section className="pb-12 md:pb-14">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-[28px] md:text-[34px] font-extrabold text-primary-500 mb-10 tracking-tight text-center">
+          <h2 className="text-[24px] md:text-[32px] font-extrabold text-primary-500 mb-6 md:mb-8 tracking-tight text-center">
             {t("services_page.why_title")}
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {whyPoints.map((point, i) => (
-              <div key={point} className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm text-center">
-                <div className="text-accent-500 font-extrabold text-[13px] mb-3">0{i + 1}</div>
-                <p className="font-bold text-primary-500 text-[16px] leading-snug">{point}</p>
+              <div key={point} className="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm text-center">
+                <div className="text-accent-500 font-extrabold text-[13px] mb-2">0{i + 1}</div>
+                <p className="font-bold text-primary-500 text-[15px] leading-snug">{point}</p>
                 {i === 3 && (
-                  <p className="text-slate-500 text-[13px] mt-3 leading-relaxed">{t("services_page.why4_note")}</p>
+                  <p className="text-slate-500 text-[13px] mt-2 leading-relaxed">{t("services_page.why4_note")}</p>
                 )}
               </div>
             ))}
@@ -380,32 +380,32 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="pb-20">
+      <section className="pb-12 md:pb-14">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-[28px] md:text-[34px] font-extrabold text-primary-500 mb-12 tracking-tight text-center">
+          <h2 className="text-[24px] md:text-[32px] font-extrabold text-primary-500 mb-6 md:mb-8 tracking-tight text-center">
             {t("services_page.how_title")}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-5">
             {howSteps.map((step, i) => (
               <div key={step.title} className="relative">
-                <div className="w-10 h-10 rounded-full bg-accent-500 text-white font-extrabold text-[14px] flex items-center justify-center mb-4">
+                <div className="w-9 h-9 rounded-full bg-accent-500 text-white font-extrabold text-[13px] flex items-center justify-center mb-3">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <h3 className="font-bold text-primary-500 text-[17px] mb-2">{step.title}</h3>
-                <p className="text-slate-500 text-[14px] leading-relaxed">{step.desc}</p>
+                <h3 className="font-bold text-primary-500 text-[16px] mb-1.5">{step.title}</h3>
+                <p className="text-slate-500 text-[13px] md:text-[14px] leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="pb-8">
+      <section className="pb-6">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-white border border-slate-100 rounded-[32px] p-10 md:p-14 shadow-sm">
-            <h2 className="text-[28px] md:text-[36px] font-extrabold text-primary-500 mb-4 tracking-tight">
+          <div className="bg-white border border-slate-100 rounded-[28px] p-7 md:p-10 shadow-sm">
+            <h2 className="text-[24px] md:text-[32px] font-extrabold text-primary-500 mb-3 tracking-tight">
               {t("services_page.final_title")}
             </h2>
-            <p className="text-slate-500 text-[16px] md:text-[17px] leading-relaxed mb-8 max-w-2xl mx-auto">
+            <p className="text-slate-500 text-[15px] md:text-[16px] leading-relaxed mb-6 max-w-2xl mx-auto">
               {t("services_page.final_text")}
             </p>
             <Link

@@ -166,7 +166,7 @@ export default function Contact() {
     "w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all outline-none text-[15px]";
 
   return (
-    <main className="pt-8 pb-24">
+    <main className="pt-6 pb-12 md:pb-16">
       <Helmet>
         <title>{t("contact.title")}</title>
         <meta name="description" content={t("contact.desc_meta")} />
@@ -191,12 +191,12 @@ export default function Contact() {
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
-      <div className="bg-transparent py-20 mb-10 border-b border-slate-100">
+      <div className="bg-transparent py-10 md:py-12 mb-6 border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block px-4 py-2 bg-primary-50 text-primary-600 text-[13px] font-bold rounded-full mb-6 uppercase tracking-wider"
+            className="inline-block px-4 py-2 bg-primary-50 text-primary-600 text-[13px] font-bold rounded-full mb-4 uppercase tracking-wider"
           >
             {t("contact.badge")}
           </motion.div>
@@ -204,7 +204,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.05 }}
-            className="text-[40px] md:text-[56px] font-extrabold text-primary-500 mb-6 tracking-tight leading-tight"
+            className="text-[30px] sm:text-[40px] md:text-[48px] font-extrabold text-primary-500 mb-4 tracking-tight leading-tight"
           >
             {t("contact.h1")}
           </motion.h1>
@@ -212,7 +212,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-slate-500 max-w-2xl mx-auto text-[18px] leading-relaxed"
+            className="text-slate-500 max-w-2xl mx-auto text-[15px] md:text-[17px] leading-relaxed"
           >
             {t("contact.subtitle")}
           </motion.p>
@@ -220,16 +220,16 @@ export default function Contact() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-[32px] font-extrabold text-primary-500 mb-6 tracking-tight">
+            <h2 className="text-[26px] md:text-[30px] font-extrabold text-primary-500 mb-4 tracking-tight">
               {t("contact.result_oriented")}
             </h2>
-            <p className="text-[16px] text-slate-500 mb-10 leading-relaxed border-l-4 border-accent-500 pl-6 py-2">
+            <p className="text-[15px] md:text-[16px] text-slate-500 mb-7 leading-relaxed border-l-4 border-accent-500 pl-5 py-1">
               {t("contact.result_desc")}
               <strong className="text-primary-500">{t("contact.result_strong")}</strong>
             </p>

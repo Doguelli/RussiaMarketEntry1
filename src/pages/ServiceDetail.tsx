@@ -63,7 +63,7 @@ export default function ServiceDetail() {
     (isRu ? "Связаться с нами" : isEn ? "Contact Us" : "İletişime Geçin");
 
   return (
-    <main className="bg-slate-50 min-h-screen pt-12 pb-24">
+    <main className="bg-slate-50 min-h-screen pt-8 pb-12 md:pb-16">
       <Helmet>
         <title>{service.metaTitle}</title>
         <meta name="description" content={service.metaDescription} />
@@ -80,10 +80,10 @@ export default function ServiceDetail() {
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
       </Helmet>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
         <Link
           to={servicesPath(isRu)}
-          className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 font-medium text-[14px] mb-8 transition-colors"
+          className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 font-medium text-[14px] mb-6 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />{" "}
           {isRu ? "Назад к услугам" : isEn ? "Back to Services" : "Hizmetlere Dön"}
@@ -92,39 +92,39 @@ export default function ServiceDetail() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-white rounded-[32px] p-8 md:p-12 border border-slate-100 shadow-sm relative overflow-hidden"
+          className="bg-white rounded-[28px] p-6 md:p-10 border border-slate-100 shadow-sm relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary-50 rounded-full blur-[80px] opacity-60 -mr-20 -mt-20 pointer-events-none" />
 
-          <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-primary-50 text-primary-500 mb-8">
-            <Icon className="w-8 h-8" />
+          <div className="w-14 h-14 rounded-2xl flex items-center justify-center bg-primary-50 text-primary-500 mb-5">
+            <Icon className="w-7 h-7" />
           </div>
-          <h1 className="text-[36px] md:text-[48px] font-extrabold text-primary-500 mb-4 tracking-tight leading-tight">
+          <h1 className="text-[28px] md:text-[44px] font-extrabold text-primary-500 mb-3 tracking-tight leading-tight">
             {service.title}
           </h1>
           {service.subtitle && (
-            <p className="text-[16px] md:text-[18px] font-semibold text-accent-500 mb-5 tracking-tight">
+            <p className="text-[15px] md:text-[17px] font-semibold text-accent-500 mb-4 tracking-tight">
               {service.subtitle}
             </p>
           )}
-          <p className="text-[18px] md:text-[20px] text-slate-500 leading-relaxed font-medium">
+          <p className="text-[16px] md:text-[18px] text-slate-500 leading-relaxed font-medium">
             {service.description}
           </p>
           {service.lead && (
-            <p className="text-[16px] md:text-[17px] text-slate-500 leading-relaxed mt-4">{service.lead}</p>
+            <p className="text-[15px] md:text-[16px] text-slate-500 leading-relaxed mt-3">{service.lead}</p>
           )}
           <Link
             to={contactPath(isRu)}
-            className="mt-8 bg-accent-500 hover:bg-accent-600 transition-colors text-white font-bold py-3.5 px-6 rounded-xl inline-flex items-center justify-center gap-2 shadow-sm text-[15px]"
+            className="mt-6 bg-accent-500 hover:bg-accent-600 transition-colors text-white font-bold py-3.5 px-6 rounded-xl inline-flex items-center justify-center gap-2 shadow-sm text-[15px]"
           >
             {ctaLabel} <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="md:col-span-2 space-y-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="md:col-span-2 space-y-6">
             {service.contentSections &&
               service.contentSections.map((section: any, idx: number) => (
                 <motion.div
@@ -132,12 +132,12 @@ export default function ServiceDetail() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 + idx * 0.05 }}
-                  className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm"
+                  className="bg-white rounded-3xl p-5 md:p-7 border border-slate-100 shadow-sm"
                 >
-                  <h2 className="text-[24px] font-bold text-primary-500 mb-6 flex items-center gap-3">
+                  <h2 className="text-[20px] md:text-[22px] font-bold text-primary-500 mb-4 flex items-center gap-3">
                     {section.title}
                   </h2>
-                  <div className="text-[16px] leading-relaxed">{section.content}</div>
+                  <div className="text-[15px] md:text-[16px] leading-relaxed">{section.content}</div>
                 </motion.div>
               ))}
 
@@ -146,23 +146,23 @@ export default function ServiceDetail() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm"
+                className="bg-white rounded-3xl p-5 md:p-7 border border-slate-100 shadow-sm"
               >
-                <h2 className="text-[24px] font-bold text-primary-500 mb-6">
+                <h2 className="text-[20px] md:text-[22px] font-bold text-primary-500 mb-4">
                   {isRu
                     ? "Часто задаваемые вопросы"
                     : isEn
                       ? "Frequently Asked Questions"
                       : "Sıkça Sorulan Sorular"}
                 </h2>
-                <div className="space-y-6">
+                <div className="space-y-4">
                   {service.faqs.map((faq: { q: string; a: string }, index: number) => (
                     <div
                       key={index}
-                      className="border-b border-slate-100 last:border-0 pb-6 last:pb-0"
+                      className="border-b border-slate-100 last:border-0 pb-4 last:pb-0"
                     >
-                      <h3 className="font-bold text-primary-500 text-[18px] mb-2">{faq.q}</h3>
-                      <p className="text-slate-500 leading-relaxed">{faq.a}</p>
+                      <h3 className="font-bold text-primary-500 text-[16px] md:text-[17px] mb-1.5">{faq.q}</h3>
+                      <p className="text-slate-500 leading-relaxed text-[14px] md:text-[15px]">{faq.a}</p>
                     </div>
                   ))}
                 </div>
@@ -170,20 +170,20 @@ export default function ServiceDetail() {
             )}
           </div>
 
-          <div className="md:col-span-1 space-y-6 md:sticky md:top-24 self-start">
+          <div className="md:col-span-1 space-y-5 md:sticky md:top-24 self-start">
             {service.forWhom && (
               <motion.div
                 initial={{ opacity: 0, x: 10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 }}
-                className="bg-primary-500 rounded-3xl p-8 border border-primary-400 text-white shadow-xl relative overflow-hidden"
+                className="bg-primary-500 rounded-3xl p-5 md:p-6 border border-primary-400 text-white shadow-xl relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary-400 rounded-full blur-[40px] opacity-50" />
-                <h3 className="text-[20px] font-bold mb-4 relative z-10 flex items-center gap-2">
+                <h3 className="text-[18px] font-bold mb-3 relative z-10 flex items-center gap-2">
                   <Info className="w-5 h-5 text-accent-500" />
                   {isRu ? "Для кого подходит?" : isEn ? "Who is it for?" : "Kimler İçin Uygun?"}
                 </h3>
-                <div className="text-primary-100 leading-relaxed relative z-10">{service.forWhom}</div>
+                <div className="text-primary-100 leading-relaxed relative z-10 text-[14px]">{service.forWhom}</div>
               </motion.div>
             )}
 
@@ -191,12 +191,12 @@ export default function ServiceDetail() {
               initial={{ opacity: 0, x: 10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
-              className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm text-center"
+              className="bg-white rounded-3xl p-5 md:p-6 border border-slate-100 shadow-sm text-center"
             >
-              <h3 className="text-[20px] font-bold text-primary-500 mb-4 tracking-tight">
+              <h3 className="text-[18px] font-bold text-primary-500 mb-3 tracking-tight">
                 {isRu ? "Начните прямо сейчас" : isEn ? "Take Action Now" : "Hemen Aksiyon Alın"}
               </h3>
-              <p className="text-slate-500 text-[14px] mb-6 leading-relaxed">
+              <p className="text-slate-500 text-[14px] mb-5 leading-relaxed">
                 {isRu
                   ? "Узнайте бесплатно, какую структуру мы можем выстроить для вашего бренда в рамках этой услуги."
                   : isEn

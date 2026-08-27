@@ -92,7 +92,7 @@ export const forWhomDataEN: ForWhomContent[] = [
     icon: <Users className="w-4 h-4" />,
     color: "text-[#005BFF]",
     bgColor: "bg-[#005BFF]",
-    lightColor: "bg-blue-50",
+    lightColor: "bg-primary-50",
     content: (
       <>
          <p className="text-[18px] leading-relaxed text-slate-600 mb-6 max-w-4xl">

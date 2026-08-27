@@ -118,7 +118,7 @@ export default function BlogDetail() {
         </Helmet>
 
       {/* Hero Header */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-24 bg-slate-50">
+      <section className="relative pt-20 pb-12 md:pt-28 md:pb-16 lg:pt-32 lg:pb-20 bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <Link
             to={`${langPrefix}/blog`}

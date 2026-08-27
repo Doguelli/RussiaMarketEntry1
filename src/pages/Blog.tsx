@@ -111,7 +111,7 @@ export default function Blog() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-primary-900">
+      <section className="relative pt-20 pb-12 md:pt-28 md:pb-16 lg:pt-32 lg:pb-20 overflow-hidden bg-primary-900">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80')] opacity-10 bg-cover bg-center z-0" />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -119,7 +119,7 @@ export default function Blog() {
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-white/10 border border-white/10 text-white font-medium text-[14px] mb-6 backdrop-blur-sm"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/10 border border-white/10 text-white font-medium text-[14px] mb-5 backdrop-blur-sm"
             >
               <BookOpen className="w-4 h-4" />
               <span>{t('blog.badge')}</span>
@@ -128,7 +128,7 @@ export default function Blog() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-[40px] md:text-[56px] lg:text-[72px] font-extrabold text-white leading-[1.1] tracking-tight mb-8"
+              className="text-[32px] md:text-[48px] lg:text-[56px] font-extrabold text-white leading-[1.15] tracking-tight mb-5 md:mb-6"
             >
               {t('blog.h1_1')} <br/>
               <span className="text-accent-500">
@@ -139,7 +139,7 @@ export default function Blog() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-[18px] md:text-[22px] text-primary-100 leading-relaxed max-w-2xl"
+              className="text-[15px] md:text-[18px] text-primary-100 leading-relaxed max-w-2xl"
             >
               {t('blog.subtitle')}
             </motion.p>
@@ -148,7 +148,7 @@ export default function Blog() {
       </section>
 
       {/* Blog List Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-12 md:py-16 bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sortedBlogPosts.map((post, index) => (
