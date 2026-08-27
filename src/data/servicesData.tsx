@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   Settings,
   ShoppingCart,
@@ -9,6 +10,8 @@ import {
   PackageCheck,
   Target
 } from "lucide-react";
+import { servicePath, servicesPath, contactPath } from "@/utils/ruPaths";
+import { blogDetailPath } from "@/utils/blogLanguages";
 
 export const serviceDetails: Record<string, any> = {
   "operasyon-kurulumu": {
@@ -178,64 +181,246 @@ export const serviceDetails: Record<string, any> = {
 
   "pazaryeri-yonetimi": {
     icon: ShoppingCart,
-    title: "Wildberries & Lamoda Satışlarınızı Yönetiyor ve Büyütüyoruz",
-    metaTitle: "Wildberries ve Lamoda Satış Yönetimi | Rusya Pazarı",
-    metaDescription: "Rusya’nın en büyük pazaryerlerinde satış süreçlerinizi uçtan uca yönetiyor, performansınızı artırıyor ve markanızı ölçekliyoruz.",
-    description: "Rusya’nın en büyük pazaryerlerinde satış süreçlerinizi uçtan uca yönetiyor, performansınızı artırıyor ve markanızı ölçekliyoruz.",
+    title: "Rusya'da Pazaryeri Satışlarınızı Yönetiyor ve Büyütüyoruz",
+    subtitle: "Wildberries, Ozon, Yandex Market ve Lamoda",
+    metaTitle: "Wildberries, Ozon, Yandex Market ve Lamoda Satış Yönetimi | Rusya",
+    metaDescription:
+      "Wildberries, Ozon, Yandex Market ve Lamoda'da ürün, fiyat, kampanya, reklam ve satış operasyonlarınızı yönetiyor; Rusya'daki e-ticaret performansınızı büyütüyoruz.",
+    description:
+      "Rusya'nın önde gelen pazaryerlerinde satış operasyonunuzu tek bir yapı üzerinden yönetiyoruz.",
+    lead:
+      "Mağaza kurulumu, ürün içerikleri, fiyatlandırma, kampanyalar, reklam, stok, performans ve operasyon süreçlerini birlikte yöneterek markanızın Rusya'daki satışlarını sürdürülebilir şekilde büyütüyoruz.",
+    ctaLabel: "Ön Analiz Talep Et",
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
-        <li>Rusya pazarında aktif satış yapmak isteyen markalar</li>
-        <li>Wildberries veya Lamoda mağazası olan ancak büyüyemeyenler</li>
-        <li>Satış süreçlerini profesyonel şekilde yönetmek isteyen firmalar</li>
+        <li>Türkiye'de üretim yapan markalar</li>
+        <li>Rusya'ya yeni girmek isteyen markalar</li>
+        <li>Pazaryeri satışını büyütmek isteyen şirketler</li>
+        <li>Birden fazla pazaryeri kanalına açılmak isteyen markalar</li>
+        <li>Rusya'da operasyon kurmak isteyen üreticiler</li>
       </ul>
     ),
     contentSections: [
       {
+        title: "Rusya'nın Önemli Pazaryerlerinde Satış",
+        content: (
+          <div className="space-y-5 text-slate-600">
+            <p>
+              Rusya e-ticaretinde satış; doğru pazaryeri seçimi, ürün konumlandırması, fiyatlandırma, reklam ve operasyonun birlikte yönetilmesiyle büyür.{" "}
+              <Link to={servicesPath(false)} className="text-accent-500 font-semibold hover:underline">
+                Hizmetlerimiz
+              </Link>{" "}
+              kapsamında Wildberries, Ozon, Yandex Market ve Lamoda kanallarını operasyonel olarak yönetiyoruz.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                {
+                  name: "Wildberries",
+                  accent: "#CB11AB",
+                  text: "Rusya'nın en büyük pazaryerlerinden biri. Moda ve geniş tüketim kategorilerinde yüksek trafik ve güçlü satış potansiyeli sunar.",
+                },
+                {
+                  name: "Ozon",
+                  accent: "#005BFF",
+                  text: "Geniş kategori yapısı ve güçlü fulfillment altyapısıyla markalar için ölçeklenebilir bir satış kanalıdır.",
+                },
+                {
+                  name: "Yandex Market",
+                  accent: "#111111",
+                  text: "Yandex ekosistemine yakın bir pazaryeri kanalı. Katalog, fiyat ve görünürlük yönetimi kritik önemdedir.",
+                },
+                {
+                  name: "Lamoda",
+                  accent: "#1A1A1A",
+                  text: "Moda ve lifestyle odaklı bir pazaryeri. Katalog standartları ve ürün sunumu marka algısını doğrudan etkiler.",
+                },
+              ].map((p) => (
+                <div
+                  key={p.name}
+                  className="relative overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 p-4"
+                >
+                  <span
+                    aria-hidden
+                    className="absolute left-0 top-0 bottom-0 w-[3px]"
+                    style={{ background: p.accent }}
+                  />
+                  <p className="font-bold text-primary-500 mb-1">{p.name}</p>
+                  <p className="text-[14px] leading-relaxed">{p.text}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-[14px]">
+              İlgili rehberler:{" "}
+              <Link to={blogDetailPath("wildberriesde-satis-yapmak", "tr")} className="text-accent-500 font-semibold hover:underline">
+                Wildberries'de satış
+              </Link>
+              {" · "}
+              <Link to={blogDetailPath("ozonda-satis-yapmak", "tr")} className="text-accent-500 font-semibold hover:underline">
+                Ozon'da satış
+              </Link>
+              {" · "}
+              <Link to={blogDetailPath("lamodaya-nasil-girilir", "tr")} className="text-accent-500 font-semibold hover:underline">
+                Lamoda'ya giriş
+              </Link>
+            </p>
+          </div>
+        ),
+      },
+      {
         title: "Pazaryerinde satış yapmak neden zor?",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p>Wildberries ve Lamoda’da satış yapmak yüksek potansiyele sahiptir, ancak doğru yönetilmediğinde ciddi kayıplara neden olabilir:</p>
+            <p>
+              Wildberries, Ozon, Yandex Market ve Lamoda'da satış yapmak yüksek potansiyele sahiptir; ancak doğru yönetilmediğinde ciddi kayıplara neden olabilir:
+            </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>Yanlış fiyatlandırma ve düşük kâr marjı</li>
               <li>Ürünlerin görünür olmaması</li>
               <li>Kampanya ve reklam yönetiminde hatalar</li>
               <li>Stok ve operasyon uyumsuzluğu</li>
             </ul>
-            <p>Birçok marka mağaza açmasına rağmen sürdürülebilir satış elde edemez.</p>
+            <p>Birçok marka mağaza açmasına rağmen sürdürülebilir satış elde edemez. Bu nedenle pazaryeri yönetimi; ürün yüklemenin ötesinde sürekli satış yönetimi gerektirir.</p>
           </div>
-        )
+        ),
       },
       {
-        title: "Biz ne yapıyoruz?",
+        title: "Pazaryeri Operasyonunuzun Her Aşamasını Yönetiyoruz",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p className="font-semibold text-primary-500">Sadece ürün yüklemiyoruz.</p>
-            <p>Satış performansınızı artıran bir sistem kuruyoruz ve yönetiyoruz.<br/>Sizin adınıza:</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Ürünlerinizi optimize ediyoruz</li>
-              <li>Doğru fiyatlandırma stratejisi oluşturuyoruz</li>
-              <li>Kampanya ve reklamları yönetiyoruz</li>
-              <li>Satış performansını sürekli analiz ediyoruz</li>
-            </ul>
-            <p><strong>Amaç:</strong> Daha fazla satış, daha yüksek kârlılık</p>
-          </div>
-        )
-      },
-      {
-        title: "Satış Yönetimi Kapsamı",
-        content: (
-          <div className="space-y-4 text-slate-600">
+            <p className="font-semibold text-primary-500">Sadece ürün yüklemiyoruz. Satış performansınızı artıran bir sistem kuruyor ve yönetiyoruz.</p>
             <p>Operasyonel ve stratejik olarak tüm süreci yönetiyoruz:</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Ürün yükleme ve içerik optimizasyonu</li>
+              <li>Mağaza ve operasyon kurulumu</li>
+              <li>Ürün yükleme ve içerik yönetimi</li>
+              <li>Ürün başlığı, açıklaması ve arama optimizasyonu</li>
               <li>Fiyatlandırma ve rekabet analizi</li>
-              <li>Kampanya yönetimi</li>
-              <li>Reklam ve görünürlük artırma</li>
+              <li>Kampanya ve promosyon yönetimi</li>
+              <li>Pazaryeri içi reklam yönetimi</li>
               <li>Stok takibi ve planlama</li>
-              <li>Performans raporlama</li>
+              <li>Sipariş ve operasyon takibi</li>
+              <li>Satış performansı analizi</li>
+              <li>Kârlılık ve ürün performansı analizi</li>
+              <li>Lojistik ve fulfillment koordinasyonu</li>
+              <li>Sistem ve entegrasyon süreçleri (Insales dahil)</li>
+            </ul>
+            <p>
+              <strong>Amaç:</strong> Daha fazla satış, daha yüksek kârlılık ve ölçeklenebilir bir pazaryeri operasyonu.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Wildberries Satış Yönetimi",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Wildberries satış yönetimi; yalnızca ürün listelemesi değil, SEO ürün açıklamaları, fiyat rekabet analizleri, kampanya kurguları ve sürekli performans takibiyle birlikte yürütülür.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Mağaza yönetimi ve ürün kartları</li>
+              <li>İçerik optimizasyonu ve görünürlük</li>
+              <li>Fiyatlandırma, kampanyalar ve reklam</li>
+              <li>Stok / satış takibi ve performans analizi</li>
+            </ul>
+            <p className="text-[14px]">
+              <Link to={blogDetailPath("wildberries-algoritmasi-nasil-calisir", "tr")} className="text-accent-500 font-semibold hover:underline">
+                Wildberries algoritması nasıl çalışır?
+              </Link>
+              {" · "}
+              <Link to={blogDetailPath("wildberries-depo-stratejisi-basarili-satis", "tr")} className="text-accent-500 font-semibold hover:underline">
+                Depo stratejisi
+              </Link>
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Ozon Satış Yönetimi",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Ozon'da sürdürülebilir büyüme; mağaza operasyonu, ürün kartları, fiyatlandırma, kampanyalar, reklam ve satış performansının düzenli izlenmesiyle sağlanır. Lojistik ve fulfillment koordinasyonu da satış sonuçlarını doğrudan etkiler.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Mağaza operasyonu ve ürün kartları</li>
+              <li>Fiyatlandırma, kampanyalar ve reklam yönetimi</li>
+              <li>Satış / performans izleme</li>
+              <li>Lojistik ve fulfillment koordinasyonu</li>
+            </ul>
+            <p className="text-[14px]">
+              <Link to={blogDetailPath("ozonda-satis-yapmak", "tr")} className="text-accent-500 font-semibold hover:underline">
+                Ozon'da satış yapmak
+              </Link>
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Yandex Market Satış Yönetimi",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Yandex Market'te güçlü bir varlık; katalog yönetimi, fiyatlandırma, kampanyalar, reklam ve satış performansının birlikte yönetilmesini gerektirir. İhtiyaç halinde Yandex ekosistemindeki görünürlük çalışmalarıyla desteklenebilir.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Pazaryeri varlığı ve katalog yönetimi</li>
+              <li>Fiyatlandırma ve kampanya yönetimi</li>
+              <li>Reklam ve satış / performans izleme</li>
+              <li>Yandex ekosistemiyle uyumlu büyüme desteği</li>
             </ul>
           </div>
-        )
+        ),
+      },
+      {
+        title: "Lamoda Satış Yönetimi",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Lamoda'nın katalog kabul standartları daha katıdır; marka imajına önem verilir. Doğru ürün sunumu, fiyatlandırma, kampanya ve operasyon koordinasyonuyla satışları sürdürülebilir şekilde büyütmek mümkündür.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Pazaryeri satışları ve ürün sunumu</li>
+              <li>Fiyatlandırma ve kampanyalar</li>
+              <li>Operasyonel koordinasyon</li>
+              <li>Performans takibi</li>
+            </ul>
+            <p className="text-[14px]">
+              <Link to={blogDetailPath("lamodaya-nasil-girilir", "tr")} className="text-accent-500 font-semibold hover:underline">
+                Lamoda'ya nasıl girilir?
+              </Link>
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Pazaryeri Reklamları ve Satış Büyümesi",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Pazaryeri reklamları, satış yönetiminin ayrılmaz parçasıdır. Rekabette öne çıkmak ve görünürlüğü artırmak için platform içi reklamlar kritik rol oynar.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Pazaryeri içi reklam yönetimi</li>
+              <li>Ürün görünürlüğü ve kampanya optimizasyonu</li>
+              <li>Reklam performansı ve dönüşüm odaklı iyileştirme</li>
+              <li>Satış ve kârlılık izleme</li>
+            </ul>
+            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-5 mt-2">
+              <h3 className="font-bold text-primary-500 text-[18px] mb-2">
+                Rusya'da Pazaryeri Dışından da Talep Yaratıyoruz
+              </h3>
+              <p className="mb-3">
+                Pazaryeri satışları; Yandex Ads, VK Ads ve Telegram Native Advertising ile desteklenebilir. Bu kanallar genel dijital pazarlama hizmetimizin parçasıdır; bu sayfanın odağı pazaryeri operasyonu ve satış yönetimidir.
+              </p>
+              <Link
+                to={servicePath("marka-buyutme", false)}
+                className="inline-flex text-accent-500 font-bold hover:underline"
+              >
+                Dijital Pazarlama Çözümlerini İncele →
+              </Link>
+            </div>
+          </div>
+        ),
       },
       {
         title: "Performans Odaklı Yaklaşım",
@@ -249,22 +434,81 @@ export const serviceDetails: Record<string, any> = {
             </ul>
             <p>Bu verileri analiz ederek satışlarınızı sürdürülebilir şekilde büyütüyoruz.</p>
           </div>
-        )
+        ),
       },
       {
-        title: "Operasyon Entegrasyonu",
+        title: "Satıştan Lojistiğe, Operasyondan Sisteme",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p>Satış süreçleri operasyon altyapınızla entegre çalışır:</p>
+            <p>
+              Pazaryeri satışları; stok, fulfillment, depolama, lojistik, entegrasyon ve sipariş operasyonundan bağımsız yönetilemez. Satış süreçleri operasyon altyapınızla entegre çalışmalıdır.
+            </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Insales entegrasyonu</li>
-              <li>Stok senkronizasyonu</li>
-              <li>Sipariş yönetimi</li>
-              <li>Merkezi kontrol paneli</li>
+              <li>Insales entegrasyonu ve stok senkronizasyonu</li>
+              <li>Sipariş yönetimi ve merkezi kontrol</li>
+              <li>Lojistik / fulfillment koordinasyonu</li>
             </ul>
-            <p><strong>Sonuç:</strong> Manuel süreçler yerine sistemli ve ölçeklenebilir bir yapı</p>
+            <p className="text-[14px] space-x-1">
+              <Link to={servicePath("lojistik-ve-depo", false)} className="text-accent-500 font-semibold hover:underline">
+                Lojistik ve depo
+              </Link>
+              <span>·</span>
+              <Link to={servicePath("sistem-ve-entegrasyon", false)} className="text-accent-500 font-semibold hover:underline">
+                Sistem ve entegrasyon
+              </Link>
+              <span>·</span>
+              <Link to={servicePath("operasyon-kurulumu", false)} className="text-accent-500 font-semibold hover:underline">
+                Operasyon kurulumu
+              </Link>
+              <span>·</span>
+              <Link to={blogDetailPath("wildberries-ozon-lojistik-yonetimi-stok-stratejisi", "tr")} className="text-accent-500 font-semibold hover:underline">
+                WB & Ozon lojistik rehberi
+              </Link>
+            </p>
+            <p>
+              <strong>Sonuç:</strong> Manuel süreçler yerine sistemli ve ölçeklenebilir bir yapı.
+            </p>
           </div>
-        )
+        ),
+      },
+      {
+        title: "Kimler İçin?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Bu hizmet; ürün portföyü, üretim kapasitesi, marka veya ticari potansiyeli olan şirketler için tasarlanmıştır. Tek ürünle “deneme” yapmak isteyen bireysel satıcılardan ziyade, Rusya'da sürdürülebilir satış ve operasyon kurmak isteyen firmalara odaklanırız.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Türkiye'de üretim yapan markalar</li>
+              <li>Rusya'ya yeni girmek isteyen markalar</li>
+              <li>Rusya'da pazaryeri satışını büyütmek isteyen şirketler</li>
+              <li>Birden fazla pazaryeri kanalına açılmak isteyen markalar</li>
+              <li>Kendi operasyonunu Rusya'da kurmak isteyen üreticiler</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Nasıl Çalışıyoruz?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            {[
+              { n: "01", t: "Ön Analiz", d: "Ürünlerinizi, markanızı ve Rusya'daki potansiyelinizi değerlendiriyoruz." },
+              { n: "02", t: "Kanal ve Model", d: "Ürününüz için uygun pazaryeri ve satış modelini belirliyoruz." },
+              { n: "03", t: "Kurulum", d: "Mağaza, ürün, fiyat, operasyon ve lojistik altyapısını hazırlıyoruz." },
+              { n: "04", t: "Satış ve Optimizasyon", d: "Satış, reklam, kampanya ve ürün performansını sürekli optimize ediyoruz." },
+              { n: "05", t: "Sürekli Yönetim", d: "Operasyonu ve performansı düzenli olarak takip ederek büyümeyi yönetiyoruz." },
+            ].map((s) => (
+              <div key={s.n} className="flex gap-4 border-b border-slate-100 last:border-0 pb-4 last:pb-0">
+                <span className="font-extrabold text-accent-500 text-[18px] w-10 flex-shrink-0">{s.n}</span>
+                <div>
+                  <p className="font-bold text-primary-500">{s.t}</p>
+                  <p>{s.d}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        ),
       },
       {
         title: "Sonuç",
@@ -277,16 +521,59 @@ export const serviceDetails: Record<string, any> = {
               <li>Operasyonel hataları azaltırsınız</li>
               <li>Kârlı ve sürdürülebilir büyüme sağlarsınız</li>
             </ul>
+            <Link to={contactPath(false)} className="inline-flex text-accent-500 font-bold hover:underline">
+              Ön Analiz Talep Et →
+            </Link>
           </div>
-        )
-      }
+        ),
+      },
     ],
     faqs: [
-      { q: "Wildberries satış yönetimi nasıl yapılır?", a: "Sadece ürün listelemesi değil, SEO ürün açıklamaları, fiyat rekabet analizleri ve etkili kampanya kurgularıyla birlikte yapılır." },
-      { q: "Lamoda’da satış yapmak zor mu?", a: "Lamoda'nın katalog kabul standartları daha katıdır, marka imajına çok önem verilir. Optimizasyonla doğru bir profil yaratarak satışları yüksek seviyelere çıkarabilirsiniz." },
-      { q: "Reklam yönetimi gerekli mi?", a: "Kesinlikle evet. Rekabette öne çıkabilmek ve organik aramaları artırmak platform içi reklamlar olmazsa olmazdır." },
-      { q: "Satışlar ne kadar sürede artar?", a: "Hesabın durumuna ve sektöre göre değişmekle birlikte, algoritmaların yapılan optimizasyonlara tepki vermesiyle birlikte 2 ile 4 hafta içinde artış gözlemlenmeye başlar." }
-    ]
+      {
+        q: "Hangi pazaryerlerini yönetiyorsunuz?",
+        a: "Wildberries, Ozon, Yandex Market ve Lamoda üzerinde mağaza, ürün, fiyat, kampanya, reklam ve satış operasyonu yönetimi sağlıyoruz.",
+      },
+      {
+        q: "Ozon ile çalışıyor musunuz?",
+        a: "Evet. Ozon'da mağaza operasyonu, ürün kartları, fiyatlandırma, kampanya, reklam ve performans takibini yönetiyoruz; lojistik koordinasyonunu da satış sürecine bağlıyoruz.",
+      },
+      {
+        q: "Yandex Market ile çalışıyor musunuz?",
+        a: "Evet. Yandex Market'te katalog, fiyat, kampanya, reklam ve satış performansını yönetiyor; gerektiğinde Yandex ekosistemindeki büyüme çalışmalarıyla destekliyoruz.",
+      },
+      {
+        q: "Wildberries ve Lamoda satış yönetimi nasıl yapılır?",
+        a: "Sadece ürün listelemesi değil; SEO ürün açıklamaları, fiyat rekabet analizleri, etkili kampanya kurguları ve sürekli performans takibiyle birlikte yapılır.",
+      },
+      {
+        q: "Lamoda'da satış yapmak zor mu?",
+        a: "Lamoda'nın katalog kabul standartları daha katıdır, marka imajına çok önem verilir. Optimizasyonla doğru bir profil yaratarak satışları yüksek seviyelere çıkarabilirsiniz.",
+      },
+      {
+        q: "Pazaryeri reklamlarını yönetiyor musunuz?",
+        a: "Evet. Platform içi reklamlar, görünürlük ve dönüşüm odaklı kampanya optimizasyonu satış yönetiminin parçasıdır. Pazaryeri dışındaki Yandex Ads, VK Ads ve Telegram çalışmaları için dijital büyüme hizmetimizi de kullanabilirsiniz.",
+      },
+      {
+        q: "Lojistik ve fulfillment yönetebilir misiniz?",
+        a: "Pazaryeri satışını stok, depo ve fulfillment ile entegre planlıyoruz. Lojistik ve depo süreçleri için ilgili operasyon hizmetimizle koordineli ilerleriz.",
+      },
+      {
+        q: "Rusya pazarına yeni giren şirketlere destek veriyor musunuz?",
+        a: "Evet. Kanal seçimi, mağaza kurulumu, ürün hazırlığı, operasyon ve satış yönetimini birlikte planlayarak pazara giriş sürecini yönetiyoruz.",
+      },
+      {
+        q: "Birden fazla pazaryerini aynı anda yönetebilir misiniz?",
+        a: "Evet. Markanın ürün ve operasyon kapasitesine göre birden fazla kanalı aynı anda kurup yönetebiliriz.",
+      },
+      {
+        q: "Reklam yönetimi gerekli mi?",
+        a: "Kesinlikle evet. Rekabette öne çıkabilmek ve organik aramaları desteklemek için platform içi reklamlar kritik önemdedir.",
+      },
+      {
+        q: "Satışlar ne kadar sürede artar?",
+        a: "Hesabın durumuna ve sektöre göre değişmekle birlikte, algoritmaların yapılan optimizasyonlara tepki vermesiyle birlikte 2 ile 4 hafta içinde artış gözlemlenmeye başlar.",
+      },
+    ],
   },
 
   "lojistik-ve-depo": {
@@ -572,117 +859,315 @@ export const serviceDetails: Record<string, any> = {
 
   "marka-buyutme": {
     icon: TrendingUp,
-    title: "Marka Büyütme ve Performans Yönetimi",
-    metaTitle: "Rusya E-Ticaret Pazarlama & Marka Büyütme",
-    metaDescription: "Biz, markanızı sadece pazara sokmuyor; satışlarınızı veri odaklı stratejilerle büyütüyoruz.",
-    description: "Rusya pazarında satış yapmak kadar, satışları sürdürülebilir şekilde büyütmek de kritik bir süreçtir. Markanızı veri odaklı stratejilerle destekliyoruz.",
+    title: "Rusya'da Dijital Pazarlama ve Marka Büyütme",
+    subtitle: "Yandex Ads · VK Ads · Telegram Native Advertising · SEO",
+    metaTitle: "Rusya'da Dijital Pazarlama ve Marka Büyütme | Yandex, VK, Telegram",
+    metaDescription:
+      "Rusya'da markanızın görünürlüğünü ve satışlarını Yandex Ads, VK Ads, Telegram Native Advertising, SEO ve performans odaklı dijital pazarlama ile büyütüyoruz.",
+    description:
+      "Rusya'da markanız için görünürlükten satışa uzanan dijital büyüme sistemi kuruyoruz.",
+    lead:
+      "Yandex Ads, VK Ads, Telegram Native Advertising, SEO ve veri odaklı performans çalışmalarıyla markanızın Rusya'daki hedef kitlesine ulaşmasına ve sürdürülebilir talep oluşturmasına yardımcı oluyoruz.",
+    ctaLabel: "Ön Analiz Talep Et",
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
-        <li>Belli bir satış ivmesi yakalamış ama bunu 2x, 5x yapmak isteyen markalar</li>
-        <li>Satış potansiyelini artırmak ve yeni hedef kitleye ulaşmak isteyen e-ticaret girişimleri</li>
+        <li>Rusya'da marka görünürlüğü ve talep oluşturmak isteyen firmalar</li>
+        <li>E-ticaret ve B2B satışlarını dijital kanallarla büyütmek isteyen markalar</li>
+        <li>Medikal / sağlık ve üretici şirketler</li>
+        <li>Rusya'ya giren veya halihazırda satan kurumsal işletmeler</li>
       </ul>
     ),
     contentSections: [
       {
+        title: "Rusya'nın Dijital Ekosisteminde Markanızı Konumlandırıyoruz",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Rusya'nın dijital ortamı kendine özgü kanallar, arama alışkanlıkları ve içerik davranışlarıyla çalışır. Başka pazarlardan kopyalanan kampanyalar çoğu zaman yeterli olmaz.
+            </p>
+            <p>
+              Markanızı Yandex, VK ve Telegram ekseninde; Rus arama ekosistemi ve yerel kitle davranışına uygun şekilde konumlandırıyoruz. Amaç yalnızca reklam vermek değil;{" "}
+              <Link to={servicesPath(false)} className="text-accent-500 font-semibold hover:underline">
+                hizmetlerimiz
+              </Link>{" "}
+              kapsamında sürdürülebilir talep ve marka büyütme sistemi kurmaktır.
+            </p>
+          </div>
+        ),
+      },
+      {
         title: "Neden performans yönetimi gerekli?",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p>Pazaryerlerinde ürün yüklemek tek başına yeterli değildir.</p>
+            <p>
+              Ürünü veya markayı pazara çıkarmak tek başına yeterli değildir. Doğru hedef kitleye ulaşmak, görünür olmak ve rekabet içinde öne çıkmak gerekir. Doğru yönetilmeyen kampanyalar potansiyelin çok altında sonuç üretir.
+            </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Ürünlerin görünür olması gerekir</li>
-              <li>Doğru hedef kitleye ulaşması gerekir</li>
-              <li>Rekabet içinde öne çıkması gerekir</li>
+              <li>Doğru kitleye ulaşmak</li>
+              <li>Görünürlük ve talep oluşturmak</li>
+              <li>Trafik, dönüşüm ve kârlılığı birlikte yönetmek</li>
             </ul>
-            <p>Doğru yönetilmeyen hesaplar, potansiyelinin çok altında satış yapar.</p>
+            <p>
+              Bu nedenle e-ticaret pazarlama ve marka büyütme çalışmalarını veri odaklı performans yönetimiyle yürütüyoruz.
+            </p>
           </div>
-        )
+        ),
       },
       {
-        title: "Biz ne yapıyoruz?",
+        title: "Yandex Ads",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p>Satışları artıran ve sürdürülebilir hale getiren bir performans sistemi kuruyoruz:</p>
+            <p>
+              Yandex Ads ile Rusya'da arama ve ağ reklamlarını markanızın hedeflerine göre planlıyor ve yönetiyoruz. Odak; nitelikli trafik, görünürlük, lead generation ve satış / B2B talep üretimidir.
+            </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Pazaryeri reklam yönetimi</li>
-              <li>Ürün görünürlük optimizasyonu</li>
-              <li>Kampanya planlama</li>
-              <li>Veri analizi ve sürekli optimizasyon</li>
+              <li>Arama reklamları</li>
+              <li>Görüntülü / ağ reklamları (uygun olduğunda)</li>
+              <li>Anahtar kelime ve kitle hedefleme</li>
+              <li>Kampanya yapısı ve bütçe yönetimi</li>
+              <li>Reklam optimizasyonu ve trafik kazanımı</li>
+              <li>Dönüşüm takibi ve performans analizi</li>
             </ul>
-            <p><strong>Amaç:</strong> Daha fazla trafik + daha fazla dönüşüm + daha yüksek kârlılık</p>
           </div>
-        )
+        ),
       },
       {
-        title: "Pazaryeri reklam yönetimi",
+        title: "VK Ads",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p>Rusya’daki pazaryerlerinde reklam süreçlerini profesyonel şekilde yönetiyoruz:</p>
+            <p>
+              VK Ads ile Rusya'daki sosyal kitlelere marka görünürlüğü, trafik ve lead generation odaklı kampanyalar yönetiyoruz.
+            </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Ürün bazlı reklam stratejileri</li>
-              <li>Anahtar kelime optimizasyonu</li>
-              <li>Reklam bütçesi yönetimi</li>
-              <li>Performans takibi ve iyileştirme</li>
+              <li>Kitle hedefleme ve kampanya yönetimi</li>
+              <li>Marka görünürlüğü ve trafik</li>
+              <li>Lead generation</li>
+              <li>Yeniden hedefleme (uygun ve desteklenen senaryolarda)</li>
+              <li>Performans analizi</li>
             </ul>
           </div>
-        )
+        ),
       },
       {
-        title: "Ürün ve kategori optimizasyonu",
+        title: "Telegram Native Advertising",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p>Satış performansı, ürünlerin doğru konumlandırılması ile doğrudan ilişkilidir.</p>
+            <p>
+              Telegram, Rusya'da güçlü bir iletişim ve içerik kanalıdır. Telegram Native Advertising kapsamında uygun kanal ve kitlelerin araştırılması, native reklam planı, içerik uyarlaması ve kampanya performansının değerlendirilmesini yönetiyoruz.
+            </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Ürün başlık ve açıklama optimizasyonu</li>
-              <li>Kategori ve rekabet analizi</li>
-              <li>Fiyatlandırma stratejisi</li>
+              <li>İlgili Rus Telegram kanallarının araştırılması</li>
+              <li>Native reklam ve kitle seçimi</li>
+              <li>Kampanya planlama ve kreatif / içerik uyarlaması</li>
+              <li>Trafik ve lead generation</li>
+              <li>Kampanya performans değerlendirmesi</li>
             </ul>
+            <p className="text-[14px] text-slate-500">
+              Her kanala doğrudan erişim iddiasında bulunmuyoruz; hedefe uygun kanal ve kitleleri araştırarak ilerliyoruz.
+            </p>
           </div>
-        )
+        ),
       },
       {
-        title: "Veri odaklı karar alma",
+        title: "SEO ve Organik Görünürlük",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p>Tüm süreçler veri ile yönetilir:</p>
+            <p>
+              Organik görünürlük, ücretli trafiği tamamlayan uzun vadeli bir büyüme katmanıdır. Odak noktamız harici arama görünürlüğüdür; pazaryeri SEO'su gerektiğinde destekleyici olarak ele alınır.
+            </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Hangi ürün daha çok satıyor?</li>
-              <li>Hangi fiyat daha kârlı?</li>
-              <li>Hangi reklam daha iyi performans gösteriyor?</li>
+              <li>Rusça SEO ve anahtar kelime araştırması</li>
+              <li>Arama niyeti ve içerik stratejisi</li>
+              <li>Teknik SEO (ihtiyaca göre)</li>
+              <li>Landing page optimizasyonu</li>
+              <li>Organik trafik geliştirme</li>
             </ul>
-            <p>Bu veriler doğrultusunda sürekli iyileştirme yapılır.</p>
           </div>
-        )
+        ),
       },
       {
-        title: "Büyüme stratejisi & Entegrasyon",
+        title: "Performans ve Dönüşüm Optimizasyonu",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p>Operasyon büyüdükçe sistem de büyür:</p>
+            <p>
+              Satışları artıran ve sürdürülebilir hale getiren bir performans sistemi kuruyoruz. Tüm süreçler veri ile yönetilir: hangi kanal daha iyi çalışıyor, trafik kalitesi nasıl, dönüşüm ve maliyet nasıl seyrediyor?
+            </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Ürün portföyünün genişletilmesi</li>
-              <li>Yeni kategori girişleri</li>
-              <li>Reklam yatırımlarının artırılması</li>
+              <li>Kampanya performansı ve trafik kalitesi</li>
+              <li>Dönüşüm ve maliyet verimliliği</li>
+              <li>Veri odaklı optimizasyon</li>
+              <li>Landing page performansı</li>
+              <li>Lead kalitesi ve satış performansına etki</li>
             </ul>
-            <p>Ayrıca stok ve lojistik entegrasyonu sayesinde bu büyüme tüm operasyona uyum sağlar.</p>
+            <p>
+              <strong>Amaç:</strong> Daha fazla trafik + daha fazla dönüşüm + daha yüksek kârlılık.
+            </p>
           </div>
-        )
+        ),
+      },
+      {
+        title: "B2B ve Medikal Markalar İçin Dijital Talep",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Dijital pazarlama; B2B alıcı farkındalığı, distribütör görünürlüğü, kurumsal site trafiği, lead generation ve medikal / sağlık markalarının Rus profesyonel kitlelerde görünürlüğünü destekleyebilir.
+            </p>
+            <p>
+              Bu bölüm pazar araştırması veya medikal hizmet sayfası değildir; dijital kanalların bu iş modellerine nasıl katkı verdiğini açıklar.
+            </p>
+            <Link
+              to={servicePath("pazar-arastirmasi-ve-strateji", false)}
+              className="inline-flex text-accent-500 font-bold hover:underline"
+            >
+              B2B ve Pazar Geliştirme Çözümlerini İncele →
+            </Link>
+          </div>
+        ),
+      },
+      {
+        title: "Pazaryeri ve Dijital Pazarlama Birlikte Çalışmalı",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Pazaryeri reklamları platform içi görünürlük yaratır. Yandex Ads, VK Ads ve Telegram ise pazaryeri dışından talep oluşturur. Birlikte farkındalık, trafik, ürün keşfi, satış ve marka büyütmeyi destekleyebilir.
+            </p>
+            <p>
+              Pazaryeri operasyonu, ürün kartları, fiyatlandırma ve platform içi reklam yönetimi{" "}
+              <Link to={servicePath("pazaryeri-yonetimi", false)} className="text-accent-500 font-semibold hover:underline">
+                pazaryeri yönetimi
+              </Link>{" "}
+              sayfamızın konusudur. Bu sayfa harici dijital talep ve marka büyütmeye odaklanır.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Ürün görünürlüğü ve kampanya koordinasyonu</li>
+              <li>Anahtar kelime ve bütçe disiplinini kanallar arası hizalama</li>
+              <li>Operasyon büyüdükçe reklam yatırımlarını ölçekleme</li>
+            </ul>
+            <p className="text-[14px]">
+              <Link to={servicePath("pazaryeri-yonetimi", false)} className="text-accent-500 font-semibold hover:underline">
+                Pazaryeri Yönetimi Çözümlerini İncele →
+              </Link>
+              {" · "}
+              <Link to={blogDetailPath("rusyada-e-ticaret-nasil-yapilir", "tr")} className="text-accent-500 font-semibold hover:underline">
+                Rusya'da e-ticaret rehberi
+              </Link>
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Kimler İçin?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Bu hizmet; ürün portföyü, marka veya ticari potansiyeli olan kurumsal işletmeler içindir. Tek ürünle deneme yapan bireysel satıcılardan ziyade, Rusya'da sürdürülebilir dijital büyüme isteyen firmalara odaklanırız.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Yerleşik markalar ve üreticiler</li>
+              <li>Rusya'ya giren veya halihazırda satan şirketler</li>
+              <li>E-ticaret şirketleri</li>
+              <li>B2B üreticiler</li>
+              <li>Medikal / sağlık şirketleri</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Nasıl Çalışıyoruz?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            {[
+              { n: "01", t: "Ön Analiz", d: "Markanızı, ürünlerinizi ve Rusya'daki hedeflerinizi değerlendiriyoruz." },
+              { n: "02", t: "Hedef Kitle ve Kanal", d: "Ürününüz ve hedefiniz için doğru dijital kanalları belirliyoruz." },
+              { n: "03", t: "Kampanya ve İçerik", d: "Yandex, VK, Telegram ve organik kanallar için uygun yapı ve içerikleri hazırlıyoruz." },
+              { n: "04", t: "Ölçüm ve Optimizasyon", d: "Trafik, dönüşüm, maliyet ve lead kalitesini takip ediyoruz." },
+              { n: "05", t: "Sürekli Büyüme", d: "Veriye göre kampanyaları ve büyüme stratejisini sürekli geliştiriyoruz." },
+            ].map((s) => (
+              <div key={s.n} className="flex gap-4 border-b border-slate-100 last:border-0 pb-4 last:pb-0">
+                <span className="font-extrabold text-accent-500 text-[18px] w-10 flex-shrink-0">{s.n}</span>
+                <div>
+                  <p className="font-bold text-primary-500">{s.t}</p>
+                  <p>{s.d}</p>
+                </div>
+              </div>
+            ))}
+            <p className="text-[14px] pt-2 space-x-1">
+              <Link to={servicePath("operasyon-kurulumu", false)} className="text-accent-500 font-semibold hover:underline">
+                Operasyon kurulumu
+              </Link>
+              <span>·</span>
+              <Link to={servicePath("sistem-ve-entegrasyon", false)} className="text-accent-500 font-semibold hover:underline">
+                Sistem ve entegrasyon
+              </Link>
+              <span>·</span>
+              <Link to={contactPath(false)} className="text-accent-500 font-semibold hover:underline">
+                İletişim
+              </Link>
+            </p>
+          </div>
+        ),
       },
       {
         title: "Sonuç",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p>Rusya pazarında büyümek için sadece satış yapmak değil, satışları doğru yönetmek gerekir.</p>
-            <p><strong>Doğru strateji + doğru reklam + doğru veri = sürdürülebilir büyüme</strong></p>
+            <p>Rusya pazarında büyümek için yalnızca satış yapmak değil; talep, görünürlük ve performansı doğru yönetmek gerekir.</p>
+            <p>
+              <strong>Doğru strateji + doğru reklam + doğru veri = sürdürülebilir büyüme</strong>
+            </p>
+            <Link to={contactPath(false)} className="inline-flex text-accent-500 font-bold hover:underline">
+              Ön Analiz Talep Et →
+            </Link>
           </div>
-        )
-      }
+        ),
+      },
     ],
     faqs: [
-      { q: "Reklam vermeden satış yapılır mı?", a: "Çok düşük bir ihtimaldir, özellikle yeni marka/mağazalarda algoritmaya sinyal göndermek için bir miktar reklam veya ivme şarttır." },
-      { q: "Pazaryeri reklamları nasıl çalışır?", a: "Kategori aramalarında veya doğrudan anahtar kelimelerde üst sıralarda gösterim satın alınarak çalışır, bu da organik büyümeyi de tetikler." },
-      { q: "Ne kadar bütçe gerekir?", a: "Lansman döneminde yüksek ve sonrasında daha stabil ve optime edilmiş bütçeler (cironun ufak bir oranı) kullanılmalıdır." },
-      { q: "Satışlar ne kadar sürede artar?", a: "Optimizasyon adımları atıldıktan hemen sonra organik sıçrama yaşanabilir, genel anlamda reklam tepkimesi ilk ay içinde belli olur." }
-    ]
+      {
+        q: "Rusya'da hangi dijital reklam kanallarını yönetiyorsunuz?",
+        a: "Yandex Ads, VK Ads ve Telegram Native Advertising odaklı dijital kampanyalar yönetiyoruz; SEO ve performans optimizasyonu ile destekliyoruz.",
+      },
+      {
+        q: "Yandex Ads yönetiyor musunuz?",
+        a: "Evet. Arama ve uygun olduğunda ağ reklamları, anahtar kelime / kitle hedefleme, bütçe yönetimi, optimizasyon ve performans analiziyle Yandex Ads kampanyalarını yönetiyoruz.",
+      },
+      {
+        q: "VK Ads ile reklam yapıyor musunuz?",
+        a: "Evet. VK Ads üzerinden kitle hedefleme, kampanya yönetimi, görünürlük, trafik ve lead odaklı çalışmalar yürütüyoruz.",
+      },
+      {
+        q: "Telegram Native Advertising nedir ve nasıl kullanılır?",
+        a: "İlgili Telegram kanallarında native reklam yaklaşımıdır. Uygun kanal ve kitlelerin araştırılması, içerik uyarlaması, planlama ve performans değerlendirmesiyle yürütülür; her kanala doğrudan erişim iddiası yoktur.",
+      },
+      {
+        q: "SEO çalışması yapıyor musunuz?",
+        a: "Evet. Rusça SEO, anahtar kelime ve içerik stratejisi, landing page optimizasyonu ve organik görünürlük odaklı çalışmalar yapıyoruz.",
+      },
+      {
+        q: "Dijital pazarlama e-ticaret satışlarını nasıl destekler?",
+        a: "Harici trafik ve talep oluşturarak ürün keşfini, marka farkındalığını ve dönüşümü destekler; pazaryeri operasyonuyla birlikte çalıştığında satış büyümesini güçlendirebilir.",
+      },
+      {
+        q: "B2B firmalar dijital pazarlamadan nasıl yararlanabilir?",
+        a: "Kurumsal site trafiği, alıcı / distribütör farkındalığı ve lead generation için kullanılabilir. Pazar ve partner araştırması için B2B pazar geliştirme hizmetimizi de inceleyebilirsiniz.",
+      },
+      {
+        q: "Pazaryeri reklamları ile Yandex / VK reklamları arasındaki fark nedir?",
+        a: "Pazaryeri reklamları platform içinde görünürlük sağlar. Yandex Ads ve VK Ads ise pazaryeri dışından talep ve trafik üretir. İkisi farklı roller üstlenir ve birlikte planlanmalıdır.",
+      },
+      {
+        q: "Kampanya performansı nasıl ölçülüyor?",
+        a: "Trafik, dönüşüm, maliyet verimliliği, lead kalitesi ve satışa etkisi veri üzerinden takip edilir; kampanyalar buna göre optimize edilir. Garanti sonuç veya sabit oran iddiası sunmuyoruz.",
+      },
+      {
+        q: "Reklam vermeden satış yapılır mı?",
+        a: "Özellikle yeni markalarda organik görünürlük zaman alır. Çoğu senaryoda kontrollü reklam yatırımı, talep oluşturmak ve ölçülebilir büyüme için kritiktir.",
+      },
+      {
+        q: "Ne kadar bütçe gerekir?",
+        a: "Bütçe; ürün, kategori, hedef ve kanala göre değişir. Lansman döneminde daha yoğun, sonrasında stabilize edilen planlar öneririz. Sabit bir tutar vaat etmiyoruz.",
+      },
+    ],
   },
 
   "vergi-ve-finans": {
@@ -975,49 +1460,107 @@ export const serviceDetails: Record<string, any> = {
 
   "pazar-arastirmasi-ve-strateji": {
     icon: Target,
-    title: "Rusya Pazarına Girmeden Önce Doğru Stratejiyi Oluşturuyoruz",
-    metaTitle: "Rusya Pazar Araştırması ve Giriş Stratejisi Danışmanlığı",
-    metaDescription: "Ürün, kategori, rakip ve fiyat verilerine dayalı analizlerle Rusya pazarına doğru marketplace ve giriş stratejisiyle girmenizi sağlıyoruz.",
-    description: "Her ürün Rusya'da aynı şekilde satılmaz. Rusya pazarına giriş kararını tahminlerle değil, mümkün olduğunca ürün, kategori, rakip, fiyat ve satış verileri üzerinden planlıyoruz.",
+    title: "Rusya Pazarı İçin B2B ve Pazar Giriş Stratejisi",
+    subtitle: "Pazar araştırması · Alıcı & distribütör araştırması · Medikal B2B · Ticari geliştirme",
+    metaTitle: "Rusya B2B Pazar Araştırması ve Giriş Stratejisi | Ticari Geliştirme",
+    metaDescription:
+      "Rusya pazar araştırması, alıcı ve distribütör araştırması, rakip analizi ve B2B ticari geliştirme çalışmalarıyla markanız için doğru pazara giriş stratejisini oluşturuyoruz.",
+    description: "Rusya'da doğru pazarı, doğru firmaları ve doğru ticari fırsatları belirliyoruz.",
+    lead:
+      "Pazar araştırması, rakip analizi, potansiyel alıcı ve distribütör araştırması, firma değerlendirmesi ve ticari geliştirme çalışmalarıyla Rusya pazarına daha kontrollü ve veriye dayalı şekilde hazırlanmanıza yardımcı oluyoruz.",
+    ctaLabel: "Ön Analiz Talep Et",
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
-        <li>Rusya pazarına girmeden önce doğru stratejiyi oluşturmak isteyen markalar</li>
-        <li>Doğru marketplace ve ürün gamını belirlemek isteyen üreticiler</li>
-        <li>Fiyatlandırma ve ilk stok planını veriye dayalı kurmak isteyen firmalar</li>
+        <li>Yerleşik markalar ve üreticiler</li>
+        <li>Ürün portföyü olan, Rusya'yı ciddi değerlendiren şirketler</li>
+        <li>Distribütör / ithalatçı / B2B alıcı arayan firmalar</li>
+        <li>Medikal ve sağlık üreticileri</li>
+        <li>Yatırımdan önce pazarı ölçmek isteyen şirketler</li>
       </ul>
     ),
     contentSections: [
+      {
+        title: "Rusya'da Ticari Fırsatları Araştırıyoruz",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Rusya'ya giriş yalnızca bir ürün kanalı bulmak değildir. İş modeline göre fırsat; distribütörler, ithalatçılar, toptancılar, bayiler, B2B alıcılar, uygun olduğunda kurumsal alıcılar, e-ticaret veya pazaryerleri üzerinden şekillenebilir.
+            </p>
+            <p>
+              Doğru rota ürün, sektör ve ticari hedefe göre değişir.{" "}
+              <Link to={servicesPath(false)} className="text-accent-500 font-semibold hover:underline">
+                Hizmetlerimiz
+              </Link>{" "}
+              kapsamında araştırma → değerlendirme → hedefleme → ticari geliştirme mantığıyla ilerliyoruz; ham firma listesi satmıyoruz.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Ön Analiz ile Başlıyoruz",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Daha geniş bir pazar geliştirme çalışmasından önce şirketinizi ve hazırlık seviyenizi değerlendiriyoruz. Amaç, Rusya'nın ticari potansiyel açısından gerçekten anlamlı olup olmadığını netleştirmektir.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Şirket / ürün profili ve ürün portföyü</li>
+              <li>Hedef sektör ve Rusya hedefi</li>
+              <li>Mevcut ihracat kapasitesi (varsa)</li>
+              <li>Olası satış modeli ve pazar uyumu</li>
+            </ul>
+            <p>
+              Bu adım; ticari potansiyeli ve hazırlık seviyesini anlamaya yarar. Tek ürünle “deneme” yaklaşımından ziyade, ciddi bir ticari hedefi olan firmalar için anlamlıdır.
+            </p>
+            <Link to={contactPath(false)} className="inline-flex text-accent-500 font-bold hover:underline">
+              Ön Analiz Talep Et →
+            </Link>
+          </div>
+        ),
+      },
       {
         title: "Rusya Pazarına Girerken Karşılaşılan Temel Sorunlar",
         content: (
           <div className="space-y-4 text-slate-600">
             <ul className="list-disc pl-5 space-y-2">
               <li>Ürünün gerçek pazar potansiyelinin bilinmemesi</li>
-              <li>Yanlış marketplace seçimi</li>
+              <li>Yanlış satış kanalı veya marketplace seçimi</li>
               <li>Rakiplerin ve fiyat seviyelerinin yeterince analiz edilmemesi</li>
               <li>Ürünün Rusya'daki konumlandırmasının yanlış yapılması</li>
-              <li>İlk stok miktarının doğru belirlenememesi</li>
+              <li>Doğru ticari partner / distribütörün bilinmemesi</li>
+              <li>İlk stok ve operasyon planının net olmaması</li>
               <li>Pazara giriş maliyetlerinin önceden hesaplanmaması</li>
               <li>Satış hedefleri ile lojistik planın birbirinden kopuk olması</li>
             </ul>
           </div>
-        )
+        ),
       },
       {
-        title: "Pazar Analizi",
+        title: "Rusya Pazar Araştırması",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p>Ürününüzün Rusya'daki kategori yapısını, rakiplerini ve pazar fırsatlarını değerlendiriyoruz.</p>
+            <p>
+              Pazar araştırması, hedef firma çalışmalarına zemin hazırlar. Ürününüzün Rusya'daki kategori yapısını, rakiplerini, fiyat dinamiklerini ve pazar fırsatlarını değerlendiriyoruz.
+            </p>
+            <p className="font-semibold text-primary-500">Pazar Analizi</p>
+            <p>
+              Kategori yapısı, talep dinamikleri, satış kanalları ve pazar fırsatlarını inceleyerek ürününüz için anlamlı bir çerçeve oluşturuyoruz. Tahmine dayalı değil; mümkün olduğunca ürün, kategori, rakip, fiyat ve satış verilerine dayalı ilerliyoruz.
+            </p>
+            <p className="font-semibold text-primary-500">Ürün ve Kategori Analizi</p>
+            <p>
+              Hangi ürünlerin pazara giriş için daha uygun olabileceğini değerlendiriyor; ürün gamının Rusya pazarına göre önceliklendirilmesine yardımcı oluyoruz.
+            </p>
+            <p className="text-[14px]">
+              <Link to={blogDetailPath("rusyada-en-cok-satan-urunler-2026", "tr")} className="text-accent-500 font-semibold hover:underline">
+                Rusya'da öne çıkan ürün grupları
+              </Link>
+              {" · "}
+              <Link to={blogDetailPath("rusyada-e-ticaret-nasil-yapilir", "tr")} className="text-accent-500 font-semibold hover:underline">
+                Rusya'da e-ticaret rehberi
+              </Link>
+            </p>
           </div>
-        )
-      },
-      {
-        title: "Ürün ve Kategori Analizi",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>Hangi ürünlerin pazara giriş için daha uygun olabileceğini değerlendiriyor; ürün gamının Rusya pazarına göre önceliklendirilmesine yardımcı oluyoruz.</p>
-          </div>
-        )
+        ),
       },
       {
         title: "Rakip Analizi",
@@ -1032,74 +1575,250 @@ export const serviceDetails: Record<string, any> = {
               <li>İçerik</li>
               <li>Kampanyalar</li>
               <li>Marketplace konumlandırması</li>
+              <li>Kanal / partner yapısı (görülebildiği ölçüde)</li>
             </ul>
           </div>
-        )
+        ),
       },
       {
-        title: "Marketplace Seçimi",
+        title: "Fiyatlandırma, Ticari Model ve Marketplace Seçimi",
         content: (
           <div className="space-y-4 text-slate-600">
-            <p>Rusya'da her marketplace aynı müşteri kitlesine ve satış modeline sahip değildir.</p>
-            <p className="font-semibold text-primary-500">Ürününüz için Wildberries · Ozon · Lamoda gibi kanalların hangilerinin öncelikli olması gerektiğini değerlendiriyoruz.</p>
-          </div>
-        )
-      },
-      {
-        title: "Fiyatlandırma ve Ticari Model",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>Ürünün Rusya'daki satış fiyatını yalnızca rakip fiyatlarına bakarak belirlemiyoruz.</p>
-            <p>Ürün maliyeti, lojistik, marketplace maliyetleri, vergiler, reklam ve hedeflenen kârlılık birlikte değerlendirilerek ticari model oluşturuyoruz.</p>
-          </div>
-        )
-      },
-      {
-        title: "İlk Stok ve Operasyon Planı",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>Pazara giriş stratejisinin önemli bir parçası da ilk stok planıdır. Bu soruları giriş stratejisinin bir parçası olarak ele alıyoruz:</p>
+            <p>
+              Ürünün Rusya'daki satış fiyatını yalnızca rakip fiyatlarına bakarak belirlemiyoruz. Ürün maliyeti, lojistik, marketplace maliyetleri, vergiler, reklam ve hedeflenen kârlılık birlikte değerlendirilerek ticari model oluşturuyoruz.
+            </p>
+            <p>
+              Rusya'da her marketplace aynı müşteri kitlesine ve satış modeline sahip değildir. Ürününüz için Wildberries · Ozon · Yandex Market · Lamoda gibi kanalların hangilerinin öncelikli olabileceğini değerlendiriyoruz — B2B modeli de aynı çerçevede ele alınır.
+            </p>
+            <p className="font-semibold text-primary-500">İlk Stok ve Operasyon Planı</p>
+            <p>Pazara giriş stratejisinin önemli bir parçası da ilk stok planıdır:</p>
             <ul className="list-disc pl-5 space-y-2">
               <li>Ne kadar ürün gönderilmeli?</li>
               <li>Hangi ürünlerden başlanmalı?</li>
               <li>Stok nerede tutulmalı?</li>
-              <li>Hangi marketplace'e ne kadar ürün gönderilmeli?</li>
-              <li>Satış hacmine göre stoklar nasıl transfer edilmeli?</li>
+              <li>Hangi kanala ne kadar ürün ayrılmalı?</li>
+              <li>Satış hacmine göre stoklar nasıl yönetilmeli?</li>
             </ul>
+            <p className="text-[14px] space-x-1">
+              <Link to={servicePath("lojistik-ve-depo", false)} className="text-accent-500 font-semibold hover:underline">
+                Lojistik ve depo
+              </Link>
+              <span>·</span>
+              <Link to={servicePath("operasyon-kurulumu", false)} className="text-accent-500 font-semibold hover:underline">
+                Operasyon kurulumu
+              </Link>
+            </p>
           </div>
-        )
+        ),
+      },
+      {
+        title: "Alıcı, Distribütör ve İthalatçı Araştırması",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              B2B pazar geliştirmede kritik adım; ilgili potansiyel firmaları araştırmak ve tanımlamaktır. Ham hacim değil, ürün ve sektöre uygunluk önceliklidir.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>B2B alıcılar</li>
+              <li>Distribütörler</li>
+              <li>İthalatçılar</li>
+              <li>Toptancılar</li>
+              <li>Bayiler</li>
+              <li>Ticari partner adayları</li>
+            </ul>
+            <p>
+              Sabit firma sayısı veya garanti distribütör taahhüdü vermiyoruz. Amaç; nitelikli adayları bulmak ve değerlendirmeye hazır hale getirmektir.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Potansiyel Partnerleri Değerlendiriyoruz",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Potansiyel firmalar; sektör uyumu, ürün uyumluluğu, iş modeli, pazar varlığı, dağıtım yapısı, ürün portföyü ve ticari uygunluk gibi kriterlerle değerlendirilebilir.
+            </p>
+            <p className="text-[14px] text-slate-500">
+              Gizli / yetkisiz şirket bilgilerine erişim iddiasında bulunmuyoruz. Değerlendirme, açık kaynaklar ve proje kapsamında erişilebilir ticari sinyaller üzerinden yapılır.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "B2B Ticari Geliştirme",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Çalışma araştırmayla sınırlı kalmak zorunda değildir. Proje kapsamına göre hedef firma önceliklendirme, ticari iletişim, uygun olduğunda partner outreach, ticari görüşmelerin organize edilmesine destek, fırsat takibi ve pazara giriş stratejisinin netleştirilmesi yönünde ilerleyebilir.
+            </p>
+            <p>
+              Görüşme, satış veya distribütör anlaşması garantisi vermiyoruz. Destek; karşılıklı mutabakat ve proje kapsamına göre sağlanır.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Medikal ve Sağlık Sektöründe B2B Pazar Geliştirme",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Medikal ve sağlık, B2B pazar geliştirmede stratejik bir uzmanlık alanımızdır. Ekibimizin 15+ yıllık sektör deneyimi ve Rusya pazar tecrübesi; medikal cihazlar, medikal ekipman, sarf malzemeleri, sağlık ürünleri ve uygun olduğunda hastane / kurumsal tedarik kanallarında ticari geliştirmeyi destekler.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Medikal cihazlar ve ekipman</li>
+              <li>Medikal sarf malzemeleri</li>
+              <li>Sağlık ürünleri</li>
+              <li>Sektör distribütörleri / ithalatçıları / B2B alıcıları</li>
+            </ul>
+            <p>
+              Medikal pazarda başarı; sektör yapısı, ilgili firmalar, ürün konumlandırması, ticari kanallar ve regülasyon bağlamının anlaşılmasını gerektirir. Araştırma ve koordinasyon sağlanabilir; resmi sertifikasyon / hukuki temsil / garanti onay veya hastane–kamu alımı erişimi iddiasında bulunmuyoruz.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "E-Ticaret ve B2B Kanalları Birlikte Değerlendiriyoruz",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Ürün ve iş modeline göre Rusya girişi B2B, e-ticaret, pazaryerleri, distribütörler veya hibrit modeller üzerinden olabilir. Araştırma aşamasında bu seçenekleri birlikte değerlendiriyoruz.
+            </p>
+            <Link
+              to={servicePath("pazaryeri-yonetimi", false)}
+              className="inline-flex text-accent-500 font-bold hover:underline"
+            >
+              Rusya'da Pazaryeri Yönetimi →
+            </Link>
+          </div>
+        ),
+      },
+      {
+        title: "Ticari Geliştirmeyi Dijital Kanallarla Destekliyoruz",
+        content: (
+          <div className="space-y-3 text-slate-600">
+            <p>
+              Uygun olduğunda Rusya dijital kanalları; B2B görünürlük, alıcı ve distribütör farkındalığı, kurumsal site trafiği ve lead generation için ticari geliştirmeyi destekleyebilir (Yandex Ads, VK Ads, Telegram Native Advertising).
+            </p>
+            <p className="text-[14px]">
+              Bu sayfanın odağı B2B ve medikal pazar geliştirmedir. Dijital pazarlama ayrı bir hizmet alanıdır:{" "}
+              <Link to={servicePath("marka-buyutme", false)} className="text-accent-500 font-semibold hover:underline">
+                Rusya'da Dijital Pazarlama
+              </Link>
+            </p>
+          </div>
+        ),
       },
       {
         title: "Pazara Giriş Stratejisi Nasıl Oluşturuluyor?",
         content: (
-          <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
-            {["Ürün Analizi", "Rusya Pazar Analizi", "Kategori & Rakip Analizi", "Marketplace Seçimi", "Fiyat & Kârlılık Modeli", "İlk Ürün Gamı", "Stok & Lojistik Planı", "Pazara Giriş", "Satış Verilerine Göre Optimizasyon"].map((step, i, arr) => (
-              <span key={step} className="inline-flex items-center gap-2">
-                <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
-                {i < arr.length - 1 && <span className="text-accent-500">→</span>}
-              </span>
-            ))}
-          </div>
-        )
-      },
-      {
-        title: "Neden Biz?",
-        content: (
           <div className="space-y-4 text-slate-600">
-            <p>Biz pazar araştırmasını yalnızca bir rapor olarak bırakmıyoruz. Araştırmanın sonucunu operasyona bağlıyoruz:</p>
             <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
-              {["Marketplace", "Lojistik", "Stok", "Fiyat", "Pazarlama", "Satış"].map((step, i, arr) => (
+              {[
+                "Ürün Analizi",
+                "Rusya Pazar Analizi",
+                "Kategori & Rakip Analizi",
+                "Kanal / Partner Seçimi",
+                "Fiyat & Kârlılık Modeli",
+                "İlk Ürün Gamı",
+                "Stok & Lojistik Planı",
+                "Pazara Giriş",
+                "Veriye Göre Optimizasyon",
+              ].map((step, i, arr) => (
                 <span key={step} className="inline-flex items-center gap-2">
                   <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
                   {i < arr.length - 1 && <span className="text-accent-500">→</span>}
                 </span>
               ))}
             </div>
-            <p><strong>Çünkü iyi bir pazar araştırmasının gerçek değeri, uygulanabilir bir giriş planına dönüşmesidir.</strong></p>
+            <p>
+              Araştırmayı yalnızca rapor olarak bırakmıyoruz; sonucunu operasyona bağlıyoruz: Marketplace · Lojistik · Stok · Fiyat · Pazarlama · Satış. İyi bir pazar araştırmasının değeri, uygulanabilir bir giriş planına dönüşmesidir.
+            </p>
+            <p className="text-[14px] space-x-1">
+              <Link to={servicePath("turkiyede-sirket-kurulumu", false)} className="text-accent-500 font-semibold hover:underline">
+                Türkiye'de şirket kurulumu
+              </Link>
+              <span>·</span>
+              <Link to={contactPath(false)} className="text-accent-500 font-semibold hover:underline">
+                İletişim
+              </Link>
+            </p>
           </div>
-        )
-      }
+        ),
+      },
+      {
+        title: "Kimler İçin?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            <p>
+              Bu hizmet; ürün portföyü, üretim kapasitesi, marka veya net ticari hedefi olan şirketler içindir. Ticari potansiyeli ve hazırlık seviyesi düşük, tek ürünle “deneme” yaklaşımı taşıyan taleplerden ziyade, Rusya'yı ciddi değerlendiren firmalara odaklanırız.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Yerleşik markalar ve üreticiler</li>
+              <li>Ürün portföyü olan şirketler</li>
+              <li>Distribütör / ithalatçı / B2B alıcı arayan firmalar</li>
+              <li>B2B ve medikal / sağlık üreticileri</li>
+              <li>Yatırımdan önce Rusya'yı değerlendiren şirketler</li>
+            </ul>
+          </div>
+        ),
+      },
+      {
+        title: "Nasıl Çalışıyoruz?",
+        content: (
+          <div className="space-y-4 text-slate-600">
+            {[
+              { n: "01", t: "Ön Analiz", d: "Şirketinizi, ürünlerinizi ve Rusya hedefinizi değerlendiriyoruz." },
+              { n: "02", t: "Pazar Araştırması", d: "Ürün, kategori, rakip, fiyat ve pazar yapısını inceliyoruz." },
+              { n: "03", t: "Hedef Firma Araştırması", d: "Potansiyel alıcı, distribütör, ithalatçı ve ticari partnerleri araştırıyoruz." },
+              { n: "04", t: "Değerlendirme ve Ticari Geliştirme", d: "Uygun firmaları önceliklendiriyor ve proje kapsamına göre ticari iletişim sürecini destekliyoruz." },
+              { n: "05", t: "Pazara Giriş Stratejisi", d: "Elde edilen verilerle uygulanabilir bir Rusya pazar giriş modeli oluşturuyoruz." },
+            ].map((s) => (
+              <div key={s.n} className="flex gap-4 border-b border-slate-100 last:border-0 pb-4 last:pb-0">
+                <span className="font-extrabold text-accent-500 text-[18px] w-10 flex-shrink-0">{s.n}</span>
+                <div>
+                  <p className="font-bold text-primary-500">{s.t}</p>
+                  <p>{s.d}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        ),
+      },
     ],
-    faqs: []
-  }
+    faqs: [
+      {
+        q: "Rusya'da B2B pazar araştırması yapıyor musunuz?",
+        a: "Evet. Pazar, kategori, rakip ve kanal analizinin yanında B2B ticari fırsatları değerlendiriyor; araştırma → değerlendirme → ticari geliştirme mantığıyla çalışıyoruz.",
+      },
+      {
+        q: "Distribütör ve ithalatçı araştırması yapıyor musunuz?",
+        a: "Evet. Ürün ve sektöre uygun potansiyel alıcı, distribütör, ithalatçı, toptancı ve bayi adaylarını araştırıyoruz. Sabit firma sayısı veya garanti sonuç taahhüdü vermiyoruz.",
+      },
+      {
+        q: "Potansiyel firmaları nasıl değerlendiriyorsunuz?",
+        a: "Sektör uyumu, ürün uyumluluğu, iş modeli, pazar varlığı, dağıtım yapısı ve ticari uygunluk gibi kriterlerle değerlendiriyoruz. Gizli bilgilere erişim iddiasında bulunmuyoruz.",
+      },
+      {
+        q: "Rusya pazarına girmeden önce neden ön analiz yapılmalı?",
+        a: "Ön analiz; ticari potansiyeli, hazırlık seviyesini ve doğru satış modelini netleştirir. Yanlış kanal veya erken yatırımdan kaçınmaya yardımcı olur.",
+      },
+      {
+        q: "Medikal firmalar için Rusya pazar araştırması yapıyor musunuz?",
+        a: "Evet. Medikal cihaz, ekipman, sarf ve sağlık ürünlerinde B2B pazar geliştirme ve partner araştırması yapıyoruz. Resmi sertifikasyon veya hastane/kamu erişimi garantisi vermiyoruz.",
+      },
+      {
+        q: "B2B araştırması ile pazar araştırması arasındaki fark nedir?",
+        a: "Pazar araştırması kategori, rakip, fiyat ve kanal yapısını inceler. B2B araştırması ise hedef firmaları (alıcı, distribütör, ithalatçı vb.) tanımlar ve değerlendirmeye alır. İkisi birlikte çalışır.",
+      },
+      {
+        q: "Ticari görüşmelerin organize edilmesine destek oluyor musunuz?",
+        a: "Proje kapsamına ve karşılıklı mutabakata göre ticari iletişime ve uygun olduğunda görüşmelerin organize edilmesine destek verebiliriz. Görüşme veya anlaşma garantisi yoktur.",
+      },
+      {
+        q: "E-ticaret ve B2B satış modeli birlikte değerlendirilebilir mi?",
+        a: "Evet. Ürüne göre B2B, e-ticaret, pazaryeri veya hibrit modeller birlikte değerlendirilir. Operasyonel pazaryeri yönetimi için ilgili hizmet sayfamıza bakabilirsiniz.",
+      },
+    ],
+  },
 };

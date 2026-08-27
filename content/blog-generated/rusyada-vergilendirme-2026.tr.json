@@ -1,0 +1,597 @@
+{
+  "title": "Rusya'da Vergilendirme: Türk Markaları ve E-Ticaret Şirketleri İçin 2026 Rehberi",
+  "excerpt": "Rusya'da şirket ve e-ticaret vergileri nasıl hesaplanır? 2026 KDV, USN, kurumlar vergisi, ithalat ve marketplace vergilendirmesini Türk markaları için açıklıyoruz.",
+  "category": "vergi-finans",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Rusya'da şirket kuran, e-ticaret yapan veya marketplace üzerinden satış yapan Türk markaları hangi vergileri öder? KDV, kurumlar vergisi, USN ve ithalat vergileri nasıl çalışır?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya pazarına giren Türk markaları için en kritik konulardan biri sadece ne kadar satış yapılacağı değil, satıştan sonra işletmede ne kadar para kalacağıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Çünkü Rusya'da bir e-ticaret operasyonunun gerçek maliyeti yalnızca ürün maliyeti, marketplace komisyonu ve lojistikten oluşmaz. Vergi yapısı da ürünün gerçek kârlılığını doğrudan etkiler."
+    },
+    {
+      "type": "paragraph",
+      "text": "Özellikle Rusya'da şirket kurulması, ürünlerin ithal edilmesi, Wildberries veya Ozon gibi marketplace'ler üzerinden satış yapılması ve yerel bir operasyon oluşturulması durumunda farklı vergi yükümlülükleri ortaya çıkabilir. Ayrıca 2026 yılında Rusya vergi sisteminde önemli değişiklikler yürürlüğe girdi."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle internette yer alan ve %20 KDV oranını kullanan eski içerikler artık 2026 yılı için güncel kabul edilmemelidir. 1 Ocak 2026 itibarıyla Rusya'da genel KDV oranı %22'dir. [Nalog](https://www.nalog.gov.ru/new2026/)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu rehberde Rusya'daki temel vergi sistemini Türk markaları açısından ve özellikle e-ticaret operasyonlarında dikkat edilmesi gereken noktalar üzerinden ele alıyoruz."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Bu içerik genel bilgilendirme amacıyla hazırlanmıştır. Vergi yükümlülükleri şirketin hukuki yapısına, faaliyet alanına, gelir seviyesine, ürünlerine, ithalat modeline ve seçilen vergi rejimine göre değişebilir. Uygulamaya geçmeden önce Rusya'da yetkili muhasebeci veya vergi danışmanından profesyonel görüş alınmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da şirket kurduktan sonra hangi vergiler ortaya çıkar?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da şirket kurmak yalnızca tek bir vergi ödemek anlamına gelmez. Faaliyet modeline göre farklı vergi ve yükümlülükler ortaya çıkabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bir e-ticaret şirketi açısından öncelikle şu başlıklar değerlendirilmelidir:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "KDV",
+        "Kurumlar vergisi",
+        "USN ve diğer özel vergi rejimleri",
+        "Çalışanlar için sosyal sigorta primleri",
+        "İthalat KDV'si ve gümrük yükümlülükleri",
+        "Faaliyete ve ürüne göre diğer vergi ve ödemeler"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Buradaki temel nokta, vergi rejiminin şirket kuruluş aşamasından itibaren ticari model ile birlikte planlanmasıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aynı ürün, aynı satış fiyatı ve aynı marketplace operasyonu, seçilen vergi yapısına göre farklı net kârlılık yaratabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da 2026 yılında KDV oranı nedir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 yılı itibarıyla Rusya'da genel KDV oranı: **%22**"
+    },
+    {
+      "type": "paragraph",
+      "text": "1 Ocak 2026 itibarıyla oran %20'den %22'ye yükseltilmiştir. [Nalog](https://www.nalog.gov.ru/new2026/)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bununla birlikte mevzuatta belirli ürün ve işlemler için **%10 ve %0** gibi farklı KDV oranları da bulunmaktadır."
+    },
+    {
+      "type": "calloutBox",
+      "text": "\"Rusya'da KDV %22'dir.\" ifadesi genel oran açısından doğrudur ancak tüm ürün ve işlemlerde tek oranın uygulandığı anlamına gelmez."
+    },
+    {
+      "type": "paragraph",
+      "text": "E-ticaret şirketleri açısından ürün kategorisi ve işlemin niteliği ayrıca değerlendirilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "USN nedir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da küçük ve orta ölçekli işletmeler için önemli vergi rejimlerinden biri: **USN — Basitleştirilmiş Vergilendirme Sistemi**"
+    },
+    {
+      "type": "paragraph",
+      "text": "USN, Türkiye'deki \"basit usul\" sisteminin doğrudan karşılığı değildir. Temel USN seçenekleri:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Gelir üzerinden vergilendirme"
+    },
+    {
+      "type": "paragraph",
+      "text": "ve"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Gelir eksi gider üzerinden vergilendirme"
+    },
+    {
+      "type": "paragraph",
+      "text": "Temel federal oranlar:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "**%6 — gelir**",
+        "**%15 — gelir eksi gider**"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bölgesel mevzuat belirli faaliyetler için daha düşük oranlar uygulayabilir. [Nalog](https://www.nalog.gov.ru/rn77/taxation/taxes/vibor_sn/)"
+    },
+    {
+      "type": "calloutBox",
+      "text": "\"USN kullanıyoruz.\" demek tek başına gerçek vergi yükünü belirlemeye yetmez. Seçilen USN vergilendirme yöntemi ve bölgesel oranlar ayrıca değerlendirilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2026'da USN ve KDV açısından önemli değişiklik"
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 yılında Türk şirketleri açısından özellikle USN ve KDV arasındaki ilişki önem kazanmıştır. USN kullanan mükellefler için KDV kuralları değişmiştir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Önceki yıl geliri belirlenen eşik altında kalan şirketlerde belirli şartlarla KDV istisnası uygulanabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Belirlenen eşik aşıldığında KDV yükümlülüğü doğabilir. FNS'nin güncel açıklamalarına göre 2026 yılı için bu eşik **20 milyon RUB**'dur. [Nalog](https://www.nalog.gov.ru/rn77/taxation/taxes/nds_usn/)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dolayısıyla 2025 yılı geliri 20 milyon RUB'u aşan bir şirket için 2026 yılında KDV yükümlülüğü ortaya çıkabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da şirket kurarak marketplace operasyonuna başlamak isteyen bir marka için bu durum finansal modellemenin en baştan yapılmasını gerektirir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "USN kapsamında hangi KDV oranları uygulanır?"
+    },
+    {
+      "type": "paragraph",
+      "text": "USN mükellefinin KDV yükümlülüğü doğduğunda temel olarak iki yaklaşım bulunmaktadır."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Genel KDV oranları"
+    },
+    {
+      "type": "paragraph",
+      "text": "**%22 / %10 / %0**"
+    },
+    {
+      "type": "paragraph",
+      "text": "ve belirli şartlarda:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "USN için özel KDV oranları"
+    },
+    {
+      "type": "paragraph",
+      "text": "**%5 veya %7**. [Nalog](https://www.nalog.gov.ru/new2026/)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Burada önemli bir fark vardır. Genel KDV oranları kullanıldığında alışlarda ödenen KDV için indirim mekanizması uygulanabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "%5 veya %7 özel oranlarını kullanan USN mükelleflerinde bu mekanizma genel olarak aynı şekilde çalışmaz. FNS bu ayrımı ayrıca açıklamaktadır. [Nalog](https://www.nalog.gov.ru/new2026/)"
+    },
+    {
+      "type": "calloutBox",
+      "text": "\"%5 KDV daha düşük olduğu için otomatik olarak daha avantajlıdır.\" demek doğru değildir. Şirketin satın alma ve ithalat yapısı da birlikte değerlendirilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "20 milyon RUB eşiği neden önemli?"
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 yılı için USN kapsamında temel KDV istisna eşiği: **20 milyon RUB**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ancak bu eşik kalıcı değildir. FNS'nin güncel açıklamalarına göre:"
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "2026",
+          "value": "20 milyon RUB"
+        },
+        {
+          "label": "2027",
+          "value": "15 milyon RUB"
+        },
+        {
+          "label": "2028 ve sonrası",
+          "value": "10 milyon RUB"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "[Nalog](https://www.nalog.gov.ru/new2026/)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle bugün kurulacak bir şirket yalnızca 2026 vergi yükünü değil, sonraki yılları da modellemelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da kurumlar vergisi oranı nedir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 yılında genel kurumlar vergisi oranı: **%25**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bunun **%8'i** federal bütçeye, **%17'si** bölgesel bütçeye aktarılır. [Nalog](https://www.nalog.gov.ru/rn48/news/activities_fts/16594025/)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bazı şirketler, faaliyetler ve bölgeler için özel kurallar ve teşvikler uygulanabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle %25 oranı her şirket için değişmez tek oran olarak değerlendirilmemelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "USN mi genel vergi sistemi mi?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya pazarına giren Türk markalarının en sık karşılaşacağı sorulardan biri: \"USN mi kullanmalıyız yoksa genel vergi sistemiyle mi çalışmalıyız?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Bunun tek bir cevabı yoktur. Karar verilirken birlikte değerlendirilmesi gerekenler: **Ciro → Giderler → Ürün maliyeti → İthalat → İthalat KDV'si → Marketplace satışları → Çalışan maliyetleri → Kârlılık**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğin ithalat ve satın alma maliyetleri yüksek bir işletmede giriş KDV'sinin dikkate alınabilmesi önemli olabilir. Daha basit gider yapısına sahip bir işletmede farklı bir vergi rejimi ticari açıdan daha uygun olabilir."
+    },
+    {
+      "type": "calloutBox",
+      "text": "**En düşük vergi oranı her zaman en düşük toplam vergi maliyeti anlamına gelmez.**"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da e-ticaret şirketi için KDV nasıl hesaplanmalı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace operasyonlarında KDV'yi yalnızca \"Satışın %22'si\" olarak düşünmek doğru değildir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gerçek hesaplama şu şekilde değerlendirilmelidir: **Satış → Vergilendirilebilir işlem → KDV → İndirilecek KDV → Ödenecek KDV**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Özellikle Türkiye'den Rusya'ya ürün ithal eden şirketlerde ithalat sırasında ortaya çıkan KDV de finansal modele dahil edilmelidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "FNS, USN kapsamında KDV istisnasının bazı durumlarda ithalat sırasında ödenmesi gereken KDV'yi ortadan kaldırmadığını belirtmektedir. [Nalog](https://www.nalog.gov.ru/rn92/news/activities_fts/16595368/)"
+    },
+    {
+      "type": "calloutBox",
+      "text": "**\"USN kullanıyoruz, dolayısıyla KDV ödemiyoruz.\"** şeklindeki genel yaklaşım doğru değildir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "İthalat KDV'si ile satış KDV'si farklı aşamalardır"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya pazarına giren Türk markaları açısından bu ayrım özellikle önemlidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ürün Türkiye'den Rusya'ya ithal edildiğinde **Türkiye → Gümrük → Rusya'ya ithalat** aşamasında farklı gümrük ve vergi yükümlülükleri ortaya çıkar."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ardından **Rusya'daki şirket → Marketplace → Son tüketici** satış gerçekleşir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dolayısıyla ithalat aşamasındaki vergi yükü ile Rusya içindeki satıştan doğan KDV aynı işlem değildir. İkisi ayrı olarak modellenmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Marketplace komisyonu vergi hesabının yerine geçmez"
+    },
+    {
+      "type": "paragraph",
+      "text": "Türk markaları açısından bir diğer önemli konu budur. Örneğin **1.000.000 RUB satış** yapıldığında marketplace **150.000 RUB** komisyon aldı. Şirkete **850.000 RUB** kaldı."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Ancak bu otomatik olarak **850.000 RUB vergilendirilebilir kâr** anlamına gelmez."
+    },
+    {
+      "type": "bulletList",
+      "title": "Ayrıca dikkate alınması gerekenler",
+      "items": [
+        "Ürün maliyeti",
+        "Lojistik",
+        "Depolama",
+        "Reklam",
+        "İthalat maliyetleri",
+        "Çalışan giderleri",
+        "Diğer giderler",
+        "Seçilen vergi rejimi"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle Rusya'daki e-ticaret operasyonlarında marketplace finansal raporları muhasebe ve vergi kayıtlarıyla birlikte değerlendirilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Çalışanlar için sosyal sigorta primleri"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da çalışan istihdam eden şirketler için maaş vergilerinin yanında işveren sosyal sigorta yükümlülükleri de bulunmaktadır."
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 yılında genel sosyal sigorta primi oranı: **%30**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Belirlenen yıllık matrahın üzerindeki ödemeler için **%15,1** oranı uygulanır. 2026 yılında tek çalışan için ortak üst sınır **2.979.000 RUB**'dur. [Nalog](https://www.nalog.gov.ru/rn50/news/activities_fts/16626179/)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bazı sektörler ve şirketler için indirimli oranlar uygulanabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle Rusya'da çalışan istihdam edecek Türk markaları personel maliyetini hesaplarken yalnızca çalışanın net veya brüt maaşını dikkate almamalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da e-ticaret için vergiler nasıl hesaplanmalı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bir ürünün gerçek kârlılığını belirlemek için yalnızca satış fiyatına bakmak yeterli değildir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğin: **Satış (1.000 RUB) → Marketplace maliyetleri (komisyon, lojistik, depolama, reklam) → Ürün maliyeti → İthalat maliyetleri → Operasyonel giderler → Vergiler → Net kâr**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle ürün Rusya'ya gönderilmeden önce **vergi dahil ürün bazlı kârlılık modeli** oluşturulmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Türk markaları için basit vergi rejimi karşılaştırması"
+    },
+    {
+      "type": "bulletList",
+      "title": "USN vs Genel Sistem",
+      "items": [
+        "**Amaç:** USN — Daha basit yapı | Genel Sistem — Daha kapsamlı vergi sistemi",
+        "**Temel vergi:** USN — %6 veya %15 | Genel Sistem — Genel kurumlar vergisi %25",
+        "**KDV:** USN — Gelir ve şartlara göre istisna / %5 / %7 / genel oranlar | Genel Sistem — Genel KDV sistemi",
+        "**Giriş KDV'si indirimi:** USN — Seçilen KDV yöntemine bağlı | Genel Sistem — Genel sistem kapsamında uygulanabilir",
+        "**Muhasebe:** USN — Görece daha basit | Genel Sistem — Daha kapsamlı",
+        "**Marketplace operasyonu:** USN — Uygun olabilir | Genel Sistem — Daha büyük operasyonlarda değerlendirilebilir",
+        "**İthalat:** USN — Ayrı değerlendirme gerekir | Genel Sistem — Ayrı değerlendirme gerekir"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "USN oranları ve KDV uygulamaları şirketin durumuna ve güncel mevzuata göre değişebildiği için bu tablo tek başına karar verme aracı olarak kullanılmamalıdır. [Nalog](https://www.nalog.gov.ru/new2026/)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Türk markalarının Rusya e-ticaretinde yaptığı en yaygın vergi hataları"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. Sadece marketplace komisyonuna bakmak"
+    },
+    {
+      "type": "paragraph",
+      "text": "Gerçek vergi ve operasyon maliyeti bundan daha geniştir."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. Eski KDV oranlarını kullanmak"
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 itibarıyla genel KDV oranı **%22**'dir. [Nalog](https://www.nalog.gov.ru/new2026/)"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. USN'nin otomatik olarak KDV'siz olduğunu düşünmek"
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 yılında USN ve KDV ilişkisi değişmiştir. Gelir eşikleri ve seçilen KDV yöntemi ayrıca değerlendirilmelidir. [Nalog](https://www.nalog.gov.ru/rn77/taxation/taxes/nds_usn/)"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4. İthalat KDV'sini hesaba katmamak"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'ya ürün ithal eden şirketlerde ithalat aşamasındaki vergi yükü modele dahil edilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5. Vergi oranı ile kârlılığı karıştırmak"
+    },
+    {
+      "type": "paragraph",
+      "text": "Düşük %5 veya %6 oranı otomatik olarak daha düşük toplam işletme maliyeti anlamına gelmez."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "6. Vergi rejimini şirket kurulduktan sonra planlamak"
+    },
+    {
+      "type": "paragraph",
+      "text": "Şirket yapısı, vergi rejimi, marketplace ve lojistik tek bir ticari model olarak planlanmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Türk markası Rusya'ya girmeden önce hangi vergi analizini yapmalı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Önerilen sıra:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. Satış modeli"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da satıcı kim olacak?"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. Şirket yapısı"
+    },
+    {
+      "type": "paragraph",
+      "text": "OOO / başka yapı?"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. Vergi rejimi"
+    },
+    {
+      "type": "paragraph",
+      "text": "USN / genel sistem?"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4. KDV"
+    },
+    {
+      "type": "paragraph",
+      "text": "İstisna / %5 / %7 / %22 / uygulanabilir diğer oranlar?"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5. İthalat"
+    },
+    {
+      "type": "paragraph",
+      "text": "Gümrük vergileri + ithalat KDV'si + diğer maliyetler"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "6. Marketplace"
+    },
+    {
+      "type": "paragraph",
+      "text": "Komisyon + lojistik + depolama + reklam"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "7. Çalışanlar"
+    },
+    {
+      "type": "paragraph",
+      "text": "Maaş + işveren primleri"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "8. Kârlılık"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Ürün / kanal / dönem bazında net kâr**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu sıralama vergilendirmeyi yalnızca muhasebenin konusu olmaktan çıkarıp Rusya pazarına giriş stratejisinin bir parçası haline getirir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sonuç: Vergi oranını değil, vergi modelini hesaplayın"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da e-ticaret yapmak isteyen Türk markaları için asıl soru **\"Hangi vergi oranı daha düşük?\"** değildir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Asıl soru: **\"Ürünüm, satış modelim, ithalat yapım ve marketplace operasyonum için toplam vergi yükünü doğru yönetmemi sağlayacak yapı hangisi?\"**"
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 yılında yapılan **%22 KDV oranı**, **USN için 20 milyon RUB KDV eşiği**, **%5/%7 özel KDV oranları** ve **%25 genel kurumlar vergisi oranı** gibi değişiklikler, eski vergi hesaplarının 2026 yılına otomatik olarak uygulanamayacağını gösteriyor. [Nalog](https://www.nalog.gov.ru/new2026/)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle Rusya pazarına giren Türk markaları için **Şirket → Vergi rejimi → İthalat → Marketplace → Lojistik → Kârlılık** tek bir bütün olarak planlanmalıdır."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Rusya operasyonunuz için doğru vergi ve finansal modeli oluşturmak ister misiniz?",
+      "text": "Russia Market Entry olarak Rusya pazarına giren Türk markaları için **şirket yapısı, ithalat, marketplace, lojistik ve ticari operasyonları** birlikte değerlendiriyoruz. Rusya operasyonunuz için doğru vergi ve finansal modeli oluşturmak ister misiniz? **Bizimle iletişime geçin.**"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { getBlogCategory } from "../data/blogCategories";
 
 export type ContentBlock =
@@ -14,6 +15,38 @@ interface BlockRendererProps {
 
 function isNonEmptyString(v: unknown): v is string {
   return typeof v === "string" && v.trim().length > 0;
+}
+
+/** Renders plain text with [label](url) links and **bold** spans. */
+function renderInlineText(text: string) {
+  const parts: (string | JSX.Element)[] = [];
+  const re = /(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*)/g;
+  let last = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+  while ((match = re.exec(text)) !== null) {
+    if (match.index > last) parts.push(text.slice(last, match.index));
+    const token = match[0];
+    const link = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(token);
+    if (link) {
+      parts.push(
+        <a
+          key={key++}
+          href={link[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary-600 hover:text-accent-500 underline underline-offset-2"
+        >
+          {link[1]}
+        </a>
+      );
+    } else {
+      parts.push(<strong key={key++}>{token.slice(2, -2)}</strong>);
+    }
+    last = match.index + token.length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts.length > 0 ? parts : text;
 }
 
 // Defense in depth: re-validate against the whitelist schema at render time too,
@@ -102,7 +135,7 @@ export default function BlockRenderer({ blocks, category }: BlockRendererProps) 
           case "paragraph":
             return (
               <p key={i} className="text-lg leading-relaxed text-slate-600">
-                {block.text}
+                {renderInlineText(block.text)}
               </p>
             );
           case "bulletList":
@@ -115,7 +148,7 @@ export default function BlockRenderer({ blocks, category }: BlockRendererProps) 
                   {block.items.map((item, j) => (
                     <li key={j} className="flex items-start gap-3 text-slate-700">
                       <span className={`mt-2 w-2 h-2 rounded-full flex-shrink-0 ${cat.bulletClass}`} />
-                      <span>{item}</span>
+                      <span>{renderInlineText(item)}</span>
                     </li>
                   ))}
                 </ul>
@@ -127,7 +160,7 @@ export default function BlockRenderer({ blocks, category }: BlockRendererProps) 
                 {block.title && (
                   <h3 className={`text-lg font-bold ${cat.accentClass} mb-2`}>{block.title}</h3>
                 )}
-                <p className="text-slate-700 leading-relaxed">{block.text}</p>
+                <p className="text-slate-700 leading-relaxed">{renderInlineText(block.text)}</p>
               </div>
             );
           case "statGrid":
