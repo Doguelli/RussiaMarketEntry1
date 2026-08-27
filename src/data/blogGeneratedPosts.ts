@@ -106,9 +106,9 @@ export const generatedBlogPosts: BlogPost[] = Object.entries(mdFiles).map(([file
 
   const post: BlogPost = {
     slug,
-    metaTitle: base?.title || "",
-    metaTitleEn: perLang.en?.title,
-    metaTitleRu: perLang.ru?.title,
+    metaTitle: data.tr?.metaTitle || base?.title || "",
+    metaTitleEn: data.en?.metaTitle || perLang.en?.title,
+    metaTitleRu: data.ru?.metaTitle || perLang.ru?.title,
     title: base?.title || "",
     titleEn: perLang.en?.title,
     titleRu: perLang.ru?.title,
