@@ -7,6 +7,7 @@ import { serviceDetails } from "../data/servicesData";
 import { serviceDetailsEN } from "../data/servicesDataEN";
 import { serviceDetailsRU } from "../data/servicesDataRU";
 import { createBreadcrumbSchema, createServiceSchema, createFaqSchema } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
 import {
   resolveServiceId,
   servicePath as localizedServicePath,
@@ -71,10 +72,7 @@ export default function ServiceDetail() {
         <link rel="alternate" hrefLang="tr" href={trServiceUrl} />
         <link rel="alternate" hrefLang="ru" href={ruServiceUrl} />
         <link rel="alternate" hrefLang="x-default" href={trServiceUrl} />
-        <meta property="og:title" content={service.metaTitle} />
-        <meta property="og:description" content={service.metaDescription} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="website" />
+        {socialMetaElements({ title: service.metaTitle, description: service.metaDescription, url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}

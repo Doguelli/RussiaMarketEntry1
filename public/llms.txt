@@ -1,6 +1,16 @@
 # Russia Market Entry
 
-Russia Market Entry, Türkiye'deki markaların ve üreticilerin Rusya e-ticaret pazarına (Wildberries, Ozon, Lamoda vb.) doğru, hızlı ve sürdürülebilir şekilde girmesini sağlayan; şirket kuruluşu, gümrük, lojistik, sertifikasyon ve pazaryeri operasyonlarında uçtan uca hizmet veren bir e-ticaret operasyon ve danışmanlık platformudur.
+Russia Market Entry, Türkiye'deki markaların ve üreticilerin Rusya pazarına (e-ticaret, B2B, medikal, pazaryeri operasyonları) doğru, hızlı ve sürdürülebilir şekilde girmesini sağlayan; şirket kuruluşu, gümrük, lojistik, sertifikasyon ve pazaryeri operasyonlarında uçtan uca hizmet veren Türkiye–Rusya odaklı bir danışmanlık ve operasyon platformudur.
+
+## Ana Sayfalar
+- [Ana Sayfa](https://russiamarketentry.com/)
+- [Rusya Pazarı](https://russiamarketentry.com/rusya-pazari)
+- [Operasyon Modeli](https://russiamarketentry.com/operasyon-modeli)
+- [Hizmetler](https://russiamarketentry.com/hizmetler)
+- [Blog (TR)](https://russiamarketentry.com/blog)
+- [Blog (EN)](https://russiamarketentry.com/en/blog)
+- [Blog (RU)](https://russiamarketentry.com/ru/blog)
+- [İletişim](https://russiamarketentry.com/iletisim)
 
 ## Hizmetlerimiz
 - [Operasyon Kurulumu](https://russiamarketentry.com/hizmetler/operasyon-kurulumu): Rusya pazarına giriş için lokal şirket kurulumu, banka hesabı, yerel adres ve tüm altyapı hazırlıkları.
@@ -9,9 +19,22 @@ Russia Market Entry, Türkiye'deki markaların ve üreticilerin Rusya e-ticaret 
 - [Sistem ve Entegrasyon](https://russiamarketentry.com/hizmetler/sistem-ve-entegrasyon): Insales ve pazaryeri entegrasyonları ile sipariş, stok ve fiyat yönetimini tek panelden yürütme.
 - [Marka Büyütme](https://russiamarketentry.com/hizmetler/marka-buyutme): Pazarlama, performans yönetimi, influencer birliktelikleri ve sürdürülebilir satış artırma stratejileri.
 - [Vergi ve Finans](https://russiamarketentry.com/hizmetler/vergi-ve-finans): Rusya mevzuatına uygun vergi planlaması, muhasebe yönetimi ve güvenli kâr transferi.
+- [Pazar Araştırması ve Strateji](https://russiamarketentry.com/hizmetler/pazar-arastirmasi-ve-strateji): B2B partner geliştirme, distribütör bulma ve pazar giriş stratejisi.
+- [İthalat ve Gümrük Yönetimi](https://russiamarketentry.com/hizmetler/ithalat-ve-gumruk-yonetimi): Türkiye–Rusya ithalat, gümrük ve uyum süreçleri.
+- [Türkiye'de Şirket Kurulumu](https://russiamarketentry.com/hizmetler/turkiyede-sirket-kurulumu): Türkiye'de şirket kurulumu ve operasyon altyapısı.
+- [Medikal ve Sağlık](https://russiamarketentry.com/hizmetler/medikal-ve-saglik): Medikal ürün ve sağlık sektörü firmaları için Rusya pazarına giriş ve operasyon.
+
+## Rusça İçerik (RU)
+- [Главная RU](https://russiamarketentry.com/ru)
+- [Рынок России](https://russiamarketentry.com/ru/rynok-rossii)
+- [Модель работы](https://russiamarketentry.com/ru/model-raboty)
+- [Медицина и здравоохранение](https://russiamarketentry.com/ru/uslugi/meditsina-i-zdravoohranenie)
+- [Регистрация компании в Турции](https://russiamarketentry.com/ru/kompaniya-v-turtsii)
+- [Блог RU](https://russiamarketentry.com/ru/blog): Rusça-only uzman içerikler (Türkiye'de şirket kurulumu, banka hesabı, VNЖ, Türkiye–Rusya ticareti vb.)
 
 ## Operasyon Modeli Özeti
 - **Konsinye Satış Modeli**: Üreticilerin ve markaların Rusya'da şirket kurma zorunluluğu olmadan pazara girmesini sağlayan, riski ve başlangıç maliyetini en aza indiren iş modeli.
+- **Operasyon Dashboard**: Satış, kârlılık, fiyatlandırma ve pazaryeri ödeme takibi için first-party operasyon panelleri (Operasyon Modeli sayfasında).
 - **Kârlılık Hedefi**: Doğru fiyatlandırma ve verimlilik yönetimi ile ortalama %20–25 net kârlılık hedeflenmektedir.
 - **Finansal Döngü**: Satış gerçekleştikçe 15 günlük düzenli periyotlarla şeffaf raporlama ve ödeme aktarımı sağlanır.
 - **Çestniy Znak ve Sertifikasyon**: Tekstil, ayakkabı, kozmetik gibi kategorilerde zorunlu olan dijital ürün izlenebilirlik (DataMatrix) ve EAC sertifikasyon süreçleri uçtan uca üstlenilir.
@@ -26,5 +49,9 @@ Russia Market Entry, Türkiye'deki markaların ve üreticilerin Rusya e-ticaret 
 - Web Sitesi: https://russiamarketentry.com
 - E-posta: hello@russiamarketentry.com
 - İletişim Formu: https://russiamarketentry.com/iletisim
+- LinkedIn: https://www.linkedin.com/company/russia-market-entry
 - Kayıtlı (yasal) adres: 423571, Республика Татарстан, Нижнекамский район, г. Нижнекамск, проспект Мира, д. 50, кв. 179, Россия
 - Moskova operasyon / fulfillment: Podolsk, Domodedovskoye Shosse 20
+
+## Sitemap
+- Build sırasında otomatik üretilir: https://russiamarketentry.com/sitemap.xml

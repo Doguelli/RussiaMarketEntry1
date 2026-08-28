@@ -18,6 +18,7 @@ import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import CompanyInTurkey from "./pages/CompanyInTurkey";
 import LegalDocument from "./pages/LegalDocument";
+import BackToTop from "./components/BackToTop";
 import WhatsAppButton from "./components/WhatsAppButton";
 import AnalyticsTracker from "./components/AnalyticsTracker";
 import {
@@ -222,6 +223,7 @@ export default function AppRoutes() {
           </Routes>
         </div>
         <Footer />
+        <BackToTop />
         <WhatsAppButton />
       </div>
     </>

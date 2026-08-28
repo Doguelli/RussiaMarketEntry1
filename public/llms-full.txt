@@ -70,16 +70,37 @@ URL: https://russiamarketentry.com/hizmetler/vergi-ve-finans
 - Çifte vergilendirmeyi önleme anlaşmaları çerçevesinde yasal kâr transferi.
 - Bütçe, birim ekonomi maliyet analizi ve şeffaf 15 günlük ödeme raporlaması.
 
+7) PAZAR ARAŞTIRMASI VE STRATEJİ (B2B)
+URL: https://russiamarketentry.com/hizmetler/pazar-arastirmasi-ve-strateji
+- B2B partner geliştirme, distribütör bulma ve pazar giriş stratejisi.
+
+8) İTHALAT VE GÜMRÜK YÖNETİMİ
+URL: https://russiamarketentry.com/hizmetler/ithalat-ve-gumruk-yonetimi
+- Türkiye–Rusya ithalat, gümrük beyannamesi ve uyum süreçleri.
+
+9) TÜRKİYE'DE ŞİRKET KURULUMU
+URL: https://russiamarketentry.com/hizmetler/turkiyede-sirket-kurulumu
+- Türkiye'de şirket kurulumu ve operasyon altyapısı.
+
+10) MEDİKAL VE SAĞLIK
+URL: https://russiamarketentry.com/hizmetler/medikal-ve-saglik
+- Medikal ürün ve sağlık sektörü firmaları için Rusya pazarına giriş, regülasyon ve operasyon.
+RU URL: https://russiamarketentry.com/ru/uslugi/meditsina-i-zdravoohranenie
+
 ================================================================================
 4. OPERASYON MODELİ
 ================================================================================
 URL: https://russiamarketentry.com/operasyon-modeli
+RU URL: https://russiamarketentry.com/ru/model-raboty
 
 Konsinye Satış Modeli:
 - Şirket kurma zorunluluğu ve hukuki risk olmadan Rusya pazarına giriş sağlarsınız.
 - Ürünlerinizi bize gönderirsiniz, biz Rusya depolarımızda teslim alır ve satışa açarız.
 - Satış gerçekleştikçe 15 günlük periyotlarla net kârınız banka hesabınıza aktarılır.
 - Şeffaf birim ekonomi hesabı: Ortalama %20-25 net kârlılık hedeflenmektedir.
+
+Operasyon Dashboard (first-party):
+- Satış/kârlılık özeti, ürün analitiği, fiyatlandırma ve Wildberries ödeme takibi panelleri.
 
 ================================================================================
 5. HANGİ SEKTÖRLER İÇİN? (KİMLER İÇİN?)
@@ -136,6 +157,18 @@ FBO ve FBS modelleri, veriye dayalı stok tahmini ve stok tükenmesinin önlenme
 9) Çestniy Znak Nedir? Rusya'da Hangi Ürünlerde Zorunludur? (2026 Güncel Rehber)
 URL: https://russiamarketentry.com/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur
 Dijital izlenebilirlik sistemi, DataMatrix kodlama süreçleri, gümrük ve etiketleme zorunlulukları.
+
+================================================================================
+6b. RUSÇA BLOG (RU-ONLY)
+================================================================================
+URL kökü: https://russiamarketentry.com/ru/blog
+
+Rusça-only uzman içerikler: Türkiye'de şirket kurulumu (Limited Şirket), banka hesabı açılışı,
+VNЖ/İkamet, Türkiye vergileri, Türkiye–Rusya ticaret ve lojistik, Wildberries/Ozon export.
+
+Örnek URL'ler:
+- https://russiamarketentry.com/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026
+- https://russiamarketentry.com/ru/kompaniya-v-turtsii (Регистрация компании в Тurции landing)
 
 ================================================================================
 7. İLETİŞİM

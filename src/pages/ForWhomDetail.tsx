@@ -7,6 +7,7 @@ import { forWhomData } from "../data/forWhomData";
 import { forWhomDataEN } from "../data/forWhomDataEN";
 import { forWhomDataRU } from "../data/forWhomDataRU";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
 import {
   resolveForWhomSlug,
   forWhomPath,
@@ -55,10 +56,11 @@ export default function ForWhomDetail() {
         <link rel="alternate" hrefLang="tr" href={absoluteUrl(forWhomDetailPath(slug, false))} />
         <link rel="alternate" hrefLang="ru" href={absoluteUrl(forWhomDetailPath(slug, true))} />
         <link rel="alternate" hrefLang="x-default" href={absoluteUrl(forWhomDetailPath(slug, false))} />
-        <meta property="og:title" content={`${data.title} | Russia Market Entry`} />
-        <meta property="og:description" content={data.description} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="website" />
+        {socialMetaElements({
+          title: `${data.title} | Russia Market Entry`,
+          description: data.description,
+          url: canonicalUrl,
+        })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 

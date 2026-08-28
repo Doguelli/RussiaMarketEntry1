@@ -23,4 +23,5 @@
 /ru/iletisim                                  /ru/kontakty                             301!
 
 /admin/*  /admin/index.html  200
-/* /index.html 200
+# Valid routes are prerendered as static files. Unknown paths return a real 404.
+/*  /404.html  404

@@ -19,7 +19,9 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-import { createOrganizationSchema, createBreadcrumbSchema, createFaqSchema } from "@/utils/seo";
+import { createOrganizationSchema, createBreadcrumbSchema, createFaqSchema, createWebSiteSchema } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
+import { blogDetailPath, type BlogLang } from "@/utils/blogLanguages";
 import {
   aboutPath,
   contactPath,
@@ -31,12 +33,15 @@ import {
   russiaMarketPath,
 } from "@/utils/ruPaths";
 
+const MEDICAL_SERVICE_ID = "medikal-ve-saglik";
+
 export default function Home() {
   const { t, i18n } = useTranslation();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const isRu = i18n.language === "ru";
   const isEn = i18n.language === "en";
+  const blogLang: BlogLang = isRu ? "ru" : isEn ? "en" : "tr";
   const blogIndexPath = isRu ? "/ru/blog" : isEn ? "/en/blog" : "/blog";
 
   const breadcrumbSchema = createBreadcrumbSchema([
@@ -60,10 +65,9 @@ export default function Home() {
       desc: t("home.services.b2b_desc"),
     },
     {
-      id: "pazar-arastirmasi-ve-strateji",
+      id: MEDICAL_SERVICE_ID,
       title: t("home.services.medical"),
       desc: t("home.services.medical_desc"),
-      key: "medical",
     },
     {
       id: "operasyon-kurulumu",
@@ -136,7 +140,9 @@ export default function Home() {
     ],
     url: homePath(isRu),
   });
+  const websiteSchema = createWebSiteSchema({ url: homePath(isRu) });
   const faqSchema = createFaqSchema(faqs);
+  const canonicalHomeUrl = isRu ? "https://russiamarketentry.com/ru" : "https://russiamarketentry.com/";
 
   const b2bItems = [
     t("home.b2b_li1"),
@@ -166,17 +172,15 @@ export default function Home() {
         <title>{metaTitle}</title>
         <meta name="description" content={metaDesc} />
         <meta name="keywords" content={metaKeywords} />
-        <link rel="canonical" href={isRu ? "https://russiamarketentry.com/ru" : "https://russiamarketentry.com/"} />
+        <link rel="canonical" href={canonicalHomeUrl} />
         {/* No en alternate: English is served from the Turkish URL, so it has
             no distinct URL of its own to advertise. */}
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/" />
-        <meta property="og:title" content={metaTitle} />
-        <meta property="og:description" content={metaDesc} />
-        <meta property="og:url" content={isRu ? "https://russiamarketentry.com/ru" : "https://russiamarketentry.com/"} />
-        <meta property="og:type" content="website" />
+        {socialMetaElements({ title: metaTitle, description: metaDesc, url: canonicalHomeUrl })}
         <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
@@ -210,8 +214,11 @@ export default function Home() {
                 <br />
                 <span className="text-accent-500">{t("home.title2")}</span>
               </h1>
-              <p className="text-[15px] lg:text-[18px] text-slate-300 max-w-[550px] leading-relaxed mb-6 md:mb-8 font-medium">
+              <p className="text-[15px] lg:text-[18px] text-slate-300 max-w-[550px] leading-relaxed mb-3 md:mb-4 font-medium">
                 {t("home.desc")}
+              </p>
+              <p className="text-[13px] lg:text-[15px] text-slate-400 max-w-[550px] leading-relaxed mb-6 md:mb-8">
+                {t("home.entity_definition")}
               </p>
 
               <Link to={contactPath(isRu)} className={ctaHero}>
@@ -313,12 +320,14 @@ export default function Home() {
                   accent: "#CB11AB",
                   soft: "rgba(203, 17, 171, 0.08)",
                   mark: "linear-gradient(180deg, #CB11AB 0%, #8B1FA8 100%)",
+                  blogSlug: "wildberriesde-satis-yapmak",
                 },
                 {
                   name: "Ozon",
                   accent: "#005BFF",
                   soft: "rgba(0, 91, 255, 0.07)",
                   mark: "#005BFF",
+                  blogSlug: "ozonda-satis-yapmak",
                 },
                 {
                   name: "Yandex Market",
@@ -331,6 +340,7 @@ export default function Home() {
                   accent: "#1A1A1A",
                   soft: "rgba(26, 26, 26, 0.05)",
                   mark: "#1A1A1A",
+                  blogSlug: "lamodaya-nasil-girilir",
                 },
                 {
                   name: "Yandex Ads",
@@ -351,35 +361,58 @@ export default function Home() {
                   mark: "#229ED9",
                   wide: true,
                 },
-              ].map((platform) => (
-                <div
-                  key={platform.name}
-                  className={`group relative bg-white border border-slate-100 rounded-2xl p-4 md:p-5 shadow-sm flex items-center justify-center text-center overflow-hidden transition-all duration-[225ms] ease-out hover:shadow-md hover:-translate-y-0.5 hover:border-[color:var(--platform-accent)] hover:bg-[color:var(--platform-soft)] ${
-                    platform.wide ? "col-span-2" : ""
-                  }`}
-                  style={
-                    {
-                      "--platform-accent": platform.accent,
-                      "--platform-soft": platform.soft,
-                      "--platform-mark": platform.mark,
-                    } as CSSProperties
-                  }
-                >
-                  <span
-                    aria-hidden
-                    className="absolute left-0 top-0 bottom-0 w-[3px]"
-                    style={{ background: platform.mark }}
-                  />
-                  <span
-                    aria-hidden
-                    className="absolute top-3 right-3 w-2 h-2 rounded-full opacity-70 transition-opacity group-hover:opacity-100"
-                    style={{ background: platform.accent }}
-                  />
-                  <span className="font-bold text-primary-500 text-[14px] sm:text-[16px] tracking-tight">
-                    {platform.name}
-                  </span>
-                </div>
-              ))}
+              ].map((platform) => {
+                const chipClass = `group relative bg-white border border-slate-100 rounded-2xl p-4 md:p-5 shadow-sm flex items-center justify-center text-center overflow-hidden transition-all duration-[225ms] ease-out hover:shadow-md hover:-translate-y-0.5 hover:border-[color:var(--platform-accent)] hover:bg-[color:var(--platform-soft)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-300 ${
+                  platform.wide ? "col-span-2" : ""
+                }`;
+                const chipStyle = {
+                  "--platform-accent": platform.accent,
+                  "--platform-soft": platform.soft,
+                  "--platform-mark": platform.mark,
+                } as CSSProperties;
+                const chipInner = (
+                  <>
+                    <span
+                      aria-hidden
+                      className="absolute left-0 top-0 bottom-0 w-[3px]"
+                      style={{ background: platform.mark }}
+                    />
+                    <span
+                      aria-hidden
+                      className="absolute top-3 right-3 w-2 h-2 rounded-full opacity-70 transition-opacity group-hover:opacity-100"
+                      style={{ background: platform.accent }}
+                    />
+                    {"blogSlug" in platform && platform.blogSlug ? (
+                      <ArrowRight
+                        aria-hidden
+                        className="absolute bottom-3 right-3 w-4 h-4 text-primary-400 opacity-0 -translate-x-1 transition-all duration-[225ms] ease-out group-hover:opacity-100 group-hover:translate-x-0"
+                      />
+                    ) : null}
+                    <span className="font-bold text-primary-500 text-[14px] sm:text-[16px] tracking-tight">
+                      {platform.name}
+                    </span>
+                  </>
+                );
+
+                if ("blogSlug" in platform && platform.blogSlug) {
+                  return (
+                    <Link
+                      key={platform.name}
+                      to={blogDetailPath(platform.blogSlug, blogLang)}
+                      className={chipClass}
+                      style={chipStyle}
+                    >
+                      {chipInner}
+                    </Link>
+                  );
+                }
+
+                return (
+                  <div key={platform.name} className={chipClass} style={chipStyle}>
+                    {chipInner}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -424,14 +457,14 @@ export default function Home() {
             <p className="text-[16px] md:text-[18px] text-slate-500 leading-relaxed">{t("home.what_we_do_desc")}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            {services.map((service, i) => (
-              <Link to={servicePath(service.id, isRu)} key={(service as { key?: string }).key || `${service.id}-${i}`}>
+            {services.map((service, i) => {
+              const card = (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.05, duration: 0.4 }}
-                  className={`bg-white p-5 md:p-7 rounded-2xl shadow-sm border border-slate-100 cursor-pointer h-full group flex flex-col ${interactiveCardHover}`}
+                  className={`bg-white p-5 md:p-7 rounded-2xl shadow-sm border border-slate-100 h-full flex flex-col cursor-pointer group ${interactiveCardHover}`}
                 >
                   <h3 className="text-[18px] md:text-[20px] font-bold text-primary-500 mb-2 md:mb-3 flex justify-between items-center gap-3">
                     <span>{service.title}</span>
@@ -439,8 +472,14 @@ export default function Home() {
                   </h3>
                   <p className="text-slate-500 text-[14px] md:text-[15px] leading-relaxed flex-grow">{service.desc}</p>
                 </motion.div>
-              </Link>
-            ))}
+              );
+
+              return (
+                <Link to={servicePath(service.id, isRu)} key={`${service.id}-${i}`} className="block h-full">
+                  {card}
+                </Link>
+              );
+            })}
           </div>
           <div className="mt-8 text-center">
             <Link to={servicesPath(isRu)} className={ctaLink}>
@@ -469,7 +508,10 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="bg-slate-50 border border-slate-100 rounded-2xl p-5 md:p-6">
+            <Link
+              to={operationModelPath(isRu)}
+              className={`block bg-slate-50 border border-slate-100 rounded-2xl p-5 md:p-6 ${interactiveCardHover}`}
+            >
               <div className="inline-flex items-center gap-2 text-primary-500 font-bold text-[13px] uppercase tracking-wider mb-3">
                 <Globe2 className="w-4 h-4 text-accent-500" /> {t("home.corridor_title")}
               </div>
@@ -482,7 +524,7 @@ export default function Home() {
                   </span>
                 ))}
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -566,7 +608,7 @@ export default function Home() {
             {whyUs.map((item, i) => (
               <div
                 key={i}
-                className={`bg-white border border-slate-100 rounded-2xl p-5 md:p-7 shadow-sm ${interactiveCardHover}`}
+                className="bg-white border border-slate-100 rounded-2xl p-5 md:p-7 shadow-sm"
               >
                 <div className="text-primary-400 font-extrabold text-[14px] mb-2">0{i + 1}</div>
                 <h3 className="text-[18px] md:text-[20px] font-bold text-primary-500 mb-2 md:mb-3">{item.title}</h3>

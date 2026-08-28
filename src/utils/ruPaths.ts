@@ -39,6 +39,7 @@ export const SERVICE_ID_TO_RU_SLUG: Record<string, string> = {
   "turkiyede-sirket-kurulumu": "registratsiya-biznesa-v-turtsii",
   "ithalat-ve-gumruk-yonetimi": "import-i-tamozhnya",
   "pazar-arastirmasi-ve-strateji": "issledovanie-rynka",
+  "medikal-ve-saglik": "meditsina-i-zdravoohranenie",
 };
 
 export const RU_SLUG_TO_SERVICE_ID: Record<string, string> = Object.fromEntries(

@@ -2,18 +2,76 @@ import { motion } from "motion/react";
 import { Helmet } from "react-helmet-async";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
+import ImageLightbox from "@/components/ImageLightbox";
 import {
   operationModelPath,
   absoluteUrl,
   homePath,
   contactPath,
   servicePath,
+  forWhomDetailPath,
 } from "@/utils/ruPaths";
+
+const MEDICAL_SERVICE_ID = "medikal-ve-saglik";
+
+const cardLinkHover =
+  "relative z-10 transition-all duration-[225ms] ease-out hover:-translate-y-1 hover:shadow-md hover:border-primary-200/80 cursor-pointer block h-full";
+
+type LinkedCard = {
+  id: string;
+  title: string;
+  desc: string;
+  to: string;
+};
+
+type StaticCard = {
+  id: string;
+  title: string;
+  desc: string;
+};
+
+function isLinkedCard(card: LinkedCard | StaticCard): card is LinkedCard {
+  return "to" in card && typeof card.to === "string" && card.to.length > 0;
+}
+
+function renderLinkedCard(card: LinkedCard | StaticCard) {
+  const inner = (
+    <>
+      <h3 className="text-[13px] md:text-[14px] font-extrabold tracking-wide text-primary-500 mb-2 uppercase">
+        {card.title}
+      </h3>
+      <p className="text-[14px] text-slate-600 leading-relaxed">{card.desc}</p>
+    </>
+  );
+  const className = `rounded-2xl border border-slate-100 bg-white p-4 md:p-5 shadow-sm${
+    isLinkedCard(card) ? ` ${cardLinkHover}` : ""
+  }`;
+
+  if (isLinkedCard(card)) {
+    return (
+      <Link key={card.id} to={card.to} className={className}>
+        {inner}
+      </Link>
+    );
+  }
+
+  return (
+    <div key={card.id} className={className}>
+      {inner}
+    </div>
+  );
+}
+
+const dashboardThumbHover =
+  "block w-full transition-all duration-[225ms] ease-out hover:-translate-y-0.5 hover:shadow-md hover:border-primary-200/80 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-300 focus-visible:ring-offset-2 rounded-xl";
 
 export default function OperationModel() {
   const { t, i18n } = useTranslation();
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const isRu = i18n.language === "ru";
   const isEn = i18n.language === "en";
   const pagePath = operationModelPath(isRu);
@@ -25,11 +83,31 @@ export default function OperationModel() {
     { name: t("nav.op_model"), url: pagePath },
   ]);
 
-  const modelCards = [
-    { title: t("op_model_page.model1_title"), desc: t("op_model_page.model1_desc") },
-    { title: t("op_model_page.model2_title"), desc: t("op_model_page.model2_desc") },
-    { title: t("op_model_page.model3_title"), desc: t("op_model_page.model3_desc") },
-    { title: t("op_model_page.model4_title"), desc: t("op_model_page.model4_desc") },
+  const modelCards: Array<LinkedCard | StaticCard> = [
+    {
+      id: "ecommerce",
+      title: t("op_model_page.model1_title"),
+      desc: t("op_model_page.model1_desc"),
+      to: servicePath("pazaryeri-yonetimi", isRu),
+    },
+    {
+      id: "b2b",
+      title: t("op_model_page.model2_title"),
+      desc: t("op_model_page.model2_desc"),
+      to: servicePath("pazar-arastirmasi-ve-strateji", isRu),
+    },
+    {
+      id: "medical",
+      title: t("op_model_page.model3_title"),
+      desc: t("op_model_page.model3_desc"),
+      to: servicePath(MEDICAL_SERVICE_ID, isRu),
+    },
+    {
+      id: "hybrid",
+      title: t("op_model_page.model4_title"),
+      desc: t("op_model_page.model4_desc"),
+      to: servicePath("operasyon-kurulumu", isRu),
+    },
   ];
 
   const steps = [
@@ -40,10 +118,24 @@ export default function OperationModel() {
     { num: "05", title: t("op_model_page.step5_title"), desc: t("op_model_page.step5_desc") },
   ];
 
-  const corridorCards = [
-    { title: t("op_model_page.corridor1_title"), desc: t("op_model_page.corridor1_desc") },
-    { title: t("op_model_page.corridor2_title"), desc: t("op_model_page.corridor2_desc") },
-    { title: t("op_model_page.corridor3_title"), desc: t("op_model_page.corridor3_desc") },
+  const corridorCards: Array<LinkedCard | StaticCard> = [
+    {
+      id: "turkey",
+      title: t("op_model_page.corridor1_title"),
+      desc: t("op_model_page.corridor1_desc"),
+      to: servicePath("turkiyede-sirket-kurulumu", isRu),
+    },
+    {
+      id: "russia",
+      title: t("op_model_page.corridor2_title"),
+      desc: t("op_model_page.corridor2_desc"),
+      to: servicePath("operasyon-kurulumu", isRu),
+    },
+    {
+      id: "coordination",
+      title: t("op_model_page.corridor3_title"),
+      desc: t("op_model_page.corridor3_desc"),
+    },
   ];
 
   const techCards = [
@@ -51,6 +143,25 @@ export default function OperationModel() {
     { title: t("op_model_page.tech2_title"), desc: t("op_model_page.tech2_desc") },
     { title: t("op_model_page.tech3_title"), desc: t("op_model_page.tech3_desc") },
     { title: t("op_model_page.tech4_title"), desc: t("op_model_page.tech4_desc") },
+  ];
+
+  const dashboardScreens = [
+    {
+      src: "/images/dashboard/commercial-performance.png",
+      alt: t("op_model_page.dash1_alt"),
+    },
+    {
+      src: "/images/dashboard/product-analytics.png",
+      alt: t("op_model_page.dash2_alt"),
+    },
+    {
+      src: "/images/dashboard/smart-pricing.png",
+      alt: t("op_model_page.dash3_alt"),
+    },
+    {
+      src: "/images/dashboard/wb-settlement.png",
+      alt: t("op_model_page.dash4_alt"),
+    },
   ];
 
   const flowSteps = [
@@ -62,10 +173,10 @@ export default function OperationModel() {
   ];
 
   const audienceItems = [
-    t("op_model_page.aud1"),
-    t("op_model_page.aud2"),
-    t("op_model_page.aud3"),
-    t("op_model_page.aud4"),
+    { text: t("op_model_page.aud1"), to: forWhomDetailPath("e-ticaret-girisimcileri", isRu) },
+    { text: t("op_model_page.aud2"), to: forWhomDetailPath("ureticiler", isRu) },
+    { text: t("op_model_page.aud3") },
+    { text: t("op_model_page.aud4") },
   ];
 
   const improveItems = [
@@ -77,6 +188,9 @@ export default function OperationModel() {
     t("op_model_page.improve6"),
   ];
 
+  const lightboxCloseLabel = isRu ? "Закрыть" : isEn ? "Close" : "Kapat";
+  const activeLightbox = lightboxIndex !== null ? dashboardScreens[lightboxIndex] : null;
+
   return (
     <main className="bg-slate-50 min-h-screen pt-5 pb-12 md:pt-7 md:pb-16">
       <Helmet>
@@ -86,10 +200,7 @@ export default function OperationModel() {
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/operasyon-modeli" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/model-raboty" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/operasyon-modeli" />
-        <meta property="og:title" content={t("op_model_page.title")} />
-        <meta property="og:description" content={t("op_model_page.desc_meta")} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="website" />
+        {socialMetaElements({ title: t("op_model_page.title"), description: t("op_model_page.desc_meta"), url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
@@ -130,14 +241,7 @@ export default function OperationModel() {
             {t("op_model_page.models_desc")}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
-            {modelCards.map((card) => (
-              <div key={card.title} className="rounded-2xl border border-slate-100 bg-white p-4 md:p-5 shadow-sm">
-                <h3 className="text-[13px] md:text-[14px] font-extrabold tracking-wide text-primary-500 mb-2 uppercase">
-                  {card.title}
-                </h3>
-                <p className="text-[14px] text-slate-600 leading-relaxed">{card.desc}</p>
-              </div>
-            ))}
+            {modelCards.map((card) => renderLinkedCard(card))}
           </div>
         </section>
 
@@ -175,14 +279,7 @@ export default function OperationModel() {
             {t("op_model_page.corridor_desc")}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
-            {corridorCards.map((card) => (
-              <div key={card.title} className="rounded-2xl border border-slate-100 bg-white p-4 md:p-5 shadow-sm">
-                <h3 className="text-[13px] md:text-[14px] font-extrabold tracking-wide text-primary-500 mb-2 uppercase">
-                  {card.title}
-                </h3>
-                <p className="text-[14px] text-slate-600 leading-relaxed">{card.desc}</p>
-              </div>
-            ))}
+            {corridorCards.map((card) => renderLinkedCard(card))}
           </div>
         </section>
 
@@ -231,7 +328,65 @@ export default function OperationModel() {
               </div>
             ))}
           </div>
+
+          <div className="mt-6 md:mt-8 pt-6 md:pt-8 border-t border-slate-200/80">
+            <h3 className="text-[20px] md:text-[24px] font-extrabold text-primary-500 tracking-tight mb-3">
+              {t("op_model_page.dash_h3")}
+            </h3>
+            <p className="text-[14px] md:text-[15px] text-slate-600 leading-relaxed max-w-3xl mb-4 md:mb-5">
+              {t("op_model_page.dash_desc")}
+            </p>
+
+            <div className="space-y-3 md:space-y-4">
+              <button
+                type="button"
+                className={dashboardThumbHover}
+                onClick={() => setLightboxIndex(0)}
+                aria-label={dashboardScreens[0].alt}
+              >
+                <img
+                  src={dashboardScreens[0].src}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto rounded-xl border border-slate-100 shadow-sm pointer-events-none"
+                />
+              </button>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-3">
+                {dashboardScreens.slice(1).map((screen, index) => (
+                  <button
+                    key={screen.src}
+                    type="button"
+                    className={dashboardThumbHover}
+                    onClick={() => setLightboxIndex(index + 1)}
+                    aria-label={screen.alt}
+                  >
+                    <img
+                      src={screen.src}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-auto rounded-xl border border-slate-100 shadow-sm pointer-events-none"
+                    />
+                  </button>
+                ))}
+              </div>
+
+              <p className="text-[12px] md:text-[13px] text-slate-500 leading-relaxed max-w-3xl pt-0.5">
+                {t("op_model_page.dash1_label")}
+              </p>
+            </div>
+          </div>
         </section>
+
+        <ImageLightbox
+          src={activeLightbox?.src ?? ""}
+          alt={activeLightbox?.alt ?? ""}
+          isOpen={lightboxIndex !== null}
+          onClose={() => setLightboxIndex(null)}
+          closeLabel={lightboxCloseLabel}
+        />
 
         {/* 7. Sadece raporlamıyoruz */}
         <section className="py-8 md:py-12 border-b border-slate-200/80">
@@ -286,9 +441,15 @@ export default function OperationModel() {
           </h2>
           <ul className="space-y-3 max-w-3xl">
             {audienceItems.map((item) => (
-              <li key={item} className="flex gap-3 text-[14px] md:text-[15px] text-slate-600 leading-relaxed">
+              <li key={item.text} className="flex gap-3 text-[14px] md:text-[15px] text-slate-600 leading-relaxed">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-accent-500 shrink-0" />
-                <span>{item}</span>
+                {item.to ? (
+                  <Link to={item.to} className="hover:text-primary-500 transition-colors duration-200">
+                    {item.text}
+                  </Link>
+                ) : (
+                  <span>{item.text}</span>
+                )}
               </li>
             ))}
           </ul>

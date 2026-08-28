@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
 import React, { useMemo, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Mail, MapPin, Phone, ArrowRight, Send } from "lucide-react";
+import { Mail, MapPin, Phone, ArrowRight, Send, Target, LineChart, Layers, Settings2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema, VERIFIED_CONTACT, OPERATIONAL_LOCATION } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
 import { contactPath, absoluteUrl, homePath } from "@/utils/ruPaths";
 import { FORMSPREE_ENDPOINT } from "@/utils/formspree";
 
@@ -163,10 +164,43 @@ export default function Contact() {
   };
 
   const inputClass =
-    "w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all outline-none text-[15px]";
+    "w-full px-4 py-3.5 md:px-5 md:py-4 rounded-xl border border-slate-200 bg-slate-50/80 focus:bg-white focus:ring-2 focus:ring-primary-300 focus:border-primary-200 transition-all duration-200 ease-out outline-none text-[15px] md:text-[16px]";
+
+  const infoCardClass =
+    "rounded-2xl border border-slate-100 bg-white p-5 md:p-6 shadow-sm transition-all duration-[225ms] ease-out hover:-translate-y-0.5 hover:shadow-md hover:border-primary-200/80";
+
+  const analysisTopics = [
+    {
+      icon: Target,
+      title: t("about.belief1_title"),
+      desc: t("about.belief1_desc"),
+    },
+    {
+      icon: LineChart,
+      title: t("about.step2_title"),
+      desc: t("about.step2_desc"),
+    },
+    {
+      icon: Layers,
+      title: t("about.belief2_title"),
+      desc: t("about.belief2_desc"),
+    },
+    {
+      icon: Settings2,
+      title: t("about.belief3_title"),
+      desc: t("about.belief3_desc"),
+    },
+  ];
+
+  const heroTopics = [
+    t("about.belief1_title"),
+    t("about.step2_title"),
+    t("about.belief2_title"),
+    t("about.belief3_title"),
+  ];
 
   return (
-    <main className="pt-6 pb-12 md:pb-16">
+    <main className="bg-slate-50/60 min-h-screen pt-5 pb-12 md:pt-7 md:pb-16">
       <Helmet>
         <title>{t("contact.title")}</title>
         <meta name="description" content={t("contact.desc_meta")} />
@@ -184,19 +218,16 @@ export default function Contact() {
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/iletisim" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/kontakty" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/iletisim" />
-        <meta property="og:title" content={t("contact.title")} />
-        <meta property="og:description" content={t("contact.desc_meta")} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="website" />
+        {socialMetaElements({ title: t("contact.title"), description: t("contact.desc_meta"), url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
-      <div className="bg-transparent py-10 md:py-12 mb-6 border-b border-slate-100">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="border-b border-slate-200/80 bg-white/80">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block px-4 py-2 bg-primary-50 text-primary-600 text-[13px] font-bold rounded-full mb-4 uppercase tracking-wider"
+            className="inline-block px-4 py-1.5 bg-primary-50 text-primary-600 text-[12px] md:text-[13px] font-bold rounded-full mb-4 uppercase tracking-wider"
           >
             {t("contact.badge")}
           </motion.div>
@@ -204,7 +235,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.05 }}
-            className="text-[30px] sm:text-[40px] md:text-[48px] font-extrabold text-primary-500 mb-4 tracking-tight leading-tight"
+            className="text-[28px] sm:text-[38px] md:text-[44px] font-extrabold text-primary-500 mb-3 md:mb-4 tracking-tight leading-[1.15]"
           >
             {t("contact.h1")}
           </motion.h1>
@@ -212,85 +243,126 @@ export default function Contact() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-slate-500 max-w-2xl mx-auto text-[15px] md:text-[17px] leading-relaxed"
+            className="text-slate-600 max-w-3xl mx-auto text-[15px] md:text-[17px] leading-relaxed"
           >
             {t("contact.subtitle")}
           </motion.p>
-        </div>
-      </div>
-
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15 }}
+            className="mt-5 md:mt-6 flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-[12px] md:text-[13px] font-semibold text-primary-600"
           >
-            <h2 className="text-[26px] md:text-[30px] font-extrabold text-primary-500 mb-4 tracking-tight">
-              {t("contact.result_oriented")}
-            </h2>
-            <p className="text-[15px] md:text-[16px] text-slate-500 mb-7 leading-relaxed border-l-4 border-accent-500 pl-5 py-1">
-              {t("contact.result_desc")}
-              <strong className="text-primary-500">{t("contact.result_strong")}</strong>
-            </p>
+            {heroTopics.map((topic, i) => (
+              <span key={topic} className="inline-flex items-center gap-2">
+                <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5">{topic}</span>
+                {i < heroTopics.length - 1 && <span className="text-accent-500 hidden sm:inline">•</span>}
+              </span>
+            ))}
+          </motion.div>
+        </div>
+      </section>
 
-            <div className="space-y-4">
-              <div className="flex items-start gap-4 p-6 bg-primary-50 border border-primary-100 rounded-3xl">
-                <div className="bg-white p-3 rounded-2xl text-accent-500 shrink-0 shadow-sm border border-primary-100">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-start">
+          <motion.div
+            initial={{ opacity: 0, x: -16 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.45 }}
+            className="lg:col-span-5 space-y-6 md:space-y-7"
+          >
+            <div>
+              <h2 className="text-[24px] md:text-[28px] font-extrabold text-primary-500 mb-3 tracking-tight leading-tight">
+                {t("about.how_h2")}
+              </h2>
+              <p className="text-[14px] md:text-[15px] text-slate-600 leading-relaxed">
+                {t("about.corridor_p2")}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3 md:gap-4">
+              {analysisTopics.map(({ icon: Icon, title, desc }) => (
+                <div key={title} className={infoCardClass}>
+                  <div className="flex items-start gap-3">
+                    <div className="shrink-0 rounded-xl bg-primary-50 border border-primary-100 p-2.5 text-primary-500">
+                      <Icon className="w-4 h-4" aria-hidden="true" />
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="text-[14px] md:text-[15px] font-bold text-primary-500 mb-1">{title}</h3>
+                      <p className="text-[13px] md:text-[14px] text-slate-600 leading-relaxed">{desc}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="rounded-2xl border border-slate-100 bg-white p-5 md:p-6 shadow-sm">
+              <p className="text-[11px] md:text-[12px] font-bold uppercase tracking-wider text-accent-500 mb-2">
+                {t("contact.result_oriented")}
+              </p>
+              <p className="text-[14px] md:text-[15px] text-slate-600 leading-relaxed">
+                {t("contact.result_desc")}
+                <strong className="text-primary-500 font-semibold">{t("contact.result_strong")}</strong>
+              </p>
+            </div>
+
+            <div className="space-y-3 md:space-y-4">
+              <div className={`flex items-start gap-4 ${infoCardClass}`}>
+                <div className="bg-primary-50 p-3 rounded-xl text-accent-500 shrink-0 border border-primary-100">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <div>
-                  <h4 className="font-bold text-primary-500 mb-1 text-[16px]">{t("contact.op_centers")}</h4>
+                <div className="min-w-0">
+                  <h4 className="font-bold text-primary-500 mb-1 text-[15px] md:text-[16px]">{t("contact.op_centers")}</h4>
                   <p className="text-[13px] font-semibold text-slate-600 mb-1">{t("contact.op_location_label")}</p>
-                  <p className="text-[14px] text-slate-500 leading-relaxed">
+                  <p className="text-[14px] text-slate-600 leading-relaxed">
                     {isRu
                       ? OPERATIONAL_LOCATION.displayRu
                       : isEn
                         ? OPERATIONAL_LOCATION.displayEn
                         : OPERATIONAL_LOCATION.displayTr}
                   </p>
-                  <p className="text-[13px] font-semibold text-slate-600 mt-4 mb-1">
+                  <p className="text-[13px] font-semibold text-slate-600 mt-3 mb-1">
                     {t("contact.registered_address_label")}
                   </p>
-                  <p className="text-[14px] text-slate-500 leading-relaxed">{VERIFIED_CONTACT.fullAddressRu}</p>
+                  <p className="text-[14px] text-slate-600 leading-relaxed">{VERIFIED_CONTACT.fullAddressRu}</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4 p-6 bg-primary-50 border border-primary-100 rounded-3xl">
-                <div className="bg-white p-3 rounded-2xl text-accent-500 shrink-0 shadow-sm border border-primary-100">
+              <div className={`flex items-start gap-4 ${infoCardClass}`}>
+                <div className="bg-primary-50 p-3 rounded-xl text-accent-500 shrink-0 border border-primary-100">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-primary-500 mb-1 text-[16px]">{t("contact.phone")}</h4>
-                  <p className="text-[14px] text-slate-500 leading-relaxed">
+                  <h4 className="font-bold text-primary-500 mb-1 text-[15px] md:text-[16px]">{t("contact.phone")}</h4>
+                  <p className="text-[14px] text-slate-600 leading-relaxed">
                     TR: {VERIFIED_CONTACT.phoneTr}
                     <br />
                     RU: {VERIFIED_CONTACT.phoneRu}
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4 p-6 bg-primary-50 border border-primary-100 rounded-3xl">
-                <div className="bg-white p-3 rounded-2xl text-accent-500 shrink-0 shadow-sm border border-primary-100">
+              <div className={`flex items-start gap-4 ${infoCardClass}`}>
+                <div className="bg-primary-50 p-3 rounded-xl text-accent-500 shrink-0 border border-primary-100">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-primary-500 mb-1 text-[16px]">{t("contact.email")}</h4>
-                  <p className="text-[14px] text-slate-500 leading-relaxed">{VERIFIED_CONTACT.email}</p>
+                  <h4 className="font-bold text-primary-500 mb-1 text-[15px] md:text-[16px]">{t("contact.email")}</h4>
+                  <p className="text-[14px] text-slate-600 leading-relaxed">{VERIFIED_CONTACT.email}</p>
                 </div>
               </div>
             </div>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: 16 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-primary-900/5 border border-primary-100"
+            transition={{ duration: 0.45 }}
+            className="lg:col-span-7 bg-white rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-11 shadow-md shadow-primary-900/5 border border-slate-100"
           >
-            <h3 className="text-[26px] md:text-[28px] font-extrabold text-primary-500 mb-3 tracking-tight">
+            <h3 className="text-[24px] md:text-[28px] font-extrabold text-primary-500 mb-2 md:mb-3 tracking-tight">
               {t("contact.form_title")}
             </h3>
-            <p className="text-slate-500 text-[15px] leading-relaxed mb-4">{t("contact.form_intro")}</p>
-            <p className="text-slate-600 text-[14px] leading-relaxed mb-8 border-l-4 border-accent-500 pl-4">
+            <p className="text-slate-600 text-[15px] md:text-[16px] leading-relaxed mb-3">{t("contact.form_intro")}</p>
+            <p className="text-slate-600 text-[13px] md:text-[14px] leading-relaxed mb-6 md:mb-8 rounded-xl border border-slate-100 bg-slate-50/80 px-4 py-3">
               {t("contact.form_filter")}
             </p>
 
@@ -303,7 +375,7 @@ export default function Contact() {
                 <p className="text-[15px]">{t("contact.form_success_desc")}</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-8">
+              <form onSubmit={handleSubmit} className="space-y-7 md:space-y-8">
                 {status === "error" && (
                   <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-xl text-sm font-medium">
                     {t("contact.form_error")}
@@ -482,7 +554,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="w-full bg-accent-500 hover:bg-accent-600 disabled:opacity-70 disabled:cursor-not-allowed text-white font-semibold py-[16px] px-8 rounded-full transition-colors flex justify-center items-center gap-3 text-[15px]"
+                  className="w-full bg-accent-500 hover:bg-accent-600 disabled:opacity-70 disabled:cursor-not-allowed text-white font-bold py-4 px-8 rounded-full transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md flex justify-center items-center gap-3 text-[15px] md:text-[16px]"
                 >
                   {status === "submitting" ? (
                     t("contact.submitting")
