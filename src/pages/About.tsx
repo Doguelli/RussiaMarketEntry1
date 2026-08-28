@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
 import { aboutPath, absoluteUrl, homePath, contactPath } from "@/utils/ruPaths";
 
 export default function About() {
@@ -66,10 +67,7 @@ export default function About() {
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/hakkimizda" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/o-nas" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/hakkimizda" />
-        <meta property="og:title" content={t("about.title")} />
-        <meta property="og:description" content={t("about.desc_meta")} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="website" />
+        {socialMetaElements({ title: t("about.title"), description: t("about.desc_meta"), url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 

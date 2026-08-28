@@ -5,6 +5,8 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, "..", p);
 
+const NOT_FOUND_PRERENDER_PATH = "/this-page-does-not-exist";
+
 const template = fs.readFileSync(toAbsolute("dist/index.html"), "utf-8");
 const { render, blogRoutes, pageLanguageForPath } = await import(
   pathToFileURL(toAbsolute("dist/server/entry-server.js"))
@@ -25,6 +27,7 @@ const staticRoutesToPrerender = [
   "/hizmetler/turkiyede-sirket-kurulumu",
   "/hizmetler/ithalat-ve-gumruk-yonetimi",
   "/hizmetler/pazar-arastirmasi-ve-strateji",
+  "/hizmetler/medikal-ve-saglik",
   "/operasyon-modeli",
   "/kimler-icin",
   "/kimler-icin/tekstil-markalari",
@@ -57,6 +60,7 @@ const staticRoutesToPrerender = [
   "/ru/uslugi/registratsiya-biznesa-v-turtsii",
   "/ru/uslugi/import-i-tamozhnya",
   "/ru/uslugi/issledovanie-rynka",
+  "/ru/uslugi/meditsina-i-zdravoohranenie",
   "/ru/model-raboty",
   "/ru/dlya-kogo",
   "/ru/dlya-kogo/tekstilnye-brendy",
@@ -71,88 +75,86 @@ const staticRoutesToPrerender = [
   "/ru/blog",
 ];
 
-// Every blog post's own detail page is derived from blogPosts (src/data/blogData.tsx,
-// via the built SSR bundle's exported blogRoutes) instead of being hand-maintained
-// here, so newly added posts (including ones added through the admin panel) are
-// automatically prerendered. The URL prefix on the bare /blog/:slug,
-// /en/blog/:slug and /ru/blog/:slug routes (AppRoutes.tsx) is what tells the
-// app which language to render on first load for a non-JS crawler — so a post
-// is only listed here for the languages it actually has content in
-// (src/utils/blogLanguages.ts).
 const blogRoutesToPrerender = blogRoutes;
 
-const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender];
+/** Single source of truth: deduplicated prerender + sitemap URL list. */
+const routesToPrerender = [...new Set([...staticRoutesToPrerender, ...blogRoutesToPrerender])];
+
+function mergeRouteIntoHtml(url, appHtml) {
+  const titles = appHtml.match(/<title[^>]*>[\s\S]*?<\/title>/gi) || [];
+  const metas = appHtml.match(/<meta[^>]*\/?>/gi) || [];
+  const links = appHtml.match(/<link[^>]*\/?>/gi) || [];
+  const jsonLd = appHtml.match(/<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi) || [];
+
+  let cleanAppHtml = appHtml
+    .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
+    .replace(/<meta[^>]*\/?>/gi, "")
+    .replace(/<link[^>]*\/?>/gi, "")
+    .replace(/<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, "");
+
+  let html = template;
+
+  const pageLang = pageLanguageForPath(url);
+  html = html.replace(/<html\s+lang="[^"]*"/i, `<html lang="${pageLang}"`);
+
+  html = html
+    .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
+    .replace(/<link[^>]*rel=["']canonical["'][^>]*\/?>/gi, "")
+    .replace(/<meta[^>]*name=["']description["'][^>]*\/?>/gi, "")
+    .replace(/<meta[^>]*property=["']og:title["'][^>]*\/?>/gi, "")
+    .replace(/<meta[^>]*property=["']og:description["'][^>]*\/?>/gi, "")
+    .replace(/<meta[^>]*property=["']og:url["'][^>]*\/?>/gi, "")
+    .replace(/<meta[^>]*property=["']og:type["'][^>]*\/?>/gi, "")
+    .replace(/<meta[^>]*property=["']og:image["'][^>]*\/?>/gi, "")
+    .replace(/<meta[^>]*name=["']twitter:[^"']+["'][^>]*\/?>/gi, "");
+
+  const routeHeadTags = [...titles, ...metas, ...links, ...jsonLd].join("\n    ");
+
+  if (routeHeadTags) {
+    html = html.replace("</head>", `  ${routeHeadTags}\n</head>`);
+  }
+
+  html = html.replace(
+    '<div id="root"></div>',
+    `<div id="root">${cleanAppHtml}</div>`
+  );
+
+  return html;
+}
+
+function writeHtmlFile(relativePath, html) {
+  const filePath = toAbsolute(relativePath);
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  fs.writeFileSync(filePath, html);
+}
 
 (async () => {
   for (const url of routesToPrerender) {
     const { html: appHtml } = await render(url);
-
-    // Extract head elements rendered by React for this route
-    const titles = appHtml.match(/<title[^>]*>[\s\S]*?<\/title>/gi) || [];
-    const metas = appHtml.match(/<meta[^>]*\/?>/gi) || [];
-    const links = appHtml.match(/<link[^>]*\/?>/gi) || [];
-    const jsonLd = appHtml.match(/<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi) || [];
-
-    // Clean appHtml from extracted head elements so they don't remain in #root
-    let cleanAppHtml = appHtml
-      .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
-      .replace(/<meta[^>]*\/?>/gi, "")
-      .replace(/<link[^>]*\/?>/gi, "")
-      .replace(/<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, "");
-
-    let html = template;
-
-    // Set <html lang> from the prerender URL (Helmet htmlAttributes are not in #root HTML)
-    const pageLang = pageLanguageForPath(url);
-    html = html.replace(/<html\s+lang="[^"]*"/i, `<html lang="${pageLang}"`);
-
-    // Clean up default/fallback head tags from template to avoid duplicates
-    html = html
-      .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
-      .replace(/<link[^>]*rel=["']canonical["'][^>]*\/?>/gi, "")
-      .replace(/<meta[^>]*name=["']description["'][^>]*\/?>/gi, "")
-      .replace(/<meta[^>]*property=["']og:title["'][^>]*\/?>/gi, "")
-      .replace(/<meta[^>]*property=["']og:description["'][^>]*\/?>/gi, "")
-      .replace(/<meta[^>]*property=["']og:url["'][^>]*\/?>/gi, "")
-      .replace(/<meta[^>]*property=["']og:type["'][^>]*\/?>/gi, "")
-      .replace(/<meta[^>]*property=["']og:image["'][^>]*\/?>/gi, "");
-
-    const routeHeadTags = [...titles, ...metas, ...links, ...jsonLd].join("\n    ");
-
-    if (routeHeadTags) {
-      html = html.replace("</head>", `  ${routeHeadTags}\n</head>`);
-    }
-
-    html = html.replace(
-      '<div id="root"></div>',
-      `<div id="root">${cleanAppHtml}</div>`
-    );
+    const html = mergeRouteIntoHtml(url, appHtml);
 
     const filePath =
       url === "/"
         ? "dist/index.html"
         : `dist${url.endsWith("/") ? url.slice(0, -1) : url}/index.html`;
 
-    const dir = path.dirname(toAbsolute(filePath));
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-
-    fs.writeFileSync(toAbsolute(filePath), html);
+    writeHtmlFile(filePath, html);
     console.log(`Prerendered: ${url} -> ${filePath}`);
   }
 
-  // Clean up server build folder after prerendering
+  // Real 404 page for Netlify (served with HTTP 404 via public/_redirects).
+  const { html: notFoundAppHtml } = await render(NOT_FOUND_PRERENDER_PATH);
+  const notFoundHtml = mergeRouteIntoHtml(NOT_FOUND_PRERENDER_PATH, notFoundAppHtml);
+  writeHtmlFile("dist/404.html", notFoundHtml);
+  console.log(`Prerendered: ${NOT_FOUND_PRERENDER_PATH} -> dist/404.html`);
+
   if (fs.existsSync(toAbsolute("dist/server"))) {
     fs.rmSync(toAbsolute("dist/server"), { recursive: true, force: true });
   }
 
-  // Regenerate sitemap.xml so newly added blog posts (e.g. via the admin panel)
-  // are automatically included instead of relying on the hand-maintained
-  // public/sitemap.xml staying in sync. Priority/changefreq are assigned by
-  // route pattern (mirrors the tiers the old hand-maintained sitemap used);
-  // lastmod uses the build date for every URL, same coarse granularity the
-  // old hand-maintained sitemap used (a single date for all entries).
   const siteOrigin = "https://russiamarketentry.com";
   const buildDate = new Date().toISOString().slice(0, 10);
 
@@ -190,7 +192,9 @@ const routesToPrerender = [...staticRoutesToPrerender, ...blogRoutesToPrerender]
     })
     .join("\n");
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls}\n</urlset>\n`;
-  fs.writeFileSync(toAbsolute("dist/sitemap.xml"), sitemapXml);
+  writeHtmlFile("dist/sitemap.xml", sitemapXml);
 
-  console.log(`Prerendering complete! Generated static HTML for ${routesToPrerender.length} routes in dist/.`);
+  console.log(
+    `Prerendering complete! Generated static HTML for ${routesToPrerender.length} routes + 404.html in dist/. Sitemap: ${routesToPrerender.length} URLs.`
+  );
 })();

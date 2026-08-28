@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
 import { russiaMarketPath, whyRussiaPath, absoluteUrl, homePath, contactPath } from "@/utils/ruPaths";
 
 export default function WhyRussiaDetail() {
@@ -42,14 +43,22 @@ export default function WhyRussiaDetail() {
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/neden-rusya-detay" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/pochemu-rossiya" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/neden-rusya-detay" />
-        <meta property="og:title" content={t('home.why_russia_detail.title')} />
-        <meta property="og:description" content={t('home.why_russia_detail.desc_meta')} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="website" />
+        {socialMetaElements({
+          title: t("home.why_russia_detail.title"),
+          description: t("home.why_russia_detail.desc_meta"),
+          url: canonicalUrl,
+        })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Link
+          to={russiaMarketPath(isRu)}
+          className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 transition-colors font-medium text-[14px] mb-8"
+        >
+          <ArrowRight className="w-4 h-4 rotate-180" />
+          {t("nav.russia_market")}
+        </Link>
         
         {/* Header */}
         <div className="text-center mb-20">

@@ -5,7 +5,11 @@ import { ArrowRight, BookOpen } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
 import { hasBlogContentFor, type BlogLang } from "@/utils/blogLanguages";
+
+const blogCardHover =
+  "block h-full bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm transition-all duration-[225ms] ease-out hover:-translate-y-0.5 hover:shadow-md hover:border-primary-200/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-300 focus-visible:ring-offset-2";
 
 export default function Blog() {
   const { t } = useTranslation();
@@ -103,10 +107,11 @@ export default function Blog() {
         <link rel="alternate" hrefLang="en" href="https://russiamarketentry.com/en/blog" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/blog" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/blog" />
-        <meta property="og:title" content={t('blog.title')} />
-        <meta property="og:description" content={t('blog.desc_meta')} />
-        <meta property="og:url" content={`https://russiamarketentry.com${langPrefix}/blog`} />
-        <meta property="og:type" content="website" />
+        {socialMetaElements({
+          title: t("blog.title"),
+          description: t("blog.desc_meta"),
+          url: `https://russiamarketentry.com${langPrefix}/blog`,
+        })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
@@ -152,60 +157,65 @@ export default function Blog() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sortedBlogPosts.map((post, index) => (
-              <motion.article 
+              <motion.article
                 key={post.slug}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group"
+                className="h-full"
               >
-                <Link to={`${langPrefix}/blog/${post.slug}`} className="block relative aspect-video overflow-hidden bg-white">
-                  {getPostImage(post) ? (
-                    <img
-                      src={getPostImage(post)}
-                      alt={getPostTitle(post)}
-                      loading="lazy"
-                      onError={(e) => {
-                        const target = e.currentTarget;
-                        const src = getPostImage(post);
-                        if (src.endsWith('.png') && !target.dataset.triedFallback) {
-                          target.dataset.triedFallback = 'true';
-                          target.src = src.replace(/\.png$/, '.jpeg');
-                        } else if (src.endsWith('.jpeg') && !target.dataset.triedFallback) {
-                          target.dataset.triedFallback = 'true';
-                          target.src = src.replace(/\.jpeg$/, '.png');
-                        }
-                      }}
-                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-102"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center text-slate-400">
-                      {currentLang === "ru" ? "Изображение скоро" : currentLang === "en" ? "Image coming soon" : "Görsel Bekleniyor"}
-                    </div>
-                  )}
-                </Link>
-                <div className="p-8">
-                  <div className="flex items-center gap-4 text-[13px] font-medium text-slate-500 mb-4">
-                    <span>{getPostDate(post)}</span>
-                    <span className="w-1 h-1 rounded-full bg-slate-300" />
-                    <span>{getPostReadTime(post)}</span>
+                <Link
+                  to={`${langPrefix}/blog/${post.slug}`}
+                  className={`group ${blogCardHover}`}
+                >
+                  <div className="relative aspect-video overflow-hidden bg-white">
+                    {getPostImage(post) ? (
+                      <img
+                        src={getPostImage(post)}
+                        alt={getPostTitle(post)}
+                        loading="lazy"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          const src = getPostImage(post);
+                          if (src.endsWith(".png") && !target.dataset.triedFallback) {
+                            target.dataset.triedFallback = "true";
+                            target.src = src.replace(/\.png$/, ".jpeg");
+                          } else if (src.endsWith(".jpeg") && !target.dataset.triedFallback) {
+                            target.dataset.triedFallback = "true";
+                            target.src = src.replace(/\.jpeg$/, ".png");
+                          }
+                        }}
+                        className="w-full h-full object-contain"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-slate-400">
+                        {currentLang === "ru"
+                          ? "Изображение скоро"
+                          : currentLang === "en"
+                            ? "Image coming soon"
+                            : "Görsel Bekleniyor"}
+                      </div>
+                    )}
                   </div>
-                  <h2 className="text-[20px] font-bold text-primary-500 mb-4 line-clamp-2 group-hover:text-accent-500 transition-colors">
-                    <Link to={`${langPrefix}/blog/${post.slug}`}>
+                  <div className="p-8">
+                    <div className="flex items-center gap-4 text-[13px] font-medium text-slate-500 mb-4">
+                      <span>{getPostDate(post)}</span>
+                      <span className="w-1 h-1 rounded-full bg-slate-300" />
+                      <span>{getPostReadTime(post)}</span>
+                    </div>
+                    <h2 className="text-[20px] font-bold text-primary-500 mb-4 line-clamp-2 group-hover:text-accent-500 transition-colors duration-[225ms]">
                       {getPostTitle(post)}
-                    </Link>
-                  </h2>
-                  <p className="text-slate-600 line-clamp-3 mb-6 text-[15px] leading-relaxed">
-                    {getPostExcerpt(post)}
-                  </p>
-                  <Link 
-                    to={`${langPrefix}/blog/${post.slug}`}
-                    className="inline-flex items-center gap-2 text-[15px] font-bold text-accent-500 hover:text-accent-600 transition-colors"
-                  >
-                    {t('blog.read_more')} <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
+                    </h2>
+                    <p className="text-slate-600 line-clamp-3 mb-6 text-[15px] leading-relaxed">
+                      {getPostExcerpt(post)}
+                    </p>
+                    <span className="inline-flex items-center gap-2 text-[15px] font-bold text-accent-500 group-hover:text-accent-600 transition-colors duration-[225ms]">
+                      {t("blog.read_more")}{" "}
+                      <ArrowRight className="w-4 h-4 transition-transform duration-[225ms] ease-out group-hover:translate-x-0.5" />
+                    </span>
+                  </div>
+                </Link>
               </motion.article>
             ))}
           </div>

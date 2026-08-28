@@ -11,6 +11,7 @@ import {
   Target
 } from "lucide-react";
 import { servicePath, servicesPath, contactPath } from "@/utils/ruPaths";
+import { medicalServiceRU } from "./medicalServiceDetail";
 import { blogDetailPath } from "@/utils/blogLanguages";
 
 export const serviceDetailsRU: Record<string, any> = {
@@ -107,11 +108,13 @@ export const serviceDetailsRU: Record<string, any> = {
                   name: "Wildberries",
                   accent: "#CB11AB",
                   text: "Один из крупнейших маркетплейсов России. Высокий трафик и потенциал продаж в fashion и широком потреблении.",
+                  blogSlug: "wildberriesde-satis-yapmak",
                 },
                 {
                   name: "Ozon",
                   accent: "#005BFF",
                   text: "Масштабируемый канал с широкой категорией и сильной инфраструктурой фулфилмента.",
+                  blogSlug: "ozonda-satis-yapmak",
                 },
                 {
                   name: "Yandex Market",
@@ -122,21 +125,33 @@ export const serviceDetailsRU: Record<string, any> = {
                   name: "Lamoda",
                   accent: "#1A1A1A",
                   text: "Fashion и lifestyle-маркетплейс. Стандарты каталога и презентация товара влияют на восприятие бренда.",
+                  blogSlug: "lamodaya-nasil-girilir",
                 },
-              ].map((p) => (
-                <div
-                  key={p.name}
-                  className="relative overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 p-4"
-                >
-                  <span
-                    aria-hidden
-                    className="absolute left-0 top-0 bottom-0 w-[3px]"
-                    style={{ background: p.accent }}
-                  />
-                  <p className="font-bold text-primary-500 mb-1">{p.name}</p>
-                  <p className="text-[14px] leading-relaxed">{p.text}</p>
-                </div>
-              ))}
+              ].map((p) => {
+                const cardClass =
+                  "relative overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 p-4";
+                const linkClass = `${cardClass} transition-all duration-[225ms] ease-out hover:-translate-y-1 hover:shadow-md hover:border-primary-200/80 cursor-pointer block`;
+                const inner = (
+                  <>
+                    <span
+                      aria-hidden
+                      className="absolute left-0 top-0 bottom-0 w-[3px]"
+                      style={{ background: p.accent }}
+                    />
+                    <p className="font-bold text-primary-500 mb-1">{p.name}</p>
+                    <p className="text-[14px] leading-relaxed">{p.text}</p>
+                  </>
+                );
+                return p.blogSlug ? (
+                  <Link key={p.name} to={blogDetailPath(p.blogSlug, "ru")} className={linkClass}>
+                    {inner}
+                  </Link>
+                ) : (
+                  <div key={p.name} className={cardClass}>
+                    {inner}
+                  </div>
+                );
+              })}
             </div>
             <p className="text-[14px]">
               Полезные материалы:{" "}
@@ -1587,4 +1602,5 @@ export const serviceDetailsRU: Record<string, any> = {
       },
     ],
   },
+  "medikal-ve-saglik": medicalServiceRU,
 };

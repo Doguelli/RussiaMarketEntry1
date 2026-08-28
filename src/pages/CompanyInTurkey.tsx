@@ -19,7 +19,8 @@ import {
   Users,
   ChevronDown
 } from "lucide-react";
-import { createBreadcrumbSchema, createServiceSchema } from "@/utils/seo";
+import { createBreadcrumbSchema, createServiceSchema, createFaqSchema } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
 import { FORMSPREE_ENDPOINT } from "@/utils/formspree";
 import { blogDetailPath } from "@/utils/blogLanguages";
 
@@ -214,6 +215,15 @@ export default function CompanyInTurkey() {
     }
   ];
 
+  const faqSchema = createFaqSchema(faqs.map((faq) => ({ question: faq.q, answer: faq.a })));
+
+  const companySocialMeta = socialMetaElements({
+    title: "Регистрация компании в Турции для иностранцев | Russia Market Entry",
+    description:
+      "Учреждение Limited Şirket, открытие счетов в банках, юридический адрес и бухгалтер под ключ в Стамбуле.",
+    url: "https://russiamarketentry.com/ru/kompaniya-v-turtsii",
+  });
+
   return (
     <>
       <Helmet>
@@ -229,13 +239,11 @@ export default function CompanyInTurkey() {
             until a genuine translation is published. */}
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/kompaniya-v-turtsii" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/ru/kompaniya-v-turtsii" />
-        <meta property="og:title" content="Регистрация компании в Турции для иностранцев | Russia Market Entry" />
-        <meta property="og:description" content="Учреждение Limited Şirket, открытие счетов в банках, юридический адрес и бухгалтер под ключ в Стамбуле." />
-        <meta property="og:url" content="https://russiamarketentry.com/ru/kompaniya-v-turtsii" />
-        <meta property="og:type" content="website" />
+        {companySocialMeta}
         <meta name="yandex-verification" content="russiamarketentry-yandex-token" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbs)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
       {/* Hero Section */}

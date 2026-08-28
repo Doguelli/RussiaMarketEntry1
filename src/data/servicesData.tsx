@@ -11,6 +11,7 @@ import {
   Target
 } from "lucide-react";
 import { servicePath, servicesPath, contactPath } from "@/utils/ruPaths";
+import { medicalServiceTR } from "./medicalServiceDetail";
 import { blogDetailPath } from "@/utils/blogLanguages";
 
 export const serviceDetails: Record<string, any> = {
@@ -218,11 +219,13 @@ export const serviceDetails: Record<string, any> = {
                   name: "Wildberries",
                   accent: "#CB11AB",
                   text: "Rusya'nın en büyük pazaryerlerinden biri. Moda ve geniş tüketim kategorilerinde yüksek trafik ve güçlü satış potansiyeli sunar.",
+                  blogSlug: "wildberriesde-satis-yapmak",
                 },
                 {
                   name: "Ozon",
                   accent: "#005BFF",
                   text: "Geniş kategori yapısı ve güçlü fulfillment altyapısıyla markalar için ölçeklenebilir bir satış kanalıdır.",
+                  blogSlug: "ozonda-satis-yapmak",
                 },
                 {
                   name: "Yandex Market",
@@ -233,21 +236,33 @@ export const serviceDetails: Record<string, any> = {
                   name: "Lamoda",
                   accent: "#1A1A1A",
                   text: "Moda ve lifestyle odaklı bir pazaryeri. Katalog standartları ve ürün sunumu marka algısını doğrudan etkiler.",
+                  blogSlug: "lamodaya-nasil-girilir",
                 },
-              ].map((p) => (
-                <div
-                  key={p.name}
-                  className="relative overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 p-4"
-                >
-                  <span
-                    aria-hidden
-                    className="absolute left-0 top-0 bottom-0 w-[3px]"
-                    style={{ background: p.accent }}
-                  />
-                  <p className="font-bold text-primary-500 mb-1">{p.name}</p>
-                  <p className="text-[14px] leading-relaxed">{p.text}</p>
-                </div>
-              ))}
+              ].map((p) => {
+                const cardClass =
+                  "relative overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 p-4";
+                const linkClass = `${cardClass} transition-all duration-[225ms] ease-out hover:-translate-y-1 hover:shadow-md hover:border-primary-200/80 cursor-pointer block`;
+                const inner = (
+                  <>
+                    <span
+                      aria-hidden
+                      className="absolute left-0 top-0 bottom-0 w-[3px]"
+                      style={{ background: p.accent }}
+                    />
+                    <p className="font-bold text-primary-500 mb-1">{p.name}</p>
+                    <p className="text-[14px] leading-relaxed">{p.text}</p>
+                  </>
+                );
+                return p.blogSlug ? (
+                  <Link key={p.name} to={blogDetailPath(p.blogSlug, "tr")} className={linkClass}>
+                    {inner}
+                  </Link>
+                ) : (
+                  <div key={p.name} className={cardClass}>
+                    {inner}
+                  </div>
+                );
+              })}
             </div>
             <p className="text-[14px]">
               İlgili rehberler:{" "}
@@ -1821,4 +1836,5 @@ export const serviceDetails: Record<string, any> = {
       },
     ],
   },
+  "medikal-ve-saglik": medicalServiceTR,
 };

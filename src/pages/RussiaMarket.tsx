@@ -4,7 +4,11 @@ import { ShoppingBag, TrendingUp, Globe2, Truck, ShieldCheck, CheckCircle2, Arro
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
-import { russiaMarketPath, absoluteUrl, homePath, contactPath, whyRussiaPath } from "@/utils/ruPaths";
+import { socialMetaElements } from "@/components/PageSocialMeta";
+import { russiaMarketPath, absoluteUrl, homePath, contactPath, whyRussiaPath, servicePath, operationModelPath } from "@/utils/ruPaths";
+
+const marketplaceCardHover =
+  "transition-all duration-[225ms] ease-out hover:-translate-y-1 hover:shadow-md hover:border-primary-200/80 cursor-pointer block h-full";
 
 export default function RussiaMarket() {
   const { t, i18n } = useTranslation();
@@ -27,10 +31,11 @@ export default function RussiaMarket() {
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/rusya-pazari" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/rynok-rossii" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/rusya-pazari" />
-        <meta property="og:title" content={t('russia_market_page.title')} />
-        <meta property="og:description" content={t('russia_market_page.desc_meta')} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="website" />
+        {socialMetaElements({
+          title: t("russia_market_page.title"),
+          description: t("russia_market_page.desc_meta"),
+          url: canonicalUrl,
+        })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
@@ -146,78 +151,84 @@ export default function RussiaMarket() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6 mb-10 md:mb-12">
           {/* Wildberries */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-white rounded-3xl p-5 md:p-7 border-t-4 border-[#cb11ab] shadow-sm relative overflow-hidden group"
-          >
-            <h3 className="text-[24px] md:text-[28px] font-black text-[#cb11ab] tracking-tight lowercase mb-4 md:mb-5">wildberries</h3>
-            <div className="space-y-3 md:space-y-4">
-              <div>
-                <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.vol')}</strong>
-                <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.wb_vol')}</span>
+          <Link to={servicePath("pazaryeri-yonetimi", isRu)} className={marketplaceCardHover}>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-3xl p-5 md:p-7 border-t-4 border-[#cb11ab] shadow-sm relative overflow-hidden group h-full"
+            >
+              <h3 className="text-[24px] md:text-[28px] font-black text-[#cb11ab] tracking-tight lowercase mb-4 md:mb-5">wildberries</h3>
+              <div className="space-y-3 md:space-y-4">
+                <div>
+                  <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.vol')}</strong>
+                  <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.wb_vol')}</span>
+                </div>
+                <div>
+                  <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.strat')}</strong>
+                  <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.wb_strat')}</span>
+                </div>
+                <div>
+                  <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.focus')}</strong>
+                  <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.wb_focus')}</span>
+                </div>
               </div>
-              <div>
-                <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.strat')}</strong>
-                <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.wb_strat')}</span>
-              </div>
-              <div>
-                <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.focus')}</strong>
-                <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.wb_focus')}</span>
-              </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </Link>
 
           {/* Lamoda */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="bg-white rounded-3xl p-5 md:p-7 border-t-4 border-black shadow-sm"
-          >
-            <h3 className="text-[24px] md:text-[28px] font-black text-black tracking-widest uppercase mb-4 md:mb-5">LAMODA</h3>
-            <div className="space-y-3 md:space-y-4">
-              <div>
-                <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.vol')}</strong>
-                <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.lm_vol')}</span>
+          <Link to={servicePath("pazaryeri-yonetimi", isRu)} className={marketplaceCardHover}>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-white rounded-3xl p-5 md:p-7 border-t-4 border-black shadow-sm h-full"
+            >
+              <h3 className="text-[24px] md:text-[28px] font-black text-black tracking-widest uppercase mb-4 md:mb-5">LAMODA</h3>
+              <div className="space-y-3 md:space-y-4">
+                <div>
+                  <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.vol')}</strong>
+                  <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.lm_vol')}</span>
+                </div>
+                <div>
+                  <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.strat')}</strong>
+                  <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.lm_strat')}</span>
+                </div>
+                <div>
+                  <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.focus')}</strong>
+                  <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.lm_focus')}</span>
+                </div>
               </div>
-              <div>
-                <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.strat')}</strong>
-                <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.lm_strat')}</span>
-              </div>
-              <div>
-                <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.focus')}</strong>
-                <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.lm_focus')}</span>
-              </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </Link>
 
           {/* Ozon */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="bg-white rounded-3xl p-5 md:p-7 border-t-4 border-[#005BFF] shadow-sm"
-          >
-            <h3 className="text-[24px] md:text-[28px] font-black text-[#005BFF] tracking-tighter mb-4 md:mb-5">OZON</h3>
-            <div className="space-y-3 md:space-y-4">
-              <div>
-                <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.vol')}</strong>
-                <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.oz_vol')}</span>
+          <Link to={servicePath("pazaryeri-yonetimi", isRu)} className={marketplaceCardHover}>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-white rounded-3xl p-5 md:p-7 border-t-4 border-[#005BFF] shadow-sm h-full"
+            >
+              <h3 className="text-[24px] md:text-[28px] font-black text-[#005BFF] tracking-tighter mb-4 md:mb-5">OZON</h3>
+              <div className="space-y-3 md:space-y-4">
+                <div>
+                  <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.vol')}</strong>
+                  <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.oz_vol')}</span>
+                </div>
+                <div>
+                  <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.strat')}</strong>
+                  <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.oz_strat')}</span>
+                </div>
+                <div>
+                  <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.focus')}</strong>
+                  <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.oz_focus')}</span>
+                </div>
               </div>
-              <div>
-                <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.strat')}</strong>
-                <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.oz_strat')}</span>
-              </div>
-              <div>
-                <strong className="text-primary-500 block mb-1 text-[14px]">{t('russia_market_page.focus')}</strong>
-                <span className="text-slate-500 text-[14px] md:text-[15px]">{t('russia_market_page.oz_focus')}</span>
-              </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </Link>
         </div>
 
         {/* Strategic Approach */}
@@ -231,7 +242,19 @@ export default function RussiaMarket() {
               to={contactPath(isRu)}
               className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-7 py-3.5 rounded-full font-bold text-[14px] md:text-[15px] inline-flex items-center gap-2"
             >
-              {t('russia_market_page.cta')} <ArrowRight className="w-5 h-5" />
+              {t("russia_market_page.cta")} <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
+              to={operationModelPath(isRu)}
+              className="bg-white/10 hover:bg-white/20 transition-colors text-white px-7 py-3.5 rounded-full font-bold text-[14px] md:text-[15px] inline-flex items-center gap-2 border border-white/20"
+            >
+              {t("nav.op_model")} <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
+              to={servicePath("medikal-ve-saglik", isRu)}
+              className="bg-white/10 hover:bg-white/20 transition-colors text-white px-7 py-3.5 rounded-full font-bold text-[14px] md:text-[15px] inline-flex items-center gap-2 border border-white/20"
+            >
+              {t("home.services.medical")} <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
         </div>

@@ -13,6 +13,7 @@ import {
   Building2,
 } from "lucide-react";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
 import {
   servicesPath,
   servicePath,
@@ -20,6 +21,9 @@ import {
   absoluteUrl,
   homePath,
 } from "@/utils/ruPaths";
+
+const categoryCardHover =
+  "block transition-all duration-[225ms] ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-300 focus-visible:ring-inset";
 
 function localeList(t: (key: string, options?: any) => any, key: string): string[] {
   const value = t(key, { returnObjects: true });
@@ -113,7 +117,7 @@ export default function Services() {
       icon: HeartPulse,
       featured: true,
       trust: t("services_page.cat3_trust"),
-      primaryTo: contactPath(isRu),
+      primaryTo: servicePath("medikal-ve-saglik", isRu),
       cta: t("services_page.cat3_cta"),
       secondaryLinks: [
         {
@@ -161,10 +165,7 @@ export default function Services() {
         <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/hizmetler" />
         <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/uslugi" />
         <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/hizmetler" />
-        <meta property="og:title" content={metaTitle} />
-        <meta property="og:description" content={metaDesc} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="website" />
+        {socialMetaElements({ title: metaTitle, description: metaDesc, url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
@@ -236,62 +237,62 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: Math.min(i * 0.05, 0.2) }}
-                className={`bg-white rounded-3xl border shadow-sm overflow-hidden ${
+                className={`group bg-white rounded-3xl border shadow-sm overflow-hidden transition-all duration-[225ms] ease-out hover:-translate-y-0.5 hover:shadow-md hover:border-primary-200/80 ${
                   cat.featured ? "border-primary-200 ring-1 ring-primary-100" : "border-slate-100"
                 }`}
               >
-                <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
-                  <div className="lg:col-span-2 p-5 md:p-8 bg-primary-50/40 border-b lg:border-b-0 lg:border-r border-slate-100">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div
-                        className={`w-11 h-11 rounded-xl flex items-center justify-center ${
-                          cat.featured ? "bg-accent-500 text-white" : "bg-primary-500 text-white"
-                        }`}
-                      >
-                        <cat.icon className="w-5 h-5" />
+                <Link to={cat.primaryTo} className={`${categoryCardHover} group-hover:bg-primary-50/30`}>
+                  <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
+                    <div className="lg:col-span-2 p-5 md:p-8 bg-primary-50/40 border-b lg:border-b-0 lg:border-r border-slate-100 group-hover:bg-primary-50/50 transition-colors duration-[225ms]">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div
+                          className={`w-11 h-11 rounded-xl flex items-center justify-center ${
+                            cat.featured ? "bg-accent-500 text-white" : "bg-primary-500 text-white"
+                          }`}
+                        >
+                          <cat.icon className="w-5 h-5" />
+                        </div>
+                        <span className="text-[13px] font-extrabold text-slate-400 tracking-widest">{cat.num}</span>
                       </div>
-                      <span className="text-[13px] font-extrabold text-slate-400 tracking-widest">{cat.num}</span>
+                      <h3 className="text-[22px] md:text-[26px] font-extrabold text-primary-500 mb-2 tracking-tight leading-snug">
+                        {cat.title}
+                      </h3>
+                      <p className="text-slate-600 text-[14px] md:text-[15px] leading-relaxed mb-5">{cat.desc}</p>
+                      {"trust" in cat && cat.trust ? (
+                        <p className="text-[13px] font-semibold text-primary-500/80 mb-5 border-l-4 border-accent-500 pl-3">
+                          {cat.trust}
+                        </p>
+                      ) : null}
+                      <span className="inline-flex items-center gap-2 bg-accent-500 text-white px-5 py-3 rounded-full font-bold text-[14px] group-hover:bg-accent-600 transition-colors duration-[225ms]">
+                        {cat.cta}{" "}
+                        <ArrowRight className="w-4 h-4 transition-transform duration-[225ms] ease-out group-hover:translate-x-0.5" />
+                      </span>
                     </div>
-                    <h3 className="text-[22px] md:text-[26px] font-extrabold text-primary-500 mb-2 tracking-tight leading-snug">
-                      {cat.title}
-                    </h3>
-                    <p className="text-slate-600 text-[14px] md:text-[15px] leading-relaxed mb-5">{cat.desc}</p>
-                    {"trust" in cat && cat.trust ? (
-                      <p className="text-[13px] font-semibold text-primary-500/80 mb-5 border-l-4 border-accent-500 pl-3">
-                        {cat.trust}
-                      </p>
-                    ) : null}
-                    <Link
-                      to={cat.primaryTo}
-                      className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-5 py-3 rounded-full font-bold text-[14px]"
-                    >
-                      {cat.cta} <ArrowRight className="w-4 h-4" />
-                    </Link>
-                    {cat.secondaryLinks.length > 0 && (
-                      <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2">
-                        {cat.secondaryLinks.map((link) => (
-                          <Link
-                            key={link.to}
-                            to={link.to}
-                            className="text-[13px] font-semibold text-primary-500 hover:text-accent-500 transition-colors inline-flex items-center gap-1"
-                          >
-                            {link.label} <ArrowRight className="w-3.5 h-3.5" />
-                          </Link>
+                    <div className="lg:col-span-3 p-5 md:p-8">
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
+                        {cat.items.map((item) => (
+                          <li key={item} className="flex items-start gap-2.5 text-slate-600 text-[14px] leading-snug">
+                            <CheckCircle2 className="w-4 h-4 text-accent-500 mt-0.5 shrink-0" />
+                            <span>{item}</span>
+                          </li>
                         ))}
-                      </div>
-                    )}
+                      </ul>
+                    </div>
                   </div>
-                  <div className="lg:col-span-3 p-5 md:p-8">
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
-                      {cat.items.map((item) => (
-                        <li key={item} className="flex items-start gap-2.5 text-slate-600 text-[14px] leading-snug">
-                          <CheckCircle2 className="w-4 h-4 text-accent-500 mt-0.5 shrink-0" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
+                </Link>
+                {cat.secondaryLinks.length > 0 && (
+                  <div className="px-5 md:px-8 py-4 bg-white border-t border-slate-100 flex flex-wrap gap-x-4 gap-y-2">
+                    {cat.secondaryLinks.map((link) => (
+                      <Link
+                        key={link.to}
+                        to={link.to}
+                        className="text-[13px] font-semibold text-primary-500 hover:text-accent-500 transition-colors inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-300 rounded-sm"
+                      >
+                        {link.label} <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    ))}
                   </div>
-                </div>
+                )}
               </motion.article>
             ))}
           </div>

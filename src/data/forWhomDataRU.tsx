@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle2, Droplets, ShoppingBag, Factory, Users } from "lucide-react";
 import { ForWhomContent } from "./forWhomData";
+import { servicePath } from "@/utils/ruPaths";
+
+const topicCardHover =
+  "transition-all duration-[225ms] ease-out hover:-translate-y-1 hover:shadow-md hover:border-primary-200/80 cursor-pointer block h-full";
 
 export const forWhomDataRU: ForWhomContent[] = [
   {
@@ -109,10 +113,13 @@ export const forWhomDataRU: ForWhomContent[] = [
             <h4 className="text-[20px] font-bold text-primary-500 mb-4">Быстрый оборот</h4>
             <p className="text-slate-600 text-[14px]">При выборе востребованных артикулов продажи начинаются с первых дней размещения на Wildberries и Ozon.</p>
           </div>
-          <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+          <Link
+            to={servicePath("lojistik-ve-depo", true)}
+            className={`bg-white border border-slate-100 rounded-2xl p-6 shadow-sm ${topicCardHover}`}
+          >
             <h4 className="text-[20px] font-bold text-primary-500 mb-4">Надежная логистика</h4>
             <p className="text-slate-600 text-[14px]">Таможенная очистка, сертификаты EAC, штрихкодирование и распределение по складам FBO — полностью на нашей стороне.</p>
-          </div>
+          </Link>
         </div>
       </>
     ),

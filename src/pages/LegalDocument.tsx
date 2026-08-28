@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { createBreadcrumbSchema } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
 import {
   absoluteUrl,
   homePath,
@@ -61,10 +62,7 @@ export default function LegalDocument({ kind, isRu }: Props) {
         <link rel="alternate" hrefLang="tr" href={trHref} />
         <link rel="alternate" hrefLang="ru" href={ruHref} />
         <link rel="alternate" hrefLang="x-default" href={trHref} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:type" content="website" />
+        {socialMetaElements({ title, description, url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 

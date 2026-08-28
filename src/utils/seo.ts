@@ -1,3 +1,7 @@
+export const SITE_ORIGIN = "https://russiamarketentry.com";
+export const DEFAULT_OG_IMAGE = `${SITE_ORIGIN}/og-image.jpg`;
+export const ORGANIZATION_ID = `${SITE_ORIGIN}/#organization`;
+
 export interface BreadcrumbItem {
   name: string;
   url: string;
@@ -11,7 +15,7 @@ export function createBreadcrumbSchema(items: BreadcrumbItem[]) {
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": item.url.startsWith("http") ? item.url : `https://russiamarketentry.com${item.url}`
+      "item": item.url.startsWith("http") ? item.url : `${SITE_ORIGIN}${item.url}`
     }))
   };
 }
@@ -67,29 +71,41 @@ export interface OrganizationSchemaOptions {
  */
 export function createOrganizationSchema(options: OrganizationSchemaOptions = {}) {
   const { description, knowsAbout, url } = options;
+  const pageUrl = url
+    ? url.startsWith("http")
+      ? url
+      : `${SITE_ORIGIN}${url}`
+    : SITE_ORIGIN;
+
   return {
     "@context": "https://schema.org",
     "@type": ["Organization", "ConsultingBusiness"],
+    "@id": ORGANIZATION_ID,
     "name": "Russia Market Entry",
     "legalName": VERIFIED_CONTACT.legalName,
-    "url": url ? (url.startsWith("http") ? url : `https://russiamarketentry.com${url}`) : "https://russiamarketentry.com",
-    "logo": "https://russiamarketentry.com/favicon.png",
+    "url": pageUrl,
+    "logo": `${SITE_ORIGIN}/favicon.png`,
     "description":
       description ??
       "Türkiye'den Rusya'ya uçtan uca e-ticaret, Ozon, Wildberries, Lamoda entegrasyonu, lojistik ve şirket kurulumu.",
     "email": VERIFIED_CONTACT.email,
     "taxID": VERIFIED_CONTACT.inn,
+    "identifier": [
+      { "@type": "PropertyValue", "propertyID": "INN", "value": VERIFIED_CONTACT.inn },
+      { "@type": "PropertyValue", "propertyID": "KPP", "value": VERIFIED_CONTACT.kpp },
+      { "@type": "PropertyValue", "propertyID": "OGRN", "value": VERIFIED_CONTACT.ogrn },
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": VERIFIED_CONTACT.streetAddress,
       "addressLocality": VERIFIED_CONTACT.addressLocality,
       "addressRegion": VERIFIED_CONTACT.addressRegion,
       "postalCode": VERIFIED_CONTACT.postalCode,
-      "addressCountry": VERIFIED_CONTACT.addressCountry
+      "addressCountry": VERIFIED_CONTACT.addressCountry,
     },
     "areaServed": [
       { "@type": "Country", "name": "TR" },
-      { "@type": "Country", "name": "RU" }
+      { "@type": "Country", "name": "RU" },
     ],
     ...(knowsAbout && knowsAbout.length > 0 ? { knowsAbout } : {}),
     "contactPoint": [
@@ -99,7 +115,7 @@ export function createOrganizationSchema(options: OrganizationSchemaOptions = {}
         "email": VERIFIED_CONTACT.email,
         "contactType": "customer service",
         "areaServed": "TR",
-        "availableLanguage": ["Turkish", "English", "Russian"]
+        "availableLanguage": ["Turkish", "English", "Russian"],
       },
       {
         "@type": "ContactPoint",
@@ -107,12 +123,31 @@ export function createOrganizationSchema(options: OrganizationSchemaOptions = {}
         "email": VERIFIED_CONTACT.email,
         "contactType": "customer service",
         "areaServed": "RU",
-        "availableLanguage": ["Turkish", "English", "Russian"]
-      }
+        "availableLanguage": ["Turkish", "English", "Russian"],
+      },
     ],
-    "sameAs": [
-      "https://www.linkedin.com/company/russia-market-entry"
-    ]
+    "sameAs": ["https://www.linkedin.com/company/russia-market-entry"],
+  };
+}
+
+export interface WebSiteSchemaOptions {
+  url?: string;
+}
+
+/** Home-page WebSite entity. No SearchAction — the site has no internal search UI. */
+export function createWebSiteSchema(options: WebSiteSchemaOptions = {}) {
+  const siteUrl = options.url
+    ? options.url.startsWith("http")
+      ? options.url
+      : `${SITE_ORIGIN}${options.url}`
+    : SITE_ORIGIN;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Russia Market Entry",
+    "url": siteUrl,
+    "publisher": { "@id": ORGANIZATION_ID },
   };
 }
 
@@ -137,28 +172,20 @@ export function createFaqSchema(items: { question: string; answer: string }[]) {
 }
 
 export function createServiceSchema(title: string, description: string, url: string) {
+  const fullUrl = url.startsWith("http") ? url : `${SITE_ORIGIN}${url}`;
+
   return {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": title,
     "description": description,
-    "provider": {
-      "@type": "Organization",
-      "name": "Russia Market Entry",
-      "url": "https://russiamarketentry.com"
-    },
+    "provider": { "@id": ORGANIZATION_ID },
     "areaServed": [
-      {
-        "@type": "Country",
-        "name": "Türkiye"
-      },
-      {
-        "@type": "Country",
-        "name": "Rusya"
-      }
+      { "@type": "Country", "name": "Türkiye" },
+      { "@type": "Country", "name": "Rusya" },
     ],
     "serviceType": "E-Commerce Consulting & Operations",
-    "url": url.startsWith("http") ? url : `https://russiamarketentry.com${url}`
+    "url": fullUrl,
   };
 }
 
@@ -169,12 +196,15 @@ export function createArticleSchema(
   publishedAt: string,
   imageUrl?: string,
   /** Language URL prefix: '' (TR), '/ru', or '/en' */
-  pathPrefix: string = ""
+  pathPrefix: string = "",
+  modifiedAt?: string
 ) {
-  const fullUrl = `https://russiamarketentry.com${pathPrefix}/blog/${slug}`;
+  const fullUrl = `${SITE_ORIGIN}${pathPrefix}/blog/${slug}`;
   const fullImageUrl = imageUrl
-    ? (imageUrl.startsWith("http") ? imageUrl : `https://russiamarketentry.com${imageUrl}`)
-    : "https://russiamarketentry.com/og-image.jpg";
+    ? imageUrl.startsWith("http")
+      ? imageUrl
+      : `${SITE_ORIGIN}${imageUrl}`
+    : DEFAULT_OG_IMAGE;
 
   // Standardize published date format to YYYY-MM-DD
   const parseTurkishDateToISO = (dateStr: string) => {
@@ -196,30 +226,22 @@ export function createArticleSchema(
     return "2026-08-01";
   };
 
+  const datePublished = parseTurkishDateToISO(publishedAt);
+  const dateModified = parseTurkishDateToISO(modifiedAt ?? publishedAt);
+
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     "headline": title,
     "description": description,
     "image": [fullImageUrl],
-    "datePublished": parseTurkishDateToISO(publishedAt),
-    "dateModified": parseTurkishDateToISO(publishedAt),
-    "author": {
-      "@type": "Organization",
-      "name": "Russia Market Entry",
-      "url": "https://russiamarketentry.com"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Russia Market Entry",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://russiamarketentry.com/favicon.png"
-      }
-    },
+    "datePublished": datePublished,
+    "dateModified": dateModified,
+    "author": { "@id": ORGANIZATION_ID },
+    "publisher": { "@id": ORGANIZATION_ID },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": fullUrl
-    }
+      "@id": fullUrl,
+    },
   };
 }

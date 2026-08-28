@@ -1,11 +1,13 @@
 import { useParams, Navigate, Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "motion/react";
-import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
-import { createBreadcrumbSchema, createArticleSchema } from "@/utils/seo";
+import { createBreadcrumbSchema, createArticleSchema, DEFAULT_OG_IMAGE } from "@/utils/seo";
+import { socialMetaElements } from "@/components/PageSocialMeta";
 import { hasBlogContentFor, blogDetailPath, type BlogLang } from "@/utils/blogLanguages";
+import { contactPath, servicesPath, servicePath } from "@/utils/ruPaths";
 import BlockRenderer from "../components/BlockRenderer";
 
 export default function BlogDetail() {
@@ -21,6 +23,13 @@ export default function BlogDetail() {
       ? "en"
       : "tr";
   const langPrefix = currentLang === "tr" ? "" : `/${currentLang}`;
+  const isRu = currentLang === "ru";
+  const marketplaceBlogSlugs = new Set([
+    "wildberriesde-satis-yapmak",
+    "ozonda-satis-yapmak",
+    "lamodaya-nasil-girilir",
+  ]);
+  const showMarketplaceService = slug ? marketplaceBlogSlugs.has(slug) : false;
 
   if (!post) {
     return <Navigate to={`${langPrefix}/blog`} replace />;
@@ -88,14 +97,14 @@ export default function BlogDetail() {
     title,
     excerpt,
     post.slug,
-    post.publishedAt,
+    publishedDate,
     imageUrl,
     langPrefix
   );
 
   const fullImageUrl = imageUrl
     ? (imageUrl.startsWith("http") ? imageUrl : `https://russiamarketentry.com${imageUrl}`)
-    : "https://russiamarketentry.com/og-image.jpg";
+    : DEFAULT_OG_IMAGE;
 
   return (
     <main>
@@ -108,11 +117,13 @@ export default function BlogDetail() {
           {hasEn && <link rel="alternate" hrefLang="en" href={`https://russiamarketentry.com/en/blog/${post.slug}`} />}
           {hasRu && <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/ru/blog/${post.slug}`} />}
           <link rel="alternate" hrefLang="x-default" href={hasTr ? `https://russiamarketentry.com/blog/${post.slug}` : canonicalUrl} />
-          <meta property="og:title" content={`${metaTitle} | Russia Market Entry`} />
-          <meta property="og:description" content={excerpt} />
-          <meta property="og:url" content={canonicalUrl} />
-          <meta property="og:type" content="article" />
-          <meta property="og:image" content={fullImageUrl} />
+          {socialMetaElements({
+            title: `${metaTitle} | Russia Market Entry`,
+            description: excerpt,
+            url: canonicalUrl,
+            image: fullImageUrl,
+            type: "article",
+          })}
           <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
           <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         </Helmet>
@@ -197,6 +208,45 @@ export default function BlogDetail() {
               content
             )}
           </motion.div>
+        </div>
+      </section>
+
+      {/* End CTA */}
+      <section className="py-12 md:py-16 bg-slate-50 border-t border-slate-100">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl text-center">
+          <h2 className="text-[22px] md:text-[28px] font-extrabold text-primary-500 tracking-tight mb-3">
+            {isRu ? "Готовы обсудить следующий шаг?" : currentLang === "en" ? "Ready to discuss your next step?" : "Bir sonraki adımı konuşmaya hazır mısınız?"}
+          </h2>
+          <p className="text-[14px] md:text-[15px] text-slate-600 leading-relaxed mb-6 max-w-xl mx-auto">
+            {isRu
+              ? "Свяжитесь с нами или изучите услуги, которые мы можем предложить для вашего бренда."
+              : currentLang === "en"
+                ? "Get in touch or explore the services we can build for your brand."
+                : "Bizimle iletişime geçin veya markanız için kurabileceğimiz hizmetleri inceleyin."}
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4">
+            <Link
+              to={contactPath(isRu)}
+              className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-6 py-3 rounded-xl font-bold text-[14px] md:text-[15px]"
+            >
+              {t("nav.contact")} <ArrowRight className="w-4 h-4" />
+            </Link>
+            {showMarketplaceService ? (
+              <Link
+                to={servicePath("pazaryeri-yonetimi", isRu)}
+                className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 transition-colors text-white px-6 py-3 rounded-xl font-bold text-[14px] md:text-[15px]"
+              >
+                {t("nav.services")} <ArrowRight className="w-4 h-4" />
+              </Link>
+            ) : (
+              <Link
+                to={servicesPath(isRu)}
+                className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 transition-colors text-white px-6 py-3 rounded-xl font-bold text-[14px] md:text-[15px]"
+              >
+                {t("nav.services")} <ArrowRight className="w-4 h-4" />
+              </Link>
+            )}
+          </div>
         </div>
       </section>
       </article>

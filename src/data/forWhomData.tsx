@@ -1,6 +1,10 @@
 import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle2, Droplets, ShoppingBag, Factory, Users } from "lucide-react";
+import { servicePath } from "@/utils/ruPaths";
+
+const topicCardHover =
+  "transition-all duration-[225ms] ease-out hover:-translate-y-1 hover:shadow-md hover:border-primary-200/80 cursor-pointer block h-full";
 
 export interface ForWhomContent {
   id: string;
@@ -121,10 +125,13 @@ export const forWhomData: ForWhomContent[] = [
             <h4 className="text-[20px] font-bold text-primary-500 mb-4">Hızlı Geri Dönüş</h4>
             <p className="text-slate-600 text-[14px]">Doğru ürün grupları seçildiğinde, satışlar hızlıca başlar. Wildberries ve Ozon üzerinden milyonlarca kullanıcıya anında erişim sağlanır.</p>
           </div>
-          <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+          <Link
+            to={servicePath("lojistik-ve-depo", false)}
+            className={`bg-white border border-slate-100 rounded-2xl p-6 shadow-sm ${topicCardHover}`}
+          >
             <h4 className="text-[20px] font-bold text-primary-500 mb-4">Güvenli Lojistik</h4>
             <p className="text-slate-600 text-[14px]">Gümrükleme, sertifikasyon, Çestniy Znak barkodlama süreçleri ve Rusya içi FBO depo dağıtımlarının tamamını biz üstleniyoruz.</p>
-          </div>
+          </Link>
         </div>
       </>
     )
@@ -273,7 +280,10 @@ export const forWhomData: ForWhomContent[] = [
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+          <Link
+            to={servicePath("ithalat-ve-gumruk-yonetimi", false)}
+            className={`bg-white border border-slate-100 rounded-2xl p-6 shadow-sm ${topicCardHover}`}
+          >
             <h4 className="text-[20px] font-bold text-primary-500 mb-4">Regülasyon ve Uyum Süreçleri</h4>
             <p className="text-slate-600 mb-4 text-[14px]">Kozmetik kategorisinde mevzuata uygunluk büyük önem taşır. Operasyon sürecinde aşağıdaki başlıkları planlıyoruz:</p>
             <ul className="space-y-2 text-[14px] text-slate-600 mb-4">
@@ -283,7 +293,7 @@ export const forWhomData: ForWhomContent[] = [
               <li className="flex items-start gap-2"><span className="text-accent-500 mt-1">•</span> Pazaryeri gerekliliklerine uyum</li>
             </ul>
             <p className="font-medium text-accent-500 text-[14px]">👉 Ürünlerinizin Rusya pazarına sorunsuz şekilde giriş yapması sağlanır.</p>
-          </div>
+          </Link>
 
           <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
             <h4 className="text-[20px] font-bold text-primary-500 mb-4">Konsinye Model ile Düşük Risk</h4>
@@ -296,7 +306,10 @@ export const forWhomData: ForWhomContent[] = [
             </ul>
           </div>
 
-          <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+          <Link
+            to={servicePath("sistem-ve-entegrasyon", false)}
+            className={`bg-white border border-slate-100 rounded-2xl p-6 shadow-sm ${topicCardHover}`}
+          >
             <h4 className="text-[20px] font-bold text-primary-500 mb-4">E-Ticaret ve Marka Altyapısı</h4>
             <p className="text-slate-600 mb-4 text-[14px]">Sadece pazaryerleriyle sınırlı kalmazsınız:</p>
             <ul className="space-y-2 text-[14px] text-slate-600">
@@ -305,7 +318,7 @@ export const forWhomData: ForWhomContent[] = [
               <li className="flex items-start gap-2"><span className="text-accent-500 mt-1">•</span> Çok kanallı satış yönetimi</li>
               <li className="flex items-start gap-2"><span className="text-accent-500 mt-1">•</span> Tek panelden stok ve sipariş kontrolü</li>
             </ul>
-          </div>
+          </Link>
         </div>
       </>
     ),

@@ -12,6 +12,7 @@ import {
   privacyPath,
   termsPath,
   cookiesPath,
+  whyRussiaPath,
 } from "@/utils/ruPaths";
 import { VERIFIED_CONTACT, OPERATIONAL_LOCATION } from "@/utils/seo";
 
@@ -19,6 +20,7 @@ export default function Footer() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === "ru";
   const isEn = i18n.language === "en";
+  const blogPath = isRu ? "/ru/blog" : isEn ? "/en/blog" : "/blog";
   const operationalAddress = isRu
     ? OPERATIONAL_LOCATION.displayRu
     : isEn
@@ -46,9 +48,11 @@ export default function Footer() {
                 { name: t('nav.home'), path: homePath(isRu) },
                 { name: t('nav.about'), path: aboutPath(isRu) },
                 { name: t('nav.russia_market'), path: russiaMarketPath(isRu) },
+                { name: t('home.why_russia_detail.h1'), path: whyRussiaPath(isRu) },
                 { name: t('nav.services'), path: servicesPath(isRu) },
                 { name: t('nav.op_model'), path: operationModelPath(isRu) },
                 { name: t('nav.for_whom'), path: forWhomPath(isRu) },
+                { name: t('nav.blog'), path: blogPath },
                 { name: t('nav.contact'), path: contactPath(isRu) },
               ].map((link) => (
                 <li key={link.path}>
