@@ -664,7 +664,7 @@ export const serviceDetails: Record<string, any> = {
         )
       },
       {
-        title: "Marketplace entegrasyonu ve stok yönetimi",
+        title: "Pazaryeri entegrasyonu ve stok yönetimi",
         content: (
           <div className="space-y-4 text-slate-600">
             <p>Lojistik süreçler dijital altyapı ile entegre çalışır.</p>
@@ -1297,7 +1297,7 @@ export const serviceDetails: Record<string, any> = {
             <ul className="list-disc pl-5 space-y-2 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:space-y-2">
               <li>E-ticaret altyapısı</li>
               <li>Web sitesi</li>
-              <li>Marketplace</li>
+              <li>Pazaryeri</li>
               <li>Dijital pazarlama</li>
               <li>Reklam yönetimi</li>
               <li>SEO</li>
@@ -1421,7 +1421,7 @@ export const serviceDetails: Record<string, any> = {
           <div className="space-y-4 text-slate-600">
             <p>İthalat bizim için sürecin sonu değil. Ürün Rusya'ya ulaştıktan sonra aşağıdaki zincirin nasıl çalışacağı önceden planlanır:</p>
             <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
-              {["Gümrük", "Depo", "Marketplace", "Stok", "Satış"].map((step, i, arr) => (
+              {["Gümrük", "Depo", "Pazaryeri", "Stok", "Satış"].map((step, i, arr) => (
                 <span key={step} className="inline-flex items-center gap-2">
                   <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
                   {i < arr.length - 1 && <span className="text-accent-500">→</span>}
@@ -1436,7 +1436,7 @@ export const serviceDetails: Record<string, any> = {
         title: "Süreç Nasıl İlerliyor?",
         content: (
           <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
-            {["Ürün Analizi", "Ürün Sınıflandırması", "Uyum ve Belgelendirme Kontrolü", "İthalat & Gümrük Planı", "Sevkiyat", "Rusya Gümrüğü", "Depo / Lojistik Operasyonu", "Marketplace'e Hazırlık"].map((step, i, arr) => (
+            {["Ürün Analizi", "Ürün Sınıflandırması", "Uyum ve Belgelendirme Kontrolü", "İthalat & Gümrük Planı", "Sevkiyat", "Rusya Gümrüğü", "Depo / Lojistik Operasyonu", "Pazaryerine Hazırlık"].map((step, i, arr) => (
               <span key={step} className="inline-flex items-center gap-2">
                 <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
                 {i < arr.length - 1 && <span className="text-accent-500">→</span>}
@@ -1574,14 +1574,14 @@ export const serviceDetails: Record<string, any> = {
               <li>Değerlendirmeler</li>
               <li>İçerik</li>
               <li>Kampanyalar</li>
-              <li>Marketplace konumlandırması</li>
+              <li>Pazaryeri konumlandırması</li>
               <li>Kanal / partner yapısı (görülebildiği ölçüde)</li>
             </ul>
           </div>
         ),
       },
       {
-        title: "Fiyatlandırma, Ticari Model ve Marketplace Seçimi",
+        title: "Fiyatlandırma, Ticari Model ve Pazaryeri Seçimi",
         content: (
           <div className="space-y-4 text-slate-600">
             <p>
@@ -1732,7 +1732,7 @@ export const serviceDetails: Record<string, any> = {
               ))}
             </div>
             <p>
-              Araştırmayı yalnızca rapor olarak bırakmıyoruz; sonucunu operasyona bağlıyoruz: Marketplace · Lojistik · Stok · Fiyat · Pazarlama · Satış. İyi bir pazar araştırmasının değeri, uygulanabilir bir giriş planına dönüşmesidir.
+              Araştırmayı yalnızca rapor olarak bırakmıyoruz; sonucunu operasyona bağlıyoruz: Pazaryeri · Lojistik · Stok · Fiyat · Pazarlama · Satış. İyi bir pazar araştırmasının değeri, uygulanabilir bir giriş planına dönüşmesidir.
             </p>
             <p className="text-[14px] space-x-1">
               <Link to={servicePath("turkiyede-sirket-kurulumu", false)} className="text-accent-500 font-semibold hover:underline">

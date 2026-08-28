@@ -45,7 +45,7 @@ export default function ForWhomDetail() {
   ]);
 
   return (
-    <main className="bg-slate-50 min-h-screen pt-24 pb-24">
+    <main className="bg-slate-50 min-h-screen pt-10 pb-12 md:pb-16">
       <Helmet>
         <title>{`${data.title} | Russia Market Entry`}</title>
         <meta name="description" content={data.description} />
@@ -73,7 +73,7 @@ export default function ForWhomDetail() {
         </div>
 
         {/* Header */}
-        <div className={`bg-white rounded-3xl p-8 lg:p-14 border-t-4 border-slate-100 shadow-xl overflow-hidden relative mb-20`} style={{ borderTopColor: 'var(' + data.color + ')' }}>
+        <div className={`bg-white rounded-3xl p-6 lg:p-10 border-t-4 border-slate-100 shadow-xl overflow-hidden relative mb-10`} style={{ borderTopColor: 'var(' + data.color + ')' }}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
