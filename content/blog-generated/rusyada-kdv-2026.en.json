@@ -1,0 +1,173 @@
+{
+  "title": "VAT in Russia (НДС) 2026: A Guide for Turkish Brands and E-Commerce Businesses",
+  "excerpt": "VAT in Russia 2026: 22% rate, USN simplified tax, 20 million RUB threshold, import VAT, and marketplace sales — a practical guide for Turkish brands entering Russia.",
+  "category": "vergi-finans",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Do Turkish brands that set up a company in Russia or sell online pay VAT? What is the VAT rate in 2026? How should VAT be assessed under USN, on marketplace sales, and on imports from Türkiye to Russia?"
+    },
+    {
+      "type": "paragraph",
+      "text": "For Turkish brands planning e-commerce in Russia, tax is not a topic for the accounting department alone. VAT can directly affect selling price, cost, cash flow, and product profitability."
+    },
+    {
+      "type": "paragraph",
+      "text": "In 2026, Russia's VAT system underwent major changes. The standard VAT rate rose from 20% to 22%, and the revenue threshold for VAT exemption under USN was significantly reduced."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Disclaimer",
+      "text": "This article is for general information only. Actual tax obligations depend on company structure, tax regime, products, and transactions. Consult a qualified tax advisor or accountant in Russia before implementation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What Is the VAT Rate in Russia in 2026?"
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        { "label": "Standard VAT rate (2026)", "value": "22%" },
+        { "label": "Previous standard rate", "value": "20%" },
+        { "label": "Other rates", "value": "10% / 0%" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "From 1 January 2026, Russia's standard VAT rate is 22%. The law also provides 10% and 0% rates for certain transactions and products. Each brand must verify which rate applies to its specific products."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Do E-Commerce Companies in Russia Pay VAT?"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "USN taxpayers whose 2025 revenue did not exceed 20 million RUB may be automatically exempt from VAT in 2026.",
+        "If 2026 revenue exceeds 20 million RUB, VAT obligations may begin.",
+        "According to the FNS, liability starts from the first day of the month following the period in which the threshold was exceeded."
+      ]
+    },
+    {
+      "type": "calloutBox",
+      "text": "Assuming \"I will use USN, so I won't pay VAT\" when setting up a new e-commerce company in Russia is not correct."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why Does the 20 Million RUB Threshold Matter?"
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        { "label": "2026", "value": "20 million RUB" },
+        { "label": "2027", "value": "15 million RUB" },
+        { "label": "2028 and later", "value": "10 million RUB" }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Two VAT Approaches for USN Companies in 2026"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. Standard VAT rates (22% / 10% / 0%)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Under this system, input VAT deduction is possible for qualifying transactions."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. Special USN rates (5% / 7%)"
+    },
+    {
+      "type": "paragraph",
+      "text": "These rates do not allow the same input VAT deduction mechanism as the standard system. Concluding that 5% VAT is always better is incorrect."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Net VAT liability",
+      "text": "Output VAT − Deductible input VAT = Net VAT liability"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "VAT on Imports from Türkiye to Russia"
+    },
+    {
+      "type": "paragraph",
+      "text": "Import VAT is not the same as VAT on domestic sales. Turkish brands should model import duties, import VAT, and domestic sales VAT in Russia separately."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How Should VAT Be Considered on Marketplace Sales?"
+    },
+    {
+      "type": "paragraph",
+      "text": "With 1,000,000 RUB in sales and 150,000 RUB marketplace commission, the 850,000 RUB transferred to the seller is not net profit. Product cost, logistics, warehousing, advertising, import costs, and taxes must also be accounted for."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "VAT Is Not the Same as Profit"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a 12,200 RUB VAT-inclusive price at 22%, the FNS specifies the 22/122 calculation rate from 2026. Treating the full price as company revenue without separating VAT is incorrect."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Is Russian VAT the Same as Turkish VAT?"
+    },
+    {
+      "type": "paragraph",
+      "text": "No. Türkiye: standard VAT 20% (plus 1% and 10% for certain items). Russia: standard rate 22% from 2026 (plus 10% and 0% for certain transactions). Copying Turkish accounting logic directly is not appropriate."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "VAT Checklist for Turkish Brands"
+    },
+    {
+      "type": "bulletList",
+      "title": "Company & VAT",
+      "items": [
+        "Tax regime confirmed (USN vs general system)",
+        "Revenue projection completed",
+        "VAT registration and applicable rate determined",
+        "Input VAT assessed"
+      ]
+    },
+    {
+      "type": "bulletList",
+      "title": "Import, marketplace & profitability",
+      "items": [
+        "Import VAT and customs costs calculated",
+        "Marketplace commissions, logistics, warehousing, advertising calculated",
+        "Net sales after VAT and net profit calculated"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "From 2026, VAT in Russia requires more careful planning for e-commerce companies. The right approach: Company → Tax regime → Import → VAT → Marketplace → Logistics → Profitability."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Russia Market Entry",
+      "text": "We support Turkish brands entering Russia by evaluating import, marketplace, logistics, finance, and operations together. Planning your e-commerce operation in Russia? Contact us."
+    }
+  ]
+}

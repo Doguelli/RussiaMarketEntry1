@@ -1,0 +1,181 @@
+{
+  "title": "Rusya'da KDV (НДС) 2026: Türk Markaları İçin Güncel Rehber",
+  "excerpt": "Rusya'da KDV 2026: %22 KDV, USN, 20 milyon RUB eşiği, ithalat KDV'si ve marketplace satışlarında KDV hakkında Türk markaları için güncel rehber.",
+  "category": "vergi-finans",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Rusya'da şirket kuran veya e-ticaret yapan Türk markaları KDV öder mi? 2026'da KDV oranı kaç? USN, marketplace satışları ve Türkiye'den Rusya'ya yapılan ithalatta KDV nasıl değerlendirilir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da e-ticaret yapmak isteyen Türk markaları için vergi konusu yalnızca muhasebe departmanının ilgilendiği bir konu değildir. Çünkü KDV doğrudan satış fiyatını, maliyeti, nakit akışını ve ürün kârlılığını etkileyebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Üstelik Rusya'da 2026 yılında KDV sisteminde önemli değişiklikler yürürlüğe girdi. Genel KDV oranı %20'den %22'ye yükseltildi ve USN kullanan işletmeler açısından KDV muafiyetinin gelir eşiği önemli ölçüde düşürüldü."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Önemli",
+      "text": "Bu içerik genel bilgilendirme amacı taşır. Gerçek vergi yükümlülüğü şirketin yapısına, vergi rejimine, ürünlerine ve işlemlerine göre değişebilir. Uygulama öncesinde Rusya'da yetkili bir vergi danışmanı veya mali müşavir ile değerlendirme yapılmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2026'da Rusya'da KDV Oranı Kaç?"
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        { "label": "Genel KDV oranı (2026)", "value": "%22" },
+        { "label": "Önceki genel oran", "value": "%20" },
+        { "label": "Diğer oranlar", "value": "%10 / %0" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da genel KDV oranı 1 Ocak 2026 itibarıyla %22 oldu. Bunun yanında mevzuatta belirli işlemler ve ürünler için %10 ve %0 oranları da bulunuyor. Ürününüzün gerçekten hangi orana tabi olduğunu ayrıca kontrol etmeniz gerekir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da E-Ticaret Yapan Şirket KDV Öder mi?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu sorunun cevabı şirketin vergi rejimine ve gelir seviyesine bağlıdır. Özellikle USN kullanan şirketlerde 2026'dan itibaren yeni bir yapı uygulanıyor."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "2025 yılı geliri 20 milyon RUB'u aşmayan USN mükellefleri 2026 yılında KDV'den otomatik olarak muaf olabilir.",
+        "2026 yılı içinde gelir 20 milyon RUB'u aşarsa KDV yükümlülüğü başlayabilir.",
+        "FNS'ye göre yükümlülük, eşiğin aşıldığı dönemi takip eden ayın başından itibaren doğar."
+      ]
+    },
+    {
+      "type": "calloutBox",
+      "text": "Rusya'da yeni bir e-ticaret şirketi kurarken \"USN kullanacağım, dolayısıyla KDV ödemeyeceğim\" şeklinde bir varsayım yapmak doğru değildir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "20 Milyon RUB Eşiği Neden Önemli?"
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        { "label": "2026", "value": "20 milyon RUB" },
+        { "label": "2027", "value": "15 milyon RUB" },
+        { "label": "2028 ve sonrası", "value": "10 milyon RUB" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu özellikle hızlı büyümeyi hedefleyen e-ticaret şirketleri açısından önemli. Şirketin bugün KDV'den muaf olması, satış hacmi büyüdüğünde aynı şekilde devam edeceği anlamına gelmez."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "USN Kullanan Şirketler İçin İki Farklı KDV Yaklaşımı"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. Genel KDV oranları (%22 / %10 / %0)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu sistemde şartları karşılayan işlemlerde girdi KDV'sinin indirimi mümkündür."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. Özel USN oranları (%5 / %7)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu oranlarda girdi KDV'si için genel sistemdeki gibi indirim mekanizması uygulanmaz. \"%5 KDV her zaman daha avantajlıdır\" sonucuna varmak yanlış olur."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Net KDV yükü",
+      "text": "Satış KDV'si − İndirilebilir girdi KDV'si = Net KDV yükü"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Türkiye'den Rusya'ya Ürün İthalatında KDV"
+    },
+    {
+      "type": "paragraph",
+      "text": "İthalat KDV'si, satış KDV'sinden farklı bir işlemdir. Türkiye → Gümrük → Rusya'daki şirket akışında ithalat vergileri, ithalat KDV'si ve Rusya içindeki satış KDV'si ayrı ayrı değerlendirilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Marketplace Satışlarında KDV"
+    },
+    {
+      "type": "paragraph",
+      "text": "1.000.000 RUB satış, 150.000 RUB marketplace komisyonu ve 850.000 RUB satıcıya aktarım — bu 850.000 RUB net kâr anlamına gelmez. Ürün maliyeti, lojistik, depolama, reklam, ithalat ve vergiler ayrıca hesaplanmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "KDV ile Kâr Aynı Şey Değildir"
+    },
+    {
+      "type": "paragraph",
+      "text": "12.200 RUB satış fiyatında %22 KDV dahil tutar için FNS, 2026 itibarıyla 22/122 hesaplama oranını belirtiyor. Satış fiyatını doğrudan şirket geliri olarak kabul etmek doğru değildir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da KDV ve Türkiye'deki KDV Aynı mı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hayır. Türkiye'de genel KDV %20 (ayrıca %1 ve %10); Rusya'da 2026 itibarıyla genel oran %22 (ayrıca %10 ve %0). Türkiye'deki muhasebe mantığını doğrudan kopyalamak doğru değildir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Türk Markaları İçin KDV Kontrol Listesi"
+    },
+    {
+      "type": "bulletList",
+      "title": "Şirket & KDV",
+      "items": [
+        "Vergi rejimi belirlendi (USN / genel sistem)",
+        "Gelir projeksiyonu yapıldı",
+        "KDV mükellefiyeti ve uygulanacak oran belirlendi",
+        "Girdi KDV'si değerlendirildi"
+      ]
+    },
+    {
+      "type": "bulletList",
+      "title": "İthalat & Marketplace & Kârlılık",
+      "items": [
+        "İthalat KDV'si ve gümrük maliyetleri hesaplandı",
+        "Marketplace komisyonları, lojistik, depolama, reklam hesaplandı",
+        "KDV sonrası net satış ve net kâr hesaplandı"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sonuç"
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 itibarıyla KDV, e-ticaret yapan şirketler için daha dikkatli planlanması gereken bir alandır. Doğru yaklaşım: Şirket → Vergi rejimi → İthalat → KDV → Marketplace → Lojistik → Kârlılık şeklinde bütünsel bir model oluşturmaktır."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Russia Market Entry",
+      "text": "Türk markalarının Rusya pazarına girişinde ithalat, marketplace, lojistik, finans ve operasyon süreçlerini birlikte değerlendiriyoruz. Rusya'da e-ticaret operasyonunuzu planlıyorsanız bizimle iletişime geçin."
+    }
+  ]
+}
