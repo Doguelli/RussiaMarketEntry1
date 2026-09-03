@@ -109,7 +109,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
           "Sitenin çalışması için aşağıdaki üçüncü taraf hizmetler kullanılır. Bunlar, hizmetin doğası gereği IP adresi ve istek meta verilerini alabilir:",
         ],
         bullets: [
-          "Formspree (formspree.io): İletişim ve Türkiye şirket kuruluşu formları bu hizmete JSON olarak gönderilir. Form içeriği Formspree’ye iletilir; tarayıcıdan yapılan istek nedeniyle IP ve kullanıcı aracısı (user-agent) bilgisi de Formspree’ye ulaşabilir.",
+          "FormSubmit (formsubmit.co): İletişim ve Türkiye şirket kuruluşu formları bu hizmete JSON olarak gönderilir. Form içeriği FormSubmit üzerinden operasyon e-postasına iletilir; tarayıcıdan yapılan istek nedeniyle IP ve kullanıcı aracısı (user-agent) bilgisi de FormSubmit’e ulaşabilir.",
           "Google Analytics 4 (ölçüm kimliği G-ZPTMJFB9WS): Sayfa görüntülemeleri ve kullanım verileri toplanır. Analitik komut dosyası sayfa yüklenirken çalışır; site içi onay şartına bağlı değildir.",
           "Netlify: Barındırma ve içerik dağıtımı. Ayrıca Decap CMS / yönetici erişimi için Netlify Identity widget’ı sayfalarda yüklenir.",
           "Geo-IP hizmetleri (api.country.is ve yedek olarak ipapi.co): Manuel dil tercihi kaydedilmemiş bir ziyaretçi ana sayfaya (/) ilk geldiğinde ülke kodu tespiti için IP adresi gönderilebilir; sonuç oturum depolamada tutulabilir ve dil yönlendirmesi için kullanılabilir.",
@@ -126,7 +126,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "8. Saklama",
         paragraphs: [
           "Kişisel veriler, toplama amacının gerektirdiği süre boyunca ve varsa yasal saklama yükümlülüklerine uygun olarak tutulur.",
-          "Form gönderileri Formspree hesabında; analitik veriler Google Analytics hesabında; dil/ülke tercihleri tarayıcınızın localStorage veya sessionStorage alanlarında saklanabilir. Kesin saklama süreleri ilgili hizmetin ayarlarına ve bizim operasyonel uygulamamıza bağlıdır.",
+          "Form gönderileri FormSubmit üzerinden e-posta olarak iletilir; analitik veriler Google Analytics hesabında; dil/ülke tercihleri tarayıcınızın localStorage veya sessionStorage alanlarında saklanabilir. Kesin saklama süreleri ilgili hizmetin ayarlarına ve bizim operasyonel uygulamamıza bağlıdır.",
         ],
       },
       {
@@ -200,7 +200,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
           "Для работы сайта используются следующие сторонние сервисы. По характеру услуги они могут получать IP-адрес и метаданные запроса:",
         ],
         bullets: [
-          "Formspree (formspree.io): формы контактов и заявки на регистрацию компании в Турции отправляются в этот сервис в формате JSON. Содержимое формы передаётся Formspree; при запросе из браузера IP-адрес и user-agent также могут быть доступны Formspree.",
+          "FormSubmit (formsubmit.co): формы контактов и заявки на регистрацию компании в Турции отправляются в этот сервис в формате JSON. Содержимое формы передаётся через FormSubmit на операционную электронную почту; при запросе из браузера IP-адрес и user-agent также могут быть доступны FormSubmit.",
           "Google Analytics 4 (идентификатор G-ZPTMJFB9WS): собираются просмотры страниц и данные об использовании. Скрипт аналитики загружается при открытии страницы и не ставится в зависимость от согласия на сайте.",
           "Netlify: хостинг и доставка контента. Кроме того, на страницах загружается виджет Netlify Identity (для доступа к CMS / админ-панели).",
           "Сервисы Geo-IP (api.country.is и резервно ipapi.co): при первом посещении главной страницы (/) пользователем без сохранённого ручного выбора языка IP-адрес может передаваться для определения кода страны; результат может сохраняться в sessionStorage и использоваться для языкового перенаправления.",
@@ -217,7 +217,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "8. Сроки хранения",
         paragraphs: [
           "Персональные данные хранятся в течение срока, необходимого для целей обработки, и с учётом возможных требований законодательства о хранении.",
-          "Заявки форм могут храниться в аккаунте Formspree; аналитические данные — в аккаунте Google Analytics; языковые/страновые предпочтения — в localStorage или sessionStorage браузера. Конкретные сроки зависят от настроек сервисов и нашей операционной практики.",
+          "Заявки форм доставляются по электронной почте через FormSubmit; аналитические данные — в аккаунте Google Analytics; языковые/страновые предпочтения — в localStorage или sessionStorage браузера. Конкретные сроки зависят от настроек сервисов и нашей операционной практики.",
         ],
       },
       {
@@ -284,7 +284,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "4. Fikri mülkiyet",
         paragraphs: [
           "Site tasarımı, metinler, görseller, logo ve diğer içerikler — aksi belirtilmedikçe — site işletmecisine veya ilgili hak sahiplerine aittir. İzinsiz kopyalama, çoğaltma, dağıtma veya ticari kullanım yasaktır.",
-          "Sitede geçen Wildberries, Ozon, Lamoda, Yandex, Google, Formspree, Netlify ve benzeri üçüncü taraf markalar yalnızca referans amaçlıdır; bu markaların sahipliği ilgili sahiplerine aittir.",
+          "Sitede geçen Wildberries, Ozon, Lamoda, Yandex, Google, FormSubmit, Netlify ve benzeri üçüncü taraf markalar yalnızca referans amaçlıdır; bu markaların sahipliği ilgili sahiplerine aittir.",
         ],
       },
       {
@@ -307,7 +307,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "7. Üçüncü taraf bağlantılar ve hizmetler",
         paragraphs: [
-          "Site; WhatsApp, LinkedIn, Formspree, Google Analytics, Netlify ve benzeri üçüncü taraf hizmetlere veya dış bağlantılara yönlendirebilir. Bu hizmetlerin koşulları ve gizlilik uygulamaları ilgili sağlayıcılara aittir; onlar üzerinde tam kontrolümüz yoktur.",
+          "Site; WhatsApp, LinkedIn, FormSubmit, Google Analytics, Netlify ve benzeri üçüncü taraf hizmetlere veya dış bağlantılara yönlendirebilir. Bu hizmetlerin koşulları ve gizlilik uygulamaları ilgili sağlayıcılara aittir; onlar üzerinde tam kontrolümüz yoktur.",
         ],
       },
       {
@@ -368,7 +368,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "4. Интеллектуальная собственность",
         paragraphs: [
           "Дизайн сайта, тексты, изображения, логотип и иные материалы — если не указано иное — принадлежат оператору сайта или иным правообладателям. Несанкционированное копирование, распространение или коммерческое использование запрещены.",
-          "Упоминания сторонних товарных знаков (Wildberries, Ozon, Lamoda, Yandex, Google, Formspree, Netlify и др.) носят справочный характер; права на них принадлежат соответствующим владельцам.",
+          "Упоминания сторонних товарных знаков (Wildberries, Ozon, Lamoda, Yandex, Google, FormSubmit, Netlify и др.) носят справочный характер; права на них принадлежат соответствующим владельцам.",
         ],
       },
       {
@@ -391,7 +391,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "7. Сторонние ссылки и сервисы",
         paragraphs: [
-          "Сайт может содержать ссылки или интеграции со сторонними сервисами (WhatsApp, LinkedIn, Formspree, Google Analytics, Netlify и др.). Условия использования и конфиденциальности этих сервисов определяются их поставщиками; мы не контролируем их полностью.",
+          "Сайт может содержать ссылки или интеграции со сторонними сервисами (WhatsApp, LinkedIn, FormSubmit, Google Analytics, Netlify и др.). Условия использования и конфиденциальности этих сервисов определяются их поставщиками; мы не контролируем их полностью.",
         ],
       },
       {
@@ -499,7 +499,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "8. Diğer üçüncü taraf teknolojiler",
         paragraphs: [
           "Netlify Identity widget’ı (identity.netlify.com) sayfalarda yüklenir; CMS/yönetici kimlik doğrulaması içindir ve kendi depolama veya çerezlerini kullanabilir.",
-          "Formspree form gönderiminde kullanılır; form gönderilene kadar ziyaretçi tarayıcısına Formspree çerezi yerleştirmeyi zorunlu kılmaz, ancak gönderim sırasında Formspree’ye istek gider.",
+          "FormSubmit form gönderiminde kullanılır; form gönderilene kadar ziyaretçi tarayıcısına FormSubmit çerezi yerleştirmeyi zorunlu kılmaz, ancak gönderim sırasında FormSubmit’e istek gider.",
           "Sitede reklam / yeniden pazarlama pikseli (ör. Meta Pixel) kurulu değildir.",
         ],
       },
@@ -570,7 +570,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "8. Другие сторонние технологии",
         paragraphs: [
           "Виджет Netlify Identity (identity.netlify.com) загружается на страницах для аутентификации CMS/админки и может использовать собственное хранилище или cookie.",
-          "Formspree используется при отправке форм; до отправки формы он не обязан устанавливать cookie в браузер, но при отправке выполняется запрос к Formspree.",
+          "FormSubmit используется при отправке форм; до отправки формы он не обязан устанавливать cookie в браузер, но при отправке выполняется запрос к FormSubmit.",
           "Рекламные или ремаркетинговые пиксели (например, Meta Pixel) на сайте не установлены.",
         ],
       },

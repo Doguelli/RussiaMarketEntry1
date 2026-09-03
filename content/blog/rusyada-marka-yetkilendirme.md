@@ -542,7 +542,7 @@ en:
   image: /uploads/blog/marka-yetkilendirme-en.png
   title: 'Brand Authorization in Russia: A Guide for Turkish Brands'
   body: |
-    Elbette. Blogu İngilizceye çevirirken sadece kelime kelime çevirmeyelim; **İngilizce SEO diliyle, profesyonel ve doğal bir B2B içerik** haline getirelim. Başlık, H2'ler, CTA ve SEO alanlarını da İngilizce hazırlıyorum.
+    Elbette. Blogu Ingilizceye çevirirken sadece kelime kelime çevirmeyelim; **Ingilizce SEO diliyle, profesyonel ve doğal bir B2B içerik** haline getirelim. Başlik, H2'ler, CTA ve SEO alanlarini da Ingilizce hazirliyorum.
 
     ---
 

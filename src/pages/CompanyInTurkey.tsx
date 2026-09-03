@@ -51,6 +51,8 @@ export default function CompanyInTurkey() {
         body: JSON.stringify({
           ...formState,
           _subject: "Заявка: регистрация компании в Турции",
+          _template: "table",
+          _captcha: "false",
         }),
       });
 
@@ -155,6 +157,11 @@ export default function CompanyInTurkey() {
       slug: "otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits",
       title: "Открытие корпоративного и личного банковского счета в Турции: банки, документы и SWIFT",
       readTime: "6 мин"
+    },
+    {
+      slug: "kak-otkryt-bankovskiy-schet-v-turcii-inostrancu",
+      title: "Как открыть банковский счёт в Турции иностранцу в 2026 году?",
+      readTime: "10 мин"
     },
     {
       slug: "nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya",

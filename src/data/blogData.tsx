@@ -208,19 +208,19 @@ const baseBlogPosts: BlogPost[] = [
   },
   {
     slug: "wildberriesde-satis-yapmak",
-    metaTitle: "Wildberries’de Satış Yapmak: Türk Markaları İçin Rehber",
+    metaTitle: "Wildberries’de Satiş Yapmak: Türk Markalari Için Rehber",
     metaTitleEn: "Selling on Wildberries: Guide for Turkish Brands",
-    title: "Wildberries’de Satış Yapmak: Türk Markaları İçin Adım Adım Rehber",
+    title: "Wildberries’de Satiş Yapmak: Türk Markalari Için Adim Adim Rehber",
     titleEn: "Selling on Wildberries: Step by Step Guide for Turkish Brands",
-    excerpt: "Wildberries, Rusya’nın en büyük pazaryeridir ve aylık yüz milyonlarca ziyaretçiyle markalara dev bir satış potansiyeli sunar.",
+    excerpt: "Wildberries, Rusya’nin en büyük pazaryeridir ve aylik yüz milyonlarca ziyaretçiyle markalara dev bir satiş potansiyeli sunar.",
     excerptEn: "Wildberries is Russia's largest marketplace and offers brands a massive sales potential with hundreds of millions of monthly visitors.",
-    publishedAt: "17 Mayıs 2026",
+    publishedAt: "17 Mayis 2026",
     readTime: "3 dk okuma",
     imageUrl: "/blog1.jpeg",
     content: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Wildberries, Rusya’nın en büyük pazaryeridir ve aylık yüz milyonlarca ziyaretçiyle markalara dev bir satış potansiyeli sunar.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Bu rehberde Wildberries’de satış sürecini adım adım anlatıyoruz.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Wildberries, Rusya’nin en büyük pazaryeridir ve aylik yüz milyonlarca ziyaretçiyle markalara dev bir satiş potansiyeli sunar.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Bu rehberde Wildberries’de satiş sürecini adim adim anlatiyoruz.</p>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Wildberries Nedir?</h2>
@@ -228,18 +228,18 @@ const baseBlogPosts: BlogPost[] = [
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Kimler Satış Yapabilir?</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Kimler Satiş Yapabilir?</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-600">
-            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Tekstil markaları</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Tekstil markalari</li>
             <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Kozmetik üreticileri</li>
-            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Ayakkabı ve aksesuar firmaları</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Ayakkabi ve aksesuar firmalari</li>
             <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Ev tekstili üreticileri</li>
-            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Oyuncak ve lifestyle markaları</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Oyuncak ve lifestyle markalari</li>
           </ul>
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Satış Süreci Adımları</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Satiş Süreci Adimlari</h2>
           
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
@@ -253,7 +253,7 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Barkod ve Çestniy Znak</h3>
-              <p className="text-slate-600">Gerekli etiketleme hazırlanır ve yasal zorunluluklara uyumlu hale getirilir.</p>
+              <p className="text-slate-600">Gerekli etiketleme hazirlanir ve yasal zorunluluklara uyumlu hale getirilir.</p>
             </div>
           </div>
           
@@ -261,7 +261,7 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Lojistik Planlama</h3>
-              <p className="text-slate-600">Ürünler Rusya’daki Wildberries FBO depolarına gönderilir.</p>
+              <p className="text-slate-600">Ürünler Rusya’daki Wildberries FBO depolarina gönderilir.</p>
             </div>
           </div>
           
@@ -269,7 +269,7 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Listeleme ve SEO</h3>
-              <p className="text-slate-600">Ürünler profesyonel görseller ve SEO uyumlu içeriklerle yayınlanır.</p>
+              <p className="text-slate-600">Ürünler profesyonel görseller ve SEO uyumlu içeriklerle yayinlanir.</p>
             </div>
           </div>
 
@@ -277,18 +277,18 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Reklam ve Optimizasyon</h3>
-              <p className="text-slate-600">Pazaryeri içi reklamlar kullanılarak satış ivmesi artırılır.</p>
+              <p className="text-slate-600">Pazaryeri içi reklamlar kullanilarak satiş ivmesi artirilir.</p>
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
           <div className="space-y-4 bg-primary-50 p-6 rounded-2xl">
-            <h2 className="text-xl font-bold text-primary-600 mb-2">Wildberries’in Avantajları</h2>
+            <h2 className="text-xl font-bold text-primary-600 mb-2">Wildberries’in Avantajlari</h2>
             <ul className="space-y-2 text-slate-700">
               <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> Çok yüksek trafik potansiyeli</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> Geniş ve yaygın teslimat ağı (PVZ)</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> Hızlı ölçeklenme imkanı</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> Geniş ve yaygin teslimat aği (PVZ)</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> Hizli ölçeklenme imkani</li>
               <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> Güçlü algoritma desteği</li>
             </ul>
           </div>
@@ -296,40 +296,40 @@ const baseBlogPosts: BlogPost[] = [
           <div className="space-y-4 bg-slate-50 p-6 rounded-2xl border border-slate-100">
             <h2 className="text-xl font-bold text-slate-800 mb-2">Dikkat Edilmesi Gerekenler</h2>
             <ul className="space-y-2 text-slate-600">
-              <li className="flex items-center gap-2">- İade oranlarının yönetimi</li>
-              <li className="flex items-center gap-2">- Stok ve tedarik planlaması</li>
+              <li className="flex items-center gap-2">- Iade oranlarinin yönetimi</li>
+              <li className="flex items-center gap-2">- Stok ve tedarik planlamasi</li>
               <li className="flex items-center gap-2">- Reklam bütçe optimizasyonu</li>
-              <li className="flex items-center gap-2">- Bölgesel depo dağılımı (FBO)</li>
+              <li className="flex items-center gap-2">- Bölgesel depo dağilimi (FBO)</li>
             </ul>
           </div>
         </div>
 
         <div className="space-y-4 my-8 relative p-8 border-l-4 border-accent-500 bg-white shadow-md rounded-2xl">
-          <h2 className="text-2xl font-bold text-primary-500 mb-4">Türkiye’den Wildberries’e Satış</h2>
-          <p className="text-slate-600 mb-2 text-lg">Türk firmaları için en önemli avantajlar:</p>
+          <h2 className="text-2xl font-bold text-primary-500 mb-4">Türkiye’den Wildberries’e Satiş</h2>
+          <p className="text-slate-600 mb-2 text-lg">Türk firmalari için en önemli avantajlar:</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
             <div className="text-center p-3 bg-slate-50 rounded-xl">
               <div className="font-bold text-accent-500 mb-1">Konum</div>
-              <div className="text-sm text-slate-600">Coğrafi yakınlık</div>
+              <div className="text-sm text-slate-600">Coğrafi yakinlik</div>
             </div>
             <div className="text-center p-3 bg-slate-50 rounded-xl">
               <div className="font-bold text-accent-500 mb-1">Talep</div>
               <div className="text-sm text-slate-600">Türk ürünlerine ilgi</div>
             </div>
             <div className="text-center p-3 bg-slate-50 rounded-xl">
-              <div className="font-bold text-accent-500 mb-1">Hız</div>
-              <div className="text-sm text-slate-600">Hızlı lojistik</div>
+              <div className="font-bold text-accent-500 mb-1">Hiz</div>
+              <div className="text-sm text-slate-600">Hizli lojistik</div>
             </div>
             <div className="text-center p-3 bg-slate-50 rounded-xl">
               <div className="font-bold text-accent-500 mb-1">Rekabet</div>
-              <div className="text-sm text-slate-600">Fiyat avantajı</div>
+              <div className="text-sm text-slate-600">Fiyat avantaji</div>
             </div>
           </div>
         </div>
 
         <div className="bg-slate-900 justify-center text-center p-10 rounded-3xl mt-12">
           <h2 className="text-3xl font-bold mb-4 text-white">Sonuç</h2>
-          <p className="text-lg leading-relaxed text-slate-300">Wildberries, doğru operasyon ile markalar için önemli bir büyüme kanalıdır. Ancak başarı, sadece ürün yüklemekle değil; operasyonun profesyonel şekilde yönetilmesiyle mümkündür.</p>
+          <p className="text-lg leading-relaxed text-slate-300">Wildberries, doğru operasyon ile markalar için önemli bir büyüme kanalidir. Ancak başari, sadece ürün yüklemekle değil; operasyonun profesyonel şekilde yönetilmesiyle mümkündür.</p>
         </div>
       </div>
     ),
@@ -452,29 +452,29 @@ const baseBlogPosts: BlogPost[] = [
   },
   {
     slug: "lamodaya-nasil-girilir",
-    metaTitle: "Lamoda’ya Nasıl Girilir? Türk Moda Markaları İçin Rehber",
+    metaTitle: "Lamoda’ya Nasil Girilir? Türk Moda Markalari Için Rehber",
     metaTitleEn: "How to Enter Lamoda? Guide for Turkish Fashion Brands",
-    title: "Lamoda’ya Nasıl Girilir? Türk Moda Markaları İçin Rehber",
+    title: "Lamoda’ya Nasil Girilir? Türk Moda Markalari Için Rehber",
     titleEn: "How to Enter Lamoda? Guide for Turkish Fashion Brands",
-    excerpt: "Rusya pazarında premium segmentte konumlanmak isteyen moda markaları için Lamoda, en önemli satış kanallarından biridir. Wildberries ve Ozon’dan farklı olarak Lamoda, seçici marka kabul politikası ve yüksek müşteri profiliyle öne çıkmaktadır.",
+    excerpt: "Rusya pazarinda premium segmentte konumlanmak isteyen moda markalari için Lamoda, en önemli satiş kanallarindan biridir. Wildberries ve Ozon’dan farkli olarak Lamoda, seçici marka kabul politikasi ve yüksek müşteri profiliyle öne çikmaktadir.",
     excerptEn: "For fashion brands wanting to position themselves in the premium segment in Russia, Lamoda is one of the most important sales channels. Unlike Wildberries and Ozon, Lamoda stands out with its selective brand acceptance policy and high customer profile.",
     publishedAt: "22 Haziran 2026",
     readTime: "4 dk okuma",
     imageUrl: "/blog3.png",
     content: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarında premium segmentte konumlanmak isteyen moda markaları için Lamoda, en önemli satış kanallarından biridir. Wildberries ve Ozon’dan farklı olarak Lamoda, seçici marka kabul politikası ve yüksek müşteri profiliyle öne çıkmaktadır.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Bu nedenle Lamoda’da yer almak yalnızca bir satış kanalı oluşturmak değil, aynı zamanda marka değerini yükseltmek anlamına gelir.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Bu rehberde Lamoda’ya giriş sürecini, kabul kriterlerini ve başarılı bir operasyon için dikkat edilmesi gereken noktaları ele alıyoruz.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarinda premium segmentte konumlanmak isteyen moda markalari için Lamoda, en önemli satiş kanallarindan biridir. Wildberries ve Ozon’dan farkli olarak Lamoda, seçici marka kabul politikasi ve yüksek müşteri profiliyle öne çikmaktadir.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Bu nedenle Lamoda’da yer almak yalnizca bir satiş kanali oluşturmak değil, ayni zamanda marka değerini yükseltmek anlamina gelir.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Bu rehberde Lamoda’ya giriş sürecini, kabul kriterlerini ve başarili bir operasyon için dikkat edilmesi gereken noktalari ele aliyoruz.</p>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Lamoda Nedir?</h2>
-          <p className="text-slate-600 leading-relaxed text-lg">Lamoda, Rusya’nın en büyük moda odaklı e-ticaret platformlarından biridir.</p>
-          <p className="text-slate-600">Platform özellikle aşağıdaki kategorilerde faaliyet göstermektedir:</p>
+          <p className="text-slate-600 leading-relaxed text-lg">Lamoda, Rusya’nin en büyük moda odakli e-ticaret platformlarindan biridir.</p>
+          <p className="text-slate-600">Platform özellikle aşağidaki kategorilerde faaliyet göstermektedir:</p>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Kadın giyim</li>
+            <li>Kadin giyim</li>
             <li>Erkek giyim</li>
-            <li>Ayakkabı</li>
+            <li>Ayakkabi</li>
             <li>Çanta</li>
             <li>Aksesuar</li>
             <li>Premium lifestyle ürünleri</li>
@@ -483,7 +483,7 @@ const baseBlogPosts: BlogPost[] = [
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Lamoda’nın Diğer Platformlardan Farkı Nedir?</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Lamoda’nin Diğer Platformlardan Farki Nedir?</h2>
           <p className="text-slate-600 leading-relaxed">Lamoda bir hacim platformundan çok marka platformudur.</p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-6">
@@ -491,14 +491,14 @@ const baseBlogPosts: BlogPost[] = [
               <h3 className="text-lg font-bold text-[#cb11ab] mb-3">Wildberries</h3>
               <ul className="space-y-1 text-sm text-slate-600">
                 <li>• Yüksek sipariş hacmi</li>
-                <li>• Fiyat odaklı müşteri kitlesi</li>
+                <li>• Fiyat odakli müşteri kitlesi</li>
                 <li>• Yoğun rekabet</li>
               </ul>
             </div>
             <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
               <h3 className="text-lg font-bold text-[#005BFF] mb-3">Ozon</h3>
               <ul className="space-y-1 text-sm text-slate-600">
-                <li>• Çok kategorili yapı</li>
+                <li>• Çok kategorili yapi</li>
                 <li>• Güçlü lojistik</li>
                 <li>• Geniş müşteri kitlesi</li>
               </ul>
@@ -507,26 +507,26 @@ const baseBlogPosts: BlogPost[] = [
               <h3 className="text-lg font-bold text-black mb-3">Lamoda</h3>
               <ul className="space-y-1 text-sm text-slate-600">
                 <li>• Premium müşteri profili</li>
-                <li>• Güçlü marka algısı</li>
-                <li>• Daha yüksek sepet ortalaması</li>
+                <li>• Güçlü marka algisi</li>
+                <li>• Daha yüksek sepet ortalamasi</li>
                 <li>• Seçici marka kabul süreci</li>
               </ul>
             </div>
           </div>
-          <p className="text-slate-600 leading-relaxed">Bu nedenle birçok marka Lamoda’yı prestij kanalı olarak konumlandırmaktadır.</p>
+          <p className="text-slate-600 leading-relaxed">Bu nedenle birçok marka Lamoda’yi prestij kanali olarak konumlandirmaktadir.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Kimler Lamoda İçin Uygundur?</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Kimler Lamoda Için Uygundur?</h2>
           <p className="text-slate-600 mb-3">Lamoda özellikle şu markalar için uygundur:</p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-600">
-            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Moda markaları</li>
-            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Tasarım odaklı markalar</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Moda markalari</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Tasarim odakli markalar</li>
             <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Premium segment üreticiler</li>
-            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Kadın & Erkek giyim markaları</li>
-            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Ayakkabı, çanta ve aksesuar markaları</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Kadin & Erkek giyim markalari</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Ayakkabi, çanta ve aksesuar markalari</li>
           </ul>
-          <p className="text-slate-600 mt-3">Fast fashion ürünlerinden çok, marka kimliği olan koleksiyonlar ön plana çıkmaktadır.</p>
+          <p className="text-slate-600 mt-3">Fast fashion ürünlerinden çok, marka kimliği olan koleksiyonlar ön plana çikmaktadir.</p>
         </div>
 
         <div className="space-y-6">
@@ -536,7 +536,7 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Marka Değerlendirmesi</h3>
-              <p className="text-slate-600">İlk aşamada markanın koleksiyon yapısı, ürün kalitesi, marka kimliği ve fiyat segmenti değerlendirilir.</p>
+              <p className="text-slate-600">Ilk aşamada markanin koleksiyon yapisi, ürün kalitesi, marka kimliği ve fiyat segmenti değerlendirilir.</p>
             </div>
           </div>
           
@@ -544,15 +544,15 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Seçimi</h3>
-              <p className="text-slate-600">Her ürün Lamoda için uygun olmayabilir. En güçlü SKU’lar belirlenir, koleksiyon optimize edilir ve fiyatlandırma planlanır.</p>
+              <p className="text-slate-600">Her ürün Lamoda için uygun olmayabilir. En güçlü SKU’lar belirlenir, koleksiyon optimize edilir ve fiyatlandirma planlanir.</p>
             </div>
           </div>
           
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">İçerik Hazırlığı</h3>
-              <p className="text-slate-600">Lamoda’da görsel kalite oldukça önemlidir. Profesyonel ürün fotoğrafları, açıklamalar, teknik bilgiler ve beden tabloları hazırlanır.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Içerik Hazirliği</h3>
+              <p className="text-slate-600">Lamoda’da görsel kalite oldukça önemlidir. Profesyonel ürün fotoğraflari, açiklamalar, teknik bilgiler ve beden tablolari hazirlanir.</p>
             </div>
           </div>
           
@@ -560,38 +560,38 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Operasyon ve Lojistik</h3>
-              <p className="text-slate-600">Ürünler Rusya operasyonuna dahil edilir. Depolama, barkodlama, fulfillment ve iade yönetimi profesyonel şekilde planlanır.</p>
+              <p className="text-slate-600">Ürünler Rusya operasyonuna dahil edilir. Depolama, barkodlama, fulfillment ve iade yönetimi profesyonel şekilde planlanir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Satış ve Büyüme</h3>
-              <p className="text-slate-600">Satış başladıktan sonra koleksiyon performansı, dönüşüm oranları ve en çok satan ürünler analiz edilerek büyüme stratejisi oluşturulur.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Satiş ve Büyüme</h3>
+              <p className="text-slate-600">Satiş başladiktan sonra koleksiyon performansi, dönüşüm oranlari ve en çok satan ürünler analiz edilerek büyüme stratejisi oluşturulur.</p>
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
           <div className="bg-primary-50 p-6 rounded-2xl">
-            <h2 className="text-xl font-bold text-primary-600 mb-3">Lamoda’nın Avantajları</h2>
+            <h2 className="text-xl font-bold text-primary-600 mb-3">Lamoda’nin Avantajlari</h2>
             <ul className="space-y-2 text-slate-700 text-sm">
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Güçlü Marka Algısı:</strong> Lamoda’da yer almak markanın premium algısını destekler.</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Daha Yüksek Sepet Ortalaması:</strong> Müşteri kitlesi kalite ve tasarım odaklıdır.</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Daha Düşük Fiyat Baskısı:</strong> Wildberries’e kıyasla agresif fiyat rekabeti düşüktür.</li>
-              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Marka Bilinirliği:</strong> Rusya pazarında konumlandırma için güçlü bir platformdur.</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Güçlü Marka Algisi:</strong> Lamoda’da yer almak markanin premium algisini destekler.</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Daha Yüksek Sepet Ortalamasi:</strong> Müşteri kitlesi kalite ve tasarim odaklidir.</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Daha Düşük Fiyat Baskisi:</strong> Wildberries’e kiyasla agresif fiyat rekabeti düşüktür.</li>
+              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent-500" /> <strong>Marka Bilinirliği:</strong> Rusya pazarinda konumlandirma için güçlü bir platformdur.</li>
             </ul>
           </div>
           
           <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-            <h2 className="text-xl font-bold text-slate-800 mb-3">Türk Markaları İçin Fırsatlar</h2>
-            <p className="text-slate-600 text-sm mb-3">Türk tekstil ürünleri Rusya’da güçlü bir algıya sahiptir. Özellikle aşağıdaki kategorilerde önemli fırsatlar bulunmaktadır:</p>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">Türk Markalari Için Firsatlar</h2>
+            <p className="text-slate-600 text-sm mb-3">Türk tekstil ürünleri Rusya’da güçlü bir algiya sahiptir. Özellikle aşağidaki kategorilerde önemli firsatlar bulunmaktadir:</p>
             <ul className="space-y-1 text-slate-600 text-sm">
-              <li>• Kadın giyim & elbise</li>
-              <li>• Büyük beden koleksiyonları</li>
-              <li>• Dış giyim & triko</li>
-              <li>• Ayakkabı, çanta ve aksesuarlar</li>
+              <li>• Kadin giyim & elbise</li>
+              <li>• Büyük beden koleksiyonlari</li>
+              <li>• Diş giyim & triko</li>
+              <li>• Ayakkabi, çanta ve aksesuarlar</li>
             </ul>
           </div>
         </div>
@@ -599,7 +599,7 @@ const baseBlogPosts: BlogPost[] = [
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Lamoda, yalnızca bir pazaryeri değil, aynı zamanda markalaşma platformudur. Rusya pazarında uzun vadeli büyüme hedefleyen moda markaları için Lamoda, Wildberries ve Ozon ile birlikte değerlendirilmesi gereken önemli bir satış kanalıdır. <strong>Russia Market Entry</strong> olarak markanızın Lamoda başvuru süreçlerini, operasyon kurulumunu, lojistik yönetimini ve satış stratejisini uçtan uca yönetiyoruz.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Lamoda, yalnizca bir pazaryeri değil, ayni zamanda markalaşma platformudur. Rusya pazarinda uzun vadeli büyüme hedefleyen moda markalari için Lamoda, Wildberries ve Ozon ile birlikte değerlendirilmesi gereken önemli bir satiş kanalidir. <strong>Russia Market Entry</strong> olarak markanizin Lamoda başvuru süreçlerini, operasyon kurulumunu, lojistik yönetimini ve satiş stratejisini uçtan uca yönetiyoruz.</p>
         </div>
       </div>
     ),
@@ -748,69 +748,69 @@ const baseBlogPosts: BlogPost[] = [
   },
   {
     slug: "ozonda-satis-yapmak",
-    metaTitle: "Ozon’da Satış Yapmak: 2026 Güncel Rehber",
+    metaTitle: "Ozon’da Satiş Yapmak: 2026 Güncel Rehber",
     metaTitleEn: "Selling on Ozon: 2026 Updated Guide",
-    title: "Ozon’da Satış Yapmak: 2026 Güncel Rehber",
+    title: "Ozon’da Satiş Yapmak: 2026 Güncel Rehber",
     titleEn: "Selling on Ozon: 2026 Updated Guide",
-    excerpt: "Rusya e-ticaret pazarında faaliyet gösteren markalar için Ozon, son yılların en hızlı büyüyen satış platformlarından biri haline gelmiştir. Genellikle “Rusya’nın Amazon’u” olarak anılan Ozon, milyonlarca aktif müşterisi ve gelişmiş lojistik altyapısıyla markalara ülke genelinde geniş erişim imkânı sunmaktadır.",
+    excerpt: "Rusya e-ticaret pazarinda faaliyet gösteren markalar için Ozon, son yillarin en hizli büyüyen satiş platformlarindan biri haline gelmiştir. Genellikle “Rusya’nin Amazon’u” olarak anilan Ozon, milyonlarca aktif müşterisi ve gelişmiş lojistik altyapisiyla markalara ülke genelinde geniş erişim imkâni sunmaktadir.",
     excerptEn: "For brands active in the Russian e-commerce market, Ozon has become one of the fastest growing sales platforms in recent years. Commonly referred to as 'Russia's Amazon', Ozon offers brands broad access nationwide with millions of active clients and advanced logistic systems.",
     publishedAt: "22 Haziran 2026",
     readTime: "3 dk okuma",
     imageUrl: "/blog4.png",
     content: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Rusya e-ticaret pazarında faaliyet gösteren markalar için Ozon, son yılların en hızlı büyüyen satış platformlarından biri haline gelmiştir. Genellikle “Rusya’nın Amazon’u” olarak anılan Ozon, milyonlarca aktif müşterisi ve gelişmiş lojistik altyapısıyla markalara ülke genelinde geniş erişim imkânı sunmaktadır.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Bu rehberde Ozon’da satış yapmanın avantajlarını, süreçlerini ve dikkat edilmesi gereken noktaları adım adım ele alıyoruz.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Rusya e-ticaret pazarinda faaliyet gösteren markalar için Ozon, son yillarin en hizli büyüyen satiş platformlarindan biri haline gelmiştir. Genellikle “Rusya’nin Amazon’u” olarak anilan Ozon, milyonlarca aktif müşterisi ve gelişmiş lojistik altyapisiyla markalara ülke genelinde geniş erişim imkâni sunmaktadir.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Bu rehberde Ozon’da satiş yapmanin avantajlarini, süreçlerini ve dikkat edilmesi gereken noktalari adim adim ele aliyoruz.</p>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Ozon Nedir?</h2>
-          <p className="text-slate-600 leading-relaxed text-lg">Ozon, Rusya’nın en büyük çok kategorili e-ticaret platformlarından biridir. Moda, kozmetik, ev ürünleri, oyuncak, elektronik dışı tüketim ürünleri, aksesuar ve kişisel bakım kategorilerinde güçlü satış hacimlerine sahiptir.</p>
-          <p className="text-slate-600 leading-relaxed">Son yıllarda yaptığı lojistik yatırımları ve reklam araçları sayesinde hem yerel hem de uluslararası satıcılar için önemli bir satış kanalı haline gelmiştir.</p>
+          <p className="text-slate-600 leading-relaxed text-lg">Ozon, Rusya’nin en büyük çok kategorili e-ticaret platformlarindan biridir. Moda, kozmetik, ev ürünleri, oyuncak, elektronik dişi tüketim ürünleri, aksesuar ve kişisel bakim kategorilerinde güçlü satiş hacimlerine sahiptir.</p>
+          <p className="text-slate-600 leading-relaxed">Son yillarda yaptiği lojistik yatirimlari ve reklam araçlari sayesinde hem yerel hem de uluslararasi saticilar için önemli bir satiş kanali haline gelmiştir.</p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Neden Ozon?</h2>
-          <p className="text-slate-600 leading-relaxed">Ozon’un en önemli avantajlarından biri geniş müşteri kitlesine ulaşabilmesidir. İşte başlıca avantajları:</p>
+          <p className="text-slate-600 leading-relaxed">Ozon’un en önemli avantajlarindan biri geniş müşteri kitlesine ulaşabilmesidir. Işte başlica avantajlari:</p>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
             <li>Yüksek trafik hacmi ve geniş kitle</li>
-            <li>Güçlü lojistik altyapısı ve teslimat hızı</li>
+            <li>Güçlü lojistik altyapisi ve teslimat hizi</li>
             <li>Geniş kategori çeşitliliği</li>
-            <li>Gelişmiş pazaryeri reklam araçları</li>
-            <li>Özelleştirilmiş marka mağazası (Rich Content) oluşturabilme</li>
-            <li>Rusya genelinde hızlı teslimat ağı</li>
+            <li>Gelişmiş pazaryeri reklam araçlari</li>
+            <li>Özelleştirilmiş marka mağazasi (Rich Content) oluşturabilme</li>
+            <li>Rusya genelinde hizli teslimat aği</li>
           </ul>
-          <p className="text-slate-600 mt-2">Özellikle tekstil, kozmetik, ev tekstili, oyuncak ve yaşam ürünleri kategorilerinde Türk üreticileri için önemli fırsatlar sunmaktadır.</p>
+          <p className="text-slate-600 mt-2">Özellikle tekstil, kozmetik, ev tekstili, oyuncak ve yaşam ürünleri kategorilerinde Türk üreticileri için önemli firsatlar sunmaktadir.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Kimler Ozon’da Satış Yapabilir?</h2>
-          <p className="text-slate-600 mb-3">Ozon aşağıdaki sektörler için son derece uygundur:</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Kimler Ozon’da Satiş Yapabilir?</h2>
+          <p className="text-slate-600 mb-3">Ozon aşağidaki sektörler için son derece uygundur:</p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-600">
-            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Tekstil & Hazır Giyim</li>
-            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Kozmetik & Kişisel Bakım</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Tekstil & Hazir Giyim</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Kozmetik & Kişisel Bakim</li>
             <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Ev Tekstili & Züccaciye</li>
-            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Ayakkabı, Çanta & Aksesuar</li>
+            <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Ayakkabi, Çanta & Aksesuar</li>
             <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Oyuncak & Bebek Ürünleri</li>
             <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100"><span className="w-2 h-2 rounded-full bg-primary-500" /> Mutfak & Yaşam Ürünleri</li>
           </ul>
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Ozon’da Satış Süreci Adımları</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Ozon’da Satiş Süreci Adimlari</h2>
           
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün ve Talep Analizi</h3>
-              <p className="text-slate-600">İlk aşamada ürünlerin Rusya pazarı için uygunluğu değerlendirilir. Talep, rakip fiyatlandırmaları ve kategori dinamikleri incelenir.</p>
+              <p className="text-slate-600">Ilk aşamada ürünlerin Rusya pazari için uygunluğu değerlendirilir. Talep, rakip fiyatlandirmalari ve kategori dinamikleri incelenir.</p>
             </div>
           </div>
           
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Hazırlığı ve Barkodlama</h3>
-              <p className="text-slate-600">Ürünlerin satış öncesi barkodlama, Çestniy Znak ve etiketleme hazırlıkları tamamlanır. Görseller ve Rusça açıklamalar organize edilir.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Hazirliği ve Barkodlama</h3>
+              <p className="text-slate-600">Ürünlerin satiş öncesi barkodlama, Çestniy Znak ve etiketleme hazirliklari tamamlanir. Görseller ve Rusça açiklamalar organize edilir.</p>
             </div>
           </div>
           
@@ -818,7 +818,7 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Lojistik ve Depolama</h3>
-              <p className="text-slate-600">Ürünler Rusya'daki depolara gönderilir ve fulfillment (FBO) sistemiyle yönetilir. Sipariş hazırlama, paketleme ve kargo merkezi sistemle yürütülür.</p>
+              <p className="text-slate-600">Ürünler Rusya'daki depolara gönderilir ve fulfillment (FBO) sistemiyle yönetilir. Sipariş hazirlama, paketleme ve kargo merkezi sistemle yürütülür.</p>
             </div>
           </div>
           
@@ -826,7 +826,7 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Listeleme</h3>
-              <p className="text-slate-600">Ürünler Ozon mağazasında yayınlanır. Profesyonel ürün içerikleri ve doğru kategori seçimi görünürlüğü doğrudan yükseltir.</p>
+              <p className="text-slate-600">Ürünler Ozon mağazasinda yayinlanir. Profesyonel ürün içerikleri ve doğru kategori seçimi görünürlüğü doğrudan yükseltir.</p>
             </div>
           </div>
 
@@ -834,35 +834,35 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Reklam ve Kampanya Optimizasyonu</h3>
-              <p className="text-slate-600">Satış başladıktan sonra sponsorlu reklamlar, Ozon kampanyaları, kuponlar ve dönüşüm analizleri ile satış hacmi katlanır.</p>
+              <p className="text-slate-600">Satiş başladiktan sonra sponsorlu reklamlar, Ozon kampanyalari, kuponlar ve dönüşüm analizleri ile satiş hacmi katlanir.</p>
             </div>
           </div>
         </div>
 
         <div className="bg-primary-50 p-8 rounded-3xl my-8">
           <h2 className="text-2xl font-bold text-primary-600 mb-3">Ozon Fulfillment Sistemi FBO Nedir?</h2>
-          <p className="text-slate-700 leading-relaxed">Ozon’un en güçlü yönlerinden biri fulfillment altyapısıdır. Ürünleriniz Ozon depolarında (FBO) bulunduğunda: Daha hızlı teslimat sağlanır, sipariş hazırlama ve kargo süreçleri tam otomatikleşir, müşteri memnuniyeti ve dolayısıyla buy-box puanı yükselir. Bu nedenle başarılı satıcıların büyük bölümü fulfillment modeliyle çalışmaktadır.</p>
+          <p className="text-slate-700 leading-relaxed">Ozon’un en güçlü yönlerinden biri fulfillment altyapisidir. Ürünleriniz Ozon depolarinda (FBO) bulunduğunda: Daha hizli teslimat sağlanir, sipariş hazirlama ve kargo süreçleri tam otomatikleşir, müşteri memnuniyeti ve dolayisiyla buy-box puani yükselir. Bu nedenle başarili saticilarin büyük bölümü fulfillment modeliyle çalişmaktadir.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
           <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
             <h2 className="text-lg font-bold text-slate-800 mb-2">Ozon mu Wildberries mi?</h2>
-            <p className="text-sm text-slate-600 leading-relaxed mb-2">Bu sorunun tek bir cevabı yoktur. Her ikisi de farklı dinamiklere sahiptir:</p>
+            <p className="text-sm text-slate-600 leading-relaxed mb-2">Bu sorunun tek bir cevabi yoktur. Her ikisi de farkli dinamiklere sahiptir:</p>
             <ul className="text-xs text-slate-600 space-y-1">
-              <li>• <strong>Wildberries:</strong> Giyim ve moda kategorilerinde açık ara liderdir, sipariş hacmi devasadır ancak fiyat rekabeti daha yoğundur.</li>
-              <li>• <strong>Ozon:</strong> Nispeten daha dengeli bir tüketici profili sunar, çok kategorilidir, reklam araçları ve satıcı paneli son derece gelişmiştir.</li>
+              <li>• <strong>Wildberries:</strong> Giyim ve moda kategorilerinde açik ara liderdir, sipariş hacmi devasadir ancak fiyat rekabeti daha yoğundur.</li>
+              <li>• <strong>Ozon:</strong> Nispeten daha dengeli bir tüketici profili sunar, çok kategorilidir, reklam araçlari ve satici paneli son derece gelişmiştir.</li>
             </ul>
           </div>
           <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-            <h3 className="text-lg font-bold text-slate-800 mb-2">Türkiye’den Ozon’a Satış</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">Coğrafi yakınlığımız, güçlü lojistik koridorlarımız ve Rus tüketicisinin Türk ürünlerine duyduğu yüksek ilgi, Ozon\'u kaçırılmayacak bir pazar haline getirmektedir. Doğru operasyonel süreç kurgulandığında Ozon markanız için güçlü bir büyüme motoru olur.</p>
+            <h3 className="text-lg font-bold text-slate-800 mb-2">Türkiye’den Ozon’a Satiş</h3>
+            <p className="text-sm text-slate-600 leading-relaxed">Coğrafi yakinliğimiz, güçlü lojistik koridorlarimiz ve Rus tüketicisinin Türk ürünlerine duyduğu yüksek ilgi, Ozon\'u kaçirilmayacak bir pazar haline getirmektedir. Doğru operasyonel süreç kurgulandiğinda Ozon markaniz için güçlü bir büyüme motoru olur.</p>
           </div>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Ozon, Rusya pazarına girmek isteyen her ölçekteki marka için devasa bir kapıdır. Ancak başarı için sadece sayfaya ürün yüklemek yetmez; doğru lojistik kurgusu, doğru fiyatlandırma, profesyonel mağaza yönetimi ve istikrarlı reklam yönetimi gereklidir. <strong>Russia Market Entry</strong> olarak markanızın Ozon operasyonlarını uçtan uca yürütüyor, ürünlerinizi satışa ve başarıya hazır hale getiriyoruz.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Ozon, Rusya pazarina girmek isteyen her ölçekteki marka için devasa bir kapidir. Ancak başari için sadece sayfaya ürün yüklemek yetmez; doğru lojistik kurgusu, doğru fiyatlandirma, profesyonel mağaza yönetimi ve istikrarli reklam yönetimi gereklidir. <strong>Russia Market Entry</strong> olarak markanizin Ozon operasyonlarini uçtan uca yürütüyor, ürünlerinizi satişa ve başariya hazir hale getiriyoruz.</p>
         </div>
       </div>
     ),
@@ -978,39 +978,39 @@ const baseBlogPosts: BlogPost[] = [
   },
   {
     slug: "rusyada-sirket-kurmadan-satis-yapilabilir-mi",
-    metaTitle: "Rusya’da Şirket Kurmadan Satış Yapılabilir mi? 2026 Rehberi",
+    metaTitle: "Rusya’da Şirket Kurmadan Satiş Yapilabilir mi? 2026 Rehberi",
     metaTitleEn: "Can You Sell in Russia Without Setting Up a Company? 2026 Guide",
-    title: "Rusya’da Şirket Kurmadan Satış Yapılabilir mi? 2026 Rehberi",
+    title: "Rusya’da Şirket Kurmadan Satiş Yapilabilir mi? 2026 Rehberi",
     titleEn: "Can You Sell in Russia Without Setting Up a Company? 2026 Guide",
-    excerpt: "Rusya pazarına açılmak isteyen birçok üretici ve marka sahibinin ilk sorduğu soru şudur: “Rusya’da şirket kurmadan satış yapabilir miyim?” Cevap, doğru operasyon modeliyle evet.",
+    excerpt: "Rusya pazarina açilmak isteyen birçok üretici ve marka sahibinin ilk sorduğu soru şudur: “Rusya’da şirket kurmadan satiş yapabilir miyim?” Cevap, doğru operasyon modeliyle evet.",
     excerptEn: "Many manufacturers and brand owners wishing to expand into Russia ask: 'Can I sell in Russia without setting up a company?' With the right operational model, the answer is yes.",
     publishedAt: "3 Temmuz 2026",
     readTime: "3 dk okuma",
     imageUrl: "/blog5.png",
     content: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarına açılmak isteyen birçok üretici ve marka sahibinin ilk sorduğu soru şudur: “Rusya’da şirket kurmadan satış yapabilir miyim?” Cevap, doğru operasyon modeliyle evet.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Her marka için Rusya’da şirket kurmak ilk aşamada gerekli değildir. Özellikle pazarı test etmek isteyen üreticiler için operasyon ortaklığı ve konsinye modeli çok daha düşük riskli bir başlangıç sunmaktadır.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarina açilmak isteyen birçok üretici ve marka sahibinin ilk sorduğu soru şudur: “Rusya’da şirket kurmadan satiş yapabilir miyim?” Cevap, doğru operasyon modeliyle evet.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Her marka için Rusya’da şirket kurmak ilk aşamada gerekli değildir. Özellikle pazari test etmek isteyen üreticiler için operasyon ortakliği ve konsinye modeli çok daha düşük riskli bir başlangiç sunmaktadir.</p>
         
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Konsinye Model Nedir?</h2>
-          <p className="text-slate-600 leading-relaxed">Konsinye modelde üretici ürünlerini operasyon partnerine gönderir. Ürünler Rusya’da satışa sunulur ve satış gerçekleştikçe ödeme üreticiye aktarılır. Bu model sayesinde:</p>
+          <p className="text-slate-600 leading-relaxed">Konsinye modelde üretici ürünlerini operasyon partnerine gönderir. Ürünler Rusya’da satişa sunulur ve satiş gerçekleştikçe ödeme üreticiye aktarilir. Bu model sayesinde:</p>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Büyük başlangıç yatırımı gerekmez.</li>
-            <li>Rusya şirketi kurma zorunluğunu ortadan kaldırır.</li>
+            <li>Büyük başlangiç yatirimi gerekmez.</li>
+            <li>Rusya şirketi kurma zorunluğunu ortadan kaldirir.</li>
             <li>Pazar kolayca test edilebilir.</li>
             <li>Marka bilinirliği oluşturulabilir.</li>
           </ul>
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Operasyon Nasıl İlerler?</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Operasyon Nasil Ilerler?</h2>
           
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Analizi</h3>
-              <p className="text-slate-600">Ürünlerin Rusya pazarı için uygunluğu değerlendirilir.</p>
+              <p className="text-slate-600">Ürünlerin Rusya pazari için uygunluğu değerlendirilir.</p>
             </div>
           </div>
           
@@ -1026,15 +1026,15 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Listeleme</h3>
-              <p className="text-slate-600">Wildberries, Ozon ve Lamoda gibi pazaryerlerinde profesyonel mağazalarda yayınlanır.</p>
+              <p className="text-slate-600">Wildberries, Ozon ve Lamoda gibi pazaryerlerinde profesyonel mağazalarda yayinlanir.</p>
             </div>
           </div>
           
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Satış</h3>
-              <p className="text-slate-600">Milyonlarca ziyaretçiye sahip pazaryerlerinde ürünler satışa çıkar.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Satiş</h3>
+              <p className="text-slate-600">Milyonlarca ziyaretçiye sahip pazaryerlerinde ürünler satişa çikar.</p>
             </div>
           </div>
 
@@ -1042,7 +1042,7 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Raporlama</h3>
-              <p className="text-slate-600">Satışlar aylık olarak raporlanır ve ödeme planı oluşturulur.</p>
+              <p className="text-slate-600">Satişlar aylik olarak raporlanir ve ödeme plani oluşturulur.</p>
             </div>
           </div>
         </div>
@@ -1051,7 +1051,7 @@ const baseBlogPosts: BlogPost[] = [
           <h2 className="text-2xl font-bold text-primary-600 mb-4">Neden Konsinye Model?</h2>
           <ul className="space-y-3">
             <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Daha düşük finansal risk</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Pazarı test etme imkânı</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Pazari test etme imkâni</li>
             <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Marka bilinirliği oluşturma</li>
             <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Profesyonel operasyon yönetimi</li>
             <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Yerel ekip desteği</li>
@@ -1060,13 +1060,13 @@ const baseBlogPosts: BlogPost[] = [
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Russia Market Entry Modeli</h2>
-          <p className="text-lg leading-relaxed text-slate-600">Russia Market Entry olarak Türkiye ve Rusya’daki şirket altyapımızla markaların Rusya operasyonlarını uçtan uca yönetiyoruz. İster Türkiye’deki şirketiniz üzerinden çalışın, ister doğrudan ihracat yapın; size uygun operasyon modelini birlikte oluşturuyoruz.</p>
+          <p className="text-lg leading-relaxed text-slate-600">Russia Market Entry olarak Türkiye ve Rusya’daki şirket altyapimizla markalarin Rusya operasyonlarini uçtan uca yönetiyoruz. Ister Türkiye’deki şirketiniz üzerinden çalişin, ister doğrudan ihracat yapin; size uygun operasyon modelini birlikte oluşturuyoruz.</p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Rusya pazarına giriş için ilk adım her zaman şirket kurmak değildir. Doğru operasyon modeliyle pazarı test edebilir, satışlarınızı büyütebilir ve daha sonra kendi operasyonunuzu kurabilirsiniz.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Rusya pazarina giriş için ilk adim her zaman şirket kurmak değildir. Doğru operasyon modeliyle pazari test edebilir, satişlarinizi büyütebilir ve daha sonra kendi operasyonunuzu kurabilirsiniz.</p>
         </div>
       </div>
     ),
@@ -1156,22 +1156,22 @@ const baseBlogPosts: BlogPost[] = [
   },
   {
     slug: "wildberries-algoritmasi-nasil-calisir",
-    metaTitle: "Wildberries Algoritması Nasıl Çalışır? Satışları Artıran 10 Kritik Faktör",
+    metaTitle: "Wildberries Algoritmasi Nasil Çalişir? Satişlari Artiran 10 Kritik Faktör",
     metaTitleEn: "How Does the Wildberries Algorithm Work? 10 Critical Factors to Boost Sales",
-    title: "Wildberries Algoritması Nasıl Çalışır? Satışları Artıran 10 Kritik Faktör",
+    title: "Wildberries Algoritmasi Nasil Çalişir? Satişlari Artiran 10 Kritik Faktör",
     titleEn: "How Does the Wildberries Algorithm Work? 10 Critical Factors to Boost Sales",
-    excerpt: "Wildberries’de başarılı olmak yalnızca ürün yüklemekle mümkün değildir. Platformun algoritması; satış performansı, müşteri memnuniyeti ve operasyonel başarıya göre mağazaları sıralar.",
+    excerpt: "Wildberries’de başarili olmak yalnizca ürün yüklemekle mümkün değildir. Platformun algoritmasi; satiş performansi, müşteri memnuniyeti ve operasyonel başariya göre mağazalari siralar.",
     excerptEn: "Success on Wildberries is not possible simply by uploading products. The platform's algorithm ranks stores based on sales performance, customer satisfaction, and operational success.",
     publishedAt: "3 Temmuz 2026",
     readTime: "3 dk okuma",
     imageUrl: "/blog6.png",
     content: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Wildberries’de başarılı olmak yalnızca ürün yüklemekle mümkün değildir. Platformun algoritması; satış performansı, müşteri memnuniyeti ve operasyonel başarıya göre mağazaları sıralar.</p>
-        <p className="text-lg leading-relaxed text-slate-600">İşte Wildberries algoritmasını etkileyen en önemli 10 kritik faktör.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Wildberries’de başarili olmak yalnizca ürün yüklemekle mümkün değildir. Platformun algoritmasi; satiş performansi, müşteri memnuniyeti ve operasyonel başariya göre mağazalari siralar.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Işte Wildberries algoritmasini etkileyen en önemli 10 kritik faktör.</p>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Satışları Artıran 10 Kritik Faktör</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Satişlari Artiran 10 Kritik Faktör</h2>
           
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
@@ -1184,32 +1184,32 @@ const baseBlogPosts: BlogPost[] = [
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Hızlı Teslimat</h3>
-              <p className="text-slate-600">Fulfillment depolarında bulunan ürünler daha avantajlıdır.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Hizli Teslimat</h3>
+              <p className="text-slate-600">Fulfillment depolarinda bulunan ürünler daha avantajlidir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Satış Hızı</h3>
-              <p className="text-slate-600">Kısa sürede yüksek satış yapan ürünler üst sıralara çıkar.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Satiş Hizi</h3>
+              <p className="text-slate-600">Kisa sürede yüksek satiş yapan ürünler üst siralara çikar.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Dönüşüm Oranı</h3>
-              <p className="text-slate-600">Ürün sayfasını ziyaret eden kullanıcıların satın alma oranı önemlidir.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Dönüşüm Orani</h3>
+              <p className="text-slate-600">Ürün sayfasini ziyaret eden kullanicilarin satin alma orani önemlidir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Fotoğrafları</h3>
-              <p className="text-slate-600">Profesyonel görseller tıklanma ve satış oranını artırır.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Fotoğraflari</h3>
+              <p className="text-slate-600">Profesyonel görseller tiklanma ve satiş oranini artirir.</p>
             </div>
           </div>
 
@@ -1217,14 +1217,14 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">6</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Reklam Yönetimi</h3>
-              <p className="text-slate-600">Sponsorlu reklamlar algoritmaya ilk ivmeyi kazandırır.</p>
+              <p className="text-slate-600">Sponsorlu reklamlar algoritmaya ilk ivmeyi kazandirir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">7</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Müşteri Yorumları</h3>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Müşteri Yorumlari</h3>
               <p className="text-slate-600">Olumlu yorumlar güven oluşturur.</p>
             </div>
           </div>
@@ -1232,16 +1232,16 @@ const baseBlogPosts: BlogPost[] = [
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">8</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">İade Oranı</h3>
-              <p className="text-slate-600">Düşük iade oranı mağaza performansını olumlu etkiler.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Iade Orani</h3>
+              <p className="text-slate-600">Düşük iade orani mağaza performansini olumlu etkiler.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">9</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Bölgesel Depo Dağılımı</h3>
-              <p className="text-slate-600">Wildberries’in farklı fulfillment depolarına doğru stok dağıtımı teslimat sürelerini kısaltır ve satış performansını artırır.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Bölgesel Depo Dağilimi</h3>
+              <p className="text-slate-600">Wildberries’in farkli fulfillment depolarina doğru stok dağitimi teslimat sürelerini kisaltir ve satiş performansini artirir.</p>
             </div>
           </div>
 
@@ -1255,14 +1255,14 @@ const baseBlogPosts: BlogPost[] = [
         </div>
 
         <div className="bg-primary-50 p-8 rounded-3xl my-8">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşımı</h2>
-          <p className="text-slate-700 leading-relaxed">Biz yalnızca mağaza açmıyoruz. Ürünlerinizi Wildberries algoritmasına uygun şekilde konumlandırıyor, doğru depolara sevkiyat planlıyor ve satış performansını sürekli analiz ediyoruz.</p>
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşimi</h2>
+          <p className="text-slate-700 leading-relaxed">Biz yalnizca mağaza açmiyoruz. Ürünlerinizi Wildberries algoritmasina uygun şekilde konumlandiriyor, doğru depolara sevkiyat planliyor ve satiş performansini sürekli analiz ediyoruz.</p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Wildberries’de başarı; ürün kalitesi, lojistik, reklam yönetimi ve operasyonun birlikte yönetilmesiyle mümkündür. Doğru stratejiyle ürünleriniz milyonlarca potansiyel müşteriye ulaşabilir.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Wildberries’de başari; ürün kalitesi, lojistik, reklam yönetimi ve operasyonun birlikte yönetilmesiyle mümkündür. Doğru stratejiyle ürünleriniz milyonlarca potansiyel müşteriye ulaşabilir.</p>
         </div>
       </div>
     ),
@@ -1374,39 +1374,39 @@ const baseBlogPosts: BlogPost[] = [
     metaTitleEn: "Top Selling Products in Russia (2026 Updated List)",
     title: "Rusya'da En Çok Satan Ürünler (2026 Güncel Liste)",
     titleEn: "Top Selling Products in Russia (2026 Updated List)",
-    excerpt: "Rusya e-ticaret pazarı hızla büyürken, 2026'da öne çıkan ürün gruplarını, kategorileri ve Türk üreticiler için en avantajlı pazaryeri fırsatlarını analiz ediyoruz.",
+    excerpt: "Rusya e-ticaret pazari hizla büyürken, 2026'da öne çikan ürün gruplarini, kategorileri ve Türk üreticiler için en avantajli pazaryeri firsatlarini analiz ediyoruz.",
     excerptEn: "While the Russian e-commerce market expands rapidly, we analyze the leading product groups, growing categories, and best marketplace opportunities in 2026.",
     publishedAt: "13 Temmuz 2026",
     readTime: "4 dk okuma",
     imageUrl: "/blog7.png",
     content: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Rusya e-ticaret pazarı büyümeye devam ederken, doğru ürün kategorisini seçmek başarılı bir satış operasyonunun temelini oluşturuyor. Özellikle Wildberries, Ozon ve Lamoda gibi pazaryerlerinde tüketici alışkanlıklarını analiz etmek, yeni pazara giriş yapacak markalar için büyük avantaj sağlar.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Peki 2026 yılında Rusya'da en çok hangi ürünler satılıyor? Hangi kategoriler büyüyor? Türk üreticileri hangi alanlarda rekabet avantajına sahip? Bu rehberde Rusya e-ticaret pazarının öne çıkan ürün gruplarını ve fırsatlarını inceliyoruz.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Rusya e-ticaret pazari büyümeye devam ederken, doğru ürün kategorisini seçmek başarili bir satiş operasyonunun temelini oluşturuyor. Özellikle Wildberries, Ozon ve Lamoda gibi pazaryerlerinde tüketici alişkanliklarini analiz etmek, yeni pazara giriş yapacak markalar için büyük avantaj sağlar.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Peki 2026 yilinda Rusya'da en çok hangi ürünler satiliyor? Hangi kategoriler büyüyor? Türk üreticileri hangi alanlarda rekabet avantajina sahip? Bu rehberde Rusya e-ticaret pazarinin öne çikan ürün gruplarini ve firsatlarini inceliyoruz.</p>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Öne Çıkan Ürün Kategorileri</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Öne Çikan Ürün Kategorileri</h2>
           
           <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
-              <span className="text-accent-500">1.</span> Tekstil ve Hazır Giyim
+              <span className="text-accent-500">1.</span> Tekstil ve Hazir Giyim
             </h3>
-            <p className="text-slate-600 mb-4">Rusya'da online alışveriş denildiğinde ilk akla gelen kategori hazır giyimdir. Wildberries başta olmak üzere many marketplaces'da en yüksek işlem hacmi tekstil ürünlerinden oluşmaktadır.</p>
+            <p className="text-slate-600 mb-4">Rusya'da online alişveriş denildiğinde ilk akla gelen kategori hazir giyimdir. Wildberries başta olmak üzere many marketplaces'da en yüksek işlem hacmi tekstil ürünlerinden oluşmaktadir.</p>
             <div className="flex flex-wrap gap-2">
-              {["Oversize Tişört", "Sweatshirt", "Hoodie", "Jean", "Kadın Elbiseleri", "Büyük Beden Giyim", "Çocuk Giyim", "İç Giyim", "Spor Giyim"].map((item) => (
+              {["Oversize Tişört", "Sweatshirt", "Hoodie", "Jean", "Kadin Elbiseleri", "Büyük Beden Giyim", "Çocuk Giyim", "Iç Giyim", "Spor Giyim"].map((item) => (
                 <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
               ))}
             </div>
-            <p className="text-sm italic text-slate-500 mt-3">Türk tekstil ürünleri kalite/fiyat dengesi sayesinde Rus tüketicisi tarafından güçlü bir şekilde tercih edilmektedir.</p>
+            <p className="text-sm italic text-slate-500 mt-3">Türk tekstil ürünleri kalite/fiyat dengesi sayesinde Rus tüketicisi tarafindan güçlü bir şekilde tercih edilmektedir.</p>
           </div>
 
           <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
-              <span className="text-accent-500">2.</span> Kozmetik ve Kişisel Bakım
+              <span className="text-accent-500">2.</span> Kozmetik ve Kişisel Bakim
             </h3>
-            <p className="text-slate-600 mb-4">Son yıllarda en hızlı büyüyen kategorilerden biri kozmetiktir. Tekrar satın alma oranlarının yüksek olması nedeniyle sürdürülebilir satış için önemli bir kategoridir.</p>
+            <p className="text-slate-600 mb-4">Son yillarda en hizli büyüyen kategorilerden biri kozmetiktir. Tekrar satin alma oranlarinin yüksek olmasi nedeniyle sürdürülebilir satiş için önemli bir kategoridir.</p>
             <div className="flex flex-wrap gap-2">
-              {["Cilt bakım ürünleri", "Şampuan", "Saç bakım ürünleri", "Serum", "Güneş kremi", "Makyaj ürünleri", "Organik kozmetik", "Dermokozmetik"].map((item) => (
+              {["Cilt bakim ürünleri", "Şampuan", "Saç bakim ürünleri", "Serum", "Güneş kremi", "Makyaj ürünleri", "Organik kozmetik", "Dermokozmetik"].map((item) => (
                 <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
               ))}
             </div>
@@ -1416,9 +1416,9 @@ const baseBlogPosts: BlogPost[] = [
             <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
               <span className="text-accent-500">3.</span> Ev Tekstili
             </h3>
-            <p className="text-slate-600 mb-4">Rus tüketicisi ev dekorasyonu ve yaşam ürünlerine yüksek bütçe ayırmaktadır.</p>
+            <p className="text-slate-600 mb-4">Rus tüketicisi ev dekorasyonu ve yaşam ürünlerine yüksek bütçe ayirmaktadir.</p>
             <div className="flex flex-wrap gap-2">
-              {["Nevresim takımları", "Havlu", "Bornoz", "Pike", "Battaniye", "Masa örtüsü", "Dekoratif yastık", "Perde"].map((item) => (
+              {["Nevresim takimlari", "Havlu", "Bornoz", "Pike", "Battaniye", "Masa örtüsü", "Dekoratif yastik", "Perde"].map((item) => (
                 <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
               ))}
             </div>
@@ -1426,11 +1426,11 @@ const baseBlogPosts: BlogPost[] = [
 
           <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
-              <span className="text-accent-500">4.</span> Ayakkabı ve Çanta
+              <span className="text-accent-500">4.</span> Ayakkabi ve Çanta
             </h3>
-            <p className="text-slate-600 mb-4">Moda kategorisinin en güçlü alanlarından biridir.</p>
+            <p className="text-slate-600 mb-4">Moda kategorisinin en güçlü alanlarindan biridir.</p>
             <div className="flex flex-wrap gap-2">
-              {["Sneaker", "Günlük ayakkabı", "Bot", "Kadın çantaları", "Cüzdan", "Sırt çantaları", "Valiz"].map((item) => (
+              {["Sneaker", "Günlük ayakkabi", "Bot", "Kadin çantalari", "Cüzdan", "Sirt çantalari", "Valiz"].map((item) => (
                 <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
               ))}
             </div>
@@ -1440,9 +1440,9 @@ const baseBlogPosts: BlogPost[] = [
             <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
               <span className="text-accent-500">5.</span> Ev ve Mutfak Ürünleri
             </h3>
-            <p className="text-slate-600 mb-4">Ozon başta olmak üzere birçok platformda bu kategori hızla büyümektedir.</p>
+            <p className="text-slate-600 mb-4">Ozon başta olmak üzere birçok platformda bu kategori hizla büyümektedir.</p>
             <div className="flex flex-wrap gap-2">
-              {["Saklama kapları", "Cam ürünler", "Baharatlıklar", "Mutfak organizerleri", "Sunum ürünleri", "Kahve ekipmanları"].map((item) => (
+              {["Saklama kaplari", "Cam ürünler", "Baharatliklar", "Mutfak organizerleri", "Sunum ürünleri", "Kahve ekipmanlari"].map((item) => (
                 <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
               ))}
             </div>
@@ -1452,7 +1452,7 @@ const baseBlogPosts: BlogPost[] = [
             <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
               <span className="text-accent-500">6.</span> Oyuncak ve Çocuk Ürünleri
             </h3>
-            <p className="text-slate-600 mb-4">Ailelerin online alışverişe yönelmesiyle birlikte oyuncak kategorisi sürekli büyümektedir.</p>
+            <p className="text-slate-600 mb-4">Ailelerin online alişverişe yönelmesiyle birlikte oyuncak kategorisi sürekli büyümektedir.</p>
             <div className="flex flex-wrap gap-2">
               {["Ahşap oyuncaklar", "Eğitici oyuncaklar", "Puzzle", "Peluş oyuncaklar", "Montessori ürünleri"].map((item) => (
                 <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
@@ -1464,9 +1464,9 @@ const baseBlogPosts: BlogPost[] = [
             <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
               <span className="text-accent-500">7.</span> Saat, Gözlük ve Aksesuar
             </h3>
-            <p className="text-slate-600 mb-4">Düşük lojistik maliyeti ve yüksek kâr marjı nedeniyle dikkat çeken kategorilerdendir.</p>
+            <p className="text-slate-600 mb-4">Düşük lojistik maliyeti ve yüksek kâr marji nedeniyle dikkat çeken kategorilerdendir.</p>
             <div className="flex flex-wrap gap-2">
-              {["Güneş gözlüğü", "Optik çerçeve", "Kol saati", "Takı", "Kemer", "Şapka"].map((item) => (
+              {["Güneş gözlüğü", "Optik çerçeve", "Kol saati", "Taki", "Kemer", "Şapka"].map((item) => (
                 <span key={item} className="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">{item}</span>
               ))}
             </div>
@@ -1474,22 +1474,22 @@ const baseBlogPosts: BlogPost[] = [
         </div>
 
         <div className="bg-primary-50 p-8 rounded-3xl my-8">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Türkiye'den Rusya'ya En Avantajlı Ürünler</h2>
-          <p className="text-slate-600 mb-4">Türkiye'nin üretim gücü sayesinde aşağıdaki kategoriler hem lojistik hem de maliyet açısından rekabet avantajı sunmaktadır:</p>
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Türkiye'den Rusya'ya En Avantajli Ürünler</h2>
+          <p className="text-slate-600 mb-4">Türkiye'nin üretim gücü sayesinde aşağidaki kategoriler hem lojistik hem de maliyet açisindan rekabet avantaji sunmaktadir:</p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
             <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Tekstil & Giyim</li>
             <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Ev Tekstili</li>
-            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Kozmetik & Kişisel Bakım</li>
-            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Ayakkabı & Çanta</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Kozmetik & Kişisel Bakim</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Ayakkabi & Çanta</li>
             <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Aksesuar & Gözlük</li>
-            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Çocuk Oyuncakları</li>
+            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Çocuk Oyuncaklari</li>
             <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Mutfak Gereçleri</li>
             <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-accent-500 rounded-full" /> Ev Dekorasyonu</li>
           </ul>
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Hangi Ürünler İçin Doğru Pazaryeri?</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Hangi Ürünler Için Doğru Pazaryeri?</h2>
           <div className="overflow-x-auto rounded-2xl border border-slate-200">
             <table className="w-full text-left border-collapse">
               <thead>
@@ -1526,7 +1526,7 @@ const baseBlogPosts: BlogPost[] = [
                   <td className="p-4 text-sm text-center text-amber-500">⭐</td>
                 </tr>
                 <tr className="hover:bg-slate-50 transition-colors">
-                  <td className="p-4 text-sm font-medium text-slate-800">Ayakkabı</td>
+                  <td className="p-4 text-sm font-medium text-slate-800">Ayakkabi</td>
                   <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
                   <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐</td>
                   <td className="p-4 text-sm text-center text-amber-500">⭐⭐⭐⭐⭐</td>
@@ -1543,15 +1543,15 @@ const baseBlogPosts: BlogPost[] = [
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Başarılı Olmak İçin Sadece Doğru Ürün Yetmez</h2>
-          <p className="text-slate-600">Rusya pazarında başarılı olmak için sadece ürünü yüklemek yetmez. Aşağıdaki başlıklar bütüncül olarak planlanmalıdır:</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Başarili Olmak Için Sadece Doğru Ürün Yetmez</h2>
+          <p className="text-slate-600">Rusya pazarinda başarili olmak için sadece ürünü yüklemek yetmez. Aşağidaki başliklar bütüncül olarak planlanmalidir:</p>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li><strong>Doğru Fiyatlandırma:</strong> Rakip analizleri ile optimum fiyat tespiti.</li>
-            <li><strong>Profesyonel Ürün Listeleme:</strong> Rusça dilinde mükemmel açıklamalar ve SEO optimizasyonu.</li>
+            <li><strong>Doğru Fiyatlandirma:</strong> Rakip analizleri ile optimum fiyat tespiti.</li>
+            <li><strong>Profesyonel Ürün Listeleme:</strong> Rusça dilinde mükemmel açiklamalar ve SEO optimizasyonu.</li>
             <li><strong>Fulfillment Yönetimi:</strong> Rusya içindeki depolama ve teslimat entegrasyonu.</li>
             <li><strong>Reklam Optimizasyonu:</strong> Platform içi kampanyalar ve sponsorlu gösterimlerin yönetimi.</li>
-            <li><strong>Bölgesel Depo Planlaması:</strong> Siparişlerin yoğun olduğu şehirlere yakın depolarda stok bulundurma.</li>
-            <li><strong>Düzenli Stok Yönetimi:</strong> Satış hızına uygun sürekli tedarik zinciri.</li>
+            <li><strong>Bölgesel Depo Planlamasi:</strong> Siparişlerin yoğun olduğu şehirlere yakin depolarda stok bulundurma.</li>
+            <li><strong>Düzenli Stok Yönetimi:</strong> Satiş hizina uygun sürekli tedarik zinciri.</li>
           </ul>
           <p className="text-slate-600">Ürün ne kadar iyi olursa olsun, operasyon doğru yönetilmediğinde sürdürülebilir büyüme sağlamak mümkün değildir.</p>
         </div>
@@ -1559,8 +1559,8 @@ const baseBlogPosts: BlogPost[] = [
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Rusya pazarı, Türk üreticileri ve markaları için önemli fırsatlar sunmaya devam ediyor. Özellikle tekstil, kozmetik, ev tekstili, ayakkabı ve yaşam ürünleri kategorileri büyümesini sürdürmektedir. Doğru ürün seçimi ve profesyonel operasyon yönetimiyle markanızı milyonlarca müşteriye ulaştırabilirsiniz.</p>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry olarak ürün analizi, pazaryeri kurulumu, lojistik, fulfillment, reklam yönetimi ve operasyon süreçlerini uçtan uca yönetiyor; markanızın Rusya pazarında sürdürülebilir büyümesini sağlıyoruz.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Rusya pazari, Türk üreticileri ve markalari için önemli firsatlar sunmaya devam ediyor. Özellikle tekstil, kozmetik, ev tekstili, ayakkabi ve yaşam ürünleri kategorileri büyümesini sürdürmektedir. Doğru ürün seçimi ve profesyonel operasyon yönetimiyle markanizi milyonlarca müşteriye ulaştirabilirsiniz.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry olarak ürün analizi, pazaryeri kurulumu, lojistik, fulfillment, reklam yönetimi ve operasyon süreçlerini uçtan uca yönetiyor; markanizin Rusya pazarinda sürdürülebilir büyümesini sağliyoruz.</p>
         </div>
       </div>
     ),
@@ -1752,73 +1752,73 @@ const baseBlogPosts: BlogPost[] = [
   },
   {
     slug: "wildberries-depo-stratejisi-basarili-satis",
-    metaTitle: "Wildberries'de Başarılı Satış İçin Depo Stratejisi: Doğru Depo, Daha Fazla Satış",
+    metaTitle: "Wildberries'de Başarili Satiş Için Depo Stratejisi: Doğru Depo, Daha Fazla Satiş",
     metaTitleEn: "Warehouse Strategy for Successful Sales on Wildberries: Right Warehouse, More Sales",
-    title: "Wildberries'de Başarılı Satış İçin Depo Stratejisi: Doğru Depo, Daha Fazla Satış",
+    title: "Wildberries'de Başarili Satiş Için Depo Stratejisi: Doğru Depo, Daha Fazla Satiş",
     titleEn: "Warehouse Strategy for Successful Sales on Wildberries: Right Warehouse, More Sales",
-    excerpt: "Birçok satıcı Wildberries'de başarının yalnızca ürün kalitesine veya reklam bütçesine bağlı olduğunu düşünür. Oysa platformun en önemli performans kriterlerinden biri ürünlerin hangi depolarda bulunduğudur.",
+    excerpt: "Birçok satici Wildberries'de başarinin yalnizca ürün kalitesine veya reklam bütçesine bağli olduğunu düşünür. Oysa platformun en önemli performans kriterlerinden biri ürünlerin hangi depolarda bulunduğudur.",
     excerptEn: "Many sellers believe success on Wildberries depends solely on product quality or advertising budget. However, one of the platform's key performance criteria is warehouse placement.",
     publishedAt: "29 Temmuz 2026",
     readTime: "3 dk okuma",
     imageUrl: "/blog8.png",
     content: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Birçok satıcı Wildberries'de başarının yalnızca ürün kalitesine veya reklam bütçesine bağlı olduğunu düşünür. Oysa platformun en önemli performans kriterlerinden biri ürünlerin hangi depolarda bulunduğudur.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Doğru depo stratejisi, teslimat süresini kısaltır, müşteri memnuniyetini artırır ve ürünlerinizin daha fazla görünürlük kazanmasına yardımcı olur.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Birçok satici Wildberries'de başarinin yalnizca ürün kalitesine veya reklam bütçesine bağli olduğunu düşünür. Oysa platformun en önemli performans kriterlerinden biri ürünlerin hangi depolarda bulunduğudur.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Doğru depo stratejisi, teslimat süresini kisaltir, müşteri memnuniyetini artirir ve ürünlerinizin daha fazla görünürlük kazanmasina yardimci olur.</p>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Wildberries'in Bölgesel Depo Yapısı</h2>
-          <p className="text-slate-600 leading-relaxed">Wildberries, Rusya'nın farklı bölgelerine hizmet veren büyük fulfillment merkezleriyle çalışır. Bu yapı sayesinde siparişler müşteriye en yakın depodan gönderilir ve teslimat süreleri önemli ölçüde kısalır.</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Wildberries'in Bölgesel Depo Yapisi</h2>
+          <p className="text-slate-600 leading-relaxed">Wildberries, Rusya'nin farkli bölgelerine hizmet veren büyük fulfillment merkezleriyle çalişir. Bu yapi sayesinde siparişler müşteriye en yakin depodan gönderilir ve teslimat süreleri önemli ölçüde kisalir.</p>
           <p className="text-slate-600 leading-relaxed">Ancak tüm ürünleri tek depoya göndermek çoğu zaman doğru strateji değildir.</p>
         </div>
 
         <div className="bg-primary-50 p-8 rounded-3xl my-8">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Neden Depo Dağılımı Önemlidir?</h2>
-          <p className="text-slate-600 mb-4">Doğru depo planlaması sayesinde:</p>
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Neden Depo Dağilimi Önemlidir?</h2>
+          <p className="text-slate-600 mb-4">Doğru depo planlamasi sayesinde:</p>
           <ul className="space-y-3">
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Teslimat süreleri kısalır.</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Teslimat süreleri kisalir.</li>
             <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Ürün görünürlüğü artabilir.</li>
             <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Lojistik maliyetleri optimize edilebilir.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Bölgesel talebe daha hızlı cevap verilebilir.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Stok tükenme riski azalır.</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Bölgesel talebe daha hizli cevap verilebilir.</li>
+            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Stok tükenme riski azalir.</li>
           </ul>
-          <p className="text-slate-600 mt-4">Özellikle yüksek hacimli ürünlerde tek depoya bağlı kalmak yerine bölgesel dağılım yapmak operasyonel avantaj sağlar.</p>
+          <p className="text-slate-600 mt-4">Özellikle yüksek hacimli ürünlerde tek depoya bağli kalmak yerine bölgesel dağilim yapmak operasyonel avantaj sağlar.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Stok Dağılımı Nasıl Planlanmalı?</h2>
-          <p className="text-slate-600">Depo planlamasında şu kriterler dikkate alınmalıdır:</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Stok Dağilimi Nasil Planlanmali?</h2>
+          <p className="text-slate-600">Depo planlamasinda şu kriterler dikkate alinmalidir:</p>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Geçmiş satış verileri</li>
+            <li>Geçmiş satiş verileri</li>
             <li>Bölgesel talep</li>
             <li>Teslimat süreleri</li>
             <li>Sezonsal yoğunluk</li>
-            <li>Kategori performansı</li>
+            <li>Kategori performansi</li>
           </ul>
-          <p className="text-slate-600 font-medium">Her ürün için aynı dağılım modeli doğru değildir.</p>
+          <p className="text-slate-600 font-medium">Her ürün için ayni dağilim modeli doğru değildir.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">En Sık Yapılan Hatalar</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">En Sik Yapilan Hatalar</h2>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Tüm stokları tek depoya göndermek</li>
-            <li>Satış verilerini analiz etmeden sevkiyat yapmak</li>
+            <li>Tüm stoklari tek depoya göndermek</li>
+            <li>Satiş verilerini analiz etmeden sevkiyat yapmak</li>
             <li>Stok tükenmesini geç fark etmek</li>
             <li>Sezon değişimlerini dikkate almamak</li>
           </ul>
-          <p className="text-slate-600">Bu hatalar hem satış kaybına hem de gereksiz lojistik maliyetlerine neden olabilir.</p>
+          <p className="text-slate-600">Bu hatalar hem satiş kaybina hem de gereksiz lojistik maliyetlerine neden olabilir.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Russia Market Entry Yaklaşımı</h2>
-          <p className="text-lg leading-relaxed text-slate-600">Russia Market Entry olarak sevkiyat planlarını yalnızca stok miktarına göre değil, satış performansı ve bölgesel talep analizlerine göre oluşturuyoruz. Amaç yalnızca ürün göndermek değil, ürünün doğru zamanda doğru depoda bulunmasını sağlamaktır.</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Russia Market Entry Yaklaşimi</h2>
+          <p className="text-lg leading-relaxed text-slate-600">Russia Market Entry olarak sevkiyat planlarini yalnizca stok miktarina göre değil, satiş performansi ve bölgesel talep analizlerine göre oluşturuyoruz. Amaç yalnizca ürün göndermek değil, ürünün doğru zamanda doğru depoda bulunmasini sağlamaktir.</p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Wildberries operasyonunda başarılı olmak; ürün, fiyat ve reklam kadar doğru depo planlamasına da bağlıdır.</p>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Veri odaklı stok yönetimi sayesinde hem teslimat performansınızı artırabilir hem de satışlarınızı sürdürülebilir şekilde büyütebilirsiniz.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Wildberries operasyonunda başarili olmak; ürün, fiyat ve reklam kadar doğru depo planlamasina da bağlidir.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Veri odakli stok yönetimi sayesinde hem teslimat performansinizi artirabilir hem de satişlarinizi sürdürülebilir şekilde büyütebilirsiniz.</p>
         </div>
       </div>
     ),
@@ -1886,139 +1886,139 @@ const baseBlogPosts: BlogPost[] = [
   },
   {
     slug: "wildberries-ozon-lojistik-yonetimi-stok-stratejisi",
-    metaTitle: "Wildberries ve Ozon'da Lojistik Yönetimi: Satışı Artıran Stok Stratejisi",
+    metaTitle: "Wildberries ve Ozon'da Lojistik Yönetimi: Satişi Artiran Stok Stratejisi",
     metaTitleEn: "Logistics Management on Wildberries & Ozon: Inventory Strategy to Boost Sales",
-    title: "Wildberries ve Ozon'da Lojistik Yönetimi: Satışı Artıran Stok Stratejisi",
+    title: "Wildberries ve Ozon'da Lojistik Yönetimi: Satişi Artiran Stok Stratejisi",
     titleEn: "Logistics Management on Wildberries & Ozon: Inventory Strategy to Boost Sales",
-    excerpt: "Rusya pazarında başarı, yalnızca ürün göndermekle değil; doğru ürünü, doğru depoda, doğru zamanda bulundurmakla başlar. Wildberries ve Ozon e-ticaret lojistiğinde veriye dayalı stok yönetim rehberi.",
+    excerpt: "Rusya pazarinda başari, yalnizca ürün göndermekle değil; doğru ürünü, doğru depoda, doğru zamanda bulundurmakla başlar. Wildberries ve Ozon e-ticaret lojistiğinde veriye dayali stok yönetim rehberi.",
     excerptEn: "Success in the Russian market begins by placing the right product in the right warehouse at the right time. A data-driven inventory management guide for Wildberries and Ozon.",
     publishedAt: "4 Ağustos 2026",
     readTime: "5 dk okuma",
     imageUrl: "/blog9.png",
     content: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarında başarı, yalnızca ürün göndermekle değil; doğru ürünü, doğru depoda, doğru zamanda bulundurmakla başlar.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Birçok marka Rusya pazarına giriş yaparken lojistik sürecini yalnızca ürünlerini bir depoya göndermek olarak değerlendirir. Oysa başarılı bir e-ticaret operasyonunun temelinde yalnızca sevkiyat değil, veriye dayalı stok yönetimi ve lojistik planlama yer alır.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Wildberries ve Ozon gibi büyük pazaryerleri, Rusya'nın farklı bölgelerine hizmet veren geniş fulfillment ağlarına sahiptir. Bu yapı, doğru yönetildiğinde satış performansını önemli ölçüde artırabilir; yanlış planlandığında ise stok tükenmesi, yüksek lojistik maliyetleri ve satış kayıplarına neden olabilir.</p>
-        <p className="text-lg leading-relaxed text-slate-600 font-medium">Russia Market Entry olarak biz yalnızca ürünlerinizi Rusya'ya göndermiyoruz. Satış verilerini analiz ediyor, hangi ürünün hangi depoda bulunması gerektiğini planlıyor ve tüm lojistik operasyonunuzu uçtan uca yönetiyoruz.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarinda başari, yalnizca ürün göndermekle değil; doğru ürünü, doğru depoda, doğru zamanda bulundurmakla başlar.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Birçok marka Rusya pazarina giriş yaparken lojistik sürecini yalnizca ürünlerini bir depoya göndermek olarak değerlendirir. Oysa başarili bir e-ticaret operasyonunun temelinde yalnizca sevkiyat değil, veriye dayali stok yönetimi ve lojistik planlama yer alir.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Wildberries ve Ozon gibi büyük pazaryerleri, Rusya'nin farkli bölgelerine hizmet veren geniş fulfillment ağlarina sahiptir. Bu yapi, doğru yönetildiğinde satiş performansini önemli ölçüde artirabilir; yanliş planlandiğinda ise stok tükenmesi, yüksek lojistik maliyetleri ve satiş kayiplarina neden olabilir.</p>
+        <p className="text-lg leading-relaxed text-slate-600 font-medium">Russia Market Entry olarak biz yalnizca ürünlerinizi Rusya'ya göndermiyoruz. Satiş verilerini analiz ediyor, hangi ürünün hangi depoda bulunmasi gerektiğini planliyor ve tüm lojistik operasyonunuzu uçtan uca yönetiyoruz.</p>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Fulfillment Bir Seçenektir, Operasyon Yönetimi Daha Fazlasıdır</h2>
-          <p className="text-slate-600 leading-relaxed">Fulfillment (FBO veya FBS), siparişlerin depolanması, hazırlanması ve müşteriye ulaştırılmasını sağlayan operasyon modelleridir. Ancak başarılı bir operasyon, fulfillment modelini seçmekten çok daha fazlasını gerektirir.</p>
-          <p className="text-slate-600 font-semibold mb-2">Asıl önemli olan sorular şunlardır:</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Fulfillment Bir Seçenektir, Operasyon Yönetimi Daha Fazlasidir</h2>
+          <p className="text-slate-600 leading-relaxed">Fulfillment (FBO veya FBS), siparişlerin depolanmasi, hazirlanmasi ve müşteriye ulaştirilmasini sağlayan operasyon modelleridir. Ancak başarili bir operasyon, fulfillment modelini seçmekten çok daha fazlasini gerektirir.</p>
+          <p className="text-slate-600 font-semibold mb-2">Asil önemli olan sorular şunlardir:</p>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Hangi ürün hangi depoda bulunmalı?</li>
-            <li>Hangi bölgedeki talep artıyor?</li>
+            <li>Hangi ürün hangi depoda bulunmali?</li>
+            <li>Hangi bölgedeki talep artiyor?</li>
             <li>Hangi depoda stok tükenmek üzere?</li>
-            <li>Hangi ürün hangi pazaryerinde daha hızlı satıyor?</li>
+            <li>Hangi ürün hangi pazaryerinde daha hizli satiyor?</li>
             <li>Yeni sevkiyat hangi depoya yönlendirilmeli?</li>
-            <li>Depolar arasında transfer ne zaman yapılmalı?</li>
+            <li>Depolar arasinda transfer ne zaman yapilmali?</li>
           </ul>
-          <p className="text-slate-600 font-medium mt-2">İşte bu soruların doğru cevaplanması, operasyonun başarısını belirler.</p>
+          <p className="text-slate-600 font-medium mt-2">Işte bu sorularin doğru cevaplanmasi, operasyonun başarisini belirler.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Veriye Dayalı Depo Planlaması</h2>
-          <p className="text-slate-600 leading-relaxed">Rusya gibi geniş bir coğrafyada her bölgenin tüketici alışkanlığı, teslimat süresi ve satış potansiyeli farklıdır. Bu nedenle her ürünü tüm depolara göndermek doğru strateji değildir.</p>
-          <p className="text-slate-600 font-semibold mb-2">Biz sevkiyat planlarını oluştururken yalnızca mevcut stok miktarını değil;</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Veriye Dayali Depo Planlamasi</h2>
+          <p className="text-slate-600 leading-relaxed">Rusya gibi geniş bir coğrafyada her bölgenin tüketici alişkanliği, teslimat süresi ve satiş potansiyeli farklidir. Bu nedenle her ürünü tüm depolara göndermek doğru strateji değildir.</p>
+          <p className="text-slate-600 font-semibold mb-2">Biz sevkiyat planlarini oluştururken yalnizca mevcut stok miktarini değil;</p>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 my-4">
-            {["Geçmiş satış performansını", "Bölgesel talep yoğunluğunu", "Teslimat sürelerini", "Mevsimsel değişimleri", "Kampanya dönemlerini", "Ürün bazlı satış hızını", "Stok devir oranlarını"].map((item) => (
+            {["Geçmiş satiş performansini", "Bölgesel talep yoğunluğunu", "Teslimat sürelerini", "Mevsimsel değişimleri", "Kampanya dönemlerini", "Ürün bazli satiş hizini", "Stok devir oranlarini"].map((item) => (
               <li key={item} className="flex items-center gap-2 bg-slate-50 p-3 rounded-xl text-slate-700 text-sm font-medium border border-slate-100">
                 <span className="w-2 h-2 rounded-full bg-accent-500" />
                 {item}
               </li>
             ))}
           </ul>
-          <p className="text-slate-600 leading-relaxed">birlikte analiz ediyoruz. Bu sayede ürünler doğru zamanda doğru bölgede hazır bulunur ve müşteriye daha hızlı ulaşır.</p>
+          <p className="text-slate-600 leading-relaxed">birlikte analiz ediyoruz. Bu sayede ürünler doğru zamanda doğru bölgede hazir bulunur ve müşteriye daha hizli ulaşir.</p>
         </div>
 
         <div className="bg-primary-50 p-8 rounded-3xl my-8 border border-primary-100">
           <h2 className="text-2xl font-bold text-primary-600 mb-4">Merkezi Stok Yönetimi ile Esnek Operasyon</h2>
-          <p className="text-slate-600 mb-4">Her marka için tüm ürünleri tüm depolarda bulundurmak maliyet açısından verimli değildir. Bu nedenle birçok operasyonda merkezi stok yönetimi modeli uygulanmaktadır.</p>
+          <p className="text-slate-600 mb-4">Her marka için tüm ürünleri tüm depolarda bulundurmak maliyet açisindan verimli değildir. Bu nedenle birçok operasyonda merkezi stok yönetimi modeli uygulanmaktadir.</p>
           <p className="text-slate-700 font-semibold mb-2">Bu modelde:</p>
           <ul className="space-y-2.5 text-slate-700">
             <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Ana stok tek merkezde tutulur.</li>
-            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Satış performansı günlük olarak takip edilir.</li>
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Satiş performansi günlük olarak takip edilir.</li>
             <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Bölgesel ihtiyaç oluştuğunda ilgili depoya transfer gerçekleştirilir.</li>
-            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Gereksiz stok maliyetleri azaltılır.</li>
+            <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Gereksiz stok maliyetleri azaltilir.</li>
             <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-accent-500" /> Stok tükenme riski minimum seviyeye indirilir.</li>
           </ul>
-          <p className="text-slate-600 mt-4">Bu yaklaşım hem lojistik maliyetlerini optimize eder hem de operasyonel esneklik sağlar.</p>
+          <p className="text-slate-600 mt-4">Bu yaklaşim hem lojistik maliyetlerini optimize eder hem de operasyonel esneklik sağlar.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Wildberries ve Ozon Aynı Şekilde Yönetilmez</h2>
-          <p className="text-slate-600 leading-relaxed">Her pazaryerinin lojistik modeli ve çalışma dinamikleri farklıdır. Wildberries'te başarılı olan bir stok dağılımı, Ozon'da aynı sonucu vermeyebilir.</p>
-          <p className="text-slate-600 font-semibold mb-2">Bu nedenle operasyon planlaması yapılırken;</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Wildberries ve Ozon Ayni Şekilde Yönetilmez</h2>
+          <p className="text-slate-600 leading-relaxed">Her pazaryerinin lojistik modeli ve çalişma dinamikleri farklidir. Wildberries'te başarili olan bir stok dağilimi, Ozon'da ayni sonucu vermeyebilir.</p>
+          <p className="text-slate-600 font-semibold mb-2">Bu nedenle operasyon planlamasi yapilirken;</p>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Pazaryerinin lojistik yapısı</li>
+            <li>Pazaryerinin lojistik yapisi</li>
             <li>Ürün kategorisi</li>
-            <li>Satış hacmi</li>
-            <li>Teslimat performansı</li>
+            <li>Satiş hacmi</li>
+            <li>Teslimat performansi</li>
             <li>Bölgesel talep</li>
           </ul>
-          <p className="text-slate-600 leading-relaxed font-medium">ayrı ayrı değerlendirilmelidir. Biz her platform için bağımsız stok stratejileri geliştirerek operasyonu optimize ediyoruz.</p>
+          <p className="text-slate-600 leading-relaxed font-medium">ayri ayri değerlendirilmelidir. Biz her platform için bağimsiz stok stratejileri geliştirerek operasyonu optimize ediyoruz.</p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Transfer Yönetimi Operasyonun Kalbidir</h2>
-          <p className="text-slate-600 leading-relaxed">Başarılı lojistik yalnızca ilk sevkiyatı planlamak değildir. Asıl başarı, stok hareketlerini doğru zamanda yönetebilmektir. Satış hacimleri değiştikçe ürünlerin depolar arasında yeniden dağıtılması gerekir.</p>
-          <p className="text-slate-600 font-semibold mb-2">Doğru transfer planlaması sayesinde;</p>
+          <p className="text-slate-600 leading-relaxed">Başarili lojistik yalnizca ilk sevkiyati planlamak değildir. Asil başari, stok hareketlerini doğru zamanda yönetebilmektir. Satiş hacimleri değiştikçe ürünlerin depolar arasinda yeniden dağitilmasi gerekir.</p>
+          <p className="text-slate-600 font-semibold mb-2">Doğru transfer planlamasi sayesinde;</p>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Satış kayıpları önlenir.</li>
+            <li>Satiş kayiplari önlenir.</li>
             <li>Teslimat süreleri korunur.</li>
-            <li>Fazla stok oluşması engellenir.</li>
-            <li>Depolardaki ürün dengesi sağlanır.</li>
+            <li>Fazla stok oluşmasi engellenir.</li>
+            <li>Depolardaki ürün dengesi sağlanir.</li>
           </ul>
-          <p className="text-slate-600 leading-relaxed">Transfer süreçlerinin düzenli olarak analiz edilmesi, sürdürülebilir büyümenin en önemli unsurlarından biridir.</p>
+          <p className="text-slate-600 leading-relaxed">Transfer süreçlerinin düzenli olarak analiz edilmesi, sürdürülebilir büyümenin en önemli unsurlarindan biridir.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Operasyon Kararları Verilerle Alınmalıdır</h2>
-          <p className="text-slate-600 leading-relaxed">Başarılı markalar sezgilerle değil, verilerle yönetilir. Russia Market Entry olarak operasyonlarımızda düzenli olarak aşağıdaki metrikleri analiz ediyoruz:</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Operasyon Kararlari Verilerle Alinmalidir</h2>
+          <p className="text-slate-600 leading-relaxed">Başarili markalar sezgilerle değil, verilerle yönetilir. Russia Market Entry olarak operasyonlarimizda düzenli olarak aşağidaki metrikleri analiz ediyoruz:</p>
           <div className="flex flex-wrap gap-2.5 my-4">
-            {["SKU bazlı satış performansı", "Bölgesel satış dağılımı", "Depo bazlı stok seviyeleri", "Stok devir hızı", "Sipariş yoğunluğu", "Transfer ihtiyaçları", "Kampanya etkileri", "Teslimat performansı"].map((item) => (
+            {["SKU bazli satiş performansi", "Bölgesel satiş dağilimi", "Depo bazli stok seviyeleri", "Stok devir hizi", "Sipariş yoğunluğu", "Transfer ihtiyaçlari", "Kampanya etkileri", "Teslimat performansi"].map((item) => (
               <span key={item} className="bg-slate-100 text-slate-700 text-sm font-medium px-3.5 py-2 rounded-xl border border-slate-200">{item}</span>
             ))}
           </div>
-          <p className="text-slate-600 leading-relaxed">Bu analizler sayesinde operasyon sürekli geliştirilir ve lojistik süreçleri satış performansını destekleyecek şekilde optimize edilir.</p>
+          <p className="text-slate-600 leading-relaxed">Bu analizler sayesinde operasyon sürekli geliştirilir ve lojistik süreçleri satiş performansini destekleyecek şekilde optimize edilir.</p>
         </div>
 
         <div className="bg-white border border-slate-200 p-8 rounded-3xl my-8 shadow-sm">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Bu Yaklaşım Markalara Ne Kazandırır?</h2>
-          <p className="text-slate-600 mb-4">Doğru lojistik yönetimi yalnızca operasyonel kolaylık sağlamaz. Aynı zamanda aşağıdaki kritik avantajları sunar:</p>
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Bu Yaklaşim Markalara Ne Kazandirir?</h2>
+          <p className="text-slate-600 mb-4">Doğru lojistik yönetimi yalnizca operasyonel kolaylik sağlamaz. Ayni zamanda aşağidaki kritik avantajlari sunar:</p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-700">
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha hızlı teslimat</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha hizli teslimat</li>
             <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha yüksek müşteri memnuniyeti</li>
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha güçlü mağaza performansı</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha güçlü mağaza performansi</li>
             <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha düşük lojistik maliyetleri</li>
             <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha kontrollü stok yönetimi</li>
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha yüksek satış hacmi</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Daha yüksek satiş hacmi</li>
           </ul>
-          <p className="text-slate-600 mt-4 italic">Bugünün e-ticaret dünyasında lojistik, yalnızca ürün taşımak değil; satış performansını yöneten stratejik bir süreçtir.</p>
+          <p className="text-slate-600 mt-4 italic">Bugünün e-ticaret dünyasinda lojistik, yalnizca ürün taşimak değil; satiş performansini yöneten stratejik bir süreçtir.</p>
         </div>
 
         <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Farkı</h2>
-          <p className="text-slate-600 mb-4">Biz kendimizi yalnızca bir lojistik sağlayıcısı olarak görmüyoruz. Markalarımız için:</p>
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Farki</h2>
+          <p className="text-slate-600 mb-4">Biz kendimizi yalnizca bir lojistik sağlayicisi olarak görmüyoruz. Markalarimiz için:</p>
           <ul className="space-y-2 text-slate-700">
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Rusya operasyonunu planlıyor,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Rusya operasyonunu planliyor,</li>
             <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Stok stratejisini oluşturuyor,</li>
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Wildberries ve Ozon operasyonlarını birlikte yönetiyor,</li>
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Depo dağılımını optimize ediyor,</li>
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Transfer süreçlerini planlıyor,</li>
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Satış verilerini analiz ediyor,</li>
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Operasyonun her aşamasını düzenli olarak raporluyoruz.</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Wildberries ve Ozon operasyonlarini birlikte yönetiyor,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Depo dağilimini optimize ediyor,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Transfer süreçlerini planliyor,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Satiş verilerini analiz ediyor,</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Operasyonun her aşamasini düzenli olarak raporluyoruz.</li>
           </ul>
-          <p className="text-slate-700 font-medium mt-4">Amacımız yalnızca ürünlerinizi Rusya'ya ulaştırmak değil; doğru lojistik planlamasıyla satışlarınızı sürdürülebilir şekilde büyütecek bir operasyon modeli kurmaktır.</p>
+          <p className="text-slate-700 font-medium mt-4">Amacimiz yalnizca ürünlerinizi Rusya'ya ulaştirmak değil; doğru lojistik planlamasiyla satişlarinizi sürdürülebilir şekilde büyütecek bir operasyon modeli kurmaktir.</p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Rusya pazarında başarılı olmak için iyi bir ürün üretmek yeterli değildir. Doğru lojistik stratejisi, etkin stok yönetimi ve veriye dayalı operasyon planlaması, uzun vadeli başarının temelini oluşturur.</p>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Wildberries ve Ozon gibi büyük pazaryerlerinde rekabet avantajı elde etmek isteyen markalar için lojistik artık bir maliyet kalemi değil, büyümenin en önemli unsurlarından biridir.</p>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry, markaların Rusya operasyonlarını uçtan uca planlayarak; doğru ürünü, doğru depoda, doğru zamanda buluşturur ve satış performansını veriye dayalı kararlarla sürekli geliştirir.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Rusya pazarinda başarili olmak için iyi bir ürün üretmek yeterli değildir. Doğru lojistik stratejisi, etkin stok yönetimi ve veriye dayali operasyon planlamasi, uzun vadeli başarinin temelini oluşturur.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Wildberries ve Ozon gibi büyük pazaryerlerinde rekabet avantaji elde etmek isteyen markalar için lojistik artik bir maliyet kalemi değil, büyümenin en önemli unsurlarindan biridir.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry, markalarin Rusya operasyonlarini uçtan uca planlayarak; doğru ürünü, doğru depoda, doğru zamanda buluşturur ve satiş performansini veriye dayali kararlarla sürekli geliştirir.</p>
         </div>
       </div>
     ),
@@ -2156,42 +2156,42 @@ const baseBlogPosts: BlogPost[] = [
     metaTitleEn: "What is Chestny ZNAK? Which Products Require It in Russia? (2026 Guide)",
     title: "Çestniy Znak Nedir? Rusya'da Hangi Ürünlerde Zorunludur? (2026 Güncel Rehber)",
     titleEn: "What is Chestny ZNAK? Which Products Require It in Russia? (2026 Guide)",
-    excerpt: "Çestniy Znak sistemi nedir? Hangi ürünlerde zorunludur? Rusya'ya ihracat yapan markalar için etiketleme süreci, DataMatrix kodları ve dikkat edilmesi gereken tüm detaylar bu rehberde.",
+    excerpt: "Çestniy Znak sistemi nedir? Hangi ürünlerde zorunludur? Rusya'ya ihracat yapan markalar için etiketleme süreci, DataMatrix kodlari ve dikkat edilmesi gereken tüm detaylar bu rehberde.",
     excerptEn: "What is the Chestny ZNAK system? Which products require compliance? A comprehensive guide on DataMatrix coding, labelling, and mandatory compliance for exporting to Russia.",
     publishedAt: "5 Ağustos 2026",
     readTime: "5 dk okuma",
     imageUrl: "/blog10.png",
     content: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarına ihracat yapmak isteyen birçok üretici için en kritik konulardan biri Çestniy Znak (Честный ЗНАК) sistemidir.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Çestniy Znak, Rusya Federasyonu tarafından geliştirilen ulusal dijital ürün izlenebilirlik sistemidir. Amaç; sahte ürünleri önlemek, kayıt dışı ticareti azaltmak ve ürünlerin üretimden son kullanıcıya kadar takip edilmesini sağlamaktır.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Sistem kapsamında belirli ürün gruplarında her ürün için benzersiz bir DataMatrix kodu oluşturulur ve bu kod ürün ambalajına uygulanır. Rusya'da bu sisteme tabi ürünler, gerekli kodlar olmadan piyasaya sunulamaz.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Rusya pazarina ihracat yapmak isteyen birçok üretici için en kritik konulardan biri Çestniy Znak (Честный ЗНАК) sistemidir.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Çestniy Znak, Rusya Federasyonu tarafindan geliştirilen ulusal dijital ürün izlenebilirlik sistemidir. Amaç; sahte ürünleri önlemek, kayit dişi ticareti azaltmak ve ürünlerin üretimden son kullaniciya kadar takip edilmesini sağlamaktir.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Sistem kapsaminda belirli ürün gruplarinda her ürün için benzersiz bir DataMatrix kodu oluşturulur ve bu kod ürün ambalajina uygulanir. Rusya'da bu sisteme tabi ürünler, gerekli kodlar olmadan piyasaya sunulamaz.</p>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Çestniy Znak Neden Önemlidir?</h2>
-          <p className="text-slate-600 leading-relaxed">Rusya'ya ürün göndermek isteyen birçok firma, gümrük işlemlerini tamamladıktan sonra satışa başlayabileceğini düşünür. Ancak Çestniy Znak kapsamındaki ürünlerde süreç bundan çok daha fazlasını içerir.</p>
-          <p className="text-slate-700 font-semibold mb-2">Kodlama yapılmayan ürünler:</p>
+          <p className="text-slate-600 leading-relaxed">Rusya'ya ürün göndermek isteyen birçok firma, gümrük işlemlerini tamamladiktan sonra satişa başlayabileceğini düşünür. Ancak Çestniy Znak kapsamindaki ürünlerde süreç bundan çok daha fazlasini içerir.</p>
+          <p className="text-slate-700 font-semibold mb-2">Kodlama yapilmayan ürünler:</p>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Rusya'da satışa açılamaz.</li>
-            <li>Marketplace depolarına kabul edilmeyebilir.</li>
-            <li>İthalat sürecinde sorun yaşayabilir.</li>
-            <li>Ciddi idari yaptırımlarla karşılaşabilir.</li>
+            <li>Rusya'da satişa açilamaz.</li>
+            <li>Marketplace depolarina kabul edilmeyebilir.</li>
+            <li>Ithalat sürecinde sorun yaşayabilir.</li>
+            <li>Ciddi idari yaptirimlarla karşilaşabilir.</li>
           </ul>
-          <p className="text-slate-600 font-medium mt-2">Bu nedenle Çestniy Znak süreci, Rusya operasyon planının ilk aşamalarından biri olarak ele alınmalıdır.</p>
+          <p className="text-slate-600 font-medium mt-2">Bu nedenle Çestniy Znak süreci, Rusya operasyon planinin ilk aşamalarindan biri olarak ele alinmalidir.</p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Hangi Ürünlerde Çestniy Znak Zorunludur?</h2>
-          <p className="text-slate-600 leading-relaxed">Çestniy Znak kapsamı zaman içinde genişlemektedir. Güncel mevzuata göre birçok sektörde zorunluluk bulunmaktadır.</p>
-          <p className="text-slate-700 font-semibold mb-2">Başlıca ürün grupları:</p>
+          <p className="text-slate-600 leading-relaxed">Çestniy Znak kapsami zaman içinde genişlemektedir. Güncel mevzuata göre birçok sektörde zorunluluk bulunmaktadir.</p>
+          <p className="text-slate-700 font-semibold mb-2">Başlica ürün gruplari:</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 my-4">
             {[
-              "Tekstil ve hazır giyim",
-              "Ayakkabı",
+              "Tekstil ve hazir giyim",
+              "Ayakkabi",
               "Parfüm ve kozmetik",
               "Lastik",
-              "Fotoğraf ekipmanları",
-              "İlaç ve tıbbi gereçler",
+              "Fotoğraf ekipmanlari",
+              "Ilaç ve tibbi gereçler",
               "Tütün ürünleri",
               "Süt ürünleri",
               "Su ve içecek kategorileri",
@@ -2204,70 +2204,70 @@ const baseBlogPosts: BlogPost[] = [
               </div>
             ))}
           </div>
-          <p className="text-slate-500 text-sm italic">Her GTİP (HS) kodu için zorunluluk durumu ayrıca değerlendirilmelidir.</p>
+          <p className="text-slate-500 text-sm italic">Her GTIP (HS) kodu için zorunluluk durumu ayrica değerlendirilmelidir.</p>
         </div>
 
         <div className="bg-primary-50 p-8 rounded-3xl my-8 border border-primary-100">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Çestniy Znak Süreci Nasıl İşler?</h2>
-          <p className="text-slate-600 mb-4">Genel operasyon akışı şu adımlardan oluşur:</p>
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Çestniy Znak Süreci Nasil Işler?</h2>
+          <p className="text-slate-600 mb-4">Genel operasyon akişi şu adimlardan oluşur:</p>
           <ol className="space-y-3 text-slate-700">
-            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">1</span> Ürünün Çestniy Znak kapsamına girip girmediği belirlenir.</li>
-            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">2</span> Gerekli uygunluk belgeleri ve deklarasyonlar hazırlanır.</li>
-            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">3</span> Ürün için benzersiz DataMatrix kodları oluşturulur.</li>
-            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">4</span> Kodlar ürün veya ambalaja standartlara uygun uygulanır.</li>
-            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">5</span> Ürün ithalat gümrük süreci tamamlanır.</li>
-            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">6</span> Marketplace veya satış kanalına ürün kabul edilir.</li>
-            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">7</span> Satış gerçekleştikçe sistem üzerinden ürün hareketleri düşülür.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">1</span> Ürünün Çestniy Znak kapsamina girip girmediği belirlenir.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">2</span> Gerekli uygunluk belgeleri ve deklarasyonlar hazirlanir.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">3</span> Ürün için benzersiz DataMatrix kodlari oluşturulur.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">4</span> Kodlar ürün veya ambalaja standartlara uygun uygulanir.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">5</span> Ürün ithalat gümrük süreci tamamlanir.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">6</span> Marketplace veya satiş kanalina ürün kabul edilir.</li>
+            <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-accent-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">7</span> Satiş gerçekleştikçe sistem üzerinden ürün hareketleri düşülür.</li>
           </ol>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">DataMatrix Kodu Nedir?</h2>
-          <p className="text-slate-600 leading-relaxed">Çestniy Znak sisteminde kullanılan 2D kare barkod yapısına DataMatrix adı verilir. Bu kod; ürün kimliğini, üretim bilgisini ve izlenebilirlik verilerini içeren benzersiz bir dijital kimliktir.</p>
+          <p className="text-slate-600 leading-relaxed">Çestniy Znak sisteminde kullanilan 2D kare barkod yapisina DataMatrix adi verilir. Bu kod; ürün kimliğini, üretim bilgisini ve izlenebilirlik verilerini içeren benzersiz bir dijital kimliktir.</p>
           <div className="bg-amber-50 border border-amber-200 p-5 rounded-2xl text-amber-900 text-sm leading-relaxed">
-            <strong>EAN Barkodu ile Karıştırılmamalıdır:</strong> EAN barkodu genel ürün modelini tanımlarken, DataMatrix kodu her bir tekil fiziki ürüne özel oluşturulur. Birçok üründe hem EAN barkodu hem de Çestniy Znak DataMatrix kodu birlikte kullanılır.
+            <strong>EAN Barkodu ile Kariştirilmamalidir:</strong> EAN barkodu genel ürün modelini tanimlarken, DataMatrix kodu her bir tekil fiziki ürüne özel oluşturulur. Birçok üründe hem EAN barkodu hem de Çestniy Znak DataMatrix kodu birlikte kullanilir.
           </div>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Wildberries ve Ozon'da Çestniy Znak</h2>
-          <p className="text-slate-600 leading-relaxed">Wildberries ve Ozon gibi pazaryerleri, Çestniy Znak zorunluluğu bulunan ürünlerde gerekli kodlamaların eksiksiz yapılmasını bekler.</p>
-          <p className="text-slate-600 leading-relaxed">Eksik veya hatalı etiketleme; ürün kabulünün reddedilmesine, satış gecikmelerine ve operasyon maliyetlerinin artmasına neden olabilir. Bu nedenle etiketleme süreci, marketplace operasyonunun ayrılmaz bir parçasıdır.</p>
+          <p className="text-slate-600 leading-relaxed">Wildberries ve Ozon gibi pazaryerleri, Çestniy Znak zorunluluğu bulunan ürünlerde gerekli kodlamalarin eksiksiz yapilmasini bekler.</p>
+          <p className="text-slate-600 leading-relaxed">Eksik veya hatali etiketleme; ürün kabulünün reddedilmesine, satiş gecikmelerine ve operasyon maliyetlerinin artmasina neden olabilir. Bu nedenle etiketleme süreci, marketplace operasyonunun ayrilmaz bir parçasidir.</p>
         </div>
 
         <div className="bg-white border border-slate-200 p-8 rounded-3xl my-8 shadow-sm">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşımı</h2>
-          <p className="text-slate-600 mb-4">Russia Market Entry olarak Çestniy Znak sürecini yalnızca bir etiketleme işlemi olarak görmüyoruz. Başarılı bir operasyon için aşağıdaki süreçleri bütüncül olarak yönetiyoruz:</p>
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşimi</h2>
+          <p className="text-slate-600 mb-4">Russia Market Entry olarak Çestniy Znak sürecini yalnizca bir etiketleme işlemi olarak görmüyoruz. Başarili bir operasyon için aşağidaki süreçleri bütüncül olarak yönetiyoruz:</p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-700">
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Ürün uygunluk ve GTİP analizi</li>
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Belgelendirme ve deklarasyon planlaması</li>
-            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> DataMatrix kod temin ve basım süreçleri</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Ürün uygunluk ve GTIP analizi</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Belgelendirme ve deklarasyon planlamasi</li>
+            <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> DataMatrix kod temin ve basim süreçleri</li>
             <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Lojistik ve etiketleme koordinasyonu</li>
             <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Marketplace depo kabul entegrasyonu</li>
           </ul>
-          <p className="text-slate-600 mt-4 italic">Yanlış planlanan bir kodlama süreci, sevkiyatın gümrükte veya depoda gecikmesine ve doğrudan satış kayıplarına neden olur.</p>
+          <p className="text-slate-600 mt-4 italic">Yanliş planlanan bir kodlama süreci, sevkiyatin gümrükte veya depoda gecikmesine ve doğrudan satiş kayiplarina neden olur.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
           <div className="bg-red-50/70 border border-red-100 p-6 rounded-3xl">
-            <h3 className="text-lg font-bold text-red-700 mb-3">Sık Yapılan Hatalar</h3>
+            <h3 className="text-lg font-bold text-red-700 mb-3">Sik Yapilan Hatalar</h3>
             <ul className="space-y-2 text-sm text-red-900">
-              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Çestniy Znak kapsamının GTİP bazlı kontrol edilmemesi</li>
-              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> DataMatrix ile standart EAN barkodunun karıştırılması</li>
-              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Kodların ambalaj üzerinde yanlış veya okunamayan alana basılması</li>
-              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> İthalat tamamlandıktan sonra kodlama yapılmaya çalışılması</li>
-              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Pazaryeri özel etiketleme gereksinimlerinin göz ardı edilmesi</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Çestniy Znak kapsaminin GTIP bazli kontrol edilmemesi</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> DataMatrix ile standart EAN barkodunun kariştirilmasi</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Kodlarin ambalaj üzerinde yanliş veya okunamayan alana basilmasi</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Ithalat tamamlandiktan sonra kodlama yapilmaya çalişilmasi</li>
+              <li className="flex items-start gap-2"><span className="text-red-500 font-bold">✕</span> Pazaryeri özel etiketleme gereksinimlerinin göz ardi edilmesi</li>
             </ul>
           </div>
 
           <div className="bg-emerald-50/70 border border-emerald-100 p-6 rounded-3xl">
             <h3 className="text-lg font-bold text-emerald-800 mb-3">Sevkiyat Öncesi Kontrol Listesi</h3>
             <ul className="space-y-2 text-sm text-emerald-950">
-              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Ürün Çestniy Znak kapsamına giriyor mu?</li>
-              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> GTİP kodu doğrulandı mı?</li>
-              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Gerekli uygunluk belgeleri ve deklarasyonlar hazır mı?</li>
-              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> DataMatrix kodları üretilip tanımlandı mı?</li>
-              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Fiziksel etiketleme ve marketplace depo kuralları kontrol edildi mi?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Ürün Çestniy Znak kapsamina giriyor mu?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> GTIP kodu doğrulandi mi?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Gerekli uygunluk belgeleri ve deklarasyonlar hazir mi?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> DataMatrix kodlari üretilip tanimlandi mi?</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">✓</span> Fiziksel etiketleme ve marketplace depo kurallari kontrol edildi mi?</li>
             </ul>
           </div>
         </div>
@@ -2275,9 +2275,9 @@ const baseBlogPosts: BlogPost[] = [
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Çestniy Znak sistemi, Rusya pazarına girişte yalnızca yasal bir zorunluluk değil, aynı zamanda başarılı bir operasyonun temel bileşenlerinden biridir.</p>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Ürün grubuna göre doğru planlama yapmak, belge süreçlerini zamanında tamamlamak ve DataMatrix kodlarını doğru şekilde yönetmek; hem ithalat sürecinin sorunsuz ilerlemesini hem de Wildberries, Ozon ve diğer satış kanallarında operasyonun kesintisiz devam etmesini sağlar.</p>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry, tüm etiketleme, belgelendirme ve entegrasyon süreçlerinizi uçtan uca yöneterek markanızın Rusya pazarında güvenle büyümesini destekler.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Çestniy Znak sistemi, Rusya pazarina girişte yalnizca yasal bir zorunluluk değil, ayni zamanda başarili bir operasyonun temel bileşenlerinden biridir.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Ürün grubuna göre doğru planlama yapmak, belge süreçlerini zamaninda tamamlamak ve DataMatrix kodlarini doğru şekilde yönetmek; hem ithalat sürecinin sorunsuz ilerlemesini hem de Wildberries, Ozon ve diğer satiş kanallarinda operasyonun kesintisiz devam etmesini sağlar.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Russia Market Entry, tüm etiketleme, belgelendirme ve entegrasyon süreçlerinizi uçtan uca yöneterek markanizin Rusya pazarinda güvenle büyümesini destekler.</p>
         </div>
       </div>
     ),
@@ -2404,41 +2404,41 @@ const baseBlogPosts: BlogPost[] = [
   },
   {
     slug: "eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey",
-    metaTitle: "EAC Belgesi Nedir? Rusya'ya İhracat İçin Bilmeniz Gereken Her Şey",
+    metaTitle: "EAC Belgesi Nedir? Rusya'ya Ihracat Için Bilmeniz Gereken Her Şey",
     metaTitleEn: "What is EAC Certificate? Everything You Need to Know for Exporting to Russia",
-    title: "EAC Belgesi Nedir? Rusya'ya İhracat İçin Bilmeniz Gereken Her Şey",
+    title: "EAC Belgesi Nedir? Rusya'ya Ihracat Için Bilmeniz Gereken Her Şey",
     titleEn: "What is EAC Certificate? Everything You Need to Know for Exporting to Russia",
-    excerpt: "EAC belgesi nedir, hangi ürünlerde gereklidir ve Rusya'ya ihracat sürecinde nasıl alınır? Türk üreticiler için EAC uygunluk sürecini adım adım açıklıyoruz.",
+    excerpt: "EAC belgesi nedir, hangi ürünlerde gereklidir ve Rusya'ya ihracat sürecinde nasil alinir? Türk üreticiler için EAC uygunluk sürecini adim adim açikliyoruz.",
     excerptEn: "What is the EAC certificate, which products require it, and how is it obtained during export to Russia? We explain the EAC conformity process step by step for Turkish manufacturers.",
     publishedAt: "10 Ağustos 2026",
     readTime: "5 dk okuma",
     imageUrl: "/blog11.png",
     content: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Rusya'ya ürün ihraç etmek isteyen Türk üreticilerin karşılaştığı en önemli konulardan biri EAC uygunluk sürecidir. EAC, Eurasian Conformity anlamına gelir ve Avrasya Ekonomik Birliği (EAEU) pazarında ürünün ilgili teknik düzenlemelerin gerekliliklerine uygun olduğunu gösteren işarettir.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Rusya'ya ürün ihraç etmek isteyen Türk üreticilerin karşilaştiği en önemli konulardan biri EAC uygunluk sürecidir. EAC, Eurasian Conformity anlamina gelir ve Avrasya Ekonomik Birliği (EAEU) pazarinda ürünün ilgili teknik düzenlemelerin gerekliliklerine uygun olduğunu gösteren işarettir.</p>
         
         <div className="bg-amber-50 border border-amber-200 p-6 rounded-2xl text-amber-900 leading-relaxed space-y-2">
-          <strong className="text-lg font-bold block text-amber-950">Önemli Bir Ayrım:</strong>
-          <p>EAC tek başına bir "sertifika" değildir. Ürünün hangi uygunluk değerlendirmesine tabi olduğu; ürünün niteliğine, ilgili teknik düzenlemeye ve uygulanan uygunluk şemasına göre belirlenir.</p>
-          <p>EAEU sisteminde zorunlu uygunluk değerlendirmesi temel olarak <strong>Uygunluk Beyanı (Declaration of Conformity)</strong> ve <strong>Uygunluk Sertifikasyonu (Certificate of Conformity)</strong> şeklinde uygulanır.</p>
+          <strong className="text-lg font-bold block text-amber-950">Önemli Bir Ayrim:</strong>
+          <p>EAC tek başina bir "sertifika" değildir. Ürünün hangi uygunluk değerlendirmesine tabi olduğu; ürünün niteliğine, ilgili teknik düzenlemeye ve uygulanan uygunluk şemasina göre belirlenir.</p>
+          <p>EAEU sisteminde zorunlu uygunluk değerlendirmesi temel olarak <strong>Uygunluk Beyani (Declaration of Conformity)</strong> ve <strong>Uygunluk Sertifikasyonu (Certificate of Conformity)</strong> şeklinde uygulanir.</p>
         </div>
 
-        <p className="text-lg leading-relaxed text-slate-600 font-medium">Bu nedenle Rusya'ya ihracat planlayan bir üreticinin ilk sorusu "EAC belgesini nasıl alırım?" değil, "Ürünüm hangi EAEU teknik düzenlemesine tabi ve hangi uygunluk değerlendirmesi gerekiyor?" olmalıdır.</p>
+        <p className="text-lg leading-relaxed text-slate-600 font-medium">Bu nedenle Rusya'ya ihracat planlayan bir üreticinin ilk sorusu "EAC belgesini nasil alirim?" değil, "Ürünüm hangi EAEU teknik düzenlemesine tabi ve hangi uygunluk değerlendirmesi gerekiyor?" olmalidir.</p>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">EAC Neden Gereklidir?</h2>
-          <p className="text-slate-600 leading-relaxed">EAEU ülkelerinde ürün güvenliği ve teknik uygunluk, ürün gruplarına göre belirlenen teknik düzenlemeler üzerinden yönetilir. EAEU'nun teknik düzenlemeleri arasında:</p>
+          <p className="text-slate-600 leading-relaxed">EAEU ülkelerinde ürün güvenliği ve teknik uygunluk, ürün gruplarina göre belirlenen teknik düzenlemeler üzerinden yönetilir. EAEU'nun teknik düzenlemeleri arasinda:</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 my-4">
             {[
               "Makine ve ekipman",
-              "Alçak gerilim ekipmanları",
+              "Alçak gerilim ekipmanlari",
               "Elektromanyetik uyumluluk",
               "Ambalaj",
               "Oyuncaklar",
               "Parfüm ve kozmetik",
               "Hafif sanayi ürünleri (Tekstil)",
               "Mobilya",
-              "Gıda ürünleri"
+              "Gida ürünleri"
             ].map((item) => (
               <div key={item} className="flex items-center gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100 text-slate-700 text-sm font-medium">
                 <span className="w-2 h-2 rounded-full bg-accent-500 shrink-0" />
@@ -2446,37 +2446,37 @@ const baseBlogPosts: BlogPost[] = [
               </div>
             ))}
           </div>
-          <p className="text-slate-600 leading-relaxed">için farklı düzenlemeler bulunmaktadır. EAEU Komisyonu güncel teknik düzenlemelerin ve bunlara ilişkin standartların listesini yayımlar. Dolayısıyla her ürün için aynı EAC prosedürü uygulanmaz.</p>
+          <p className="text-slate-600 leading-relaxed">için farkli düzenlemeler bulunmaktadir. EAEU Komisyonu güncel teknik düzenlemelerin ve bunlara ilişkin standartlarin listesini yayimlar. Dolayisiyla her ürün için ayni EAC prosedürü uygulanmaz.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
           <div className="bg-primary-50/70 border border-primary-100 p-6 rounded-3xl space-y-3">
-            <h3 className="text-xl font-bold text-primary-600">Uygunluk Sertifikası</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">Bazı ürünlerde uygunluğun, yetkili bir uygunluk değerlendirme kuruluşı tarafından sertifikasyon yoluyla doğrulanması gerekir. Bu durumda ürün için <strong>Certificate of Conformity</strong> düzenlenir.</p>
+            <h3 className="text-xl font-bold text-primary-600">Uygunluk Sertifikasi</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">Bazi ürünlerde uygunluğun, yetkili bir uygunluk değerlendirme kuruluşi tarafindan sertifikasyon yoluyla doğrulanmasi gerekir. Bu durumda ürün için <strong>Certificate of Conformity</strong> düzenlenir.</p>
           </div>
           <div className="bg-slate-50 border border-slate-200 p-6 rounded-3xl space-y-3">
-            <h3 className="text-xl font-bold text-slate-800">Uygunluk Beyanı</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">Bazı ürünlerde ise üretici veya mevzuat kapsamında yetkilendirilmiş başvuru sahibi, ürünün ilgili teknik düzenlemelere uygunluğunu beyan eder. Bu durumda <strong>Declaration of Conformity</strong> kullanılır.</p>
+            <h3 className="text-xl font-bold text-slate-800">Uygunluk Beyani</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">Bazi ürünlerde ise üretici veya mevzuat kapsaminda yetkilendirilmiş başvuru sahibi, ürünün ilgili teknik düzenlemelere uygunluğunu beyan eder. Bu durumda <strong>Declaration of Conformity</strong> kullanilir.</p>
           </div>
         </div>
-        <p className="text-slate-600 italic text-sm">EAEU'nun resmi açıklamasına göre zorunlu uygunluk değerlendirmesinin hangi yöntemle yapılacağı ilgili teknik düzenleme tarafından belirlenir. Bu nedenle yalnızca ürün kategorisine bakarak "kesin sertifika gerekir" veya "kesin deklarasyon yeterlidir" demek doğru değildir.</p>
+        <p className="text-slate-600 italic text-sm">EAEU'nun resmi açiklamasina göre zorunlu uygunluk değerlendirmesinin hangi yöntemle yapilacaği ilgili teknik düzenleme tarafindan belirlenir. Bu nedenle yalnizca ürün kategorisine bakarak "kesin sertifika gerekir" veya "kesin deklarasyon yeterlidir" demek doğru değildir.</p>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">EAC Süreci Nasıl İşler?</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">EAC Süreci Nasil Işler?</h2>
           
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Tanımlanır</h3>
-              <p className="text-slate-600">Öncelikle ürünün teknik özellikleri, kullanım amacı, ürün tipi, üretim şekli ve GTİP / ürün sınıflandırması incelenir.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Ürün Tanimlanir</h3>
+              <p className="text-slate-600">Öncelikle ürünün teknik özellikleri, kullanim amaci, ürün tipi, üretim şekli ve GTIP / ürün siniflandirmasi incelenir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">İlgili Teknik Düzenleme Belirlenir</h3>
-              <p className="text-slate-600">Ürünün hangi EAEU teknik düzenlemesinin kapsamına girdiği belirlenir. Yanlış teknik düzenleme üzerinden başlatılan bir süreç daha sonra yeniden yapılmak zorunda kalabilir.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Ilgili Teknik Düzenleme Belirlenir</h3>
+              <p className="text-slate-600">Ürünün hangi EAEU teknik düzenlemesinin kapsamina girdiği belirlenir. Yanliş teknik düzenleme üzerinden başlatilan bir süreç daha sonra yeniden yapilmak zorunda kalabilir.</p>
             </div>
           </div>
 
@@ -2484,15 +2484,15 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Uygunluk Değerlendirme Yöntemi Belirlenir</h3>
-              <p className="text-slate-600">Ürüne göre uygunluk sertifikası, uygunluk beyanı, devlet kayıt işlemleri veya ilgili teknik düzenlemede öngörülen başka bir değerlendirme yöntemi gerekebilir.</p>
+              <p className="text-slate-600">Ürüne göre uygunluk sertifikasi, uygunluk beyani, devlet kayit işlemleri veya ilgili teknik düzenlemede öngörülen başka bir değerlendirme yöntemi gerekebilir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Teknik Belgeler Hazırlanır</h3>
-              <p className="text-slate-600">Ürünün niteliğine göre teknik dosyada; ürün teknik özellikleri, kullanım kılavuzu, üretim bilgileri, test raporları, etiket bilgileri, üretici bilgileri, ürün fotoğrafları ve mevcut sertifikalar talep edilebilir.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Teknik Belgeler Hazirlanir</h3>
+              <p className="text-slate-600">Ürünün niteliğine göre teknik dosyada; ürün teknik özellikleri, kullanim kilavuzu, üretim bilgileri, test raporlari, etiket bilgileri, üretici bilgileri, ürün fotoğraflari ve mevcut sertifikalar talep edilebilir.</p>
             </div>
           </div>
 
@@ -2507,60 +2507,60 @@ const baseBlogPosts: BlogPost[] = [
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">6</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Belge Kaydı</h3>
-              <p className="text-slate-600">Gerekli uygunluk belgesi düzenlendikten veya uygunluk beyanı kaydedildikten sonra EAEU ortak kayıt sistemi üzerinden doğrulanabilir.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Belge Kaydi</h3>
+              <p className="text-slate-600">Gerekli uygunluk belgesi düzenlendikten veya uygunluk beyani kaydedildikten sonra EAEU ortak kayit sistemi üzerinden doğrulanabilir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">7</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">EAC İşareti</h3>
-              <p className="text-slate-600">Uygunluk süreci tamamlandıktan sonra, ilgili gereklilikler kapsamında ürün üzerinde kurallara uygun biçimde EAC işareti kullanılabilir.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">EAC Işareti</h3>
+              <p className="text-slate-600">Uygunluk süreci tamamlandiktan sonra, ilgili gereklilikler kapsaminda ürün üzerinde kurallara uygun biçimde EAC işareti kullanilabilir.</p>
             </div>
           </div>
         </div>
 
         <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl my-8">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Türkiye'deki CE ile EAC Aynı Şey mi?</h2>
-          <p className="text-slate-700 leading-relaxed mb-3"><strong>Hayır.</strong> CE ve EAC benzer bir mantığa sahip olsa da aynı sistem değildir.</p>
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Türkiye'deki CE ile EAC Ayni Şey mi?</h2>
+          <p className="text-slate-700 leading-relaxed mb-3"><strong>Hayir.</strong> CE ve EAC benzer bir mantiğa sahip olsa da ayni sistem değildir.</p>
           <ul className="space-y-2 text-slate-600">
-            <li>• <strong>CE:</strong> Avrupa Birliği pazarındaki ilgili mevzuat çerçevesinde kullanılan uygunluk işaretidir.</li>
-            <li>• <strong>EAC:</strong> Avrasya Ekonomik Birliği (EAEU) pazarında geçerli teknik düzenlemeler kapsamında kullanılan uygunluk işaretidir.</li>
+            <li>• <strong>CE:</strong> Avrupa Birliği pazarindaki ilgili mevzuat çerçevesinde kullanilan uygunluk işaretidir.</li>
+            <li>• <strong>EAC:</strong> Avrasya Ekonomik Birliği (EAEU) pazarinda geçerli teknik düzenlemeler kapsaminda kullanilan uygunluk işaretidir.</li>
           </ul>
-          <p className="text-slate-700 leading-relaxed mt-4">Bu nedenle <em>"Ürünümüz CE belgeli, o halde Rusya'ya direkt satabiliriz."</em> yaklaşımı doğru değildir. Ürünün Rusya/EAEU pazarına girişinden önce ilgili EAEU teknik düzenlemelerinin ayrıca değerlendirilmesi gerekir.</p>
+          <p className="text-slate-700 leading-relaxed mt-4">Bu nedenle <em>"Ürünümüz CE belgeli, o halde Rusya'ya direkt satabiliriz."</em> yaklaşimi doğru değildir. Ürünün Rusya/EAEU pazarina girişinden önce ilgili EAEU teknik düzenlemelerinin ayrica değerlendirilmesi gerekir.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Türk Üreticiler İçin Neden Önemli?</h2>
-          <p className="text-slate-600 leading-relaxed">Türkiye'den Rusya'ya ürün gönderen bir üretici açısından EAC süreci yalnızca bir belge hazırlama işlemi değildir. Aslında süreç şu zincirin vazgeçilmez bir parçasıdır:</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Türk Üreticiler Için Neden Önemli?</h2>
+          <p className="text-slate-600 leading-relaxed">Türkiye'den Rusya'ya ürün gönderen bir üretici açisindan EAC süreci yalnizca bir belge hazirlama işlemi değildir. Aslinda süreç şu zincirin vazgeçilmez bir parçasidir:</p>
           <div className="flex flex-wrap items-center justify-center gap-2 bg-primary-50 p-6 rounded-2xl text-slate-800 font-semibold text-center my-4">
             <span>Ürün</span> <span className="text-accent-500">→</span>
             <span>Teknik Düzenleme</span> <span className="text-accent-500">→</span>
             <span>Uygunluk Değerlendirmesi</span> <span className="text-accent-500">→</span>
             <span>Belgelendirme</span> <span className="text-accent-500">→</span>
             <span>Etiketleme</span> <span className="text-accent-500">→</span>
-            <span>İthalat</span> <span className="text-accent-500">→</span>
+            <span>Ithalat</span> <span className="text-accent-500">→</span>
             <span>Marketplace</span>
           </div>
-          <p className="text-slate-600 leading-relaxed">Örneğin Wildberries veya Ozon üzerinden satış planlanıyorsa, ürünün yalnızca marketplace'e yüklenmesi yeterli değildir. Ürünün Rusya'da yasal olarak piyasaya sunulabilmesi için ilgili ürün mevzuatının baştan değerlendirilmesi gerekir.</p>
+          <p className="text-slate-600 leading-relaxed">Örneğin Wildberries veya Ozon üzerinden satiş planlaniyorsa, ürünün yalnizca marketplace'e yüklenmesi yeterli değildir. Ürünün Rusya'da yasal olarak piyasaya sunulabilmesi için ilgili ürün mevzuatinin baştan değerlendirilmesi gerekir.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
           <div className="bg-white border border-slate-200 p-6 rounded-3xl shadow-sm space-y-3">
             <h3 className="text-xl font-bold text-primary-600">EAC</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">Ürünün ilgili EAEU teknik düzenlemelerine ve güvenlik standartlarına uygunluğuyla ilgilidir.</p>
+            <p className="text-slate-600 text-sm leading-relaxed">Ürünün ilgili EAEU teknik düzenlemelerine ve güvenlik standartlarina uygunluğuyla ilgilidir.</p>
           </div>
           <div className="bg-white border border-slate-200 p-6 rounded-3xl shadow-sm space-y-3">
             <h3 className="text-xl font-bold text-accent-500">Çestniy Znak</h3>
-            <p className="text-slate-600 text-sm leading-relaxed">Belirli ürün gruplarında dijital ürün işaretleme ve izlenebilirlik (DataMatrix) sistemidir.</p>
+            <p className="text-slate-600 text-sm leading-relaxed">Belirli ürün gruplarinda dijital ürün işaretleme ve izlenebilirlik (DataMatrix) sistemidir.</p>
           </div>
         </div>
-        <p className="text-slate-600 text-sm italic">Yani bir ürün için hem EAC uygunluk süreci hem de Çestniy Znak yükümlülüğü söz konusu olabilir. Bunları tek bir işlem gibi değerlendirmek doğru değildir.</p>
+        <p className="text-slate-600 text-sm italic">Yani bir ürün için hem EAC uygunluk süreci hem de Çestniy Znak yükümlülüğü söz konusu olabilir. Bunlari tek bir işlem gibi değerlendirmek doğru değildir.</p>
 
         <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100 my-8">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşımı</h2>
-          <p className="text-slate-700 leading-relaxed mb-4">Rusya'ya girişte EAC sürecinin sevkiyattan hemen önce ele alınması en sık karşılaşılan operasyonel hatalardan biridir. Doğru yaklaşım:</p>
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşimi</h2>
+          <p className="text-slate-700 leading-relaxed mb-4">Rusya'ya girişte EAC sürecinin sevkiyattan hemen önce ele alinmasi en sik karşilaşilan operasyonel hatalardan biridir. Doğru yaklaşim:</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-slate-800 font-medium text-sm text-center">
             <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Ürün seçimi</span>
             <span className="text-accent-500 font-bold">↓</span>
@@ -2570,25 +2570,25 @@ const baseBlogPosts: BlogPost[] = [
             <span className="text-accent-500 font-bold">↓</span>
             <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Çestniy Znak</span>
             <span className="text-accent-500 font-bold">↓</span>
-            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">İthalat</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Ithalat</span>
             <span className="text-accent-500 font-bold">↓</span>
             <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Marketplace</span>
           </div>
-          <p className="text-slate-600 mt-4">Uygunluk süreci, ürün Rusya'ya geldikten sonra değil, pazara giriş planının en başında ele alınmalıdır.</p>
+          <p className="text-slate-600 mt-4">Uygunluk süreci, ürün Rusya'ya geldikten sonra değil, pazara giriş planinin en başinda ele alinmalidir.</p>
         </div>
 
         <div className="bg-white border border-slate-200 p-8 rounded-3xl my-8 shadow-sm">
           <h3 className="text-xl font-bold text-primary-600 mb-4">EAC Sevkiyat Öncesi Kontrol Listesi</h3>
           <ul className="space-y-2.5 text-slate-700">
             {[
-              "Ürün doğru şekilde sınıflandırıldı mı?",
-              "İlgili EAEU teknik düzenlemesi belirlendi mi?",
+              "Ürün doğru şekilde siniflandirildi mi?",
+              "Ilgili EAEU teknik düzenlemesi belirlendi mi?",
               "Uygunluk değerlendirme yöntemi belirlendi mi?",
-              "Gerekli teknik belgeler hazır mı?",
-              "Gerekli testler tamamlandı mı?",
-              "Sertifika veya deklarasyon süreci tamamlandı mı?",
+              "Gerekli teknik belgeler hazir mi?",
+              "Gerekli testler tamamlandi mi?",
+              "Sertifika veya deklarasyon süreci tamamlandi mi?",
               "EAC işareti gereklilikleri kontrol edildi mi?",
-              "Çestniy Znak kapsamı ayrıca kontrol edildi mi?",
+              "Çestniy Znak kapsami ayrica kontrol edildi mi?",
               "Marketplace gereklilikleri kontrol edildi mi?"
             ].map((check) => (
               <li key={check} className="flex items-center gap-3">
@@ -2602,8 +2602,8 @@ const baseBlogPosts: BlogPost[] = [
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">EAC süreci, Rusya'ya ihracat yapan Türk üreticiler için yalnızca bir sertifika alma işlemi değildir.</p>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Doğru ürün sınıflandırması, doğru teknik düzenleme, doğru uygunluk değerlendirmesi ve doğru etiketleme; Rusya pazarına girişin temel yapı taşlarıdır. Russia Market Entry olarak tüm uygunluk ve pazaryeri süreçlerinizi uçtan uca yönetiyoruz.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">EAC süreci, Rusya'ya ihracat yapan Türk üreticiler için yalnizca bir sertifika alma işlemi değildir.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Doğru ürün siniflandirmasi, doğru teknik düzenleme, doğru uygunluk değerlendirmesi ve doğru etiketleme; Rusya pazarina girişin temel yapi taşlaridir. Russia Market Entry olarak tüm uygunluk ve pazaryeri süreçlerinizi uçtan uca yönetiyoruz.</p>
         </div>
       </div>
     ),
@@ -2753,11 +2753,11 @@ const baseBlogPosts: BlogPost[] = [
   },
   {
     slug: "rusyada-ooo-sirketi-nasil-kurulur-turk-markalari-icin-2026-rehberi",
-    metaTitle: "Rusya'da OOO Şirketi Nasıl Kurulur? Türk Markaları İçin 2026 Rehberi",
+    metaTitle: "Rusya'da OOO Şirketi Nasil Kurulur? Türk Markalari Için 2026 Rehberi",
     metaTitleEn: "How to Establish an OOO Company in Russia? 2026 Guide for Turkish Brands",
-    title: "Rusya'da OOO Şirketi Nasıl Kurulur? Türk Markaları İçin 2026 Rehberi",
+    title: "Rusya'da OOO Şirketi Nasil Kurulur? Türk Markalari Için 2026 Rehberi",
     titleEn: "How to Establish an OOO Company in Russia? 2026 Guide for Turkish Brands",
-    excerpt: "Rusya'da OOO şirket nedir, yabancı şirketler nasıl kurabilir, bankacılık ve FNS kayıt süreçleri nasıl işler? Türk markaları için 2026 adım adım OOO şirket kurulum rehberi.",
+    excerpt: "Rusya'da OOO şirket nedir, yabanci şirketler nasil kurabilir, bankacilik ve FNS kayit süreçleri nasil işler? Türk markalari için 2026 adim adim OOO şirket kurulum rehberi.",
     excerptEn: "What is an OOO company in Russia, how can foreign entities establish one, and how do banking and FNS registration workflows operate? Step-by-step 2026 guide for Turkish brands.",
     publishedAt: "13 Ağustos 2026",
     readTime: "6 dk okuma",
@@ -2765,42 +2765,42 @@ const baseBlogPosts: BlogPost[] = [
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">
-          Rusya'da şirket kurmak isteyen yabancı girişimcilerin en sık karşılaştığı şirket türlerinden biri <strong>OOO — Общество с ограниченной ответственностью</strong>'dur. Türk hukukundaki Limited Şirket (Ltd. Şti.) yapısına benzer bir sermaye şirketi olarak düşünülebilir.
+          Rusya'da şirket kurmak isteyen yabanci girişimcilerin en sik karşilaştiği şirket türlerinden biri <strong>OOO — Общество с ограниченной ответственностью</strong>'dur. Türk hukukundaki Limited Şirket (Ltd. Şti.) yapisina benzer bir sermaye şirketi olarak düşünülebilir.
         </p>
 
         <p className="text-slate-600 leading-relaxed">
-          Rusya Federal Vergi Servisi (FNS), OOO'yu Rusya'daki en yaygın tüzel kişi türlerinden biri olarak tanımlıyor ve küçük ile orta ölçekli işletmeler açısından son derece uygun bir yapı olarak gösteriyor.
+          Rusya Federal Vergi Servisi (FNS), OOO'yu Rusya'daki en yaygin tüzel kişi türlerinden biri olarak tanimliyor ve küçük ile orta ölçekli işletmeler açisindan son derece uygun bir yapi olarak gösteriyor.
         </p>
 
         <div className="bg-primary-50/70 border border-primary-100 p-6 rounded-3xl space-y-3">
           <h2 className="text-xl font-bold text-primary-600">Türk Şirketi Rusya'da OOO Kurabilir mi?</h2>
           <p className="text-slate-700 leading-relaxed">
-            <strong>Evet, yabancı yatırımcıların Rusya'da tüzel kişilik oluşturması mümkündür.</strong> Yabancı bir şirketin OOO'da kurucu olması halinde, FNS kayıt sürecinde yabancı tüzel kişinin statüsünü doğrulayan resmi belgeler de talep edilir.
+            <strong>Evet, yabanci yatirimcilarin Rusya'da tüzel kişilik oluşturmasi mümkündür.</strong> Yabanci bir şirketin OOO'da kurucu olmasi halinde, FNS kayit sürecinde yabanci tüzel kişinin statüsünü doğrulayan resmi belgeler de talep edilir.
           </p>
           <p className="text-slate-600 text-sm leading-relaxed">
-            FNS'nin resmi kayıt dokümanlarında yabancı tüzel kişinin kurucu olması durumunda bunu kanıtlayan belgenin sunulması gerektiği belirtiliyor. Ancak yabancı ortaklı kuruluş, yalnızca standart bir Rus vatandaşının OOO kurması kadar basit değildir. Belge hazırlama, noter onaylı tercüme, apostil/legalizasyon, yetkilendirme ve bankacılık süreçleri önceden titizlikle planlanmalıdır.
+            FNS'nin resmi kayit dokümanlarinda yabanci tüzel kişinin kurucu olmasi durumunda bunu kanitlayan belgenin sunulmasi gerektiği belirtiliyor. Ancak yabanci ortakli kuruluş, yalnizca standart bir Rus vatandaşinin OOO kurmasi kadar basit değildir. Belge hazirlama, noter onayli tercüme, apostil/legalizasyon, yetkilendirme ve bankacilik süreçleri önceden titizlikle planlanmalidir.
           </p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">OOO Ne Zaman Mantıklı?</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">OOO Ne Zaman Mantikli?</h2>
           <p className="text-slate-600 leading-relaxed">
-            Her Türk markasının Rusya'da doğrudan şirket kurması gerekmez. Örneğin pazarı test etmek isteyen bir üretici için:
+            Her Türk markasinin Rusya'da doğrudan şirket kurmasi gerekmez. Örneğin pazari test etmek isteyen bir üretici için:
           </p>
           <div className="bg-slate-100 p-4 rounded-2xl text-slate-800 font-semibold text-center my-2">
-            Türkiye → Rusya Partneri → Marketplace / Satış
+            Türkiye → Rusya Partneri → Marketplace / Satiş
           </div>
           <p className="text-slate-600 leading-relaxed">
-            modeli çok daha düşük başlangıç maliyetli ve hızlı olabilir. Ancak Rusya'da uzun vadeli kalıcı bir operasyon kurulacaksa OOO kurmak anlamlı hale gelir. Özellikle şu hedeflerde OOO yapısı değerlendirilmelidir:
+            modeli çok daha düşük başlangiç maliyetli ve hizli olabilir. Ancak Rusya'da uzun vadeli kalici bir operasyon kurulacaksa OOO kurmak anlamli hale gelir. Özellikle şu hedeflerde OOO yapisi değerlendirilmelidir:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4">
             {[
-              "Yerel yerleşik ekip çalıştırmak",
-              "Rusya'da doğrudan banka hesabı kullanmak",
-              "İthalat operasyonunu yerelleştirmek",
+              "Yerel yerleşik ekip çaliştirmak",
+              "Rusya'da doğrudan banka hesabi kullanmak",
+              "Ithalat operasyonunu yerelleştirmek",
               "Marketplace operasyonunu doğrudan yönetmek",
-              "Yerel distribütörlük ağı oluşturmak",
-              "Uzun vadeli kalıcı ticari yapı kurmak"
+              "Yerel distribütörlük aği oluşturmak",
+              "Uzun vadeli kalici ticari yapi kurmak"
             ].map((item) => (
               <div key={item} className="flex items-center gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100 text-slate-700 text-sm font-medium">
                 <span className="w-2 h-2 rounded-full bg-accent-500 shrink-0" />
@@ -2811,13 +2811,13 @@ const baseBlogPosts: BlogPost[] = [
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">OOO Kuruluşunda Temel Adımlar</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">OOO Kuruluşunda Temel Adimlar</h2>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Şirket Yapısı Belirlenir</h3>
-              <p className="text-slate-600">Öncelikle kurucu/ortaklar, ortaklık oranları, şirket genel müdürü (Gendirektor) ve temel faaliyet alanları kararlaştırılır.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Şirket Yapisi Belirlenir</h3>
+              <p className="text-slate-600">Öncelikle kurucu/ortaklar, ortaklik oranlari, şirket genel müdürü (Gendirektor) ve temel faaliyet alanlari kararlaştirilir.</p>
             </div>
           </div>
 
@@ -2825,77 +2825,77 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">2</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Şirket Adresi (Yuridicheskiy Adres) Belirlenir</h3>
-              <p className="text-slate-600">Rusya'da tüzel kişinin resmi kayıt adresi bulunmalıdır. FNS, kayıt adresini şirketin sürekli faaliyet gösteren yürütme organının bulunduğu yerle ilişkilendirir. Bu nedenle yalnızca sahte "adres satın almak" yerine şirketle gerçekten ilişkilendirilebilir ve resmi tebligatlara uygun bir adres oluşturulmalıdır.</p>
+              <p className="text-slate-600">Rusya'da tüzel kişinin resmi kayit adresi bulunmalidir. FNS, kayit adresini şirketin sürekli faaliyet gösteren yürütme organinin bulunduğu yerle ilişkilendirir. Bu nedenle yalnizca sahte "adres satin almak" yerine şirketle gerçekten ilişkilendirilebilir ve resmi tebligatlara uygun bir adres oluşturulmalidir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Şirket Unvanı Belirlenir</h3>
-              <p className="text-slate-600">Şirketin resmi Rusça ticari unvanı belirlenir. Marka adı ile tüzel kişi adının birebir aynı olması gerekmez. Örneğin markanız "BRAND" iken şirket adınız <strong>ООО «XXX»</strong> şeklinde tescil edilebilir.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Şirket Unvani Belirlenir</h3>
+              <p className="text-slate-600">Şirketin resmi Rusça ticari unvani belirlenir. Marka adi ile tüzel kişi adinin birebir ayni olmasi gerekmez. Örneğin markaniz "BRAND" iken şirket adiniz <strong>ООО «XXX»</strong> şeklinde tescil edilebilir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Faaliyet Kodları (OKVED) Belirlenir</h3>
-              <p className="text-slate-600">OOO'nun gerçekleştireceği faaliyetler için uygun OKVED kodları seçilir. Özellikle marketplace, ithalat, toptan satış ve perakendenin birlikte yürütüleceği yapılarda doğru kod seçimi kritik önem taşır.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Faaliyet Kodlari (OKVED) Belirlenir</h3>
+              <p className="text-slate-600">OOO'nun gerçekleştireceği faaliyetler için uygun OKVED kodlari seçilir. Özellikle marketplace, ithalat, toptan satiş ve perakendenin birlikte yürütüleceği yapilarda doğru kod seçimi kritik önem taşir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Kuruluş Belgeleri Hazırlanır</h3>
-              <p className="text-slate-600">FNS'nin güncel prosedüründe R11001 başvuru formu, şirketin kurulmasına ilişkin karar/protokol ve ana sözleşme (Ustav) yer alır. Elektronik veya belirli noter başvurularında devlet harcı muafiyetleri uygulanabilmektedir.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Kuruluş Belgeleri Hazirlanir</h3>
+              <p className="text-slate-600">FNS'nin güncel prosedüründe R11001 başvuru formu, şirketin kurulmasina ilişkin karar/protokol ve ana sözleşme (Ustav) yer alir. Elektronik veya belirli noter başvurularinda devlet harci muafiyetleri uygulanabilmektedir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">6</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Yabancı Ortak İçin Ek Belgeler</h3>
-              <p className="text-slate-600">Türk şirketinin Rus OOO'suna ortak olması durumunda; ticaret sicil gazetesi, faaliyet belgesi ve imza sirküleri gibi belgelerin apostilli/konsolosluk onaylı Rusça noter tercümeleri sunulmalıdır.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Yabanci Ortak Için Ek Belgeler</h3>
+              <p className="text-slate-600">Türk şirketinin Rus OOO'suna ortak olmasi durumunda; ticaret sicil gazetesi, faaliyet belgesi ve imza sirküleri gibi belgelerin apostilli/konsolosluk onayli Rusça noter tercümeleri sunulmalidir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">7</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Devlet Kaydı (FNS)</h3>
-              <p className="text-slate-600">Belgeler sunulduktan sonra FNS devlet kaydını kural olarak 3 iş günü içinde tamamlar. Ancak yabancı evrakların hazırlanması ve doğrulanması nedeniyle toplam hazırlık süreci 3 günün üzerindedir.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Devlet Kaydi (FNS)</h3>
+              <p className="text-slate-600">Belgeler sunulduktan sonra FNS devlet kaydini kural olarak 3 iş günü içinde tamamlar. Ancak yabanci evraklarin hazirlanmasi ve doğrulanmasi nedeniyle toplam hazirlik süreci 3 günün üzerindedir.</p>
             </div>
           </div>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">8</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">Banka Hesabı Açılışı</h3>
-              <p className="text-slate-600">Şirket tescilinden sonra ticari tahsilatlar, ithalat ödemeleri, vergi ve pazaryeri gelirlerinin yönetimi için Rusya'da kurumsal banka hesabı açılır ve sermaye transferi gerçekleştirilir.</p>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Banka Hesabi Açilişi</h3>
+              <p className="text-slate-600">Şirket tescilinden sonra ticari tahsilatlar, ithalat ödemeleri, vergi ve pazaryeri gelirlerinin yönetimi için Rusya'da kurumsal banka hesabi açilir ve sermaye transferi gerçekleştirilir.</p>
             </div>
           </div>
         </div>
 
         <div className="bg-amber-50 border border-amber-200 p-8 rounded-3xl my-8">
-          <h2 className="text-2xl font-bold text-amber-950 mb-3">OOO Kurmak Rusya'da Satış Yapmanın Ön Koşulu mu?</h2>
+          <h2 className="text-2xl font-bold text-amber-950 mb-3">OOO Kurmak Rusya'da Satiş Yapmanin Ön Koşulu mu?</h2>
           <p className="text-amber-900 leading-relaxed">
-            <strong>Her durumda değil!</strong> Bu, Russia Market Entry olarak özellikle vurguladığımız kritik bir konudur. Rusya'ya giriş modeli; ürün, satış kanalı, ithalat yapısı, pazaryeri modeli, ödeme altyapısı, vergi ve lojistiğe göre değişkenlik gösterir.
+            <strong>Her durumda değil!</strong> Bu, Russia Market Entry olarak özellikle vurguladiğimiz kritik bir konudur. Rusya'ya giriş modeli; ürün, satiş kanali, ithalat yapisi, pazaryeri modeli, ödeme altyapisi, vergi ve lojistiğe göre değişkenlik gösterir.
           </p>
           <p className="text-amber-900 leading-relaxed mt-2 font-medium">
-            "Rusya'da satış yapmak istiyorsanız mutlaka OOO kurmalısınız" genellemesi yanlıştır. Önce iş modeli netleştirilmeli, ardından gerekli hukuki yapı belirlenmelidir.
+            "Rusya'da satiş yapmak istiyorsaniz mutlaka OOO kurmalisiniz" genellemesi yanliştir. Önce iş modeli netleştirilmeli, ardindan gerekli hukuki yapi belirlenmelidir.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
           <div className="bg-white border border-slate-200 p-6 rounded-3xl shadow-sm space-y-3">
-            <h3 className="text-xl font-bold text-primary-600">OOO'nun Avantajları</h3>
+            <h3 className="text-xl font-bold text-primary-600">OOO'nun Avantajlari</h3>
             <ul className="space-y-2 text-slate-600 text-sm">
               <li className="flex items-center gap-2"><span className="text-emerald-500 font-bold">✓</span> Yerel ticari operasyon kurabilme</li>
-              <li className="flex items-center gap-2"><span className="text-emerald-500 font-bold">✓</span> Doğrudan Rus banka hesabı altyapısı</li>
-              <li className="flex items-center gap-2"><span className="text-emerald-500 font-bold">✓</span> Yerel personel istihdam imkanı</li>
-              <li className="flex items-center gap-2"><span className="text-emerald-500 font-bold">✓</span> Pazaryeri operasyonlarını doğrudan yürütme</li>
+              <li className="flex items-center gap-2"><span className="text-emerald-500 font-bold">✓</span> Doğrudan Rus banka hesabi altyapisi</li>
+              <li className="flex items-center gap-2"><span className="text-emerald-500 font-bold">✓</span> Yerel personel istihdam imkani</li>
+              <li className="flex items-center gap-2"><span className="text-emerald-500 font-bold">✓</span> Pazaryeri operasyonlarini doğrudan yürütme</li>
             </ul>
           </div>
           <div className="bg-white border border-slate-200 p-6 rounded-3xl shadow-sm space-y-3">
@@ -2904,29 +2904,29 @@ const baseBlogPosts: BlogPost[] = [
               <li className="flex items-center gap-2"><span className="text-amber-500 font-bold">•</span> Düzenli muhasebe ve defter tutma</li>
               <li className="flex items-center gap-2"><span className="text-amber-500 font-bold">•</span> Vergi ve FNS raporlama yükümlülükleri</li>
               <li className="flex items-center gap-2"><span className="text-amber-500 font-bold">•</span> Şirket müdürü ve adres maliyetleri</li>
-              <li className="flex items-center gap-2"><span className="text-amber-500 font-bold">•</span> Banka mevzuatı ve döviz kontrol takibi</li>
+              <li className="flex items-center gap-2"><span className="text-amber-500 font-bold">•</span> Banka mevzuati ve döviz kontrol takibi</li>
             </ul>
           </div>
         </div>
 
         <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100 my-8">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşımı</h2>
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşimi</h2>
           <p className="text-slate-700 leading-relaxed mb-4">
-            Bizim açımızdan temel soru <em>"OOO kurabilir miyiz?"</em> değil, <strong>"OOO bizim iş modelimiz için gerekli mi?"</strong> sorusudur.
+            Bizim açimizdan temel soru <em>"OOO kurabilir miyiz?"</em> değil, <strong>"OOO bizim iş modelimiz için gerekli mi?"</strong> sorusudur.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-slate-800 font-medium text-sm text-center my-4">
-            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">İş Modeli</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Iş Modeli</span>
             <span className="text-accent-500 font-bold">→</span>
             <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Giriş Modeli</span>
             <span className="text-accent-500 font-bold">→</span>
-            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Hukuki Yapı</span>
+            <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Hukuki Yapi</span>
             <span className="text-accent-500 font-bold">→</span>
             <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Vergi & Banka</span>
             <span className="text-accent-500 font-bold">→</span>
             <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Operasyon</span>
           </div>
           <p className="text-slate-600 text-sm mt-2">
-            Şirket kuruluşunu pazara giriş stratejisinden bağımsız tekil bir işlem olarak ele almayıp bütünsel olarak yönetiyoruz.
+            Şirket kuruluşunu pazara giriş stratejisinden bağimsiz tekil bir işlem olarak ele almayip bütünsel olarak yönetiyoruz.
           </p>
         </div>
 
@@ -2936,16 +2936,16 @@ const baseBlogPosts: BlogPost[] = [
             {[
               "Rusya'daki iş modeli belirlendi mi?",
               "OOO gerekliliği değerlendirildi mi?",
-              "Ortaklık yapısı ve sermaye kararlaştırıldı mı?",
+              "Ortaklik yapisi ve sermaye kararlaştirildi mi?",
               "Şirket müdürü (Gendirektor) belirlendi mi?",
-              "Resmi şirket kayıt adresi sağlandı mı?",
-              "OKVED faaliyet kodları seçildi mi?",
-              "R11001 başvuru formu ve karar/protokol hazırlandı mı?",
+              "Resmi şirket kayit adresi sağlandi mi?",
+              "OKVED faaliyet kodlari seçildi mi?",
+              "R11001 başvuru formu ve karar/protokol hazirlandi mi?",
               "Ana sözleşme (Ustav) tanzim edildi mi?",
-              "Yabancı ortak belgeleri ve Rusça tercümeleri tamamlandı mı?",
-              "Devlet kayıt başvurusu yapıldı mı?",
-              "Banka hesabı ve sermaye transferi planlandı mı?",
-              "Vergi ve muhasebe altyapısı oluşturuldu mu?"
+              "Yabanci ortak belgeleri ve Rusça tercümeleri tamamlandi mi?",
+              "Devlet kayit başvurusu yapildi mi?",
+              "Banka hesabi ve sermaye transferi planlandi mi?",
+              "Vergi ve muhasebe altyapisi oluşturuldu mu?"
             ].map((check) => (
               <li key={check} className="flex items-center gap-3">
                 <span className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-xs">✓</span>
@@ -2959,10 +2959,10 @@ const baseBlogPosts: BlogPost[] = [
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
           <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">
-            Rusya'da OOO kurmak, Türk markalarının pazara girişinde güçlü bir seçenek olabilir; ancak her marka için ilk adım olmak zorunda değildir.
+            Rusya'da OOO kurmak, Türk markalarinin pazara girişinde güçlü bir seçenek olabilir; ancak her marka için ilk adim olmak zorunda değildir.
           </p>
           <p className="text-sm text-slate-400 relative z-10 border-t border-slate-800 pt-4 mt-6">
-            <strong>Not:</strong> Şirket kuruluşu, vergi ve yabancı ortaklık kuralları güncel mevzuata ve somut şirket yapısına göre değişebilir. Bu içerik genel bilgilendirme amaçlıdır; kuruluş öncesinde güncel FNS gereklilikleri ve profesyonel hukuk/muhasebe danışmanlığı ayrıca kontrol edilmelidir.
+            <strong>Not:</strong> Şirket kuruluşu, vergi ve yabanci ortaklik kurallari güncel mevzuata ve somut şirket yapisina göre değişebilir. Bu içerik genel bilgilendirme amaçlidir; kuruluş öncesinde güncel FNS gereklilikleri ve profesyonel hukuk/muhasebe danişmanliği ayrica kontrol edilmelidir.
           </p>
         </div>
       </div>
@@ -3113,11 +3113,11 @@ const baseBlogPosts: BlogPost[] = [
   },
   {
     slug: "rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber",
-    metaTitle: "Rusya'ya İthalat Süreci: Türk Markaları İçin Adım Adım Rehber | 2026",
+    metaTitle: "Rusya'ya Ithalat Süreci: Türk Markalari Için Adim Adim Rehber | 2026",
     metaTitleEn: "Import Process to Russia: Step-by-Step Guide for Turkish Brands | 2026",
-    title: "Rusya'ya İthalat Süreci: Türk Markaları İçin Adım Adım Rehber",
+    title: "Rusya'ya Ithalat Süreci: Türk Markalari Için Adim Adim Rehber",
     titleEn: "Import Process to Russia: Step-by-Step Guide for Turkish Brands",
-    excerpt: "Türkiye'den Rusya'ya ürün ithalatı nasıl yapılır? TN VED kodları, EAC uygunluk belgeleri, Çestniy Znak, gümrük beyanı, vergiler ve marketplace depo süreçleri.",
+    excerpt: "Türkiye'den Rusya'ya ürün ithalati nasil yapilir? TN VED kodlari, EAC uygunluk belgeleri, Çestniy Znak, gümrük beyani, vergiler ve marketplace depo süreçleri.",
     excerptEn: "How to import commercial goods from Turkey to Russia? TN VED EAEU classification, EAC compliance, Chestny ZNAK, customs declaration, duties, and marketplace fulfillment.",
     publishedAt: "17 Ağustos 2026",
     readTime: "7 dk okuma",
@@ -3125,37 +3125,37 @@ const baseBlogPosts: BlogPost[] = [
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">
-          Rusya pazarına girmek isteyen Türk üreticiler için en kritik aşamalardan biri, ürünlerin Türkiye'den Rusya'ya doğru şekilde ithal edilmesidir. Ancak ithalat yalnızca ürünlerin bir kamyonla Rusya sınırına gönderilmesinden ibaret değildir.
+          Rusya pazarina girmek isteyen Türk üreticiler için en kritik aşamalardan biri, ürünlerin Türkiye'den Rusya'ya doğru şekilde ithal edilmesidir. Ancak ithalat yalnizca ürünlerin bir kamyonla Rusya sinirina gönderilmesinden ibaret değildir.
         </p>
 
         <p className="text-slate-600 leading-relaxed">
-          Ürün sınıflandırması, gerekli uygunluk belgeleri, gümrük kıymeti, taşıma belgeleri, gümrük beyannamesi, vergiler ve ürünün Rusya'da satışa hazır hale getirilmesi birbirine bağlı süreçlerdir. Özellikle <strong>Wildberries, Ozon</strong> veya diğer pazaryerlerinde satış planlanıyorsa, ithalat operasyonunun daha ürün sevk edilmeden planlanması gerekir.
+          Ürün siniflandirmasi, gerekli uygunluk belgeleri, gümrük kiymeti, taşima belgeleri, gümrük beyannamesi, vergiler ve ürünün Rusya'da satişa hazir hale getirilmesi birbirine bağli süreçlerdir. Özellikle <strong>Wildberries, Ozon</strong> veya diğer pazaryerlerinde satiş planlaniyorsa, ithalat operasyonunun daha ürün sevk edilmeden planlanmasi gerekir.
         </p>
 
         <div className="bg-primary-50/70 border border-primary-100 p-6 rounded-3xl space-y-3">
-          <h2 className="text-xl font-bold text-primary-600">Rusya'ya İthalat Süreci Neden Önemli?</h2>
+          <h2 className="text-xl font-bold text-primary-600">Rusya'ya Ithalat Süreci Neden Önemli?</h2>
           <p className="text-slate-700 leading-relaxed">
-            Bir ürünün Rusya'ya ulaşmış olması, ürünün satışa hazır olduğu anlamına gelmez. İthalat sürecinde ürünün doğru sınıflandırılması, gümrük beyannamesinin hazırlanması, gümrük kıymetinin doğru belirlenmesi, gerekli izin ve uygunluk belgelerinin bulunması, gümrük vergileri ve diğer ödemelerin hesaplanması ile ürünün gümrükten çekilmesi gibi birçok aşama bulunur.
+            Bir ürünün Rusya'ya ulaşmiş olmasi, ürünün satişa hazir olduğu anlamina gelmez. Ithalat sürecinde ürünün doğru siniflandirilmasi, gümrük beyannamesinin hazirlanmasi, gümrük kiymetinin doğru belirlenmesi, gerekli izin ve uygunluk belgelerinin bulunmasi, gümrük vergileri ve diğer ödemelerin hesaplanmasi ile ürünün gümrükten çekilmesi gibi birçok aşama bulunur.
           </p>
           <p className="text-slate-600 text-sm leading-relaxed">
-            Avrasya Ekonomik Birliği (EAEU) Gümrük Kodu'nda gümrük beyanı; mallar, seçilen gümrük prosedürü ve gerekli diğer bilgiler hakkında gümrük idaresine beyan verilmesi olarak tanımlanıyor. Dolayısıyla ithalat, lojistik operasyonun yalnızca bir parçası değil; hukuki, finansal ve operasyonel bir süreçtir.
+            Avrasya Ekonomik Birliği (EAEU) Gümrük Kodu'nda gümrük beyani; mallar, seçilen gümrük prosedürü ve gerekli diğer bilgiler hakkinda gümrük idaresine beyan verilmesi olarak tanimlaniyor. Dolayisiyla ithalat, lojistik operasyonun yalnizca bir parçasi değil; hukuki, finansal ve operasyonel bir süreçtir.
           </p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Türkiye'den Rusya'ya İthalat Nasıl Yapılır?</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Türkiye'den Rusya'ya Ithalat Nasil Yapilir?</h2>
           <p className="text-slate-600 leading-relaxed">
-            Genel operasyonel akış şu aşamalarla ilerler. Bu adımlardan birinin eksik planlanması, sonraki aşamalarda gecikme veya ek maliyet yaratabilir:
+            Genel operasyonel akiş şu aşamalarla ilerler. Bu adimlardan birinin eksik planlanmasi, sonraki aşamalarda gecikme veya ek maliyet yaratabilir:
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 my-4">
             {[
               "1. Ürün Analizi",
-              "2. Ürün Sınıflandırması",
-              "3. Uygunluk & İzin Kontrolü",
-              "4. Ticari Evrakların Tanzimi",
-              "5. Taşıma ve Sevkiyat",
-              "6. Gümrük Beyanı",
+              "2. Ürün Siniflandirmasi",
+              "3. Uygunluk & Izin Kontrolü",
+              "4. Ticari Evraklarin Tanzimi",
+              "5. Taşima ve Sevkiyat",
+              "6. Gümrük Beyani",
               "7. Gümrük Kontrolü",
               "8. Vergi & Gümrük Ödemesi",
               "9. Gümrükten Çekim",
@@ -3172,14 +3172,14 @@ const baseBlogPosts: BlogPost[] = [
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Adım Adım İthalat Süreci</h2>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-6 border-b border-slate-100 pb-2">Adim Adim Ithalat Süreci</h2>
 
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">1</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">1. Ürünün İthalata Uygunluğu Kontrol Edilir</h3>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">1. Ürünün Ithalata Uygunluğu Kontrol Edilir</h3>
               <p className="text-slate-600 leading-relaxed">
-                İlk aşamada ürünün Rusya'ya ithal edilip edilemeyeceği ve hangi şartlara tabi olduğu belirlenmelidir. Burada yalnızca ürünün ticari adı yeterli değildir; teknik özellikleri, kullanım amacı, bileşimi, üretim şekli, ürün kategorisi, menşei ve GTİP / TN VED EAEU kodu birlikte değerlendirilmelidir. Benzer ticari isimlere sahip ürünler farklı gümrük kodlarına tabi olabilir.
+                Ilk aşamada ürünün Rusya'ya ithal edilip edilemeyeceği ve hangi şartlara tabi olduğu belirlenmelidir. Burada yalnizca ürünün ticari adi yeterli değildir; teknik özellikleri, kullanim amaci, bileşimi, üretim şekli, ürün kategorisi, menşei ve GTIP / TN VED EAEU kodu birlikte değerlendirilmelidir. Benzer ticari isimlere sahip ürünler farkli gümrük kodlarina tabi olabilir.
               </p>
             </div>
           </div>
@@ -3189,7 +3189,7 @@ const baseBlogPosts: BlogPost[] = [
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">2. TN VED EAEU Kodu Belirlenir</h3>
               <p className="text-slate-600 leading-relaxed">
-                Rusya ve EAEU gümrük sisteminde ürünler <strong>ТН ВЭД ЕАЭС (TN VED EAEU)</strong> kodlarıyla sınıflandırılır. Bu kod; gümrük vergilerinin, bazı ithalat kısıtlamalarının, izin ve uygunluk gerekliliklerinin ve istatistiksel kayıtların belirlenmesinde rol oynar. Türkiye'deki GTİP sınıflandırması ile EAEU'daki TN VED sınıflandırmasının operasyon açısından ayrıca karşılaştırılması gerekir.
+                Rusya ve EAEU gümrük sisteminde ürünler <strong>ТН ВЭД ЕАЭС (TN VED EAEU)</strong> kodlariyla siniflandirilir. Bu kod; gümrük vergilerinin, bazi ithalat kisitlamalarinin, izin ve uygunluk gerekliliklerinin ve istatistiksel kayitlarin belirlenmesinde rol oynar. Türkiye'deki GTIP siniflandirmasi ile EAEU'daki TN VED siniflandirmasinin operasyon açisindan ayrica karşilaştirilmasi gerekir.
               </p>
             </div>
           </div>
@@ -3199,7 +3199,7 @@ const baseBlogPosts: BlogPost[] = [
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">3. EAC ve Diğer Uygunluk Gereklilikleri Kontrol Edilir</h3>
               <p className="text-slate-600 leading-relaxed">
-                İthalattan önce ürünün teknik düzenlemelere tabi olup olmadığı netleştirilmelidir. Uygunluk sertifikası (Sertifikat Sootvetstviya), uygunluk beyanı (Deklaratsiya), ürün güvenliği belgeleri veya özel izinler gerekebilir. EAC süreci ürün Rusya'ya geldikten sonra değil; <em>Ürün → Uygunluk → İthalat</em> sıralamasıyla yürütülmelidir.
+                Ithalattan önce ürünün teknik düzenlemelere tabi olup olmadiği netleştirilmelidir. Uygunluk sertifikasi (Sertifikat Sootvetstviya), uygunluk beyani (Deklaratsiya), ürün güvenliği belgeleri veya özel izinler gerekebilir. EAC süreci ürün Rusya'ya geldikten sonra değil; <em>Ürün → Uygunluk → Ithalat</em> siralamasiyla yürütülmelidir.
               </p>
             </div>
           </div>
@@ -3207,9 +3207,9 @@ const baseBlogPosts: BlogPost[] = [
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">4</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">4. Çestniy Znak Kontrolü Yapılır</h3>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">4. Çestniy Znak Kontrolü Yapilir</h3>
               <p className="text-slate-600 leading-relaxed">
-                Ürünün Çestniy Znak dijital takip sistemine tabi olup olmadığı ithalat öncesinde belirlenmelidir. Belirli tekstil, ayakkabı, kozmetik ve diğer kategorilerde Data Matrix kodlama gereklidir. Çestniy Znak ile gümrük işlemleri aynı şey değildir; gümrükten geçmek ile Rusya pazarında satışa hazır olmak iki ayrı aşamadır.
+                Ürünün Çestniy Znak dijital takip sistemine tabi olup olmadiği ithalat öncesinde belirlenmelidir. Belirli tekstil, ayakkabi, kozmetik ve diğer kategorilerde Data Matrix kodlama gereklidir. Çestniy Znak ile gümrük işlemleri ayni şey değildir; gümrükten geçmek ile Rusya pazarinda satişa hazir olmak iki ayri aşamadir.
               </p>
             </div>
           </div>
@@ -3217,9 +3217,9 @@ const baseBlogPosts: BlogPost[] = [
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">5</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">5. Ticari Belgeler Hazırlanır</h3>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">5. Ticari Belgeler Hazirlanir</h3>
               <p className="text-slate-600 leading-relaxed">
-                İthalat dosyasında temel olarak: Ticari fatura (Invoice), Çeki/Paketleme listesi (Packing List), Taşıma belgesi (CMR, Konşimento vb.), Dış ticaret sözleşmesi, Menşe belgesi (Certificate of Origin), Uygunluk belgeleri (EAC) ve Gümrük beyannamesi verileri yer alır.
+                Ithalat dosyasinda temel olarak: Ticari fatura (Invoice), Çeki/Paketleme listesi (Packing List), Taşima belgesi (CMR, Konşimento vb.), Diş ticaret sözleşmesi, Menşe belgesi (Certificate of Origin), Uygunluk belgeleri (EAC) ve Gümrük beyannamesi verileri yer alir.
               </p>
             </div>
           </div>
@@ -3227,9 +3227,9 @@ const baseBlogPosts: BlogPost[] = [
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">6</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">6. Gümrük Kıymeti Belirlenir</h3>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">6. Gümrük Kiymeti Belirlenir</h3>
               <p className="text-slate-600 leading-relaxed">
-                Gümrük kıymeti yalnızca faturadaki ürün fiyatından ibaret olmayabilir. EAEU kurallarına göre taşıma, sigorta, paketleme ve belirli ek maliyetler gümrük kıymetine dahil edilebilir. Toplam maliyet formülü: <em>Ürün Maliyeti + Taşıma/Sigorta + Gümrük Vergileri + Diğer İthalat Giderleri</em> şeklinde ele alınmalıdır.
+                Gümrük kiymeti yalnizca faturadaki ürün fiyatindan ibaret olmayabilir. EAEU kurallarina göre taşima, sigorta, paketleme ve belirli ek maliyetler gümrük kiymetine dahil edilebilir. Toplam maliyet formülü: <em>Ürün Maliyeti + Taşima/Sigorta + Gümrük Vergileri + Diğer Ithalat Giderleri</em> şeklinde ele alinmalidir.
               </p>
             </div>
           </div>
@@ -3237,9 +3237,9 @@ const baseBlogPosts: BlogPost[] = [
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">7</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">7. Ürün Rusya'ya Taşınır</h3>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">7. Ürün Rusya'ya Taşinir</h3>
               <p className="text-slate-600 leading-relaxed">
-                Karayolu, denizyolu, demiryolu veya multimodal lojistik hatları üzerinden taşıma organize edilir. Ürünün gümrük çıkışından sonra doğrudan pazaryeri deposuna mı, yoksa merkezi ara depoya mı sevk edileceği sevkiyattan önce kararlaştırılmalıdır.
+                Karayolu, denizyolu, demiryolu veya multimodal lojistik hatlari üzerinden taşima organize edilir. Ürünün gümrük çikişindan sonra doğrudan pazaryeri deposuna mi, yoksa merkezi ara depoya mi sevk edileceği sevkiyattan önce kararlaştirilmalidir.
               </p>
             </div>
           </div>
@@ -3249,7 +3249,7 @@ const baseBlogPosts: BlogPost[] = [
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">8. Gümrük Beyannamesi Verilir</h3>
               <p className="text-slate-600 leading-relaxed">
-                Ürün gümrük sınırına ulaştığında ithalatçı, ihracatçı, TN VED kodu, miktar, net/brüt ağırlık, gümrük değeri, menşe ve seçilen gümrük rejimi beyan edilir.
+                Ürün gümrük sinirina ulaştiğinda ithalatçi, ihracatçi, TN VED kodu, miktar, net/brüt ağirlik, gümrük değeri, menşe ve seçilen gümrük rejimi beyan edilir.
               </p>
             </div>
           </div>
@@ -3259,7 +3259,7 @@ const baseBlogPosts: BlogPost[] = [
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">9. Gümrük Kontrolü</h3>
               <p className="text-slate-600 leading-relaxed">
-                Gümrük idaresi beyan edilen ürün sınıflandırmasını, değerini, belgelerini ve fiziki uygunluğunu denetler. Belgelerdeki bilgilerin fiziki ürünle ve etiketlerle birebir uyuşması gecikmeleri önler.
+                Gümrük idaresi beyan edilen ürün siniflandirmasini, değerini, belgelerini ve fiziki uygunluğunu denetler. Belgelerdeki bilgilerin fiziki ürünle ve etiketlerle birebir uyuşmasi gecikmeleri önler.
               </p>
             </div>
           </div>
@@ -3269,7 +3269,7 @@ const baseBlogPosts: BlogPost[] = [
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">10. Gümrük Vergileri ve Diğer Ödemeler</h3>
               <p className="text-slate-600 leading-relaxed">
-                Gümrük vergisi, KDV (NDS), gümrük işlem harçları ve varsa ek harçlar ödenir. Oranlar ürünün TN VED EAEU koduna, menşeine ve kıymetine göre ürün bazında hesaplanır.
+                Gümrük vergisi, KDV (NDS), gümrük işlem harçlari ve varsa ek harçlar ödenir. Oranlar ürünün TN VED EAEU koduna, menşeine ve kiymetine göre ürün bazinda hesaplanir.
               </p>
             </div>
           </div>
@@ -3277,9 +3277,9 @@ const baseBlogPosts: BlogPost[] = [
           <div className="flex gap-4 items-start">
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">11</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-1">11. Gümrükten Çıkış ve Serbest Dolaşım</h3>
+              <h3 className="text-xl font-bold text-slate-800 mb-1">11. Gümrükten Çikiş ve Serbest Dolaşim</h3>
               <p className="text-slate-600 leading-relaxed">
-                İşlemler tamamlandıktan sonra ürün serbest dolaşıma girer. Ancak satışa sunulmadan önce ürünün yerel Rusça etiketleme, barkod ve marketplace kabul kriterlerine tam uygunluğu sağlanmalıdır.
+                Işlemler tamamlandiktan sonra ürün serbest dolaşima girer. Ancak satişa sunulmadan önce ürünün yerel Rusça etiketleme, barkod ve marketplace kabul kriterlerine tam uygunluğu sağlanmalidir.
               </p>
             </div>
           </div>
@@ -3289,88 +3289,88 @@ const baseBlogPosts: BlogPost[] = [
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">12. Rusya Depo ve Pazaryeri Operasyonu</h3>
               <p className="text-slate-600 leading-relaxed">
-                İthal edilen ürünler merkezi depoya, doğrudan marketplace deposuna (FBO) veya hibrit depolama modeline göre dağıtılır. Satış hızına göre ana depodan bölgesel pazaryeri depolarına ikmal yapılır.
+                Ithal edilen ürünler merkezi depoya, doğrudan marketplace deposuna (FBO) veya hibrit depolama modeline göre dağitilir. Satiş hizina göre ana depodan bölgesel pazaryeri depolarina ikmal yapilir.
               </p>
             </div>
           </div>
         </div>
 
         <div className="bg-amber-50 border border-amber-200 p-8 rounded-3xl my-8">
-          <h2 className="text-2xl font-bold text-amber-950 mb-3">İthalat ile Lojistik Aynı Şey Değildir</h2>
+          <h2 className="text-2xl font-bold text-amber-950 mb-3">Ithalat ile Lojistik Ayni Şey Değildir</h2>
           <p className="text-amber-900 leading-relaxed">
-            <strong>İthalat, ürünün Rusya'ya yasal olarak sokulması sürecidir.</strong> Lojistik ise ürünün Rusya içerisinde doğru noktalara ulaştırılması ve stokların dinamik yönetilmesidir.
+            <strong>Ithalat, ürünün Rusya'ya yasal olarak sokulmasi sürecidir.</strong> Lojistik ise ürünün Rusya içerisinde doğru noktalara ulaştirilmasi ve stoklarin dinamik yönetilmesidir.
           </p>
           <div className="bg-white/80 p-4 rounded-2xl text-amber-950 font-medium text-center my-3 border border-amber-200">
-            Türkiye → Rusya Gümrüğü → Merkezi Depo → Wildberries / Ozon Depoları → Son Kullanıcı
+            Türkiye → Rusya Gümrüğü → Merkezi Depo → Wildberries / Ozon Depolari → Son Kullanici
           </div>
           <p className="text-amber-900 text-sm leading-relaxed">
-            Bu entegre model sayesinde pazaryeri depolarında fazla bekleme ücreti ödemeden, satış hızına uygun optimum stok yönetimi sağlanır.
+            Bu entegre model sayesinde pazaryeri depolarinda fazla bekleme ücreti ödemeden, satiş hizina uygun optimum stok yönetimi sağlanir.
           </p>
         </div>
 
         <div className="bg-white border border-slate-200 p-8 rounded-3xl shadow-sm my-8">
-          <h3 className="text-xl font-bold text-red-600 mb-4">Türk Markalarının En Sık Yaptığı 6 Hata</h3>
+          <h3 className="text-xl font-bold text-red-600 mb-4">Türk Markalarinin En Sik Yaptiği 6 Hata</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700 text-sm">
             <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-              <strong className="text-slate-900 block mb-1">1. İthalatı sadece nakliye olarak görmek</strong>
-              Taşıma, ithalat zincirinin yalnızca bir bileşenidir; gümrük ve uygunluk asıl belirleyicidir.
+              <strong className="text-slate-900 block mb-1">1. Ithalati sadece nakliye olarak görmek</strong>
+              Taşima, ithalat zincirinin yalnizca bir bileşenidir; gümrük ve uygunluk asil belirleyicidir.
             </div>
             <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
               <strong className="text-slate-900 block mb-1">2. TN VED kodunu son aşamada kontrol etmek</strong>
-              Yanlış sınıflandırma gümrükte cezalara, ek vergilere ve günlerce gecikmeye yol açar.
+              Yanliş siniflandirma gümrükte cezalara, ek vergilere ve günlerce gecikmeye yol açar.
             </div>
             <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-              <strong className="text-slate-900 block mb-1">3. EAC sertifikasını sevkiyattan sonra düşünmek</strong>
-              Uygunluk ve güvenlik belgeleri ürün Rusya sınırına gelmeden tamamlanmış olmalıdır.
+              <strong className="text-slate-900 block mb-1">3. EAC sertifikasini sevkiyattan sonra düşünmek</strong>
+              Uygunluk ve güvenlik belgeleri ürün Rusya sinirina gelmeden tamamlanmiş olmalidir.
             </div>
             <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
               <strong className="text-slate-900 block mb-1">4. Çestniy Znak işaretlemesini unutmak</strong>
-              Gümrükten geçen ürün, Data Matrix kodları olmadan pazaryerinde satışa açılamaz.
+              Gümrükten geçen ürün, Data Matrix kodlari olmadan pazaryerinde satişa açilamaz.
             </div>
             <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-              <strong className="text-slate-900 block mb-1">5. Tüm stokları tek seferde pazaryerine göndermek</strong>
-              Satış hacmi oturmadan yapılan toplu transferler yüksek depo saklama maliyeti doğurur.
+              <strong className="text-slate-900 block mb-1">5. Tüm stoklari tek seferde pazaryerine göndermek</strong>
+              Satiş hacmi oturmadan yapilan toplu transferler yüksek depo saklama maliyeti doğurur.
             </div>
             <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-              <strong className="text-slate-900 block mb-1">6. Maliyeti yalnızca ürün fiyatından hesaplamak</strong>
+              <strong className="text-slate-900 block mb-1">6. Maliyeti yalnizca ürün fiyatindan hesaplamak</strong>
               Navlun, gümrük vergileri, harçlar ve yerel depolama toplam maliyet denklemine eklenmelidir.
             </div>
           </div>
         </div>
 
         <div className="bg-primary-50 p-8 rounded-3xl border border-primary-100 my-8">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşımı</h2>
+          <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Yaklaşimi</h2>
           <p className="text-slate-700 leading-relaxed mb-4">
-            Bizim yaklaşımımızda ithalat, pazaryeri ve stok operasyonundan bağımsız planlanmaz. Markanın Rusya'ya girişinde tüm adımlar uçtan uca senkronize edilir:
+            Bizim yaklaşimimizda ithalat, pazaryeri ve stok operasyonundan bağimsiz planlanmaz. Markanin Rusya'ya girişinde tüm adimlar uçtan uca senkronize edilir:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-slate-800 text-xs font-semibold text-center my-3">
             <span className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm">Ürün Giriş Uygunluğu</span>
             <span className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm">EAC & Gümrük Maliyeti</span>
-            <span className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm">Pazaryeri & Stok Planı</span>
-            <span className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm">Dinamik Depo İkmali</span>
+            <span className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm">Pazaryeri & Stok Plani</span>
+            <span className="bg-white p-2.5 rounded-xl border border-slate-200 shadow-sm">Dinamik Depo Ikmali</span>
           </div>
         </div>
 
         <div className="bg-white border border-slate-200 p-8 rounded-3xl my-8 shadow-sm">
-          <h3 className="text-xl font-bold text-primary-600 mb-4">Türkiye'den Rusya'ya İthalat Checklist</h3>
+          <h3 className="text-xl font-bold text-primary-600 mb-4">Türkiye'den Rusya'ya Ithalat Checklist</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700 text-sm">
             {[
-              "Ürün teknik analizi ve sınıflandırması yapıldı",
-              "TN VED EAEU kodu doğrulandı",
+              "Ürün teknik analizi ve siniflandirmasi yapildi",
+              "TN VED EAEU kodu doğrulandi",
               "Menşe belgesi ve bilgisi teyit edildi",
-              "EAC uygunluk ve sertifika gereklilikleri tamamlandı",
-              "Çestniy Znak dijital takip kodları hazırlandı",
-              "Dış ticaret sözleşmesi imzalandı",
+              "EAC uygunluk ve sertifika gereklilikleri tamamlandi",
+              "Çestniy Znak dijital takip kodlari hazirlandi",
+              "Diş ticaret sözleşmesi imzalandi",
               "Ticari fatura (Invoice) düzenlendi",
-              "Çeki listesi (Packing List) hazırlandı",
-              "Uluslararası taşıma planı ve belgeleri oluşturuldu",
-              "Gümrük kıymeti ve harçlar hesaplandı",
+              "Çeki listesi (Packing List) hazirlandi",
+              "Uluslararasi taşima plani ve belgeleri oluşturuldu",
+              "Gümrük kiymeti ve harçlar hesaplandi",
               "Gümrük vergileri ve KDV bütçelendi",
-              "Gümrük beyannamesi verileri hazırlandı",
+              "Gümrük beyannamesi verileri hazirlandi",
               "Gümrükleme operasyonu organize edildi",
-              "Rusya merkezi depo entegrasyonu sağlandı",
-              "Marketplace depo kabul planı oluşturuldu",
-              "İlk stok dağılımı ve ikmal stratejisi belirlendi"
+              "Rusya merkezi depo entegrasyonu sağlandi",
+              "Marketplace depo kabul plani oluşturuldu",
+              "Ilk stok dağilimi ve ikmal stratejisi belirlendi"
             ].map((check) => (
               <div key={check} className="flex items-center gap-2">
                 <span className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-xs shrink-0">✓</span>
@@ -3384,10 +3384,10 @@ const baseBlogPosts: BlogPost[] = [
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
           <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">
-            Türkiye'den Rusya'ya ürün ithal etmek, yalnızca ürünleri sınırdan geçirmekten ibaret değildir. Başarılı bir operasyonun hedefi <em>"ürünü Rusya'ya sokmak"</em> değil, <strong>"ürünü doğru maliyetle Rusya'ya getirip pazaryerlerinde satışa hazır hale getirmek"</strong>tir.
+            Türkiye'den Rusya'ya ürün ithal etmek, yalnizca ürünleri sinirdan geçirmekten ibaret değildir. Başarili bir operasyonun hedefi <em>"ürünü Rusya'ya sokmak"</em> değil, <strong>"ürünü doğru maliyetle Rusya'ya getirip pazaryerlerinde satişa hazir hale getirmek"</strong>tir.
           </p>
           <p className="text-sm text-slate-400 relative z-10 border-t border-slate-800 pt-4 mt-6">
-            <strong>Not:</strong> Bu içerik, Russia Market Entry Playbook kapsamında genel bilgilendirme amacıyla hazırlanmıştır. İthalat ve gümrük gereklilikleri ürün, menşe, işlem yapısı ve güncel mevzuata göre değişebilir. Ticari sevkiyat öncesinde ürün bazlı gümrük ve mevzuat kontrolü yapılmalıdır.
+            <strong>Not:</strong> Bu içerik, Russia Market Entry Playbook kapsaminda genel bilgilendirme amaciyla hazirlanmiştir. Ithalat ve gümrük gereklilikleri ürün, menşe, işlem yapisi ve güncel mevzuata göre değişebilir. Ticari sevkiyat öncesinde ürün bazli gümrük ve mevzuat kontrolü yapilmalidir.
           </p>
         </div>
       </div>

@@ -138,6 +138,8 @@ export default function Contact() {
       russiaGoals: goalsLabel,
       message: formData.message.trim(),
       _subject: "Russia Market Pre-Analysis",
+      _template: "table",
+      _captcha: "false",
     };
 
     try {

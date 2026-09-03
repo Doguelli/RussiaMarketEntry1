@@ -206,19 +206,25 @@ export function createArticleSchema(
       : `${SITE_ORIGIN}${imageUrl}`
     : DEFAULT_OG_IMAGE;
 
-  // Standardize published date format to YYYY-MM-DD
+  // Standardize published date format to YYYY-MM-DD (TR / RU / EN month names)
   const parseTurkishDateToISO = (dateStr: string) => {
     const months: { [key: string]: string } = {
       Ocak: "01", Şubat: "02", Mart: "03", Nisan: "04", Mayıs: "05", Haziran: "06",
-      Temmuz: "07", Ağustos: "08", Eylül: "09", Ekim: "10", Kasım: "11", Aralık: "12"
+      Temmuz: "07", Ağustos: "08", Eylül: "09", Ekim: "10", Kasım: "11", Aralık: "12",
+      января: "01", февраля: "02", марта: "03", апреля: "04", мая: "05", июня: "06",
+      июля: "07", августа: "08", сентября: "09", октября: "10", ноября: "11", декабря: "12",
+      January: "01", February: "02", March: "03", April: "04", May: "05", June: "06",
+      July: "07", August: "08", September: "09", October: "10", November: "11", December: "12",
     };
-    const parts = dateStr.trim().split(" ");
+    const cleaned = dateStr.trim().replace(/,/g, "").replace(/\s+г\.?$/i, "");
+    const parts = cleaned.split(/\s+/);
     if (parts.length === 3) {
       const day = parts[0].padStart(2, "0");
-      if (!months[parts[1]]) {
-        console.warn(`createArticleSchema: tanınmayan ay adı "${parts[1]}" (girdi: "${dateStr}"), Ocak varsayıldı.`);
+      const monthKey = parts[1];
+      if (!months[monthKey]) {
+        console.warn(`createArticleSchema: tanınmayan ay adı "${monthKey}" (girdi: "${dateStr}"), Ocak varsayıldı.`);
       }
-      const month = months[parts[1]] || "01";
+      const month = months[monthKey] || "01";
       const year = parts[2];
       return `${year}-${month}-${day}`;
     }

@@ -1,8 +1,11 @@
 /**
- * The one Formspree form both lead forms post to.
+ * Shared endpoint for both lead forms (contact + Turkey company formation).
  *
- * Kept in a single module so the contact form and the Turkey company-formation
- * landing page cannot drift onto different endpoints — a mismatch here silently
- * loses leads rather than failing loudly.
+ * Public contact email on the site stays hello@russiamarketentry.com.
+ * Form submissions are delivered to cankutosar@gmail.com via FormSubmit.
+ *
+ * First-time setup: FormSubmit sends one activation email to that inbox —
+ * open it and confirm, otherwise submissions will not arrive.
  */
-export const FORMSPREE_ENDPOINT = "https://formspree.io/f/xqenkoky";
+export const FORMSPREE_ENDPOINT =
+  "https://formsubmit.co/ajax/cankutosar@gmail.com";

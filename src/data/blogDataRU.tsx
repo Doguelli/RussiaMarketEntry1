@@ -133,6 +133,7 @@ export const blogPostsRU: BlogPost[] = [
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
+            <li><Link to="/ru/blog/kak-otkryt-bankovskiy-schet-v-turcii-inostrancu" className="hover:underline">→ Как открыть банковский счёт в Турции иностранцу в 2026 году</Link></li>
             <li><Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация компании в Турции: пошаговое руководство</Link></li>
             <li><Link to="/ru/blog/torgovlya-i-logistika-mezhdu-turtsiey-i-rossiey-tamozhnya-i-raschety" className="hover:underline">→ Торговля и логистика между Турцией и Россией</Link></li>
           </ul>
@@ -682,8 +683,396 @@ export const blogPostsRU: BlogPost[] = [
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
             <li><Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Как открыть компанию в Турции иностранцу в 2026 году</Link></li>
+            <li><Link to="/ru/blog/kak-otkryt-bankovskiy-schet-v-turcii-inostrancu" className="hover:underline">→ Как открыть банковский счёт в Турции иностранцу в 2026 году</Link></li>
             <li><Link to="/ru/blog/limited-sirket-protiv-anonim-sirket-sravnenie-form-biznesa-v-turtsii" className="hover:underline">→ ООО или АО в Турции: сравнение форм бизнеса</Link></li>
             <li><Link to="/ru/blog/vnzh-ikamet-i-rabochaya-viza-v-turtsii-pri-otkrytii-biznesa" className="hover:underline">→ ВНЖ (Икамет) и рабочая виза при открытии бизнеса</Link></li>
+          </ul>
+        </div>
+      </div>
+    )
+  },
+
+  {
+    lang: "ru",
+    slug: "kak-otkryt-bankovskiy-schet-v-turcii-inostrancu",
+    metaTitle: "Как открыть банковский счёт в Турции иностранцу в 2026 году?",
+    metaTitleRu: "Как открыть банковский счёт в Турции иностранцу в 2026 году?",
+    title: "Как открыть банковский счёт в Турции иностранцу в 2026 году?",
+    titleRu: "Как открыть банковский счёт в Турции иностранцу в 2026 году?",
+    excerpt:
+      "Как иностранцу открыть банковский счёт в Турции в 2026 году? Документы, налоговый номер, ВНЖ, личный и корпоративный счёт для предпринимателей.",
+    excerptRu:
+      "Как иностранцу открыть банковский счёт в Турции в 2026 году? Документы, налоговый номер, ВНЖ, личный и корпоративный счёт для предпринимателей.",
+    publishedAt: "3 Eylül 2026",
+    publishedAtRu: "3 сентября 2026",
+    readTime: "10 dk okuma",
+    readTimeRu: "10 мин чтения",
+    imageUrl: "/uploads/blog/kak-otkryt-bankovskiy-schet-v-turcii-inostrancu-ru.png",
+    content: (
+      <div className="space-y-8">
+        <p className="text-lg leading-relaxed text-slate-600">
+          Банковский счёт в Турции для иностранца — один из первых практических вопросов после переезда, открытия компании или начала бизнеса в стране. При этом наличие ВНЖ не является единственным фактором, который определяет возможность открытия счёта.
+        </p>
+        <p className="text-slate-600 leading-relaxed">
+          Для иностранного гражданина банк оценивает документы, личность клиента, адрес проживания, налоговый статус и цель открытия счёта. Если речь идёт о компании, процедура отличается и требует дополнительного пакета документов.
+        </p>
+        <p className="text-slate-600 leading-relaxed">
+          В этой статье разберём, как открыть банковский счёт в Турции иностранцу в 2026 году, какие документы могут потребоваться, чем отличается личный счёт от корпоративного и на что обратить внимание предпринимателям.
+        </p>
+
+        <div className="bg-primary-50 p-6 rounded-2xl border border-primary-100">
+          <h3 className="text-xl font-bold text-primary-600 mb-2">Планируете открыть компанию в Турции?</h3>
+          <p className="text-slate-700 text-sm mb-4">
+            Russia Market Entry помогает иностранным предпринимателям выстроить последовательность: регистрация компании, налоговая структура, банковский счёт, бухгалтерия и административные процедуры.
+          </p>
+          <Link
+            to="/ru/kompaniya-v-turtsii"
+            className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors"
+          >
+            Перейти к услуге регистрации компании в Турции →
+          </Link>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Можно ли иностранцу открыть банковский счёт в Турции?
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Да, иностранные граждане могут открыть банковский счёт в Турции, однако конкретные требования зависят от банка, типа счёта и статуса клиента.
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            ВНЖ может упростить подтверждение статуса и адреса, но сама возможность открытия счёта не должна рассматриваться исключительно через наличие или отсутствие ВНЖ.
+          </p>
+          <p className="text-slate-600 leading-relaxed">Например, банки могут запрашивать:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>действующий заграничный паспорт;</li>
+            <li>налоговый номер или идентификационный номер иностранца;</li>
+            <li>подтверждение адреса;</li>
+            <li>турецкий номер телефона;</li>
+            <li>дополнительные документы в зависимости от ситуации;</li>
+            <li>информацию о целях использования счёта.</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed">
+            Требования могут отличаться от одного банка к другому. Поэтому иностранцу важно не просто искать банк, который «открывает счета иностранцам», а заранее подготовить документы именно под свою ситуацию.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Какие документы нужны иностранцу для открытия счёта?
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Точный список зависит от банка и типа счёта. Для физического лица обычно могут потребоваться:
+          </p>
+
+          <h3 className="text-lg font-bold text-primary-500 mt-4">1. Паспорт</h3>
+          <p className="text-slate-600 leading-relaxed">
+            Действующий заграничный паспорт является основным документом для идентификации иностранного клиента. Некоторые банки устанавливают дополнительные требования к документу или сроку его действия.
+          </p>
+
+          <h3 className="text-lg font-bold text-primary-500 mt-4">2. Налоговый номер</h3>
+          <p className="text-slate-600 leading-relaxed">
+            Налоговый номер используется иностранцами для различных официальных и финансовых операций в Турции. Ситуация может различаться в зависимости от того, есть ли у иностранца уже Yabancı Kimlik Numarası.
+          </p>
+
+          <h3 className="text-lg font-bold text-primary-500 mt-4">3. Подтверждение адреса</h3>
+          <p className="text-slate-600 leading-relaxed">
+            Банк может попросить документ, подтверждающий адрес проживания. Например, один из крупных турецких банков указывает среди документов для иностранного клиента подтверждение действующего адреса в Турции, например соответствующий коммунальный счёт.
+          </p>
+
+          <h3 className="text-lg font-bold text-primary-500 mt-4">4. Турецкий номер телефона</h3>
+          <p className="text-slate-600 leading-relaxed">
+            Номер телефона может использоваться для SMS-подтверждений, мобильного банкинга и других процедур безопасности.
+          </p>
+
+          <h3 className="text-lg font-bold text-primary-500 mt-4">5. Дополнительная информация</h3>
+          <p className="text-slate-600 leading-relaxed">
+            В зависимости от банка могут потребоваться дополнительные сведения о клиенте, источнике средств или предполагаемом использовании счёта. Это особенно важно для предпринимателей и клиентов, которые планируют осуществлять регулярные международные переводы.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Нужен ли ВНЖ для открытия банковского счёта?
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Это один из самых частых вопросов иностранных граждан. Нельзя утверждать, что для каждого иностранца наличие ВНЖ является обязательным условием открытия банковского счёта.
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            Требования зависят от конкретного банка, типа счёта и документов клиента. При этом наличие действующего ВНЖ может значительно упростить подтверждение личности и адреса.
+          </p>
+          <p className="text-slate-600 leading-relaxed">Поэтому перед подачей документов необходимо определить:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>кто клиент;</li>
+            <li>зачем нужен счёт;</li>
+            <li>есть ли ВНЖ;</li>
+            <li>есть ли налоговый номер;</li>
+            <li>есть ли адрес в Турции;</li>
+            <li>какие операции планируются.</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed">
+            И только после этого выбирать подходящий банк.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Личный счёт или корпоративный счёт?
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Здесь важно разделить две совершенно разные ситуации.
+          </p>
+
+          <h3 className="text-lg font-bold text-primary-500 mt-4">Личный банковский счёт</h3>
+          <p className="text-slate-600 leading-relaxed">Подходит иностранцу для:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>личных расходов;</li>
+            <li>получения денежных средств;</li>
+            <li>оплаты услуг;</li>
+            <li>повседневных банковских операций;</li>
+            <li>хранения средств;</li>
+            <li>международных переводов в рамках требований банка.</li>
+          </ul>
+
+          <h3 className="text-lg font-bold text-primary-500 mt-4">Корпоративный банковский счёт</h3>
+          <p className="text-slate-600 leading-relaxed">
+            Необходим для нормальной работы турецкой компании. Если иностранец открывает компанию в Турции, банковский процесс становится частью общей процедуры запуска бизнеса.
+          </p>
+          <p className="text-slate-600 leading-relaxed">Для корпоративного счёта банк может запросить:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>документы компании;</li>
+            <li>налоговую регистрацию;</li>
+            <li>торговую регистрацию;</li>
+            <li>уставные документы;</li>
+            <li>документы директоров и акционеров;</li>
+            <li>документы лиц, имеющих право подписи;</li>
+            <li>паспорта уполномоченных лиц;</li>
+            <li>информацию о деятельности компании.</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed">
+            Например, требования İşbank для корпоративных клиентов включают налоговую регистрацию, документы о существовании компании и документы, подтверждающие полномочия подписантов.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Нужно ли сначала открыть компанию, а потом банковский счёт?
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Если цель иностранца — вести бизнес в Турции, обычно необходимо разделять два процесса:
+          </p>
+          <ol className="list-decimal pl-6 space-y-2 text-slate-600">
+            <li>Создание компании</li>
+            <li>Налоговая регистрация</li>
+            <li>Регистрация компании</li>
+            <li>Открытие корпоративного банковского счёта</li>
+            <li>Начало коммерческой деятельности</li>
+          </ol>
+          <p className="text-slate-600 leading-relaxed">
+            При создании компании иностранным инвесторам также может потребоваться получение потенциального налогового номера. Официальный инвестиционный портал Турции указывает, что он используется, в частности, для открытия банковского счёта, на который вносится капитал создаваемой компании.
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            Поэтому банковский счёт нельзя рассматривать отдельно от структуры компании и её регистрации.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Какой банк выбрать иностранцу в Турции?
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Не существует одного банка, который будет оптимальным для каждого иностранца. При выборе стоит учитывать не только возможность открытия счёта, но и дальнейшее использование банковских услуг.
+          </p>
+          <ul className="list-disc pl-6 space-y-3 text-slate-600">
+            <li><strong>Язык обслуживания.</strong> Если клиент не говорит по-турецки, наличие английского или другого удобного языка обслуживания может значительно упростить коммуникацию.</li>
+            <li><strong>Международные переводы.</strong> Если деньги будут регулярно поступать из-за границы или отправляться за границу, условия международных переводов становятся особенно важными.</li>
+            <li><strong>Онлайн-банкинг.</strong> Для предпринимателя мобильное и интернет-банкинг могут быть не менее важны, чем само открытие счёта.</li>
+            <li><strong>Валютные счета.</strong> Предпринимателю может потребоваться работа не только с турецкой лирой, но и с иностранной валютой.</li>
+            <li><strong>Работа с корпоративными клиентами.</strong> Для бизнеса важно заранее выяснить, какие услуги банк предоставляет юридическим лицам.</li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Может ли гражданин России открыть банковский счёт в Турции?
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Гражданство само по себе не означает автоматического права или автоматического отказа в открытии счёта. Для гражданина России, как и для других иностранных клиентов, банк проводит собственную процедуру идентификации и проверки клиента.
+          </p>
+          <p className="text-slate-600 leading-relaxed">Особенно важно заранее определить:</p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>цель открытия счёта;</li>
+            <li>источник денежных средств;</li>
+            <li>предполагаемые операции;</li>
+            <li>наличие компании в Турции;</li>
+            <li>налоговый статус;</li>
+            <li>наличие ВНЖ или другого основания проживания.</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed">
+            Для российского предпринимателя, который планирует открыть компанию в Турции, банковский вопрос лучше решать одновременно с регистрацией бизнеса, а не после завершения всех остальных процедур.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Что делать, если банк отказал в открытии счёта?
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Отказ одного банка не означает, что иностранцу невозможно открыть счёт в Турции вообще. Причины могут быть разными:
+          </p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>недостаточный пакет документов;</li>
+            <li>отсутствие подтверждения адреса;</li>
+            <li>особенности статуса клиента;</li>
+            <li>специфика предполагаемых операций;</li>
+            <li>внутренние процедуры банка;</li>
+            <li>необходимость дополнительной проверки.</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed">
+            В такой ситуации важно сначала понять причину отказа, а затем определить, какие документы или условия необходимо изменить. Не стоит подавать заявки хаотично в большое количество банков без понимания причины проблемы.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Можно ли открыть счёт дистанционно?
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Это зависит от конкретного банка и конкретного продукта. Для иностранца, особенно если речь идёт не о стандартном розничном счёте, а о корпоративном банковском обслуживании, может потребоваться личное присутствие и предоставление оригиналов документов.
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            Поэтому обещания в интернете вроде «откроем банковский счёт в Турции полностью дистанционно за один день» следует воспринимать осторожно. Банковская процедура зависит от требований конкретного финансового учреждения и статуса клиента.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Банковский счёт — только один элемент переезда и открытия бизнеса
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Для иностранца, который планирует не просто жить в Турции, а создать бизнес, банковский счёт является лишь частью общей системы. На практике процесс может выглядеть следующим образом:
+          </p>
+          <ol className="list-decimal pl-6 space-y-3 text-slate-600">
+            <li><strong>Определение структуры</strong> — выбор подходящей формы компании и вида деятельности.</li>
+            <li><strong>Регистрация компании</strong> — подготовка документов и регистрация бизнеса.</li>
+            <li><strong>Налоговая регистрация</strong> — получение необходимых налоговых идентификаторов.</li>
+            <li><strong>Банковское обслуживание</strong> — открытие корпоративного счёта и настройка банковских операций.</li>
+            <li><strong>Бухгалтерия</strong> — организация регулярного бухгалтерского и налогового сопровождения.</li>
+            <li><strong>ВНЖ и другие процедуры</strong> — если предприниматель планирует проживать в Турции, отдельно рассматриваются миграционные и разрешительные вопросы.</li>
+          </ol>
+          <p className="text-slate-600 leading-relaxed">
+            Именно поэтому открытие банковского счёта не стоит рассматривать как отдельную услугу без связи с остальной структурой бизнеса.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Сколько времени занимает открытие банковского счёта?
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Единого срока для всех иностранцев нет. Срок зависит от банка, типа счёта, полноты документов, статуса клиента, необходимости дополнительных проверок и корпоративной структуры.
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            Поэтому корректнее говорить не о гарантированном количестве часов или дней, а о подготовке полного пакета документов и прохождении банковской проверки.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Что важно подготовить заранее?
+          </h2>
+          <h3 className="text-lg font-bold text-primary-500 mt-4">Для физического лица</h3>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>паспорт;</li>
+            <li>налоговый / идентификационный номер;</li>
+            <li>подтверждение адреса;</li>
+            <li>турецкий номер телефона;</li>
+            <li>информацию о предполагаемом использовании счёта.</li>
+          </ul>
+          <h3 className="text-lg font-bold text-primary-500 mt-4">Для компании</h3>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>учредительные документы;</li>
+            <li>налоговую регистрацию;</li>
+            <li>регистрационные документы компании;</li>
+            <li>документы директора;</li>
+            <li>документы акционеров;</li>
+            <li>подтверждение полномочий подписантов;</li>
+            <li>информацию о деятельности компании.</li>
+          </ul>
+          <p className="text-slate-600 leading-relaxed">
+            Конкретный перечень необходимо уточнять непосредственно перед открытием счёта.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Открытие компании, банковский счёт и ВНЖ в Турции
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Для иностранного предпринимателя эти процессы часто взаимосвязаны. Если ваша цель — открыть компанию в Турции и начать вести бизнес, необходимо одновременно учитывать:
+          </p>
+          <p className="text-slate-600 leading-relaxed font-medium">
+            Компания → Налоги → Банк → Бухгалтерия → ВНЖ → Коммерческая деятельность
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            Ошибка на одном этапе может создать проблемы на следующем. Именно поэтому гораздо эффективнее заранее определить всю структуру, чем сначала открыть компанию, затем искать бухгалтера, потом банк и только после этого решать вопросы проживания.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">
+            Заключение
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Открыть банковский счёт в Турции иностранцу в 2026 году возможно, но процедура зависит от статуса клиента, банка и цели открытия счёта.
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            Если речь идёт о личном счёте, основной акцент делается на идентификации клиента, налоговом статусе и подтверждении адреса. Если же задача — открыть компанию в Турции, вести бизнес, принимать платежи и осуществлять международные операции, банковский счёт необходимо рассматривать как часть общей бизнес-инфраструктуры.
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            Для граждан России и других иностранных предпринимателей особенно важно заранее подготовить документы и понимать последовательность всех процедур.
+          </p>
+        </div>
+
+        <div className="bg-primary-500 text-white p-6 md:p-8 rounded-2xl mt-8">
+          <h3 className="text-xl font-bold mb-3">Планируете открыть компанию в Турции?</h3>
+          <p className="text-primary-100 text-sm leading-relaxed mb-4">
+            Russia Market Entry помогает иностранным предпринимателям организовать процесс выхода на турецкий рынок: регистрация компании, бухгалтерское и налоговое сопровождение, открытие банковского счёта, помощь с ВНЖ, административные процедуры и сопровождение бизнеса после регистрации.
+          </p>
+          <p className="text-primary-100 text-sm leading-relaxed mb-5">
+            Перед началом процедуры мы определяем вашу ситуацию и формируем необходимую последовательность действий.
+          </p>
+          <Link
+            to="/ru/kompaniya-v-turtsii"
+            className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors"
+          >
+            Получить консультацию →
+          </Link>
+        </div>
+
+        <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
+          <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
+          <ul className="space-y-2 text-sm text-primary-500 font-medium">
+            <li>
+              <Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">
+                → Регистрация компании в Турции для иностранцев: пошаговое руководство 2026
+              </Link>
+            </li>
+            <li>
+              <Link to="/ru/blog/otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits" className="hover:underline">
+                → Открытие корпоративного и личного банковского счёта в Турции
+              </Link>
+            </li>
+            <li>
+              <Link to="/ru/blog/mozhno-li-otkryt-kompaniyu-v-turtsii-bez-vnzh" className="hover:underline">
+                → Можно ли открыть компанию в Турции без ВНЖ?
+              </Link>
+            </li>
+            <li>
+              <Link to="/ru/blog/vnzh-ikamet-i-rabochaya-viza-v-turtsii-pri-otkrytii-biznesa" className="hover:underline">
+                → ВНЖ (Икамет) и рабочая виза при открытии бизнеса
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
