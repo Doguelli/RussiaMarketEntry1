@@ -154,6 +154,11 @@ export default function CompanyInTurkey() {
       readTime: "7 мин"
     },
     {
+      slug: "gotovaya-kompaniya-v-turtsii",
+      title: "Как купить готовую компанию в Турции иностранцу в 2026 году?",
+      readTime: "11 мин"
+    },
+    {
       slug: "otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits",
       title: "Открытие корпоративного и личного банковского счета в Турции: банки, документы и SWIFT",
       readTime: "6 мин"

@@ -1,0 +1,118 @@
+{
+  "title": "A New Era for Marketplace Sales in Russia: Product Documents After 1 September 2026",
+  "excerpt": "From 1 September 2026, remote sales in Russia require clearer, verifiable product conformity information on marketplace listings — for Wildberries, Ozon and international brands entering Russia.",
+  "category": "pazaryerleri",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "For brands selling through marketplaces in Russia, the product card is no longer just a sales and marketing surface. Information shown to consumers must be consistent with conformity documents and official registry records — and increasingly verifiable."
+    },
+    {
+      "type": "paragraph",
+      "text": "From 1 September 2026, an important rule applies to remote sales in Russia: for products subject to mandatory conformity assessment, the product description must allow consumers to reach the official registry entry for the relevant certificate or declaration of conformity. Where conformity assessment is not required, that must be stated clearly and accessibly."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Marketplace impact",
+      "text": "This makes document management a core operational topic for brands on Wildberries, Ozon and other digital sales channels in Russia."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What exactly does the change require?"
+    },
+    {
+      "type": "paragraph",
+      "text": "For products subject to mandatory conformity assessment, consumers must be able to see information linked to official records — such as certificate number, validity period and the issuing body."
+    },
+    {
+      "type": "paragraph",
+      "text": "Product descriptions may include a link to the certificate or declaration entry in the relevant Russian registry or the EAEU common registry. Saying «we have a certificate» is no longer enough: the document must match the product, remain valid and be verifiable in the official register."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why product cards matter more"
+    },
+    {
+      "type": "paragraph",
+      "text": "On Russian marketplaces, the listing is a primary consumer-facing data layer. Mismatches between card content and conformity documents can create operational and compliance risk."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Consistency chain",
+      "text": "Product card → HS/TN VED classification → manufacturer → product description → conformity document must align."
+    },
+    {
+      "type": "paragraph",
+      "text": "Platforms are building technical processes to check conformity information on listings. From the fourth quarter of 2026, more detailed checks comparing listing data with registry records are expected on digital platforms — moving beyond a «upload and go live» mindset."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What should brands shipping from Turkey check?"
+    },
+    {
+      "type": "bulletList",
+      "title": "Pre-listing checklist",
+      "items": [
+        "Correct TN VED / product classification",
+        "Which conformity instrument applies (certificate, declaration, state registration, or none)",
+        "Registry validity — not only that a paper exists",
+        "Match between document text and marketplace listing (name, brand, manufacturer, attributes)",
+        "Consistent fields on the product card"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "From 1 September 2026, some certificates and declarations issued under older technical regulations may move to archive status. Rosakkreditatsiya recommends reviewing legacy documents. See our guides on [import to Russia](/en/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber), [EAC conformity](/en/blog/eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey) and [Chestny ZNAK marking](/en/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Not only a Wildberries or Ozon rule"
+    },
+    {
+      "type": "paragraph",
+      "text": "The underlying shift is toward more verifiable product information in remote sales across Russia. Marketplaces are a major enforcement surface, not the only legal context."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Plan import → conformity → product registration → labelling → marketplace card → sales as one chain."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why it matters for new market entrants"
+    },
+    {
+      "type": "paragraph",
+      "text": "Being retail-ready in Turkey does not automatically mean compliant for Russia. Product, regulation, documents, logistics and marketplace listing must be planned together. For assortments with many SKUs, assume per-SKU conformity requirements until verified."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace operations in Russia increasingly depend on data, documents and regulatory alignment. The September 2026 change is a major step in that direction. Success requires correct classification, valid verifiable conformity documents and listings that match official records."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Russia Market Entry",
+      "text": "We support Russia market entry as operational infrastructure — not only opening a seller account. The right entry starts before products reach Russia."
+    },
+    {
+      "type": "bulletList",
+      "title": "Related guides",
+      "items": [
+        "[Selling on Wildberries](/en/blog/wildberriesde-satis-yapmak)",
+        "[Selling on Ozon](/en/blog/ozonda-satis-yapmak)",
+        "[E-commerce in Russia](/en/blog/rusyada-e-ticaret-nasil-yapilir)",
+        "[E-commerce logistics in Russia 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "[Marketplace management service](/en/hizmetler/pazaryeri-yonetimi)"
+      ]
+    }
+  ]
+}

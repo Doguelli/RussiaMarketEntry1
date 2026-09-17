@@ -1,0 +1,337 @@
+{
+  "title": "Rusya'da E-Ticaret Lojistiği Nasıl Yönetilir? Türk Markaları İçin 2026 Rehberi",
+  "excerpt": "Türkiye'den Rusya'ya e-ticaret lojistiği: gümrük, depo, FBW/FBS, stok dağılımı, teslimat süresi ve iade yönetimi. Türk markaları için 2026 rehberi.",
+  "category": "lojistik",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Rusya'da e-ticaret yapmak isteyen Türk markaları için ürünün Rusya'ya ulaştırılması, satış operasyonunun yalnızca ilk adımıdır. Asıl önemli olan; ürünün Türkiye'den çıkışından Rusya'daki depoya, marketplace'e ve son müşteriye kadar doğru lojistik sistem içerisinde yönetilmesidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Özellikle Wildberries ve Ozon gibi büyük marketplace'lerde satış yapmak isteyen markalar için depo konumu, stok dağılımı, fulfillment modeli, teslimat süresi ve iade yönetimi doğrudan satış performansını etkileyebilir."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Önemli",
+      "text": "Rusya'ya e-ticaret ile giriş yapan bir marka için lojistik, yalnızca bir nakliye operasyonu değil, ticari stratejinin bir parçasıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da e-ticaret lojistiği neden bu kadar önemli?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'nın coğrafi büyüklüğü, e-ticaret lojistiğini diğer birçok pazardan farklı hale getiriyor. Türkiye'den ürünün Rusya'ya ulaşması tek başına yeterli değildir."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Operasyon zinciri",
+      "text": "Ürün → Gümrük → Rusya içi lojistik → Depo → Marketplace → Müşteri zincirinin kesintisiz çalışması gerekir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bir ürün Moskova'daki müşteriye hızlı ulaşırken Uzak Doğu'daki müşteriye çok daha uzun sürede ulaşabilir. Bu nedenle sadece «Rusya'da bir depom var» yaklaşımı yeterli değildir. Doğru depo + doğru stok + doğru fulfillment modeli birlikte planlanmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Türkiye'den Rusya'ya ürün gönderme süreci nasıl işler?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bir Türk markasının Rusya'da e-ticaret operasyonu genel olarak şu aşamalardan oluşur."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. Türkiye'deki ürün hazırlığı"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Ürünlerin paketlenmesi",
+        "Gerekli etiketlerin hazırlanması",
+        "Ürün belgelerinin kontrol edilmesi",
+        "Barkod ve marketplace gerekliliklerinin tamamlanması"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Özellikle regülasyona tabi ürünlerde [EAC](/blog/eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey) ve [Çestniy Znak](/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur) gibi gerekliliklerin lojistik planından önce değerlendirilmesi gerekir."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. Uluslararası taşıma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ürünler Türkiye'den Rusya'ya gönderilir. Kullanılabilecek taşıma modeli ürünün hacmine, ağırlığına, ürün değerine, sipariş hacmine ve teslimat hızına göre değişebilir. Düşük hacimli başlangıç operasyonu ile aylık binlerce ürün gönderen bir markanın lojistik modeli aynı olmamalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. Gümrük işlemleri"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Doğru GTİP sınıflandırması",
+        "Ticari belgeler",
+        "Beyan edilen değer",
+        "Menşei",
+        "Gerekli uygunluk belgeleri"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu aşamadaki bir hata ürünün depoya ulaşmasını geciktirebilir ve marketplace stok planını doğrudan etkileyebilir. Detaylı süreç için [Rusya'ya ithalat rehberimizi](/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber) inceleyebilirsiniz."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da ürün nerede depolanmalı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'ya yeni giren markaların en sık yaptığı hatalardan biri, depo kararını yalnızca kira maliyetine göre vermektir."
+    },
+    {
+      "type": "bulletList",
+      "title": "Depo seçiminde birlikte değerlendirilmesi gerekenler",
+      "items": [
+        "Hangi marketplace'te satış yapılacak?",
+        "Ana müşteri bölgeleri nerede?",
+        "Ürün hangi depodan daha hızlı dağıtılabilir?",
+        "Marketplace'in hangi depoları kullanılabilir?",
+        "Ürünün boyutu ve ağırlığı nedir?",
+        "Günlük sipariş hacmi ne kadar?",
+        "İade oranı nedir?",
+        "Stok ne sıklıkla yenilenecek?"
+      ]
+    },
+    {
+      "type": "calloutBox",
+      "text": "En ucuz depo her zaman en düşük lojistik maliyetini yaratmaz."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Wildberries'te FBW ve FBS arasındaki fark nedir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wildberries şu anda farklı satış modelleri sunuyor. Bunlar arasında FBW (Склад WB) ve FBS (Маркетплейс) özellikle dikkat çekiyor. Satış modeli seçimi için Wildberries'in [resmi satıcı dokümantasyonuna](https://seller.wildberries.ru/instructions/ru/uz/material/how-to-choose-sales-model) bakabilirsiniz."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "FBW — Склад WB"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu modelde ürünler Wildberries deposuna gönderilir. Ürün kabul edildikten sonra marketplace depolama, sipariş hazırlama, müşteriye gönderim ve iade işlemlerinin önemli bölümünü üstlenir. Özellikle satış hacmini artırmak ve operasyonu marketplace'e devretmek isteyen markalar açısından avantajlı olabilir. Kaynak: [FBW satış modeli](https://seller.wildberries.ru/instructions/ru/by/material/fbw-sales-model)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "FBS — Маркетплейс"
+    },
+    {
+      "type": "paragraph",
+      "text": "FBS modelinde ürün satıcının kendi deposunda veya kullandığı fulfillment merkezinde tutulur. Sipariş geldiğinde ürün hazırlanır ve marketplace'in ilgili operasyon noktasına gönderilir. Bu model daha fazla operasyonel kontrol sağlar; karşılığında stok yönetimi, sipariş hazırlama, paketleme ve zamanında sevkiyat satıcının sorumluluğunu artırır. Wildberries dokümantasyonunda FBS lojistik katsayılarının bağlı olunan fiziksel depo veya sortirovka merkezine göre değişebildiği belirtiliyor: [FBS satış modeli](https://seller.wildberries.ru/instructions/ru/kz/material/fbs-sales-model)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hangi model Türk markaları için daha doğru?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tek bir doğru cevap yoktur. Satış hacmine göre model değişebilir."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Yeni başlayan marka"
+    },
+    {
+      "type": "paragraph",
+      "text": "Düşük sipariş hacmi varsa: Türkiye → Rusya → fulfillment/depo → marketplace şeklinde daha kontrollü bir başlangıç yapılabilir."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Satış hacmi yükselen marka"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sipariş sayısı arttığında: Merkezi stok → bölgesel dağılım → marketplace depoları gibi daha gelişmiş bir yapı oluşturulabilir."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Çok yüksek hacimli operasyon"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu aşamada yalnızca marketplace deposuna bağlı kalmak yerine: Rusya'da merkezi fulfillment + bölgesel stok + marketplace depoları birlikte kullanılabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da stok nasıl dağıtılmalı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da e-ticaret operasyonunun en kritik konularından biri stok dağılımıdır. Bütün stoku Moskova'da tutmak başlangıçta mantıklı olabilir; ancak satış hacmi büyüdükçe yalnızca Moskova'ya bağlı kalmak teslimat süresini artırabilir, lojistik maliyetlerini yükseltebilir ve bazı bölgelerde satış performansını olumsuz etkileyebilir."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Pratik kural",
+      "text": "İlk gün 10 depoya stok göndermek doğru değildir. Önce satışların nereden geldiği görülmeli, ardından stok dağılımı buna göre genişletilmelidir. Depo odaklı detaylar için [Wildberries depo stratejisi](/blog/wildberries-depo-stratejisi-basarili-satis) yazımıza da bakabilirsiniz."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Marketplace lojistiğinde teslimat süresi neden önemlidir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "E-ticarette müşteri yalnızca ürünün fiyatına bakmaz. Teslimat süresi de satın alma kararının önemli parçalarından biridir. Wildberries, FBW modelinde ürünlerin müşteriye daha yakın depolardan gönderilebilmesinin teslimat hızını artırabildiğini ve bunun müşteri memnuniyeti ile ürünlerin arama konumlarına olumlu katkı sağlayabileceğini belirtiyor."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Lojistik kararını «Depo nerede daha ucuz?» yerine «Hedef müşteriye hangi yapı ile daha hızlı ve kârlı ulaşabilirim?» sorusuyla vermek gerekir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "İade operasyonunu unutmayın"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da e-ticaret lojistiği yalnızca satıştan ibaret değildir. İade de operasyonun bir parçasıdır. Özellikle moda ve tekstil kategorilerinde Satış → teslimat → müşteri → iade → kontrol → yeniden stok döngüsünün yönetilmesi gerekir."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Tekrar satışa uygun mu?",
+        "Ambalajı sağlam mı?",
+        "Tekrar stoklanabilir mi?",
+        "Hasarlı mı?",
+        "Tekrar paketlenmesi gerekiyor mu?"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu süreç doğru kurulmazsa ürün aslında satılabilir durumda olduğu halde stok dışında kalabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Lojistik maliyetini hesaplarken sadece nakliyeye bakmayın"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Uluslararası taşıma",
+        "Gümrük ve ithalat maliyetleri",
+        "Rusya içi taşıma",
+        "Depolama",
+        "Fulfillment",
+        "Marketplace lojistiği",
+        "İade lojistiği"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bunlara ayrıca marketplace komisyonu, reklam, vergi ve diğer operasyonel maliyetler eklenir. Bir ürünün 49 € satış fiyatına sahip olması tek başına kârlı olduğu anlamına gelmez. Önemli olan ürünün tüm maliyetlerden sonra bıraktığı gerçek katkıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Türk markaları için en doğru başlangıç modeli nedir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Her marka için aynı model önerilmemelidir. Genellikle üç aşamalı bir yaklaşım daha kontrollüdür."
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "Aşama 1",
+          "value": "Test"
+        },
+        {
+          "label": "Aşama 2",
+          "value": "Optimizasyon"
+        },
+        {
+          "label": "Aşama 3",
+          "value": "Ölçekleme"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Aşama 1 — Test: Sınırlı ürün grubu ve kontrollü stok ile pazar, ürün, fiyat ve lojistik modelini test etmek.",
+        "Aşama 2 — Optimizasyon: Hangi ürünler satıyor, hangi bölgelerden sipariş geliyor, hangi depolar daha verimli?",
+        "Aşama 3 — Ölçekleme: Daha fazla stok, daha geniş bölgesel dağılım ve gelişmiş fulfillment modeline geçiş."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da başarılı e-ticaret operasyonunun 5 temel kuralı"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Lojistiği satıştan sonra düşünmeyin — model ürün satışa açılmadan önce belirlenmelidir.",
+        "İlk günden fazla stok dağıtmayın — önce talebi görün.",
+        "Depo maliyetine tek başına bakmayın — teslimat hızı ve bölgesel erişim de hesaba katılmalıdır.",
+        "İadeleri operasyonun parçası kabul edin — özellikle tekstil ve moda kategorilerinde kritiktir.",
+        "Lojistik maliyetini ürün bazında hesaplayın — SKU bazında kârlılık takip edilmelidir."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "İlgili rehberler ve hizmetler"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "[Rusya'da e-ticaret nasıl yapılır?](/blog/rusyada-e-ticaret-nasil-yapilir)",
+        "[Wildberries'de satış yapmak](/blog/wildberriesde-satis-yapmak)",
+        "[Ozon'da satış yapmak](/blog/ozonda-satis-yapmak)",
+        "[Wildberries & Ozon lojistik ve stok yönetimi](/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)",
+        "[Lojistik ve depo hizmetimiz](/hizmetler/lojistik-ve-depo)",
+        "[Pazaryeri yönetimi hizmetimiz](/hizmetler/pazaryeri-yonetimi)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sonuç"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da e-ticaret yapmak isteyen Türk markaları için lojistik, operasyonun arka planındaki bir süreç değil, satış stratejisinin kendisidir. Türkiye'den Rusya'ya ürün göndermek ilk adımdır. Asıl başarı; doğru ürün + doğru stok + doğru depo + doğru fulfillment + hızlı teslimat + kontrollü maliyet kombinasyonunun oluşturulmasına bağlıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya pazarına yeni giren bir markanın başlangıçta en büyük depo ağına sahip olması gerekmez. Önemli olan ölçülebilir, kontrol edilebilir ve satış hacmi arttıkça büyüyebilecek bir lojistik sistem kurmaktır."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Russia Market Entry",
+      "text": "Türk markalarının Rusya'da e-ticaret operasyonlarını planlamasına ve yönetmesine yardımcı oluyoruz. Pazar araştırmasından marketplace operasyonuna, lojistik ve stok planlamasından satış performansının geliştirilmesine kadar Rusya pazarına giriş sürecini birlikte yönetiyoruz."
+    }
+  ]
+}

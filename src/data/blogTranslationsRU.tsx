@@ -98,6 +98,13 @@ export const blogTranslationsRU: Record<string, BlogTranslationRU> = {
           <p className="text-lg leading-relaxed text-slate-300 relative z-10">
             Российский рынок маркетплейсов открывает колоссальные возможности при условии грамотного юридического структурирования, надежной логистики и быстрой доставки до конечного покупателя.
           </p>
+          <p className="text-sm text-slate-300 relative z-10 mt-4">
+            Подробнее о логистике:{" "}
+            <Link to="/ru/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-400 font-semibold hover:underline">
+              логистика e-commerce в России 2026
+            </Link>
+            .
+          </p>
         </div>
       </div>
     )
@@ -348,6 +355,7 @@ export const blogTranslationsRU: Record<string, BlogTranslationRU> = {
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
+            <li><Link to="/ru/blog/rusyada-e-ticaret-lojistigi-2026" className="hover:underline">→ Логистика e-commerce в России 2026</Link></li>
             <li><Link to="/ru/blog/wildberriesde-satis-yapmak" className="hover:underline">→ Как продавать на Wildberries: пошаговый гид</Link></li>
             <li><Link to="/ru/blog/eksport-iz-turtsii-na-marketpleysy-wildberries-ozon" className="hover:underline">→ Экспорт товаров из Турции на Wildberries и Ozon</Link></li>
             <li><Link to="/ru/kompaniya-v-turtsii" className="hover:underline">→ Регистрация компании в Турции для международной торговли</Link></li>
@@ -517,6 +525,13 @@ export const blogTranslationsRU: Record<string, BlogTranslationRU> = {
               <span className="text-xs text-slate-500">Санкт-Петербург (Уткина Заводь)</span>
             </div>
           </div>
+          <p className="text-slate-700 leading-relaxed mt-6">
+            Полная цепочка логистики из Турции:{" "}
+            <Link to="/ru/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              логистика e-commerce в России 2026
+            </Link>
+            .
+          </p>
         </div>
       </div>
     )
@@ -672,6 +687,13 @@ export const blogTranslationsRU: Record<string, BlogTranslationRU> = {
             <li>Коды маркировки «Честный ЗНАК» в таможенной декларации</li>
             <li>Подтверждение уплаты таможенной пошлины и ввозного НДС (20%)</li>
           </ul>
+          <p className="text-slate-700 leading-relaxed mt-6">
+            После таможни — склад, фулфилмент и маркетплейс:{" "}
+            <Link to="/ru/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              логистика e-commerce в России 2026
+            </Link>
+            .
+          </p>
         </div>
       </div>
     )

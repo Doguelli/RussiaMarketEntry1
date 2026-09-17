@@ -66,6 +66,7 @@ export const blogPostsRU: BlogPost[] = [
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-8">
           <h3 className="text-lg font-bold text-slate-900 mb-3">Связанные практические статьи:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
+            <li><Link to="/ru/blog/gotovaya-kompaniya-v-turtsii" className="hover:underline">→ Как купить готовую компанию в Турции иностранцу</Link></li>
             <li><Link to="/ru/blog/otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits" className="hover:underline">→ Открытие корпоративного и личного банковского счета в Турции</Link></li>
             <li><Link to="/ru/blog/nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya" className="hover:underline">→ Налоговая система Турции: налог на прибыль (Kurumlar) и НДС</Link></li>
             <li><Link to="/ru/blog/vnzh-ikamet-i-rabochaya-viza-v-turtsii-pri-otkrytii-biznesa" className="hover:underline">→ Оформление ВНЖ (Икамет) при открытии бизнеса</Link></li>
@@ -500,6 +501,7 @@ export const blogPostsRU: BlogPost[] = [
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
             <li><Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Регистрация Limited Şirket в Турции: пошагово</Link></li>
+            <li><Link to="/ru/blog/gotovaya-kompaniya-v-turtsii" className="hover:underline">→ Как купить готовую компанию в Турции: проверка и передача долей</Link></li>
             <li><Link to="/ru/blog/nalogi-v-turtsii-dlya-biznesa-kurumlar-kdv-optimizatsiya" className="hover:underline">→ Налоги для бизнеса в Турции</Link></li>
           </ul>
         </div>
@@ -683,6 +685,7 @@ export const blogPostsRU: BlogPost[] = [
           <h3 className="text-lg font-bold text-slate-900 mb-3">Читайте также:</h3>
           <ul className="space-y-2 text-sm text-primary-500 font-medium">
             <li><Link to="/ru/blog/registraciya-kompanii-v-turtsii-dlya-inostrantsev-poshagovoe-rukovodstvo-2026" className="hover:underline">→ Как открыть компанию в Турции иностранцу в 2026 году</Link></li>
+            <li><Link to="/ru/blog/gotovaya-kompaniya-v-turtsii" className="hover:underline">→ Как купить готовую компанию в Турции иностранцу</Link></li>
             <li><Link to="/ru/blog/kak-otkryt-bankovskiy-schet-v-turcii-inostrancu" className="hover:underline">→ Как открыть банковский счёт в Турции иностранцу в 2026 году</Link></li>
             <li><Link to="/ru/blog/limited-sirket-protiv-anonim-sirket-sravnenie-form-biznesa-v-turtsii" className="hover:underline">→ ООО или АО в Турции: сравнение форм бизнеса</Link></li>
             <li><Link to="/ru/blog/vnzh-ikamet-i-rabochaya-viza-v-turtsii-pri-otkrytii-biznesa" className="hover:underline">→ ВНЖ (Икамет) и рабочая виза при открытии бизнеса</Link></li>
@@ -1061,6 +1064,11 @@ export const blogPostsRU: BlogPost[] = [
             <li>
               <Link to="/ru/blog/otkrytie-bankovskogo-scheta-v-turtsii-dlya-yuridicheskih-i-fizicheskih-lits" className="hover:underline">
                 → Открытие корпоративного и личного банковского счёта в Турции
+              </Link>
+            </li>
+            <li>
+              <Link to="/ru/blog/gotovaya-kompaniya-v-turtsii" className="hover:underline">
+                → Как купить готовую компанию в Турции иностранцу в 2026 году
               </Link>
             </li>
             <li>

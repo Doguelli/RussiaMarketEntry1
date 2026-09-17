@@ -1,0 +1,197 @@
+{
+  "title": "E-commerce Logistics in Russia: A 2026 Guide for Turkish Brands",
+  "excerpt": "E-commerce logistics from Turkey to Russia: customs, warehousing, FBW/FBS, inventory allocation, delivery speed and returns — a 2026 guide for Turkish brands.",
+  "category": "lojistik",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "For Turkish brands entering the Russian e-commerce market, shipping products to Russia is only the beginning. The real challenge is building an efficient logistics chain from Turkey through import, warehousing, fulfillment and marketplace delivery to the customer — including returns."
+    },
+    {
+      "type": "paragraph",
+      "text": "For brands selling through marketplaces such as Wildberries and Ozon, warehouse location, inventory allocation, fulfillment model and delivery speed can directly affect operational efficiency and sales performance."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Key point",
+      "text": "Logistics should be treated as part of the market-entry strategy rather than simply a transportation function."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How does logistics work for products shipped from Turkey to Russia?"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Product preparation in Turkey",
+        "International transportation",
+        "Customs clearance",
+        "Delivery to a Russian warehouse",
+        "Marketplace inventory placement",
+        "Fulfillment and customer delivery",
+        "Returns management"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Each stage affects both delivery time and profitability. Compliance topics such as [EAC](/en/blog/eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey) and [Chestny ZNAK](/en/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur) should be assessed before logistics planning. For the import process itself, see our [import guide](/en/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where should products be stored in Russia?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Warehouse selection should not be based only on rental costs. Brands should also consider customer geography, marketplace requirements, available warehouses, logistics costs, delivery speed, inventory volume, order volume and return rates."
+    },
+    {
+      "type": "calloutBox",
+      "text": "The cheapest warehouse is not necessarily the most profitable option."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "FBW and FBS on Wildberries"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wildberries currently offers several sales models, including FBW and FBS. See Wildberries' [guide to choosing a sales model](https://seller.wildberries.ru/instructions/ru/uz/material/how-to-choose-sales-model)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "FBW (Wildberries Warehouse)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The seller sends products to a Wildberries warehouse, after which the marketplace handles storage, order fulfillment and delivery. This can be attractive for brands that want to scale sales and hand over more of the operation to the marketplace. Source: [FBW sales model](https://seller.wildberries.ru/instructions/ru/by/material/fbw-sales-model)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "FBS (Marketplace)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Inventory remains at the seller's warehouse or fulfillment facility, and orders are handed over to the marketplace's logistics network after purchase. This provides more operational control, but stock management, picking, packing and on-time shipment become the seller's responsibility. Wildberries notes that FBS logistics coefficients can vary by the physical warehouse or sorting center used: [FBS sales model](https://seller.wildberries.ru/instructions/ru/kz/material/fbs-sales-model)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How should inventory be distributed?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A new brand does not necessarily need to distribute inventory across many warehouses from day one. A more controlled approach is: Test → Analyze → Optimize → Scale. First determine where demand comes from and which products sell best; then distribute inventory gradually. For warehouse-focused detail, see our [Wildberries warehouse strategy](/en/blog/wildberries-depo-stratejisi-basarili-satis) guide."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why does delivery speed matter?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Russia's geographical scale makes delivery planning particularly important. A warehouse that works well for Moscow may not provide the same delivery efficiency for customers in other regions. Wildberries notes that its FBW model can use warehouses closer to customers, which can shorten delivery times and improve customer experience and product search positioning."
+    },
+    {
+      "type": "calloutBox",
+      "text": "The question should not simply be «Where is the warehouse cheapest?» It should be: How can we deliver to the customer faster while maintaining profitability?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Returns are part of the logistics operation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Especially for fashion and apparel brands, returns need to be included in the logistics plan: Sale → Delivery → Return → Inspection → Restocking. Without a proper return process, products that are still sellable can remain outside available inventory."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What logistics costs should be calculated?"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "International transportation",
+        "Import-related costs",
+        "Domestic transportation in Russia",
+        "Warehousing",
+        "Fulfillment",
+        "Marketplace logistics",
+        "Returns"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Therefore, profitability should never be evaluated based only on the selling price."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The right approach for Turkish brands"
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "Phase 1",
+          "value": "Testing"
+        },
+        {
+          "label": "Phase 2",
+          "value": "Optimization"
+        },
+        {
+          "label": "Phase 3",
+          "value": "Scaling"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Phase 1 — Testing: limited assortment and controlled inventory.",
+        "Phase 2 — Optimization: analyze sales, regions, warehouses and logistics costs.",
+        "Phase 3 — Scaling: increase inventory, expand geographical coverage and develop the fulfillment structure."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Related guides and services"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "[How to do e-commerce in Russia](/en/blog/rusyada-e-ticaret-nasil-yapilir)",
+        "[Selling on Wildberries](/en/blog/wildberriesde-satis-yapmak)",
+        "[Selling on Ozon](/en/blog/ozonda-satis-yapmak)",
+        "[Logistics and inventory on Wildberries & Ozon](/en/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)",
+        "[Logistics & warehousing service](/en/hizmetler/lojistik-ve-depo)",
+        "[Marketplace management service](/en/hizmetler/pazaryeri-yonetimi)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Successful e-commerce in Russia requires more than simply shipping products into the country. A scalable system should combine the right product, inventory, warehouse, fulfillment model, fast delivery and controlled costs."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a Turkish brand entering Russia, building a huge logistics network from day one is not necessarily the best strategy. The priority should be to build a controlled and measurable logistics structure that can scale together with sales."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Russia Market Entry",
+      "text": "We help Turkish brands plan and develop their e-commerce operations in Russia, including marketplace entry, logistics, inventory planning and operational management."
+    }
+  ]
+}

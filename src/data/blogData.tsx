@@ -120,6 +120,16 @@ const baseBlogPosts: BlogPost[] = [
           <p className="text-lg leading-relaxed text-slate-600">Doğru hazırlık ile ilk satışlar birkaç hafta içinde başlayabilir. Ölçeklenebilir büyüme genellikle ilk 3–6 ay içinde şekillenir.</p>
         </div>
 
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            Türkiye’den Rusya’ya ürünün marketplace operasyonundaki lojistik akışını adım adım anlatan rehberimiz:{" "}
+            <a href="/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              Rusya’da e-ticaret lojistiği 2026
+            </a>
+            .
+          </p>
+        </div>
+
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
@@ -196,6 +206,16 @@ const baseBlogPosts: BlogPost[] = [
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">How Soon Do Sales Start?</h2>
           <p className="text-lg leading-relaxed text-slate-600">With the right preparation, first sales can start within a few weeks. Scalable growth usually takes shape within the first 3–6 months.</p>
+        </div>
+
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            For the end-to-end logistics flow from Turkey into Russian marketplace operations, see:{" "}
+            <a href="/en/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              E-commerce logistics in Russia 2026
+            </a>
+            .
+          </p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
@@ -859,6 +879,20 @@ const baseBlogPosts: BlogPost[] = [
           </div>
         </div>
 
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            Marketplace satışından önce Türkiye–Rusya lojistik zincirini planlamak için:{" "}
+            <a href="/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              Rusya’da e-ticaret lojistiği 2026 rehberi
+            </a>
+            . Ozon ve Wildberries ürün kartlarında 1 Eylül 2026 sonrası belge kuralları:{" "}
+            <a href="/blog/rusya-marketplace-urun-belgeleri-2026" className="text-accent-500 font-semibold hover:underline">
+              Rusya marketplace ürün belgeleri
+            </a>
+            .
+          </p>
+        </div>
+
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
@@ -966,6 +1000,20 @@ const baseBlogPosts: BlogPost[] = [
             <h3 className="text-lg font-bold text-slate-800 mb-2">Selling from Turkey to Ozon</h3>
             <p className="text-sm text-slate-600 leading-relaxed">Geographic proximity, short-haul freight lines, and deep-seated appreciation of Turkish quality render Ozon an essential gateway. Structured correctly, it becomes a strong growth engine for your brand.</p>
           </div>
+        </div>
+
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            Plan the Turkey–Russia logistics chain before marketplace sales:{" "}
+            <a href="/en/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              E-commerce logistics in Russia 2026
+            </a>
+            . Listing conformity rules from 1 September 2026:{" "}
+            <a href="/en/blog/rusya-marketplace-urun-belgeleri-2026" className="text-accent-500 font-semibold hover:underline">
+              marketplace product documents in Russia
+            </a>
+            .
+          </p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
@@ -1259,6 +1307,20 @@ const baseBlogPosts: BlogPost[] = [
           <p className="text-slate-700 leading-relaxed">Biz yalnizca mağaza açmiyoruz. Ürünlerinizi Wildberries algoritmasina uygun şekilde konumlandiriyor, doğru depolara sevkiyat planliyor ve satiş performansini sürekli analiz ediyoruz.</p>
         </div>
 
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            Türkiye’den Wildberries operasyonuna kadar lojistik akış için:{" "}
+            <a href="/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              Rusya’da e-ticaret lojistiği 2026
+            </a>
+            . 1 Eylül 2026 sonrası ürün kartında belge ve sicil bağlantıları:{" "}
+            <a href="/blog/rusya-marketplace-urun-belgeleri-2026" className="text-accent-500 font-semibold hover:underline">
+              marketplace ürün belgeleri rehberi
+            </a>
+            .
+          </p>
+        </div>
+
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
@@ -1358,6 +1420,20 @@ const baseBlogPosts: BlogPost[] = [
         <div className="bg-primary-50 p-8 rounded-3xl my-8">
           <h2 className="text-2xl font-bold text-primary-600 mb-4">Russia Market Entry Strategy</h2>
           <p className="text-slate-700 leading-relaxed">We don't just set up seller channels. We strategically place your product listings in tune with the Wildberries algorithm, forecast fulfillment stocking plans, and optimize parameters daily.</p>
+        </div>
+
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            For the full logistics flow into Wildberries operations, see:{" "}
+            <a href="/en/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              E-commerce logistics in Russia 2026
+            </a>
+            . Product conformity on listings after 1 September 2026:{" "}
+            <a href="/en/blog/rusya-marketplace-urun-belgeleri-2026" className="text-accent-500 font-semibold hover:underline">
+              marketplace product documents guide
+            </a>
+            .
+          </p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
@@ -1814,6 +1890,16 @@ const baseBlogPosts: BlogPost[] = [
           <p className="text-lg leading-relaxed text-slate-600">Russia Market Entry olarak sevkiyat planlarini yalnizca stok miktarina göre değil, satiş performansi ve bölgesel talep analizlerine göre oluşturuyoruz. Amaç yalnizca ürün göndermek değil, ürünün doğru zamanda doğru depoda bulunmasini sağlamaktir.</p>
         </div>
 
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            Depo stratejisinden önce tüm lojistik zinciri görmek için:{" "}
+            <a href="/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              Rusya’da e-ticaret lojistiği 2026
+            </a>
+            .
+          </p>
+        </div>
+
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
@@ -1873,6 +1959,16 @@ const baseBlogPosts: BlogPost[] = [
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">The Russia Market Entry Approach</h2>
           <p className="text-lg leading-relaxed text-slate-600">At Russia Market Entry, we design shipment strategies based not just on inventory counts, but on deep sales performance and regional demand analytics. The goal isn't just shipping stock—it's ensuring the right product is in the right warehouse at the right time.</p>
+        </div>
+
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            For the full Turkey-to-Russia e-commerce logistics chain, see:{" "}
+            <a href="/en/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              E-commerce logistics in Russia 2026
+            </a>
+            .
+          </p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
@@ -2013,6 +2109,16 @@ const baseBlogPosts: BlogPost[] = [
           <p className="text-slate-700 font-medium mt-4">Amacimiz yalnizca ürünlerinizi Rusya'ya ulaştirmak değil; doğru lojistik planlamasiyla satişlarinizi sürdürülebilir şekilde büyütecek bir operasyon modeli kurmaktir.</p>
         </div>
 
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            Stok dağılımından önce uçtan uca lojistik akış için:{" "}
+            <a href="/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              Rusya’da e-ticaret lojistiği 2026
+            </a>
+            .
+          </p>
+        </div>
+
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
@@ -2138,6 +2244,16 @@ const baseBlogPosts: BlogPost[] = [
             <li className="flex items-center gap-2"><span className="w-2 h-2 bg-accent-500 rounded-full" /> Deliver transparent performance reporting at every stage.</li>
           </ul>
           <p className="text-slate-700 font-medium mt-4">Our mission isn't just delivering your product to Russia—it is establishing a high-efficiency operational engine that scales your revenue sustainably.</p>
+        </div>
+
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            For the full logistics flow before inventory allocation, see:{" "}
+            <a href="/en/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              E-commerce logistics in Russia 2026
+            </a>
+            .
+          </p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
@@ -2597,6 +2713,16 @@ const baseBlogPosts: BlogPost[] = [
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            1 Eylül 2026 sonrası marketplace ürün kartlarında belge ve resmi sicil bağlantıları:{" "}
+            <a href="/blog/rusya-marketplace-urun-belgeleri-2026" className="text-accent-500 font-semibold hover:underline">
+              Rusya marketplace ürün belgeleri rehberi
+            </a>
+            .
+          </p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
@@ -3380,6 +3506,16 @@ const baseBlogPosts: BlogPost[] = [
           </div>
         </div>
 
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            Gümrük sonrası depo, fulfillment ve marketplace lojistiği için:{" "}
+            <a href="/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              Rusya’da e-ticaret lojistiği 2026 rehberi
+            </a>
+            .
+          </p>
+        </div>
+
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
@@ -3457,6 +3593,16 @@ const baseBlogPosts: BlogPost[] = [
             <span className="text-accent-500 font-bold">→</span>
             <span className="bg-white px-3 py-2 rounded-xl shadow-sm border border-slate-200">Marketplace Depots</span>
           </div>
+        </div>
+
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            After customs: warehousing, fulfillment and marketplace logistics —{" "}
+            <a href="/en/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              E-commerce logistics in Russia 2026
+            </a>
+            .
+          </p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">

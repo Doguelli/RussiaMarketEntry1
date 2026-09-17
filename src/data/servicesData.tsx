@@ -479,6 +479,10 @@ export const serviceDetails: Record<string, any> = {
               <Link to={blogDetailPath("wildberries-ozon-lojistik-yonetimi-stok-stratejisi", "tr")} className="text-accent-500 font-semibold hover:underline">
                 WB & Ozon lojistik rehberi
               </Link>
+              <span>·</span>
+              <Link to={blogDetailPath("rusyada-e-ticaret-lojistigi-2026", "tr")} className="text-accent-500 font-semibold hover:underline">
+                E-ticaret lojistiği 2026
+              </Link>
             </p>
             <p>
               <strong>Sonuç:</strong> Manuel süreçler yerine sistemli ve ölçeklenebilir bir yapı.

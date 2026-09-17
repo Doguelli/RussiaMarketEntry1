@@ -484,6 +484,10 @@ export const serviceDetailsEN: Record<string, any> = {
               <Link to={blogDetailPath("wildberries-ozon-lojistik-yonetimi-stok-stratejisi", "en")} className="text-accent-500 font-semibold hover:underline">
                 WB & Ozon logistics guide
               </Link>
+              <span>·</span>
+              <Link to={blogDetailPath("rusyada-e-ticaret-lojistigi-2026", "en")} className="text-accent-500 font-semibold hover:underline">
+                E-commerce logistics 2026
+              </Link>
             </p>
             <p>
               <strong>Result:</strong> A systematic, scalable structure instead of manual processes.

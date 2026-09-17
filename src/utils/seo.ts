@@ -219,12 +219,15 @@ export function createArticleSchema(
     const cleaned = dateStr.trim().replace(/,/g, "").replace(/\s+г\.?$/i, "");
     const parts = cleaned.split(/\s+/);
     if (parts.length === 3) {
-      const day = parts[0].padStart(2, "0");
-      const monthKey = parts[1];
+      // Support both "7 September 2026" and en-US "September 7 2026"
+      const monthFirst = months[parts[0]];
+      const dayFirst = months[parts[1]];
+      const day = (monthFirst ? parts[1] : parts[0]).padStart(2, "0");
+      const monthKey = monthFirst ? parts[0] : parts[1];
       if (!months[monthKey]) {
         console.warn(`createArticleSchema: tanınmayan ay adı "${monthKey}" (girdi: "${dateStr}"), Ocak varsayıldı.`);
       }
-      const month = months[monthKey] || "01";
+      const month = months[monthKey] || dayFirst || "01";
       const year = parts[2];
       return `${year}-${month}-${day}`;
     }
