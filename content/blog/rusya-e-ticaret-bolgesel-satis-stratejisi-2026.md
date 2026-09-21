@@ -126,14 +126,14 @@ tr:
     2026'nın en önemli değişimlerinden biri büyümenin giderek daha fazla bölgelerden gelmesi. Strateji «Moskova'da satışa başlayalım» ile bitmemeli; «Rusya'da nerede talep oluşuyor ve stoğumuzu bu talebe nasıl yaklaştırabiliriz?» sorusu merkeze alınmalıdır.
     
     Russia Market Entry
-    Marketplace, lojistik, depo ve stok operasyonlarını satış verisine göre planlıyor; merkezi stoktan bölgesel marketplace depolarına transfer yapısını yönetiyoruz. Rusya pazarına giriş veya Moskova dışına ölçekleme için operasyon yapınızı birlikte değerlendirebiliriz.
-    
+    Marketplace, lojistik, depo ve stok operasyonlarını satış verisine göre planlıyor; merkezi stoktan bölgesel marketplace depolarına transfer yapısını yönetiyoruz. Rusya pazarına giriş veya Moskova dışına ölçekleme için operasyon yapınızı birlikte değerlendirebiliriz. Bölge önceliklendirmesi için [pazar araştırması ve strateji](/hizmetler/pazar-arastirmasi-ve-strateji) hizmetimizi de inceleyebilirsiniz.
+
     İlgili rehberler
-    
+
     * [Rusya'da e-ticaret nasıl yapılır?](/blog/rusyada-e-ticaret-nasil-yapilir)
     * [Rusya'da e-ticaret lojistiği 2026](/blog/rusyada-e-ticaret-lojistigi-2026)
     * [Wildberries depo stratejisi](/blog/wildberries-depo-stratejisi-basarili-satis)
-    * [Lojistik ve depo hizmetimiz](/hizmetler/lojistik-ve-depo)
+    * [Ozon'da satış yapmak](/blog/ozonda-satis-yapmak)
     
     Kaynak notu: Rakamlar AKİT 2026 ilk yarı e-ticaret verileri ve Kokoc Group'un Wildberries/Ozon 21 kategori bölgesel ciro analizi (Haziran 2025–Temmuz 2026) çerçevesinde özetlenmiştir. Karar öncesi güncel veri ve ürün/kategori bazlı analiz önerilir.
 en:
@@ -188,13 +188,14 @@ en:
     
     Conclusion
     
-    Russia is a multi-centre e-commerce ecosystem, not a one-city market. Success requires the right geographic stock plan — not only the right product. Russia Market Entry plans marketplace, logistics, warehouse and stock operations from sales data.
-    
+    Russia is a multi-centre e-commerce ecosystem, not a one-city market. Success requires the right geographic stock plan — not only the right product. Russia Market Entry plans marketplace, logistics, warehouse and stock operations from sales data. For region prioritisation, see our [market research & entry strategy](/en/hizmetler/pazar-arastirmasi-ve-strateji) service.
+
     Related guides
     
     * [How to do e-commerce in Russia](/en/blog/rusyada-e-ticaret-nasil-yapilir)
     * [E-commerce logistics 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026)
-    * [Logistics & warehousing](/en/hizmetler/lojistik-ve-depo)
+    * [Wildberries warehouse strategy](/en/blog/wildberries-depo-stratejisi-basarili-satis)
+    * [Selling on Ozon](/en/blog/ozonda-satis-yapmak)
 ru:
   metaTitle: "Региональный рост e-commerce в России 2026 | За пределами Москвы"
   image: /uploads/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026-ru.png
@@ -233,13 +234,14 @@ ru:
     
     Итог
     
-    Россия — многоцентричная экосистема e-commerce. Успех требует правильного географического плана запасов. Russia Market Entry планирует marketplace, логистику и склады на основе данных продаж.
-    
+    Россия — многоцентричная экосистема e-commerce. Успех требует правильного географического плана запасов. Russia Market Entry планирует marketplace, логистику и склады на основе данных продаж. Для приоритизации регионов см. услугу [исследование рынка и стратегия](/ru/uslugi/issledovanie-rynka).
+
     Связанные материалы
     
     * [E-commerce в России](/ru/blog/rusyada-e-ticaret-nasil-yapilir)
     * [Логистика e-commerce 2026](/ru/blog/rusyada-e-ticaret-lojistigi-2026)
-    * [Управление маркетплейсами](/ru/uslugi/upravlenie-marketpleisami)
+    * [Складская стратегия Wildberries](/ru/blog/wildberries-depo-stratejisi-basarili-satis)
+    * [Продажи на Ozon](/ru/blog/ozonda-satis-yapmak)
 urlSlug: rusya-e-ticaret-bolgesel-satis-stratejisi-2026
 publishedAt: 2026-09-21
 ---

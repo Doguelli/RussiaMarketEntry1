@@ -130,6 +130,16 @@ const baseBlogPosts: BlogPost[] = [
           </p>
         </div>
 
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            2026 verileri büyümenin giderek Moskova dışına kaydığını gösteriyor.{" "}
+            <a href="/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-500 font-semibold hover:underline">
+              Rusya e-ticaretinde bölgesel büyüme
+            </a>{" "}
+            rehberimizde bölgesel stok stratejisi ve Moskova dışı satış planını özetledik.
+          </p>
+        </div>
+
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
@@ -215,6 +225,16 @@ const baseBlogPosts: BlogPost[] = [
               E-commerce logistics in Russia 2026
             </a>
             .
+          </p>
+        </div>
+
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            2026 data shows growth shifting beyond Moscow. Our guide to{" "}
+            <a href="/en/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-500 font-semibold hover:underline">
+              regional e-commerce growth in Russia
+            </a>{" "}
+            covers regional inventory strategy and a beyond Moscow sales approach.
           </p>
         </div>
 
@@ -838,7 +858,11 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Lojistik ve Depolama</h3>
-              <p className="text-slate-600">Ürünler Rusya'daki depolara gönderilir ve fulfillment (FBO) sistemiyle yönetilir. Sipariş hazirlama, paketleme ve kargo merkezi sistemle yürütülür.</p>
+              <p className="text-slate-600">Ürünler Rusya'daki depolara gönderilir ve fulfillment (FBO) sistemiyle yönetilir. Sipariş hazirlama, paketleme ve kargo merkezi sistemle yürütülür. Bölgesel talep ve stok dağılımı için{" "}
+                <a href="/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-500 font-semibold hover:underline">
+                  Rusya'da bölgesel e-ticaret
+                </a>{" "}
+                rehberimizi inceleyebilirsiniz.</p>
             </div>
           </div>
           
@@ -961,7 +985,11 @@ const baseBlogPosts: BlogPost[] = [
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Logistics & Warehousing</h3>
-              <p className="text-slate-600">Stock is securely routed to Russian warehouses via Ozon\'s FBO system. Order packing, shipping, and return processes run automatically.</p>
+              <p className="text-slate-600">Stock is securely routed to Russian warehouses via Ozon\'s FBO system. Order packing, shipping, and return processes run automatically. For regional demand and inventory placement, see our guide to{" "}
+                <a href="/en/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-500 font-semibold hover:underline">
+                  regional inventory strategy
+                </a>
+                .</p>
             </div>
           </div>
           
@@ -1858,7 +1886,11 @@ const baseBlogPosts: BlogPost[] = [
             <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Bölgesel talebe daha hizli cevap verilebilir.</li>
             <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Stok tükenme riski azalir.</li>
           </ul>
-          <p className="text-slate-600 mt-4">Özellikle yüksek hacimli ürünlerde tek depoya bağli kalmak yerine bölgesel dağilim yapmak operasyonel avantaj sağlar.</p>
+          <p className="text-slate-600 mt-4">Özellikle yüksek hacimli ürünlerde tek depoya bağli kalmak yerine bölgesel dağilim yapmak operasyonel avantaj sağlar. Talebi bölge bazında okumak için{" "}
+            <a href="/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-500 font-semibold hover:underline">
+              Moskova dışı satış stratejisi
+            </a>{" "}
+            rehberimize bakabilirsiniz.</p>
         </div>
 
         <div className="space-y-4">
@@ -1929,7 +1961,11 @@ const baseBlogPosts: BlogPost[] = [
             <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Faster response to regional demand spikes.</li>
             <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Reduced risk of stockouts.</li>
           </ul>
-          <p className="text-slate-600 mt-4">For high-volume items in particular, regional distribution offers a immense operational advantage compared to single-warehouse reliance.</p>
+          <p className="text-slate-600 mt-4">For high-volume items in particular, regional distribution offers a immense operational advantage compared to single-warehouse reliance. For demand by region, see our{" "}
+            <a href="/en/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-500 font-semibold hover:underline">
+              beyond Moscow sales strategy
+            </a>{" "}
+            guide.</p>
         </div>
 
         <div className="space-y-4">

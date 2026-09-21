@@ -103,7 +103,11 @@ export const blogTranslationsRU: Record<string, BlogTranslationRU> = {
             <Link to="/ru/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-400 font-semibold hover:underline">
               логистика e-commerce в России 2026
             </Link>
-            .
+            . О{" "}
+            <Link to="/ru/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-400 font-semibold hover:underline">
+              региональном росте e-commerce в России
+            </Link>{" "}
+            и стратегии запасов за пределами Москвы — в отдельном материале.
           </p>
         </div>
       </div>
@@ -308,7 +312,13 @@ export const blogTranslationsRU: Record<string, BlogTranslationRU> = {
             <div className="w-10 h-10 shrink-0 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-lg">3</div>
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-1">Логистика и сдача на склады FBO</h3>
-              <p className="text-slate-600">Доставка партий на распределительные центры Ozon (Новая Рига, Хоругвино, Тверь, Ростов-на-Дону, Казань) для максимального покрытия регионов.</p>
+              <p className="text-slate-600">
+                Доставка партий на распределительные центры Ozon (Новая Рига, Хоругвино, Тверь, Ростов-на-Дону, Казань) для максимального покрытия регионов. План региональных запасов:{" "}
+                <Link to="/ru/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-500 font-semibold hover:underline">
+                  региональная стратегия запасов
+                </Link>
+                .
+              </p>
             </div>
           </div>
           
@@ -529,6 +539,10 @@ export const blogTranslationsRU: Record<string, BlogTranslationRU> = {
             Полная цепочка логистики из Турции:{" "}
             <Link to="/ru/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
               логистика e-commerce в России 2026
+            </Link>
+            . Как читать спрос по регионам:{" "}
+            <Link to="/ru/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-500 font-semibold hover:underline">
+              продажи за пределами Москвы
             </Link>
             .
           </p>

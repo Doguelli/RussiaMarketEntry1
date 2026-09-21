@@ -98,7 +98,7 @@ tr:
 
     Rusya'da stok nasıl dağıtılmalı?
 
-    Rusya'da e-ticaret operasyonunun en kritik konularından biri stok dağılımıdır. Bütün stoku Moskova'da tutmak başlangıçta mantıklı olabilir; ancak satış hacmi büyüdükçe yalnızca Moskova'ya bağlı kalmak teslimat süresini artırabilir, lojistik maliyetlerini yükseltebilir ve bazı bölgelerde satış performansını olumsuz etkileyebilir.
+    Rusya'da e-ticaret operasyonunun en kritik konularından biri stok dağılımıdır. Bütün stoku Moskova'da tutmak başlangıçta mantıklı olabilir; ancak satış hacmi büyüdükçe yalnızca Moskova'ya bağlı kalmak teslimat süresini artırabilir, lojistik maliyetlerini yükseltebilir ve bazı bölgelerde satış performansını olumsuz etkileyebilir. Bölgesel talep ve [bölgesel stok stratejisi](/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026) için ayrı rehberimizi inceleyebilirsiniz.
 
     Pratik kural
     İlk gün 10 depoya stok göndermek doğru değildir. Önce satışların nereden geldiği görülmeli, ardından stok dağılımı buna göre genişletilmelidir. Depo odaklı detaylar için [Wildberries depo stratejisi](/blog/wildberries-depo-stratejisi-basarili-satis) yazımıza da bakabilirsiniz.
@@ -220,7 +220,7 @@ en:
 
     Why does delivery speed matter?
 
-    Russia's geographical scale makes delivery planning particularly important. A warehouse that works well for Moscow may not provide the same delivery efficiency for customers in other regions. Wildberries notes that its FBW model can use warehouses closer to customers, which can shorten delivery times and improve customer experience and product search positioning.
+    Russia's geographical scale makes delivery planning particularly important. A warehouse that works well for Moscow may not provide the same delivery efficiency for customers in other regions. Wildberries notes that its FBW model can use warehouses closer to customers, which can shorten delivery times and improve customer experience and product search positioning. For a broader view of [regional e-commerce growth in Russia](/en/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026), see our dedicated guide.
 
     The question should not simply be «Where is the warehouse cheapest?» It should be: How can we deliver to the customer faster while maintaining profitability?
 
@@ -314,7 +314,7 @@ ru:
 
     Почему важна скорость доставки?
 
-    Россия — огромный рынок с большой географией. Один склад может хорошо обслуживать один регион, но давать менее эффективную доставку в другой. Wildberries отмечает, что при FBW заказы могут отправляться с ближайших складов, что сокращает сроки доставки и может положительно влиять на клиентский опыт и позиции товаров в поиске.
+    Россия — огромный рынок с большой географией. Один склад может хорошо обслуживать один регион, но давать менее эффективную доставку в другой. Wildberries отмечает, что при FBW заказы могут отправляться с ближайших складов, что сокращает сроки доставки и может положительно влиять на клиентский опыт и позиции товаров в поиске. Подробнее о [региональном росте e-commerce в России](/ru/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026) — в отдельном материале.
 
     Вопрос должен звучать не «Где склад дешевле?», а «Как доставить товар покупателю быстрее и при этом сохранить прибыльность?»
 
