@@ -159,6 +159,7 @@ tr:
     * [Wildberries'de satış yapmak](/blog/wildberriesde-satis-yapmak)
     * [Ozon'da satış yapmak](/blog/ozonda-satis-yapmak)
     * [Wildberries & Ozon lojistik ve stok yönetimi](/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)
+    * [Moskova dışı bölgesel satış stratejisi 2026](/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026)
     * [Lojistik ve depo hizmetimiz](/hizmetler/lojistik-ve-depo)
     * [Pazaryeri yönetimi hizmetimiz](/hizmetler/pazaryeri-yonetimi)
 
@@ -255,6 +256,7 @@ en:
     * [Selling on Wildberries](/en/blog/wildberriesde-satis-yapmak)
     * [Selling on Ozon](/en/blog/ozonda-satis-yapmak)
     * [Logistics and inventory on Wildberries & Ozon](/en/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)
+    * [Regional sales strategy beyond Moscow 2026](/en/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026)
     * [Logistics & warehousing service](/en/hizmetler/lojistik-ve-depo)
     * [Marketplace management service](/en/hizmetler/pazaryeri-yonetimi)
 
@@ -348,6 +350,7 @@ ru:
     * [Как продавать на Wildberries](/ru/blog/wildberriesde-satis-yapmak)
     * [Продажи на Ozon](/ru/blog/ozonda-satis-yapmak)
     * [Управление логистикой на Wildberries и Ozon](/ru/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)
+    * [Региональная стратегия продаж за пределами Москвы 2026](/ru/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026)
     * [Услуга логистики и фулфилмента](/ru/uslugi/logistika-i-fulfiliment)
     * [Управление маркетплейсами](/ru/uslugi/upravlenie-marketpleisami)
 

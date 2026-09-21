@@ -1,0 +1,132 @@
+{
+  "title": "Beyond Moscow: Regional Growth Opportunities in Russian E-Commerce in 2026",
+  "excerpt": "Russian e-commerce growth is shifting beyond Moscow. 2026 data on regional sales, warehousing, inventory and Wildberries/Ozon strategy for global brands entering Russia.",
+  "category": "pazaryerleri",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "For years, Moscow dominated the conversation about e-commerce in Russia. 2026 data shows the market can no longer be read through Moscow and St. Petersburg alone."
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "H1 2026 online trade (AKIT)",
+          "value": "7.2 trln RUB"
+        },
+        {
+          "label": "YoY growth",
+          "value": "18.7%"
+        },
+        {
+          "label": "Volume from regions",
+          "value": "≈ 80%"
+        },
+        {
+          "label": "Moscow + SPB share",
+          "value": "≈ 21%"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Kokoc Group's analysis of 21 categories on Wildberries and Ozon shows regional clusters outside Moscow account for 73.7% of turnover. Moscow and Moscow Region share fell from 26.1% to 23.4% between June 2025 and July 2026."
+    },
+    {
+      "type": "calloutBox",
+      "title": "For global brands",
+      "text": "Russia marketplace strategy cannot rely on «ship stock to Moscow and wait». Read demand by region, allocate inventory from sales data, and evolve logistics as you scale."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why is demand shifting to the regions?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Russia's geography creates both friction and opportunity. In many cities where offline retail offers limited assortment, marketplaces give access to a range comparable to Moscow. AKIT notes online share of retail can exceed Moscow's in Siberia and the Far East; in H1 2026, 45 regions were above the national average of 22.2% online share in retail."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Is Moscow losing importance?"
+    },
+    {
+      "type": "paragraph",
+      "text": "No — Moscow remains Russia's largest single e-commerce market (~15.4% of national online trade in H1 2026). What changed is the assumption that Moscow alone represents all of Russia. Regional clusters should be treated as distinct demand pools."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Which regions stand out?"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Moscow Region, St. Petersburg, Krasnodar, Sverdlovsk, Rostov among top volume shares",
+        "Several regions saw ~30%+ YoY growth (e.g. Tuva, Dagestan, Kaliningrad, Amur)",
+        "Current volume and growth rate must be analysed separately"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What this means for brands entering Russia"
+    },
+    {
+      "type": "paragraph",
+      "text": "The classic path — Moscow warehouse → Wildberries/Ozon → nationwide sales — can work at launch. As volume grows, brands must track regional orders, SKU performance by region, delivery times, stockouts, overstock and returns. Inventory management becomes part of sales management. See [e-commerce logistics in Russia 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Central stock vs regional marketplace inventory"
+    },
+    {
+      "type": "calloutBox",
+      "text": "The goal is not to abandon central stock — it is to run central stock together with regional marketplace placements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Central stock + dynamic transfers"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Central pool → controlled first placement on WB/Ozon → SKU/region analytics → transfers → scale new regions when demand is proven"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Related: [Wildberries warehouse strategy](/en/blog/wildberries-depo-stratejisi-basarili-satis), [WB & Ozon logistics](/en/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi), [Selling on Wildberries](/en/blog/wildberriesde-satis-yapmak), [Selling on Ozon](/en/blog/ozonda-satis-yapmak)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Wildberries and Ozon need separate regional plans"
+    },
+    {
+      "type": "paragraph",
+      "text": "Warehouse networks, customer geography, category strength and fulfillment costs differ. The same SKU may need different placement on each platform."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Russia is a multi-centre e-commerce ecosystem, not a one-city market. Success requires the right geographic stock plan — not only the right product. Russia Market Entry plans marketplace, logistics, warehouse and stock operations from sales data."
+    },
+    {
+      "type": "bulletList",
+      "title": "Related guides",
+      "items": [
+        "[How to do e-commerce in Russia](/en/blog/rusyada-e-ticaret-nasil-yapilir)",
+        "[E-commerce logistics 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "[Logistics & warehousing](/en/hizmetler/lojistik-ve-depo)"
+      ]
+    }
+  ]
+}
