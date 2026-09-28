@@ -140,6 +140,15 @@ const baseBlogPosts: BlogPost[] = [
           </p>
         </div>
 
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            EXW fiyatından raf fiyatına kadar unit economics:{" "}
+            <a href="/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026" className="text-accent-500 font-semibold hover:underline">
+              Rusya'da ürün fiyatı nasıl hesaplanır?
+            </a>
+          </p>
+        </div>
+
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
@@ -235,6 +244,16 @@ const baseBlogPosts: BlogPost[] = [
               regional e-commerce growth in Russia
             </a>{" "}
             covers regional inventory strategy and a beyond Moscow sales approach.
+          </p>
+        </div>
+
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">
+            Unit economics from EXW to shelf price:{" "}
+            <a href="/en/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026" className="text-accent-500 font-semibold hover:underline">
+              Russia marketplace pricing guide
+            </a>
+            .
           </p>
         </div>
 
@@ -3558,6 +3577,13 @@ const baseBlogPosts: BlogPost[] = [
           <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">
             Türkiye'den Rusya'ya ürün ithal etmek, yalnizca ürünleri sinirdan geçirmekten ibaret değildir. Başarili bir operasyonun hedefi <em>"ürünü Rusya'ya sokmak"</em> değil, <strong>"ürünü doğru maliyetle Rusya'ya getirip pazaryerlerinde satişa hazir hale getirmek"</strong>tir.
           </p>
+          <p className="text-slate-300 relative z-10 mt-4 text-sm leading-relaxed">
+            Ithalat maliyetlerinden raf fiyatina kadar unit economics:{" "}
+            <a href="/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026" className="text-accent-400 font-semibold hover:underline">
+              EXW&apos;den raf fiyatina rehberi
+            </a>
+            .
+          </p>
           <p className="text-sm text-slate-400 relative z-10 border-t border-slate-800 pt-4 mt-6">
             <strong>Not:</strong> Bu içerik, Russia Market Entry Playbook kapsaminda genel bilgilendirme amaciyla hazirlanmiştir. Ithalat ve gümrük gereklilikleri ürün, menşe, işlem yapisi ve güncel mevzuata göre değişebilir. Ticari sevkiyat öncesinde ürün bazli gümrük ve mevzuat kontrolü yapilmalidir.
           </p>
@@ -3649,6 +3675,13 @@ const baseBlogPosts: BlogPost[] = [
           </p>
           <p className="text-lg leading-relaxed text-slate-300 relative z-10">
             Russia Market Entry handles your end-to-end import, certification, logistics, and account operations to accelerate your commercial expansion.
+          </p>
+          <p className="text-slate-300 relative z-10 mt-4 text-sm leading-relaxed">
+            From landed cost to shelf price:{" "}
+            <a href="/en/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026" className="text-accent-400 font-semibold hover:underline">
+              Russia marketplace pricing guide
+            </a>
+            .
           </p>
         </div>
       </div>

@@ -1,0 +1,136 @@
+{
+  "title": "От EXW до цены на полке: как формируется реальная цена товара в России?",
+  "excerpt": "Как формируется реальная цена товара в России: EXW, импорт, логистика, комиссии маркетплейсов, реклама, налоги и итоговая маржинальность.",
+  "category": "vergi-finans",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Частый вопрос производителя: «EXW 20 USD — по какой цене продавать в России?» Это не заводская цена плюс маржа. Wildberries, Ozon и другие каналы добавляют логистику, импорт, соответствие, комиссии, рекламу, возвраты и налоги — тарифы зависят от категории и модели поставки."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Правильный вопрос: не «сколько товар стоит для нас?», а «сколько остается после завершенной продажи?»"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Что такое EXW?"
+    },
+    {
+      "type": "paragraph",
+      "text": "EXW — цена, по которой производитель отдает товар со своего предприятия. 20 USD EXW — еще не полная себестоимость продажи в России."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Уровни затрат"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Стоимость товара и коммерческие условия",
+        "Международная логистика (пример: +3 USD → база 23 USD при EXW 20 USD)",
+        "Импорт и соответствие — см. [импорт в Россию](/ru/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber)",
+        "Локальная логистика — не фиксированный процент; см. [логистика e-commerce 2026](/ru/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "Комиссия — фактическая ставка категории, не универсальные «20%»; [Wildberries](/ru/blog/wildberriesde-satis-yapmak), [Ozon](/ru/blog/ozonda-satis-yapmak)",
+        "Цена покупателя ≠ экономика продавца",
+        "Реклама — в сценариях иногда ~5–8% от продаж; не официальное правило",
+        "Возвраты — заказ ≠ продажа",
+        "Налоги — в 2026 стандарт НДС 22% в общей рамке; см. [НДС 2026](/ru/blog/rusyada-kdv-2026); не налоговая консультация",
+        "Валютный риск"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Пример: EXW 20 USD, продажа 49 USD"
+    },
+    {
+      "type": "calloutBox",
+      "title": "Условный сценарий",
+      "text": "Цифры не являются официальными тарифами Wildberries или Ozon."
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "EXW",
+          "value": "20 USD"
+        },
+        {
+          "label": "Логистика",
+          "value": "3 USD"
+        },
+        {
+          "label": "База",
+          "value": "23 USD"
+        },
+        {
+          "label": "Цена продажи",
+          "value": "49 USD"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "После условных расходов marketplace (9), рекламы (3) и резерва на возвраты/операции (2): 49 − 23 − 9 − 3 − 2 = 12 USD до полного налогового учета."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Три уровня: Landed Cost / Marketplace / Margin"
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "Landed Cost",
+          "value": "EXW + транспорт + импорт + маркировка"
+        },
+        {
+          "label": "Marketplace Economics",
+          "value": "Комиссия + fulfillment + реклама + возвраты"
+        },
+        {
+          "label": "Commercial Margin",
+          "value": "Целевая маржа"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Вывод"
+    },
+    {
+      "type": "paragraph",
+      "text": "Цена на полке формируется в операционной модели, а не на заводе. Главный вопрос: «По какой цене мы можем устойчиво расти в России?»"
+    },
+    {
+      "type": "calloutBox",
+      "title": "Russia Market Entry",
+      "text": "Полная юнит-экономика от EXW до финальной цены. [Исследование рынка и стратегия](/ru/uslugi/issledovanie-rynka)."
+    },
+    {
+      "type": "bulletList",
+      "title": "Связанные материалы",
+      "items": [
+        "[E-commerce в России](/ru/blog/rusyada-e-ticaret-nasil-yapilir)",
+        "[Импорт в Россию](/ru/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber)",
+        "[Логистика e-commerce 2026](/ru/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "[НДС в России 2026](/ru/blog/rusyada-kdv-2026)"
+      ]
+    },
+    {
+      "type": "bulletList",
+      "title": "Источники",
+      "items": [
+        "[Wildberries — тарифы](https://seller.wildberries.ru/instructions/ru/tj/material/fees-site-section)",
+        "[Wildberries — комиссия](https://seller.wildberries.ru/instructions/ru/tj/material/wildberries-reward-ratio)",
+        "[Wildberries — отчетность по ценам](https://seller.wildberries.ru/instructions/ru/am/material/price-reporting-and-calculations)",
+        "[Wildberries — калькулятор прибыли](https://seller.wildberries.ru/instructions/ru/am/material/profit-calculator)",
+        "[ФНС — справка по НДС](https://www.nalog.gov.ru/rn74/ifns/ifns32/info/16596381/)"
+      ]
+    }
+  ]
+}

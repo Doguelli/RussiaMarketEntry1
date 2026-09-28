@@ -107,7 +107,11 @@ export const blogTranslationsRU: Record<string, BlogTranslationRU> = {
             <Link to="/ru/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-400 font-semibold hover:underline">
               региональном росте e-commerce в России
             </Link>{" "}
-            и стратегии запасов за пределами Москвы — в отдельном материале.
+            и стратегии запасов за пределами Москвы — в отдельном материале. Расчет цены:{" "}
+            <Link to="/ru/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026" className="text-accent-400 font-semibold hover:underline">
+              от EXW до цены на полке
+            </Link>
+            .
           </p>
         </div>
       </div>

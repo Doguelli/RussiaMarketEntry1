@@ -160,6 +160,7 @@ tr:
     * [Ozon'da satış yapmak](/blog/ozonda-satis-yapmak)
     * [Wildberries & Ozon lojistik ve stok yönetimi](/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)
     * [Moskova dışı bölgesel satış stratejisi 2026](/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026)
+    * [EXW'den raf fiyatına: ürün fiyatlandırma](/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026)
     * [Lojistik ve depo hizmetimiz](/hizmetler/lojistik-ve-depo)
     * [Pazaryeri yönetimi hizmetimiz](/hizmetler/pazaryeri-yonetimi)
 
@@ -257,6 +258,7 @@ en:
     * [Selling on Ozon](/en/blog/ozonda-satis-yapmak)
     * [Logistics and inventory on Wildberries & Ozon](/en/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)
     * [Regional sales strategy beyond Moscow 2026](/en/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026)
+    * [From EXW to shelf price](/en/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026)
     * [Logistics & warehousing service](/en/hizmetler/lojistik-ve-depo)
     * [Marketplace management service](/en/hizmetler/pazaryeri-yonetimi)
 
@@ -351,6 +353,7 @@ ru:
     * [Продажи на Ozon](/ru/blog/ozonda-satis-yapmak)
     * [Управление логистикой на Wildberries и Ozon](/ru/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)
     * [Региональная стратегия продаж за пределами Москвы 2026](/ru/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026)
+    * [От EXW до цены на полке](/ru/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026)
     * [Услуга логистики и фулфилмента](/ru/uslugi/logistika-i-fulfiliment)
     * [Управление маркетплейсами](/ru/uslugi/upravlenie-marketpleisami)
 

@@ -1,0 +1,277 @@
+{
+  "title": "EXW'den Raf Fiyatına: Rusya'da Bir Ürünün Gerçek Satış Fiyatı Nasıl Oluşuyor?",
+  "excerpt": "Rusya'da bir ürünün gerçek satış fiyatı nasıl oluşur? EXW maliyetinden ithalat, lojistik, Wildberries/Ozon komisyonları, reklam, vergi ve net marja kadar fiyatlandırma modelini inceliyoruz.",
+  "category": "vergi-finans",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Bir üreticinin Rusya pazarına girerken sorduğu ilk sorulardan biri genellikle şudur: «Ürünümüzün Türkiye çıkış fiyatı 20 dolar. Rusya'da kaça satmalıyız?» İlk bakışta basit görünen bu sorunun cevabı yalnızca alış fiyatına kâr marjı eklemek değildir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da Wildberries, Ozon veya diğer satış kanallarında gerçek raf fiyatı oluşurken uluslararası lojistik, ithalat, uygunluk, yerel lojistik, marketplace komisyonları, depolama, reklam, iadeler, vergiler ve operasyon giderleri eklenir. Marketplace tarifeleri kategoriye, satış modeline ve depoya göre değişebilir."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Doğru fiyatlandırma şu soruyla başlamalıdır: «Bir ürün bize kaça geliyor» değil, «bir satış tamamlandığında bize gerçekte ne kadar para kalıyor?»"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "EXW fiyatı nedir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "EXW (Ex Works), üreticinin ürünü kendi tesisinde hazır ettiği fiyatı ifade eder. Örneğin EXW 20 USD — bu henüz Rusya'daki gerçek ürün maliyeti değildir. İhracat hazırlığı, taşıma, ithalat, uygunluk, Çestniy Znak, depo ve marketplace fulfillment adımları tamamlanmalıdır. 20 dolarlık ürün Rusya'ya 20 dolara ulaşmaz."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1. Ürün maliyeti"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fiyatlandırmanın başlangıcı gerçek satın alma maliyetidir: fabrika fiyatı, hacim indirimi, bonus ürün, pazarlama desteği ve ödeme vadesi efektif maliyeti değiştirir. Birkaç puanlık satın alma avantajı marketplace kârlılığını önemli ölçüde etkileyebilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2. Uluslararası lojistik"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hacim, ağırlık, taşıma yöntemi ve güzergâha bağlıdır. Örnek modelde birim başına 3 USD varsayılabilir; 20 USD EXW + 3 USD = 23 USD başlangıç tabanı. Kozmetik ile hacimli ev tekstilinin lojistik ekonomisi aynı değildir — ürün bazında hesaplanmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3. İthalat, gümrük ve uygunluk"
+    },
+    {
+      "type": "paragraph",
+      "text": "Gümrük, EAC, test, Rusça etiket, Çestniy Znak ve operasyon hizmetleri oluşabilir. Bu maliyetlerin tamamı her adet için ayrı ayrı oluşmaz; 500 adetlik test ile 10.000 adetlik ölçekte birim sertifikasyon maliyeti farklıdır. Adım adım süreç: [Rusya'ya ithalat rehberi](/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4. Rusya içi depo ve lojistik"
+    },
+    {
+      "type": "paragraph",
+      "text": "Zincir: ithalat noktası → merkezi depo → marketplace deposu → müşteri; iadelerde ters lojistik devreye girer. «Lojistik yaklaşık %15'tir» gibi genel kabullerle fiyat belirlemek yerine SKU ve satış modeli bazında maliyet hesaplanmalıdır. Detay: [Rusya'da e-ticaret lojistiği 2026](/blog/rusyada-e-ticaret-lojistigi-2026)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "5. Marketplace komisyonu"
+    },
+    {
+      "type": "paragraph",
+      "text": "«Wildberries komisyonu %20» varsayımı tüm ürünler için doğru değildir. Hesaplama satış fiyatı × gerçek kategori komisyonu üzerinden yapılmalıdır. Aynı ürün Wildberries ve Ozon'da aynı net marjı üretmeyebilir — platformlar ayrı modellenmelidir. Rehberler: [Wildberries'de satış](/blog/wildberriesde-satis-yapmak), [Ozon'da satış](/blog/ozonda-satis-yapmak)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6. Liste fiyatı, müşteri fiyatı, satıcı geliri"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Liste fiyatı — ilan edilen fiyat",
+        "Müşterinin ödediği fiyat — kampanya sonrası görünen fiyat",
+        "Satıcının ekonomik geliri — hesaplaşma ve satıcı finansmanlı indirimler sonrası kalan tutar"
+      ]
+    },
+    {
+      "type": "calloutBox",
+      "text": "Gerçek kârlılık analizi satıcının ekonomik gelirine odaklanmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "7. Reklam maliyeti"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yeni markalar arama reklamı, görünürlük ve marketplace içi reklam bütçesi ayırabilir. Senaryo analizlerinde satışların yaklaşık %5–8'i reklam olarak modele konabilir — bu resmi veya sabit bir marketplace kuralı değildir; lansman döneminde oran daha yüksek olabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "8. İadeler ve siparişten satışa dönüşüm"
+    },
+    {
+      "type": "paragraph",
+      "text": "Özellikle modada sipariş ≠ satış. Fiyatlandırma sipariş → teslimat → satın alma → iade akışını dikkate almalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "9. Vergiler"
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 itibarıyla Rusya'daki genel KDV çerçevesinde standart oran %22 seviyesindedir; uygulanacak oran şirket yapısı ve işleme göre değişebilir. «Satış fiyatına doğrudan %22 ekleyelim» tek başına doğru unit economics oluşturmaz. Fiyatlama vergi rejimi, KDV statüsü ve ithalat yapısıyla birlikte değerlendirilmelidir. Genel çerçeve: [Rusya'da KDV 2026](/blog/rusyada-kdv-2026). Resmi bilgi için Federal Vergi Servisi kaynaklarına bakın — bu yazı vergi danışmanlığı değildir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "10. Kur riski"
+    },
+    {
+      "type": "paragraph",
+      "text": "USD/EUR ile alınıp RUB ile satılan modellerde ithalat ile satış arasında haftalar olabilir. Maliyet yalnızca bugünkü kur üzerinden modellenmemeli; kur güvenlik payı gerekebilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Örnek: 20 USD'lik ürün 49 USD'ye satılırsa"
+    },
+    {
+      "type": "calloutBox",
+      "title": "Temsili senaryo",
+      "text": "Aşağıdaki rakamlar Wildberries veya Ozon'un resmi tarifesi değildir; yalnızca fiyatlandırma mantığını göstermek için hazırlanmış ticari bir örnektir."
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "EXW",
+          "value": "20 USD"
+        },
+        {
+          "label": "Uluslararası lojistik",
+          "value": "3 USD"
+        },
+        {
+          "label": "Landed cost tabanı",
+          "value": "23 USD"
+        },
+        {
+          "label": "Satış fiyatı",
+          "value": "49 USD"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "İlk bakışta 49 − 23 = 26 USD fark varmış gibi görünür. Örnek senaryoda marketplace + fulfillment 9 USD, reklam 3 USD, operasyon/iade payı 2 USD varsayılırsa: 49 − 23 − 9 − 3 − 2 = 12 USD kalır. Bunun üzerinden vergi yapısı ve diğer giderler ayrıca değerlendirilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya marketplace fiyatlandırma formülü"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Satış fiyatı − ürün maliyeti − uluslararası lojistik − ithalat/gümrük − sertifikasyon payı − marketplace komisyonu − marketplace lojistiği − depolama − reklam − iade/iptal − operasyon − vergi etkisi = gerçek kârlılık"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fiyatı rakipten kopyalamak"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rakibin raf fiyatı alış maliyetini, ithalatı, reklamı veya stratejik hedefini göstermez. Rekabet analizi yalnızca «rakip kaç ruble?» sorusuna indirgenmemelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Üç katmanlı fiyatlandırma modeli"
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "Landed Cost",
+          "value": "EXW + taşıma + ithalat + uygunluk + etiketleme"
+        },
+        {
+          "label": "Marketplace Economics",
+          "value": "Komisyon + fulfillment + depo + reklam + iadeler"
+        },
+        {
+          "label": "Commercial Margin",
+          "value": "Operasyon sonrası hedeflenen ticari marj"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu yapıdan minimum sürdürülebilir satış fiyatı hesaplanır ve piyasa fiyatıyla karşılaştırılır. Piyasa fiyatı sürdürülebilir fiyatın altındaysa önce maliyet, lojistik, operasyon ve konumlandırma seçenekleri değerlendirilir; hiçbiri işe yaramazsa SKU'yu açmamak doğru karar olabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "İlk parti ≠ ölçeklenmiş operasyon"
+    },
+    {
+      "type": "paragraph",
+      "text": "Test partisinde düşük adet, yüksek birim belge/lojistik maliyeti ve yüksek reklam ihtiyacı vardır. Yalnızca ilk partiye bakarak «Rusya kârlı değil» demek yanıltıcı olabilir. Model: Test → ölçüm → başarılı SKU → yeniden sipariş → ölçek."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Üretici kaldıracı: toptan / export fiyatı"
+    },
+    {
+      "type": "paragraph",
+      "text": "Export fiyatında 2 USD iyileştirme doğrudan unit economics'e yansır; aynı kazancı reklam veya lojistikten elde etmek genelde daha zordur. Açılış fiyatı, hacim fiyatı, vade ve pazarlama katkısı birlikte görüşülmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fiyatlandırma kontrol listesi"
+    },
+    {
+      "type": "bulletList",
+      "title": "Ürün, ithalat, lojistik, marketplace, pazarlama, finans",
+      "items": [
+        "EXW, hacim fiyatı, MOQ",
+        "TN VED, gümrük, uygunluk, Çestniy Znak",
+        "Uluslararası taşıma, birim landed cost, Rusya fulfillment",
+        "Gerçek kategori komisyonu, depolama, iade etkisi",
+        "Reklam bütçesi ve hedef reklam/satış oranı",
+        "Vergi rejimi, kur riski, hedef marj"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sonuç"
+    },
+    {
+      "type": "paragraph",
+      "text": "Gerçek fiyat EXW → ihracat → ithalat → depo → marketplace → reklam → müşteri → iade → vergi zincirinde oluşur. 20 USD maliyetli ürünün 49 USD'ye satılması tek başına kârlılık anlamına gelmez; asıl soru «Rusya'da hangi fiyatla sürdürülebilir büyüyebiliriz?» olmalıdır."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Russia Market Entry",
+      "text": "EXW'den nihai satış fiyatına unit economics modelini oluşturuyor; ithalat, marketplace, lojistik, reklam ve hedef marjı birlikte değerlendiriyoruz. Bölge ve ürün seçimi için [pazar araştırması ve strateji](/hizmetler/pazar-arastirmasi-ve-strateji) hizmetimize bakabilirsiniz."
+    },
+    {
+      "type": "bulletList",
+      "title": "İlgili rehberler",
+      "items": [
+        "[Rusya'da e-ticaret nasıl yapılır?](/blog/rusyada-e-ticaret-nasil-yapilir)",
+        "[Rusya'ya ithalat süreci](/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber)",
+        "[E-ticaret lojistiği 2026](/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "[Rusya'da KDV 2026](/blog/rusyada-kdv-2026)"
+      ]
+    },
+    {
+      "type": "bulletList",
+      "title": "Marketplace ve vergi kaynakları (resmi / birincil)",
+      "items": [
+        "[Wildberries — ücretler bölümü](https://seller.wildberries.ru/instructions/ru/tj/material/fees-site-section)",
+        "[Wildberries — komisyon oranı](https://seller.wildberries.ru/instructions/ru/tj/material/wildberries-reward-ratio)",
+        "[Wildberries — fiyat raporlama](https://seller.wildberries.ru/instructions/ru/am/material/price-reporting-and-calculations)",
+        "[Wildberries — kâr hesaplayıcı](https://seller.wildberries.ru/instructions/ru/am/material/profit-calculator)",
+        "[Federal Vergi Servisi — KDV çerçevesi (2026)](https://www.nalog.gov.ru/rn74/ifns/ifns32/info/16596381/)"
+      ]
+    }
+  ]
+}

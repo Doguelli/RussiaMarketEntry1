@@ -1,0 +1,156 @@
+{
+  "title": "From EXW to Shelf Price: How Is the Real Selling Price of a Product Formed in Russia?",
+  "excerpt": "Learn how a product's real selling price is formed in Russia, from EXW and import costs to logistics, marketplace commissions, advertising, taxes and target margin.",
+  "category": "vergi-finans",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "One of the first questions manufacturers ask about Russia: «Our EXW is USD 20 — what should we sell for?» The answer is not factory price plus margin. Wildberries, Ozon and other channels add logistics, import, compliance, commissions, advertising, returns, taxes and operating costs — many of which vary by category and fulfilment model."
+    },
+    {
+      "type": "calloutBox",
+      "text": "The right question is not «What does the product cost us?» but «How much remains after a completed sale?»"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is EXW?"
+    },
+    {
+      "type": "paragraph",
+      "text": "EXW is the price at which the manufacturer makes goods available at its facility. USD 20 EXW is not yet the cost of selling in Russia — export prep, transport, import, conformity, Chestny ZNAK where required, warehousing and marketplace fulfilment still apply."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cost layers (summary)"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Product cost — factory price plus commercial terms (volume, bonus goods, payment terms)",
+        "International logistics — unit cost depends on size, weight and lane (example: USD 3 → USD 23 base on USD 20 EXW)",
+        "Import & compliance — may not allocate equally per unit on small test lots vs scale; see [import guide](/en/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber)",
+        "Local logistics — not a fixed «15%»; model at SKU level; see [e-commerce logistics 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "Marketplace commission — use actual category rate, not a universal «20%»; model [Wildberries](/en/blog/wildberriesde-satis-yapmak) and [Ozon](/en/blog/ozonda-satis-yapmak) separately",
+        "Customer price vs seller economics — profitability uses seller economic revenue after settlements",
+        "Advertising — scenario models may use ~5–8% of sales; not an official rule; launch ratios can be higher",
+        "Returns — especially in fashion, order ≠ completed sale",
+        "Tax — 2026 general VAT framework includes 22% standard rate; regime-specific; see [VAT in Russia 2026](/en/blog/rusyada-kdv-2026); not tax advice",
+        "Currency — RUB sales vs USD/EUR purchases may need a buffer"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Illustrative scenario: USD 20 → USD 49"
+    },
+    {
+      "type": "calloutBox",
+      "title": "Not official tariffs",
+      "text": "The figures below are not Wildberries or Ozon official tariffs — only an illustrative commercial scenario."
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "EXW",
+          "value": "USD 20"
+        },
+        {
+          "label": "Intl. logistics",
+          "value": "USD 3"
+        },
+        {
+          "label": "Base",
+          "value": "USD 23"
+        },
+        {
+          "label": "Selling price",
+          "value": "USD 49"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Apparent margin USD 26 (49−23) may fall to USD 12 after illustrative marketplace/fulfilment (9), advertising (3) and operating/returns allowance (2), before full tax and corporate costs."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Three-layer framework"
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "Landed Cost",
+          "value": "EXW + transport + import + compliance + labelling"
+        },
+        {
+          "label": "Marketplace Economics",
+          "value": "Commission + fulfilment + storage + ads + returns"
+        },
+        {
+          "label": "Commercial Margin",
+          "value": "Target margin after operations"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Copying a competitor's shelf price without their cost structure is risky. Test-shipment economics differ from scaled operations — prefer Test → Measure → Winning SKUs → Reorder → Scale."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pricing checklist"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "EXW, volume price, MOQ",
+        "HS/TN VED, customs, compliance, Chestny ZNAK",
+        "Transport, unit landed cost, local fulfilment",
+        "Category commission, storage, returns",
+        "Launch ad budget, ad/sales ratio",
+        "Tax regime, FX risk, target margin"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "The shelf price is built across the operating chain, not at the factory. Russia Market Entry models unit economics from EXW to final price. The key question: «At what price can we grow sustainably in Russia?»"
+    },
+    {
+      "type": "calloutBox",
+      "title": "Russia Market Entry",
+      "text": "We analyse import, marketplace, logistics, advertising and target margin together. [Market research & entry strategy](/en/hizmetler/pazar-arastirmasi-ve-strateji)."
+    },
+    {
+      "type": "bulletList",
+      "title": "Related guides",
+      "items": [
+        "[How to do e-commerce in Russia](/en/blog/rusyada-e-ticaret-nasil-yapilir)",
+        "[Import process guide](/en/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber)",
+        "[E-commerce logistics 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "[VAT in Russia 2026](/en/blog/rusyada-kdv-2026)"
+      ]
+    },
+    {
+      "type": "bulletList",
+      "title": "Primary references",
+      "items": [
+        "[Wildberries fees](https://seller.wildberries.ru/instructions/ru/tj/material/fees-site-section)",
+        "[Wildberries reward ratio](https://seller.wildberries.ru/instructions/ru/tj/material/wildberries-reward-ratio)",
+        "[Wildberries price reporting](https://seller.wildberries.ru/instructions/ru/am/material/price-reporting-and-calculations)",
+        "[Wildberries profit calculator](https://seller.wildberries.ru/instructions/ru/am/material/profit-calculator)",
+        "[FTS VAT framework reference](https://www.nalog.gov.ru/rn74/ifns/ifns32/info/16596381/)"
+      ]
+    }
+  ]
+}
