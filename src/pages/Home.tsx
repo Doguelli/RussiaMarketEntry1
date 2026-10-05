@@ -21,6 +21,7 @@ import { useTranslation } from "react-i18next";
 
 import { createOrganizationSchema, createBreadcrumbSchema, createFaqSchema, createWebSiteSchema } from "@/utils/seo";
 import { socialMetaElements } from "@/components/PageSocialMeta";
+import ReferencesSection from "@/components/ReferencesSection";
 import { blogDetailPath, type BlogLang } from "@/utils/blogLanguages";
 import {
   aboutPath,
@@ -488,6 +489,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ReferencesSection />
 
       {/* Dual Expertise + Turkey ↔ Russia */}
       <section className="py-12 md:py-16 bg-white border-b border-slate-100">

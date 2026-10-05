@@ -13,6 +13,7 @@ import {
   termsPath,
   cookiesPath,
   whyRussiaPath,
+  referencesPath,
 } from "@/utils/ruPaths";
 import { VERIFIED_CONTACT, OPERATIONAL_LOCATION } from "@/utils/seo";
 
@@ -53,6 +54,7 @@ export default function Footer() {
                 { name: t('nav.op_model'), path: operationModelPath(isRu) },
                 { name: t('nav.for_whom'), path: forWhomPath(isRu) },
                 { name: t('nav.blog'), path: blogPath },
+                { name: t('nav.references'), path: referencesPath(isRu, isEn) },
                 { name: t('nav.contact'), path: contactPath(isRu) },
               ].map((link) => (
                 <li key={link.path}>

@@ -39,11 +39,13 @@ const staticRoutesToPrerender = [
   "/kullanim-sartlari",
   "/cerez-politikasi",
   "/blog",
+  "/referanslar",
   "/kompaniya-v-turtsii",
 
   // English Blog List (only blog gets its own English URL tree; every
   // other page still shares its URL between Turkish and English)
   "/en/blog",
+  "/en/references",
 
   // Russian Infrastructure & Commercial Pages (Russian Latin path segments)
   "/ru",
@@ -68,6 +70,7 @@ const staticRoutesToPrerender = [
   "/ru/dlya-kogo/online-torgovlya",
   "/ru/dlya-kogo/proizvoditeli-kosmetiki",
   "/ru/kontakty",
+  "/ru/keisy-i-klienty",
   "/ru/politika-konfidentsialnosti",
   "/ru/usloviya-ispolzovaniya",
   "/ru/politika-cookie",

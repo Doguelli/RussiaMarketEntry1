@@ -8,7 +8,21 @@
     "for_whom": "For Whom?",
     "blog": "Blog",
     "contact": "Contact",
+    "references": "References",
     "apply": "Apply Now"
+  },
+  "references": {
+    "page_title": "References",
+    "hero_heading": "Brands & Partnerships",
+    "intro": "At Russia Market Entry, we work with brands across different sectors in Russia market entry, marketplace operations, distribution, digital marketing and B2B growth projects.",
+    "meta_title": "References | Russia Market Entry",
+    "meta_description": "Explore the brands Russia Market Entry has worked with across Russia market entry, marketplace operations, distribution and B2B growth projects.",
+    "home_title": "Brands We've Worked With",
+    "home_subtitle": "We work with brands across different sectors in Russia market entry, marketplace operations, distribution, digital marketing and B2B growth processes.",
+    "home_cta": "View all references",
+    "tag_marketplace": "Marketplace",
+    "tag_distribution": "Distribution",
+    "tag_b2b": "B2B"
   },
   "home": {
     "title1": "Russia Market Entry and",

@@ -8,8 +8,22 @@
     "for_whom": "Кому подходит",
     "blog": "Блог",
     "contact": "Контакты",
+    "references": "Кейсы и клиенты",
     "apply": "Подать заявку",
     "company_turkey": "Компания в Турции"
+  },
+  "references": {
+    "page_title": "Кейсы и клиенты",
+    "hero_heading": "Бренды и партнерства",
+    "intro": "Russia Market Entry работает с брендами из разных отраслей в проектах по выходу на рынок России, marketplace-операциям, дистрибуции, digital-маркетингу и B2B-развитию.",
+    "meta_title": "Кейсы и клиенты | Russia Market Entry",
+    "meta_description": "Изучите бренды, с которыми Russia Market Entry работала в проектах по выходу на рынок России, marketplace-операциям, дистрибуции и B2B-развитию.",
+    "home_title": "Бренды, с которыми мы работали",
+    "home_subtitle": "Мы работаем с брендами из разных отраслей в проектах по выходу на рынок России, marketplace-операциям, дистрибуции, digital-маркетингу и B2B-росту.",
+    "home_cta": "Смотреть все кейсы и бренды",
+    "tag_marketplace": "Marketplace",
+    "tag_distribution": "Дистрибуция",
+    "tag_b2b": "B2B"
   },
   "home": {
     "title1": "Выход на рынок России и",

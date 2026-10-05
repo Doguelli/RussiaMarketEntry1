@@ -18,6 +18,7 @@ export const TR_TO_RU_PAGE: Record<string, string> = {
   "/iletisim": "/ru/kontakty",
   "/kompaniya-v-turtsii": "/ru/kompaniya-v-turtsii",
   "/blog": "/ru/blog",
+  "/referanslar": "/ru/keisy-i-klienty",
   "/gizlilik-politikasi": "/ru/politika-konfidentsialnosti",
   "/kullanim-sartlari": "/ru/usloviya-ispolzovaniya",
   "/cerez-politikasi": "/ru/politika-cookie",
@@ -160,6 +161,16 @@ export function cookiesPath(isRu: boolean): string {
   return isRu ? "/ru/politika-cookie" : "/cerez-politikasi";
 }
 
+export const REFERENCES_TR = "/referanslar";
+export const REFERENCES_EN = "/en/references";
+export const REFERENCES_RU = "/ru/keisy-i-klienty";
+
+export function referencesPath(isRu: boolean, isEn?: boolean): string {
+  if (isRu) return REFERENCES_RU;
+  if (isEn) return REFERENCES_EN;
+  return REFERENCES_TR;
+}
+
 export function absoluteUrl(path: string): string {
   if (path.startsWith("http")) return path;
   return `${SITE_ORIGIN}${path.startsWith("/") ? path : `/${path}`}`;
@@ -185,6 +196,12 @@ export function pathForLanguage(
     const rest = blogMatch[2] || "";
     if (targetLang === "tr") return `/blog${rest}`;
     return `/${targetLang}/blog${rest}`;
+  }
+
+  if (path === REFERENCES_TR || path === REFERENCES_EN || path === REFERENCES_RU) {
+    if (targetLang === "ru") return REFERENCES_RU;
+    if (targetLang === "en") return REFERENCES_EN;
+    return REFERENCES_TR;
   }
 
   // Russian-only company landing: switching to TR/EN must leave the RU page
@@ -234,8 +251,9 @@ export function pathForLanguage(
     return `/ru${trPath}`;
   }
 
-  // EN (non-blog): share TR URLs
+  // EN (non-blog): share TR URLs, except dedicated references page
   if (targetLang === "en") {
+    if (trPath === REFERENCES_TR) return REFERENCES_EN;
     return trPath;
   }
 

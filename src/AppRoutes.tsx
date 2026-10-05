@@ -17,6 +17,7 @@ import ForWhomDetail from "./pages/ForWhomDetail";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import CompanyInTurkey from "./pages/CompanyInTurkey";
+import References from "./pages/References";
 import LegalDocument from "./pages/LegalDocument";
 import BackToTop from "./components/BackToTop";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -168,6 +169,8 @@ export default function AppRoutes() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/iletisim" element={<Contact />} />
+            <Route path="/referanslar" element={<References />} />
+            <Route path="/en/references" element={<References />} />
             <Route path="/gizlilik-politikasi" element={<LegalDocument kind="privacy" isRu={false} />} />
             <Route path="/kullanim-sartlari" element={<LegalDocument kind="terms" isRu={false} />} />
             <Route path="/cerez-politikasi" element={<LegalDocument kind="cookies" isRu={false} />} />
@@ -191,6 +194,7 @@ export default function AppRoutes() {
             <Route path="/ru/blog" element={<Blog />} />
             <Route path="/ru/blog/:slug" element={<BlogDetail />} />
             <Route path="/ru/kontakty" element={<Contact />} />
+            <Route path="/ru/keisy-i-klienty" element={<References />} />
             <Route path="/ru/politika-konfidentsialnosti" element={<LegalDocument kind="privacy" isRu={true} />} />
             <Route path="/ru/usloviya-ispolzovaniya" element={<LegalDocument kind="terms" isRu={true} />} />
             <Route path="/ru/politika-cookie" element={<LegalDocument kind="cookies" isRu={true} />} />

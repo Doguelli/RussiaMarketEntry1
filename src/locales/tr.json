@@ -8,7 +8,21 @@
     "for_whom": "Kimler İçin?",
     "blog": "Blog",
     "contact": "İletişim",
+    "references": "Referanslar",
     "apply": "Başvuru Yap"
+  },
+  "references": {
+    "page_title": "Referanslar",
+    "hero_heading": "Birlikte Çalıştığımız Markalar",
+    "intro": "Russia Market Entry olarak farklı sektörlerden markalarla Rusya pazarı, marketplace operasyonları, distribütörlük, dijital pazarlama ve B2B büyüme süreçlerinde birlikte çalışıyoruz.",
+    "meta_title": "Referanslar | Russia Market Entry",
+    "meta_description": "Russia Market Entry'nin birlikte çalıştığı markaları ve Rusya pazarı, marketplace operasyonları, distribütörlük ve B2B büyüme alanındaki çalışma kapsamlarını inceleyin.",
+    "home_title": "Birlikte Çalıştığımız Markalar",
+    "home_subtitle": "Rusya pazarı, marketplace operasyonları, distribütörlük, dijital pazarlama ve B2B büyüme süreçlerinde farklı sektörlerden markalarla birlikte çalışıyoruz.",
+    "home_cta": "Tüm referansları incele",
+    "tag_marketplace": "Marketplace",
+    "tag_distribution": "Distribütörlük",
+    "tag_b2b": "B2B"
   },
   "home": {
     "title1": "Rusya Pazarına Giriş ve",
