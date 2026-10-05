@@ -1,0 +1,394 @@
+{
+  "title": "Satış Fiyatını Bulduk. Peki Bu Ürün Rusya'da Gerçekten Kârlı mı?",
+  "excerpt": "Wildberries ve Ozon satışlarında ürün maliyeti, marketplace giderleri, lojistik, reklam ve diğer değişken maliyetleri hesaplayarak gerçek ürün kârlılığının nasıl ölçüldüğünü inceleyin.",
+  "category": "pazaryerleri",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Önceki yazımızda [EXW'den raf fiyatına](/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026) bir ürünün Rusya'daki satış fiyatının nasıl oluştuğunu inceledik ve EXW fiyatı 20 USD olan bir ürün için 49 USD'lik bir satış fiyatına ulaştık. Ancak satış fiyatını bulmak işin yalnızca ilk yarısıdır. Asıl soru şudur: Bu fiyatla satılan her üründen gerçekten para kalıyor mu?"
+    },
+    {
+      "type": "calloutBox",
+      "text": "Satış yapmak ile para kazanmak aynı şey değildir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Satış fiyatını bulmak neden yeterli değildir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Satış fiyatı müşterinin ödediği tutardır; kâr ise satışa bağlı tüm maliyetler düşüldükten sonra kalan tutardır. Wildberries ve Ozon'da bir satış gerçekleştiğinde gelirin önemli bir kısmı komisyon, lojistik, depolama ve reklam olarak marketplace ekosisteminde kalır. Raf fiyatı rekabetçi ve sağlıklı görünse bile ürün her satışta zarar ediyor olabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Unit economics nedir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Unit economics (birim ekonomisi), tek bir ürün satışının ne kadar gelir ve ne kadar maliyet yarattığını gösteren modeldir. Marketplace satışında birim genellikle SKU'dur: bir SKU satıldığında satış gelirinden o satışa bağlı tüm değişken maliyetler düşülür ve geriye kalan ekonomik katkı ölçülür."
+    },
+    {
+      "type": "bulletList",
+      "title": "Unit economics şu sorulara cevap verir:",
+      "items": [
+        "Her satıştan gerçekte ne kadar para kalıyor?",
+        "Marjı en çok hangi maliyet kalemi eritiyor?",
+        "Satış arttıkça kâr mı büyüyor, yoksa zarar mı?",
+        "Bu SKU'ya reklam ve stok yatırımı yapmak mantıklı mı?"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Örnek: EXW 20 USD, satış fiyatı 49 USD"
+    },
+    {
+      "type": "paragraph",
+      "text": "EXW yazısındaki ürünle devam edelim. Türkiye çıkış fiyatı 20 USD, Rusya'ya uluslararası taşıma maliyeti birim başına 3 USD ve marketplace'teki satış fiyatı 49 USD."
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "EXW ürün maliyeti",
+          "value": "20 USD"
+        },
+        {
+          "label": "Uluslararası lojistik",
+          "value": "3 USD"
+        },
+        {
+          "label": "Satış fiyatı",
+          "value": "49 USD"
+        },
+        {
+          "label": "Görünen fark (49 − 20)",
+          "value": "29 USD"
+        }
+      ]
+    },
+    {
+      "type": "calloutBox",
+      "title": "49 USD satış ile 20 USD ürün maliyeti arasındaki 29 USD fark kâr değildir.",
+      "text": "Bu fark; uluslararası lojistiği, marketplace maliyetlerini, Rusya içi lojistiği, reklamı, vergileri ve diğer giderleri karşılamak zorundadır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Marketplace maliyetleri"
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace maliyeti yalnızca komisyondan ibaret değildir. Satış modeline göre komisyon, ödeme işlem bedeli, depolama, kabul ve hizmet ücretleri, kampanya katılımı gibi kalemler birlikte toplam maliyeti oluşturur. Bu örnekte toplam marketplace maliyeti satış fiyatının %40–45'i aralığında modellenmiştir."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Önemli not",
+      "text": "Marketplace maliyetleri kategoriye, kampanyalara, satış modeline ve platform koşullarına göre değişir. Buradaki %40–45 oranı örnek unit economics modeli oluşturmak amacıyla kullanılmıştır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gerçek oranı görmek için kategori tarifeleri ve satış raporları üzerinden SKU bazında hesap yapılmalı, Wildberries ve Ozon ayrı ayrı modellenmelidir. Platform detayları için [Wildberries'de satış](/blog/wildberriesde-satis-yapmak) ve [Ozon'da satış](/blog/ozonda-satis-yapmak) rehberlerimize bakabilirsiniz."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Lojistik maliyetleri"
+    },
+    {
+      "type": "paragraph",
+      "text": "Modelde iki ayrı lojistik katmanı vardır: Türkiye'den Rusya'ya uluslararası taşıma (örnekte birim başına 3 USD) ve Rusya içinde merkezi depodan marketplace depolarına, oradan da müşteriye uzanan lojistik. Örnek modelde Rusya içi lojistik satış fiyatının %10'u, yani 4,90 USD olarak alınmıştır. Hacim, ağırlık, depo seçimi ve iade oranı bu kalemi doğrudan etkiler. Detaylar için [Rusya'da e-ticaret lojistiği 2026](/blog/rusyada-e-ticaret-lojistigi-2026) ve [Wildberries ve Ozon lojistik yönetimi](/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi) yazılarımızı inceleyebilirsiniz."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Reklam maliyetleri"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yeni bir marka için marketplace içi reklam çoğu zaman kaçınılmazdır: arama sonuçlarında görünürlük, ilk yorumlar ve satış hızı büyük ölçüde reklamla desteklenir. Örnek modelde reklam maliyeti satışların %5'i, yani 2,45 USD olarak alınmıştır. Lansman döneminde bu oran daha yüksek olabilir. Reklamın sıralamaya etkisi için [Wildberries algoritması nasıl çalışır?](/blog/wildberries-algoritmasi-nasil-calisir) yazımıza göz atabilirsiniz."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "İki senaryolu unit economics tablosu"
+    },
+    {
+      "type": "paragraph",
+      "text": "Aynı ürün, aynı satış fiyatı ve aynı lojistik varsayımları; iki senaryo arasındaki tek fark marketplace maliyet oranıdır."
+    },
+    {
+      "type": "bulletList",
+      "title": "Senaryo 1 — Marketplace maliyeti %40",
+      "items": [
+        "Satış fiyatı: 49,00 USD",
+        "EXW ürün maliyeti: −20,00 USD",
+        "Uluslararası lojistik: −3,00 USD",
+        "Marketplace maliyetleri (%40): −19,60 USD",
+        "Rusya içi lojistik (%10): −4,90 USD",
+        "Reklam (%5): −2,45 USD",
+        "Vergi öncesi sonuç: −0,95 USD"
+      ]
+    },
+    {
+      "type": "bulletList",
+      "title": "Senaryo 2 — Marketplace maliyeti %45",
+      "items": [
+        "Satış fiyatı: 49,00 USD",
+        "EXW ürün maliyeti: −20,00 USD",
+        "Uluslararası lojistik: −3,00 USD",
+        "Marketplace maliyetleri (%45): −22,05 USD",
+        "Rusya içi lojistik (%10): −4,90 USD",
+        "Reklam (%5): −2,45 USD",
+        "Vergi öncesi sonuç: −3,40 USD"
+      ]
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "Senaryo 1 toplam maliyet",
+          "value": "49,95 USD"
+        },
+        {
+          "label": "Senaryo 1 vergi öncesi sonuç",
+          "value": "−0,95 USD"
+        },
+        {
+          "label": "Senaryo 2 toplam maliyet",
+          "value": "52,40 USD"
+        },
+        {
+          "label": "Senaryo 2 vergi öncesi sonuç",
+          "value": "−3,40 USD"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Her iki senaryoda da ürün, vergiler ve diğer giderler hesaba katılmadan önce bile zarar ediyor. 49 USD'lik raf fiyatı ilk bakışta sağlıklı bir marj vaat etse de birim ekonomisi negatiftir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Henüz hesaba katılmayan maliyetler"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yukarıdaki tablo bilinçli olarak sadeleştirilmiştir. Gerçek bir modelde aşağıdaki kalemlerin de eklenmesi gerekir:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Vergiler — KDV ve şirket yapısına bağlı vergi etkisi; genel çerçeve için [Rusya'da KDV 2026](/blog/rusyada-kdv-2026)",
+        "Uygunluk belgeleri — EAC sertifikası veya deklarasyonu ve testler; bkz. [Rusya marketplace ürün belgeleri 2026](/blog/rusya-marketplace-urun-belgeleri-2026)",
+        "Çestniy Znak / Data Matrix etiketleme — zorunlu kategorilerde; bkz. [Çestniy Znak nedir?](/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur)",
+        "İadeler ve ters lojistik — özellikle moda ve tekstil kategorilerinde",
+        "Kampanya indirimleri — satıcı tarafından finanse edilen indirimler",
+        "Kur riski — USD/EUR ile alım ve RUB ile satış arasındaki zaman farkı"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu kalemler eklendiğinde negatif sonuç daha da derinleşir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Brüt marj neden yanıltıcı olabilir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Brüt marj çoğu zaman satış fiyatı ile ürün maliyeti arasındaki fark üzerinden hesaplanır: (49 − 20) / 49 ≈ %59. Bu oran kâğıt üzerinde oldukça iyi görünür. Ancak marketplace satışında maliyetlerin büyük kısmı ürün maliyetinin dışında, doğrudan satışa bağlı değişken kalemlerdedir. %59 brüt marj gösteren bir ürün, değişken maliyetler düşüldükten sonra her satışta zarar edebilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Contribution margin nedir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Contribution margin (katkı marjı), bir SKU'nun her satışta sabit giderleri karşılamaya ve kâra ne kadar katkı sağladığını gösterir. Marketplace'te bir ürünün gerçek performansını ölçmek için brüt marjdan çok daha doğru bir göstergedir."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Contribution margin formülü",
+      "text": "Satış Geliri − Marketplace Maliyetleri − Lojistik − Reklam − Ürün Maliyeti − Uluslararası Lojistik − Diğer Değişken Maliyetler = Contribution Margin"
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğimizde contribution margin, diğer değişken maliyetler eklenmeden önce bile negatiftir: Senaryo 1'de −0,95 USD, Senaryo 2'de −3,40 USD."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Ciro yerine SKU'nun ekonomik katkısına bakılmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Kârsız bir modeli ölçeklemenin tehlikesi"
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace'te ilk satışlar geldiğinde doğal refleks reklam bütçesini artırmak, stoku büyütmek ve daha fazla bölgeye açılmaktır. Birim ekonomisi negatifse bu adımların her biri zararı büyütür. Hacim artışı sabit giderleri daha fazla satışa yayar, ancak birim başına negatif katkıyı düzeltmez."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Kârsız bir modeli ölçeklemek, zararı ölçeklemek anlamına gelebilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1.000 adet satış örneği"
+    },
+    {
+      "type": "paragraph",
+      "text": "Senaryo 2'yi 1.000 adetlik satış hacmine taşıyalım:"
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "Satış adedi",
+          "value": "1.000"
+        },
+        {
+          "label": "Ciro",
+          "value": "49.000 USD"
+        },
+        {
+          "label": "Birim sonuç",
+          "value": "−3,40 USD"
+        },
+        {
+          "label": "Toplam sonuç (−3,40 × 1.000)",
+          "value": "−3.400 USD"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "49.000 USD'lik ciro dışarıdan başarılı bir lansman gibi görünür. Oysa vergi öncesi sonuç −3.400 USD'dir ve bu rakam vergi, belge, iade ve kur etkileri eklenmeden önceki tablodur."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Daha fazla satış her zaman daha fazla kâr anlamına gelmez."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bir SKU ne zaman ölçeklenebilir?"
+    },
+    {
+      "type": "bulletList",
+      "title": "Bir SKU'yu büyütmeden önce şu koşulların sağlanması gerekir:",
+      "items": [
+        "Tüm değişken maliyetler sonrası contribution margin pozitif",
+        "Reklam harcaması azaltıldığında da satış hızı korunabiliyor, organik satış payı artıyor",
+        "İade oranı kategori ortalaması seviyesinde veya altında",
+        "Kampanya indirimlerine rağmen marj pozitif kalıyor",
+        "Stok devir hızı depolama maliyetini kontrol altında tutuyor",
+        "Kur dalgalanmalarına karşı fiyatta güvenlik payı var"
+      ]
+    },
+    {
+      "type": "calloutBox",
+      "text": "Bir ürünün satılıyor olması, ölçeklenebilir olduğu anlamına gelmez."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "İlk 90 günde izlenmesi gereken KPI'lar"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "SKU bazında contribution margin (USD olarak ve satışa oranı)",
+        "Gerçekleşen marketplace maliyet oranı (komisyon, lojistik, depolama)",
+        "Reklam maliyetinin satışa oranı (DRR / ACoS)",
+        "Siparişten satın almaya dönüşüm ve iade oranı",
+        "Stok devir hızı ve depoda bekleme süresi",
+        "Organik ve reklamlı satışların dağılımı",
+        "Kampanyalar sonrası ortalama gerçekleşen satış fiyatı"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu metrikler haftalık takip edilmeli; fiyat, reklam ve stok kararları bu veriye göre güncellenmelidir. Stok tarafı için [Wildberries depo stratejisi](/blog/wildberries-depo-stratejisi-basarili-satis) yazımız yol gösterici olabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Kârsız bir SKU hemen kaldırılmalı mı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Her zaman değil. Negatif unit economics bir hüküm değil, bir teşhistir. SKU'yu portföyden çıkarmadan önce şu kaldıraçlar test edilmelidir:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Fiyat — rekabet izin veriyorsa satış fiyatını yeniden konumlandırmak",
+        "Satın alma maliyeti — üreticiyle hacim fiyatı, ödeme vadesi veya pazarlama desteği görüşmek",
+        "Lojistik — ambalaj boyutunu ve ağırlığı optimize etmek, depo ve teslimat modelini değiştirmek",
+        "Reklam — verimsiz kampanyaları kapatmak, hedeflemeyi daraltmak",
+        "Set ve paket satış — sepet değerini artırarak birim başına maliyeti dağıtmak",
+        "Platform — aynı SKU'nun Wildberries ve Ozon'da farklı sonuç verip vermediğini test etmek"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu kaldıraçlar denendikten sonra contribution margin hâlâ negatifse SKU'yu portföyden çıkarmak doğru karar olabilir. Burada lansman dönemine özgü geçici negatif marjı, yapısal negatif marjdan ayırmak önemlidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Kârlılık mı, ölçeklenebilirlik mi?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kârlılık, bugünkü satışın para kazandırıp kazandırmadığını gösterir. Ölçeklenebilirlik ise satış hacmi arttıkça bu kârın korunup korunmadığını, hatta büyüyüp büyümediğini gösterir. Düşük hacimde kârlı olan bir SKU, reklam bütçesi arttıkça marjını kaybedebilir. Tersine, lansman döneminde zarar eden bir SKU daha iyi satın alma koşulları ve lojistik verimliliğiyle pozitife dönebilir."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Marketplace'te asıl mesele, satış arttıkça kârı da büyüyen bir model kurmaktır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Neden SKU bazında hesaplanmalı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mağaza veya marka toplamına bakmak, kârlı ürünlerin kârsız ürünleri sübvanse ettiğini gizler. Aynı markanın iki ürünü bile farklı komisyon oranına, farklı hacim ve ağırlığa, farklı iade oranına ve farklı reklam ihtiyacına sahip olabilir. Bu nedenle unit economics her SKU için ayrı kurulmalı; kategori ve platform bazında ayrı izlenmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sonuç"
+    },
+    {
+      "type": "paragraph",
+      "text": "EXW fiyatı 20 USD olan bir ürünü 49 USD'ye satmak, ilk bakışta 29 USD'lik sağlıklı bir fark gibi görünür. Ancak marketplace maliyetleri, lojistik ve reklam eklendiğinde aynı ürün vergi öncesinde bile her satışta zarar edebilir. Doğru soru «Kaça satabiliriz?» değil, «Her satıştan ne kadar para kalıyor ve satış arttıkça bu tutar büyüyor mu?» olmalıdır."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Russia Market Entry",
+      "text": "Wildberries ve Ozon için SKU bazında unit economics modeli kuruyor; ürün maliyetini, marketplace giderlerini, lojistiği, reklamı ve vergiyi birlikte değerlendiriyoruz. [Pazaryeri yönetimi](/hizmetler/pazaryeri-yonetimi) ve [pazar araştırması ve strateji](/hizmetler/pazar-arastirmasi-ve-strateji) hizmetlerimizi inceleyebilirsiniz."
+    },
+    {
+      "type": "bulletList",
+      "title": "İlgili rehberler",
+      "items": [
+        "[EXW'den raf fiyatına: Rusya'da ürün fiyatı nasıl hesaplanır?](/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026)",
+        "[Wildberries'de satış yapmak](/blog/wildberriesde-satis-yapmak)",
+        "[Ozon'da satış yapmak](/blog/ozonda-satis-yapmak)",
+        "[Rusya'da e-ticaret lojistiği 2026](/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "[Rusya marketplace ürün belgeleri 2026](/blog/rusya-marketplace-urun-belgeleri-2026)",
+        "[Rusya'da KDV 2026](/blog/rusyada-kdv-2026)"
+      ]
+    }
+  ]
+}

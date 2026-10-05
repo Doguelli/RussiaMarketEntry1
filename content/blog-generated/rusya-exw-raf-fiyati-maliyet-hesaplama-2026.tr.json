@@ -249,6 +249,11 @@
     },
     {
       "type": "calloutBox",
+      "title": "Sonraki adım: Bu fiyatla ürün gerçekten kârlı mı?",
+      "text": "Satış fiyatını bulduktan sonra sıradaki soru, her satıştan ne kadar para kaldığıdır. Aynı 20 USD / 49 USD örneğini marketplace maliyetleri, lojistik ve reklamla hesapladığımız yazı: [Rusya marketplace unit economics: Bir ürün gerçekten kârlı mı?](/blog/rusya-marketplace-unit-economics-karlilik-2026)"
+    },
+    {
+      "type": "calloutBox",
       "title": "Russia Market Entry",
       "text": "EXW'den nihai satış fiyatına unit economics modelini oluşturuyor; ithalat, marketplace, lojistik, reklam ve hedef marjı birlikte değerlendiriyoruz. Bölge ve ürün seçimi için [pazar araştırması ve strateji](/hizmetler/pazar-arastirmasi-ve-strateji) hizmetimize bakabilirsiniz."
     },

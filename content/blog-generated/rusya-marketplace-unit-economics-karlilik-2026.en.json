@@ -1,0 +1,394 @@
+{
+  "title": "We Found the Selling Price. But Is This Product Really Profitable in Russia?",
+  "excerpt": "Learn how to calculate real product profitability in Russia by including marketplace fees, logistics, advertising, product cost and other variable expenses.",
+  "category": "pazaryerleri",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "In our previous guide, [From EXW to Shelf Price](/en/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026), we looked at how a product's selling price is built in Russia and arrived at a USD 49 shelf price for a product with a USD 20 EXW cost. But finding the price is only half the job. The real question is: does every unit sold at that price actually leave money on the table for you?"
+    },
+    {
+      "type": "calloutBox",
+      "text": "Making sales and making money are not the same thing."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why the selling price alone is not enough"
+    },
+    {
+      "type": "paragraph",
+      "text": "The selling price is what the customer pays; profit is what remains after every cost tied to that sale. When a sale happens on Wildberries or Ozon, a significant share of the revenue stays inside the marketplace ecosystem as commission, logistics, storage and advertising. A shelf price can look competitive and healthy while the product loses money on every order."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is unit economics?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Unit economics shows how much revenue and how much cost a single sale generates. On a marketplace, the unit is usually the SKU: when one SKU is sold, all variable costs linked to that sale are deducted from revenue, and the remaining economic contribution is measured."
+    },
+    {
+      "type": "bulletList",
+      "title": "Unit economics answers questions such as:",
+      "items": [
+        "How much money really remains from each sale?",
+        "Which cost line erodes the margin the most?",
+        "As sales grow, does profit grow — or does the loss?",
+        "Does it make sense to invest advertising budget and stock in this SKU?"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example: USD 20 EXW, USD 49 selling price"
+    },
+    {
+      "type": "paragraph",
+      "text": "Let's continue with the product from the EXW guide: an ex-works price of USD 20 in Türkiye, international freight to Russia of USD 3 per unit, and a marketplace selling price of USD 49."
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "EXW product cost",
+          "value": "USD 20"
+        },
+        {
+          "label": "International logistics",
+          "value": "USD 3"
+        },
+        {
+          "label": "Selling price",
+          "value": "USD 49"
+        },
+        {
+          "label": "Apparent gap (49 − 20)",
+          "value": "USD 29"
+        }
+      ]
+    },
+    {
+      "type": "calloutBox",
+      "title": "The USD 29 gap between a USD 49 price and a USD 20 product cost is not profit.",
+      "text": "That gap has to cover international logistics, marketplace costs, logistics inside Russia, advertising, taxes and other expenses."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Marketplace costs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace cost is more than the commission. Depending on the fulfilment model, it combines commission, payment processing, storage, acceptance and service fees, and campaign participation. In this example, total marketplace cost is modelled at 40–45% of the selling price."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Important note",
+      "text": "Marketplace costs vary by category, promotions, fulfilment model and platform terms. The 40–45% range used here is for building an illustrative unit economics model only."
+    },
+    {
+      "type": "paragraph",
+      "text": "To see the real rate, calculate it per SKU from category tariffs and sales reports, and model Wildberries and Ozon separately. For platform specifics, see our guides on [selling on Wildberries](/en/blog/wildberriesde-satis-yapmak) and [selling on Ozon](/en/blog/ozonda-satis-yapmak)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Logistics costs"
+    },
+    {
+      "type": "paragraph",
+      "text": "The model has two logistics layers: international freight from Türkiye to Russia (USD 3 per unit in the example) and domestic logistics from a central warehouse to marketplace warehouses and on to the customer. In the example, logistics inside Russia is set at 10% of the selling price, or USD 4.90. Volume, weight, warehouse choice and return rate all directly affect this line. For more detail, read [E-commerce logistics in Russia 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026) and [Wildberries and Ozon logistics management](/en/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Advertising costs"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a new brand, in-platform advertising is usually unavoidable: search visibility, first reviews and sales velocity all depend heavily on it. In the example, advertising is set at 5% of sales, or USD 2.45. During launch, this ratio can be higher. To understand how advertising interacts with ranking, see [How the Wildberries algorithm works](/en/blog/wildberries-algoritmasi-nasil-calisir)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Two-scenario unit economics table"
+    },
+    {
+      "type": "paragraph",
+      "text": "Same product, same selling price, same logistics assumptions — the only difference between the two scenarios is the marketplace cost rate."
+    },
+    {
+      "type": "bulletList",
+      "title": "Scenario 1 — Marketplace cost 40%",
+      "items": [
+        "Selling price: USD 49.00",
+        "EXW product cost: −USD 20.00",
+        "International logistics: −USD 3.00",
+        "Marketplace costs (40%): −USD 19.60",
+        "Logistics in Russia (10%): −USD 4.90",
+        "Advertising (5%): −USD 2.45",
+        "Result before tax: −USD 0.95"
+      ]
+    },
+    {
+      "type": "bulletList",
+      "title": "Scenario 2 — Marketplace cost 45%",
+      "items": [
+        "Selling price: USD 49.00",
+        "EXW product cost: −USD 20.00",
+        "International logistics: −USD 3.00",
+        "Marketplace costs (45%): −USD 22.05",
+        "Logistics in Russia (10%): −USD 4.90",
+        "Advertising (5%): −USD 2.45",
+        "Result before tax: −USD 3.40"
+      ]
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "Scenario 1 total cost",
+          "value": "USD 49.95"
+        },
+        {
+          "label": "Scenario 1 result before tax",
+          "value": "−USD 0.95"
+        },
+        {
+          "label": "Scenario 2 total cost",
+          "value": "USD 52.40"
+        },
+        {
+          "label": "Scenario 2 result before tax",
+          "value": "−USD 3.40"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In both scenarios the product loses money even before taxes and other expenses are counted. A USD 49 shelf price may promise a healthy margin at first glance, but the unit economics are negative."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Costs not yet included"
+    },
+    {
+      "type": "paragraph",
+      "text": "The table above is deliberately simplified. A real model also needs to include:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Taxes — VAT and the tax impact of your company structure; see [VAT in Russia 2026](/en/blog/rusyada-kdv-2026) for the general framework",
+        "Conformity documents — EAC certificate or declaration and testing; see [Russia marketplace product documents 2026](/en/blog/rusya-marketplace-urun-belgeleri-2026)",
+        "Chestny ZNAK / Data Matrix labelling — in mandatory categories; see [What is Chestny ZNAK?](/en/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur)",
+        "Returns and reverse logistics — especially in fashion and textiles",
+        "Promotional discounts — discounts funded by the seller",
+        "Currency risk — the time gap between buying in USD/EUR and selling in RUB"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Once these are added, the negative result only gets deeper."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why gross margin can be misleading"
+    },
+    {
+      "type": "paragraph",
+      "text": "Gross margin is often calculated as the gap between selling price and product cost: (49 − 20) / 49 ≈ 59%. On paper, that looks excellent. But in marketplace selling, most costs sit outside the product cost, in variable lines tied directly to each sale. A product showing a 59% gross margin can still lose money on every order once variable costs are deducted."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is contribution margin?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Contribution margin shows how much each sale of a SKU contributes towards fixed costs and profit. On a marketplace, it is a far more accurate measure of a product's real performance than gross margin."
+    },
+    {
+      "type": "calloutBox",
+      "title": "Contribution margin formula",
+      "text": "Sales Revenue − Marketplace Costs − Logistics − Advertising − Product Cost − International Logistics − Other Variable Costs = Contribution Margin"
+    },
+    {
+      "type": "paragraph",
+      "text": "In our example, contribution margin is negative even before other variable costs are added: −USD 0.95 in Scenario 1 and −USD 3.40 in Scenario 2."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Look at each SKU's economic contribution, not at revenue."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The danger of scaling an unprofitable model"
+    },
+    {
+      "type": "paragraph",
+      "text": "When the first marketplace sales arrive, the natural reflex is to raise the ad budget, increase stock and expand to more regions. If unit economics are negative, each of those steps makes the loss bigger. Higher volume spreads fixed costs across more units, but it does not fix a negative contribution per unit."
+    },
+    {
+      "type": "calloutBox",
+      "text": "Scaling an unprofitable model can simply mean scaling the loss."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example: 1,000 units sold"
+    },
+    {
+      "type": "paragraph",
+      "text": "Let's take Scenario 2 to a volume of 1,000 units:"
+    },
+    {
+      "type": "statGrid",
+      "items": [
+        {
+          "label": "Units sold",
+          "value": "1,000"
+        },
+        {
+          "label": "Revenue",
+          "value": "USD 49,000"
+        },
+        {
+          "label": "Result per unit",
+          "value": "−USD 3.40"
+        },
+        {
+          "label": "Total result (−3.40 × 1,000)",
+          "value": "−USD 3,400"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "USD 49,000 in revenue looks like a successful launch from the outside. Yet the result before tax is −USD 3,400 — and that is before taxes, documentation, returns and currency effects are added."
+    },
+    {
+      "type": "calloutBox",
+      "text": "More sales do not always mean more profit."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "When is a SKU ready to scale?"
+    },
+    {
+      "type": "bulletList",
+      "title": "Before growing a SKU, these conditions should be met:",
+      "items": [
+        "Contribution margin is positive after all variable costs",
+        "Sales velocity holds when ad spend is reduced, and the organic share of sales grows",
+        "Return rate is at or below the category average",
+        "Margin stays positive even with promotional discounts",
+        "Stock turnover keeps storage costs under control",
+        "Pricing includes a buffer against currency swings"
+      ]
+    },
+    {
+      "type": "calloutBox",
+      "text": "A product that sells is not necessarily a product that scales."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "KPIs to track in the first 90 days"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Contribution margin per SKU (in USD and as a share of sales)",
+        "Actual marketplace cost rate (commission, logistics, storage)",
+        "Advertising cost as a share of sales (DRR / ACoS)",
+        "Order-to-purchase conversion and return rate",
+        "Stock turnover and days in warehouse",
+        "Split between organic and paid sales",
+        "Average realised selling price after promotions"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Track these metrics weekly and update pricing, advertising and stock decisions based on the data. On the inventory side, our [Wildberries warehouse strategy](/en/blog/wildberries-depo-stratejisi-basarili-satis) guide can help."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Should an unprofitable SKU be dropped right away?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not always. Negative unit economics is a diagnosis, not a verdict. Before removing a SKU from the range, test these levers:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Price — reposition the selling price if the competitive landscape allows",
+        "Purchase cost — negotiate volume pricing, payment terms or marketing support with the manufacturer",
+        "Logistics — optimise packaging size and weight, change the warehouse or delivery model",
+        "Advertising — switch off inefficient campaigns and tighten targeting",
+        "Bundles and sets — raise basket value to spread per-unit costs",
+        "Platform — test whether the same SKU performs differently on Wildberries and Ozon"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If contribution margin is still negative after these levers have been tried, dropping the SKU may be the right call. The key is to separate a temporary negative margin during launch from a structural one."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Profitability or scalability?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Profitability tells you whether today's sales make money. Scalability tells you whether that profit holds — or even grows — as volume increases. A SKU that is profitable at low volume can lose its margin as the ad budget rises. Conversely, a SKU that loses money during launch can turn positive with better purchasing terms and more efficient logistics."
+    },
+    {
+      "type": "calloutBox",
+      "text": "On a marketplace, the real goal is to build a model where profit grows as sales grow."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why calculate at SKU level?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Looking only at store or brand totals hides the fact that profitable products are subsidising unprofitable ones. Even two products from the same brand can have different commission rates, sizes and weights, return rates and advertising needs. That is why unit economics should be built for each SKU separately and tracked by category and platform."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Selling a USD 20 EXW product for USD 49 looks like a healthy USD 29 gap at first glance. But once marketplace costs, logistics and advertising are added, the same product can lose money on every sale — even before tax. The right question is not «What price can we sell at?» but «How much money remains from each sale, and does that amount grow as sales grow?»"
+    },
+    {
+      "type": "calloutBox",
+      "title": "Russia Market Entry",
+      "text": "We build SKU-level unit economics models for Wildberries and Ozon, assessing product cost, marketplace fees, logistics, advertising and tax together. Explore our [marketplace management](/hizmetler/pazaryeri-yonetimi) and [market research & entry strategy](/hizmetler/pazar-arastirmasi-ve-strateji) services."
+    },
+    {
+      "type": "bulletList",
+      "title": "Related guides",
+      "items": [
+        "[From EXW to shelf price: Russia marketplace pricing guide](/en/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026)",
+        "[Selling on Wildberries](/en/blog/wildberriesde-satis-yapmak)",
+        "[Selling on Ozon](/en/blog/ozonda-satis-yapmak)",
+        "[E-commerce logistics in Russia 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "[Russia marketplace product documents 2026](/en/blog/rusya-marketplace-urun-belgeleri-2026)",
+        "[VAT in Russia 2026](/en/blog/rusyada-kdv-2026)"
+      ]
+    }
+  ]
+}

@@ -113,6 +113,9 @@ tr:
     
     Gerçek fiyat EXW → ihracat → ithalat → depo → marketplace → reklam → müşteri → iade → vergi zincirinde oluşur. 20 USD maliyetli ürünün 49 USD'ye satılması tek başına kârlılık anlamına gelmez; asıl soru «Rusya'da hangi fiyatla sürdürülebilir büyüyebiliriz?» olmalıdır.
     
+    Sonraki adım: Bu fiyatla ürün gerçekten kârlı mı?
+    Satış fiyatını bulduktan sonra sıradaki soru, her satıştan ne kadar para kaldığıdır. Aynı 20 USD / 49 USD örneğini marketplace maliyetleri, lojistik ve reklamla hesapladığımız yazı: [Rusya marketplace unit economics: Bir ürün gerçekten kârlı mı?](/blog/rusya-marketplace-unit-economics-karlilik-2026)
+    
     Russia Market Entry
     EXW'den nihai satış fiyatına unit economics modelini oluşturuyor; ithalat, marketplace, lojistik, reklam ve hedef marjı birlikte değerlendiriyoruz. Bölge ve ürün seçimi için [pazar araştırması ve strateji](/hizmetler/pazar-arastirmasi-ve-strateji) hizmetimize bakabilirsiniz.
     
@@ -190,8 +193,11 @@ en:
     
     The shelf price is built across the operating chain, not at the factory. Russia Market Entry models unit economics from EXW to final price. The key question: «At what price can we grow sustainably in Russia?»
     
+    Next step: is the product really profitable at this price?
+    Once you have a selling price, the next question is how much money remains from each sale. We run the same USD 20 / USD 49 example through marketplace costs, logistics and advertising in [Russia marketplace unit economics: is your product really profitable?](/en/blog/rusya-marketplace-unit-economics-karlilik-2026)
+    
     Russia Market Entry
-    We analyse import, marketplace, logistics, advertising and target margin together. [Market research & entry strategy](/en/hizmetler/pazar-arastirmasi-ve-strateji).
+    We analyse import, marketplace, logistics, advertising and target margin together. [Market research & entry strategy](/hizmetler/pazar-arastirmasi-ve-strateji).
     
     Related guides
     
@@ -255,6 +261,9 @@ ru:
     Вывод
     
     Цена на полке формируется в операционной модели, а не на заводе. Главный вопрос: «По какой цене мы можем устойчиво расти в России?»
+    
+    Следующий шаг: действительно ли товар прибыльный по этой цене?
+    Когда цена продажи найдена, следующий вопрос — сколько денег остается с каждой продажи. Тот же пример 20 USD / 49 USD с учетом расходов маркетплейса, логистики и рекламы мы разобрали в статье [Unit-экономика маркетплейсов в России: действительно ли товар прибыльный?](/ru/blog/rusya-marketplace-unit-economics-karlilik-2026)
     
     Russia Market Entry
     Полная юнит-экономика от EXW до финальной цены. [Исследование рынка и стратегия](/ru/uslugi/issledovanie-rynka).
