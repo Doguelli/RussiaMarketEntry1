@@ -48,26 +48,26 @@ export default function Navbar() {
   const isEn = i18n.language === "en";
 
   const referencesNavPath = referencesPath(isRu, isEn);
+  // Short top-nav labels only (footer/page copy keeps longer nav.op_model strings).
+  const operationsNavLabel = isRu ? "Операции" : isEn ? "Operations" : "Operasyon";
 
   const navLinks = isRu
     ? [
         { name: t('nav.home', 'Главная'), path: "/ru" },
         { name: t('nav.company_turkey', 'Регистрация компании в Турции'), path: "/ru/kompaniya-v-turtsii" },
         { name: t('nav.services', 'Услуги'), path: "/ru/uslugi" },
-        { name: t('nav.references', 'Кейсы и клиенты'), path: referencesNavPath },
         { name: t('nav.russia_market', 'Рынок и ВЭД'), path: "/ru/rynok-rossii" },
-        { name: t('nav.op_model', 'Модель работы'), path: "/ru/model-raboty" },
-        { name: t('nav.blog', 'Блог'), path: "/ru/blog" },
+        { name: operationsNavLabel, path: "/ru/model-raboty" },
+        { name: t('nav.references', 'Кейсы и клиенты'), path: referencesNavPath },
         { name: t('nav.contact', 'Контакты'), path: "/ru/kontakty" },
       ]
     : [
         { name: t('nav.home', 'Ana Sayfa'), path: "/" },
         { name: t('nav.about', 'Hakkımızda'), path: "/hakkimizda" },
-        { name: t('nav.references', 'Referanslar'), path: referencesNavPath },
         { name: t('nav.russia_market', 'Rusya Pazarı'), path: "/rusya-pazari" },
         { name: t('nav.services', 'Hizmetler'), path: "/hizmetler" },
-        { name: t('nav.op_model', 'Operasyon Modeli'), path: "/operasyon-modeli" },
-        { name: t('nav.blog', 'Blog'), path: isEn ? "/en/blog" : "/blog" },
+        { name: operationsNavLabel, path: "/operasyon-modeli" },
+        { name: t('nav.references', 'Referanslar'), path: referencesNavPath },
         { name: t('nav.contact', 'İletişim'), path: "/iletisim" },
       ];
 
