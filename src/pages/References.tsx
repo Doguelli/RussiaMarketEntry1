@@ -60,7 +60,7 @@ export default function References() {
         </div>
       </section>
 
-      <section className="py-10 md:py-14 bg-slate-50/50">
+      <section className="py-10 md:py-12 bg-slate-50/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ReferencesLogoGrid variant="page" />
         </div>

@@ -1,5 +1,13 @@
 export type ReferenceTag = "marketplace" | "distribution" | "b2b";
 
+/** Per-logo visual normalization inside a fixed logo slot. */
+export interface ReferenceLogoFit {
+  /** Relative scale vs default slot height (1 = default). */
+  scale: number;
+  /** Max logo width as % of the slot (keeps wide wordmarks from edge-to-edge). */
+  maxWidthPct: number;
+}
+
 export interface ReferenceBrand {
   id: string;
   name: string;
@@ -9,6 +17,7 @@ export interface ReferenceBrand {
   scopeEN: string;
   scopeRU: string;
   tag: ReferenceTag;
+  logoFit: ReferenceLogoFit;
 }
 
 export const REFERENCE_BRANDS: ReferenceBrand[] = [
@@ -21,6 +30,8 @@ export const REFERENCE_BRANDS: ReferenceBrand[] = [
     scopeEN: "Russia distribution and market-entry projects",
     scopeRU: "Проекты по дистрибуции и выходу на рынок России",
     tag: "distribution",
+    // Stacked wordmark; slightly light visually → nudge up
+    logoFit: { scale: 1.16, maxWidthPct: 70 },
   },
   {
     id: "tekno-roll",
@@ -31,6 +42,8 @@ export const REFERENCE_BRANDS: ReferenceBrand[] = [
     scopeEN: "Russia-based marketplace operations for relevant product groups",
     scopeRU: "Marketplace-операции в России для соответствующих товарных групп",
     tag: "marketplace",
+    // Square icon reads small against wide wordmarks
+    logoFit: { scale: 1.32, maxWidthPct: 50 },
   },
   {
     id: "i8-denim",
@@ -41,6 +54,8 @@ export const REFERENCE_BRANDS: ReferenceBrand[] = [
     scopeEN: "Russia marketplace operations, product and stock management",
     scopeRU: "Операции на российских маркетплейсах, управление товарами и запасами",
     tag: "marketplace",
+    // Near-square asset; boost presence without dominating
+    logoFit: { scale: 1.22, maxWidthPct: 54 },
   },
   {
     id: "machinist",
@@ -51,6 +66,8 @@ export const REFERENCE_BRANDS: ReferenceBrand[] = [
     scopeEN: "Russia marketplace operations, product and stock management",
     scopeRU: "Операции на российских маркетплейсах, управление товарами и запасами",
     tag: "marketplace",
+    // Very wide + low native res: controlled upscale for presence without dominance
+    logoFit: { scale: 0.62, maxWidthPct: 82 },
   },
   {
     id: "denim-trip",
@@ -61,6 +78,8 @@ export const REFERENCE_BRANDS: ReferenceBrand[] = [
     scopeEN: "Russia market and marketplace projects",
     scopeRU: "Проекты по российскому рынку и маркетплейсам",
     tag: "marketplace",
+    // Heavy block wordmark; slight pullback (also low native res)
+    logoFit: { scale: 0.9, maxWidthPct: 76 },
   },
   {
     id: "respire",
@@ -71,6 +90,7 @@ export const REFERENCE_BRANDS: ReferenceBrand[] = [
     scopeEN: "Russia marketplace operations, product and stock management",
     scopeRU: "Операции на российских маркетплейсах, управление товарами и запасами",
     tag: "marketplace",
+    logoFit: { scale: 0.92, maxWidthPct: 74 },
   },
   {
     id: "wooster",
@@ -81,6 +101,8 @@ export const REFERENCE_BRANDS: ReferenceBrand[] = [
     scopeEN: "Russia marketplace operations",
     scopeRU: "Операции на российских маркетплейсах",
     tag: "marketplace",
+    // Wide bold wordmark dominates the row
+    logoFit: { scale: 0.72, maxWidthPct: 80 },
   },
   {
     id: "envira",
@@ -91,6 +113,7 @@ export const REFERENCE_BRANDS: ReferenceBrand[] = [
     scopeEN: "Marketplace operations",
     scopeRU: "Операции на маркетплейсах",
     tag: "marketplace",
+    logoFit: { scale: 1.0, maxWidthPct: 68 },
   },
   {
     id: "su-body-care",
@@ -101,6 +124,8 @@ export const REFERENCE_BRANDS: ReferenceBrand[] = [
     scopeEN: "Marketplace operations",
     scopeRU: "Операции на маркетплейсах",
     tag: "marketplace",
+    // Thin line mark reads light → boost
+    logoFit: { scale: 1.28, maxWidthPct: 66 },
   },
 ];
 
