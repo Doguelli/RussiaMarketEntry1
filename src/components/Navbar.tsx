@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
 import { setManualLanguageChoice, SupportedLanguage } from "@/utils/geoLanguageDetector";
-import { pathForLanguage, contactPath, homePath } from "@/utils/ruPaths";
+import { pathForLanguage, contactPath, homePath, referencesPath } from "@/utils/ruPaths";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,11 +47,14 @@ export default function Navbar() {
   const isRu = i18n.language === "ru";
   const isEn = i18n.language === "en";
 
+  const referencesNavPath = referencesPath(isRu, isEn);
+
   const navLinks = isRu
     ? [
         { name: t('nav.home', 'Главная'), path: "/ru" },
         { name: t('nav.company_turkey', 'Регистрация компании в Турции'), path: "/ru/kompaniya-v-turtsii" },
         { name: t('nav.services', 'Услуги'), path: "/ru/uslugi" },
+        { name: t('nav.references', 'Кейсы и клиенты'), path: referencesNavPath },
         { name: t('nav.russia_market', 'Рынок и ВЭД'), path: "/ru/rynok-rossii" },
         { name: t('nav.op_model', 'Модель работы'), path: "/ru/model-raboty" },
         { name: t('nav.blog', 'Блог'), path: "/ru/blog" },
@@ -60,6 +63,7 @@ export default function Navbar() {
     : [
         { name: t('nav.home', 'Ana Sayfa'), path: "/" },
         { name: t('nav.about', 'Hakkımızda'), path: "/hakkimizda" },
+        { name: t('nav.references', 'Referanslar'), path: referencesNavPath },
         { name: t('nav.russia_market', 'Rusya Pazarı'), path: "/rusya-pazari" },
         { name: t('nav.services', 'Hizmetler'), path: "/hizmetler" },
         { name: t('nav.op_model', 'Operasyon Modeli'), path: "/operasyon-modeli" },
