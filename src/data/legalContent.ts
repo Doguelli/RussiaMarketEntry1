@@ -141,7 +141,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "8. Saklama",
         paragraphs: [
           "Kişisel veriler, toplama amacının gerektirdiği süre boyunca ve varsa yasal saklama yükümlülüklerine uygun olarak tutulur.",
-          "Form gönderileri FormSubmit üzerinden e-posta olarak iletilir; analitik veriler Google Analytics hesabında; dil/ülke tercihleri tarayıcınızın localStorage veya sessionStorage alanlarında saklanabilir. Kesin saklama süreleri ilgili hizmetin ayarlarına ve bizim operasyonel uygulamamıza bağlıdır.",
+          "Form gönderileri FormSubmit üzerinden e-posta olarak iletilir; analitik veriler Google Analytics ve Yandex Metrika hesaplarında; dil/ülke tercihleri tarayıcınızın localStorage veya sessionStorage alanlarında saklanabilir. Kesin saklama süreleri ilgili hizmetin ayarlarına ve bizim operasyonel uygulamamıza bağlıdır.",
         ],
       },
       {
@@ -233,7 +233,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "8. Retention",
         paragraphs: [
           "Personal data is kept for as long as required by the purpose of collection and in line with any legal retention obligations.",
-          "Form submissions are delivered by email via FormSubmit; analytics data is kept in the Google Analytics account; language/country preferences may be stored in your browser’s localStorage or sessionStorage. Exact retention periods depend on the settings of the respective service and our operational practice.",
+          "Form submissions are delivered by email via FormSubmit; analytics data is kept in the Google Analytics and Yandex Metrica accounts; language/country preferences may be stored in your browser’s localStorage or sessionStorage. Exact retention periods depend on the settings of the respective service and our operational practice.",
         ],
       },
       {
@@ -325,7 +325,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "8. Сроки хранения",
         paragraphs: [
           "Персональные данные хранятся в течение срока, необходимого для целей обработки, и с учётом возможных требований законодательства о хранении.",
-          "Заявки форм доставляются по электронной почте через FormSubmit; аналитические данные — в аккаунте Google Analytics; языковые/страновые предпочтения — в localStorage или sessionStorage браузера. Конкретные сроки зависят от настроек сервисов и нашей операционной практики.",
+          "Заявки форм доставляются по электронной почте через FormSubmit; аналитические данные — в аккаунтах Google Analytics и Яндекс Метрики; языковые/страновые предпочтения — в localStorage или sessionStorage браузера. Конкретные сроки зависят от настроек сервисов и нашей операционной практики.",
         ],
       },
       {
@@ -370,9 +370,9 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
     updatedLabelTr: "Son güncelleme",
     updatedLabelEn: "Last updated",
     updatedLabelRu: "Дата последнего обновления",
-    updatedDateTr: "24 Ağustos 2026",
-    updatedDateEn: "August 24, 2026",
-    updatedDateRu: "24 августа 2026 г.",
+    updatedDateTr: "6 Ekim 2026",
+    updatedDateEn: "October 6, 2026",
+    updatedDateRu: "6 октября 2026 г.",
     sectionsTr: [
       {
         heading: "1. Site işletmecisi",
@@ -392,7 +392,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "3. Bilgilendirme niteliği",
         paragraphs: [
           "Sitedeki makaleler, hizmet açıklamaları, rakamlar ve süreç anlatımları genel bilgilendirme amaçlıdır.",
-          "Bu içerikler, otomatik olarak hukuki, vergi, gümrük, muhasebe veya yatırım tavsiyesi oluşturmaz. Somut durumunuz için ayrı bir sözleşme veya profesyonel danışmanlık gerekebilir. Mevzuat ve uygulamalar değişebilir; yayınlanan bilgilerin her an güncel ve eksiksiz olduğu garanti edilmez.",
+          "Bu içerikler hukuki, vergi, gümrük, muhasebe veya yatırım tavsiyesi niteliği taşımaz ve böyle bir tavsiyenin yerine geçmez. Somut durumunuz için ayrı bir sözleşme veya profesyonel danışmanlık gerekebilir. Mevzuat ve uygulamalar değişebilir; yayınlanan bilgilerin her an güncel ve eksiksiz olduğu garanti edilmez.",
         ],
       },
       {
@@ -434,8 +434,8 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "9. Sorumluluğun sınırlandırılması",
         paragraphs: [
-          "Yürürlükteki hukukun izin verdiği ölçüde; sitenin kullanımından, içeriğe güvenilmesinden veya erişimin kesilmesinden kaynaklanan dolaylı, arızi veya sonuç olarak ortaya çıkan zararlardan sorumlu tutulmamaya çalışılır.",
-          "Bu sınırlama, uygulanabilir hukukun zorunlu kıldığı sorumlulukları ortadan kaldırmaz ve yanıltıcı bir bağışıklık iddiası değildir.",
+          "Yürürlükteki hukukun izin verdiği azami ölçüde site işletmecisi; sitenin kullanımından, içeriğe güvenilmesinden veya erişimin kesilmesinden kaynaklanan dolaylı, arızi veya sonuç olarak ortaya çıkan zararlardan sorumlu değildir.",
+          "Bu sınırlama; kasıt veya ağır ihmal hâllerinde, kişilerin hayatına veya sağlığına verilen zararlarda ve uygulanabilir hukukun sorumluluğun sınırlandırılmasını yasakladığı diğer durumlarda uygulanmaz.",
         ],
       },
       {
@@ -447,7 +447,9 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "11. Uygulanacak hukuk",
         paragraphs: [
-          "Uygulanacak hukuk ve yetkili yargı mercileri; somut hukuki ilişkiye, tarafların konumuna ve varsa aranızdaki ayrı sözleşmeye göre belirlenir. Bu metinde tek bir ülke hukuku veya mahkeme seçimi dayatılmaz.",
+          "Bu kullanım şartları ve sitenin kullanımından doğan uyuşmazlıklar Rusya Federasyonu hukukuna tabidir. Uyuşmazlıklarda site işletmecisinin kayıtlı adresinin bulunduğu yerdeki yetkili mahkemeler yetkilidir.",
+          "Siteyi tüketici sıfatıyla kullanan ziyaretçilerin, yerleşim yerlerindeki emredici tüketici mevzuatından doğan hakları ve kendi ülkelerindeki mahkemelere başvurma hakları saklıdır.",
+          "Site işletmecisi ile aranızda ayrı bir hizmet sözleşmesi bulunuyorsa, o sözleşmedeki uygulanacak hukuk ve yetki hükümleri önceliklidir.",
         ],
       },
       {
@@ -476,7 +478,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "3. Informational nature",
         paragraphs: [
           "The articles, service descriptions, figures and process descriptions on the site are for general information purposes.",
-          "This content does not in itself constitute legal, tax, customs, accounting or investment advice. Your specific situation may require a separate contract or professional advice. Legislation and practice may change; the published information is not guaranteed to be up to date and complete at all times.",
+          "This content does not constitute, and is not a substitute for, legal, tax, customs, accounting or investment advice. Your specific situation may require a separate contract or professional advice. Legislation and practice may change; the published information is not guaranteed to be up to date and complete at all times.",
         ],
       },
       {
@@ -518,8 +520,8 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "9. Limitation of liability",
         paragraphs: [
-          "To the extent permitted by applicable law, we seek not to be held liable for indirect, incidental or consequential damages arising from the use of the site, reliance on its content or interruption of access.",
-          "This limitation does not remove liabilities mandated by applicable law and is not a misleading claim of immunity.",
+          "To the maximum extent permitted by applicable law, the site operator is not liable for indirect, incidental or consequential damages arising from the use of the site, reliance on its content or interruption of access.",
+          "This limitation does not apply in cases of intent or gross negligence, to harm to life or health, or in any other case where applicable law prohibits limiting liability.",
         ],
       },
       {
@@ -531,7 +533,9 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "11. Governing law",
         paragraphs: [
-          "The governing law and competent courts are determined by the specific legal relationship, the position of the parties and any separate agreement between you and us. This text does not impose the law of a single country or a choice of court.",
+          "These terms of use and any disputes arising from the use of the site are governed by the law of the Russian Federation. The competent courts at the location of the site operator's registered address have jurisdiction over disputes.",
+          "Visitors using the site as consumers retain the rights granted to them by the mandatory consumer protection laws of their place of residence, including the right to bring proceedings before the courts of their own country.",
+          "If you and the site operator have concluded a separate service agreement, the governing law and jurisdiction clauses of that agreement take precedence.",
         ],
       },
       {
@@ -560,7 +564,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "3. Информационный характер материалов",
         paragraphs: [
           "Статьи, описания услуг, цифры и описания процессов носят общий информационный характер.",
-          "Они сами по себе не являются юридической, налоговой, таможенной, бухгалтерской или инвестиционной консультацией. Для вашей конкретной ситуации может потребоваться отдельный договор или профессиональная консультация. Законодательство и практика меняются; актуальность и полнота опубликованных сведений не гарантируются на каждый момент времени.",
+          "Они не являются юридической, налоговой, таможенной, бухгалтерской или инвестиционной консультацией и не заменяют её. Для вашей конкретной ситуации может потребоваться отдельный договор или профессиональная консультация. Законодательство и практика меняются; актуальность и полнота опубликованных сведений не гарантируются на каждый момент времени.",
         ],
       },
       {
@@ -602,8 +606,8 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "9. Ограничение ответственности",
         paragraphs: [
-          "В пределах, допускаемых применимым правом, мы стремимся не нести ответственность за косвенные, случайные или последующие убытки, связанные с использованием сайта, доверием к его содержанию или недоступностью сайта.",
-          "Это ограничение не отменяет обязательную ответственность, установленную законом, и не является вводящим в заблуждение заявлением о полном освобождении от ответственности.",
+          "В максимальной степени, допускаемой применимым правом, оператор сайта не несёт ответственности за косвенные, случайные или последующие убытки, связанные с использованием сайта, доверием к его содержанию или недоступностью сайта.",
+          "Это ограничение не применяется в случаях умысла или грубой неосторожности, при причинении вреда жизни или здоровью, а также в иных случаях, когда применимое право запрещает ограничение ответственности.",
         ],
       },
       {
@@ -615,7 +619,9 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "11. Применимое право",
         paragraphs: [
-          "Применимое право и подсудность определяются исходя из конкретного правоотношения, положения сторон и любого отдельного соглашения между вами и нами. Настоящий текст не устанавливает заранее одно конкретное национальное право или суд.",
+          "Настоящие условия использования и споры, возникающие в связи с использованием сайта, регулируются правом Российской Федерации. Споры рассматриваются компетентным судом по месту нахождения оператора сайта.",
+          "Посетители, использующие сайт в качестве потребителей, сохраняют права, предоставленные им императивными нормами законодательства о защите прав потребителей по месту их жительства, включая право обратиться в суд своей страны.",
+          "Если между вами и оператором сайта заключён отдельный договор об оказании услуг, приоритет имеют положения этого договора о применимом праве и подсудности.",
         ],
       },
       {
@@ -647,9 +653,9 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
     updatedLabelTr: "Son güncelleme",
     updatedLabelEn: "Last updated",
     updatedLabelRu: "Дата последнего обновления",
-    updatedDateTr: "24 Ağustos 2026",
-    updatedDateEn: "August 24, 2026",
-    updatedDateRu: "24 августа 2026 г.",
+    updatedDateTr: "6 Ekim 2026",
+    updatedDateEn: "October 6, 2026",
+    updatedDateRu: "6 октября 2026 г.",
     sectionsTr: [
       {
         heading: "1. İşletmeci",
@@ -678,7 +684,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         ],
       },
       {
-        heading: "5. Analitik — Google Analytics",
+        heading: "5. Analitik — Google Analytics ve Yandex Metrika",
         paragraphs: [
           "Google Analytics 4 kullanılır (ölçüm kimliği G-ZPTMJFB9WS). gtag komut dosyası sayfa yüklendiğinde eklenir; sayfa değişikliklerinde görüntüleme olayları gönderilir. Google Consent Mode sayesinde onay verilmeden çerez ayarlanmaz, yalnızca çerezsiz ölçüm sinyalleri gönderilir.",
           "Onay verdiğinizde Google, _ga ve _ga_* gibi çerezler ayarlayabilir. Bunlar kullanım istatistikleri ve ölçüm amaçlıdır. Süreler Google’ın uygulamalarına bağlıdır.",
@@ -753,7 +759,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         ],
       },
       {
-        heading: "5. Analytics — Google Analytics",
+        heading: "5. Analytics — Google Analytics and Yandex Metrica",
         paragraphs: [
           "Google Analytics 4 is used (measurement ID G-ZPTMJFB9WS). The gtag script is added when the page loads; page view events are sent on page changes. Thanks to Google Consent Mode, no cookies are set before consent is given and only cookieless measurement signals are sent.",
           "When you give consent, Google may set cookies such as _ga and _ga_*. These are for usage statistics and measurement purposes. Their durations depend on Google’s practices.",
@@ -828,7 +834,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         ],
       },
       {
-        heading: "5. Аналитика — Google Analytics",
+        heading: "5. Аналитика — Google Analytics и Яндекс Метрика",
         paragraphs: [
           "Используется Google Analytics 4 (идентификатор G-ZPTMJFB9WS). Скрипт gtag добавляется при загрузке страницы; при смене маршрута отправляются события просмотра. Благодаря Google Consent Mode до согласия cookie не устанавливаются, отправляются только сигналы измерения без cookie.",
           "После вашего согласия Google может устанавливать cookie вида _ga и _ga_*. Они служат для статистики и измерения. Сроки хранения определяются практикой Google.",
