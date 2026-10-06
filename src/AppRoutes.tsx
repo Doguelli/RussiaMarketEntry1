@@ -1,24 +1,20 @@
-import { Routes, Route, useLocation, useNavigate, Navigate, Link, useParams } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import {
+  Routes,
+  Route,
+  useLocation,
+  useNavigate,
+  Navigate,
+  Link,
+  useParams,
+  createRoutesFromChildren,
+  matchRoutes,
+} from "react-router-dom";
+import { Suspense, useEffect, useRef, type ReactElement } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import ServiceDetail from "./pages/ServiceDetail";
-import Contact from "./pages/Contact";
-import RussiaMarket from "./pages/RussiaMarket";
-import WhyRussiaDetail from "./pages/WhyRussiaDetail";
-import OperationModel from "./pages/OperationModel";
-import ForWhom from "./pages/ForWhom";
-import ForWhomDetail from "./pages/ForWhomDetail";
-import Blog from "./pages/Blog";
-import BlogDetail from "./pages/BlogDetail";
-import CompanyInTurkey from "./pages/CompanyInTurkey";
-import References from "./pages/References";
-import LegalDocument from "./pages/LegalDocument";
+import { lazyPage } from "./utils/lazyPage";
 import BackToTop from "./components/BackToTop";
 import WhatsAppButton from "./components/WhatsAppButton";
 import AnalyticsTracker from "./components/AnalyticsTracker";
@@ -35,6 +31,22 @@ import {
 } from "./utils/ruPaths";
 import { OG_LOCALE, pageLanguageForPath } from "./utils/pageLanguage";
 import { resolveI18nLanguageForPath } from "./i18n";
+
+const Home = lazyPage(() => import("./pages/Home"));
+const About = lazyPage(() => import("./pages/About"));
+const Services = lazyPage(() => import("./pages/Services"));
+const ServiceDetail = lazyPage(() => import("./pages/ServiceDetail"));
+const Contact = lazyPage(() => import("./pages/Contact"));
+const RussiaMarket = lazyPage(() => import("./pages/RussiaMarket"));
+const WhyRussiaDetail = lazyPage(() => import("./pages/WhyRussiaDetail"));
+const OperationModel = lazyPage(() => import("./pages/OperationModel"));
+const ForWhom = lazyPage(() => import("./pages/ForWhom"));
+const ForWhomDetail = lazyPage(() => import("./pages/ForWhomDetail"));
+const Blog = lazyPage(() => import("./pages/Blog"));
+const BlogDetail = lazyPage(() => import("./pages/BlogDetail"));
+const CompanyInTurkey = lazyPage(() => import("./pages/CompanyInTurkey"));
+const References = lazyPage(() => import("./pages/References"));
+const LegalDocument = lazyPage(() => import("./pages/LegalDocument"));
 
 function ScrollToTopAndLangSync() {
   const { pathname } = useLocation();
@@ -149,17 +161,8 @@ function NotFound() {
   );
 }
 
-export default function AppRoutes() {
-  return (
-    <>
-      <ScrollToTopAndLangSync />
-      <OgLocaleMeta />
-      <AnalyticsTracker />
-      <CookieConsentBanner />
-      <div className="min-h-screen flex flex-col font-sans">
-        <Navbar />
-        <div className="flex-grow">
-          <Routes>
+const ROUTES = (
+          <>
             {/* Turkish / Default Routes */}
             <Route path="/" element={<Home />} />
             <Route path="/hakkimizda" element={<About />} />
@@ -228,7 +231,33 @@ export default function AppRoutes() {
             
             {/* Catch-all Not Found */}
             <Route path="*" element={<NotFound />} />
-          </Routes>
+          </>
+);
+
+/** Loads the page chunk(s) a URL renders, so the first render can be synchronous. */
+export function preloadRoute(pathname: string): Promise<unknown> {
+  const matches = matchRoutes(createRoutesFromChildren(ROUTES), pathname) || [];
+  return Promise.all(
+    matches.map((match) => {
+      const type = (match.route.element as ReactElement | undefined)?.type as { preload?: () => Promise<void> };
+      return type?.preload?.();
+    })
+  );
+}
+
+export default function AppRoutes() {
+  return (
+    <>
+      <ScrollToTopAndLangSync />
+      <OgLocaleMeta />
+      <AnalyticsTracker />
+      <CookieConsentBanner />
+      <div className="min-h-screen flex flex-col font-sans">
+        <Navbar />
+        <div className="flex-grow">
+          <Suspense fallback={null}>
+            <Routes>{ROUTES}</Routes>
+          </Suspense>
         </div>
         <Footer />
         <BackToTop />

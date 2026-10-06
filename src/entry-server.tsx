@@ -2,7 +2,7 @@ import React from "react";
 import { renderToString } from "react-dom/server";
 import { MemoryRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import AppRoutes from "./AppRoutes";
+import AppRoutes, { preloadRoute } from "./AppRoutes";
 import i18n, { resolveLanguageFromPath } from "./i18n";
 import { blogPosts } from "./data/blogData";
 import { BLOG_LANGS, blogDetailPath, hasBlogContentFor } from "./utils/blogLanguages";
@@ -28,6 +28,7 @@ export const blogRoutes = blogPosts.flatMap((post) =>
 export async function render(url: string) {
   const lang = resolveLanguageFromPath(url);
   await i18n.changeLanguage(lang);
+  await preloadRoute(url);
 
   const helmetContext: any = {};
   const html = renderToString(

@@ -12,15 +12,16 @@
 // written first, in TR > EN > RU priority order. This mirrors the existing
 // convention in blogDataRU.tsx, where Russian-only posts already store their
 // content directly in the "base" fields since there's no Turkish version.
-import yaml from "js-yaml";
 import type { BlogPost } from "./blogData";
 import type { ContentBlock } from "../components/BlockRenderer";
 
-function parseFrontmatter(raw: string): { data: Record<string, any> } {
-  const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(raw);
-  if (!match) return { data: {} };
-  const data = (yaml.load(match[1]) as Record<string, any>) || {};
-  return { data };
+/** The frontmatter subset emitted by the blog-frontmatter plugin in vite.config.ts. */
+interface Frontmatter {
+  urlSlug?: string;
+  publishedAt?: string;
+  tr?: { image?: string; metaTitle?: string };
+  en?: { image?: string; metaTitle?: string };
+  ru?: { image?: string; metaTitle?: string };
 }
 
 interface GeneratedLang {
@@ -32,9 +33,9 @@ interface GeneratedLang {
 
 const mdFiles = import.meta.glob("/content/blog/*.md", {
   eager: true,
-  query: "?raw",
+  query: "?frontmatter",
   import: "default",
-}) as Record<string, string>;
+}) as Record<string, Frontmatter>;
 
 const generatedFiles = import.meta.glob("/content/blog-generated/*.json", {
   eager: true,
@@ -84,8 +85,7 @@ function blocksToText(blocks: ContentBlock[] | undefined): string {
 
 const LANGS = ["tr", "en", "ru"] as const;
 
-export const generatedBlogPosts: BlogPost[] = Object.entries(mdFiles).map(([filePath, raw]) => {
-  const { data } = parseFrontmatter(raw);
+export const generatedBlogPosts: BlogPost[] = Object.entries(mdFiles).map(([filePath, data]) => {
   const fileSlug = filePath.split("/").pop()!.replace(/\.md$/, "");
   const slug: string = data.urlSlug || fileSlug;
 
