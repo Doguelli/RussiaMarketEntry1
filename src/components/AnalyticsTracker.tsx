@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+import { getConsent, onConsentChange } from "@/utils/consent";
 
 const METRIKA_ID = 112001301;
 const METRIKA_SCRIPT_SRC = `https://mc.yandex.ru/metrika/tag.js?id=${METRIKA_ID}`;
@@ -43,11 +44,14 @@ function injectYandexMetrika() {
     a?.parentNode?.insertBefore(k, a);
   })(window, document, "script", METRIKA_SCRIPT_SRC, "ym");
 
-  // Init exactly once; keep Yandex-provided options unchanged.
+  // Init exactly once. Visits are always counted; session recording and click
+  // maps only start on page loads after the visitor accepted cookies, because
+  // Metrika options cannot be changed after init.
+  const recordingAllowed = getConsent() === "granted";
   window.ym?.(METRIKA_ID, "init", {
     ssr: true,
-    webvisor: true,
-    clickmap: true,
+    webvisor: recordingAllowed,
+    clickmap: recordingAllowed,
     ecommerce: "dataLayer",
     referrer: document.referrer,
     url: location.href,
@@ -84,12 +88,28 @@ export default function AnalyticsTracker() {
         // eslint-disable-next-line prefer-rest-params
         window.dataLayer?.push(arguments);
       };
+      // Consent Mode v2: until the visitor accepts, GA sends cookieless pings
+      // instead of setting _ga cookies; accepting upgrades to full measurement.
+      window.gtag("consent", "default", {
+        analytics_storage: getConsent() === "granted" ? "granted" : "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+      });
       window.gtag("js", new Date());
       window.gtag("config", measurementId, {
         send_page_view: false, // We'll trigger page views manually on route changes below
       });
     }
   }, [measurementId]);
+
+  useEffect(
+    () =>
+      onConsentChange((choice) => {
+        window.gtag?.("consent", "update", { analytics_storage: choice });
+      }),
+    []
+  );
 
   // Yandex Metrika — client-only, once per session
   useEffect(() => {

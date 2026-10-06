@@ -22,6 +22,7 @@ import LegalDocument from "./pages/LegalDocument";
 import BackToTop from "./components/BackToTop";
 import WhatsAppButton from "./components/WhatsAppButton";
 import AnalyticsTracker from "./components/AnalyticsTracker";
+import CookieConsentBanner from "./components/CookieConsentBanner";
 import {
   getManuallySelectedLanguage,
   detectCountryFromIP,
@@ -154,6 +155,7 @@ export default function AppRoutes() {
       <ScrollToTopAndLangSync />
       <OgLocaleMeta />
       <AnalyticsTracker />
+      <CookieConsentBanner />
       <div className="min-h-screen flex flex-col font-sans">
         <Navbar />
         <div className="flex-grow">

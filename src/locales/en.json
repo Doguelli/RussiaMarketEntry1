@@ -222,7 +222,15 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "cookies": "Cookie Policy",
+    "cookie_settings": "Cookie Settings",
     "op_location_label": "Moscow — operations / fulfillment"
+  },
+  "cookie_banner": {
+    "text": "We use analytics tools to improve the site. If you accept, Google Analytics cookies and Yandex Metrica session recording / click maps are enabled. If you decline, they stay off and only basic visit statistics are kept.",
+    "policy": "Cookie Policy",
+    "accept": "Accept",
+    "reject": "Decline",
+    "label": "Cookie preference"
   },
   "about": {
     "title": "About Us | Russia Market Entry & Commercial Development",

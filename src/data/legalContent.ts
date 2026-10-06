@@ -72,7 +72,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "2. Bu politikanın kapsamı",
         paragraphs: [
           "Bu politika, web sitesini ziyaret ettiğinizde, iletişim formunu doldurduğunuzda, Türkiye’de şirket kuruluşu sayfasındaki formu gönderdiğinizde veya sitedeki teknik araçlarla etkileşime girdiğinizde işlenebilecek kişisel veriler hakkında bilgilendirme amaçlıdır.",
-          "Politika, yalnızca sitede fiilen kullanılan işlevleri ve üçüncü taraf hizmetleri yansıtır. Mevcut kodda site içi çerez onay / ret banner’ı bulunmamaktadır.",
+          "Politika, yalnızca sitede fiilen kullanılan işlevleri ve üçüncü taraf hizmetleri yansıtır. Analitik çerezler için sitede kabul / ret seçeneği sunan bir çerez banner’ı bulunur; tercih, alt bilgideki “Çerez Ayarları” bağlantısından değiştirilebilir.",
         ],
       },
       {
@@ -82,7 +82,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
           "İletişim formu (/iletisim ve /ru/kontakty): ad, e-posta, telefon, şirket adı (isteğe bağlı), mesaj.",
           "Türkiye’de şirket kuruluşu formu (/ru/kompaniya-v-turtsii): ad, telefon, ilgilendiğiniz iş formu, mesaj (isteğe bağlı). Bu formda e-posta alanı yoktur ve e-posta toplanmaz.",
           "Teknik veriler: IP adresi, tarayıcı ve cihaz bilgileri, ziyaret edilen sayfa yolları, dil tercihi ile ilgili yerel depolama değerleri.",
-          "Analitik veriler: Google Analytics aracılığıyla oluşturulan kullanım ve ölçüm verileri.",
+          "Analitik veriler: Google Analytics ve Yandex Metrika aracılığıyla oluşturulan kullanım ve ölçüm verileri.",
         ],
       },
       {
@@ -100,7 +100,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "5. İşlemenin hukuki dayanakları",
         paragraphs: [
           "İşleme, somut duruma ve ilgili yargı alanına göre; talebinizi yerine getirmek için gerekli olması, meşru menfaatlerin korunması, yasal yükümlülüklerin yerine getirilmesi veya — ilgili olduğunda — açık rızanıza dayanabilir.",
-          "Sitede şu anda kişisel verilerin işlenmesi için ayrı bir onay kutusu veya çerez onay banner’ı uygulanmamaktadır. Bu nedenle rızanın teknik olarak alındığı iddia edilmez.",
+          "Google Analytics çerezleri ile Yandex Metrika oturum kaydı ve tıklama haritası, çerez banner’ında verilen onaya dayanır. Temel ziyaret istatistiği (Yandex Metrika sayacı ve Google Analytics’in çerezsiz ölçümü) sitenin işleyişini ve kullanımını anlamaya yönelik meşru menfaate dayanır.",
         ],
       },
       {
@@ -110,7 +110,8 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         ],
         bullets: [
           "FormSubmit (formsubmit.co): İletişim ve Türkiye şirket kuruluşu formları bu hizmete JSON olarak gönderilir. Form içeriği FormSubmit üzerinden operasyon e-postasına iletilir; tarayıcıdan yapılan istek nedeniyle IP ve kullanıcı aracısı (user-agent) bilgisi de FormSubmit’e ulaşabilir.",
-          "Google Analytics 4 (ölçüm kimliği G-ZPTMJFB9WS): Sayfa görüntülemeleri ve kullanım verileri toplanır. Analitik komut dosyası sayfa yüklenirken çalışır; site içi onay şartına bağlı değildir.",
+          "Google Analytics 4 (ölçüm kimliği G-ZPTMJFB9WS): Sayfa görüntülemeleri ve kullanım verileri toplanır. Google Consent Mode kullanılır: onay verilmeden analitik çerezleri ayarlanmaz ve yalnızca çerezsiz ölçüm sinyalleri gönderilir; onay verildiğinde _ga çerezleri kullanılır.",
+          "Yandex Metrika (sayaç 112001301): Ziyaret ve sayfa görüntüleme istatistikleri toplanır; Yandex kendi çerezlerini (ör. _ym_uid) ayarlayabilir. Oturum kaydı (Webvisor) ve tıklama haritası yalnızca çerez banner’ında onay verildikten sonra etkinleşir.",
           "Netlify: Barındırma ve içerik dağıtımı. Ayrıca Decap CMS / yönetici erişimi için Netlify Identity widget’ı yalnızca yönetici paneli ile davet ve şifre sıfırlama bağlantılarında yüklenir.",
           "Geo-IP hizmetleri (api.country.is ve yedek olarak ipapi.co): Manuel dil tercihi kaydedilmemiş bir ziyaretçi ana sayfaya (/) ilk geldiğinde ülke kodu tespiti için IP adresi gönderilebilir; sonuç oturum depolamada tutulabilir ve dil yönlendirmesi için kullanılabilir.",
           "WhatsApp (wa.me): Ziyaretçi WhatsApp bağlantısına tıkladığında Meta/WhatsApp’ın kendi gizlilik kuralları geçerli olur.",
@@ -163,7 +164,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "2. Область действия политики",
         paragraphs: [
           "Настоящая политика информирует о персональных данных, которые могут обрабатываться при посещении сайта, заполнении формы обратной связи, отправке заявки на странице регистрации компании в Турции или при взаимодействии с техническими средствами сайта.",
-          "Политика отражает только фактически используемые функции и сторонние сервисы. В текущей реализации сайта нет баннера согласия на обработку cookie.",
+          "Политика отражает только фактически используемые функции и сторонние сервисы. Для аналитических cookie на сайте есть баннер с возможностью принять или отклонить их; выбор можно изменить по ссылке «Настройки cookie» в нижней части страницы.",
         ],
       },
       {
@@ -173,7 +174,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
           "Форма контактов (/iletisim и /ru/kontakty): имя, адрес электронной почты, телефон, название компании (необязательно), сообщение.",
           "Форма на странице регистрации компании в Турции (/ru/kompaniya-v-turtsii): имя, телефон, интересующая форма бизнеса, сообщение (необязательно). Поле e-mail на этой форме отсутствует, адрес электронной почты не собирается.",
           "Технические данные: IP-адрес, сведения о браузере и устройстве, пути посещённых страниц, значения локального хранилища, связанные с языковыми предпочтениями.",
-          "Аналитические данные: данные об использовании сайта, формируемые через Google Analytics.",
+          "Аналитические данные: данные об использовании сайта, формируемые через Google Analytics и Яндекс Метрику.",
         ],
       },
       {
@@ -191,7 +192,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "5. Правовые основания обработки",
         paragraphs: [
           "Обработка может осуществляться в зависимости от конкретной ситуации и применимого права: когда это необходимо для ответа на ваш запрос, для защиты законных интересов, для исполнения правовых обязанностей либо — при наличии — на основании вашего согласия.",
-          "На сайте в настоящее время не реализованы отдельный чекбокс согласия на обработку персональных данных и баннер согласия на cookie. Поэтому мы не утверждаем, что согласие технически получено через интерфейс сайта.",
+          "Cookie Google Analytics, а также запись сессий (Вебвизор) и карта кликов Яндекс Метрики используются на основании согласия, данного в баннере cookie. Базовая статистика посещений (счётчик Яндекс Метрики и измерение Google Analytics без cookie) основана на законном интересе в обеспечении работы сайта и понимании его использования.",
         ],
       },
       {
@@ -201,7 +202,8 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         ],
         bullets: [
           "FormSubmit (formsubmit.co): формы контактов и заявки на регистрацию компании в Турции отправляются в этот сервис в формате JSON. Содержимое формы передаётся через FormSubmit на операционную электронную почту; при запросе из браузера IP-адрес и user-agent также могут быть доступны FormSubmit.",
-          "Google Analytics 4 (идентификатор G-ZPTMJFB9WS): собираются просмотры страниц и данные об использовании. Скрипт аналитики загружается при открытии страницы и не ставится в зависимость от согласия на сайте.",
+          "Google Analytics 4 (идентификатор G-ZPTMJFB9WS): собираются просмотры страниц и данные об использовании. Используется Google Consent Mode: до получения согласия аналитические cookie не устанавливаются и отправляются только сигналы измерения без cookie; после согласия используются cookie _ga.",
+          "Яндекс Метрика (счётчик 112001301): собирается статистика посещений и просмотров страниц; Яндекс может устанавливать собственные cookie (например, _ym_uid). Запись сессий (Вебвизор) и карта кликов включаются только после согласия в баннере cookie.",
           "Netlify: хостинг и доставка контента. Кроме того, виджет Netlify Identity (для доступа к CMS / админ-панели) загружается только в админ-панели и по ссылкам приглашения или восстановления пароля.",
           "Сервисы Geo-IP (api.country.is и резервно ipapi.co): при первом посещении главной страницы (/) пользователем без сохранённого ручного выбора языка IP-адрес может передаваться для определения кода страны; результат может сохраняться в sessionStorage и использоваться для языкового перенаправления.",
           "WhatsApp (wa.me): при переходе по ссылке WhatsApp применяются правила конфиденциальности Meta/WhatsApp.",
@@ -461,8 +463,8 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "3. Mevcut durum (önemli)",
         paragraphs: [
-          "Sitede şu anda çerez onay banner’ı, kabul/ret düğmeleri veya tercih yönetim paneli bulunmamaktadır. Analitik komut dosyası, ziyaretçi onayı beklemeden yüklenebilir.",
-          "Bu nedenle, sitede tek tek analitik çerezlerini kabul veya reddetme imkânı sunulduğu iddia edilmez. Kontrol şu an için esas olarak tarayıcı ayarlarınız üzerinden yapılır.",
+          "İlk ziyarette bir çerez banner’ı gösterilir ve analitik çerezleri kabul etme veya reddetme seçeneği sunulur. Tercihiniz tarayıcınızda (localStorage: cookie_consent_v1) saklanır ve alt bilgideki “Çerez Ayarları” bağlantısından istediğiniz zaman değiştirilebilir.",
+          "Reddetmeniz veya henüz seçim yapmamış olmanız durumunda Google Analytics çerez ayarlamaz ve Yandex Metrika oturum kaydı / tıklama haritası kapalı kalır; temel ziyaret istatistiği tutulmaya devam eder. Ayrıca çerezleri tarayıcı ayarlarınızdan da silebilir veya engelleyebilirsiniz.",
         ],
       },
       {
@@ -474,8 +476,9 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "5. Analitik — Google Analytics",
         paragraphs: [
-          "Google Analytics 4 kullanılır (ölçüm kimliği G-ZPTMJFB9WS). gtag komut dosyası sayfa yüklendiğinde eklenir; sayfa değişikliklerinde görüntüleme olayları gönderilir.",
-          "Google, tipik olarak _ga ve _ga_* gibi çerezler ayarlayabilir. Bunlar kullanım istatistikleri ve ölçüm amaçlıdır. Süreler Google’ın uygulamalarına bağlıdır.",
+          "Google Analytics 4 kullanılır (ölçüm kimliği G-ZPTMJFB9WS). gtag komut dosyası sayfa yüklendiğinde eklenir; sayfa değişikliklerinde görüntüleme olayları gönderilir. Google Consent Mode sayesinde onay verilmeden çerez ayarlanmaz, yalnızca çerezsiz ölçüm sinyalleri gönderilir.",
+          "Onay verdiğinizde Google, _ga ve _ga_* gibi çerezler ayarlayabilir. Bunlar kullanım istatistikleri ve ölçüm amaçlıdır. Süreler Google’ın uygulamalarına bağlıdır.",
+          "Yandex Metrika (sayaç 112001301) ziyaret istatistikleri için kullanılır ve _ym_uid, _ym_d gibi çerezler ayarlayabilir. Oturum kaydı (Webvisor) ve tıklama haritası yalnızca onay verdikten sonraki sayfa yüklemelerinde etkinleşir.",
         ],
       },
       {
@@ -486,6 +489,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         bullets: [
           "localStorage: i18nextLng — dil tercihi",
           "localStorage: user_language_manual — kullanıcının dil seçiciden yaptığı açık tercih",
+          "localStorage: cookie_consent_v1 — çerez banner’ında verilen kabul / ret tercihi",
           "sessionStorage: detected_geo_country — geo-IP ile tespit edilen ülke kodunun oturum önbelleği",
         ],
       },
@@ -534,8 +538,8 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "3. Текущее состояние (важно)",
         paragraphs: [
-          "На сайте в настоящее время нет баннера согласия на cookie, кнопок «принять/отклонить» и панели управления предпочтениями. Скрипт аналитики может загружаться без ожидания согласия посетителя.",
-          "Поэтому мы не утверждаем, что на сайте можно по отдельности принимать или отклонять аналитические cookie через интерфейс сайта. Управление сейчас осуществляется в основном через настройки браузера.",
+          "При первом посещении показывается баннер cookie с возможностью принять или отклонить аналитические cookie. Ваш выбор сохраняется в браузере (localStorage: cookie_consent_v1) и может быть изменён в любой момент по ссылке «Настройки cookie» в нижней части страницы.",
+          "Если вы отказались или ещё не сделали выбор, Google Analytics не устанавливает cookie, а запись сессий и карта кликов Яндекс Метрики остаются выключенными; базовая статистика посещений продолжает вестись. Кроме того, cookie можно удалить или заблокировать в настройках браузера.",
         ],
       },
       {
@@ -547,8 +551,9 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "5. Аналитика — Google Analytics",
         paragraphs: [
-          "Используется Google Analytics 4 (идентификатор G-ZPTMJFB9WS). Скрипт gtag добавляется при загрузке страницы; при смене маршрута отправляются события просмотра.",
-          "Google может устанавливать cookie вида _ga и _ga_*. Они служат для статистики и измерения. Сроки хранения определяются практикой Google.",
+          "Используется Google Analytics 4 (идентификатор G-ZPTMJFB9WS). Скрипт gtag добавляется при загрузке страницы; при смене маршрута отправляются события просмотра. Благодаря Google Consent Mode до согласия cookie не устанавливаются, отправляются только сигналы измерения без cookie.",
+          "После вашего согласия Google может устанавливать cookie вида _ga и _ga_*. Они служат для статистики и измерения. Сроки хранения определяются практикой Google.",
+          "Яндекс Метрика (счётчик 112001301) используется для статистики посещений и может устанавливать cookie, например _ym_uid и _ym_d. Запись сессий (Вебвизор) и карта кликов включаются только при загрузке страниц после вашего согласия.",
         ],
       },
       {
@@ -557,6 +562,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         bullets: [
           "localStorage: i18nextLng — предпочтение языка",
           "localStorage: user_language_manual — явный выбор языка пользователем",
+          "localStorage: cookie_consent_v1 — выбор «принять / отклонить» в баннере cookie",
           "sessionStorage: detected_geo_country — кэш кода страны, полученного через Geo-IP",
         ],
       },

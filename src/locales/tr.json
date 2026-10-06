@@ -222,7 +222,15 @@
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Şartları",
     "cookies": "Çerez Politikası",
+    "cookie_settings": "Çerez Ayarları",
     "op_location_label": "Moskova — operasyon / fulfillment"
+  },
+  "cookie_banner": {
+    "text": "Siteyi geliştirmek için analitik araçlar kullanıyoruz. Kabul ederseniz Google Analytics çerezleri ve Yandex Metrika oturum kaydı / tıklama haritası etkinleşir. Reddederseniz bunlar kapalı kalır; yalnızca temel ziyaret istatistiği tutulur.",
+    "policy": "Çerez Politikası",
+    "accept": "Kabul Et",
+    "reject": "Reddet",
+    "label": "Çerez tercihi"
   },
   "about": {
     "title": "Hakkımızda | Rusya Pazarına Giriş ve Ticari Gelişim",

@@ -16,6 +16,7 @@ import {
   referencesPath,
 } from "@/utils/ruPaths";
 import { VERIFIED_CONTACT, OPERATIONAL_LOCATION } from "@/utils/seo";
+import { reopenConsentBanner } from "@/utils/consent";
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
@@ -105,6 +106,9 @@ export default function Footer() {
             <Link to={cookiesPath(isRu)} className="hover:text-white transition-colors">
               {t('footer.cookies')}
             </Link>
+            <button type="button" onClick={reopenConsentBanner} className="hover:text-white transition-colors">
+              {t('footer.cookie_settings')}
+            </button>
           </div>
         </div>
       </div>
