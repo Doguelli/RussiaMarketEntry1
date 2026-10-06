@@ -1,5 +1,5 @@
 /**
- * Approved legal-page copy for TR and RU.
+ * Approved legal-page copy for TR, EN and RU. EN is a direct translation of TR.
  * Controllers and processors reflect only what the production code does
  * and the entity confirmed for legal pages: ООО «НАСЕЛЬ ТЕКСТИЛЬ».
  */
@@ -15,18 +15,25 @@ export type LegalSection = {
 export type LegalDoc = {
   kind: LegalKind;
   pathTr: string;
+  pathEn: string;
   pathRu: string;
   titleTr: string;
+  titleEn: string;
   titleRu: string;
   metaTr: string;
+  metaEn: string;
   metaRu: string;
   h1Tr: string;
+  h1En: string;
   h1Ru: string;
   updatedLabelTr: string;
+  updatedLabelEn: string;
   updatedLabelRu: string;
   updatedDateTr: string;
+  updatedDateEn: string;
   updatedDateRu: string;
   sectionsTr: LegalSection[];
+  sectionsEn: LegalSection[];
   sectionsRu: LegalSection[];
 };
 
@@ -45,19 +52,26 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
   privacy: {
     kind: "privacy",
     pathTr: "/gizlilik-politikasi",
+    pathEn: "/en/privacy-policy",
     pathRu: "/ru/politika-konfidentsialnosti",
     titleTr: "Gizlilik ve Kişisel Verilerin Korunması Politikası",
+    titleEn: "Privacy and Personal Data Protection Policy",
     titleRu: "Политика конфиденциальности и обработки персональных данных",
     metaTr:
       "Russia Market Entry gizlilik politikası: kişisel verilerin toplanması, işlenmesi, saklanması ve üçüncü taraf hizmetler hakkında bilgilendirme.",
+    metaEn:
+      "Russia Market Entry privacy policy: how personal data is collected, processed and stored, and which third-party services are used.",
     metaRu:
       "Политика конфиденциальности Russia Market Entry: какие персональные данные собираются, как обрабатываются и какие сторонние сервисы используются.",
     h1Tr: "Gizlilik ve Kişisel Verilerin Korunması Politikası",
+    h1En: "Privacy and Personal Data Protection Policy",
     h1Ru: "Политика конфиденциальности и обработки персональных данных",
     updatedLabelTr: "Son güncelleme",
+    updatedLabelEn: "Last updated",
     updatedLabelRu: "Дата последнего обновления",
-    updatedDateTr: "24 Ağustos 2026",
-    updatedDateRu: "24 августа 2026 г.",
+    updatedDateTr: "6 Ekim 2026",
+    updatedDateEn: "October 6, 2026",
+    updatedDateRu: "6 октября 2026 г.",
     sectionsTr: [
       {
         heading: "1. Veri sorumlusu",
@@ -79,7 +93,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "3. Toplanabilecek kişisel veriler",
         paragraphs: ["Aşağıdaki kategorilerde veri işlenebilir:"],
         bullets: [
-          "İletişim formu (/iletisim ve /ru/kontakty): ad, e-posta, telefon, şirket adı (isteğe bağlı), mesaj.",
+          "İletişim formu (/iletisim, /en/contact ve /ru/kontakty): ad, e-posta, telefon, şirket adı (isteğe bağlı), mesaj.",
           "Türkiye’de şirket kuruluşu formu (/ru/kompaniya-v-turtsii): ad, telefon, ilgilendiğiniz iş formu, mesaj (isteğe bağlı). Bu formda e-posta alanı yoktur ve e-posta toplanmaz.",
           "Teknik veriler: IP adresi, tarayıcı ve cihaz bilgileri, ziyaret edilen sayfa yolları, dil tercihi ile ilgili yerel depolama değerleri.",
           "Analitik veriler: Google Analytics ve Yandex Metrika aracılığıyla oluşturulan kullanım ve ölçüm verileri.",
@@ -150,6 +164,98 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         ],
       },
     ],
+    sectionsEn: [
+      {
+        heading: "1. Data controller",
+        paragraphs: [
+          `The legal entity that operates this website (russiamarketentry.com) and is responsible for the personal data collected on it is ${ENTITY.name}.`,
+          `Registration details: INN ${ENTITY.inn}, KPP ${ENTITY.kpp}, OGRN ${ENTITY.ogrn}.`,
+          `Registered address: ${ENTITY.address}`,
+          `Contact: ${ENTITY.email}, phone ${ENTITY.phone}.`,
+        ],
+      },
+      {
+        heading: "2. Scope of this policy",
+        paragraphs: [
+          "This policy explains which personal data may be processed when you visit the website, fill in the contact form, submit the form on the company formation in Turkey page, or interact with the technical tools on the site.",
+          "The policy reflects only the functions and third-party services actually used on the site. A cookie banner offers the choice to accept or reject analytics cookies; you can change your choice at any time via the “Cookie Settings” link in the footer.",
+        ],
+      },
+      {
+        heading: "3. Personal data that may be collected",
+        paragraphs: ["Data in the following categories may be processed:"],
+        bullets: [
+          "Contact form (/iletisim, /en/contact and /ru/kontakty): name, email, phone, company name (optional), message.",
+          "Company formation in Turkey form (/ru/kompaniya-v-turtsii): name, phone, the business form you are interested in, message (optional). This form has no email field and does not collect email addresses.",
+          "Technical data: IP address, browser and device information, paths of visited pages, local storage values related to language preference.",
+          "Analytics data: usage and measurement data generated through Google Analytics and Yandex Metrica.",
+        ],
+      },
+      {
+        heading: "4. Purposes of processing",
+        paragraphs: ["Personal data may be processed for the following purposes:"],
+        bullets: [
+          "Responding to your requests and communicating with you",
+          "Assessing your consulting or service requests",
+          "Ensuring the security and technical operation of the site",
+          "Understanding how the site is used and improving the service (analytics)",
+          "Complying with obligations arising from applicable law",
+        ],
+      },
+      {
+        heading: "5. Legal bases for processing",
+        paragraphs: [
+          "Depending on the specific situation and the relevant jurisdiction, processing may be based on it being necessary to fulfil your request, the protection of legitimate interests, compliance with legal obligations or, where relevant, your explicit consent.",
+          "Google Analytics cookies and Yandex Metrica session recording and click map are based on the consent given in the cookie banner. Basic visit statistics (the Yandex Metrica counter and Google Analytics cookieless measurement) are based on the legitimate interest in understanding how the site works and is used.",
+        ],
+      },
+      {
+        heading: "6. Third-party services and infrastructure",
+        paragraphs: [
+          "The following third-party services are used to run the site. By the nature of the service, they may receive the IP address and request metadata:",
+        ],
+        bullets: [
+          "FormSubmit (formsubmit.co): The contact and company formation in Turkey forms are sent to this service as JSON. The form content is forwarded via FormSubmit to the operations email; because the request is made from the browser, the IP address and user-agent may also reach FormSubmit.",
+          "Google Analytics 4 (measurement ID G-ZPTMJFB9WS): Page views and usage data are collected. Google Consent Mode is used: without consent, no analytics cookies are set and only cookieless measurement signals are sent; once consent is given, _ga cookies are used.",
+          "Yandex Metrica (counter 112001301): Visit and page view statistics are collected; Yandex may set its own cookies (e.g. _ym_uid). Session recording (Webvisor) and click map are enabled only after consent is given in the cookie banner.",
+          "Netlify: Hosting and content delivery. In addition, the Netlify Identity widget for Decap CMS / admin access is loaded only in the admin panel and in invitation and password reset links.",
+          "Geo-IP services (api.country.is and, as a fallback, ipapi.co): When a visitor without a saved manual language preference first arrives at the home page (/), the IP address may be sent to determine the country code; the result may be kept in session storage and used for language redirection.",
+          "WhatsApp (wa.me): When a visitor clicks a WhatsApp link, the privacy rules of Meta/WhatsApp apply.",
+        ],
+      },
+      {
+        heading: "7. International transfers",
+        paragraphs: [
+          "Some of the services above may be provided outside the Russian Federation (for example, in the USA or Europe). Form, analytics, hosting or geo-IP requests may therefore constitute cross-border transfers. The details of such transfers depend on the terms of the respective service provider.",
+        ],
+      },
+      {
+        heading: "8. Retention",
+        paragraphs: [
+          "Personal data is kept for as long as required by the purpose of collection and in line with any legal retention obligations.",
+          "Form submissions are delivered by email via FormSubmit; analytics data is kept in the Google Analytics account; language/country preferences may be stored in your browser’s localStorage or sessionStorage. Exact retention periods depend on the settings of the respective service and our operational practice.",
+        ],
+      },
+      {
+        heading: "9. Security",
+        paragraphs: [
+          "Care is taken to apply reasonable technical and organisational measures to protect data against unauthorised access, loss or alteration. Transmission over the internet cannot be guaranteed to be completely risk-free.",
+        ],
+      },
+      {
+        heading: "10. Your rights",
+        paragraphs: [
+          "Under applicable law, you may have rights such as access to, correction or deletion of your personal data, restriction of processing, or objection to processing.",
+          `To exercise your rights or ask questions about this policy, you can write to ${ENTITY.email} or call ${ENTITY.phone}.`,
+        ],
+      },
+      {
+        heading: "11. Changes to this policy",
+        paragraphs: [
+          "This policy may be updated. The current version is published on this page; the “Last updated” date at the top shows when it was changed.",
+        ],
+      },
+    ],
     sectionsRu: [
       {
         heading: "1. Оператор персональных данных",
@@ -171,7 +277,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "3. Какие данные могут собираться",
         paragraphs: ["Могут обрабатываться следующие категории данных:"],
         bullets: [
-          "Форма контактов (/iletisim и /ru/kontakty): имя, адрес электронной почты, телефон, название компании (необязательно), сообщение.",
+          "Форма контактов (/iletisim, /en/contact и /ru/kontakty): имя, адрес электронной почты, телефон, название компании (необязательно), сообщение.",
           "Форма на странице регистрации компании в Турции (/ru/kompaniya-v-turtsii): имя, телефон, интересующая форма бизнеса, сообщение (необязательно). Поле e-mail на этой форме отсутствует, адрес электронной почты не собирается.",
           "Технические данные: IP-адрес, сведения о браузере и устройстве, пути посещённых страниц, значения локального хранилища, связанные с языковыми предпочтениями.",
           "Аналитические данные: данные об использовании сайта, формируемые через Google Analytics и Яндекс Метрику.",
@@ -247,18 +353,25 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
   terms: {
     kind: "terms",
     pathTr: "/kullanim-sartlari",
+    pathEn: "/en/terms-of-use",
     pathRu: "/ru/usloviya-ispolzovaniya",
     titleTr: "Kullanım Şartları | Russia Market Entry",
+    titleEn: "Terms of Use | Russia Market Entry",
     titleRu: "Условия использования | Russia Market Entry",
     metaTr:
       "Russia Market Entry kullanım şartları: sitenin amacı, bilgilendirme niteliği, fikri mülkiyet ve sorumluluk sınırları.",
+    metaEn:
+      "Russia Market Entry terms of use: purpose of the site, informational nature of the content, intellectual property and limitation of liability.",
     metaRu:
       "Условия использования сайта Russia Market Entry: назначение сайта, информационный характер материалов, интеллектуальная собственность и ограничение ответственности.",
     h1Tr: "Kullanım Şartları",
+    h1En: "Terms of Use",
     h1Ru: "Условия использования",
     updatedLabelTr: "Son güncelleme",
+    updatedLabelEn: "Last updated",
     updatedLabelRu: "Дата последнего обновления",
     updatedDateTr: "24 Ağustos 2026",
+    updatedDateEn: "August 24, 2026",
     updatedDateRu: "24 августа 2026 г.",
     sectionsTr: [
       {
@@ -341,6 +454,90 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "12. İletişim",
         paragraphs: [
           `Sorularınız için: ${ENTITY.email}, ${ENTITY.phone}.`,
+        ],
+      },
+    ],
+    sectionsEn: [
+      {
+        heading: "1. Site operator",
+        paragraphs: [
+          `This website is operated by ${ENTITY.name} (INN ${ENTITY.inn}, KPP ${ENTITY.kpp}, OGRN ${ENTITY.ogrn}).`,
+          `Registered address: ${ENTITY.address}`,
+          `Contact: ${ENTITY.email}, ${ENTITY.phone}.`,
+        ],
+      },
+      {
+        heading: "2. Purpose of the site",
+        paragraphs: [
+          "Offered under the Russia Market Entry brand, this site provides information, content and a means of contact on Turkey–Russia e-commerce, marketplace operations, logistics, company formation and related consulting topics.",
+        ],
+      },
+      {
+        heading: "3. Informational nature",
+        paragraphs: [
+          "The articles, service descriptions, figures and process descriptions on the site are for general information purposes.",
+          "This content does not in itself constitute legal, tax, customs, accounting or investment advice. Your specific situation may require a separate contract or professional advice. Legislation and practice may change; the published information is not guaranteed to be up to date and complete at all times.",
+        ],
+      },
+      {
+        heading: "4. Intellectual property",
+        paragraphs: [
+          "The site design, texts, images, logo and other content belong, unless stated otherwise, to the site operator or the respective rights holders. Unauthorised copying, reproduction, distribution or commercial use is prohibited.",
+          "Third-party brands mentioned on the site, such as Wildberries, Ozon, Lamoda, Yandex, Google, FormSubmit and Netlify, are for reference only; they are owned by their respective owners.",
+        ],
+      },
+      {
+        heading: "5. Permitted and prohibited use",
+        paragraphs: ["You must use the site lawfully, honestly and reasonably. In particular, the following is prohibited:"],
+        bullets: [
+          "Attempting to compromise the security or operation of the site",
+          "Spreading malware or creating automated attacks / excessive load",
+          "Submitting misleading or unlawful content",
+          "Infringing the rights of others",
+        ],
+      },
+      {
+        heading: "6. Information submitted by users",
+        paragraphs: [
+          "You are responsible for ensuring that the information you submit via forms or other channels is accurate and your own. Submitting a form does not create an offer or a contract; a service relationship arises only if separately agreed.",
+          "Details on the processing of personal data are set out in the Privacy Policy.",
+        ],
+      },
+      {
+        heading: "7. Third-party links and services",
+        paragraphs: [
+          "The site may link to third-party services or external links such as WhatsApp, LinkedIn, FormSubmit, Google Analytics and Netlify. The terms and privacy practices of these services belong to the respective providers; we do not have full control over them.",
+        ],
+      },
+      {
+        heading: "8. Availability",
+        paragraphs: [
+          "The site is not guaranteed to work without interruption, without errors or identically on every device. Access may be temporarily affected by maintenance, technical failures or third-party outages.",
+        ],
+      },
+      {
+        heading: "9. Limitation of liability",
+        paragraphs: [
+          "To the extent permitted by applicable law, we seek not to be held liable for indirect, incidental or consequential damages arising from the use of the site, reliance on its content or interruption of access.",
+          "This limitation does not remove liabilities mandated by applicable law and is not a misleading claim of immunity.",
+        ],
+      },
+      {
+        heading: "10. Changes",
+        paragraphs: [
+          "The site content and these terms of use may be updated. The current text is published on this page.",
+        ],
+      },
+      {
+        heading: "11. Governing law",
+        paragraphs: [
+          "The governing law and competent courts are determined by the specific legal relationship, the position of the parties and any separate agreement between you and us. This text does not impose the law of a single country or a choice of court.",
+        ],
+      },
+      {
+        heading: "12. Contact",
+        paragraphs: [
+          `For questions: ${ENTITY.email}, ${ENTITY.phone}.`,
         ],
       },
     ],
@@ -433,18 +630,25 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
   cookies: {
     kind: "cookies",
     pathTr: "/cerez-politikasi",
+    pathEn: "/en/cookie-policy",
     pathRu: "/ru/politika-cookie",
     titleTr: "Çerez Politikası | Russia Market Entry",
+    titleEn: "Cookie Policy | Russia Market Entry",
     titleRu: "Политика использования файлов cookie | Russia Market Entry",
     metaTr:
       "Russia Market Entry çerez politikası: sitede kullanılan çerezler, Google Analytics, yerel depolama ve tarayıcı kontrolleri.",
+    metaEn:
+      "Russia Market Entry cookie policy: cookies used on the site, Google Analytics, local storage and browser controls.",
     metaRu:
       "Политика cookie Russia Market Entry: какие технологии используются на сайте, Google Analytics, локальное хранилище и настройки браузера.",
     h1Tr: "Çerez Politikası",
+    h1En: "Cookie Policy",
     h1Ru: "Политика использования файлов cookie",
     updatedLabelTr: "Son güncelleme",
+    updatedLabelEn: "Last updated",
     updatedLabelRu: "Дата последнего обновления",
     updatedDateTr: "24 Ağustos 2026",
+    updatedDateEn: "August 24, 2026",
     updatedDateRu: "24 августа 2026 г.",
     sectionsTr: [
       {
@@ -518,6 +722,81 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         heading: "10. Daha fazla bilgi",
         paragraphs: [
           "Kişisel verilerin işlenmesi hakkında ayrıntılar Gizlilik Politikası’nda yer alır. Bu çerez politikası güncellenebilir; güncel sürüm bu sayfada yayınlanır.",
+        ],
+      },
+    ],
+    sectionsEn: [
+      {
+        heading: "1. Operator",
+        paragraphs: [
+          `This site is operated by ${ENTITY.name}. Contact: ${ENTITY.email}, ${ENTITY.phone}.`,
+          `Registered address: ${ENTITY.address}`,
+        ],
+      },
+      {
+        heading: "2. What is a cookie?",
+        paragraphs: [
+          "Cookies are small text files that a website can place in your browser. Browser storage areas such as localStorage and sessionStorage may also be used for similar purposes.",
+        ],
+      },
+      {
+        heading: "3. Current status (important)",
+        paragraphs: [
+          "On your first visit, a cookie banner is displayed offering the choice to accept or decline analytics cookies. Your choice is stored in your browser (localStorage: cookie_consent_v1) and can be changed at any time via the “Cookie Settings” link in the footer.",
+          "If you decline or have not yet made a choice, Google Analytics does not set cookies and Yandex Metrica session recording / click maps remain off; basic visit statistics continue to be kept. You can also delete or block cookies in your browser settings.",
+        ],
+      },
+      {
+        heading: "4. Cookies set by first-party code",
+        paragraphs: [
+          "Our application code does not write cookies directly via document.cookie. The cookies seen on the site originate from third-party scripts.",
+        ],
+      },
+      {
+        heading: "5. Analytics — Google Analytics",
+        paragraphs: [
+          "Google Analytics 4 is used (measurement ID G-ZPTMJFB9WS). The gtag script is added when the page loads; page view events are sent on page changes. Thanks to Google Consent Mode, no cookies are set before consent is given and only cookieless measurement signals are sent.",
+          "When you give consent, Google may set cookies such as _ga and _ga_*. These are for usage statistics and measurement purposes. Their durations depend on Google’s practices.",
+          "Yandex Metrica (counter 112001301) is used for visit statistics and may set cookies such as _ym_uid and _ym_d. Session recording (Webvisor) and click maps are activated only on page loads after you give consent.",
+        ],
+      },
+      {
+        heading: "6. Local storage (localStorage / sessionStorage)",
+        paragraphs: [
+          "Storage keys used in the code:",
+        ],
+        bullets: [
+          "localStorage: i18nextLng — language preference",
+          "localStorage: user_language_manual — the explicit choice the user made in the language selector",
+          "localStorage: cookie_consent_v1 — the accept / decline choice made in the cookie banner",
+          "sessionStorage: detected_geo_country — session cache of the country code detected via geo-IP",
+        ],
+      },
+      {
+        heading: "7. Geo-IP technology",
+        paragraphs: [
+          "When there is no manual language preference, on the first visit to the home page (/) api.country.is and, if necessary, ipapi.co may be called for country detection. These requests are not cookies but external API calls; the IP address may be transmitted to the relevant service.",
+        ],
+      },
+      {
+        heading: "8. Other third-party technologies",
+        paragraphs: [
+          "The Netlify Identity widget (identity.netlify.com) is loaded only on the admin panel and on invitation and password reset links; it is for CMS/administrator authentication and may use its own storage or cookies.",
+          "FormSubmit is used for form submission; it does not require a FormSubmit cookie to be placed in the visitor’s browser before a form is submitted, but a request is sent to FormSubmit upon submission.",
+          "No advertising / remarketing pixel (e.g. Meta Pixel) is installed on the site.",
+        ],
+      },
+      {
+        heading: "9. Control via your browser",
+        paragraphs: [
+          "You can delete, block or restrict cookies and site data in your browser settings. Blocking may affect some features (for example, remembering your language preference or analytics).",
+          "For Google Analytics, browser add-ons or account/settings options offered by Google may also be used; these are Google’s own tools.",
+        ],
+      },
+      {
+        heading: "10. More information",
+        paragraphs: [
+          "Details on the processing of personal data can be found in the Privacy Policy. This cookie policy may be updated; the current version is published on this page.",
         ],
       },
     ],

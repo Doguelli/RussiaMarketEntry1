@@ -31,7 +31,7 @@ export default function CookieConsentBanner() {
     >
       <p className="text-[13px] leading-relaxed text-slate-600">
         {t("cookie_banner.text")}{" "}
-        <Link to={cookiesPath(i18n.language === "ru")} className="text-accent-500 font-semibold hover:underline">
+        <Link to={cookiesPath(i18n.language)} className="text-accent-500 font-semibold hover:underline">
           {t("cookie_banner.policy")}
         </Link>
       </p>

@@ -1,56 +1,69 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { createBreadcrumbSchema } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import {
   absoluteUrl,
   homePath,
   privacyPath,
   termsPath,
   cookiesPath,
+  type PathLang,
 } from "@/utils/ruPaths";
 import { getLegalDoc, type LegalKind } from "@/data/legalContent";
 
 type Props = {
   kind: LegalKind;
-  /** URL language tree: Turkish paths vs /ru/* paths */
-  isRu: boolean;
+  /** URL language tree */
+  lang: PathLang;
 };
 
-export default function LegalDocument({ kind, isRu }: Props) {
+const LABELS: Record<PathLang, { home: string; privacy: string; terms: string; cookies: string; otherDocs: string }> = {
+  tr: {
+    home: "Ana Sayfa",
+    privacy: "Gizlilik Politikası",
+    terms: "Kullanım Şartları",
+    cookies: "Çerez Politikası",
+    otherDocs: "Diğer yasal belgeler",
+  },
+  en: {
+    home: "Home",
+    privacy: "Privacy Policy",
+    terms: "Terms of Use",
+    cookies: "Cookie Policy",
+    otherDocs: "Other legal documents",
+  },
+  ru: {
+    home: "Главная",
+    privacy: "Политика конфиденциальности",
+    terms: "Условия использования",
+    cookies: "Политика cookie",
+    otherDocs: "Другие правовые документы",
+  },
+};
+
+export default function LegalDocument({ kind, lang }: Props) {
   const doc = getLegalDoc(kind);
-  const pagePath = isRu ? doc.pathRu : doc.pathTr;
+  const pick = <T,>(tr: T, en: T, ru: T): T => (lang === "ru" ? ru : lang === "en" ? en : tr);
+  const pagePath = pick(doc.pathTr, doc.pathEn, doc.pathRu);
   const canonicalUrl = absoluteUrl(pagePath);
-  const title = isRu ? doc.titleRu : doc.titleTr;
-  const description = isRu ? doc.metaRu : doc.metaTr;
-  const h1 = isRu ? doc.h1Ru : doc.h1Tr;
-  const updatedLabel = isRu ? doc.updatedLabelRu : doc.updatedLabelTr;
-  const updatedDate = isRu ? doc.updatedDateRu : doc.updatedDateTr;
-  const sections = isRu ? doc.sectionsRu : doc.sectionsTr;
-  const trHref = absoluteUrl(doc.pathTr);
-  const ruHref = absoluteUrl(doc.pathRu);
+  const title = pick(doc.titleTr, doc.titleEn, doc.titleRu);
+  const description = pick(doc.metaTr, doc.metaEn, doc.metaRu);
+  const h1 = pick(doc.h1Tr, doc.h1En, doc.h1Ru);
+  const updatedLabel = pick(doc.updatedLabelTr, doc.updatedLabelEn, doc.updatedLabelRu);
+  const updatedDate = pick(doc.updatedDateTr, doc.updatedDateEn, doc.updatedDateRu);
+  const sections = pick(doc.sectionsTr, doc.sectionsEn, doc.sectionsRu);
+  const labels = LABELS[lang];
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? "Главная" : "Ana Sayfa", url: homePath(isRu) },
+    { name: labels.home, url: homePath(lang) },
     { name: h1, url: pagePath },
   ]);
 
   const otherLinks = [
-    {
-      kind: "privacy" as const,
-      label: isRu ? "Политика конфиденциальности" : "Gizlilik Politikası",
-      to: privacyPath(isRu),
-    },
-    {
-      kind: "terms" as const,
-      label: isRu ? "Условия использования" : "Kullanım Şartları",
-      to: termsPath(isRu),
-    },
-    {
-      kind: "cookies" as const,
-      label: isRu ? "Политика cookie" : "Çerez Politikası",
-      to: cookiesPath(isRu),
-    },
+    { kind: "privacy" as const, label: labels.privacy, to: privacyPath(lang) },
+    { kind: "terms" as const, label: labels.terms, to: termsPath(lang) },
+    { kind: "cookies" as const, label: labels.cookies, to: cookiesPath(lang) },
   ].filter((l) => l.kind !== kind);
 
   return (
@@ -59,9 +72,7 @@ export default function LegalDocument({ kind, isRu }: Props) {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={canonicalUrl} />
-        <link rel="alternate" hrefLang="tr" href={trHref} />
-        <link rel="alternate" hrefLang="ru" href={ruHref} />
-        <link rel="alternate" hrefLang="x-default" href={trHref} />
+        {hreflangElements((l) => (l === "ru" ? doc.pathRu : l === "en" ? doc.pathEn : doc.pathTr))}
         {socialMetaElements({ title, description, url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -102,7 +113,7 @@ export default function LegalDocument({ kind, isRu }: Props) {
 
         <nav
           className="mt-16 pt-8 border-t border-slate-100 flex flex-col sm:flex-row gap-4 text-[14px]"
-          aria-label={isRu ? "Другие правовые документы" : "Diğer yasal belgeler"}
+          aria-label={labels.otherDocs}
         >
           {otherLinks.map((l) => (
             <Link

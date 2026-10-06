@@ -182,12 +182,11 @@ const ROUTES = (
             <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/iletisim" element={<Contact />} />
             <Route path="/referanslar" element={<References />} />
-            <Route path="/gizlilik-politikasi" element={<LegalDocument kind="privacy" isRu={false} />} />
-            <Route path="/kullanim-sartlari" element={<LegalDocument kind="terms" isRu={false} />} />
-            <Route path="/cerez-politikasi" element={<LegalDocument kind="cookies" isRu={false} />} />
+            <Route path="/gizlilik-politikasi" element={<LegalDocument kind="privacy" lang="tr" />} />
+            <Route path="/kullanim-sartlari" element={<LegalDocument kind="terms" lang="tr" />} />
+            <Route path="/cerez-politikasi" element={<LegalDocument kind="cookies" lang="tr" />} />
 
-            {/* English Language Routes (/en/*) — English path segments.
-                Legal documents have no English version and stay on TR URLs. */}
+            {/* English Language Routes (/en/*) — English path segments */}
             <Route path="/en" element={<Home />} />
             <Route path="/en/about" element={<About />} />
             <Route path="/en/russia-market" element={<RussiaMarket />} />
@@ -201,6 +200,9 @@ const ROUTES = (
             <Route path="/en/blog/:slug" element={<BlogDetail />} />
             <Route path="/en/contact" element={<Contact />} />
             <Route path="/en/references" element={<References />} />
+            <Route path="/en/privacy-policy" element={<LegalDocument kind="privacy" lang="en" />} />
+            <Route path="/en/terms-of-use" element={<LegalDocument kind="terms" lang="en" />} />
+            <Route path="/en/cookie-policy" element={<LegalDocument kind="cookies" lang="en" />} />
             
             {/* Russian Language Routes (/ru/*) — Russian Latin path segments */}
             <Route path="/ru" element={<Home />} />
@@ -216,9 +218,9 @@ const ROUTES = (
             <Route path="/ru/blog/:slug" element={<BlogDetail />} />
             <Route path="/ru/kontakty" element={<Contact />} />
             <Route path="/ru/keisy-i-klienty" element={<References />} />
-            <Route path="/ru/politika-konfidentsialnosti" element={<LegalDocument kind="privacy" isRu={true} />} />
-            <Route path="/ru/usloviya-ispolzovaniya" element={<LegalDocument kind="terms" isRu={true} />} />
-            <Route path="/ru/politika-cookie" element={<LegalDocument kind="cookies" isRu={true} />} />
+            <Route path="/ru/politika-konfidentsialnosti" element={<LegalDocument kind="privacy" lang="ru" />} />
+            <Route path="/ru/usloviya-ispolzovaniya" element={<LegalDocument kind="terms" lang="ru" />} />
+            <Route path="/ru/politika-cookie" element={<LegalDocument kind="cookies" lang="ru" />} />
             
             {/* Phase 2: Commercial Landing Page for Foreigners registering company in Turkey */}
             <Route path="/ru/kompaniya-v-turtsii" element={<CompanyInTurkey />} />

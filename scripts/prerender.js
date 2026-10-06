@@ -41,7 +41,7 @@ const staticRoutesToPrerender = [
   "/blog",
   "/referanslar",
 
-  // English pages (English path segments; legal documents stay Turkish-only)
+  // English pages (English path segments)
   "/en",
   "/en/about",
   "/en/russia-market",
@@ -66,6 +66,9 @@ const staticRoutesToPrerender = [
   "/en/contact",
   "/en/blog",
   "/en/references",
+  "/en/privacy-policy",
+  "/en/terms-of-use",
+  "/en/cookie-policy",
 
   // Russian Infrastructure & Commercial Pages (Russian Latin path segments)
   "/ru",
@@ -259,7 +262,10 @@ const pageSitemapData = new Map();
       url.includes("cerez") ||
       url.includes("politika-konfidentsialnosti") ||
       url.includes("usloviya-ispolzovaniya") ||
-      url.includes("politika-cookie")
+      url.includes("politika-cookie") ||
+      url === "/en/privacy-policy" ||
+      url === "/en/terms-of-use" ||
+      url === "/en/cookie-policy"
     ) {
       return { priority: "0.3", changefreq: "yearly" };
     }

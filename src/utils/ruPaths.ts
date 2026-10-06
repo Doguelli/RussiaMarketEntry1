@@ -17,7 +17,7 @@ export function toPathLang(lang: PathLangArg): PathLang {
   return "tr";
 }
 
-/** Structural pages: Turkish path → English path (legal pages have no English version) */
+/** Structural pages: Turkish path → English path */
 export const TR_TO_EN_PAGE: Record<string, string> = {
   "/": "/en",
   "/hakkimizda": "/en/about",
@@ -29,6 +29,9 @@ export const TR_TO_EN_PAGE: Record<string, string> = {
   "/iletisim": "/en/contact",
   "/blog": "/en/blog",
   "/referanslar": "/en/references",
+  "/gizlilik-politikasi": "/en/privacy-policy",
+  "/kullanim-sartlari": "/en/terms-of-use",
+  "/cerez-politikasi": "/en/cookie-policy",
 };
 
 export const EN_TO_TR_PAGE: Record<string, string> = Object.fromEntries(
@@ -329,6 +332,6 @@ export function pathForLanguage(
   if (targetLang === "tr") return trPath;
   const pageMap = targetLang === "ru" ? TR_TO_RU_PAGE : TR_TO_EN_PAGE;
   if (pageMap[trPath]) return pageMap[trPath];
-  // Pages without an English version (legal documents) stay on the TR URL.
+  // Unmapped pages keep the TR path for EN.
   return targetLang === "ru" ? `/ru${trPath}` : trPath;
 }
