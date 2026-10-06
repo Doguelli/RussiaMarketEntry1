@@ -111,7 +111,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         bullets: [
           "FormSubmit (formsubmit.co): İletişim ve Türkiye şirket kuruluşu formları bu hizmete JSON olarak gönderilir. Form içeriği FormSubmit üzerinden operasyon e-postasına iletilir; tarayıcıdan yapılan istek nedeniyle IP ve kullanıcı aracısı (user-agent) bilgisi de FormSubmit’e ulaşabilir.",
           "Google Analytics 4 (ölçüm kimliği G-ZPTMJFB9WS): Sayfa görüntülemeleri ve kullanım verileri toplanır. Analitik komut dosyası sayfa yüklenirken çalışır; site içi onay şartına bağlı değildir.",
-          "Netlify: Barındırma ve içerik dağıtımı. Ayrıca Decap CMS / yönetici erişimi için Netlify Identity widget’ı sayfalarda yüklenir.",
+          "Netlify: Barındırma ve içerik dağıtımı. Ayrıca Decap CMS / yönetici erişimi için Netlify Identity widget’ı yalnızca yönetici paneli ile davet ve şifre sıfırlama bağlantılarında yüklenir.",
           "Geo-IP hizmetleri (api.country.is ve yedek olarak ipapi.co): Manuel dil tercihi kaydedilmemiş bir ziyaretçi ana sayfaya (/) ilk geldiğinde ülke kodu tespiti için IP adresi gönderilebilir; sonuç oturum depolamada tutulabilir ve dil yönlendirmesi için kullanılabilir.",
           "WhatsApp (wa.me): Ziyaretçi WhatsApp bağlantısına tıkladığında Meta/WhatsApp’ın kendi gizlilik kuralları geçerli olur.",
         ],
@@ -202,7 +202,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         bullets: [
           "FormSubmit (formsubmit.co): формы контактов и заявки на регистрацию компании в Турции отправляются в этот сервис в формате JSON. Содержимое формы передаётся через FormSubmit на операционную электронную почту; при запросе из браузера IP-адрес и user-agent также могут быть доступны FormSubmit.",
           "Google Analytics 4 (идентификатор G-ZPTMJFB9WS): собираются просмотры страниц и данные об использовании. Скрипт аналитики загружается при открытии страницы и не ставится в зависимость от согласия на сайте.",
-          "Netlify: хостинг и доставка контента. Кроме того, на страницах загружается виджет Netlify Identity (для доступа к CMS / админ-панели).",
+          "Netlify: хостинг и доставка контента. Кроме того, виджет Netlify Identity (для доступа к CMS / админ-панели) загружается только в админ-панели и по ссылкам приглашения или восстановления пароля.",
           "Сервисы Geo-IP (api.country.is и резервно ipapi.co): при первом посещении главной страницы (/) пользователем без сохранённого ручного выбора языка IP-адрес может передаваться для определения кода страны; результат может сохраняться в sessionStorage и использоваться для языкового перенаправления.",
           "WhatsApp (wa.me): при переходе по ссылке WhatsApp применяются правила конфиденциальности Meta/WhatsApp.",
         ],
@@ -498,7 +498,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "8. Diğer üçüncü taraf teknolojiler",
         paragraphs: [
-          "Netlify Identity widget’ı (identity.netlify.com) sayfalarda yüklenir; CMS/yönetici kimlik doğrulaması içindir ve kendi depolama veya çerezlerini kullanabilir.",
+          "Netlify Identity widget’ı (identity.netlify.com) yalnızca yönetici paneli ile davet ve şifre sıfırlama bağlantılarında yüklenir; CMS/yönetici kimlik doğrulaması içindir ve kendi depolama veya çerezlerini kullanabilir.",
           "FormSubmit form gönderiminde kullanılır; form gönderilene kadar ziyaretçi tarayıcısına FormSubmit çerezi yerleştirmeyi zorunlu kılmaz, ancak gönderim sırasında FormSubmit’e istek gider.",
           "Sitede reklam / yeniden pazarlama pikseli (ör. Meta Pixel) kurulu değildir.",
         ],
@@ -569,7 +569,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
       {
         heading: "8. Другие сторонние технологии",
         paragraphs: [
-          "Виджет Netlify Identity (identity.netlify.com) загружается на страницах для аутентификации CMS/админки и может использовать собственное хранилище или cookie.",
+          "Виджет Netlify Identity (identity.netlify.com) загружается только в админ-панели и по ссылкам приглашения или восстановления пароля для аутентификации CMS/админки и может использовать собственное хранилище или cookie.",
           "FormSubmit используется при отправке форм; до отправки формы он не обязан устанавливать cookie в браузер, но при отправке выполняется запрос к FormSubmit.",
           "Рекламные или ремаркетинговые пиксели (например, Meta Pixel) на сайте не установлены.",
         ],

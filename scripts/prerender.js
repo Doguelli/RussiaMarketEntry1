@@ -150,10 +150,35 @@ function writeHtmlFile(relativePath, html) {
   fs.writeFileSync(filePath, html);
 }
 
+const siteOrigin = "https://russiamarketentry.com";
+
+/** hreflang alternates exactly as the page declares them in its head. */
+function extractAlternates(appHtml) {
+  const alternates = [];
+  for (const tag of appHtml.match(/<link[^>]*rel=["']alternate["'][^>]*>/gi) || []) {
+    const lang = tag.match(/hreflang=["']([^"']+)["']/i)?.[1];
+    const href = tag.match(/href=["']([^"']+)["']/i)?.[1];
+    if (lang && href) alternates.push({ lang, href });
+  }
+  return alternates;
+}
+
+/** Last real content change of a page, taken from its BlogPosting schema. */
+function extractLastModified(appHtml) {
+  const dates = [...appHtml.matchAll(/"dateModified":"(\d{4}-\d{2}-\d{2})"/g)].map((m) => m[1]);
+  return dates.sort().at(-1) || null;
+}
+
+const pageSitemapData = new Map();
+
 (async () => {
   for (const url of routesToPrerender) {
     const { html: appHtml } = await render(url);
     const html = mergeRouteIntoHtml(url, appHtml);
+    pageSitemapData.set(url, {
+      alternates: extractAlternates(appHtml),
+      lastmod: extractLastModified(appHtml),
+    });
 
     const filePath =
       url === "/"
@@ -174,8 +199,18 @@ function writeHtmlFile(relativePath, html) {
     fs.rmSync(toAbsolute("dist/server"), { recursive: true, force: true });
   }
 
-  const siteOrigin = "https://russiamarketentry.com";
-  const buildDate = new Date().toISOString().slice(0, 10);
+  // Blog indexes change whenever a post in their language tree changes.
+  for (const indexUrl of ["/blog", "/en/blog", "/ru/blog"]) {
+    const entry = pageSitemapData.get(indexUrl);
+    if (!entry) continue;
+    const childDates = [...pageSitemapData.entries()]
+      .filter(([url, data]) => url.startsWith(`${indexUrl}/`) && data.lastmod)
+      .map(([, data]) => data.lastmod)
+      .sort();
+    entry.lastmod = childDates.at(-1) || null;
+  }
+
+  const sitemapLocs = new Set(routesToPrerender.map((url) => `${siteOrigin}${url}`));
 
   function sitemapMeta(url) {
     if (url === "/" || url === "/ru") return { priority: "1.0", changefreq: "weekly" };
@@ -207,10 +242,17 @@ function writeHtmlFile(relativePath, html) {
   const sitemapUrls = routesToPrerender
     .map((url) => {
       const { priority, changefreq } = sitemapMeta(url);
-      return `  <url><loc>${siteOrigin}${url}</loc><lastmod>${buildDate}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`;
+      const { alternates = [], lastmod = null } = pageSitemapData.get(url) || {};
+      // Only list alternates that are themselves indexable URLs in this sitemap.
+      const alternateTags = alternates
+        .filter(({ href }) => sitemapLocs.has(href))
+        .map(({ lang, href }) => `<xhtml:link rel="alternate" hreflang="${lang}" href="${href}"/>`)
+        .join("");
+      const lastmodTag = lastmod ? `<lastmod>${lastmod}</lastmod>` : "";
+      return `  <url><loc>${siteOrigin}${url}</loc>${lastmodTag}<changefreq>${changefreq}</changefreq><priority>${priority}</priority>${alternateTags}</url>`;
     })
     .join("\n");
-  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls}\n</urlset>\n`;
+  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sitemapUrls}\n</urlset>\n`;
   writeHtmlFile("dist/sitemap.xml", sitemapXml);
 
   console.log(

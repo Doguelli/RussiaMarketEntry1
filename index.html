@@ -36,8 +36,13 @@
     </noscript>
     <script type="module" src="/src/main.tsx"></script>
     <!-- Netlify Identity: handles invite/password-recovery links that land on
-         the root domain instead of /admin (standard Decap CMS + Identity setup). -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+         the root domain instead of /admin (standard Decap CMS + Identity setup).
+         Loaded only when such a token is in the URL, not on every visit. -->
+    <script>
+      if (/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)) {
+        document.write('<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"><\/script>');
+      }
+    </script>
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {
