@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { HeartPulse } from "lucide-react";
-import { contactPath } from "@/utils/ruPaths";
+import { contactPath, operationModelPath } from "@/utils/ruPaths";
 
 const flowCard =
   "bg-slate-50 p-4 rounded-xl border border-slate-100 text-[14px] text-slate-600 leading-relaxed";
@@ -406,7 +406,7 @@ export const medicalServiceEN = {
           </p>
           <p className="text-[14px]">
             Learn more about our operation model:{" "}
-            <Link to="/operasyon-modeli" className="text-accent-500 font-semibold hover:underline">
+            <Link to={operationModelPath("en")} className="text-accent-500 font-semibold hover:underline">
               Operation Model
             </Link>
           </p>
@@ -421,7 +421,7 @@ export const medicalServiceEN = {
             Let's assess your product's potential in Russia, the right operation model and growth opportunities together.
           </p>
           <Link
-            to={contactPath(false)}
+            to={contactPath("en")}
             className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 transition-colors text-white font-bold px-5 py-3 rounded-xl text-[14px]"
           >
             Apply for a Pre-Analysis

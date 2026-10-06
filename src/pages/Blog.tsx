@@ -8,6 +8,7 @@ import { createBreadcrumbSchema } from "@/utils/seo";
 import { socialMetaElements } from "@/components/PageSocialMeta";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { hasBlogContentFor, type BlogLang } from "@/utils/blogLanguages";
+import { homePath } from "@/utils/ruPaths";
 
 const blogCardHover =
   "block h-full bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm transition-all duration-[225ms] ease-out hover:-translate-y-0.5 hover:shadow-md hover:border-primary-200/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-300 focus-visible:ring-offset-2";
@@ -95,12 +96,8 @@ export default function Blog() {
     return post.readTime;
   };
 
-  // English has no landing page of its own — /en/blog is the root of the only
-  // English URL tree, so it starts the trail instead of a nonexistent /en.
   const breadcrumbSchema = createBreadcrumbSchema([
-    ...(currentLang === 'en'
-      ? []
-      : [{ name: currentLang === 'ru' ? 'Главная' : 'Ana Sayfa', url: currentLang === 'ru' ? '/ru' : '/' }]),
+    { name: currentLang === 'ru' ? 'Главная' : currentLang === 'en' ? 'Home' : 'Ana Sayfa', url: homePath(currentLang) },
     { name: t('nav.blog'), url: `${langPrefix}/blog` }
   ]);
 

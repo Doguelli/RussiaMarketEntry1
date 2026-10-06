@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle2, Droplets, ShoppingBag, Factory, Users } from "lucide-react";
 import { ForWhomContent } from "./forWhomData";
+import { contactPath } from "@/utils/ruPaths";
 
 export const forWhomDataEN: ForWhomContent[] = [
   {
@@ -25,7 +26,7 @@ export const forWhomDataEN: ForWhomContent[] = [
             We bring your brand's story to Russia and professionally manage your sales operations end-to-end.
           </p>
           <div className="mt-4">
-            <Link to="/iletisim" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
+            <Link to={contactPath("en")} className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
               👉 Apply Now
             </Link>
           </div>
@@ -75,7 +76,7 @@ export const forWhomDataEN: ForWhomContent[] = [
             Combine your supply power with our operational experience, and let's connect your products directly with Russian consumers.
           </p>
           <div className="mt-4">
-            <Link to="/iletisim" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
+            <Link to={contactPath("en")} className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
               👉 Apply Now
             </Link>
           </div>
@@ -104,7 +105,7 @@ export const forWhomDataEN: ForWhomContent[] = [
             The infrastructure to turn your idea into sales is ready with us, focus on your own business without taking risks.
           </p>
           <div className="mt-4">
-            <Link to="/iletisim" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
+            <Link to={contactPath("en")} className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
               👉 Apply Now
             </Link>
           </div>
@@ -133,7 +134,7 @@ export const forWhomDataEN: ForWhomContent[] = [
             We open cosmetics producers' products for sale in the Russian market and manage the entire operational process end-to-end.
           </p>
           <div className="mt-4">
-            <Link to="/iletisim" className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
+            <Link to={contactPath("en")} className="inline-flex items-center gap-2 font-bold text-accent-500 hover:text-accent-600">
               👉 Apply Now
             </Link>
           </div>

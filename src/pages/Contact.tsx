@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { Mail, MapPin, Phone, ArrowRight, Send, Target, LineChart, Layers, Settings2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema, VERIFIED_CONTACT, OPERATIONAL_LOCATION } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import { contactPath, absoluteUrl, homePath } from "@/utils/ruPaths";
 import { FORMSPREE_ENDPOINT } from "@/utils/formspree";
 
@@ -56,12 +56,13 @@ function trackLeadSubmit() {
 export default function Contact() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === "ru";
+  const pageLang = i18n.language;
   const isEn = i18n.language === "en";
-  const pagePath = contactPath(isRu);
+  const pagePath = contactPath(pageLang);
   const canonicalUrl = absoluteUrl(pagePath);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(isRu) },
+    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(pageLang) },
     { name: t("nav.contact"), url: pagePath },
   ]);
 
@@ -217,9 +218,7 @@ export default function Contact() {
           }
         />
         <link rel="canonical" href={canonicalUrl} />
-        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/iletisim" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/kontakty" />
-        <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/iletisim" />
+        {hreflangElements(contactPath)}
         {socialMetaElements({ title: t("contact.title"), description: t("contact.desc_meta"), url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>

@@ -209,7 +209,7 @@ export const serviceDetailsEN: Record<string, any> = {
           <div className="space-y-5 text-slate-600">
             <p>
               Growth in Russian e-commerce comes from choosing the right marketplace and managing product positioning, pricing, advertising and operations together. Across our{" "}
-              <Link to={servicesPath(false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicesPath("en")} className="text-accent-500 font-semibold hover:underline">
                 services
               </Link>
               , we operationally manage Wildberries, Ozon, Yandex Market and Lamoda.
@@ -433,7 +433,7 @@ export const serviceDetailsEN: Record<string, any> = {
                 Marketplace sales can be supported with Yandex Ads, VK Ads and Telegram Native Advertising. Those channels belong to our broader digital marketing service — this page stays focused on marketplace operations and sales management.
               </p>
               <Link
-                to={servicePath("marka-buyutme", false)}
+                to={servicePath("marka-buyutme", "en")}
                 className="inline-flex text-accent-500 font-bold hover:underline"
               >
                 Explore Digital Marketing Solutions →
@@ -469,15 +469,15 @@ export const serviceDetailsEN: Record<string, any> = {
               <li>Logistics / fulfillment coordination</li>
             </ul>
             <p className="text-[14px] space-x-1">
-              <Link to={servicePath("lojistik-ve-depo", false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicePath("lojistik-ve-depo", "en")} className="text-accent-500 font-semibold hover:underline">
                 Logistics & warehousing
               </Link>
               <span>·</span>
-              <Link to={servicePath("sistem-ve-entegrasyon", false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicePath("sistem-ve-entegrasyon", "en")} className="text-accent-500 font-semibold hover:underline">
                 Systems & integration
               </Link>
               <span>·</span>
-              <Link to={servicePath("operasyon-kurulumu", false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicePath("operasyon-kurulumu", "en")} className="text-accent-500 font-semibold hover:underline">
                 Operations setup
               </Link>
               <span>·</span>
@@ -545,7 +545,7 @@ export const serviceDetailsEN: Record<string, any> = {
               <li>Reduce operational errors</li>
               <li>Achieve profitable, sustainable growth</li>
             </ul>
-            <Link to={contactPath(false)} className="inline-flex text-accent-500 font-bold hover:underline">
+            <Link to={contactPath("en")} className="inline-flex text-accent-500 font-bold hover:underline">
               Request a Pre-Analysis →
             </Link>
           </div>
@@ -865,7 +865,7 @@ export const serviceDetailsEN: Record<string, any> = {
             </p>
             <p>
               We position your brand around Yandex, VK and Telegram — aligned with the Russian search ecosystem and local audience behavior. The goal is not just to run ads, but to build sustainable demand and brand growth within our{" "}
-              <Link to={servicesPath(false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicesPath("en")} className="text-accent-500 font-semibold hover:underline">
                 services
               </Link>
               .
@@ -994,7 +994,7 @@ export const serviceDetailsEN: Record<string, any> = {
               This is not a market-research or medical service page — it explains how digital channels support those business models.
             </p>
             <Link
-              to={servicePath("pazar-arastirmasi-ve-strateji", false)}
+              to={servicePath("pazar-arastirmasi-ve-strateji", "en")}
               className="inline-flex text-accent-500 font-bold hover:underline"
             >
               Explore B2B & Market Development Solutions →
@@ -1011,7 +1011,7 @@ export const serviceDetailsEN: Record<string, any> = {
             </p>
             <p>
               Marketplace operations, product cards, pricing and in-platform advertising belong on our{" "}
-              <Link to={servicePath("pazaryeri-yonetimi", false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicePath("pazaryeri-yonetimi", "en")} className="text-accent-500 font-semibold hover:underline">
                 marketplace management
               </Link>{" "}
               page. This page focuses on external digital demand and brand growth.
@@ -1022,7 +1022,7 @@ export const serviceDetailsEN: Record<string, any> = {
               <li>Scaling ad investment as operations grow</li>
             </ul>
             <p className="text-[14px]">
-              <Link to={servicePath("pazaryeri-yonetimi", false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicePath("pazaryeri-yonetimi", "en")} className="text-accent-500 font-semibold hover:underline">
                 Explore Marketplace Management Solutions →
               </Link>
               {" · "}
@@ -1070,15 +1070,15 @@ export const serviceDetailsEN: Record<string, any> = {
               </div>
             ))}
             <p className="text-[14px] pt-2 space-x-1">
-              <Link to={servicePath("operasyon-kurulumu", false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicePath("operasyon-kurulumu", "en")} className="text-accent-500 font-semibold hover:underline">
                 Operations setup
               </Link>
               <span>·</span>
-              <Link to={servicePath("sistem-ve-entegrasyon", false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicePath("sistem-ve-entegrasyon", "en")} className="text-accent-500 font-semibold hover:underline">
                 Systems & integration
               </Link>
               <span>·</span>
-              <Link to={contactPath(false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={contactPath("en")} className="text-accent-500 font-semibold hover:underline">
                 Contact
               </Link>
             </p>
@@ -1093,7 +1093,7 @@ export const serviceDetailsEN: Record<string, any> = {
             <p>
               <strong>Right strategy + right advertising + right data = sustainable growth</strong>
             </p>
-            <Link to={contactPath(false)} className="inline-flex text-accent-500 font-bold hover:underline">
+            <Link to={contactPath("en")} className="inline-flex text-accent-500 font-bold hover:underline">
               Request a Pre-Analysis →
             </Link>
           </div>
@@ -1460,7 +1460,7 @@ export const serviceDetailsEN: Record<string, any> = {
             </p>
             <p>
               The right route depends on product, sector and commercial objective. Across our{" "}
-              <Link to={servicesPath(false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicesPath("en")} className="text-accent-500 font-semibold hover:underline">
                 services
               </Link>
               , we work Research → Qualification → Targeting → Commercial Development — we do not sell raw company lists.
@@ -1484,7 +1484,7 @@ export const serviceDetailsEN: Record<string, any> = {
             <p>
               This step clarifies commercial potential and readiness. It is meaningful for companies with a serious commercial objective — not a one-product “trial” approach.
             </p>
-            <Link to={contactPath(false)} className="inline-flex text-accent-500 font-bold hover:underline">
+            <Link to={contactPath("en")} className="inline-flex text-accent-500 font-bold hover:underline">
               Request a Pre-Analysis →
             </Link>
           </div>
@@ -1572,11 +1572,11 @@ export const serviceDetailsEN: Record<string, any> = {
               <li>How should stock be managed as sales grow?</li>
             </ul>
             <p className="text-[14px] space-x-1">
-              <Link to={servicePath("lojistik-ve-depo", false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicePath("lojistik-ve-depo", "en")} className="text-accent-500 font-semibold hover:underline">
                 Logistics & warehousing
               </Link>
               <span>·</span>
-              <Link to={servicePath("operasyon-kurulumu", false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicePath("operasyon-kurulumu", "en")} className="text-accent-500 font-semibold hover:underline">
                 Operations setup
               </Link>
             </p>
@@ -1657,7 +1657,7 @@ export const serviceDetailsEN: Record<string, any> = {
               Depending on product and business model, Russia entry may involve B2B, e-commerce, marketplaces, distributors or hybrid models. We evaluate these options together during research.
             </p>
             <Link
-              to={servicePath("pazaryeri-yonetimi", false)}
+              to={servicePath("pazaryeri-yonetimi", "en")}
               className="inline-flex text-accent-500 font-bold hover:underline"
             >
               Marketplace Management in Russia →
@@ -1674,7 +1674,7 @@ export const serviceDetailsEN: Record<string, any> = {
             </p>
             <p className="text-[14px]">
               This page focuses on B2B and medical market development. Digital marketing is a separate service:{" "}
-              <Link to={servicePath("marka-buyutme", false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicePath("marka-buyutme", "en")} className="text-accent-500 font-semibold hover:underline">
                 Digital Marketing in Russia
               </Link>
             </p>
@@ -1707,11 +1707,11 @@ export const serviceDetailsEN: Record<string, any> = {
               We do not leave research as a report only — we connect it to operations: Marketplace · Logistics · Stock · Price · Marketing · Sales. The real value of good market research is an actionable entry plan.
             </p>
             <p className="text-[14px] space-x-1">
-              <Link to={servicePath("turkiyede-sirket-kurulumu", false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={servicePath("turkiyede-sirket-kurulumu", "en")} className="text-accent-500 font-semibold hover:underline">
                 Company formation in Turkey
               </Link>
               <span>·</span>
-              <Link to={contactPath(false)} className="text-accent-500 font-semibold hover:underline">
+              <Link to={contactPath("en")} className="text-accent-500 font-semibold hover:underline">
                 Contact
               </Link>
             </p>

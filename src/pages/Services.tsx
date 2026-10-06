@@ -13,7 +13,7 @@ import {
   Building2,
 } from "lucide-react";
 import { createBreadcrumbSchema } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import {
   servicesPath,
   servicePath,
@@ -33,11 +33,12 @@ function localeList(t: (key: string, options?: any) => any, key: string): string
 export default function Services() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === "ru";
+  const pageLang = i18n.language;
   const isEn = i18n.language === "en";
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(isRu) },
-    { name: t("nav.services"), url: servicesPath(isRu) },
+    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(pageLang) },
+    { name: t("nav.services"), url: servicesPath(pageLang) },
   ]);
 
   // Preserve existing SEO title/description (do not invent new indexed metadata).
@@ -53,7 +54,7 @@ export default function Services() {
       ? "End-to-end e-commerce consulting, Wildberries, Ozon and Lamoda marketplace management, logistics, company formation and finance in Russia."
       : "Türkiye'den Rusya'ya e-ticaret, Ozon, Wildberries, Lamoda entegrasyonu, şirket kuruluşu, gümrük, sertifikasyon, lojistik ve uçtan uca operasyon yönetimi hizmetlerimiz.";
 
-  const pagePath = servicesPath(isRu);
+  const pagePath = servicesPath(pageLang);
   const canonicalUrl = absoluteUrl(pagePath);
   const companyInTurkeyPath = "/ru/kompaniya-v-turtsii";
 
@@ -89,11 +90,11 @@ export default function Services() {
       items: cat1Items,
       icon: ShoppingCart,
       featured: true,
-      primaryTo: servicePath("pazaryeri-yonetimi", isRu),
+      primaryTo: servicePath("pazaryeri-yonetimi", pageLang),
       cta: t("services_page.cat1_cta"),
       secondaryLinks: [
-        { to: servicePath("sistem-ve-entegrasyon", isRu), label: t("services_page.cat1_link_secondary") },
-        { to: servicePath("pazar-arastirmasi-ve-strateji", isRu), label: t("services_page.cat1_link_optional") },
+        { to: servicePath("sistem-ve-entegrasyon", pageLang), label: t("services_page.cat1_link_secondary") },
+        { to: servicePath("pazar-arastirmasi-ve-strateji", pageLang), label: t("services_page.cat1_link_optional") },
       ],
     },
     {
@@ -104,7 +105,7 @@ export default function Services() {
       items: cat2Items,
       icon: Handshake,
       featured: true,
-      primaryTo: servicePath("pazar-arastirmasi-ve-strateji", isRu),
+      primaryTo: servicePath("pazar-arastirmasi-ve-strateji", pageLang),
       cta: t("services_page.cat2_cta"),
       secondaryLinks: [] as { to: string; label: string }[],
     },
@@ -117,11 +118,11 @@ export default function Services() {
       icon: HeartPulse,
       featured: true,
       trust: t("services_page.cat3_trust"),
-      primaryTo: servicePath("medikal-ve-saglik", isRu),
+      primaryTo: servicePath("medikal-ve-saglik", pageLang),
       cta: t("services_page.cat3_cta"),
       secondaryLinks: [
         {
-          to: servicePath("pazar-arastirmasi-ve-strateji", isRu),
+          to: servicePath("pazar-arastirmasi-ve-strateji", pageLang),
           label: t("services_page.cat3_link_strategy"),
         },
       ],
@@ -134,7 +135,7 @@ export default function Services() {
       items: cat4Items,
       icon: Megaphone,
       featured: false,
-      primaryTo: servicePath("marka-buyutme", isRu),
+      primaryTo: servicePath("marka-buyutme", pageLang),
       cta: t("services_page.cat4_cta"),
       secondaryLinks: [] as { to: string; label: string }[],
     },
@@ -146,12 +147,12 @@ export default function Services() {
       items: cat5Items,
       icon: Settings,
       featured: false,
-      primaryTo: servicePath("operasyon-kurulumu", isRu),
+      primaryTo: servicePath("operasyon-kurulumu", pageLang),
       cta: t("services_page.cat5_cta"),
       secondaryLinks: [
-        { to: servicePath("lojistik-ve-depo", isRu), label: t("services_page.cat5_link_logistics") },
-        { to: servicePath("ithalat-ve-gumruk-yonetimi", isRu), label: t("services_page.cat5_link_import") },
-        { to: servicePath("vergi-ve-finans", isRu), label: t("services_page.cat5_link_tax") },
+        { to: servicePath("lojistik-ve-depo", pageLang), label: t("services_page.cat5_link_logistics") },
+        { to: servicePath("ithalat-ve-gumruk-yonetimi", pageLang), label: t("services_page.cat5_link_import") },
+        { to: servicePath("vergi-ve-finans", pageLang), label: t("services_page.cat5_link_tax") },
       ],
     },
   ];
@@ -162,9 +163,7 @@ export default function Services() {
         <title>{metaTitle}</title>
         <meta name="description" content={metaDesc} />
         <link rel="canonical" href={canonicalUrl} />
-        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/hizmetler" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/uslugi" />
-        <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/hizmetler" />
+        {hreflangElements(servicesPath)}
         {socialMetaElements({ title: metaTitle, description: metaDesc, url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -204,7 +203,7 @@ export default function Services() {
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
             <Link
-              to={contactPath(isRu)}
+              to={contactPath(pageLang)}
               className="inline-flex items-center justify-center gap-3 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-8 py-4 rounded-full font-bold text-[15px] shadow-sm"
             >
               {t("services_page.cta_preanalysis")} <ArrowRight className="w-5 h-5" />
@@ -345,7 +344,7 @@ export default function Services() {
 
               <div className="flex flex-wrap gap-4">
                 <Link
-                  to={servicePath("turkiyede-sirket-kurulumu", isRu)}
+                  to={servicePath("turkiyede-sirket-kurulumu", pageLang)}
                   className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-6 py-3 rounded-full font-bold text-[14px]"
                 >
                   {t("services_page.corridor_cta_turkey")} <ArrowRight className="w-4 h-4" />
@@ -410,7 +409,7 @@ export default function Services() {
               {t("services_page.final_text")}
             </p>
             <Link
-              to={contactPath(isRu)}
+              to={contactPath(pageLang)}
               className="inline-flex items-center justify-center gap-3 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-8 py-4 rounded-full font-bold text-[15px]"
             >
               {t("services_page.cta_preanalysis")} <ArrowRight className="w-5 h-5" />

@@ -197,7 +197,7 @@ en:
     Once you have a selling price, the next question is how much money remains from each sale. We run the same USD 20 / USD 49 example through marketplace costs, logistics and advertising in [Russia marketplace unit economics: is your product really profitable?](/en/blog/rusya-marketplace-unit-economics-karlilik-2026)
     
     Russia Market Entry
-    We analyse import, marketplace, logistics, advertising and target margin together. [Market research & entry strategy](/hizmetler/pazar-arastirmasi-ve-strateji).
+    We analyse import, marketplace, logistics, advertising and target margin together. [Market research & entry strategy](/en/services/market-research-and-strategy).
     
     Related guides
     

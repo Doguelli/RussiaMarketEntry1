@@ -273,7 +273,7 @@ const baseBlogPosts: BlogPost[] = [
     titleEn: "Selling on Wildberries: Step by Step Guide for Turkish Brands",
     excerpt: "Wildberries, Rusya’nin en büyük pazaryeridir ve aylik yüz milyonlarca ziyaretçiyle markalara dev bir satiş potansiyeli sunar.",
     excerptEn: "Wildberries is Russia's largest marketplace and offers brands a massive sales potential with hundreds of millions of monthly visitors.",
-    publishedAt: "17 Mayis 2026",
+    publishedAt: "17 Mayıs 2026",
     readTime: "3 dk okuma",
     imageUrl: "/blog1.jpeg",
     content: (
@@ -3689,11 +3689,44 @@ const baseBlogPosts: BlogPost[] = [
   }
 ];
 
+const TR_MONTHS_ASCII = ["ocak", "subat", "mart", "nisan", "mayis", "haziran", "temmuz", "agustos", "eylul", "ekim", "kasim", "aralik"];
+const EN_MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+const foldTurkish = (value: string) =>
+  value
+    .toLocaleLowerCase("tr")
+    .replace(/ı/g, "i")
+    .replace(/ş/g, "s")
+    .replace(/ğ/g, "g")
+    .replace(/ü/g, "u")
+    .replace(/ö/g, "o")
+    .replace(/ç/g, "c");
+
+/** "17 Ağustos 2026" → "August 17, 2026", the en-US format the generated posts use. */
+function turkishDateToEnglish(date: string): string | undefined {
+  const [day, month, year] = date.trim().split(/\s+/);
+  const index = month ? TR_MONTHS_ASCII.indexOf(foldTurkish(month)) : -1;
+  return index >= 0 && day && year ? `${EN_MONTHS[index]} ${Number(day)}, ${year}` : undefined;
+}
+
+/** "7 dk okuma" → "7 min read" */
+function turkishReadTimeToEnglish(readTime: string): string | undefined {
+  const minutes = readTime.match(/\d+/)?.[0];
+  return minutes ? `${minutes} min read` : undefined;
+}
+
 const enrichedBaseBlogPosts: BlogPost[] = baseBlogPosts.map(post => {
+  const withEnglishMeta: BlogPost = post.contentEn
+    ? {
+        ...post,
+        publishedAtEn: post.publishedAtEn ?? turkishDateToEnglish(post.publishedAt),
+        readTimeEn: post.readTimeEn ?? turkishReadTimeToEnglish(post.readTime),
+      }
+    : post;
   const ruTrans = blogTranslationsRU[post.slug];
   if (ruTrans) {
     return {
-      ...post,
+      ...withEnglishMeta,
       titleRu: ruTrans.titleRu,
       excerptRu: ruTrans.excerptRu,
       metaTitleRu: ruTrans.metaTitleRu,
@@ -3702,7 +3735,7 @@ const enrichedBaseBlogPosts: BlogPost[] = baseBlogPosts.map(post => {
       readTimeRu: ruTrans.readTimeRu
     };
   }
-  return post;
+  return withEnglishMeta;
 });
 
 export const blogPosts: BlogPost[] = [...enrichedBaseBlogPosts, ...blogPostsRU, ...generatedBlogPosts];

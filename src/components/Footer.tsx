@@ -21,6 +21,7 @@ import { reopenConsentBanner } from "@/utils/consent";
 export default function Footer() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === "ru";
+  const pageLang = i18n.language;
   const isEn = i18n.language === "en";
   const blogPath = isRu ? "/ru/blog" : isEn ? "/en/blog" : "/blog";
   const operationalAddress = isRu
@@ -35,7 +36,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 mb-10">
           
           <div className="md:col-span-4">
-            <Link to={homePath(isRu)} className="inline-block mb-4">
+            <Link to={homePath(pageLang)} className="inline-block mb-4">
               <Logo light />
             </Link>
             <p className="text-[14px] text-white/70 leading-relaxed max-w-sm">
@@ -47,16 +48,16 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4 text-[14px]">{t('footer.quick_links')}</h3>
             <ul className="space-y-2.5">
               {[
-                { name: t('nav.home'), path: homePath(isRu) },
-                { name: t('nav.about'), path: aboutPath(isRu) },
-                { name: t('nav.russia_market'), path: russiaMarketPath(isRu) },
-                { name: t('home.why_russia_detail.h1'), path: whyRussiaPath(isRu) },
-                { name: t('nav.services'), path: servicesPath(isRu) },
-                { name: t('nav.op_model'), path: operationModelPath(isRu) },
-                { name: t('nav.for_whom'), path: forWhomPath(isRu) },
+                { name: t('nav.home'), path: homePath(pageLang) },
+                { name: t('nav.about'), path: aboutPath(pageLang) },
+                { name: t('nav.russia_market'), path: russiaMarketPath(pageLang) },
+                { name: t('home.why_russia_detail.h1'), path: whyRussiaPath(pageLang) },
+                { name: t('nav.services'), path: servicesPath(pageLang) },
+                { name: t('nav.op_model'), path: operationModelPath(pageLang) },
+                { name: t('nav.for_whom'), path: forWhomPath(pageLang) },
                 { name: t('nav.blog'), path: blogPath },
-                { name: t('nav.references'), path: referencesPath(isRu, isEn) },
-                { name: t('nav.contact'), path: contactPath(isRu) },
+                { name: t('nav.references'), path: referencesPath(pageLang) },
+                { name: t('nav.contact'), path: contactPath(pageLang) },
               ].map((link) => (
                 <li key={link.path}>
                   <Link to={link.path} className="text-[14px] text-white/70 hover:text-white transition-colors">
@@ -97,13 +98,13 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[13px] text-white/50">
           <p>© {new Date().getFullYear()} Russia Market Entry. {t('footer.all_rights')}</p>
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-            <Link to={privacyPath(isRu)} className="hover:text-white transition-colors">
+            <Link to={privacyPath(pageLang)} className="hover:text-white transition-colors">
               {t('footer.privacy')}
             </Link>
-            <Link to={termsPath(isRu)} className="hover:text-white transition-colors">
+            <Link to={termsPath(pageLang)} className="hover:text-white transition-colors">
               {t('footer.terms')}
             </Link>
-            <Link to={cookiesPath(isRu)} className="hover:text-white transition-colors">
+            <Link to={cookiesPath(pageLang)} className="hover:text-white transition-colors">
               {t('footer.cookies')}
             </Link>
             <button type="button" onClick={reopenConsentBanner} className="hover:text-white transition-colors">

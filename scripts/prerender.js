@@ -41,8 +41,29 @@ const staticRoutesToPrerender = [
   "/blog",
   "/referanslar",
 
-  // English Blog List (only blog gets its own English URL tree; every
-  // other page still shares its URL between Turkish and English)
+  // English pages (English path segments; legal documents stay Turkish-only)
+  "/en",
+  "/en/about",
+  "/en/russia-market",
+  "/en/why-russia",
+  "/en/services",
+  "/en/services/operations-setup",
+  "/en/services/marketplace-management",
+  "/en/services/logistics-and-fulfillment",
+  "/en/services/systems-and-integration",
+  "/en/services/brand-growth",
+  "/en/services/tax-and-finance",
+  "/en/services/company-formation-in-turkey",
+  "/en/services/import-and-customs",
+  "/en/services/market-research-and-strategy",
+  "/en/services/medical-and-healthcare",
+  "/en/operating-model",
+  "/en/who-we-serve",
+  "/en/who-we-serve/textile-brands",
+  "/en/who-we-serve/manufacturers",
+  "/en/who-we-serve/ecommerce-entrepreneurs",
+  "/en/who-we-serve/cosmetics-manufacturers",
+  "/en/contact",
   "/en/blog",
   "/en/references",
 
@@ -216,17 +237,20 @@ const pageSitemapData = new Map();
   const sitemapLocs = new Set(routesToPrerender.map((url) => `${siteOrigin}${url}`));
 
   function sitemapMeta(url) {
-    if (url === "/" || url === "/ru") return { priority: "1.0", changefreq: "weekly" };
-    if (url === "/blog" || url === "/en/blog" || url === "/ru/blog" || url === "/hizmetler" || url === "/ru/uslugi") {
+    if (url === "/" || url === "/ru" || url === "/en") return { priority: "1.0", changefreq: "weekly" };
+    if (
+      url === "/blog" || url === "/en/blog" || url === "/ru/blog" ||
+      url === "/hizmetler" || url === "/ru/uslugi" || url === "/en/services"
+    ) {
       return { priority: "0.9", changefreq: "weekly" };
     }
-    if (url.startsWith("/hizmetler/") || url.startsWith("/ru/uslugi/")) {
+    if (url.startsWith("/hizmetler/") || url.startsWith("/ru/uslugi/") || url.startsWith("/en/services/")) {
       return { priority: "0.8", changefreq: "weekly" };
     }
     if (url.startsWith("/blog/") || url.startsWith("/en/blog/") || url.startsWith("/ru/blog/")) {
       return { priority: "0.6", changefreq: "monthly" };
     }
-    if (url.startsWith("/kimler-icin") || url.startsWith("/ru/dlya-kogo")) {
+    if (url.startsWith("/kimler-icin") || url.startsWith("/ru/dlya-kogo") || url.startsWith("/en/who-we-serve")) {
       return { priority: "0.7", changefreq: "monthly" };
     }
     if (

@@ -4,7 +4,7 @@ import { ShoppingBag, TrendingUp, Globe2, Truck, ShieldCheck, CheckCircle2, Arro
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import { russiaMarketPath, absoluteUrl, homePath, contactPath, whyRussiaPath, servicePath, operationModelPath } from "@/utils/ruPaths";
 
 const marketplaceCardHover =
@@ -13,12 +13,13 @@ const marketplaceCardHover =
 export default function RussiaMarket() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === 'ru';
+  const pageLang = i18n.language;
   const isEn = i18n.language === 'en';
-  const pagePath = russiaMarketPath(isRu);
+  const pagePath = russiaMarketPath(pageLang);
   const canonicalUrl = absoluteUrl(pagePath);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) },
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(pageLang) },
     { name: t('nav.russia_market'), url: pagePath }
   ]);
 
@@ -28,9 +29,7 @@ export default function RussiaMarket() {
         <title>{t('russia_market_page.title')}</title>
         <meta name="description" content={t('russia_market_page.desc_meta')} />
         <link rel="canonical" href={canonicalUrl} />
-        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/rusya-pazari" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/rynok-rossii" />
-        <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/rusya-pazari" />
+        {hreflangElements(russiaMarketPath)}
         {socialMetaElements({
           title: t("russia_market_page.title"),
           description: t("russia_market_page.desc_meta"),
@@ -86,7 +85,7 @@ export default function RussiaMarket() {
               desc: t('russia_market_page.feat4_desc')
             }
           ].map((item, i) => (
-            <Link to={`${whyRussiaPath(isRu)}#${item.id}`} key={i}>
+            <Link to={`${whyRussiaPath(pageLang)}#${item.id}`} key={i}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -151,7 +150,7 @@ export default function RussiaMarket() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6 mb-10 md:mb-12">
           {/* Wildberries */}
-          <Link to={servicePath("pazaryeri-yonetimi", isRu)} className={marketplaceCardHover}>
+          <Link to={servicePath("pazaryeri-yonetimi", pageLang)} className={marketplaceCardHover}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -177,7 +176,7 @@ export default function RussiaMarket() {
           </Link>
 
           {/* Lamoda */}
-          <Link to={servicePath("pazaryeri-yonetimi", isRu)} className={marketplaceCardHover}>
+          <Link to={servicePath("pazaryeri-yonetimi", pageLang)} className={marketplaceCardHover}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -204,7 +203,7 @@ export default function RussiaMarket() {
           </Link>
 
           {/* Ozon */}
-          <Link to={servicePath("pazaryeri-yonetimi", isRu)} className={marketplaceCardHover}>
+          <Link to={servicePath("pazaryeri-yonetimi", pageLang)} className={marketplaceCardHover}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -239,19 +238,19 @@ export default function RussiaMarket() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              to={contactPath(isRu)}
+              to={contactPath(pageLang)}
               className="bg-accent-500 hover:bg-accent-600 transition-colors text-white px-7 py-3.5 rounded-full font-bold text-[14px] md:text-[15px] inline-flex items-center gap-2"
             >
               {t("russia_market_page.cta")} <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
-              to={operationModelPath(isRu)}
+              to={operationModelPath(pageLang)}
               className="bg-white/10 hover:bg-white/20 transition-colors text-white px-7 py-3.5 rounded-full font-bold text-[14px] md:text-[15px] inline-flex items-center gap-2 border border-white/20"
             >
               {t("nav.op_model")} <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
-              to={servicePath("medikal-ve-saglik", isRu)}
+              to={servicePath("medikal-ve-saglik", pageLang)}
               className="bg-white/10 hover:bg-white/20 transition-colors text-white px-7 py-3.5 rounded-full font-bold text-[14px] md:text-[15px] inline-flex items-center gap-2 border border-white/20"
             >
               {t("home.services.medical")} <ArrowRight className="w-5 h-5" />

@@ -20,7 +20,7 @@ import {
 import { useTranslation } from "react-i18next";
 
 import { createOrganizationSchema, createBreadcrumbSchema, createFaqSchema, createWebSiteSchema } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { blogDetailPath, type BlogLang } from "@/utils/blogLanguages";
 import {
@@ -32,6 +32,8 @@ import {
   servicesPath,
   homePath,
   russiaMarketPath,
+  blogIndexPath as blogIndexPathFor,
+  absoluteUrl,
 } from "@/utils/ruPaths";
 
 const MEDICAL_SERVICE_ID = "medikal-ve-saglik";
@@ -41,12 +43,13 @@ export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const isRu = i18n.language === "ru";
+  const pageLang = i18n.language;
   const isEn = i18n.language === "en";
   const blogLang: BlogLang = isRu ? "ru" : isEn ? "en" : "tr";
-  const blogIndexPath = isRu ? "/ru/blog" : isEn ? "/en/blog" : "/blog";
+  const blogIndexPath = blogIndexPathFor(pageLang);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(isRu) },
+    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(pageLang) },
   ]);
 
   const services = [
@@ -139,11 +142,11 @@ export default function Home() {
       "Telegram Native",
       isRu ? "B2B и Medical" : isEn ? "B2B and Medical" : "B2B ve Medical",
     ],
-    url: homePath(isRu),
+    url: homePath(pageLang),
   });
-  const websiteSchema = createWebSiteSchema({ url: homePath(isRu) });
+  const websiteSchema = createWebSiteSchema({ url: homePath(pageLang) });
   const faqSchema = createFaqSchema(faqs);
-  const canonicalHomeUrl = isRu ? "https://russiamarketentry.com/ru" : "https://russiamarketentry.com/";
+  const canonicalHomeUrl = absoluteUrl(homePath(pageLang));
 
   const b2bItems = [
     t("home.b2b_li1"),
@@ -176,9 +179,7 @@ export default function Home() {
         <link rel="canonical" href={canonicalHomeUrl} />
         {/* No en alternate: English is served from the Turkish URL, so it has
             no distinct URL of its own to advertise. */}
-        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru" />
-        <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/" />
+        {hreflangElements(homePath)}
         {socialMetaElements({ title: metaTitle, description: metaDesc, url: canonicalHomeUrl })}
         <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
@@ -223,7 +224,7 @@ export default function Home() {
                 {t("home.entity_definition")}
               </p>
 
-              <Link to={contactPath(isRu)} className={ctaHero}>
+              <Link to={contactPath(pageLang)} className={ctaHero}>
                 {t("home.apply")} <ArrowRight className="w-5 h-5 flex-shrink-0" />
               </Link>
             </motion.div>
@@ -311,7 +312,7 @@ export default function Home() {
               <p className="text-[16px] md:text-[18px] font-semibold text-primary-500 mb-4">{t("home.ecommerce_channels")}</p>
               <p className="text-slate-600 mb-2 text-[14px] md:text-[15px] leading-relaxed">{t("home.ecommerce_perf")}</p>
               <p className="text-[14px] md:text-[15px] text-slate-600 leading-relaxed mb-6">{t("home.ecommerce_ads")}</p>
-              <Link to={servicePath("pazaryeri-yonetimi", isRu)} className={ctaLink}>
+              <Link to={servicePath("pazaryeri-yonetimi", pageLang)} className={ctaLink}>
                 {t("home.ecommerce_link")} <MoveRight className="w-4 h-4" />
               </Link>
             </div>
@@ -443,7 +444,7 @@ export default function Home() {
             ))}
           </div>
 
-          <Link to={contactPath(isRu)} className={ctaSecondary}>
+          <Link to={contactPath(pageLang)} className={ctaSecondary}>
             {t("home.b2b_cta")} <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -477,14 +478,14 @@ export default function Home() {
               );
 
               return (
-                <Link to={servicePath(service.id, isRu)} key={`${service.id}-${i}`} className="block h-full">
+                <Link to={servicePath(service.id, pageLang)} key={`${service.id}-${i}`} className="block h-full">
                   {card}
                 </Link>
               );
             })}
           </div>
           <div className="mt-8 text-center">
-            <Link to={servicesPath(isRu)} className={ctaLink}>
+            <Link to={servicesPath(pageLang)} className={ctaLink}>
               {t("home.link_services")} <MoveRight className="w-4 h-4" />
             </Link>
           </div>
@@ -505,13 +506,13 @@ export default function Home() {
               <p className="text-[15px] md:text-[16px] text-slate-600 leading-relaxed mb-3">{t("home.expertise_p1")}</p>
               <p className="text-[15px] md:text-[16px] text-slate-600 leading-relaxed mb-3">{t("home.expertise_p2")}</p>
               <p className="text-[15px] md:text-[16px] text-slate-600 leading-relaxed mb-6">{t("home.expertise_p3")}</p>
-              <Link to={aboutPath(isRu)} className={ctaLink}>
+              <Link to={aboutPath(pageLang)} className={ctaLink}>
                 {t("home.expertise_cta")} <MoveRight className="w-4 h-4" />
               </Link>
             </div>
 
             <Link
-              to={operationModelPath(isRu)}
+              to={operationModelPath(pageLang)}
               className={`block bg-slate-50 border border-slate-100 rounded-2xl p-5 md:p-6 ${interactiveCardHover}`}
             >
               <div className="inline-flex items-center gap-2 text-primary-500 font-bold text-[13px] uppercase tracking-wider mb-3">
@@ -590,7 +591,7 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <Link to={operationModelPath(isRu)} className={`${ctaSecondary} shrink-0 self-start md:self-center`}>
+            <Link to={operationModelPath(pageLang)} className={`${ctaSecondary} shrink-0 self-start md:self-center`}>
               {t("home.om_link")} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -639,7 +640,7 @@ export default function Home() {
               </ul>
               <div className="mt-5">
                 <Link
-                  to={russiaMarketPath(isRu)}
+                  to={russiaMarketPath(pageLang)}
                   className="text-accent-500 hover:text-white transition-colors font-bold flex items-center gap-2 text-[14px]"
                 >
                   {t("home.link_russia_market")} <MoveRight className="w-4 h-4" />
@@ -653,12 +654,12 @@ export default function Home() {
               </h3>
               <ul className="space-y-3">
                 <li>
-                  <Link to={servicesPath(isRu)} className="text-primary-100 hover:text-white transition-colors flex items-center gap-2 text-[14px] md:text-[15px]">
+                  <Link to={servicesPath(pageLang)} className="text-primary-100 hover:text-white transition-colors flex items-center gap-2 text-[14px] md:text-[15px]">
                     <MoveRight className="w-4 h-4 text-accent-500" /> {t("home.link_services")}
                   </Link>
                 </li>
                 <li>
-                  <Link to={forWhomPath(isRu)} className="text-primary-100 hover:text-white transition-colors flex items-center gap-2 text-[14px] md:text-[15px]">
+                  <Link to={forWhomPath(pageLang)} className="text-primary-100 hover:text-white transition-colors flex items-center gap-2 text-[14px] md:text-[15px]">
                     <MoveRight className="w-4 h-4 text-accent-500" /> {t("home.link_for_whom")}
                   </Link>
                 </li>
@@ -668,7 +669,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link to={contactPath(isRu)} className="text-primary-100 hover:text-white transition-colors flex items-center gap-2 text-[14px] md:text-[15px]">
+                  <Link to={contactPath(pageLang)} className="text-primary-100 hover:text-white transition-colors flex items-center gap-2 text-[14px] md:text-[15px]">
                     <MoveRight className="w-4 h-4 text-accent-500" /> {t("home.link_contact")}
                   </Link>
                 </li>
@@ -725,7 +726,7 @@ export default function Home() {
           </h2>
           <p className="text-[15px] md:text-[17px] text-slate-500 mb-8 md:mb-10 max-w-2xl mx-auto">{t("home.cta_desc")}</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to={contactPath(isRu)} className={ctaFinal}>
+            <Link to={contactPath(pageLang)} className={ctaFinal}>
               {t("home.cta_btn")} <ArrowRight className="w-5 h-5" />
             </Link>
           </div>

@@ -382,7 +382,7 @@ en:
     Selling a USD 20 EXW product for USD 49 looks like a healthy USD 29 gap at first glance. But once marketplace costs, logistics and advertising are added, the same product can lose money on every sale — even before tax. The right question is not «What price can we sell at?» but «How much money remains from each sale, and does that amount grow as sales grow?»
     
     Russia Market Entry
-    We build SKU-level unit economics models for Wildberries and Ozon, assessing product cost, marketplace fees, logistics, advertising and tax together. Explore our [marketplace management](/hizmetler/pazaryeri-yonetimi) and [market research & entry strategy](/hizmetler/pazar-arastirmasi-ve-strateji) services.
+    We build SKU-level unit economics models for Wildberries and Ozon, assessing product cost, marketplace fees, logistics, advertising and tax together. Explore our [marketplace management](/en/services/marketplace-management) and [market research & entry strategy](/en/services/market-research-and-strategy) services.
     
     Related guides
     

@@ -7,7 +7,7 @@ import { blogPosts } from "../data/blogData";
 import { createBreadcrumbSchema, createArticleSchema, DEFAULT_OG_IMAGE, withBrand } from "@/utils/seo";
 import { socialMetaElements } from "@/components/PageSocialMeta";
 import { hasBlogContentFor, blogDetailPath, type BlogLang } from "@/utils/blogLanguages";
-import { contactPath, servicesPath, servicePath } from "@/utils/ruPaths";
+import { contactPath, servicesPath, servicePath, homePath } from "@/utils/ruPaths";
 import BlockRenderer from "../components/BlockRenderer";
 import ResponsiveImage from "@/components/ResponsiveImage";
 
@@ -25,6 +25,7 @@ export default function BlogDetail() {
       : "tr";
   const langPrefix = currentLang === "tr" ? "" : `/${currentLang}`;
   const isRu = currentLang === "ru";
+  const pageLang = currentLang;
   const marketplaceBlogSlugs = new Set([
     "wildberriesde-satis-yapmak",
     "ozonda-satis-yapmak",
@@ -78,12 +79,8 @@ export default function BlogDetail() {
   }
 
   const canonicalUrl = `https://russiamarketentry.com${langPrefix}/blog/${post.slug}`;
-  // English has no landing page of its own — /en/blog is the root of the only
-  // English URL tree, so it starts the trail instead of a nonexistent /en.
   const breadcrumbSchema = createBreadcrumbSchema([
-    ...(currentLang === 'en'
-      ? []
-      : [{ name: currentLang === 'ru' ? 'Главная' : 'Ana Sayfa', url: currentLang === 'ru' ? '/ru' : '/' }]),
+    { name: currentLang === 'ru' ? 'Главная' : currentLang === 'en' ? 'Home' : 'Ana Sayfa', url: homePath(currentLang) },
     { name: t('nav.blog'), url: `${langPrefix}/blog` },
     { name: title, url: `${langPrefix}/blog/${post.slug}` }
   ]);
@@ -230,21 +227,21 @@ export default function BlogDetail() {
           </p>
           <div className="flex flex-wrap justify-center gap-3 md:gap-4">
             <Link
-              to={contactPath(isRu)}
+              to={contactPath(pageLang)}
               className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-6 py-3 rounded-xl font-bold text-[14px] md:text-[15px]"
             >
               {t("nav.contact")} <ArrowRight className="w-4 h-4" />
             </Link>
             {showMarketplaceService ? (
               <Link
-                to={servicePath("pazaryeri-yonetimi", isRu)}
+                to={servicePath("pazaryeri-yonetimi", pageLang)}
                 className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 transition-colors text-white px-6 py-3 rounded-xl font-bold text-[14px] md:text-[15px]"
               >
                 {t("nav.services")} <ArrowRight className="w-4 h-4" />
               </Link>
             ) : (
               <Link
-                to={servicesPath(isRu)}
+                to={servicesPath(pageLang)}
                 className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 transition-colors text-white px-6 py-3 rounded-xl font-bold text-[14px] md:text-[15px]"
               >
                 {t("nav.services")} <ArrowRight className="w-4 h-4" />

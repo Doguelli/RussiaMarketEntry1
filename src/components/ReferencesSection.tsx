@@ -50,6 +50,7 @@ function ReferenceLogo({
 export function ReferencesLogoGrid({ variant = "home" }: ReferencesSectionProps) {
   const { i18n, t } = useTranslation();
   const isRu = i18n.language === "ru";
+
   const isEn = i18n.language === "en";
   const lang = isRu ? "ru" : isEn ? "en" : "tr";
 
@@ -132,7 +133,7 @@ export default function ReferencesSection() {
 
         <div className="mt-8 md:mt-9 text-center">
           <Link
-            to={referencesPath(isRu, isEn)}
+            to={referencesPath(i18n.language)}
             className="inline-flex items-center gap-2 text-primary-500 font-bold text-[14px] md:text-[15px] hover:text-accent-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-300 focus-visible:ring-offset-2 rounded-sm"
           >
             {t("references.home_cta")} <ArrowRight className="w-4 h-4" aria-hidden="true" />

@@ -2,27 +2,22 @@ import { motion } from "motion/react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import { ReferencesLogoGrid } from "@/components/ReferencesSection";
 import { absoluteUrl, homePath, referencesPath } from "@/utils/ruPaths";
-
-const REFERENCES_HREFLANG = {
-  tr: "https://russiamarketentry.com/referanslar",
-  en: "https://russiamarketentry.com/en/references",
-  ru: "https://russiamarketentry.com/ru/keisy-i-klienty",
-};
 
 export default function References() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === "ru";
+  const pageLang = i18n.language;
   const isEn = i18n.language === "en";
-  const pagePath = referencesPath(isRu, isEn);
+  const pagePath = referencesPath(pageLang);
   const canonicalUrl = absoluteUrl(pagePath);
   const metaTitle = t("references.meta_title");
   const metaDesc = t("references.meta_description");
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(isRu) },
+    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(pageLang) },
     { name: t("references.page_title"), url: pagePath },
   ]);
 
@@ -32,10 +27,7 @@ export default function References() {
         <title>{metaTitle}</title>
         <meta name="description" content={metaDesc} />
         <link rel="canonical" href={canonicalUrl} />
-        <link rel="alternate" hrefLang="tr" href={REFERENCES_HREFLANG.tr} />
-        <link rel="alternate" hrefLang="en" href={REFERENCES_HREFLANG.en} />
-        <link rel="alternate" hrefLang="ru" href={REFERENCES_HREFLANG.ru} />
-        <link rel="alternate" hrefLang="x-default" href={REFERENCES_HREFLANG.tr} />
+        {hreflangElements(referencesPath)}
         {socialMetaElements({ title: metaTitle, description: metaDesc, url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>

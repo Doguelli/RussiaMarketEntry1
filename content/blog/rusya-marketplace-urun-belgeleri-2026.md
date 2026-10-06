@@ -158,7 +158,7 @@ en:
     * [Selling on Ozon](/en/blog/ozonda-satis-yapmak)
     * [E-commerce in Russia](/en/blog/rusyada-e-ticaret-nasil-yapilir)
     * [E-commerce logistics in Russia 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026)
-    * [Marketplace management service](/hizmetler/pazaryeri-yonetimi)
+    * [Marketplace management service](/en/services/marketplace-management)
 ru:
   metaTitle: "Маркетплейсы в России 2026 | Документы на продукцию с 1 сентября"
   image: /uploads/blog/rusya-marketplace-urun-belgeleri-2026-ru.png

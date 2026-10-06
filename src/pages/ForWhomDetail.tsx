@@ -7,7 +7,7 @@ import { forWhomData } from "../data/forWhomData";
 import { forWhomDataEN } from "../data/forWhomDataEN";
 import { forWhomDataRU } from "../data/forWhomDataRU";
 import { createBreadcrumbSchema, withBrand } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import {
   resolveForWhomSlug,
   forWhomPath,
@@ -21,6 +21,7 @@ export default function ForWhomDetail() {
   const { slug: slugParam } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === 'ru';
+  const pageLang = i18n.language;
   const isEn = i18n.language === 'en';
   const slug = resolveForWhomSlug(slugParam);
   
@@ -28,7 +29,7 @@ export default function ForWhomDetail() {
   const data = currentData.find((item) => item.slug === slug);
 
   if (!data || !slug) {
-    return <Navigate to={forWhomPath(isRu)} replace />;
+    return <Navigate to={forWhomPath(pageLang)} replace />;
   }
 
   const defaultConclusionDesc = isRu
@@ -37,11 +38,11 @@ export default function ForWhomDetail() {
       ? "Contact us to set up the most suitable operation model for you and start selling."
       : "Size en uygun operasyon modelini kurmak ve satışlara başlamak için bizimle iletişime geçin.");
 
-  const pagePath = forWhomDetailPath(slug, isRu);
+  const pagePath = forWhomDetailPath(slug, pageLang);
   const canonicalUrl = absoluteUrl(pagePath);
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) },
-    { name: isRu ? 'Для кого' : (isEn ? 'Who Is It For?' : t('nav.for_whom')), url: forWhomPath(isRu) },
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(pageLang) },
+    { name: isRu ? 'Для кого' : (isEn ? 'Who Is It For?' : t('nav.for_whom')), url: forWhomPath(pageLang) },
     { name: data.shortTitle, url: pagePath }
   ]);
 
@@ -53,9 +54,7 @@ export default function ForWhomDetail() {
         <link rel="canonical" href={canonicalUrl} />
         {/* Turkish and Russian are the only real versions of this page — English
             is served from the Turkish URL, so it gets no alternate of its own. */}
-        <link rel="alternate" hrefLang="tr" href={absoluteUrl(forWhomDetailPath(slug, false))} />
-        <link rel="alternate" hrefLang="ru" href={absoluteUrl(forWhomDetailPath(slug, true))} />
-        <link rel="alternate" hrefLang="x-default" href={absoluteUrl(forWhomDetailPath(slug, false))} />
+        {hreflangElements((lang) => forWhomDetailPath(slug, lang))}
         {socialMetaElements({
           title: withBrand(data.title),
           description: data.description,
@@ -68,7 +67,7 @@ export default function ForWhomDetail() {
         
         {/* Back Button */}
         <div className="mb-8">
-          <Link to={forWhomPath(isRu)} className="inline-flex items-center gap-2 text-slate-500 hover:text-primary-500 font-medium transition-colors">
+          <Link to={forWhomPath(pageLang)} className="inline-flex items-center gap-2 text-slate-500 hover:text-primary-500 font-medium transition-colors">
             <ArrowLeft className="w-5 h-5" />
             {isRu ? 'Назад к решениям' : (isEn ? 'Back to Solutions' : 'Kimler İçin Sayfasına Dön')}
           </Link>
@@ -117,7 +116,7 @@ export default function ForWhomDetail() {
                   </p>
                 </div>
                 <Link
-                  to={contactPath(isRu)}
+                  to={contactPath(pageLang)}
                   className="shrink-0 inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-100 transition-colors"
                 >
                   {isRu ? 'Оставить заявку' : (isEn ? 'Apply Now' : 'Hemen Başvuru Yapın')} <ArrowRight className="w-5 h-5"/>

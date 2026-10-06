@@ -1,4 +1,15 @@
 import { DEFAULT_OG_IMAGE } from "@/utils/seo";
+import { hreflangUrls, type PathLang } from "@/utils/ruPaths";
+
+/**
+ * tr / en / ru / x-default alternates for a page that exists in all three
+ * URL trees, as plain elements for direct use inside <Helmet>.
+ */
+export function hreflangElements(pathFor: (lang: PathLang) => string) {
+  return Object.entries(hreflangUrls(pathFor)).map(([lang, href]) => (
+    <link key={`hreflang-${lang}`} rel="alternate" hrefLang={lang} href={href} />
+  ));
+}
 
 export interface PageSocialMetaProps {
   title: string;

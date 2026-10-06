@@ -4,19 +4,20 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import { aboutPath, absoluteUrl, homePath, contactPath } from "@/utils/ruPaths";
 
 export default function About() {
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === "ru";
+  const pageLang = i18n.language;
   const isEn = i18n.language === "en";
-  const pagePath = aboutPath(isRu);
+  const pagePath = aboutPath(pageLang);
   const canonicalUrl = absoluteUrl(pagePath);
-  const ctaPath = contactPath(isRu);
+  const ctaPath = contactPath(pageLang);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(isRu) },
+    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(pageLang) },
     { name: t("nav.about"), url: pagePath },
   ]);
 
@@ -64,9 +65,7 @@ export default function About() {
           }
         />
         <link rel="canonical" href={canonicalUrl} />
-        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/hakkimizda" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/o-nas" />
-        <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/hakkimizda" />
+        {hreflangElements(aboutPath)}
         {socialMetaElements({ title: t("about.title"), description: t("about.desc_meta"), url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>

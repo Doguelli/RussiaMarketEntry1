@@ -5,7 +5,16 @@ import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
 import { setManualLanguageChoice, SupportedLanguage } from "@/utils/geoLanguageDetector";
-import { pathForLanguage, contactPath, homePath, referencesPath } from "@/utils/ruPaths";
+import {
+  pathForLanguage,
+  contactPath,
+  homePath,
+  referencesPath,
+  aboutPath,
+  russiaMarketPath,
+  servicesPath,
+  operationModelPath,
+} from "@/utils/ruPaths";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,9 +54,10 @@ export default function Navbar() {
   };
 
   const isRu = i18n.language === "ru";
+  const pageLang = i18n.language;
   const isEn = i18n.language === "en";
 
-  const referencesNavPath = referencesPath(isRu, isEn);
+  const referencesNavPath = referencesPath(pageLang);
   // Short top-nav labels only (footer/page copy keeps longer nav.op_model strings).
   const operationsNavLabel = isRu ? "Операции" : isEn ? "Operations" : "Operasyon";
 
@@ -62,18 +72,18 @@ export default function Navbar() {
         { name: t('nav.contact', 'Контакты'), path: "/ru/kontakty" },
       ]
     : [
-        { name: t('nav.home', 'Ana Sayfa'), path: "/" },
-        { name: t('nav.about', 'Hakkımızda'), path: "/hakkimizda" },
-        { name: t('nav.russia_market', 'Rusya Pazarı'), path: "/rusya-pazari" },
-        { name: t('nav.services', 'Hizmetler'), path: "/hizmetler" },
-        { name: operationsNavLabel, path: "/operasyon-modeli" },
+        { name: t('nav.home', 'Ana Sayfa'), path: homePath(pageLang) },
+        { name: t('nav.about', 'Hakkımızda'), path: aboutPath(pageLang) },
+        { name: t('nav.russia_market', 'Rusya Pazarı'), path: russiaMarketPath(pageLang) },
+        { name: t('nav.services', 'Hizmetler'), path: servicesPath(pageLang) },
+        { name: operationsNavLabel, path: operationModelPath(pageLang) },
         { name: t('nav.references', 'Referanslar'), path: referencesNavPath },
-        { name: t('nav.contact', 'İletişim'), path: "/iletisim" },
+        { name: t('nav.contact', 'İletişim'), path: contactPath(pageLang) },
       ];
 
   const currentLangLabel = i18n.language === "ru" ? "RU" : (i18n.language === "en" ? "EN" : "TR");
-  const applyPath = contactPath(isRu);
-  const logoPath = homePath(isRu);
+  const applyPath = contactPath(pageLang);
+  const logoPath = homePath(pageLang);
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-slate-100">

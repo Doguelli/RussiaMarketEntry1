@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import ImageLightbox from "@/components/ImageLightbox";
 import {
   operationModelPath,
@@ -73,13 +73,14 @@ export default function OperationModel() {
   const { t, i18n } = useTranslation();
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const isRu = i18n.language === "ru";
+  const pageLang = i18n.language;
   const isEn = i18n.language === "en";
-  const pagePath = operationModelPath(isRu);
+  const pagePath = operationModelPath(pageLang);
   const canonicalUrl = absoluteUrl(pagePath);
-  const ctaPath = contactPath(isRu);
+  const ctaPath = contactPath(pageLang);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(isRu) },
+    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(pageLang) },
     { name: t("nav.op_model"), url: pagePath },
   ]);
 
@@ -88,25 +89,25 @@ export default function OperationModel() {
       id: "ecommerce",
       title: t("op_model_page.model1_title"),
       desc: t("op_model_page.model1_desc"),
-      to: servicePath("pazaryeri-yonetimi", isRu),
+      to: servicePath("pazaryeri-yonetimi", pageLang),
     },
     {
       id: "b2b",
       title: t("op_model_page.model2_title"),
       desc: t("op_model_page.model2_desc"),
-      to: servicePath("pazar-arastirmasi-ve-strateji", isRu),
+      to: servicePath("pazar-arastirmasi-ve-strateji", pageLang),
     },
     {
       id: "medical",
       title: t("op_model_page.model3_title"),
       desc: t("op_model_page.model3_desc"),
-      to: servicePath(MEDICAL_SERVICE_ID, isRu),
+      to: servicePath(MEDICAL_SERVICE_ID, pageLang),
     },
     {
       id: "hybrid",
       title: t("op_model_page.model4_title"),
       desc: t("op_model_page.model4_desc"),
-      to: servicePath("operasyon-kurulumu", isRu),
+      to: servicePath("operasyon-kurulumu", pageLang),
     },
   ];
 
@@ -123,13 +124,13 @@ export default function OperationModel() {
       id: "turkey",
       title: t("op_model_page.corridor1_title"),
       desc: t("op_model_page.corridor1_desc"),
-      to: servicePath("turkiyede-sirket-kurulumu", isRu),
+      to: servicePath("turkiyede-sirket-kurulumu", pageLang),
     },
     {
       id: "russia",
       title: t("op_model_page.corridor2_title"),
       desc: t("op_model_page.corridor2_desc"),
-      to: servicePath("operasyon-kurulumu", isRu),
+      to: servicePath("operasyon-kurulumu", pageLang),
     },
     {
       id: "coordination",
@@ -181,8 +182,8 @@ export default function OperationModel() {
   ];
 
   const audienceItems = [
-    { text: t("op_model_page.aud1"), to: forWhomDetailPath("e-ticaret-girisimcileri", isRu) },
-    { text: t("op_model_page.aud2"), to: forWhomDetailPath("ureticiler", isRu) },
+    { text: t("op_model_page.aud1"), to: forWhomDetailPath("e-ticaret-girisimcileri", pageLang) },
+    { text: t("op_model_page.aud2"), to: forWhomDetailPath("ureticiler", pageLang) },
     { text: t("op_model_page.aud3") },
     { text: t("op_model_page.aud4") },
   ];
@@ -205,9 +206,7 @@ export default function OperationModel() {
         <title>{t("op_model_page.title")}</title>
         <meta name="description" content={t("op_model_page.desc_meta")} />
         <link rel="canonical" href={canonicalUrl} />
-        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/operasyon-modeli" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/model-raboty" />
-        <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/operasyon-modeli" />
+        {hreflangElements(operationModelPath)}
         {socialMetaElements({ title: t("op_model_page.title"), description: t("op_model_page.desc_meta"), url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -304,13 +303,13 @@ export default function OperationModel() {
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
-              to={servicePath("lojistik-ve-depo", isRu)}
+              to={servicePath("lojistik-ve-depo", pageLang)}
               className="inline-flex items-center gap-2 text-[14px] font-bold text-accent-500 hover:text-accent-600 transition-colors"
             >
               {t("op_model_page.link_logistics")} <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              to={servicePath("operasyon-kurulumu", isRu)}
+              to={servicePath("operasyon-kurulumu", pageLang)}
               className="inline-flex items-center gap-2 text-[14px] font-bold text-accent-500 hover:text-accent-600 transition-colors"
             >
               {t("op_model_page.link_ops")} <ArrowRight className="w-4 h-4" />

@@ -7,7 +7,7 @@ import { serviceDetails } from "../data/servicesData";
 import { serviceDetailsEN } from "../data/servicesDataEN";
 import { serviceDetailsRU } from "../data/servicesDataRU";
 import { createBreadcrumbSchema, createServiceSchema, createFaqSchema } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import {
   resolveServiceId,
   servicePath as localizedServicePath,
@@ -21,6 +21,7 @@ export default function ServiceDetail() {
   const { id: idParam } = useParams<{ id: string }>();
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === "ru";
+  const pageLang = i18n.language;
   const isEn = i18n.language === "en";
   const id = resolveServiceId(idParam);
 
@@ -33,18 +34,15 @@ export default function ServiceDetail() {
   const service = id ? currentDetails[id] : null;
 
   if (!service || !id) {
-    return <Navigate to={servicesPath(isRu)} replace />;
+    return <Navigate to={servicesPath(pageLang)} replace />;
   }
 
   const Icon = service.icon;
-  const pagePath = localizedServicePath(id, isRu);
+  const pagePath = localizedServicePath(id, pageLang);
   const canonicalUrl = absoluteUrl(pagePath);
-  const trServiceUrl = absoluteUrl(`/hizmetler/${id}`);
-  const ruServiceUrl = absoluteUrl(localizedServicePath(id, true));
-
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(isRu) },
-    { name: t("nav.services"), url: servicesPath(isRu) },
+    { name: isRu ? "Главная" : isEn ? "Home" : "Ana Sayfa", url: homePath(pageLang) },
+    { name: t("nav.services"), url: servicesPath(pageLang) },
     { name: service.title, url: pagePath },
   ]);
 
@@ -69,9 +67,7 @@ export default function ServiceDetail() {
         <title>{service.metaTitle}</title>
         <meta name="description" content={service.metaDescription} />
         <link rel="canonical" href={canonicalUrl} />
-        <link rel="alternate" hrefLang="tr" href={trServiceUrl} />
-        <link rel="alternate" hrefLang="ru" href={ruServiceUrl} />
-        <link rel="alternate" hrefLang="x-default" href={trServiceUrl} />
+        {hreflangElements((lang) => localizedServicePath(id, lang))}
         {socialMetaElements({ title: service.metaTitle, description: service.metaDescription, url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
@@ -80,7 +76,7 @@ export default function ServiceDetail() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 md:pt-6">
         <Link
-          to={servicesPath(isRu)}
+          to={servicesPath(pageLang)}
           className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 font-medium text-[14px] mb-6 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />{" "}
@@ -112,7 +108,7 @@ export default function ServiceDetail() {
             <p className="text-[15px] md:text-[16px] text-slate-500 leading-relaxed mt-3">{service.lead}</p>
           )}
           <Link
-            to={contactPath(isRu)}
+            to={contactPath(pageLang)}
             className="mt-6 bg-accent-500 hover:bg-accent-600 transition-colors text-white font-bold py-3.5 px-6 rounded-xl inline-flex items-center justify-center gap-2 shadow-sm text-[15px]"
           >
             {ctaLabel} <ArrowRight className="w-4 h-4" />
@@ -202,7 +198,7 @@ export default function ServiceDetail() {
                     : "Bu hizmet özelinde markanız için nasıl bir yapı kurabileceğimizi ücretsiz öğrenin."}
               </p>
               <Link
-                to={contactPath(isRu)}
+                to={contactPath(pageLang)}
                 className="bg-accent-500 hover:bg-accent-600 transition-colors text-white font-bold py-3.5 px-6 rounded-xl w-full flex items-center justify-center gap-2 shadow-sm text-[15px]"
               >
                 {ctaLabel} <ArrowRight className="w-4 h-4" />

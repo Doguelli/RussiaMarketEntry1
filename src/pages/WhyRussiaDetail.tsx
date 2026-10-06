@@ -6,20 +6,21 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { createBreadcrumbSchema } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import { russiaMarketPath, whyRussiaPath, absoluteUrl, homePath, contactPath } from "@/utils/ruPaths";
 
 export default function WhyRussiaDetail() {
   const { hash } = useLocation();
   const { t, i18n } = useTranslation();
   const isRu = i18n.language === 'ru';
+  const pageLang = i18n.language;
   const isEn = i18n.language === 'en';
-  const pagePath = whyRussiaPath(isRu);
+  const pagePath = whyRussiaPath(pageLang);
   const canonicalUrl = absoluteUrl(pagePath);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) },
-    { name: t('nav.russia_market'), url: russiaMarketPath(isRu) },
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(pageLang) },
+    { name: t('nav.russia_market'), url: russiaMarketPath(pageLang) },
     { name: isRu ? 'Анализ рынка' : (isEn ? 'Why Russia Analysis' : 'Neden Rusya Analizi'), url: pagePath }
   ]);
 
@@ -40,9 +41,7 @@ export default function WhyRussiaDetail() {
         <title>{t('home.why_russia_detail.title')}</title>
         <meta name="description" content={t('home.why_russia_detail.desc_meta')} />
         <link rel="canonical" href={canonicalUrl} />
-        <link rel="alternate" hrefLang="tr" href="https://russiamarketentry.com/neden-rusya-detay" />
-        <link rel="alternate" hrefLang="ru" href="https://russiamarketentry.com/ru/pochemu-rossiya" />
-        <link rel="alternate" hrefLang="x-default" href="https://russiamarketentry.com/neden-rusya-detay" />
+        {hreflangElements(whyRussiaPath)}
         {socialMetaElements({
           title: t("home.why_russia_detail.title"),
           description: t("home.why_russia_detail.desc_meta"),
@@ -53,7 +52,7 @@ export default function WhyRussiaDetail() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
-          to={russiaMarketPath(isRu)}
+          to={russiaMarketPath(pageLang)}
           className="inline-flex items-center gap-2 text-slate-500 hover:text-accent-500 transition-colors font-medium text-[14px] mb-8"
         >
           <ArrowRight className="w-4 h-4 rotate-180" />
@@ -182,7 +181,7 @@ export default function WhyRussiaDetail() {
              {t('home.why_russia_detail.cta_desc')}
            </p>
            <Link
-             to={contactPath(isRu)}
+             to={contactPath(pageLang)}
              className="inline-flex items-center gap-3 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-4 rounded-full font-bold text-[16px] shadow-lg transform hover:-translate-y-1"
            >
              {t('home.why_russia_detail.cta_btn')} <ArrowRight className="w-5 h-5" />

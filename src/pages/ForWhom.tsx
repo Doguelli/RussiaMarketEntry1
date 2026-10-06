@@ -7,7 +7,7 @@ import { forWhomData } from "@/data/forWhomData";
 import { forWhomDataEN } from "@/data/forWhomDataEN";
 import { forWhomDataRU } from "@/data/forWhomDataRU";
 import { createBreadcrumbSchema } from "@/utils/seo";
-import { socialMetaElements } from "@/components/PageSocialMeta";
+import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import {
   forWhomPath,
   forWhomDetailPath,
@@ -20,13 +20,14 @@ export default function ForWhom() {
   const { t, i18n } = useTranslation();
   const currentData = i18n.language === 'ru' ? forWhomDataRU : (i18n.language === 'en' ? forWhomDataEN : forWhomData);
   const isRu = i18n.language === 'ru';
+  const pageLang = i18n.language;
   const isEn = i18n.language === 'en';
 
-  const pagePath = forWhomPath(isRu);
+  const pagePath = forWhomPath(pageLang);
   const canonicalUrl = absoluteUrl(pagePath);
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(isRu) },
+    { name: isRu ? 'Главная' : (isEn ? 'Home' : 'Ana Sayfa'), url: homePath(pageLang) },
     { name: isRu ? 'Для кого' : (isEn ? 'Who Is It For?' : t('nav.for_whom')), url: pagePath }
   ]);
 
@@ -50,9 +51,7 @@ export default function ForWhom() {
         <link rel="canonical" href={canonicalUrl} />
         {/* Turkish and Russian are the only real versions of this page — English
             is served from the Turkish URL, so it gets no alternate of its own. */}
-        <link rel="alternate" hrefLang="tr" href={absoluteUrl(forWhomPath(false))} />
-        <link rel="alternate" hrefLang="ru" href={absoluteUrl(forWhomPath(true))} />
-        <link rel="alternate" hrefLang="x-default" href={absoluteUrl(forWhomPath(false))} />
+        {hreflangElements(forWhomPath)}
         {socialMetaElements({ title: metaTitle, description: metaDesc, url: canonicalUrl })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -88,7 +87,7 @@ export default function ForWhom() {
               transition={{ delay: i * 0.1 }}
               className="flex"
             >
-              <Link to={forWhomDetailPath(dataItem.slug, isRu)} className="bg-white rounded-3xl p-6 md:p-7 shadow-sm flex flex-col w-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group border-t-4" style={{borderTopColor: 'var('+dataItem.color+')'}}>
+              <Link to={forWhomDetailPath(dataItem.slug, pageLang)} className="bg-white rounded-3xl p-6 md:p-7 shadow-sm flex flex-col w-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group border-t-4" style={{borderTopColor: 'var('+dataItem.color+')'}}>
                 <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 transition-colors ${dataItem.lightColor} ${dataItem.color}`} style={{backgroundColor: 'var('+dataItem.lightColor+')'}}>
                   {dataItem.icon}
                 </div>
@@ -117,7 +116,7 @@ export default function ForWhom() {
                 : 'Hangi kategoride olursanız olun, size en uygun büyüme planını oluşturmak için bir ücretsiz görüşme planlayın.')}
           </p>
           <Link
-            to={contactPath(isRu)}
+            to={contactPath(pageLang)}
             className="inline-flex items-center gap-3 bg-accent-500 hover:bg-accent-600 transition-colors text-white px-10 py-5 rounded-full font-bold text-[16px] shadow-lg transform hover:-translate-y-1"
           >
             {isRu ? 'Получить консультацию' : (isEn ? 'Get Free Consultation' : 'Ücretsiz Görüşme Al')} <ArrowRight className="w-5 h-5" />

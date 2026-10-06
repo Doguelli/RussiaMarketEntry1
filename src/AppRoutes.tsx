@@ -22,15 +22,18 @@ import CookieConsentBanner from "./components/CookieConsentBanner";
 import {
   getManuallySelectedLanguage,
   detectCountryFromIP,
+  detectLanguageFromBrowser,
   getLanguageForCountry,
   isCrawler,
 } from "./utils/geoLanguageDetector";
 import {
   SERVICE_ID_TO_RU_SLUG,
   FORWHOM_SLUG_TO_RU,
+  pathForLanguage,
+  homePath,
 } from "./utils/ruPaths";
 import { OG_LOCALE, pageLanguageForPath } from "./utils/pageLanguage";
-import { resolveI18nLanguageForPath } from "./i18n";
+import { resolveLanguageFromPath } from "./i18n";
 
 const Home = lazyPage(() => import("./pages/Home"));
 const About = lazyPage(() => import("./pages/About"));
@@ -59,42 +62,44 @@ function ScrollToTopAndLangSync() {
       window.scrollTo(0, 0);
     }
     // Keep i18n aligned with the URL tree on every SPA navigation.
-    // Critical: leaving /ru/* for a TR path must drop sticky "ru" language
-    // (e.g. /ru/... → /rusya-pazari must not keep Russian UI).
-    const targetLang = resolveI18nLanguageForPath(pathname, i18n.language);
+    const targetLang = resolveLanguageFromPath(pathname);
     if (i18n.language !== targetLang) {
       i18n.changeLanguage(targetLang);
     }
   }, [pathname, i18n]);
 
-  // One-time GeoIP check on initial visit if user hasn't chosen manually
+  // One-time language routing on the initial visit to a Turkish URL. Crawlers
+  // are never redirected, so each URL is indexed in its own language.
   useEffect(() => {
     if (geoCheckedRef.current) return;
     geoCheckedRef.current = true;
 
-    if (isCrawler()) return;
+    if (isCrawler() || resolveLanguageFromPath(pathname) !== "tr") return;
+    const goTo = (lang: "en" | "ru") => {
+      const target = pathForLanguage(pathname, lang);
+      if (target !== pathname) navigate(target + window.location.search + window.location.hash, { replace: true });
+    };
+
     const manual = getManuallySelectedLanguage();
-    if (manual) return;
+    if (manual) {
+      // English used to be served on the Turkish URLs, so keep those visitors in English.
+      if (manual === "en") goTo("en");
+      return;
+    }
 
     if (pathname === "/" || pathname === "") {
       detectCountryFromIP()
         .then((countryCode) => {
-          if (!countryCode) return;
           const targetLang = getLanguageForCountry(countryCode);
-          if (targetLang === "ru") {
-            i18n.changeLanguage("ru");
-            navigate("/ru", { replace: true });
-          } else if (targetLang === "en") {
-            i18n.changeLanguage("en");
-          } else if (targetLang === "tr") {
-            i18n.changeLanguage("tr");
-          }
+          if (targetLang === "ru" || targetLang === "en") goTo(targetLang);
         })
         .catch(() => {
           // Ignore network errors
         });
+    } else if (detectLanguageFromBrowser() === "en") {
+      goTo("en");
     }
-  }, [pathname, i18n, navigate]);
+  }, [pathname, navigate]);
 
   return null;
 }
@@ -154,7 +159,7 @@ function NotFound() {
           ? "Запрашиваемая страница удалена, переименована или временно недоступна." 
           : (isEn ? "The page you are looking for might have been removed, renamed, or is temporarily unavailable." : "Aradığınız sayfa silinmiş, adı değiştirilmiş veya geçici olarak kullanılamıyor olabilir.")}
       </p>
-      <Link to={isRu ? "/ru" : "/"} className="bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-xl font-bold transition-colors w-full sm:w-auto inline-flex justify-center flex-shrink-0 shadow-sm">
+      <Link to={homePath(i18n.language)} className="bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-xl font-bold transition-colors w-full sm:w-auto inline-flex justify-center flex-shrink-0 shadow-sm">
         {isRu ? "На главную" : (isEn ? "Return Home" : "Ana Sayfaya Dön")}
       </Link>
     </div>
@@ -177,16 +182,25 @@ const ROUTES = (
             <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/iletisim" element={<Contact />} />
             <Route path="/referanslar" element={<References />} />
-            <Route path="/en/references" element={<References />} />
             <Route path="/gizlilik-politikasi" element={<LegalDocument kind="privacy" isRu={false} />} />
             <Route path="/kullanim-sartlari" element={<LegalDocument kind="terms" isRu={false} />} />
             <Route path="/cerez-politikasi" element={<LegalDocument kind="cookies" isRu={false} />} />
 
-            {/* English Blog Routes (/en/blog/*) — every other page still
-                shares its URL between Turkish and English; only blog posts
-                get a dedicated English URL. */}
+            {/* English Language Routes (/en/*) — English path segments.
+                Legal documents have no English version and stay on TR URLs. */}
+            <Route path="/en" element={<Home />} />
+            <Route path="/en/about" element={<About />} />
+            <Route path="/en/russia-market" element={<RussiaMarket />} />
+            <Route path="/en/why-russia" element={<WhyRussiaDetail />} />
+            <Route path="/en/services" element={<Services />} />
+            <Route path="/en/services/:id" element={<ServiceDetail />} />
+            <Route path="/en/operating-model" element={<OperationModel />} />
+            <Route path="/en/who-we-serve" element={<ForWhom />} />
+            <Route path="/en/who-we-serve/:slug" element={<ForWhomDetail />} />
             <Route path="/en/blog" element={<Blog />} />
             <Route path="/en/blog/:slug" element={<BlogDetail />} />
+            <Route path="/en/contact" element={<Contact />} />
+            <Route path="/en/references" element={<References />} />
             
             {/* Russian Language Routes (/ru/*) — Russian Latin path segments */}
             <Route path="/ru" element={<Home />} />
