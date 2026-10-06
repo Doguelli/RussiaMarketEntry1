@@ -149,18 +149,26 @@ export default function OperationModel() {
     {
       src: "/images/dashboard/commercial-performance.png",
       alt: t("op_model_page.dash1_alt"),
+      width: 1024,
+      height: 413,
     },
     {
       src: "/images/dashboard/product-analytics.png",
       alt: t("op_model_page.dash2_alt"),
+      width: 1024,
+      height: 502,
     },
     {
       src: "/images/dashboard/smart-pricing.png",
       alt: t("op_model_page.dash3_alt"),
+      width: 1024,
+      height: 342,
     },
     {
       src: "/images/dashboard/wb-settlement.png",
       alt: t("op_model_page.dash4_alt"),
+      width: 1024,
+      height: 430,
     },
   ];
 
@@ -347,6 +355,8 @@ export default function OperationModel() {
                 <img
                   src={dashboardScreens[0].src}
                   alt={dashboardScreens[0].alt}
+                  width={dashboardScreens[0].width}
+                  height={dashboardScreens[0].height}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-auto rounded-xl border border-slate-100 shadow-sm pointer-events-none"
@@ -365,6 +375,8 @@ export default function OperationModel() {
                     <img
                       src={screen.src}
                       alt={screen.alt}
+                      width={screen.width}
+                      height={screen.height}
                       loading="lazy"
                       decoding="async"
                       className="w-full h-auto rounded-xl border border-slate-100 shadow-sm pointer-events-none"

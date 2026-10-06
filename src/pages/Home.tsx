@@ -21,6 +21,7 @@ import { useTranslation } from "react-i18next";
 
 import { createOrganizationSchema, createBreadcrumbSchema, createFaqSchema, createWebSiteSchema } from "@/utils/seo";
 import { socialMetaElements } from "@/components/PageSocialMeta";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import { blogDetailPath, type BlogLang } from "@/utils/blogLanguages";
 import {
   aboutPath,
@@ -188,8 +189,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-primary-900 pt-14 pb-14 md:pt-20 md:pb-16 lg:pt-24 lg:pb-12 lg:min-h-[640px] flex flex-col justify-center border-b border-white/5">
         <div className="absolute inset-0 w-full h-full bg-primary-900">
-          <img
+          <ResponsiveImage
             src="/images/home-hero-moscow.png"
+            sizes="100vw"
             alt={isRu ? "Москва и рынок электронной коммерции России" : isEn ? "Moscow and the Russian e-commerce market" : "Moskova ve Rusya e-ticaret pazarı"}
             fetchPriority="high"
             loading="eager"

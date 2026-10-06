@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
 import { createBreadcrumbSchema } from "@/utils/seo";
 import { socialMetaElements } from "@/components/PageSocialMeta";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import { hasBlogContentFor, type BlogLang } from "@/utils/blogLanguages";
 
 const blogCardHover =
@@ -177,10 +178,12 @@ export default function Blog() {
                 >
                   <div className="relative aspect-video overflow-hidden bg-white">
                     {getPostImage(post) ? (
-                      <img
+                      <ResponsiveImage
                         src={getPostImage(post)}
+                        sizes="(min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
                         alt={getPostTitle(post)}
                         loading="lazy"
+                        decoding="async"
                         onError={(e) => {
                           const target = e.currentTarget;
                           const src = getPostImage(post);

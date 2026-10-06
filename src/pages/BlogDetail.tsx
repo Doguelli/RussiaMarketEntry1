@@ -9,6 +9,7 @@ import { socialMetaElements } from "@/components/PageSocialMeta";
 import { hasBlogContentFor, blogDetailPath, type BlogLang } from "@/utils/blogLanguages";
 import { contactPath, servicesPath, servicePath } from "@/utils/ruPaths";
 import BlockRenderer from "../components/BlockRenderer";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 export default function BlogDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -174,9 +175,12 @@ export default function BlogDetail() {
               transition={{ delay: 0.2 }}
               className="relative aspect-video rounded-3xl overflow-hidden shadow-xl bg-white"
             >
-              <img
+              <ResponsiveImage
                 src={imageUrl}
+                sizes="(min-width: 1024px) 1024px, 100vw"
                 alt={title}
+                fetchPriority="high"
+                decoding="async"
                 onError={(e) => {
                   const target = e.currentTarget;
                   if (imageUrl.endsWith('.png') && !target.dataset.triedFallback) {
