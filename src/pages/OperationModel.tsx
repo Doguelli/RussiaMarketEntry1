@@ -346,7 +346,7 @@ export default function OperationModel() {
               >
                 <img
                   src={dashboardScreens[0].src}
-                  alt=""
+                  alt={dashboardScreens[0].alt}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-auto rounded-xl border border-slate-100 shadow-sm pointer-events-none"
@@ -364,7 +364,7 @@ export default function OperationModel() {
                   >
                     <img
                       src={screen.src}
-                      alt=""
+                      alt={screen.alt}
                       loading="lazy"
                       decoding="async"
                       className="w-full h-auto rounded-xl border border-slate-100 shadow-sm pointer-events-none"

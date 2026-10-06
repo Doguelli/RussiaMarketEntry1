@@ -36,6 +36,18 @@ const CIS_TIMEZONES = [
   'dushanbe', 'ashgabat', 'chisinau', 'volgograd', 'kaliningrad', 'omsk'
 ];
 
+const CRAWLER_UA =
+  /bot|crawl|spider|slurp|yandex|bing|google|baidu|duckduck|facebookexternalhit|vkshare|telegram|whatsapp|lighthouse|headless|preview|gptbot|claude|perplexity/i;
+
+/**
+ * Crawlers must always see the language that matches the URL, otherwise a
+ * Turkish URL could get indexed with English or Russian content.
+ */
+export function isCrawler(): boolean {
+  if (typeof navigator === 'undefined') return true;
+  return Boolean((navigator as Navigator & { webdriver?: boolean }).webdriver) || CRAWLER_UA.test(navigator.userAgent || '');
+}
+
 /**
  * Checks if the user has manually selected a language in previous sessions
  */

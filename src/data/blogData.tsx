@@ -3302,7 +3302,7 @@ const baseBlogPosts: BlogPost[] = [
     excerptEn: "How to import commercial goods from Turkey to Russia? TN VED EAEU classification, EAC compliance, Chestny ZNAK, customs declaration, duties, and marketplace fulfillment.",
     publishedAt: "17 Ağustos 2026",
     readTime: "7 dk okuma",
-    imageUrl: "/blog13.png",
+    imageUrl: "/blog13.jpeg",
     content: (
       <div className="space-y-8">
         <p className="text-lg leading-relaxed text-slate-600">

@@ -46,8 +46,8 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
     kind: "privacy",
     pathTr: "/gizlilik-politikasi",
     pathRu: "/ru/politika-konfidentsialnosti",
-    titleTr: "Gizlilik ve Kişisel Verilerin Korunması Politikası | Russia Market Entry",
-    titleRu: "Политика конфиденциальности и обработки персональных данных | Russia Market Entry",
+    titleTr: "Gizlilik ve Kişisel Verilerin Korunması Politikası",
+    titleRu: "Политика конфиденциальности и обработки персональных данных",
     metaTr:
       "Russia Market Entry gizlilik politikası: kişisel verilerin toplanması, işlenmesi, saklanması ve üçüncü taraf hizmetler hakkında bilgilendirme.",
     metaRu:
@@ -80,7 +80,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         paragraphs: ["Aşağıdaki kategorilerde veri işlenebilir:"],
         bullets: [
           "İletişim formu (/iletisim ve /ru/kontakty): ad, e-posta, telefon, şirket adı (isteğe bağlı), mesaj.",
-          "Türkiye’de şirket kuruluşu formu (/kompaniya-v-turtsii ve /ru/kompaniya-v-turtsii): ad, telefon, ilgilendiğiniz iş formu, mesaj (isteğe bağlı). Bu formda e-posta alanı yoktur ve e-posta toplanmaz.",
+          "Türkiye’de şirket kuruluşu formu (/ru/kompaniya-v-turtsii): ad, telefon, ilgilendiğiniz iş formu, mesaj (isteğe bağlı). Bu formda e-posta alanı yoktur ve e-posta toplanmaz.",
           "Teknik veriler: IP adresi, tarayıcı ve cihaz bilgileri, ziyaret edilen sayfa yolları, dil tercihi ile ilgili yerel depolama değerleri.",
           "Analitik veriler: Google Analytics aracılığıyla oluşturulan kullanım ve ölçüm verileri.",
         ],
@@ -171,7 +171,7 @@ export const LEGAL_DOCS: Record<LegalKind, LegalDoc> = {
         paragraphs: ["Могут обрабатываться следующие категории данных:"],
         bullets: [
           "Форма контактов (/iletisim и /ru/kontakty): имя, адрес электронной почты, телефон, название компании (необязательно), сообщение.",
-          "Форма на странице регистрации компании в Турции (/kompaniya-v-turtsii и /ru/kompaniya-v-turtsii): имя, телефон, интересующая форма бизнеса, сообщение (необязательно). Поле e-mail на этой форме отсутствует, адрес электронной почты не собирается.",
+          "Форма на странице регистрации компании в Турции (/ru/kompaniya-v-turtsii): имя, телефон, интересующая форма бизнеса, сообщение (необязательно). Поле e-mail на этой форме отсутствует, адрес электронной почты не собирается.",
           "Технические данные: IP-адрес, сведения о браузере и устройстве, пути посещённых страниц, значения локального хранилища, связанные с языковыми предпочтениями.",
           "Аналитические данные: данные об использовании сайта, формируемые через Google Analytics.",
         ],

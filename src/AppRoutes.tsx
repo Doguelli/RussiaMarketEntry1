@@ -26,6 +26,7 @@ import {
   getManuallySelectedLanguage,
   detectCountryFromIP,
   getLanguageForCountry,
+  isCrawler,
 } from "./utils/geoLanguageDetector";
 import {
   SERVICE_ID_TO_RU_SLUG,
@@ -58,6 +59,7 @@ function ScrollToTopAndLangSync() {
     if (geoCheckedRef.current) return;
     geoCheckedRef.current = true;
 
+    if (isCrawler()) return;
     const manual = getManuallySelectedLanguage();
     if (manual) return;
 
@@ -201,7 +203,7 @@ export default function AppRoutes() {
             
             {/* Phase 2: Commercial Landing Page for Foreigners registering company in Turkey */}
             <Route path="/ru/kompaniya-v-turtsii" element={<CompanyInTurkey />} />
-            <Route path="/kompaniya-v-turtsii" element={<CompanyInTurkey />} />
+            <Route path="/kompaniya-v-turtsii" element={<OldRouteRedirect to="/ru/kompaniya-v-turtsii" />} />
             
             {/* Soft SPA fallbacks for old RU paths (production uses Netlify 301) */}
             <Route path="/ru/hakkimizda" element={<OldRouteRedirect to="/ru/o-nas" />} />

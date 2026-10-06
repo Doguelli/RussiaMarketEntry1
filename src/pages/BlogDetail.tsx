@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
-import { createBreadcrumbSchema, createArticleSchema, DEFAULT_OG_IMAGE } from "@/utils/seo";
+import { createBreadcrumbSchema, createArticleSchema, DEFAULT_OG_IMAGE, withBrand } from "@/utils/seo";
 import { socialMetaElements } from "@/components/PageSocialMeta";
 import { hasBlogContentFor, blogDetailPath, type BlogLang } from "@/utils/blogLanguages";
 import { contactPath, servicesPath, servicePath } from "@/utils/ruPaths";
@@ -110,7 +110,7 @@ export default function BlogDetail() {
     <main>
       <article>
         <Helmet>
-          <title>{`${metaTitle} | Russia Market Entry`}</title>
+          <title>{withBrand(metaTitle)}</title>
           <meta name="description" content={excerpt} />
           <link rel="canonical" href={canonicalUrl} />
           {hasTr && <link rel="alternate" hrefLang="tr" href={`https://russiamarketentry.com/blog/${post.slug}`} />}
@@ -118,7 +118,7 @@ export default function BlogDetail() {
           {hasRu && <link rel="alternate" hrefLang="ru" href={`https://russiamarketentry.com/ru/blog/${post.slug}`} />}
           <link rel="alternate" hrefLang="x-default" href={hasTr ? `https://russiamarketentry.com/blog/${post.slug}` : canonicalUrl} />
           {socialMetaElements({
-            title: `${metaTitle} | Russia Market Entry`,
+            title: withBrand(metaTitle),
             description: excerpt,
             url: canonicalUrl,
             image: fullImageUrl,

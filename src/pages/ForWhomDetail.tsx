@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { forWhomData } from "../data/forWhomData";
 import { forWhomDataEN } from "../data/forWhomDataEN";
 import { forWhomDataRU } from "../data/forWhomDataRU";
-import { createBreadcrumbSchema } from "@/utils/seo";
+import { createBreadcrumbSchema, withBrand } from "@/utils/seo";
 import { socialMetaElements } from "@/components/PageSocialMeta";
 import {
   resolveForWhomSlug,
@@ -48,7 +48,7 @@ export default function ForWhomDetail() {
   return (
     <main className="bg-slate-50 min-h-screen pt-10 pb-12 md:pb-16">
       <Helmet>
-        <title>{`${data.title} | Russia Market Entry`}</title>
+        <title>{withBrand(data.title)}</title>
         <meta name="description" content={data.description} />
         <link rel="canonical" href={canonicalUrl} />
         {/* Turkish and Russian are the only real versions of this page — English
@@ -57,7 +57,7 @@ export default function ForWhomDetail() {
         <link rel="alternate" hrefLang="ru" href={absoluteUrl(forWhomDetailPath(slug, true))} />
         <link rel="alternate" hrefLang="x-default" href={absoluteUrl(forWhomDetailPath(slug, false))} />
         {socialMetaElements({
-          title: `${data.title} | Russia Market Entry`,
+          title: withBrand(data.title),
           description: data.description,
           url: canonicalUrl,
         })}

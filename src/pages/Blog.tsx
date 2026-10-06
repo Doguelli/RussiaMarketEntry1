@@ -24,6 +24,12 @@ export default function Blog() {
 
   const parseDate = (dateStr?: string) => {
     if (!dateStr) return 0;
+    // Intl en-US formats generated posts as "September 16, 2026". Parse that
+    // form directly before applying the day-first TR/RU parser below.
+    if (currentLang === "en") {
+      const parsed = Date.parse(dateStr);
+      if (!Number.isNaN(parsed)) return parsed;
+    }
     const months: { [key: string]: number } = {
       ocak: 1, şubat: 2, mart: 3, nisan: 4, mayıs: 5, haziran: 6,
       temmuz: 7, ağustos: 8, eylül: 9, ekim: 10, kasım: 11, aralık: 12,

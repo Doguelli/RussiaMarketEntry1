@@ -40,7 +40,6 @@ const staticRoutesToPrerender = [
   "/cerez-politikasi",
   "/blog",
   "/referanslar",
-  "/kompaniya-v-turtsii",
 
   // English Blog List (only blog gets its own English URL tree; every
   // other page still shares its URL between Turkish and English)
@@ -83,13 +82,30 @@ const blogRoutesToPrerender = blogRoutes;
 /** Single source of truth: deduplicated prerender + sitemap URL list. */
 const routesToPrerender = [...new Set([...staticRoutesToPrerender, ...blogRoutesToPrerender])];
 
+// Motion renders entrance animations' initial state (opacity:0) into the SSR
+// markup, which leaves headings and copy invisible to crawlers that don't run
+// JS. The static HTML is made visible; browsers that run JS still hide those
+// nodes until React replaces them, so the entrance animation looks the same.
+const SSR_HIDDEN_BOOTSTRAP =
+  '<script>document.documentElement.classList.add("js")</script>' +
+  "<style>.js [data-ssr-hidden]{opacity:0}</style>";
+
+function revealHiddenSsrMarkup(appHtml) {
+  return appHtml.replace(/\sstyle="([^"]*)"/g, (match, style) => {
+    const declarations = style.split(";").map((d) => d.trim()).filter(Boolean);
+    if (!declarations.some((d) => /^opacity:\s*0(\.0+)?$/.test(d))) return match;
+    const kept = declarations.filter((d) => !/^opacity:/.test(d) && !/^transform:/.test(d));
+    return kept.length ? ` data-ssr-hidden style="${kept.join(";")}"` : " data-ssr-hidden";
+  });
+}
+
 function mergeRouteIntoHtml(url, appHtml) {
   const titles = appHtml.match(/<title[^>]*>[\s\S]*?<\/title>/gi) || [];
   const metas = appHtml.match(/<meta[^>]*\/?>/gi) || [];
   const links = appHtml.match(/<link[^>]*\/?>/gi) || [];
   const jsonLd = appHtml.match(/<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi) || [];
 
-  let cleanAppHtml = appHtml
+  let cleanAppHtml = revealHiddenSsrMarkup(appHtml)
     .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
     .replace(/<meta[^>]*\/?>/gi, "")
     .replace(/<link[^>]*\/?>/gi, "")
@@ -111,7 +127,7 @@ function mergeRouteIntoHtml(url, appHtml) {
     .replace(/<meta[^>]*property=["']og:image["'][^>]*\/?>/gi, "")
     .replace(/<meta[^>]*name=["']twitter:[^"']+["'][^>]*\/?>/gi, "");
 
-  const routeHeadTags = [...titles, ...metas, ...links, ...jsonLd].join("\n    ");
+  const routeHeadTags = [SSR_HIDDEN_BOOTSTRAP, ...titles, ...metas, ...links, ...jsonLd].join("\n    ");
 
   if (routeHeadTags) {
     html = html.replace("</head>", `  ${routeHeadTags}\n</head>`);

@@ -188,7 +188,7 @@ en:
     
     Conclusion
     
-    Russia is a multi-centre e-commerce ecosystem, not a one-city market. Success requires the right geographic stock plan — not only the right product. Russia Market Entry plans marketplace, logistics, warehouse and stock operations from sales data. For region prioritisation, see our [market research & entry strategy](/en/hizmetler/pazar-arastirmasi-ve-strateji) service.
+    Russia is a multi-centre e-commerce ecosystem, not a one-city market. Success requires the right geographic stock plan — not only the right product. Russia Market Entry plans marketplace, logistics, warehouse and stock operations from sales data. For region prioritisation, see our [market research & entry strategy](/hizmetler/pazar-arastirmasi-ve-strateji) service.
 
     Related guides
     

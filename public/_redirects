@@ -21,6 +21,7 @@
 /ru/kimler-icin/e-ticaret-girisimcileri       /ru/dlya-kogo/online-torgovlya           301!
 /ru/kimler-icin/kozmetik-ureticileri          /ru/dlya-kogo/proizvoditeli-kosmetiki    301!
 /ru/iletisim                                  /ru/kontakty                             301!
+/kompaniya-v-turtsii                          /ru/kompaniya-v-turtsii                  301!
 
 /admin/*  /admin/index.html  200
 # Valid routes are prerendered as static files. Unknown paths return a real 404.

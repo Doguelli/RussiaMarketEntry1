@@ -1,5 +1,13 @@
 export const SITE_ORIGIN = "https://russiamarketentry.com";
 export const DEFAULT_OG_IMAGE = `${SITE_ORIGIN}/og-image.jpg`;
+
+const BRAND_SUFFIX = " | Russia Market Entry";
+const MAX_TITLE_LENGTH = 65;
+
+/** Appends the brand only while the title still fits in a search result. */
+export function withBrand(title: string): string {
+  return title.length + BRAND_SUFFIX.length <= MAX_TITLE_LENGTH ? `${title}${BRAND_SUFFIX}` : title;
+}
 export const ORGANIZATION_ID = `${SITE_ORIGIN}/#organization`;
 
 export interface BreadcrumbItem {
@@ -246,6 +254,7 @@ export function createArticleSchema(
     "image": [fullImageUrl],
     "datePublished": datePublished,
     "dateModified": dateModified,
+    "inLanguage": pathPrefix === "/ru" ? "ru" : pathPrefix === "/en" ? "en" : "tr",
     "author": { "@id": ORGANIZATION_ID },
     "publisher": { "@id": ORGANIZATION_ID },
     "mainEntityOfPage": {

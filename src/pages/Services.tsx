@@ -42,10 +42,10 @@ export default function Services() {
 
   // Preserve existing SEO title/description (do not invent new indexed metadata).
   const metaTitle = isRu
-    ? "Наши услуги — Регистрация компании в Турции, ВЭД и маркетплейсы | Russia Market Entry"
+    ? "Наши услуги — Регистрация компании в Турции, ВЭД и маркетплейсы"
     : isEn
-      ? "Our Services - End-to-End E-Commerce & Export Solutions | Russia Market Entry"
-      : "Hizmetlerimiz - Rusya E-Ticaret & İhracat Çözümleri | Russia Market Entry";
+      ? "Our Services - End-to-End E-Commerce & Export Solutions"
+      : "Hizmetlerimiz - Rusya E-Ticaret & İhracat Çözümleri";
 
   const metaDesc = isRu
     ? "Регистрация компаний в Турции для иностранцев, открытие банковских счетов, логистика, фулфилмент, Wildberries, Ozon и налоговое сопровождение под ключ."
@@ -55,7 +55,7 @@ export default function Services() {
 
   const pagePath = servicesPath(isRu);
   const canonicalUrl = absoluteUrl(pagePath);
-  const companyInTurkeyPath = isRu ? "/ru/kompaniya-v-turtsii" : "/kompaniya-v-turtsii";
+  const companyInTurkeyPath = "/ru/kompaniya-v-turtsii";
 
   const cat1Items = localeList(t, "services_page.cat1_items");
   const cat2Items = localeList(t, "services_page.cat2_items");
