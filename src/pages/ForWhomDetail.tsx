@@ -6,7 +6,8 @@ import { useTranslation } from "react-i18next";
 import { forWhomData } from "../data/forWhomData";
 import { forWhomDataEN } from "../data/forWhomDataEN";
 import { forWhomDataRU } from "../data/forWhomDataRU";
-import { createBreadcrumbSchema, withBrand } from "@/utils/seo";
+import { forWhomGuides, FOR_WHOM_GUIDE_HEADINGS } from "../data/forWhomGuides";
+import { createBreadcrumbSchema, createFaqSchema, withBrand } from "@/utils/seo";
 import { socialMetaElements, hreflangElements } from "@/components/PageSocialMeta";
 import {
   resolveForWhomSlug,
@@ -15,6 +16,8 @@ import {
   contactPath,
   absoluteUrl,
   homePath,
+  blogIndexPath,
+  toPathLang,
 } from "@/utils/ruPaths";
 
 export default function ForWhomDetail() {
@@ -45,6 +48,9 @@ export default function ForWhomDetail() {
     { name: isRu ? 'Для кого' : (isEn ? 'Who Is It For?' : t('nav.for_whom')), url: forWhomPath(pageLang) },
     { name: data.shortTitle, url: pagePath }
   ]);
+  const guideLang = toPathLang(pageLang);
+  const guide = forWhomGuides[guideLang][slug];
+  const guideHeadings = FOR_WHOM_GUIDE_HEADINGS[guideLang];
 
   return (
     <main className="bg-slate-50 min-h-screen pt-10 pb-12 md:pb-16">
@@ -52,8 +58,6 @@ export default function ForWhomDetail() {
         <title>{withBrand(data.title)}</title>
         <meta name="description" content={data.description} />
         <link rel="canonical" href={canonicalUrl} />
-        {/* Turkish and Russian are the only real versions of this page — English
-            is served from the Turkish URL, so it gets no alternate of its own. */}
         {hreflangElements((lang) => forWhomDetailPath(slug, lang))}
         {socialMetaElements({
           title: withBrand(data.title),
@@ -61,6 +65,9 @@ export default function ForWhomDetail() {
           url: canonicalUrl,
         })}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        {guide && guide.faq.length > 0 && (
+          <script type="application/ld+json">{JSON.stringify(createFaqSchema(guide.faq))}</script>
+        )}
       </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -93,6 +100,49 @@ export default function ForWhomDetail() {
             <div className="mt-8">
               {data.content}
             </div>
+
+            {guide && (
+              <div className="mt-4 space-y-10">
+                {guide.sections.map((section) => (
+                  <section key={section.title} className="max-w-4xl">
+                    <h2 className="text-[26px] font-bold text-primary-500 mb-4">{section.title}</h2>
+                    {section.paragraphs.map((paragraph, i) => (
+                      <p key={i} className="text-[17px] leading-relaxed text-slate-600 mb-4">
+                        {paragraph}
+                      </p>
+                    ))}
+                    {section.links && section.links.length > 0 && (
+                      <div className="flex flex-wrap gap-x-6 gap-y-2">
+                        {section.links.map((link) => (
+                          <Link
+                            key={link.blogSlug}
+                            to={`${blogIndexPath(pageLang)}/${link.blogSlug}`}
+                            className="inline-flex items-center gap-1.5 font-semibold text-accent-500 hover:text-accent-600"
+                          >
+                            {guideHeadings.readMore}: {link.label}
+                            <ArrowRight className="w-4 h-4" />
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </section>
+                ))}
+
+                {guide.faq.length > 0 && (
+                  <section className="max-w-4xl">
+                    <h2 className="text-[26px] font-bold text-primary-500 mb-6">{guideHeadings.faq}</h2>
+                    <div className="space-y-4">
+                      {guide.faq.map((item) => (
+                        <div key={item.question} className="bg-slate-50 rounded-2xl p-6">
+                          <h3 className="text-[18px] font-bold text-primary-500 mb-2">{item.question}</h3>
+                          <p className="text-[16px] leading-relaxed text-slate-600">{item.answer}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                )}
+              </div>
+            )}
 
             {/* Conclusion */}
             <div className={`rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden mt-16 ${data.bgColor}`}>
