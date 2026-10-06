@@ -180,10 +180,13 @@ const pageSitemapData = new Map();
       lastmod: extractLastModified(appHtml),
     });
 
+    // Netlify serves /page.html at /page and 301s /page/ to it, whereas
+    // /page/index.html would 301 /page to /page/. Canonicals, hreflang and the
+    // sitemap use the slash-less URL, so the file must be a document.
     const filePath =
       url === "/"
         ? "dist/index.html"
-        : `dist${url.endsWith("/") ? url.slice(0, -1) : url}/index.html`;
+        : `dist${url.endsWith("/") ? url.slice(0, -1) : url}.html`;
 
     writeHtmlFile(filePath, html);
     console.log(`Prerendered: ${url} -> ${filePath}`);
