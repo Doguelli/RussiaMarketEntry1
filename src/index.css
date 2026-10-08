@@ -49,3 +49,64 @@
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@layer base {
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid var(--color-accent-500);
+    outline-offset: 3px;
+  }
+}
+
+.home-page h2,
+.home-page h3 {
+  text-wrap: balance;
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.32;
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 4%) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 4%) 1px, transparent 1px),
+    radial-gradient(circle at 66% 35%, rgb(47 95 165 / 30%), transparent 30rem);
+  background-size: 80px 80px, 80px 80px, auto;
+  mask-image: linear-gradient(to right, transparent, #000 38%, #000);
+}
+
+.home-feature {
+  backdrop-filter: blur(10px);
+}
+
+.home-flow-step {
+  border-color: #dce8f6;
+  background: linear-gradient(135deg, #fff, #f3f7fc);
+  box-shadow: 0 2px 8px rgb(17 36 72 / 7%);
+}
+
+.home-flow-arrow {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+@media (max-width: 1023px) {
+  .home-hero::after {
+    opacity: 0.16;
+    mask-image: linear-gradient(to bottom, #000, transparent 85%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

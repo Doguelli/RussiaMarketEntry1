@@ -86,9 +86,9 @@ export default function Navbar() {
   const logoPath = homePath(pageLang);
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-slate-100">
+    <nav className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-[0_2px_16px_rgba(17,36,72,0.06)] transition-shadow duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-[80px] md:h-[100px] py-2">
+        <div className="flex justify-between items-center h-[72px] md:h-[88px] py-2">
           <div className="flex items-center">
             <Link to={logoPath} className="group">
               <Logo className="transition-transform group-hover:scale-105" />
@@ -182,7 +182,8 @@ export default function Navbar() {
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-500 hover:text-slate-900 focus:outline-none p-2"
+              aria-expanded={isOpen}
+              className="text-slate-500 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 rounded-lg p-2"
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

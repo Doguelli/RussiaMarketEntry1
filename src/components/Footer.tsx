@@ -17,6 +17,7 @@ import {
 } from "@/utils/ruPaths";
 import { VERIFIED_CONTACT, OPERATIONAL_LOCATION } from "@/utils/seo";
 import { reopenConsentBanner } from "@/utils/consent";
+import { Instagram, Youtube } from "lucide-react";
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
@@ -31,7 +32,7 @@ export default function Footer() {
       : OPERATIONAL_LOCATION.displayTr;
 
   return (
-    <footer className="bg-primary-600 border-t-4 border-accent-500 pt-12 md:pt-14 pb-8">
+    <footer className="bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 border-t-4 border-accent-500 pt-12 md:pt-14 pb-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 mb-10">
           
@@ -42,6 +43,26 @@ export default function Footer() {
             <p className="text-[14px] text-white/70 leading-relaxed max-w-sm">
               {t('footer.desc')}
             </p>
+            <div className="mt-5 flex items-center gap-2.5">
+              <a
+                href="https://www.youtube.com/@russiamarketentry"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={isRu ? "Russia Market Entry на YouTube" : isEn ? "Russia Market Entry on YouTube" : "Russia Market Entry YouTube kanalı"}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white/75 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 focus-visible:ring-offset-primary-900"
+              >
+                <Youtube aria-hidden="true" className="h-4 w-4" />
+              </a>
+              <a
+                href="https://www.instagram.com/russiamarketentry/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={isRu ? "Russia Market Entry в Instagram" : isEn ? "Russia Market Entry on Instagram" : "Russia Market Entry Instagram hesabı"}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white/75 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 focus-visible:ring-offset-primary-900"
+              >
+                <Instagram aria-hidden="true" className="h-4 w-4" />
+              </a>
+            </div>
           </div>
 
           <div className="md:col-span-2 md:col-start-6">

@@ -171,7 +171,7 @@ export default function Home() {
     "inline-flex items-center gap-2 text-primary-500 font-semibold text-[14px] md:text-[15px] hover:text-primary-600 transition-colors duration-200";
 
   return (
-    <main className="overflow-x-hidden">
+    <main className="home-page overflow-x-hidden">
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDesc} />
@@ -188,7 +188,7 @@ export default function Home() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-primary-900 pt-14 pb-14 md:pt-20 md:pb-16 lg:pt-24 lg:pb-12 lg:min-h-[640px] flex flex-col justify-center border-b border-white/5">
+      <section className="home-hero relative isolate overflow-hidden bg-primary-900 pt-14 pb-14 md:pt-20 md:pb-16 lg:pt-24 lg:pb-12 lg:min-h-[640px] flex flex-col justify-center border-b border-white/5">
         <div className="absolute inset-0 w-full h-full bg-primary-900">
           <ResponsiveImage
             src="/images/home-hero-moscow.png"
@@ -234,14 +234,14 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-10 md:mt-14 lg:mt-20 w-full flex flex-col gap-6 relative"
+            className="mt-10 md:mt-14 lg:mt-20 w-full flex flex-col gap-6 relative z-20"
           >
             <div
               aria-hidden
               className="pointer-events-none absolute inset-x-0 -top-3 bottom-0 bg-[#040b16]/35 lg:bg-[#040b16]/30"
             />
             <div className="relative max-w-7xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-4 border-t border-white/10 pt-6 md:pt-8">
-              <div className="flex items-start gap-4 group">
+              <div className="home-feature group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.045] p-4 md:p-5 transition-colors duration-200 hover:border-white/20 hover:bg-white/[0.07] backdrop-blur-sm">
                 <div className="text-accent-500 flex-shrink-0">
                   <ShoppingCart className="w-8 h-8 lg:w-10 lg:h-10 group-hover:scale-110 transition-transform" />
                 </div>
@@ -251,7 +251,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 group">
+              <div className="home-feature group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.045] p-4 md:p-5 transition-colors duration-200 hover:border-white/20 hover:bg-white/[0.07] backdrop-blur-sm">
                 <div className="text-accent-500 flex-shrink-0">
                   <Megaphone className="w-8 h-8 lg:w-10 lg:h-10 group-hover:scale-110 transition-transform" />
                 </div>
@@ -261,7 +261,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 group">
+              <div className="home-feature group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.045] p-4 md:p-5 transition-colors duration-200 hover:border-white/20 hover:bg-white/[0.07] backdrop-blur-sm">
                 <div className="text-accent-500 flex-shrink-0">
                   <HeartPulse className="w-8 h-8 lg:w-10 lg:h-10 group-hover:scale-110 transition-transform" />
                 </div>
@@ -271,7 +271,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 group">
+              <div className="home-feature group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.045] p-4 md:p-5 transition-colors duration-200 hover:border-white/20 hover:bg-white/[0.07] backdrop-blur-sm">
                 <div className="text-accent-500 flex-shrink-0">
                   <Settings className="w-8 h-8 lg:w-10 lg:h-10 group-hover:scale-110 transition-transform" />
                 </div>
@@ -467,7 +467,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.05, duration: 0.4 }}
-                  className={`bg-white p-5 md:p-7 rounded-2xl shadow-sm border border-slate-100 h-full flex flex-col cursor-pointer group ${interactiveCardHover}`}
+                  className={`relative bg-white p-5 md:p-7 rounded-2xl shadow-sm border border-slate-100 h-full flex flex-col before:absolute before:left-0 before:top-5 before:h-8 before:w-1 before:rounded-r-full before:bg-accent-500 group ${interactiveCardHover}`}
                 >
                   <h3 className="text-[18px] md:text-[20px] font-bold text-primary-500 mb-2 md:mb-3 flex justify-between items-center gap-3">
                     <span>{service.title}</span>
@@ -478,7 +478,7 @@ export default function Home() {
               );
 
               return (
-                <Link to={servicePath(service.id, pageLang)} key={`${service.id}-${i}`} className="block h-full">
+                <Link to={servicePath(service.id, pageLang)} key={`${service.id}-${i}`} className="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2">
                   {card}
                 </Link>
               );
@@ -519,11 +519,11 @@ export default function Home() {
                 <Globe2 className="w-4 h-4 text-accent-500" /> {t("home.corridor_title")}
               </div>
               <p className="text-[14px] md:text-[15px] text-slate-600 leading-relaxed mb-5">{t("home.corridor_desc")}</p>
-              <div className="flex flex-wrap items-center gap-2 text-[12px] md:text-[13px] font-semibold text-primary-600">
+              <div className="home-flow flex flex-wrap items-center gap-2 text-[12px] md:text-[13px] font-semibold text-primary-600">
                 {corridorFlow.map((step, i) => (
                   <span key={step} className="inline-flex items-center gap-2">
-                    <span className="bg-white border border-slate-100 rounded-xl px-3 py-2 shadow-sm">{step}</span>
-                    {i < corridorFlow.length - 1 && <span className="text-accent-500">→</span>}
+                    <span className="home-flow-step bg-white border border-slate-100 rounded-xl px-3 py-2 shadow-sm">{step}</span>
+                    {i < corridorFlow.length - 1 && <span className="home-flow-arrow text-accent-500">→</span>}
                   </span>
                 ))}
               </div>
@@ -558,11 +558,11 @@ export default function Home() {
           <div className="border-l-4 border-accent-500 bg-white rounded-r-2xl px-4 py-3.5 md:px-5 md:py-4 mb-5 max-w-3xl mx-auto">
             <p className="text-[14px] md:text-[15px] text-primary-700 font-medium leading-relaxed">{t("home.report_quote")}</p>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-2 text-[13px] md:text-[14px] font-semibold text-primary-600 mb-5 md:mb-6">
+          <div className="home-flow flex flex-wrap items-center justify-center gap-2 text-[13px] md:text-[14px] font-semibold text-primary-600 mb-5 md:mb-6">
             {techFlowSteps.map((step, i) => (
               <span key={step} className="inline-flex items-center gap-2">
-                <span className="bg-white border border-slate-100 rounded-xl px-3 py-2 shadow-sm">{step}</span>
-                {i < techFlowSteps.length - 1 && <span className="text-accent-500">→</span>}
+                <span className="home-flow-step bg-white border border-slate-100 rounded-xl px-3 py-2 shadow-sm">{step}</span>
+                {i < techFlowSteps.length - 1 && <span className="home-flow-arrow text-accent-500">→</span>}
               </span>
             ))}
           </div>
