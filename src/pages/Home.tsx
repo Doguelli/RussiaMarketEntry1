@@ -41,6 +41,7 @@ const MEDICAL_SERVICE_ID = "medikal-ve-saglik";
 export default function Home() {
   const { t, i18n } = useTranslation();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [activeEntryModelId, setActiveEntryModelId] = useState("pazaryeri-yonetimi");
 
   const isRu = i18n.language === "ru";
   const pageLang = i18n.language;
@@ -84,6 +85,16 @@ export default function Home() {
       desc: t("home.services.logistics_desc"),
     },
   ];
+
+  const entryModels = [
+    { ...services[0], icon: ShoppingCart },
+    { ...services[2], icon: Users },
+    { ...services[3], icon: HeartPulse },
+    { ...services[4], icon: Settings },
+  ];
+  const activeEntryModelIndex = entryModels.findIndex(({ id }) => id === activeEntryModelId);
+  const activeEntryModel = entryModels[Math.max(0, activeEntryModelIndex)];
+  const ActiveEntryIcon = activeEntryModel.icon;
 
   const whyUs = [
     { title: t("home.wu1_title"), desc: t("home.wu1_desc") },
@@ -191,7 +202,7 @@ export default function Home() {
       <section className="home-hero relative isolate overflow-hidden bg-primary-900 pt-14 pb-14 md:pt-20 md:pb-16 lg:pt-24 lg:pb-12 lg:min-h-[640px] flex flex-col justify-center border-b border-white/5">
         <div className="absolute inset-0 w-full h-full bg-primary-900">
           <ResponsiveImage
-            src="/images/home-hero-moscow.png"
+            src="/images/home-hero-moscow-hd.jpg"
             sizes="100vw"
             alt={isRu ? "Москва и рынок электронной коммерции России" : isEn ? "Moscow and the Russian e-commerce market" : "Moskova ve Rusya e-ticaret pazarı"}
             fetchPriority="high"
@@ -227,6 +238,75 @@ export default function Home() {
               <Link to={contactPath(pageLang)} className={ctaHero}>
                 {t("home.apply")} <ArrowRight className="w-5 h-5 flex-shrink-0" />
               </Link>
+              <div className="mt-7 w-full rounded-2xl border border-white/15 bg-[#061629]/85 p-4 text-left shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-5">
+                <div className="flex items-center justify-between gap-3">
+                  <p className="flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-[0.15em] text-primary-100 sm:text-[11px]">
+                    <span className="relative flex h-2 w-2">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-60" />
+                      <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-500" />
+                    </span>
+                    {t("home.entry_selector_eyebrow")}
+                  </p>
+                  <span className="text-xs font-bold tabular-nums text-white/55">
+                    {String(activeEntryModelIndex + 1).padStart(2, "0")} <span className="text-white/35">/ 04</span>
+                  </span>
+                </div>
+                <p id="home-entry-selector-title" className="mt-2 text-lg font-bold leading-snug text-white sm:text-xl">
+                  {t("home.entry_selector_title")}
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-slate-300/80">
+                  {t("home.entry_selector_desc")}
+                </p>
+
+                <div role="group" aria-labelledby="home-entry-selector-title" className="mt-4 grid grid-cols-2 gap-2">
+                  {entryModels.map(({ id, title, icon: Icon }) => {
+                    const isActive = id === activeEntryModel.id;
+                    return (
+                      <button
+                        key={id}
+                        type="button"
+                        aria-pressed={isActive}
+                        onClick={() => setActiveEntryModelId(id)}
+                        className={`flex min-h-[58px] items-center gap-2 rounded-xl border px-3 py-2.5 text-left text-xs font-semibold leading-snug transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#061629] sm:min-h-[64px] sm:gap-2.5 sm:px-3.5 sm:text-[13px] ${
+                          isActive
+                            ? "border-accent-400/80 bg-white text-primary-950 shadow-lg shadow-accent-950/20"
+                            : "border-white/10 bg-white/[0.055] text-white/80 hover:border-white/25 hover:bg-white/[0.1] hover:text-white"
+                        }`}
+                      >
+                        <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg ${isActive ? "bg-accent-500/10 text-accent-600" : "bg-white/[0.08] text-accent-300"}`}>
+                          <Icon className="h-4 w-4" aria-hidden="true" />
+                        </span>
+                        <span>{title}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                <motion.div
+                  key={activeEntryModel.id}
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.2 }}
+                  aria-live="polite"
+                  aria-atomic="true"
+                  className="mt-4 flex flex-col gap-3 border-t border-white/10 pt-4 sm:flex-row sm:items-center sm:justify-between"
+                >
+                  <div className="flex min-w-0 items-start gap-2.5">
+                    <ActiveEntryIcon className="mt-0.5 h-4 w-4 shrink-0 text-accent-400" aria-hidden="true" />
+                    <div>
+                      <p className="text-[10px] font-bold uppercase tracking-wider text-white/45">{t("home.entry_selector_selected")}</p>
+                      <p className="mt-0.5 text-sm font-bold text-white">{activeEntryModel.title}</p>
+                      <p className="mt-1 text-xs leading-relaxed text-slate-300/75">{activeEntryModel.desc}</p>
+                    </div>
+                  </div>
+                  <Link
+                    to={servicePath(activeEntryModel.id, pageLang)}
+                    className="inline-flex shrink-0 items-center gap-2 self-start rounded-lg bg-accent-500 px-3.5 py-2.5 text-xs font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-600 hover:shadow-lg hover:shadow-accent-950/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#061629] sm:self-center"
+                  >
+                    {t("home.entry_selector_cta")} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </Link>
+                </motion.div>
+              </div>
             </motion.div>
           </div>
 

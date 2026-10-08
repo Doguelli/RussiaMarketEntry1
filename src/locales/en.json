@@ -46,6 +46,11 @@
     "trust_exp_desc": "Hands-on Turkey–Russia market experience in e-commerce and the medical sector",
     "what_we_do": "What We Do in Russia",
     "what_we_do_desc": "From market entry to sales and growth, we build the commercial and operational infrastructure you need — together.",
+    "entry_selector_eyebrow": "INTERACTIVE MARKET ENTRY PLANNER",
+    "entry_selector_title": "Choose your route into Russia",
+    "entry_selector_desc": "Select your current priority to see where to start and which service fits.",
+    "entry_selector_cta": "Explore this service",
+    "entry_selector_selected": "Selected route",
     "services": {
       "ecommerce": "E-Commerce & Marketplaces",
       "ecommerce_desc": "Sales, store and operations management on Wildberries, Ozon, Yandex Market and Lamoda.",
