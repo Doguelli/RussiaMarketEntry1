@@ -10,10 +10,10 @@ tr:
   body: |-
     Rusya'da e-ticaret denildiğinde uzun süre ilk akla gelen pazar Moskova oldu. Ancak 2026 verileri, Rusya e-ticaret pazarının artık yalnızca Moskova ve St. Petersburg merkezli okunamayacağını gösteriyor.
     
-    2026 H1 e-ticaret hacmi (AKİT): 7,2 trilyon RUB
-    Yıllık büyüme: %18,7
-    Hacmin bölgelerden payı: ≈ %80
-    Moskova + SPB payı: ≈ %21
+    * 2026 H1 e-ticaret hacmi (AKİT): 7,2 trilyon RUB
+    * Yıllık büyüme: %18,7
+    * Hacmin bölgelerden payı: ≈ %80
+    * Moskova + SPB payı: ≈ %21
     
     Kokoc Group'un Wildberries ve Ozon'daki 21 ürün kategorisini inceleyen araştırmasında, Moskova dışındaki bölgesel kümeler toplam cironun %73,7'sini oluşturuyor. Haziran 2025 ile Temmuz 2026 arasında Moskova ve Moskova Bölgesi'nin payı %26,1'den %23,4'e geriledi.
     
@@ -59,7 +59,7 @@ tr:
     * Siparişler hangi bölgelerden geliyor?
     * Hangi SKU hangi bölgede daha hızlı satılıyor?
     * Teslimat süresi ne?
-    * Hangi depoda stok tükenme veya fazla stok riski var?
+    * Hangi pazaryerinde ve hangi Ozon kümesinde stok tükenme veya fazla stok riski var?
     * İadeler hangi bölgelerde yoğunlaşıyor?
     
     Rusya'da e-ticaret büyümesi, stok yönetimini satış yönetiminin parçası haline getiriyor. Uçtan uca lojistik için: [Rusya'da e-ticaret lojistiği 2026](/blog/rusyada-e-ticaret-lojistigi-2026).
@@ -68,17 +68,27 @@ tr:
     
     Merkezi stok modeli yeni giren markalar için stok kontrolü ve düşük risk sağlar. Ancak hacim arttığında yalnızca merkezi depodan uzak bölgelere hizmet teslimat süresini uzatabilir, lojistik maliyetini artırabilir ve merkezi depoda aşırı stok yaratabilir.
     
-    Doğru model: merkezi depodan vazgeçmek değil, merkezi stok ile bölgesel marketplace stoklarını birlikte yönetmek.
-    
-    Russia Market Entry: merkezi stok + dinamik transfer
-    
-    * Aşama 1 — Merkezi stok: ürün ana stok noktasında tutulur.
-    * Aşama 2 — İlk marketplace dağılımı: uygun Wildberries / Ozon depolarına kontrollü miktar.
-    * Aşama 3 — Satış verisi: SKU ve bölge bazında performans.
-    * Aşama 4 — Transfer: satış hızına göre yeniden dağılım.
-    * Aşama 5 — Ölçekleme: talep doğrulandıkça yeni depo bölgeleri.
-    
-    Detaylı depo stratejisi: [Wildberries depo stratejisi](/blog/wildberries-depo-stratejisi-basarili-satis) ve [Wildberries & Ozon lojistik yönetimi](/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi).
+    Doğru model: merkezi depodan vazgeçmek değil, merkezi stok ile pazaryeri stoklarını birlikte yönetmek. Ancak 2026'da bu iki platformda farklı şekilde yapılıyor.
+
+    15 Ağustos 2026'dan sonra Wildberries'te bölgesel stok
+
+    Wildberries 15 Ağustos 2026'dan itibaren yeni FBO sevkiyatlarında depo seçimini kaldırdı. Ürünler en yakın teslim noktasına (ПВЗ) veya sıralama merkezine (СЦ) bırakılıyor ve platform stoğu bölgelere talebe ve depo doluluğuna göre kendisi dağıtıyor. Stok raporlarında artık depo adları değil, yalnızca Rusya'daki toplam stok görünüyor. Yeni sevkiyatlarda lokalizasyon endeksi uygulanmıyor ve lojistik ile depolama katsayısı tüm depolarda tek: standart ürünlerde %170, büyük hacimli ürünlerde %100.
+
+    Bu nedenle Wildberries'te "hangi bölgeye ne kadar stok" kararı artık satıcının değil, platformun kararı. Satıcının elindeki kaldıraçlar şunlar: toplam stok miktarı, sevkiyat zamanı ve sıklığı, teslim noktası seçimi ve ürünün hacmi.
+
+    Ozon'da bölgesel yerleşim hâlâ önemli
+
+    Ozon'da stok kümeler halinde yönetiliyor ve FBO lojistik ücreti, siparişin hangi kümeden hangi kümeye gittiğine göre hesaplanıyor; küme içi teslimat daha ucuz ve daha hızlı. Ozon, bölge dışı satış ek ücretini 9 Temmuz 2026'dan itibaren %0'a indirdi, ancak rota bazlı tarife nedeniyle stoğu talebin oluştuğu kümede tutmak hâlâ maliyeti ve teslimat süresini düşürüyor.
+
+    Russia Market Entry: merkezi stok + platforma göre dağıtım
+
+    * Aşama 1 — Merkezi stok: ürün Rusya'daki ana stok noktasında tutulur.
+    * Aşama 2 — Ozon: satış verisine göre talebin oluştuğu kümelere kontrollü sevkiyat.
+    * Aşama 3 — Wildberries: depo seçilmez; doğru miktar doğru zamanda teslim noktasına veya sıralama merkezine bırakılır, bölgesel dağılımı platform yapar.
+    * Aşama 4 — Satış verisi: SKU ve bölge bazında performans.
+    * Aşama 5 — Ölçekleme: Ozon'da yeni kümeler, Wildberries'te stok seviyesi ve yenileme sıklığı.
+
+    Detaylı depo stratejisi: [Wildberries depo stratejisi 2026](/blog/wildberries-depo-stratejisi-basarili-satis) ve [Wildberries & Ozon lojistik yönetimi](/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi).
     
     Bölgesel talep nasıl analiz edilmeli?
     
@@ -92,11 +102,11 @@ tr:
     
     Her ürünü her bölgeye göndermek gerekir mi?
     
-    Hayır. Bir ürün Moskova'da güçlüyken başka bir ürün Krasnodar, Tataristan, Sverdlovsk veya Samara'da daha hızlı büyüyebilir. Stok planlaması mümkün olduğunca SKU × Bölge mantığıyla yapılmalıdır.
-    
+    Hayır. Bir ürün Moskova'da güçlüyken başka bir ürün Krasnodar, Tataristan, Sverdlovsk veya Samara'da daha hızlı büyüyebilir. Ozon'da stok planlaması mümkün olduğunca SKU × Küme mantığıyla yapılmalıdır. Wildberries'te bölgesel dağılımı platform yaptığı için bölgesel satış verisi, depo seçimi için değil, toplam stok miktarını ve yenileme zamanını belirlemek için kullanılır.
+
     Wildberries ve Ozon aynı bölgesel stratejiyle yönetilmeli mi?
-    
-    Hayır. Depo ağı, müşteri dağılımı, kategori gücü, fulfillment ve lojistik maliyetleri farklı olabilir. Wildberries depo planı ve Ozon depo planı ayrı oluşturulmalıdır; aynı SKU için bile farklı dağılım gerekebilir. Platform rehberleri: [Wildberries'de satış](/blog/wildberriesde-satis-yapmak), [Ozon'da satış](/blog/ozonda-satis-yapmak).
+
+    Hayır, ve 2026'da fark daha da büyüdü. Ozon'da satıcı stoğu hangi kümeye göndereceğini seçer ve bu seçim lojistik ücretini doğrudan etkiler. Wildberries'te ise 15 Ağustos 2026'dan beri depo seçilmez; ücretler tüm depolarda aynıdır ve stoğu platform dağıtır. Bu yüzden Ozon için bölgesel bir sevkiyat planı, Wildberries için ise miktar ve zamanlama planı oluşturulmalıdır. Platform rehberleri: [Wildberries'de satış](/blog/wildberriesde-satis-yapmak), [Ozon'da satış](/blog/ozonda-satis-yapmak).
     
     Rusya'da e-ticaret artık ulusal bir pazar
     
@@ -104,13 +114,13 @@ tr:
     
     2026 bölgesel büyüme modeli
     
-    1: Ürün seçimi
-    2: Kontrollü başlangıç
-    3: Merkezi lojistik
-    4: Marketplace depoları
-    5: Bölgesel analiz
-    6: Transfer
-    7: Ölçekleme
+    1. Ürün seçimi
+    2. Kontrollü başlangıç
+    3. Merkezi lojistik
+    4. Ozon kümeleri ve Wildberries teslimatı
+    5. Bölgesel analiz
+    6. Stok yenileme
+    7. Ölçekleme
     
     Bölgesel e-ticaret stratejisi checklist
     
@@ -118,7 +128,7 @@ tr:
     
     * Bölgesel sipariş dağılımı ve SKU bazında bölgesel satış incelendi
     * Merkezi ve marketplace depo stokları takip ediliyor
-    * Teslimat süreleri ve depo bazlı lojistik maliyetleri ölçülüyor
+    * Teslimat süreleri ve Ozon'da küme bazlı lojistik maliyetleri ölçülüyor
     * Yeni bölgeler satış verisine göre seçiliyor; marketplace'ler ayrı analiz ediliyor
     
     Sonuç: Moskova'nın ötesine bakın
@@ -126,7 +136,7 @@ tr:
     2026'nın en önemli değişimlerinden biri büyümenin giderek daha fazla bölgelerden gelmesi. Strateji «Moskova'da satışa başlayalım» ile bitmemeli; «Rusya'da nerede talep oluşuyor ve stoğumuzu bu talebe nasıl yaklaştırabiliriz?» sorusu merkeze alınmalıdır.
     
     Russia Market Entry
-    Marketplace, lojistik, depo ve stok operasyonlarını satış verisine göre planlıyor; merkezi stoktan bölgesel marketplace depolarına transfer yapısını yönetiyoruz. Rusya pazarına giriş veya Moskova dışına ölçekleme için operasyon yapınızı birlikte değerlendirebiliriz. Bölge önceliklendirmesi için [pazar araştırması ve strateji](/hizmetler/pazar-arastirmasi-ve-strateji) hizmetimizi de inceleyebilirsiniz.
+    Marketplace, lojistik, depo ve stok operasyonlarını satış verisine göre planlıyor; merkezi stoktan Ozon kümelerine ve Wildberries teslim noktalarına sevkiyat yapısını yönetiyoruz. Rusya pazarına giriş veya Moskova dışına ölçekleme için operasyon yapınızı birlikte değerlendirebiliriz. Bölge önceliklendirmesi için [pazar araştırması ve strateji](/hizmetler/pazar-arastirmasi-ve-strateji) hizmetimizi de inceleyebilirsiniz.
 
     İlgili rehberler
 
@@ -144,10 +154,10 @@ en:
   body: |-
     For years, Moscow dominated the conversation about e-commerce in Russia. 2026 data shows the market can no longer be read through Moscow and St. Petersburg alone.
     
-    H1 2026 online trade (AKIT): 7.2 trln RUB
-    YoY growth: 18.7%
-    Volume from regions: ≈ 80%
-    Moscow + SPB share: ≈ 21%
+    * H1 2026 online trade (AKIT): 7.2 trln RUB
+    * YoY growth: 18.7%
+    * Volume from regions: ≈ 80%
+    * Moscow + SPB share: ≈ 21%
     
     Kokoc Group's analysis of 21 categories on Wildberries and Ozon shows regional clusters outside Moscow account for 73.7% of turnover. Moscow and Moscow Region share fell from 26.1% to 23.4% between June 2025 and July 2026.
     
@@ -171,20 +181,34 @@ en:
     What this means for brands entering Russia
     
     The classic path — Moscow warehouse → Wildberries/Ozon → nationwide sales — can work at launch. As volume grows, brands must track regional orders, SKU performance by region, delivery times, stockouts, overstock and returns. Inventory management becomes part of sales management. See [e-commerce logistics in Russia 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026).
-    
-    Central stock vs regional marketplace inventory
-    
-    The goal is not to abandon central stock — it is to run central stock together with regional marketplace placements.
-    
-    Central stock + dynamic transfers
-    
-    * Central pool → controlled first placement on WB/Ozon → SKU/region analytics → transfers → scale new regions when demand is proven
-    
-    Related: [Wildberries warehouse strategy](/en/blog/wildberries-depo-stratejisi-basarili-satis), [WB & Ozon logistics](/en/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi), [Selling on Wildberries](/en/blog/wildberriesde-satis-yapmak), [Selling on Ozon](/en/blog/ozonda-satis-yapmak).
-    
-    Wildberries and Ozon need separate regional plans
-    
-    Warehouse networks, customer geography, category strength and fulfillment costs differ. The same SKU may need different placement on each platform.
+
+    Central stock vs marketplace inventory
+
+    The goal is not to abandon central stock — it is to run central stock together with marketplace inventory. In 2026, though, the two platforms work differently.
+
+    Regional stock on Wildberries after August 15, 2026
+
+    Since August 15, 2026, Wildberries no longer lets sellers choose a warehouse for new FBO shipments. Goods are dropped off at the nearest pickup point (ПВЗ) or sorting center (СЦ), and the platform distributes stock across regions itself, based on demand and warehouse load. Stock reports now show only the total stock in Russia, not warehouse names. The localization index no longer applies to new shipments, and the logistics and storage coefficient is the same at every warehouse: 170% for standard products and 100% for oversized products.
+
+    So on Wildberries, the decision of how much stock goes to which region now belongs to the platform, not the seller. The levers the seller still controls are total stock quantity, shipment timing and frequency, the choice of drop-off point and product volume.
+
+    On Ozon, regional placement still matters
+
+    Ozon manages stock in clusters, and the FBO logistics fee depends on the route from the shipping cluster to the buyer's cluster; delivery within a cluster is cheaper and faster. Ozon set its non-local sales surcharge to 0% from July 9, 2026, but because the tariff is route-based, keeping stock in the clusters where demand forms still lowers cost and delivery time.
+
+    Central stock + platform-specific allocation
+
+    * Stage 1 — Central stock: goods are held at the main stock point in Russia.
+    * Stage 2 — Ozon: controlled shipments to the clusters where sales data shows demand.
+    * Stage 3 — Wildberries: no warehouse choice; the right quantity is dropped off at a pickup point or sorting center at the right time, and the platform handles regional distribution.
+    * Stage 4 — Sales data: performance by SKU and region.
+    * Stage 5 — Scaling: new clusters on Ozon; stock level and replenishment frequency on Wildberries.
+
+    Related: [Wildberries warehouse strategy 2026](/en/blog/wildberries-depo-stratejisi-basarili-satis), [WB & Ozon logistics](/en/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi), [Selling on Wildberries](/en/blog/wildberriesde-satis-yapmak), [Selling on Ozon](/en/blog/ozonda-satis-yapmak).
+
+    Wildberries and Ozon need separate plans
+
+    The gap widened in 2026. On Ozon, the seller chooses which cluster to ship to, and that choice directly affects the logistics fee. On Wildberries, there has been no warehouse choice since August 15, 2026; fees are the same at every warehouse and the platform distributes stock. Build a regional shipment plan for Ozon, and a quantity and timing plan for Wildberries.
     
     Conclusion
     
@@ -204,10 +228,10 @@ ru:
   body: |-
     Долгое время при словах «e-commerce в России» на ум приходила прежде всего Москва. Данные 2026 года показывают: рынок уже нельзя читать только через Москву и Санкт-Петербург.
     
-    Оборот онлайн-торговли H1 2026 (АКИТ): 7,2 трлн RUB
-    Рост г/г: 18,7%
-    Доля регионов: ≈ 80%
-    Москва + СПб: ≈ 21%
+    * Оборот онлайн-торговли H1 2026 (АКИТ): 7,2 трлн RUB
+    * Рост г/г: 18,7%
+    * Доля регионов: ≈ 80%
+    * Москва + СПб: ≈ 21%
     
     Анализ Kokoc Group по 21 категории на Wildberries и Ozon: региональные кластеры вне Москвы дают 73,7% оборота. Доля Москвы и Московской области снизилась с 26,1% до 23,4% (июнь 2025 — июль 2026).
     
@@ -226,11 +250,21 @@ ru:
     
     Схема «склад в Москве → Wildberries/Ozon → продажи по всей стране» подходит для старта. При росте объёма важны региональные заказы, SKU по регионам, сроки доставки, out-of-stock и избыточные остатки. См. [логистика e-commerce 2026](/ru/blog/rusyada-e-ticaret-lojistigi-2026).
     
-    Цель — не отказ от центрального стока, а совместное управление центральным запасом и региональными складами маркетплейсов.
-    
+    Цель — не отказ от центрального стока, а совместное управление центральным запасом и остатками на маркетплейсах. Но в 2026 году на двух площадках это делается по-разному.
+
+    Региональные остатки на Wildberries после 15 августа 2026 года
+
+    С 15 августа 2026 года Wildberries не дает выбирать склад для новых поставок FBO. Товар сдается в ближайший пункт выдачи (ПВЗ) или сортировочный центр (СЦ), а площадка сама распределяет запасы по регионам с учетом спроса и загрузки складов. В отчетах об остатках теперь видно только общее количество на складах WB в России, без названий складов. Индекс локализации для новых поставок не применяется, а коэффициент логистики и хранения одинаков для всех складов: 170% для обычных товаров и 100% для СГТ.
+
+    Поэтому на Wildberries решение о том, сколько товара отправить в какой регион, теперь принимает площадка, а не продавец. В руках продавца остаются общий объем запаса, сроки и частота поставок, выбор точки сдачи и объем товара.
+
+    На Ozon региональное размещение по-прежнему важно
+
+    Ozon управляет запасами по кластерам, а тариф логистики FBO зависит от маршрута из кластера отправки в кластер покупателя; доставка внутри кластера дешевле и быстрее. С 9 июля 2026 года наценка за нелокальные продажи на Ozon равна 0%, но из-за маршрутного тарифа держать товар в кластерах, где формируется спрос, по-прежнему выгоднее и быстрее.
+
     Wildberries и Ozon — разные планы
-    
-    Сети складов, география покупателей и логистика различаются. Один SKU может требовать разного размещения на каждой площадке. [Wildberries](/ru/blog/wildberriesde-satis-yapmak), [Ozon](/ru/blog/ozonda-satis-yapmak), [складская стратегия WB](/ru/blog/wildberries-depo-stratejisi-basarili-satis).
+
+    В 2026 году разница стала еще больше. На Ozon продавец сам выбирает кластер поставки, и этот выбор напрямую влияет на тариф логистики. На Wildberries с 15 августа 2026 года склад не выбирается: тарифы одинаковы для всех складов, а запасы распределяет площадка. Для Ozon нужен региональный план поставок, для Wildberries — план объемов и сроков. [Wildberries](/ru/blog/wildberriesde-satis-yapmak), [Ozon](/ru/blog/ozonda-satis-yapmak), [складская стратегия Wildberries 2026](/ru/blog/wildberries-depo-stratejisi-basarili-satis).
     
     Итог
     
@@ -244,4 +278,5 @@ ru:
     * [Продажи на Ozon](/ru/blog/ozonda-satis-yapmak)
 urlSlug: rusya-e-ticaret-bolgesel-satis-stratejisi-2026
 publishedAt: 2026-09-21
+updatedAt: 2026-10-16
 ---

@@ -812,108 +812,100 @@ export const blogTranslationsRU: Record<string, BlogTranslationRU> = {
 
   "wildberries-depo-stratejisi-basarili-satis": {
     slug: "wildberries-depo-stratejisi-basarili-satis",
-    metaTitleRu: "Складская стратегия на Wildberries: FBO, FBS и региональное распределение",
-    titleRu: "Складская стратегия на Wildberries: Оптимизация логистики и продаж",
-    excerptRu: "Как грамотно распределить остатки по региональным складам (Коледино, Электросталь, Казань, Краснодар) для роста заказов.",
+    metaTitleRu: "Складская стратегия Wildberries 2026: новые правила после 15 августа",
+    titleRu: "Складская стратегия Wildberries 2026: выбора склада больше нет — что теперь важно?",
+    excerptRu: "С 15 августа 2026 года Wildberries не дает выбирать склад для поставок FBO и сам распределяет товар. Новые правила, тарифы, выбор точки сдачи и планирование запасов.",
     publishedAtRu: "10 мая 2026",
     readTimeRu: "5 мин чтения",
     contentRu: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">
-          Складская модель — фундамент успеха на Wildberries. Концентрация всех товарных остатков на одном складе ограничивает географию продаж и снижает видимость товара для региональных клиентов.
-        </p>
-        <p className="text-lg leading-relaxed text-slate-600">Многие селлеры считают, что успех на Wildberries зависит только от качества товара или рекламного бюджета. Однако один из ключевых критериев эффективности на площадке — то, на каких складах размещён ваш товар. Правильная складская стратегия сокращает сроки доставки, повышает удовлетворённость покупателей и помогает карточкам подниматься выше в поиске.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Долгое время главным логистическим решением на Wildberries был выбор склада. Продавцы делили запасы между складами в Москве, Казани, Краснодаре и других регионах, искали склады с низким коэффициентом и старались улучшить индекс локализации. С 15 августа 2026 года эта модель больше не работает.</p>
 
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Региональная складская сеть Wildberries</h2>
-          <p className="text-slate-600 leading-relaxed">Wildberries располагает крупными фулфилмент-центрами, обслуживающими разные регионы России. Благодаря этой инфраструктуре заказ отправляется с ближайшего к покупателю склада, и срок доставки заметно сокращается.</p>
-          <p className="text-slate-600 leading-relaxed">Тем не менее отправлять весь запас на один склад — почти никогда не оптимальное решение.</p>
-        </div>
-
-        <div className="bg-primary-50 p-8 rounded-3xl my-8">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Почему распределение по складам так важно</h2>
-          <p className="text-slate-600 mb-4">Стратегическое планирование складов даёт:</p>
-          <ul className="space-y-3">
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Сокращение сроков доставки.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Рост видимости в поисковой выдаче.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Оптимизацию логистических расходов.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Быструю реакцию на всплески регионального спроса.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Снижение риска дефицита.</li>
-          </ul>
-          <p className="text-slate-600 mt-4">Особенно для товаров с большим объёмом продаж региональное распределение даёт огромное операционное преимущество по сравнению с работой через один склад.</p>
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">Материал полностью обновлен 16 октября 2026 года с учетом правил FBO Wildberries, действующих с 15 августа 2026 года.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Как планировать распределение запасов</h2>
-          <p className="text-slate-600">При планировании распределения учитывайте следующие ключевые показатели:</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Что изменилось 15 августа 2026 года?</h2>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Историю продаж</li>
-            <li>Спрос покупателей по регионам</li>
-            <li>Ожидаемые сроки доставки</li>
-            <li>Сезонные колебания объёмов</li>
-            <li>Динамику категории</li>
+            <li><strong className="text-slate-800">Выбора склада больше нет:</strong> Новые поставки FBO сдаются не на конкретный склад, а в пункты выдачи (ПВЗ) или сортировочные центры (СЦ). Wildberries сам распределяет товар по регионам с учетом спроса и загрузки складов.</li>
+            <li><strong className="text-slate-800">Названия складов скрыты:</strong> В отчетах об остатках теперь видно только общее количество товара на складах WB в России, без разбивки по складам.</li>
+            <li><strong className="text-slate-800">Индекс локализации отменен:</strong> Для новых поставок индекс локализации в расчете логистики не применяется. Для поставок, созданных до 15 августа, он может меняться только в лучшую сторону.</li>
+            <li><strong className="text-slate-800">Единый коэффициент:</strong> Коэффициент логистики и хранения одинаков для всех складов в России: 170% для обычных товаров и 100% для СГТ. Тот же коэффициент логистики действует и для FBS.</li>
+            <li><strong className="text-slate-800">Новые платные услуги:</strong> Подготовка короба к складской обработке в ПВЗ стоит 5 ₽ за единицу товара, в СЦ — бесплатно. Перемещение товара из ПВЗ или СЦ на склад хранения оплачивается отдельно: от 3 до 7 ₽ за литр.</li>
           </ul>
-          <p className="text-slate-600 font-medium">Одна и та же модель распределения подходит далеко не для каждой товарной линейки.</p>
+          <p className="text-slate-600 leading-relaxed">На практике стоимость логистики и хранения FBO на Wildberries теперь в основном зависит от объема товара в литрах. Выбор «правильного склада» перестал быть рычагом снижения расходов.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Рекомендуемая карта распределения запасов</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center">
-              <span className="font-bold text-accent-500 text-xl block mb-1">45–50%</span>
-              <strong className="text-slate-800 block text-sm">Москва и МО</strong>
-              <span className="text-xs text-slate-500">Коледино, Электросталь, Тула</span>
-            </div>
-            <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center">
-              <span className="font-bold text-accent-500 text-xl block mb-1">20–25%</span>
-              <strong className="text-slate-800 block text-sm">Поволжье и Урал</strong>
-              <span className="text-xs text-slate-500">Казань, Екатеринбург</span>
-            </div>
-            <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center">
-              <span className="font-bold text-accent-500 text-xl block mb-1">15–20%</span>
-              <strong className="text-slate-800 block text-sm">Юг России</strong>
-              <span className="text-xs text-slate-500">Краснодар, Невинномысск</span>
-            </div>
-            <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center">
-              <span className="font-bold text-accent-500 text-xl block mb-1">10–15%</span>
-              <strong className="text-slate-800 block text-sm">Северо-Запад</strong>
-              <span className="text-xs text-slate-500">Санкт-Петербург (Уткина Заводь)</span>
-            </div>
-          </div>
-          <p className="text-slate-700 leading-relaxed mt-6">
-            Полная цепочка логистики из Турции:{" "}
-            <Link to="/ru/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
-              логистика e-commerce в России 2026
-            </Link>
-            . Как читать спрос по регионам:{" "}
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Что такое складская стратегия, если склад не выбирается?</h2>
+          <p className="text-slate-600 leading-relaxed">Решать, в какой регион поедет товар, теперь не вам. Но сколько товара, когда и через какую точку попадет в систему, по-прежнему решаете вы. В 2026 году складская стратегия на Wildberries сводится к четырем решениям.</p>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">1. Общий объем запаса и сроки</h3>
+          <p className="text-slate-600 leading-relaxed">Хранение начисляется со дня приемки партии, на 61–90-й день тариф растет в 1,5 раза, после 90-го дня — в 2 раза. Избыточный запас больше нельзя исправить региональным распределением — только объемом, соответствующим скорости продаж, и частым пополнением. Для каждого товара ориентир — не превышать объем, который продастся за 60 дней, и пополнять запас до того, как он закончится.</p>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">2. Точка сдачи: ПВЗ или СЦ?</h3>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li><strong className="text-slate-800">Пункт выдачи (ПВЗ):</strong> Удобен для небольших поставок. Принимают только транспортировочные короба (не меньше 30×20×30 см, любая сторона не длиннее 80 см, сумма трех сторон не больше 160 см); в одной поставке не больше 25 кг, 500 товаров и 200 литров. Подготовка стоит 5 ₽ за единицу, а ПВЗ в первую очередь обслуживают покупателей.</li>
+            <li><strong className="text-slate-800">Сортировочный центр (СЦ):</strong> Единственный вариант для паллет и крупных поставок; подготовка коробов бесплатна. Для коммерческих партий из Турции это обычно правильная точка сдачи.</li>
+          </ul>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">3. Объем товара</h3>
+          <p className="text-slate-600 leading-relaxed">Поскольку тарифы считаются за литр, размер упаковки — это прямой расход. Слишком большая коробка, объемная упаковка или неверно указанные габариты создают расход, который повторяется с каждой продажей. Поэтому габариты в карточке товара должны соответствовать реальной упаковке.</p>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">4. FBO или FBS?</h3>
+          <p className="text-slate-600 leading-relaxed">При FBS товар остается на вашем складе или у фулфилмент-партнера в России, а заказы сдаются в СЦ или ПВЗ. Поскольку коэффициент логистики такой же, как на FBO, преимущество FBS теперь не в коэффициенте, а в контроле над запасом: медленно продающиеся или новые тестовые товары можно продавать, не платя за хранение на складах Wildberries. Для быстро продающихся товаров FBO обычно остается сильнее благодаря скорости доставки.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Тактики, которые больше не работают</h2>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Искать склад с самым низким коэффициентом и везти товар туда</li>
+            <li>Делить запас по фиксированным долям вроде «Москва 45–50%, Поволжье и Урал 20–25%, Юг 15–20%»</li>
+            <li>Дробить поставки по регионам ради индекса локализации</li>
+            <li>Планировать перемещения товара между складами Wildberries</li>
+          </ul>
+          <p className="text-slate-600">Для поставок, созданных после 15 августа, эти тактики не снижают расходы, а только усложняют операционную работу.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">На Ozon все иначе</h2>
+          <p className="text-slate-600 leading-relaxed">На Ozon региональное размещение по-прежнему важно. Запасы управляются по кластерам, а тариф логистики FBO зависит от маршрута из кластера отправки в кластер покупателя; доставка внутри кластера дешевле и быстрее. С 9 июля 2026 года наценка за нелокальные продажи на Ozon равна 0%, но из-за маршрутного тарифа держать товар в кластерах, где формируется спрос, по-прежнему выгодно. Поэтому для двух площадок нужны разные планы: для Ozon — региональный план поставок, для Wildberries — план объемов и сроков. Как читать спрос по регионам:{" "}
             <Link to="/ru/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-500 font-semibold hover:underline">
               продажи за пределами Москвы
             </Link>
-            .
-          </p>
+            .</p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Самые частые ошибки</h2>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Отправка всего запаса на один центральный склад</li>
-            <li>Поставки без анализа истории продаж</li>
-            <li>Слишком позднее обнаружение дефицита</li>
-            <li>Игнорирование сезонных изменений оборачиваемости</li>
+            <li>Продолжать планировать поставки по старой складской стратегии</li>
+            <li>Отправлять весь сезонный запас за один раз, раз региональное распределение больше недоступно</li>
+            <li>Не проверять габариты товара и объем упаковки</li>
+            <li>Планировать крупные коммерческие партии, не зная ограничений ПВЗ</li>
+            <li>Слишком поздно замечать дефицит</li>
           </ul>
-          <p className="text-slate-600">Такие ошибки ведут к упущенным продажам и лишним логистическим расходам.</p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Подход Russia Market Entry</h2>
-          <p className="text-lg leading-relaxed text-slate-600">В Russia Market Entry мы строим стратегию поставок не только на основе остатков, но и на глубоком анализе продаж и регионального спроса. Цель — не просто отгрузить товар, а обеспечить, чтобы нужный товар оказался на нужном складе в нужное время.</p>
+          <p className="text-lg leading-relaxed text-slate-600">В Russia Market Entry мы планируем поставки на Wildberries по объему и срокам исходя из скорости продаж, а поставки на Ozon — по спросу в кластерах. Запас хранится на нашем фулфилмент-складе в России и отправляется на обе площадки по мере необходимости в нужном количестве. Полная цепочка логистики:{" "}
+            <Link to="/ru/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
+              логистика e-commerce в России 2026
+            </Link>
+            ; общая схема выхода на рынок:{" "}
+            <Link to="/ru/blog/rusyada-e-ticaret-nasil-yapilir" className="text-accent-500 font-semibold hover:underline">
+              руководство по e-commerce в России
+            </Link>
+            .</p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Вывод</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Долгосрочный успех на Wildberries требует грамотного планирования складов наряду с качественным товаром, ценой и рекламой.</p>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Управление запасами на основе данных позволяет сократить сроки доставки и устойчиво наращивать продажи.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">После 15 августа 2026 года складская стратегия на Wildberries сместилась с вопроса «какой склад?» на вопрос «сколько, когда и в каком объеме?».</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Выиграют продавцы, которые часто и в правильном объеме пополняют запас по скорости продаж, оптимизируют объем упаковки и управляют Ozon и Wildberries по разной логике.</p>
         </div>
       </div>
     )

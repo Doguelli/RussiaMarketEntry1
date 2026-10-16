@@ -8,24 +8,12 @@
       "text": "Rusya'da e-ticaret denildiğinde uzun süre ilk akla gelen pazar Moskova oldu. Ancak 2026 verileri, Rusya e-ticaret pazarının artık yalnızca Moskova ve St. Petersburg merkezli okunamayacağını gösteriyor."
     },
     {
-      "type": "statGrid",
+      "type": "bulletList",
       "items": [
-        {
-          "label": "2026 H1 e-ticaret hacmi (AKİT)",
-          "value": "7,2 trilyon RUB"
-        },
-        {
-          "label": "Yıllık büyüme",
-          "value": "%18,7"
-        },
-        {
-          "label": "Hacmin bölgelerden payı",
-          "value": "≈ %80"
-        },
-        {
-          "label": "Moskova + SPB payı",
-          "value": "≈ %21"
-        }
+        "2026 H1 e-ticaret hacmi (AKİT): 7,2 trilyon RUB",
+        "Yıllık büyüme: %18,7",
+        "Hacmin bölgelerden payı: ≈ %80",
+        "Moskova + SPB payı: ≈ %21"
       ]
     },
     {
@@ -33,9 +21,8 @@
       "text": "Kokoc Group'un Wildberries ve Ozon'daki 21 ürün kategorisini inceleyen araştırmasında, Moskova dışındaki bölgesel kümeler toplam cironun %73,7'sini oluşturuyor. Haziran 2025 ile Temmuz 2026 arasında Moskova ve Moskova Bölgesi'nin payı %26,1'den %23,4'e geriledi."
     },
     {
-      "type": "calloutBox",
-      "title": "Global markalar için mesaj",
-      "text": "Rusya'da e-ticaret stratejisi artık «Moskova'ya stok gönder ve satış bekle» modeliyle yönetilemez. Doğru yaklaşım; talebi bölgesel okumak, stokları satış verilerine göre dağıtmak ve lojistik ağı büyümeyle birlikte geliştirmektir."
+      "type": "paragraph",
+      "text": "Global markalar için mesaj Rusya'da e-ticaret stratejisi artık «Moskova'ya stok gönder ve satış bekle» modeliyle yönetilemez. Doğru yaklaşım; talebi bölgesel okumak, stokları satış verilerine göre dağıtmak ve lojistik ağı büyümeyle birlikte geliştirmektir."
     },
     {
       "type": "heading",
@@ -51,7 +38,7 @@
       "text": "AKİT, Sibirya ve Uzak Doğu gibi bölgelerde online alışverişin toplam perakende içindeki payının Moskova'nın üzerine çıkabildiğini belirtiyor. 2026'nın ilk yarısında 45 bölgede e-ticaretin perakendedeki payı ülke ortalaması olan %22,2'nin üzerindeydi — örneğin Arkhangelsk %52,9, Hantı-Mansi %38,8."
     },
     {
-      "type": "calloutBox",
+      "type": "paragraph",
       "text": "Rusya'da büyük nüfuslu şehir her zaman en yüksek online penetrasyon anlamına gelmiyor."
     },
     {
@@ -73,8 +60,12 @@
       "text": "Hangi bölgeler öne çıkıyor?"
     },
     {
+      "type": "heading",
+      "level": 2,
+      "text": "2026 H1 e-ticaret hacmi payı (AKİT, Moskova sonrası)"
+    },
+    {
       "type": "bulletList",
-      "title": "2026 H1 e-ticaret hacmi payı (AKİT, Moskova sonrası)",
       "items": [
         "Moskova Bölgesi — %7,43",
         "St. Petersburg — %5,6",
@@ -101,13 +92,17 @@
       "text": "Rusya'ya yeni giren bir marka çoğu zaman Moskova deposu → Wildberries / Ozon → Rusya genelinde satış modeliyle başlar. Başlangıç için mantıklı olabilir; ancak satışlar büyüdükçe aynı yapı lojistik ve performansı sınırlayabilir."
     },
     {
+      "type": "heading",
+      "level": 2,
+      "text": "Artık sorulması gereken sorular"
+    },
+    {
       "type": "bulletList",
-      "title": "Artık sorulması gereken sorular",
       "items": [
         "Siparişler hangi bölgelerden geliyor?",
         "Hangi SKU hangi bölgede daha hızlı satılıyor?",
         "Teslimat süresi ne?",
-        "Hangi depoda stok tükenme veya fazla stok riski var?",
+        "Hangi pazaryerinde ve hangi Ozon kümesinde stok tükenme veya fazla stok riski var?",
         "İadeler hangi bölgelerde yoğunlaşıyor?"
       ]
     },
@@ -125,27 +120,49 @@
       "text": "Merkezi stok modeli yeni giren markalar için stok kontrolü ve düşük risk sağlar. Ancak hacim arttığında yalnızca merkezi depodan uzak bölgelere hizmet teslimat süresini uzatabilir, lojistik maliyetini artırabilir ve merkezi depoda aşırı stok yaratabilir."
     },
     {
-      "type": "calloutBox",
-      "text": "Doğru model: merkezi depodan vazgeçmek değil, merkezi stok ile bölgesel marketplace stoklarını birlikte yönetmek."
+      "type": "paragraph",
+      "text": "Doğru model: merkezi depodan vazgeçmek değil, merkezi stok ile pazaryeri stoklarını birlikte yönetmek. Ancak 2026'da bu iki platformda farklı şekilde yapılıyor."
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Russia Market Entry: merkezi stok + dinamik transfer"
+      "text": "15 Ağustos 2026'dan sonra Wildberries'te bölgesel stok"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wildberries 15 Ağustos 2026'dan itibaren yeni FBO sevkiyatlarında depo seçimini kaldırdı. Ürünler en yakın teslim noktasına (ПВЗ) veya sıralama merkezine (СЦ) bırakılıyor ve platform stoğu bölgelere talebe ve depo doluluğuna göre kendisi dağıtıyor. Stok raporlarında artık depo adları değil, yalnızca Rusya'daki toplam stok görünüyor. Yeni sevkiyatlarda lokalizasyon endeksi uygulanmıyor ve lojistik ile depolama katsayısı tüm depolarda tek: standart ürünlerde %170, büyük hacimli ürünlerde %100."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle Wildberries'te \"hangi bölgeye ne kadar stok\" kararı artık satıcının değil, platformun kararı. Satıcının elindeki kaldıraçlar şunlar: toplam stok miktarı, sevkiyat zamanı ve sıklığı, teslim noktası seçimi ve ürünün hacmi."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ozon'da bölgesel yerleşim hâlâ önemli"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ozon'da stok kümeler halinde yönetiliyor ve FBO lojistik ücreti, siparişin hangi kümeden hangi kümeye gittiğine göre hesaplanıyor; küme içi teslimat daha ucuz ve daha hızlı. Ozon, bölge dışı satış ek ücretini 9 Temmuz 2026'dan itibaren %0'a indirdi, ancak rota bazlı tarife nedeniyle stoğu talebin oluştuğu kümede tutmak hâlâ maliyeti ve teslimat süresini düşürüyor."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Russia Market Entry: merkezi stok + platforma göre dağıtım"
     },
     {
       "type": "bulletList",
       "items": [
-        "Aşama 1 — Merkezi stok: ürün ana stok noktasında tutulur.",
-        "Aşama 2 — İlk marketplace dağılımı: uygun Wildberries / Ozon depolarına kontrollü miktar.",
-        "Aşama 3 — Satış verisi: SKU ve bölge bazında performans.",
-        "Aşama 4 — Transfer: satış hızına göre yeniden dağılım.",
-        "Aşama 5 — Ölçekleme: talep doğrulandıkça yeni depo bölgeleri."
+        "Aşama 1 — Merkezi stok: ürün Rusya'daki ana stok noktasında tutulur.",
+        "Aşama 2 — Ozon: satış verisine göre talebin oluştuğu kümelere kontrollü sevkiyat.",
+        "Aşama 3 — Wildberries: depo seçilmez; doğru miktar doğru zamanda teslim noktasına veya sıralama merkezine bırakılır, bölgesel dağılımı platform yapar.",
+        "Aşama 4 — Satış verisi: SKU ve bölge bazında performans.",
+        "Aşama 5 — Ölçekleme: Ozon'da yeni kümeler, Wildberries'te stok seviyesi ve yenileme sıklığı."
       ]
     },
     {
       "type": "paragraph",
-      "text": "Detaylı depo stratejisi: [Wildberries depo stratejisi](/blog/wildberries-depo-stratejisi-basarili-satis) ve [Wildberries & Ozon lojistik yönetimi](/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)."
+      "text": "Detaylı depo stratejisi: [Wildberries depo stratejisi 2026](/blog/wildberries-depo-stratejisi-basarili-satis) ve [Wildberries & Ozon lojistik yönetimi](/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)."
     },
     {
       "type": "heading",
@@ -171,7 +188,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Hayır. Bir ürün Moskova'da güçlüyken başka bir ürün Krasnodar, Tataristan, Sverdlovsk veya Samara'da daha hızlı büyüyebilir. Stok planlaması mümkün olduğunca SKU × Bölge mantığıyla yapılmalıdır."
+      "text": "Hayır. Bir ürün Moskova'da güçlüyken başka bir ürün Krasnodar, Tataristan, Sverdlovsk veya Samara'da daha hızlı büyüyebilir. Ozon'da stok planlaması mümkün olduğunca SKU × Küme mantığıyla yapılmalıdır. Wildberries'te bölgesel dağılımı platform yaptığı için bölgesel satış verisi, depo seçimi için değil, toplam stok miktarını ve yenileme zamanını belirlemek için kullanılır."
     },
     {
       "type": "heading",
@@ -180,7 +197,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Hayır. Depo ağı, müşteri dağılımı, kategori gücü, fulfillment ve lojistik maliyetleri farklı olabilir. Wildberries depo planı ve Ozon depo planı ayrı oluşturulmalıdır; aynı SKU için bile farklı dağılım gerekebilir. Platform rehberleri: [Wildberries'de satış](/blog/wildberriesde-satis-yapmak), [Ozon'da satış](/blog/ozonda-satis-yapmak)."
+      "text": "Hayır, ve 2026'da fark daha da büyüdü. Ozon'da satıcı stoğu hangi kümeye göndereceğini seçer ve bu seçim lojistik ücretini doğrudan etkiler. Wildberries'te ise 15 Ağustos 2026'dan beri depo seçilmez; ücretler tüm depolarda aynıdır ve stoğu platform dağıtır. Bu yüzden Ozon için bölgesel bir sevkiyat planı, Wildberries için ise miktar ve zamanlama planı oluşturulmalıdır. Platform rehberleri: [Wildberries'de satış](/blog/wildberriesde-satis-yapmak), [Ozon'da satış](/blog/ozonda-satis-yapmak)."
     },
     {
       "type": "heading",
@@ -197,36 +214,15 @@
       "text": "2026 bölgesel büyüme modeli"
     },
     {
-      "type": "statGrid",
+      "type": "bulletList",
       "items": [
-        {
-          "label": "1",
-          "value": "Ürün seçimi"
-        },
-        {
-          "label": "2",
-          "value": "Kontrollü başlangıç"
-        },
-        {
-          "label": "3",
-          "value": "Merkezi lojistik"
-        },
-        {
-          "label": "4",
-          "value": "Marketplace depoları"
-        },
-        {
-          "label": "5",
-          "value": "Bölgesel analiz"
-        },
-        {
-          "label": "6",
-          "value": "Transfer"
-        },
-        {
-          "label": "7",
-          "value": "Ölçekleme"
-        }
+        "1. Ürün seçimi",
+        "2. Kontrollü başlangıç",
+        "3. Merkezi lojistik",
+        "4. Ozon kümeleri ve Wildberries teslimatı",
+        "5. Bölgesel analiz",
+        "6. Stok yenileme",
+        "7. Ölçekleme"
       ]
     },
     {
@@ -235,12 +231,16 @@
       "text": "Bölgesel e-ticaret stratejisi checklist"
     },
     {
+      "type": "heading",
+      "level": 2,
+      "text": "Satış & stok & lojistik"
+    },
+    {
       "type": "bulletList",
-      "title": "Satış & stok & lojistik",
       "items": [
         "Bölgesel sipariş dağılımı ve SKU bazında bölgesel satış incelendi",
         "Merkezi ve marketplace depo stokları takip ediliyor",
-        "Teslimat süreleri ve depo bazlı lojistik maliyetleri ölçülüyor",
+        "Teslimat süreleri ve Ozon'da küme bazlı lojistik maliyetleri ölçülüyor",
         "Yeni bölgeler satış verisine göre seçiliyor; marketplace'ler ayrı analiz ediliyor"
       ]
     },
@@ -254,13 +254,16 @@
       "text": "2026'nın en önemli değişimlerinden biri büyümenin giderek daha fazla bölgelerden gelmesi. Strateji «Moskova'da satışa başlayalım» ile bitmemeli; «Rusya'da nerede talep oluşuyor ve stoğumuzu bu talebe nasıl yaklaştırabiliriz?» sorusu merkeze alınmalıdır."
     },
     {
-      "type": "calloutBox",
-      "title": "Russia Market Entry",
-      "text": "Marketplace, lojistik, depo ve stok operasyonlarını satış verisine göre planlıyor; merkezi stoktan bölgesel marketplace depolarına transfer yapısını yönetiyoruz. Rusya pazarına giriş veya Moskova dışına ölçekleme için operasyon yapınızı birlikte değerlendirebiliriz. Bölge önceliklendirmesi için [pazar araştırması ve strateji](/hizmetler/pazar-arastirmasi-ve-strateji) hizmetimizi de inceleyebilirsiniz."
+      "type": "paragraph",
+      "text": "Russia Market Entry Marketplace, lojistik, depo ve stok operasyonlarını satış verisine göre planlıyor; merkezi stoktan Ozon kümelerine ve Wildberries teslim noktalarına sevkiyat yapısını yönetiyoruz. Rusya pazarına giriş veya Moskova dışına ölçekleme için operasyon yapınızı birlikte değerlendirebiliriz. Bölge önceliklendirmesi için [pazar araştırması ve strateji](/hizmetler/pazar-arastirmasi-ve-strateji) hizmetimizi de inceleyebilirsiniz."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "İlgili rehberler"
     },
     {
       "type": "bulletList",
-      "title": "İlgili rehberler",
       "items": [
         "[Rusya'da e-ticaret nasıl yapılır?](/blog/rusyada-e-ticaret-nasil-yapilir)",
         "[Rusya'da e-ticaret lojistiği 2026](/blog/rusyada-e-ticaret-lojistigi-2026)",

@@ -1659,37 +1659,72 @@ const baseBlogPosts: BlogPost[] = [
   },
   {
     slug: "wildberries-depo-stratejisi-basarili-satis",
-    metaTitle: "Wildberries'de Başarili Satiş Için Depo Stratejisi: Doğru Depo, Daha Fazla Satiş",
-    metaTitleEn: "Warehouse Strategy for Successful Sales on Wildberries: Right Warehouse, More Sales",
-    title: "Wildberries'de Başarili Satiş Için Depo Stratejisi: Doğru Depo, Daha Fazla Satiş",
-    titleEn: "Warehouse Strategy for Successful Sales on Wildberries: Right Warehouse, More Sales",
-    excerpt: "Birçok satici Wildberries'de başarinin yalnizca ürün kalitesine veya reklam bütçesine bağli olduğunu düşünür. Oysa platformun en önemli performans kriterlerinden biri ürünlerin hangi depolarda bulunduğudur.",
-    excerptEn: "Many sellers believe success on Wildberries depends solely on product quality or advertising budget. However, one of the platform's key performance criteria is warehouse placement.",
+    metaTitle: "Wildberries Depo Stratejisi 2026: 15 Ağustos Sonrası Yeni Kurallar",
+    metaTitleEn: "Wildberries Warehouse Strategy 2026: New Rules After August 15",
+    title: "Wildberries Depo Stratejisi 2026: Depo Seçimi Kalktı, Şimdi Ne Önemli?",
+    titleEn: "Wildberries Warehouse Strategy 2026: Warehouse Choice Is Gone. What Matters Now?",
+    excerpt: "Wildberries 15 Ağustos 2026'dan beri FBO sevkiyatlarında depo seçtirmiyor ve stoğu kendisi dağıtıyor. Yeni kurallar, ücretler, teslim noktası seçimi ve stok planlaması.",
+    excerptEn: "Since August 15, 2026, Wildberries no longer lets sellers choose a warehouse for FBO shipments and distributes stock itself. The new rules, fees, drop-off choice and stock planning.",
     publishedAt: "29 Temmuz 2026",
-    readTime: "3 dk okuma",
+    updatedAt: "16 Ekim 2026",
+    updatedAtEn: "October 16, 2026",
+    updatedAtRu: "16 октября 2026 г.",
+    readTime: "5 dk okuma",
     imageUrl: "/blog8.png",
     content: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Birçok satici Wildberries'de başarinin yalnizca ürün kalitesine veya reklam bütçesine bağli olduğunu düşünür. Oysa platformun en önemli performans kriterlerinden biri ürünlerin hangi depolarda bulunduğudur.</p>
-        <p className="text-lg leading-relaxed text-slate-600">Doğru depo stratejisi, teslimat süresini kisaltir, müşteri memnuniyetini artirir ve ürünlerinizin daha fazla görünürlük kazanmasina yardimci olur.</p>
+        <p className="text-lg leading-relaxed text-slate-600">Wildberries'te uzun süre en önemli lojistik kararı, ürünlerin hangi depoya gönderileceğiydi. Satıcılar stoğu Moskova, Kazan, Krasnodar ve diğer bölgelerdeki depolara bölüştürür, düşük katsayılı depoları takip eder ve lokalizasyon endeksini iyileştirmeye çalışırdı. 15 Ağustos 2026'dan itibaren bu model geçerli değil.</p>
 
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Wildberries'in Bölgesel Depo Yapisi</h2>
-          <p className="text-slate-600 leading-relaxed">Wildberries, Rusya'nin farkli bölgelerine hizmet veren büyük fulfillment merkezleriyle çalişir. Bu yapi sayesinde siparişler müşteriye en yakin depodan gönderilir ve teslimat süreleri önemli ölçüde kisalir.</p>
-          <p className="text-slate-600 leading-relaxed">Ancak tüm ürünleri tek depoya göndermek çoğu zaman doğru strateji değildir.</p>
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">Bu yazı 16 Ekim 2026'da, Wildberries'in 15 Ağustos 2026'da yürürlüğe giren FBO kurallarına göre baştan güncellendi.</p>
         </div>
 
-        <div className="bg-primary-50 p-8 rounded-3xl my-8">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Neden Depo Dağilimi Önemlidir?</h2>
-          <p className="text-slate-600 mb-4">Doğru depo planlamasi sayesinde:</p>
-          <ul className="space-y-3">
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Teslimat süreleri kisalir.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Ürün görünürlüğü artabilir.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Lojistik maliyetleri optimize edilebilir.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Bölgesel talebe daha hizli cevap verilebilir.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Stok tükenme riski azalir.</li>
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">15 Ağustos 2026'da Ne Değişti?</h2>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li><strong className="text-slate-800">Depo seçimi kalktı:</strong> Yeni FBO sevkiyatları belirli bir depoya değil, teslim noktalarına (ПВЗ) veya sıralama merkezlerine (СЦ) bırakılıyor. Wildberries stoğu bölgelere talebe ve depo doluluğuna göre kendisi dağıtıyor.</li>
+            <li><strong className="text-slate-800">Depo adları görünmüyor:</strong> Stok raporlarında artık depo bazında değil, yalnızca Rusya'daki toplam stok görünüyor.</li>
+            <li><strong className="text-slate-800">Lokalizasyon endeksi kaldırıldı:</strong> Yeni sevkiyatların lojistik ücretinde lokalizasyon endeksi uygulanmıyor. 15 Ağustos'tan önce oluşturulan sevkiyatlarda endeks yalnızca iyileşme yönünde değişiyor.</li>
+            <li><strong className="text-slate-800">Tek katsayı:</strong> Lojistik ve depolama katsayısı tüm Rusya depolarında aynı: standart ürünlerde %170, büyük hacimli ürünlerde %100. Aynı lojistik katsayısı FBS için de geçerli.</li>
+            <li><strong className="text-slate-800">Yeni hizmet ücretleri:</strong> Teslim noktasında kolinin depoya hazırlanması ürün başına 5 ruble, sıralama merkezinde ücretsiz. Teslim noktasından veya sıralama merkezinden depoya taşıma için litre başına 3–7 ruble arası ayrı bir ücret var.</li>
           </ul>
-          <p className="text-slate-600 mt-4">Özellikle yüksek hacimli ürünlerde tek depoya bağli kalmak yerine bölgesel dağilim yapmak operasyonel avantaj sağlar. Talebi bölge bazında okumak için{" "}
+          <p className="text-slate-600 leading-relaxed">Pratik sonuç: Wildberries'te FBO lojistik ve depolama maliyeti artık büyük ölçüde ürünün hacmine (litre) bağlı. "Doğru depoyu seçmek" bir maliyet kaldıracı olmaktan çıktı.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Depo Seçilemiyorsa Depo Stratejisi Ne Demek?</h2>
+          <p className="text-slate-600 leading-relaxed">Stoğun hangi bölgeye gideceğine artık siz karar vermiyorsunuz. Ama stoğun ne kadar, ne zaman ve hangi noktadan sisteme gireceğine hâlâ siz karar veriyorsunuz. 2026'da Wildberries depo stratejisi bu dört karardan oluşuyor.</p>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">1. Toplam stok miktarı ve zamanlama</h3>
+          <p className="text-slate-600 leading-relaxed">Depolama ücreti partinin kabul edildiği günden itibaren işliyor; 61–90. günlerde 1,5 katına, 90. günden sonra 2 katına çıkıyor. Fazla stok artık bölgesel dağılımla değil, ancak satış hızına uygun miktar ve sık yenilemeyle önlenebilir. Her ürün için hedef, 60 gün içinde satılacak miktarı aşmamak ve stoğu tükenmeden yenilemektir.</p>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">2. Teslim noktası: ПВЗ mi, СЦ mi?</h3>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li><strong className="text-slate-800">Teslim noktası (ПВЗ):</strong> Küçük sevkiyatlar için pratik. Yalnızca taşıma kolileri kabul ediliyor (en az 30×20×30 cm, tek kenar en fazla 80 cm, üç kenar toplamı en fazla 160 cm); sevkiyat başına en fazla 25 kg, 500 ürün ve 200 litre. Ürün başına 5 ruble hazırlık ücreti alınıyor ve teslim noktaları önce müşterilere hizmet veriyor.</li>
+            <li><strong className="text-slate-800">Sıralama merkezi (СЦ):</strong> Palet ve büyük hacimli sevkiyatlar için tek seçenek; koli hazırlığı ücretsiz. Türkiye'den gelen ticari partiler için genellikle doğru adres burası.</li>
+          </ul>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">3. Ürün hacmi</h3>
+          <p className="text-slate-600 leading-relaxed">Ücretler litre üzerinden hesaplandığı için ambalaj boyutu doğrudan maliyettir. Gereksiz büyük kutu, şişirilmiş ambalaj veya yanlış girilmiş ölçüler her satışta tekrar eden bir maliyet oluşturur. Ürün kartındaki ölçülerin gerçek ambalajla uyumlu olması da bu yüzden önemlidir.</p>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">4. FBO mu, FBS mi?</h3>
+          <p className="text-slate-600 leading-relaxed">FBS'te stok Rusya'daki kendi deponuzda veya fulfillment ortağınızda kalır ve siparişler bir sıralama merkezine ya da teslim noktasına bırakılır. Lojistik katsayısı FBO ile aynı olduğu için FBS'in avantajı artık katsayı değil, stok üzerindeki kontrol: yavaş satan veya yeni test edilen ürünlerde Wildberries'in depolama ücretine girmeden satış yapılabilir. Hızlı satan ürünlerde FBO, teslimat hızı nedeniyle genellikle daha güçlü kalır.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Artık Geçerli Olmayan Taktikler</h2>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Düşük katsayılı depoyu bulup stoğu oraya göndermek</li>
+            <li>Stoğu "Moskova %45–50, Volga ve Ural %20–25, Güney %15–20" gibi sabit bölgesel yüzdelere bölmek</li>
+            <li>Lokalizasyon endeksini iyileştirmek için sevkiyatı bölgelere parçalamak</li>
+            <li>Wildberries depoları arasında stok transferi planlamak</li>
+          </ul>
+          <p className="text-slate-600">Bu taktikler 15 Ağustos'tan sonra oluşturulan sevkiyatlarda maliyeti düşürmüyor; yalnızca operasyonu karmaşıklaştırıyor.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Ozon'da Durum Farklı</h2>
+          <p className="text-slate-600 leading-relaxed">Ozon'da bölgesel yerleşim hâlâ önemli. Stok kümeler halinde yönetiliyor ve FBO lojistik ücreti, siparişin hangi kümeden hangi kümeye gittiğine göre hesaplanıyor; küme içi teslimat daha ucuz ve daha hızlı. Ozon bölge dışı satış ek ücretini 9 Temmuz 2026'dan itibaren %0'a indirdi, ancak rota bazlı tarife nedeniyle stoğu talebin oluştuğu kümede tutmak hâlâ avantaj sağlıyor. Bu yüzden iki platform için ayrı plan gerekiyor: Ozon için bölgesel sevkiyat planı, Wildberries için miktar ve zamanlama planı. Bölgesel talebi okumak için{" "}
             <a href="/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-500 font-semibold hover:underline">
               Moskova dışı satış stratejisi
             </a>{" "}
@@ -1697,74 +1732,91 @@ const baseBlogPosts: BlogPost[] = [
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Stok Dağilimi Nasil Planlanmali?</h2>
-          <p className="text-slate-600">Depo planlamasinda şu kriterler dikkate alinmalidir:</p>
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">En Sık Yapılan Hatalar</h2>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Geçmiş satiş verileri</li>
-            <li>Bölgesel talep</li>
-            <li>Teslimat süreleri</li>
-            <li>Sezonsal yoğunluk</li>
-            <li>Kategori performansi</li>
-          </ul>
-          <p className="text-slate-600 font-medium">Her ürün için ayni dağilim modeli doğru değildir.</p>
-        </div>
-
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">En Sik Yapilan Hatalar</h2>
-          <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Tüm stoklari tek depoya göndermek</li>
-            <li>Satiş verilerini analiz etmeden sevkiyat yapmak</li>
+            <li>Eski depo stratejisiyle sevkiyat planlamaya devam etmek</li>
+            <li>Bölgesel dağılım yapılamadığı için tüm sezon stoğunu tek seferde göndermek</li>
+            <li>Ürün ölçülerini ve ambalaj hacmini kontrol etmemek</li>
+            <li>Büyük ticari partileri teslim noktası sınırlarını bilmeden planlamak</li>
             <li>Stok tükenmesini geç fark etmek</li>
-            <li>Sezon değişimlerini dikkate almamak</li>
           </ul>
-          <p className="text-slate-600">Bu hatalar hem satiş kaybina hem de gereksiz lojistik maliyetlerine neden olabilir.</p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Russia Market Entry Yaklaşimi</h2>
-          <p className="text-lg leading-relaxed text-slate-600">Russia Market Entry olarak sevkiyat planlarini yalnizca stok miktarina göre değil, satiş performansi ve bölgesel talep analizlerine göre oluşturuyoruz. Amaç yalnizca ürün göndermek değil, ürünün doğru zamanda doğru depoda bulunmasini sağlamaktir.</p>
-        </div>
-
-        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
-          <p className="text-slate-700 leading-relaxed">
-            Depo stratejisinden önce tüm lojistik zinciri görmek için:{" "}
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Russia Market Entry Yaklaşımı</h2>
+          <p className="text-lg leading-relaxed text-slate-600">Russia Market Entry olarak Wildberries sevkiyatlarını satış hızına göre miktar ve zamanlama üzerinden, Ozon sevkiyatlarını ise küme bazlı talebe göre planlıyoruz. Stok Rusya'daki fulfillment depomuzda tutuluyor ve her iki platforma ihtiyaç oldukça, doğru miktarda gönderiliyor. Lojistik zincirinin tamamı için{" "}
             <a href="/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
-              Rusya’da e-ticaret lojistiği 2026
+              Rusya'da e-ticaret lojistiği 2026
             </a>
-            .
-          </p>
+            , Rusya'ya girişin genel çerçevesi için{" "}
+            <a href="/blog/rusyada-e-ticaret-nasil-yapilir" className="text-accent-500 font-semibold hover:underline">
+              Rusya'da e-ticaret rehberimize
+            </a>{" "}
+            bakabilirsiniz.</p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Sonuç</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Wildberries operasyonunda başarili olmak; ürün, fiyat ve reklam kadar doğru depo planlamasina da bağlidir.</p>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Veri odakli stok yönetimi sayesinde hem teslimat performansinizi artirabilir hem de satişlarinizi sürdürülebilir şekilde büyütebilirsiniz.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">15 Ağustos 2026'dan sonra Wildberries'te depo stratejisi "hangi depo?" sorusundan "ne kadar, ne zaman ve hangi hacimde?" sorusuna dönüştü.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Kazananlar, stoğu satış hızına göre sık ve doğru miktarda yenileyen, ambalaj hacmini optimize eden ve Ozon ile Wildberries'i ayrı mantıkla yöneten satıcılar olacak.</p>
         </div>
       </div>
     ),
     contentEn: (
       <div className="space-y-8">
-        <p className="text-lg leading-relaxed text-slate-600">Many sellers believe success on Wildberries depends solely on product quality or advertising budgets. However, one of the platform's key performance criteria is where your products are stocked.</p>
-        <p className="text-lg leading-relaxed text-slate-600">The right warehouse strategy reduces delivery times, boosts customer satisfaction, and helps your items gain higher search visibility.</p>
+        <p className="text-lg leading-relaxed text-slate-600">For a long time, the most important logistics decision on Wildberries was which warehouse to ship to. Sellers split stock across warehouses in Moscow, Kazan, Krasnodar and other regions, chased warehouses with low coefficients and tried to improve their localization index. Since August 15, 2026, that model no longer applies.</p>
 
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Wildberries Regional Warehouse Network</h2>
-          <p className="text-slate-600 leading-relaxed">Wildberries operates large fulfillment centers serving different regions of Russia. Thanks to this infrastructure, orders are dispatched from the nearest warehouse to the customer, significantly cutting down transit times.</p>
-          <p className="text-slate-600 leading-relaxed">However, sending all inventory to a single warehouse is rarely the optimal approach.</p>
+        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
+          <p className="text-slate-700 leading-relaxed">This article was fully updated on October 16, 2026 for the Wildberries FBO rules that took effect on August 15, 2026.</p>
         </div>
 
-        <div className="bg-primary-50 p-8 rounded-3xl my-8">
-          <h2 className="text-2xl font-bold text-primary-600 mb-4">Why Warehouse Distribution Matters</h2>
-          <p className="text-slate-600 mb-4">Strategic warehouse planning provides:</p>
-          <ul className="space-y-3">
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Reduced delivery transit times.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Increased search result visibility.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Optimized logistics costs.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Faster response to regional demand spikes.</li>
-            <li className="flex items-center gap-3 text-slate-700"><span className="w-2 h-2 rounded-full bg-accent-500" /> Reduced risk of stockouts.</li>
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">What Changed on August 15, 2026?</h2>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li><strong className="text-slate-800">No more warehouse choice:</strong> New FBO shipments are dropped off at pickup points (ПВЗ) or sorting centers (СЦ) rather than a specific warehouse. Wildberries distributes stock across regions itself, based on demand and warehouse load.</li>
+            <li><strong className="text-slate-800">Warehouse names are hidden:</strong> Stock reports now show only total stock in Russia, not stock per warehouse.</li>
+            <li><strong className="text-slate-800">Localization index removed:</strong> The localization index no longer applies to logistics fees for new shipments. For shipments created before August 15, the index can only change for the better.</li>
+            <li><strong className="text-slate-800">One coefficient:</strong> The logistics and storage coefficient is the same at every warehouse in Russia: 170% for standard products and 100% for oversized products. The same logistics coefficient applies to FBS.</li>
+            <li><strong className="text-slate-800">New service fees:</strong> Preparing a box for warehouse processing costs 5 rubles per item at a pickup point and is free at a sorting center. Moving goods from the pickup point or sorting center to a storage warehouse carries a separate fee of 3–7 rubles per liter.</li>
           </ul>
-          <p className="text-slate-600 mt-4">For high-volume items in particular, regional distribution offers a immense operational advantage compared to single-warehouse reliance. For demand by region, see our{" "}
+          <p className="text-slate-600 leading-relaxed">In practice, FBO logistics and storage costs on Wildberries now depend mainly on product volume in liters. Choosing the right warehouse is no longer a cost lever.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">What Is a Warehouse Strategy If You Can't Choose a Warehouse?</h2>
+          <p className="text-slate-600 leading-relaxed">You no longer decide which region your stock goes to. But you still decide how much stock enters the system, when, and through which drop-off point. In 2026, a Wildberries warehouse strategy comes down to these four decisions.</p>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">1. Total stock quantity and timing</h3>
+          <p className="text-slate-600 leading-relaxed">Storage is charged from the day a batch is accepted and rises to 1.5 times on days 61–90 and to 2 times after day 90. Overstock can no longer be fixed through regional allocation, only through quantities that match the sales rate and frequent replenishment. For each product, aim not to exceed what will sell within 60 days, and replenish before stock runs out.</p>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">2. Drop-off point: pickup point or sorting center?</h3>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li><strong className="text-slate-800">Pickup point (ПВЗ):</strong> Practical for small shipments. Only shipping boxes are accepted (at least 30×20×30 cm, no side longer than 80 cm, the three sides adding up to at most 160 cm); a shipment can hold at most 25 kg, 500 items and 200 liters. A preparation fee of 5 rubles per item applies, and pickup points serve customers first.</li>
+            <li><strong className="text-slate-800">Sorting center (СЦ):</strong> The only option for pallets and large shipments; box preparation is free. For commercial batches from Turkey, this is usually the right drop-off.</li>
+          </ul>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">3. Product volume</h3>
+          <p className="text-slate-600 leading-relaxed">Because fees are charged per liter, packaging size is a direct cost. An oversized box, bulky packaging or wrongly entered dimensions create a cost that repeats with every sale. That is also why the dimensions on the product card must match the real packaging.</p>
+
+          <h3 className="text-xl font-bold text-accent-500 mt-6 mb-2">4. FBO or FBS?</h3>
+          <p className="text-slate-600 leading-relaxed">Under FBS, stock stays in your own warehouse or with your fulfillment partner in Russia, and orders are dropped off at a sorting center or pickup point. Because the logistics coefficient is the same as for FBO, the advantage of FBS is no longer the coefficient but control over stock: slow-moving or newly tested products can be sold without incurring Wildberries storage fees. For fast-selling products, FBO usually remains stronger because of delivery speed.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Tactics That No Longer Work</h2>
+          <ul className="list-disc pl-6 space-y-2 text-slate-600">
+            <li>Finding the warehouse with the lowest coefficient and shipping stock there</li>
+            <li>Splitting stock by fixed regional shares such as "Moscow 45–50%, Volga and Urals 20–25%, South 15–20%"</li>
+            <li>Breaking shipments up by region to improve the localization index</li>
+            <li>Planning stock transfers between Wildberries warehouses</li>
+          </ul>
+          <p className="text-slate-600">For shipments created after August 15, these tactics no longer lower costs; they only make operations more complex.</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Ozon Works Differently</h2>
+          <p className="text-slate-600 leading-relaxed">On Ozon, regional placement still matters. Stock is managed in clusters, and the FBO logistics fee depends on the route from the shipping cluster to the buyer's cluster; delivery within a cluster is cheaper and faster. Ozon set its non-local sales surcharge to 0% from July 9, 2026, but because the tariff is route-based, keeping stock in the clusters where demand forms is still an advantage. So the two platforms need separate plans: a regional shipment plan for Ozon, and a quantity and timing plan for Wildberries. To read demand by region, see our{" "}
             <a href="/en/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026" className="text-accent-500 font-semibold hover:underline">
               beyond Moscow sales strategy
             </a>{" "}
@@ -1772,49 +1824,34 @@ const baseBlogPosts: BlogPost[] = [
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">How to Plan Inventory Allocation</h2>
-          <p className="text-slate-600">Consider these critical metrics when planning inventory distribution:</p>
-          <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Historical sales data</li>
-            <li>Regional buyer demand</li>
-            <li>Expected delivery SLAs</li>
-            <li>Seasonal volume fluctuations</li>
-            <li>Category performance trends</li>
-          </ul>
-          <p className="text-slate-600 font-medium">The same distribution model does not fit every product line.</p>
-        </div>
-
-        <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">Most Common Mistakes</h2>
           <ul className="list-disc pl-6 space-y-2 text-slate-600">
-            <li>Sending all inventory to a single central hub</li>
-            <li>Shipping stock without analyzing historical sales data</li>
+            <li>Continuing to plan shipments with the old warehouse strategy</li>
+            <li>Sending the whole season's stock at once because regional allocation is no longer possible</li>
+            <li>Not checking product dimensions and packaging volume</li>
+            <li>Planning large commercial batches without knowing pickup-point limits</li>
             <li>Noticing stockouts too late</li>
-            <li>Ignoring seasonal turnover shifts</li>
           </ul>
-          <p className="text-slate-600">These missteps lead to missed sales opportunities and unnecessary logistics costs.</p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-primary-500 mt-8 mb-4 border-b border-slate-100 pb-2">The Russia Market Entry Approach</h2>
-          <p className="text-lg leading-relaxed text-slate-600">At Russia Market Entry, we design shipment strategies based not just on inventory counts, but on deep sales performance and regional demand analytics. The goal isn't just shipping stock—it's ensuring the right product is in the right warehouse at the right time.</p>
-        </div>
-
-        <div className="bg-primary-50 p-6 rounded-3xl border border-primary-100">
-          <p className="text-slate-700 leading-relaxed">
-            For the full Turkey-to-Russia e-commerce logistics chain, see:{" "}
+          <p className="text-lg leading-relaxed text-slate-600">At Russia Market Entry, we plan Wildberries shipments by quantity and timing based on sales rate, and Ozon shipments by cluster-level demand. Stock is held at our fulfillment warehouse in Russia and sent to both platforms as needed, in the right quantity. For the full logistics chain, see{" "}
             <a href="/en/blog/rusyada-e-ticaret-lojistigi-2026" className="text-accent-500 font-semibold hover:underline">
               E-commerce logistics in Russia 2026
             </a>
-            .
-          </p>
+            ; for the overall framework of entering Russia, see our{" "}
+            <a href="/en/blog/rusyada-e-ticaret-nasil-yapilir" className="text-accent-500 font-semibold hover:underline">
+              guide to selling online in Russia
+            </a>
+            .</p>
         </div>
 
         <div className="bg-slate-900 text-white p-8 rounded-3xl mt-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500 rounded-full blur-[80px] opacity-20 -mr-20 -mt-20 pointer-events-none" />
           <h2 className="text-2xl font-bold mb-4 relative z-10 text-white">Conclusion</h2>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">Achieving long-term success on Wildberries requires smart warehouse planning alongside quality products, pricing, and advertising.</p>
-          <p className="text-lg leading-relaxed text-slate-300 relative z-10">Data-driven inventory governance enables you to elevate delivery SLAs and scale your sales sustainably.</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10 mb-4">After August 15, 2026, a Wildberries warehouse strategy has shifted from "which warehouse?" to "how much, when and at what volume?"</p>
+          <p className="text-lg leading-relaxed text-slate-300 relative z-10">The winners will be sellers who replenish stock frequently in the right quantities based on sales rate, optimize packaging volume and run Ozon and Wildberries on separate logic.</p>
         </div>
       </div>
     )
