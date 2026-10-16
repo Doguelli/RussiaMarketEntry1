@@ -4,7 +4,7 @@ enableEn: true
 enableRu: true
 tr:
   metaTitle: "Rusya'da E-Ticaret Nasıl Yapılır? 2026 Kapsamlı Rehber"
-  image: /blog2.jpeg
+  image: /uploads/blog/rusyada-e-ticaret-nasil-yapilir-tr.png
   title: "Rusya'da E-Ticaret 2026: Rusya Pazarına Girmek İsteyen Markalar İçin Kapsamlı Rehber"
   excerpt: "Rusya e-ticaret pazarının büyüklüğü, Wildberries, Ozon ve Yandex Market, yabancı markalar için üç giriş modeli, belgeler, lojistik, vergiler ve adım adım başlangıç planı."
   body: |-
@@ -203,7 +203,7 @@ tr:
     * [Rusya'da en çok satan ürünler 2026](/blog/rusyada-en-cok-satan-urunler-2026)
 en:
   metaTitle: "E-Commerce in Russia: Market Entry Guide for Foreign Brands (2026)"
-  image: /blog2.jpeg
+  image: /uploads/blog/rusyada-e-ticaret-nasil-yapilir-en.png
   title: "How to Sell Online in Russia: The Complete Guide for Foreign Brands (2026)"
   excerpt: "Russian e-commerce market size, Wildberries, Ozon and Yandex Market, three entry models for foreign brands, documents, logistics, taxes and a step-by-step launch plan."
   body: |-
@@ -406,7 +406,7 @@ en:
     * [Best-selling products in Russia 2026](/en/blog/rusyada-en-cok-satan-urunler-2026)
 ru:
   metaTitle: "Как выйти на рынок e-commerce России: руководство 2026"
-  image: /blog2.jpeg
+  image: /uploads/blog/rusyada-e-ticaret-nasil-yapilir-ru.png
   title: "Выход на e-commerce рынок России: полное руководство для зарубежных брендов (2026)"
   excerpt: "Объем рынка e-commerce в России, Wildberries, Ozon и Яндекс Маркет, три модели выхода для зарубежных брендов, документы, логистика, налоги и пошаговый план запуска."
   body: |-

@@ -4,6 +4,7 @@ enableEn: true
 enableRu: true
 tr:
   metaTitle: "Rusya'da 11.11, Kara Cuma ve Yeni Yıl 2026: Sevkiyat Takvimi"
+  image: /uploads/blog/rusya-yilsonu-satis-sezonu-2026-tr.png
   title: "Rusya'da Yılsonu Sezonu 2026: Türkiye'den Gönderen Bir Marka İçin Hangi Pencere Hâlâ Açık?"
   excerpt: "11.11, Kara Cuma ve Yeni Yıl öncesinde Wildberries ve Ozon takvimi, Wildberries'in yeni depo kuralları ve Türkiye'den yola çıkacak bir sevkiyat için gerçekçi son tarihler."
   body: |-
@@ -132,6 +133,7 @@ tr:
     * [Wildberries algoritması nasıl çalışır?](/blog/wildberries-algoritmasi-nasil-calisir)
 en:
   metaTitle: "11.11, Black Friday and New Year in Russia 2026: Shipping Calendar"
+  image: /uploads/blog/rusya-yilsonu-satis-sezonu-2026-en.png
   title: "Year-End Season in Russia 2026: Which Windows Are Still Open for Brands Shipping from Turkey?"
   excerpt: "The Wildberries and Ozon calendar for 11.11, Black Friday and New Year, Wildberries' new warehouse rules and realistic deadlines for a shipment leaving Turkey."
   body: |-
@@ -260,6 +262,7 @@ en:
     * [How does the Wildberries algorithm work?](/en/blog/wildberries-algoritmasi-nasil-calisir)
 ru:
   metaTitle: "11.11, Черная пятница и Новый год в России 2026: календарь поставок"
+  image: /uploads/blog/rusya-yilsonu-satis-sezonu-2026-ru.png
   title: "Сезон конца года в России 2026: какие окна еще открыты для бренда, который везет товар из Турции?"
   excerpt: "Календарь Wildberries и Ozon на 11.11, Черную пятницу и Новый год, новые складские правила Wildberries и реалистичные сроки для поставки из Турции."
   body: |-
