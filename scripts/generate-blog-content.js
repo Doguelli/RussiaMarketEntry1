@@ -12,8 +12,8 @@
 // - There is no public endpoint here — nothing external can trigger this script.
 // - The AI's JSON response is strictly whitelist-validated before being written
 //   to disk; unknown block types/fields are dropped.
-// - If the API key is missing or a call fails, the post falls back to a single
-//   plain paragraph block (untranslated content is never mislabeled as a
+// - If the API key is missing or a call fails, the post falls back to a simple
+//   rule-based structure of its plain text (untranslated content is never mislabeled as a
 //   translation — a language that can't be produced is simply left absent).
 //
 // Output already committed under content/blog-generated/ is never downgraded:
@@ -162,8 +162,51 @@ function sanitizeBlocks(raw) {
   return out;
 }
 
+const SHORT_ANSWER_HEADINGS = /^(kısa cevap|short answer|краткий ответ)$/i;
+const FAQ_HEADINGS = /^(sık sorulan sorular|sıkça sorulan sorular|frequently asked questions|faq|часто задаваемые вопросы)$/i;
+
+// Structure the admin's plain text without AI: blank lines separate chunks;
+// a short single-line chunk without closing punctuation is a heading; chunks
+// whose every line is a "* " / "- " / "1. " item are lists. Used whenever
+// Gemini is unavailable, so a new post never ships as one wall of text.
 function fallbackBlocks(plainText) {
-  return [{ type: "paragraph", text: plainText.trim() }];
+  const chunks = plainText
+    .replace(/\r\n/g, "\n")
+    .split(/\n\s*\n/)
+    .map((c) => c.split("\n").map((l) => l.trim()).filter(Boolean))
+    .filter((lines) => lines.length > 0);
+  const isHeading = (lines) =>
+    lines.length === 1 && lines[0].length <= 110 && !/[.:;,!]$/.test(lines[0]) && !/^([*-]|\d+\.)\s/.test(lines[0]) && !/\]\(/.test(lines[0]);
+  const blocks = [];
+  let inFaq = false;
+  for (let i = 0; i < chunks.length; i++) {
+    const lines = chunks[i];
+    if (lines.every((l) => /^[*-]\s+/.test(l))) {
+      blocks.push({ type: "bulletList", items: lines.map((l) => l.replace(/^[*-]\s+/, "")) });
+      continue;
+    }
+    if (lines.every((l) => /^\d+\.\s+/.test(l))) {
+      blocks.push({ type: "bulletList", items: lines });
+      continue;
+    }
+    if (isHeading(lines)) {
+      const text = lines[0];
+      const next = chunks[i + 1];
+      if (SHORT_ANSWER_HEADINGS.test(text) && next && !isHeading(next)) {
+        blocks.push({ type: "calloutBox", title: text, text: next.join(" ") });
+        i++;
+        continue;
+      }
+      const isQuestion = text.endsWith("?");
+      if (FAQ_HEADINGS.test(text)) inFaq = true;
+      else if (!isQuestion) inFaq = false;
+      const level = (inFaq && isQuestion) || /^\S+ \d+:/.test(text) ? 3 : 2;
+      blocks.push({ type: "heading", level, text });
+      continue;
+    }
+    blocks.push({ type: "paragraph", text: lines.join(" ") });
+  }
+  return blocks.length > 0 ? blocks : [{ type: "paragraph", text: plainText.trim() }];
 }
 
 // Category of a file we're about to keep rather than regenerate, so the other
@@ -179,7 +222,8 @@ function keptCategory(outPath, fallback) {
 const genConfig = (schema) => ({
   responseMimeType: "application/json",
   responseSchema: schema,
-  maxOutputTokens: 8192,
+  // Long pillar guides (especially in Russian) need well over 8k tokens of JSON.
+  maxOutputTokens: 32768,
   // Without a cap, this model spends 500+ tokens "thinking" before answering,
   // which for longer posts left too little room in maxOutputTokens and
   // truncated the JSON mid-string. A small fixed budget keeps it fast and

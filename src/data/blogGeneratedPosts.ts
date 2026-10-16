@@ -12,16 +12,23 @@
 // written first, in TR > EN > RU priority order. This mirrors the existing
 // convention in blogDataRU.tsx, where Russian-only posts already store their
 // content directly in the "base" fields since there's no Turkish version.
-import type { BlogPost } from "./blogData";
+import type { BlogFaqItem, BlogPost } from "./blogData";
 import type { ContentBlock } from "../components/BlockRenderer";
 
 /** The frontmatter subset emitted by the blog-frontmatter plugin in vite.config.ts. */
+interface FrontmatterLang {
+  image?: string;
+  metaTitle?: string;
+  faq?: BlogFaqItem[];
+}
+
 interface Frontmatter {
   urlSlug?: string;
   publishedAt?: string;
-  tr?: { image?: string; metaTitle?: string };
-  en?: { image?: string; metaTitle?: string };
-  ru?: { image?: string; metaTitle?: string };
+  updatedAt?: string;
+  tr?: FrontmatterLang;
+  en?: FrontmatterLang;
+  ru?: FrontmatterLang;
 }
 
 interface GeneratedLang {
@@ -121,6 +128,12 @@ export const generatedBlogPosts: BlogPost[] = Object.entries(mdFiles).map(([file
     publishedAt: formatDate(data.publishedAt, "tr-TR"),
     publishedAtEn: formatDate(data.publishedAt, "en-US"),
     publishedAtRu: formatDate(data.publishedAt, "ru-RU"),
+    updatedAt: data.updatedAt ? formatDate(data.updatedAt, "tr-TR") : undefined,
+    updatedAtEn: data.updatedAt ? formatDate(data.updatedAt, "en-US") : undefined,
+    updatedAtRu: data.updatedAt ? formatDate(data.updatedAt, "ru-RU") : undefined,
+    faq: perLang.tr ? data.tr?.faq : undefined,
+    faqEn: perLang.en ? data.en?.faq : undefined,
+    faqRu: perLang.ru ? data.ru?.faq : undefined,
     readTime: estimateReadTime(blocksToText(base?.blocks), "dk okuma") || "",
     readTimeEn: estimateReadTime(blocksToText(perLang.en?.blocks), "min read"),
     readTimeRu: estimateReadTime(blocksToText(perLang.ru?.blocks), "мин чтения"),

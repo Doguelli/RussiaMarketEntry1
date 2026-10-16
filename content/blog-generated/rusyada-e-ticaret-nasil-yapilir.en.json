@@ -1,0 +1,404 @@
+{
+  "title": "How to Sell Online in Russia: The Complete Guide for Foreign Brands (2026)",
+  "excerpt": "Russian e-commerce market size, Wildberries, Ozon and Yandex Market, three entry models for foreign brands, documents, logistics, taxes and a step-by-step launch plan.",
+  "category": "genel",
+  "blocks": [
+    {
+      "type": "calloutBox",
+      "title": "Short answer",
+      "text": "E-commerce in Russia runs mostly through marketplaces: in 2025, 81% of online orders went through platforms such as Wildberries, Ozon and Yandex Market. A foreign brand has three main ways in: register directly on a platform that accepts foreign sellers (such as Ozon), set up its own Russian company (OOO), or work with an importer or consignment partner that has a Russian legal entity. Whichever route you choose, products must enter the market with an EAC conformity document, Chestny ZNAK marking in mandatory categories and a Russian-language label. With documents in place, first sales usually start within 6–12 weeks."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Who is this guide for?"
+    },
+    {
+      "type": "paragraph",
+      "text": "This guide is for manufacturers and brand owners outside Russia who want to sell to Russian consumers online. It is written from our experience with Turkish brands, but the entry models, documents and costs apply to most foreign companies. Each section links to a detailed guide. Data is current as of October 2026."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Before you start: sanctions and export controls"
+    },
+    {
+      "type": "paragraph",
+      "text": "Companies based in the EU, the UK or the US must first check their own sanctions and export-control rules, which ban or restrict many product groups and services for Russia. Companies in countries such as Turkey trade most consumer goods with Russia normally, but dual-use goods are still controlled. Check every product and every payment route for compliance before you commit."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How big is the Russian e-commerce market?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Russia is one of Europe's largest e-commerce markets and it is still growing. According to Data Insight's \"Internet Commerce in Russia 2026\" report:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "2025 market size: 13.4 trillion rubles (B2C), up 19% year on year",
+        "Orders: 8.3 billion, up 24%",
+        "Average order value: about 1,610 rubles",
+        "Online share of retail: 25.6%; in non-food retail it passed 50% for the first time, reaching 52%",
+        "Marketplace share: 81% of orders and 62% of revenue",
+        "2026 outlook: about 15 trillion rubles and 10 billion orders"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Behind the numbers is an important trend: growth is slowing and the market is maturing. Data Insight reports that the number of active sellers on Wildberries and Ozon fell in 2025. The era of easy wins is over, but for prepared brands that know their costs, competition is easing somewhat."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Which marketplaces sell in Russia?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Online retail in Russia is concentrated on a few large marketplaces. Data Insight's 2025 ranking:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Wildberries: 4.04 trillion rubles in online sales, 4.3 billion orders, average order about 940 rubles. Russia's largest marketplace, very strong in fashion, footwear, home and beauty.",
+        "Ozon: 3.57 trillion rubles in online sales, 2.3 billion orders, average order about 1,550 rubles. The fastest-growing major platform (+42%), suited to electronics, home, kids and multi-category sales.",
+        "Yandex Market: 597 billion rubles in online sales, average order about 5,000 rubles. Strong in higher-priced products, electronics and appliances.",
+        "Lamoda: a fashion and footwear platform with selective brand onboarding, suited to mid-to-premium brands."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Average order values are a strong hint about which platform fits your product: Wildberries and Ozon for low and mid-priced goods, Yandex Market and Lamoda for higher price points. Platform guides: [Selling on Wildberries](/en/blog/wildberriesde-satis-yapmak), [Selling on Ozon](/en/blog/ozonda-satis-yapmak), [How to get onto Lamoda](/en/blog/lamodaya-nasil-girilir)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How does a foreign brand sell in Russia?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Your entry model decides which marketplaces you can reach, your costs, your speed and your risk. There are three main models."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Model 1: Cross-border selling"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some marketplaces accept foreign companies as sellers directly. Ozon lets companies from a range of countries, including Turkey, China and South Korea, register with their local tax ID. You do not need a Russian company; products are usually shipped per order as the consumer's personal import."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Advantages: Fast start, no Russian company and no import process.",
+        "Limits: Longer delivery times. Personal imports have a duty-free allowance of 200 euros and 31 kg per parcel, and duty is charged on the excess. Russia's Ministry of Finance has proposed charging 22% VAT on cross-border e-commerce from 2027; if adopted, much of this model's cost advantage disappears.",
+        "Important: Wildberries currently accepts foreign sellers only if they are registered in Russia, Belarus, Kazakhstan, Kyrgyzstan, Uzbekistan or Armenia. A company registered elsewhere, for example in Turkey or the EU, cannot sell on Wildberries directly; it needs a legal entity in one of these countries or a partner in Russia."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Model 2: Setting up your own Russian company (OOO)"
+    },
+    {
+      "type": "paragraph",
+      "text": "You set up a Russian limited liability company (OOO), import the goods and sell on every marketplace as a local seller."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Advantages: Access to all marketplaces, full control of pricing and stock, fast delivery because goods sit in Russian warehouses.",
+        "Limits: Fixed costs and management workload: incorporation, bank account, accounting, tax filings and import contracts. Under the general tax regime, corporate profit tax has been 25% since 2025.",
+        "Best for: Brands that see Russia as a long-term core market and plan to reach meaningful volume."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Details: [How to set up an OOO in Russia](/en/blog/rusyada-ooo-sirketi-nasil-kurulur-turk-markalari-icin-2026-rehberi) and [Taxation in Russia 2026](/en/blog/rusyada-vergilendirme-2026)"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Model 3: Working with a consignment or importer partner"
+    },
+    {
+      "type": "paragraph",
+      "text": "A partner with a Russian legal entity, import infrastructure and marketplace accounts imports and sells your products in its own name. In the consignment model, you are paid as goods sell to consumers."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Advantages: Access to all marketplaces without a Russian company, a fast start, and import, tax and operations handled by the partner.",
+        "Limits: The partner's reliability, reporting transparency and contract terms are critical.",
+        "Best for: Manufacturers and brands that want to test Russia at low risk and see sales data first."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Details: [Can you sell in Russia without a company?](/en/blog/rusyada-sirket-kurmadan-satis-yapilabilir-mi) and [our operating model](/en/operating-model)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Which model should you choose?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A simple rule of thumb: if you are testing Russia and want Wildberries included, use the consignment model; if you only want a low-volume trial on Ozon, sell cross-border; if Russia is a long-term core market and your volume can carry the fixed costs, set up your own company. Many brands start on consignment and move to their own company once volume builds."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Which documents do you need to sell in Russia?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Russia applies the technical regulations of the Eurasian Economic Union (EAEU), and marketplaces check these documents when you create product cards and when stock arrives at their warehouses."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "EAC certificate or declaration of conformity: Issued under the technical regulation that covers the product (for example TR CU 017/2011 for light-industry goods, TR CU 009/2011 for cosmetics, TR CU 007/2011 for children's products). See [What is an EAC certificate?](/en/blog/eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey)",
+        "Chestny ZNAK marking: In many categories, including clothing, footwear, home textiles, perfume and cosmetics, every item needs a DataMatrix code before it enters Russia. See [What is Chestny ZNAK?](/en/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur)",
+        "Russian label: Product name, manufacturer and importer details, composition, usage and expiry information must be in Russian.",
+        "Brand documents: Marketplaces may ask for proof of brand ownership or authorization to sell. See [Brand authorization in Russia](/en/blog/rusyada-marka-yetkilendirme)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Document list by category: [Russia marketplace product documents 2026](/en/blog/rusya-marketplace-urun-belgeleri-2026)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How do you ship products to Russia?"
+    },
+    {
+      "type": "paragraph",
+      "text": "From Turkey, commercial shipments to Russia use three main routes:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Road: Through Georgia and the Upper Lars border crossing to Moscow, usually 8–14 days including customs clearance. The most common and flexible option; winter can bring border delays.",
+        "Sea: Container shipping via the port of Novorossiysk; slower but suited to regular, high-volume shipments.",
+        "Air: 1–3 days; expensive, only worthwhile for urgent and light goods."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "After customs, goods are labeled and packed at a fulfillment warehouse and sent on to marketplace warehouses. Marketplaces offer two basic models: under FBO, stock sits in the marketplace's warehouse and the marketplace delivers; under FBS, you ship orders from your own warehouse. Since August 15, 2026, Wildberries no longer lets sellers choose a warehouse for new FBO shipments and distributes stock itself."
+    },
+    {
+      "type": "paragraph",
+      "text": "Details: [E-commerce logistics in Russia 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026), [The import process into Russia](/en/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber) and [Wildberries and Ozon logistics management](/en/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Taxes and costs of e-commerce in Russia"
+    },
+    {
+      "type": "paragraph",
+      "text": "Commercial imports into Russia carry two main taxes: customs duty, set by the product's tariff code, and import VAT. Russia's standard VAT rate is 22% from January 1, 2026; a reduced 10% rate applies in categories such as some children's goods and food. Details: [VAT in Russia 2026](/en/blog/rusyada-kdv-2026)"
+    },
+    {
+      "type": "paragraph",
+      "text": "On the marketplace side, the cost is not just commission: commission, logistics, storage, acceptance fees, payment processing, promotional discounts and advertising all have to be counted together. In our own example model, total marketplace costs came to 40–45% of the selling price; the real share depends on the category and fulfillment model."
+    },
+    {
+      "type": "paragraph",
+      "text": "So before entering Russia, do two calculations for every product: how the EXW price becomes a shelf price in Russia, and what actually remains from each sale at that shelf price. Worked examples: [From EXW to shelf price](/en/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026) and [Russia marketplace unit economics](/en/blog/rusya-marketplace-unit-economics-karlilik-2026)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How do you get paid from Russia?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The payment flow depends on the model. In cross-border selling, the marketplace pays out to the foreign seller in the currency and on the terms set by the platform. If you have your own company or an importer partner, the goods are paid for under the foreign trade contract between the manufacturer and the Russian importer. Because bank practices and sanctions rules affect international payments, settle the payment route at the contract stage."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What sells well in Russia?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Turkish brands are especially strong in Russia in apparel, home textiles, footwear, beauty and personal care, and home and kitchen products. But a best-selling category is not the same as a profitable product. When you assess a product, look at:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Volume and weight: Logistics and storage fees are charged per liter and per kilogram.",
+        "Return rate: Returns are high in apparel and footwear; size charts and content quality directly affect profit.",
+        "Document burden: Products with simple certification reach the market faster.",
+        "Price band: The price should fit the target platform's average order value.",
+        "Competition and differentiation: Being foreign-made is not enough on its own; you need an edge in design, quality or price."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Category ideas: [Best-selling products in Russia 2026](/en/blog/rusyada-en-cok-satan-urunler-2026)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Starting e-commerce in Russia: a step-by-step plan"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "1. Market and product research (1–2 weeks): Study competitors, price bands and demand in your category; pick a limited set of products for the first test.",
+        "2. Choose your entry model: Cross-border, your own company or a consignment partner.",
+        "3. Calculate unit economics: Work out the shelf price and the contribution left after all costs for each product.",
+        "4. Prepare documents (2–6 weeks depending on category): EAC documents, Chestny ZNAK codes where required, Russian labels and brand documents.",
+        "5. Set up marketplace accounts and product cards (1–2 weeks, alongside documents): Russian titles, descriptions, size charts and images.",
+        "6. Ship the first batch (2–3 weeks): Transport, customs clearance and delivery to a warehouse in Russia.",
+        "7. Warehouse acceptance and launch (1–2 weeks): Stock is accepted into marketplace warehouses and product cards go live.",
+        "8. The first 90 days: Advertising tests, collecting reviews, price adjustments and stock planning based on sales data."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "With documents ready, this usually takes 6–12 weeks. If documents are prepared from scratch, the timeline is longer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common mistakes"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Thinking in home-market prices: Pricing that ignores logistics, taxes and marketplace costs usually ends in losses.",
+        "Leaving documents until last: A missing certificate or label stops a shipment at customs or at warehouse acceptance.",
+        "Trying to sell on Wildberries directly with a company registered outside its accepted countries: Plan the model around this from the start.",
+        "Shipping the whole catalog at once: A limited pilot batch, expanded on sales data, lowers the risk.",
+        "Underestimating Russian content: Machine-translated product cards hurt search ranking and conversion.",
+        "Missing the season: Year-end in Russia has to be planned months ahead because of transit and warehouse acceptance times. See [Year-end season in Russia 2026](/en/blog/rusya-yilsonu-satis-sezonu-2026)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently asked questions"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Can a foreign company sell online in Russia?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yes. A foreign company can sell online in Russia in one of three ways: register directly on a platform that accepts foreign sellers, such as Ozon; set up a company in Russia; or work with an importer or consignment partner that has a Russian legal entity. Companies from the EU, UK and US must check their sanctions rules first."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Do you need a Russian company to sell on Russian marketplaces?"
+    },
+    {
+      "type": "paragraph",
+      "text": "No. You can sell cross-border on Ozon, or use a partner's Russian company under a consignment model. To reach every marketplace, including Wildberries, as a local seller you need a legal entity in Russia or in one of the countries Wildberries accepts."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Can a Turkish or EU company sell on Wildberries?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not directly. Wildberries currently accepts foreign sellers only if they are registered in Russia, Belarus, Kazakhstan, Kyrgyzstan, Uzbekistan or Armenia. Foreign brands usually sell on Wildberries through a partner in Russia or their own Russian company."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Which documents are needed to export goods to Russia for e-commerce?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Depending on the category: an EAC certificate or declaration of conformity, Chestny ZNAK DataMatrix codes in mandatory categories, a Russian label and the brand documents the marketplace asks for. Commercial imports also need an invoice, packing list, certificate of origin and transport documents."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "How long does it take to start selling in Russia?"
+    },
+    {
+      "type": "paragraph",
+      "text": "With documents ready, first sales usually start within 6–12 weeks. Most of that time goes into document preparation, transport, customs clearance and marketplace warehouse acceptance."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "How much do Russian marketplaces cost sellers?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Commission rates vary by category, but commission is only part of the cost. Once logistics, storage, acceptance, payment processing, promotional discounts and advertising are added, total marketplace costs reach a large share of the selling price; in our own example model they came to 40–45%."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "How is revenue from Russia paid out to a foreign company?"
+    },
+    {
+      "type": "paragraph",
+      "text": "It depends on the entry model. In cross-border selling, marketplace payouts follow the platform's terms; with an importer or consignment partner, payment is made under the foreign trade contract. Because of bank practices and sanctions rules, the payment route should be settled at the contract stage."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Do sanctions prevent e-commerce in Russia?"
+    },
+    {
+      "type": "paragraph",
+      "text": "It depends on where your company is based and what you sell. EU, UK and US companies face broad restrictions under their own sanctions regimes. From countries such as Turkey, trade in most consumer goods continues, but dual-use goods are subject to export controls and international payments have become more complex. Run a separate compliance check for every product and payment route."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "With more than 13 trillion rubles in annual online sales and infrastructure built around its marketplaces, Russia is one of the largest e-commerce opportunities for foreign brands that are able to trade there. The keys are choosing the right entry model, preparing documents and logistics in advance, and judging every product by whether it is profitable at its shelf price. In a maturing market, the winners will not be the fastest to enter, but the ones who know their costs and set up their operations correctly from day one."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Russia Market Entry"
+    },
+    {
+      "type": "paragraph",
+      "text": "We manage the full launch for brands and manufacturers selling in Russia through Wildberries, Ozon, Yandex Market and Lamoda: market analysis, entry model, documents, import and logistics, marketplace management and reporting. To assess your potential in the Russian market, [explore our services](/en/services) or [request a preliminary analysis](/en/contact)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Russia e-commerce guides"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "[Selling on Wildberries](/en/blog/wildberriesde-satis-yapmak)",
+        "[Selling on Ozon](/en/blog/ozonda-satis-yapmak)",
+        "[How to get onto Lamoda](/en/blog/lamodaya-nasil-girilir)",
+        "[Can you sell in Russia without a company?](/en/blog/rusyada-sirket-kurmadan-satis-yapilabilir-mi)",
+        "[How to set up an OOO in Russia](/en/blog/rusyada-ooo-sirketi-nasil-kurulur-turk-markalari-icin-2026-rehberi)",
+        "[The import process into Russia](/en/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber)",
+        "[Russia marketplace product documents 2026](/en/blog/rusya-marketplace-urun-belgeleri-2026)",
+        "[E-commerce logistics in Russia 2026](/en/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "[From EXW to shelf price](/en/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026)",
+        "[Russia marketplace unit economics](/en/blog/rusya-marketplace-unit-economics-karlilik-2026)",
+        "[VAT in Russia 2026](/en/blog/rusyada-kdv-2026)",
+        "[Best-selling products in Russia 2026](/en/blog/rusyada-en-cok-satan-urunler-2026)"
+      ]
+    }
+  ]
+}

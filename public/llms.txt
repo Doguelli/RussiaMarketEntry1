@@ -12,6 +12,12 @@ Russia Market Entry, Türkiye'deki markaların ve üreticilerin Rusya pazarına 
 - [Blog (RU)](https://russiamarketentry.com/ru/blog)
 - [İletişim](https://russiamarketentry.com/iletisim)
 
+## Temel Rehber: Rusya'da E-Ticaret
+- [Rusya'da E-Ticaret 2026: Kapsamlı Rehber (TR)](https://russiamarketentry.com/blog/rusyada-e-ticaret-nasil-yapilir): Rusya e-ticaret pazarının büyüklüğü (Data Insight 2025: 13,4 trilyon ruble, siparişlerin %81'i pazaryerlerinde), Wildberries, Ozon, Yandex Market ve Lamoda karşılaştırması, yabancı markalar için üç giriş modeli (sınır ötesi, Rusya'da OOO, konsinye/ithalatçı ortak), EAC, Çestniy Znak, lojistik, KDV, maliyetler ve adım adım başlangıç planı.
+- [How to Sell Online in Russia: Complete Guide for Foreign Brands (EN)](https://russiamarketentry.com/en/blog/rusyada-e-ticaret-nasil-yapilir)
+- [Выход на e-commerce рынок России: полное руководство (RU)](https://russiamarketentry.com/ru/blog/rusyada-e-ticaret-nasil-yapilir)
+- [Rusya'da Yılsonu Sezonu 2026: 11.11, Kara Cuma ve Yeni Yıl sevkiyat takvimi](https://russiamarketentry.com/blog/rusya-yilsonu-satis-sezonu-2026)
+
 ## Hizmetlerimiz
 - [Operasyon Kurulumu](https://russiamarketentry.com/hizmetler/operasyon-kurulumu): Rusya pazarına giriş için lokal şirket kurulumu, banka hesabı, yerel adres ve tüm altyapı hazırlıkları.
 - [Pazaryeri Yönetimi](https://russiamarketentry.com/hizmetler/pazaryeri-yonetimi): Wildberries, Ozon ve Lamoda platformlarında mağaza açılışı, ürün listeleme, algoritma optimizasyonu ve reklam yönetimi.
@@ -41,7 +47,7 @@ Russia Market Entry, Türkiye'deki markaların ve üreticilerin Rusya pazarına 
 
 ## Sıkça Sorulan Sorular (SSS)
 - **Türkiye'den Ozon'da satış yapılabilir mi?**: Evet, Türkiye'de yerleşik şirketiniz üzerinden Ozon Global Cross-Border modeliyle satış yapabilirsiniz. Ancak yerel depo (FBO) ve hızlı teslimat avantajı için Rusya'da B2C veya Konsinye modeli en yüksek dönüşümü sağlar.
-- **Wildberries'de Türk markaları satış yapabilir mi?**: Wildberries yerel Rusya deposu ve operasyonu şart koşar. Partnerliğimiz veya lokal yapı sayesinde ürünler doğrudan Wildberries Rusya raflarında satışa sunulabilir.
+- **Wildberries'de Türk markaları satış yapabilir mi?**: Wildberries yabancı satıcı olarak yalnızca Rusya, Belarus, Kazakistan, Kırgızistan, Özbekistan ve Ermenistan'da kayıtlı işletmeleri kabul ediyor; Türkiye'deki bir şirket doğrudan satıcı olamaz. Türk markaları Wildberries'te Rusya'daki bir ortak (ör. konsinye modelimiz) veya kendi Rus şirketleri üzerinden satış yapar.
 - **Rusya'da e-ticaret yapmak için şirket kurmak gerekir mi?**: Şirket kurmak zorunlu değildir; Konsinye modelimiz ile şirket kurmadan doğrudan ürünlerinizi Rusya pazarında satışa çıkarabilirsiniz.
 - **EAC sertifikası ve Çestniy Znak nedir?**: EAC, Avrasya Ekonomik Birliği uygunluk belgesidir. Çestniy Znak ise sahteciliği önleyen DataMatrix kodlu dijital takip sistemidir. Her ikisinin de kurulumu tarafımızca yürütülmektedir.
 

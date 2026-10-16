@@ -1,0 +1,395 @@
+{
+  "title": "Rusya'da E-Ticaret 2026: Rusya Pazarına Girmek İsteyen Markalar İçin Kapsamlı Rehber",
+  "excerpt": "Rusya e-ticaret pazarının büyüklüğü, Wildberries, Ozon ve Yandex Market, yabancı markalar için üç giriş modeli, belgeler, lojistik, vergiler ve adım adım başlangıç planı.",
+  "category": "genel",
+  "blocks": [
+    {
+      "type": "calloutBox",
+      "title": "Kısa cevap",
+      "text": "Rusya'da e-ticaret büyük ölçüde pazaryerleri üzerinden yapılır: 2025'te online siparişlerin %81'i Wildberries, Ozon ve Yandex Market gibi pazaryerlerinden geçti. Yabancı bir marka için üç ana giriş yolu vardır: yabancı satıcı kabul eden bir platforma (örneğin Ozon) doğrudan kaydolmak, Rusya'da kendi şirketini (OOO) kurmak ya da Rus tüzel kişiliği olan bir ithalatçı veya konsinye ortakla çalışmak. Hangi yol seçilirse seçilsin ürünlerin EAC uygunluk belgesiyle, zorunlu kategorilerde Çestniy Znak etiketiyle ve Rusça etiketle pazara girmesi gerekir. Belgeleri hazır bir ürünle ilk satışlar çoğu projede 6–12 hafta içinde başlar."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bu rehber kimin için?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu rehber, Türkiye'de üretim yapan veya marka sahibi olan ve ürünlerini Rusya'daki tüketicilere online satmak isteyen şirketler için hazırlandı. Rusya pazarını ilk kez değerlendiren markalar için genel bir yol haritası sunuyor; her başlıkta konuyu ayrıntılı ele alan rehberlerimize bağlantı veriyoruz. Rehberdeki veriler Ekim 2026 itibarıyla günceldir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya e-ticaret pazarı ne kadar büyük?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya, Avrupa'nın en büyük e-ticaret pazarlarından biridir ve büyümesini sürdürüyor. Data Insight'ın \"Rusya'da İnternet Ticareti 2026\" raporuna göre:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "2025 pazar büyüklüğü: 13,4 trilyon ruble (B2C), bir önceki yıla göre %19 büyüme",
+        "Sipariş sayısı: 8,3 milyar, %24 artış",
+        "Ortalama sepet: yaklaşık 1.610 ruble",
+        "E-ticaretin perakendedeki payı: %25,6; gıda dışı perakendede ise ilk kez %50'yi aşarak %52",
+        "Pazaryerlerinin payı: siparişlerin %81'i, cironun %62'si",
+        "2026 beklentisi: yaklaşık 15 trilyon ruble ve 10 milyar sipariş"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Rakamların arkasında önemli bir eğilim var: Büyüme hızı yavaşlıyor ve pazar olgunlaşıyor. Data Insight'a göre Wildberries ve Ozon'daki aktif satıcı sayısı 2025'te azaldı. Bu, kolay kazanç döneminin geride kaldığını, ancak hazırlıklı ve maliyetini bilen markalar için rekabetin kısmen hafiflediğini de gösteriyor."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da hangi pazaryerlerinde satış yapılır?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da online satışın merkezinde birkaç büyük pazaryeri bulunur. Data Insight'ın 2025 sıralamasına göre:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Wildberries: 4,04 trilyon ruble online satış, 4,3 milyar sipariş, ortalama sepet yaklaşık 940 ruble. Rusya'nın en büyük pazaryeri; moda, ayakkabı, ev ve kozmetikte çok güçlü.",
+        "Ozon: 3,57 trilyon ruble online satış, 2,3 milyar sipariş, ortalama sepet yaklaşık 1.550 ruble. En hızlı büyüyen büyük platform (+%42); elektronik, ev, çocuk ve çok kategorili satış için uygun.",
+        "Yandex Market: 597 milyar ruble online satış, ortalama sepet yaklaşık 5.000 ruble. Daha yüksek fiyatlı ürünler, elektronik ve ev aletlerinde öne çıkıyor.",
+        "Lamoda: moda ve ayakkabıya odaklı, marka kabulünde daha seçici bir platform; orta-üst segment markalar için uygun."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Ortalama sepet tutarları, ürününüzün hangi platforma uyduğu hakkında güçlü bir ipucu verir: Düşük ve orta fiyatlı ürünler için Wildberries ve Ozon, yüksek fiyatlı ürünler için Yandex Market ve Lamoda öne çıkar. Platform rehberlerimiz: [Wildberries'de satış yapmak](/blog/wildberriesde-satis-yapmak), [Ozon'da satış yapmak](/blog/ozonda-satis-yapmak), [Lamoda'ya nasıl girilir?](/blog/lamodaya-nasil-girilir)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Yabancı bir marka Rusya'da nasıl satış yapar?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'ya online satış için seçilen giriş modeli; hangi pazaryerlerine erişebileceğinizi, maliyetleri, hızı ve riski belirler. Üç ana model vardır."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Model 1: Sınır ötesi satış (cross-border)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bazı pazaryerleri yabancı şirketleri doğrudan satıcı olarak kabul eder. Ozon, Türkiye'deki şirketlerin vergi kimlik numarası ve vergi levhasıyla satıcı olarak kaydolmasına izin veriyor. Bu modelde Rusya'da şirket kurmanız gerekmez; ürünler genellikle her sipariş için tüketicinin kişisel ithalatı olarak gönderilir."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Avantajı: Hızlı başlangıç, Rusya'da şirket ve ithalat süreci gerekmez.",
+        "Sınırları: Teslimat süreleri daha uzundur; kişisel ithalatta paket başına 200 avro ve 31 kg vergisiz limit uygulanır, aşan kısım için gümrük vergisi doğar. Rusya Maliye Bakanlığı, sınır ötesi e-ticaret satışlarına 2027'den itibaren %22 KDV uygulanmasını önerdi; bu düzenleme yasalaşırsa modelin maliyet avantajı azalır.",
+        "Önemli not: Wildberries yabancı satıcı olarak şu an yalnızca Rusya, Belarus, Kazakistan, Kırgızistan, Özbekistan ve Ermenistan'da kayıtlı işletmeleri kabul ediyor. Türkiye'deki bir şirket Wildberries'te doğrudan satıcı olamaz; bunun için bu ülkelerden birinde tüzel kişilik veya Rusya'da bir ortak gerekir."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Model 2: Rusya'da kendi şirketinizi kurmak (OOO)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da limited şirket (OOO) kurarak ürünleri ithal eder ve tüm pazaryerlerinde yerel satıcı olarak satış yaparsınız."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Avantajı: Tüm pazaryerlerine erişim, fiyat ve stok üzerinde tam kontrol, ürünler Rusya depolarında olduğu için hızlı teslimat.",
+        "Sınırları: Şirket kuruluşu, banka hesabı, muhasebe, vergi beyanları ve ithalat sözleşmeleri gibi sabit maliyetler ve yönetim yükü. Genel vergi rejiminde kurumlar vergisi 2025'ten itibaren %25'tir.",
+        "Kimler için uygun: Rusya'yı uzun vadeli ana pazar olarak gören ve belirli bir satış hacmine ulaşmayı planlayan markalar."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Ayrıntılar: [Rusya'da OOO şirketi nasıl kurulur?](/blog/rusyada-ooo-sirketi-nasil-kurulur-turk-markalari-icin-2026-rehberi) ve [Rusya'da vergilendirme 2026](/blog/rusyada-vergilendirme-2026)"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Model 3: Konsinye veya ithalatçı ortakla çalışmak"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da tüzel kişiliği, ithalat altyapısı ve pazaryeri hesapları olan bir ortak, ürünlerinizi kendi adına ithal eder ve satar. Konsinye modelde ödeme, ürünler tüketiciye satıldıkça yapılır."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Avantajı: Şirket kurmadan tüm pazaryerlerine erişim, hızlı başlangıç, ithalat, vergi ve operasyon yükünün ortakta olması.",
+        "Sınırları: Ortağın güvenilirliği, raporlama şeffaflığı ve sözleşme koşulları kritik önemdedir.",
+        "Kimler için uygun: Rusya'yı düşük riskle test etmek isteyen, önce satış verisi görmek isteyen üreticiler ve markalar."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Ayrıntılar: [Rusya'da şirket kurmadan satış yapılabilir mi?](/blog/rusyada-sirket-kurmadan-satis-yapilabilir-mi) ve [operasyon modelimiz](/operasyon-modeli)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hangi modeli seçmelisiniz?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kısa bir karar kuralı: Rusya'yı test ediyorsanız ve Wildberries'i de kapsamak istiyorsanız konsinye model; yalnızca Ozon üzerinden düşük hacimle denemek istiyorsanız sınır ötesi satış; Rusya'yı uzun vadeli ana pazar olarak görüyor ve hacminiz sabit maliyetleri taşıyabiliyorsa kendi şirketiniz. Birçok marka konsinye modelle başlayıp satış hacmi oluştuktan sonra kendi şirketine geçer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da satış için hangi belgeler gerekir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya, Avrasya Ekonomik Birliği'nin (AEB) teknik düzenlemelerini uygular. Pazaryerleri de ürün kartı açılırken ve depo kabulünde bu belgeleri kontrol eder."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "EAC uygunluk sertifikası veya beyanı: Ürünün tabi olduğu teknik düzenlemeye göre (örneğin hafif sanayi ürünleri için TR CU 017/2011, kozmetik için TR CU 009/2011, çocuk ürünleri için TR CU 007/2011). Bkz. [EAC belgesi nedir?](/blog/eac-belgesi-nedir-rusyaya-ihracat-icin-bilmeniz-gereken-her-sey)",
+        "Çestniy Znak etiketlemesi: Giyim, ayakkabı, ev tekstili, parfüm ve kozmetik gibi birçok kategoride her ürüne Rusya'ya girmeden önce DataMatrix kodu basılmalıdır. Bkz. [Çestniy Znak nedir?](/blog/cestniy-znak-nedir-rusyada-hangi-urunlerde-zorunludur)",
+        "Rusça etiket: Ürün adı, üretici ve ithalatçı bilgisi, içerik, kullanım ve son kullanma bilgileri Rusça olmalıdır.",
+        "Marka belgeleri: Pazaryerleri marka sahipliği veya satış yetkisi belgesi isteyebilir. Bkz. [Rusya'da marka yetkilendirme](/blog/rusyada-marka-yetkilendirme)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Kategori bazında belge listesi için: [Rusya marketplace ürün belgeleri 2026](/blog/rusya-marketplace-urun-belgeleri-2026)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ürünler Rusya'ya nasıl gönderilir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Türkiye'den Rusya'ya ticari sevkiyatta üç ana yol kullanılır:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Karayolu: Gürcistan ve Yukarı Lars sınır kapısı üzerinden Moskova'ya gümrükleme dahil genellikle 8–14 gün. En yaygın ve esnek seçenek; kışın sınırda gecikme riski vardır.",
+        "Deniz yolu: Novorossiysk limanı üzerinden konteyner taşımacılığı; daha uzun ama düzenli ve yüksek hacimli sevkiyatlar için uygun.",
+        "Hava yolu: 1–3 gün; pahalı, yalnızca acil ve hafif ürünlerde anlamlı."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'ya varan ürünler gümrükten sonra bir fulfillment deposunda etiketlenir, paketlenir ve pazaryeri depolarına gönderilir. Pazaryerlerinde iki temel satış modeli vardır: FBO'da stok pazaryerinin deposunda durur ve teslimatı pazaryeri yapar; FBS'de siparişleri kendi deponuzdan gönderirsiniz. Wildberries, 15 Ağustos 2026'dan itibaren yeni FBO sevkiyatlarında depo seçimini kaldırdı ve stoğu kendisi dağıtıyor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ayrıntılar: [Rusya'da e-ticaret lojistiği 2026](/blog/rusyada-e-ticaret-lojistigi-2026), [Rusya'ya ithalat süreci](/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber) ve [Wildberries ve Ozon lojistik yönetimi](/blog/wildberries-ozon-lojistik-yonetimi-stok-stratejisi)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da e-ticarette vergiler ve maliyetler"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'ya ticari ithalatta iki ana vergi kalemi vardır: ürünün gümrük tarife pozisyonuna göre belirlenen gümrük vergisi ve ithalat KDV'si. Rusya'da genel KDV oranı 1 Ocak 2026'dan itibaren %22'dir; bazı çocuk ürünleri ve gıdalar gibi kategorilerde indirimli %10 oranı uygulanır. Ayrıntılar: [Rusya'da KDV 2026](/blog/rusyada-kdv-2026)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pazaryeri tarafında maliyet yalnızca komisyondan oluşmaz: Komisyon, lojistik, depolama, kabul ücretleri, ödeme işlem bedelleri, kampanya indirimleri ve reklam birlikte değerlendirilmelidir. Kendi örnek modelimizde toplam pazaryeri maliyetini satış fiyatının %40–45'i olarak aldık; gerçek oran kategoriye ve satış modeline göre değişir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu yüzden Rusya'ya girmeden önce her ürün için iki hesap yapılmalıdır: EXW fiyatından Rusya'daki raf fiyatına nasıl ulaşıldığı ve bu raf fiyatında her satıştan gerçekte ne kaldığı. Örnek hesaplar: [EXW'den raf fiyatına](/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026) ve [Rusya marketplace unit economics](/blog/rusya-marketplace-unit-economics-karlilik-2026)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'dan ödeme nasıl alınır?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ödeme akışı seçilen modele bağlıdır. Sınır ötesi modelde pazaryeri, satış hakedişlerini yabancı satıcıya platformun belirlediği para birimi ve koşullarla öder. Kendi şirketiniz veya ithalatçı ortağınız varsa ürün bedeli, Türkiye'deki üretici ile Rusya'daki ithalatçı arasındaki dış ticaret sözleşmesi üzerinden ödenir. Uluslararası ödemelerde bankaların uygulamaları ve yaptırım düzenlemeleri süreci etkilediği için, ödeme yolunu sözleşme aşamasında netleştirmek ve ruble–lira gibi yerel para birimleriyle çalışma seçeneklerini değerlendirmek gerekir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da hangi ürünler iyi satar?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Türk markaları Rusya'da özellikle hazır giyim, ev tekstili, ayakkabı, kozmetik ve kişisel bakım, ev ve mutfak ürünlerinde güçlüdür. Ancak \"iyi satan kategori\" ile \"kârlı ürün\" aynı şey değildir. Bir ürünü değerlendirirken şu kriterlere bakın:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Hacim ve ağırlık: Lojistik ve depolama ücretleri litre ve kilogram üzerinden hesaplanır.",
+        "İade oranı: Giyim ve ayakkabıda iade oranı yüksektir; beden tabloları ve içerik kalitesi kârlılığı doğrudan etkiler.",
+        "Belge yükü: Sertifikasyonu basit ürünler pazara daha hızlı girer.",
+        "Fiyat bandı: Ürünün fiyatı, hedef platformun ortalama sepetiyle uyumlu olmalıdır.",
+        "Rekabet ve farklılaşma: Türk üretimi olması tek başına yeterli değildir; tasarım, kalite veya fiyat avantajı gerekir."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Kategori önerileri: [Rusya'da en çok satan ürünler 2026](/blog/rusyada-en-cok-satan-urunler-2026)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da e-ticarete başlamak: Adım adım plan"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "1. Pazar ve ürün analizi (1–2 hafta): Hedef kategoride rakipleri, fiyat bandını ve talebi inceleyin; ilk test için sınırlı sayıda ürün seçin.",
+        "2. Giriş modelini seçin: Sınır ötesi satış, kendi şirketiniz veya konsinye ortak.",
+        "3. Birim ekonomisini hesaplayın: Her ürün için raf fiyatını ve tüm maliyetler sonrası kalan katkıyı hesaplayın.",
+        "4. Belgeleri hazırlayın (kategoriye göre 2–6 hafta): EAC belgesi, gerekiyorsa Çestniy Znak kodları, Rusça etiketler ve marka belgeleri.",
+        "5. Pazaryeri hesaplarını ve ürün kartlarını oluşturun (1–2 hafta, belgelerle paralel): Rusça başlık, açıklama, beden tablosu ve görseller.",
+        "6. İlk sevkiyatı yapın (2–3 hafta): Taşıma, gümrükleme ve Rusya'daki depoya teslim.",
+        "7. Depo kabulü ve satışa açılış (1–2 hafta): Ürünlerin pazaryeri depolarına kabulü ve kartların satışa açılması.",
+        "8. İlk 90 gün: Reklam testleri, yorum toplama, fiyat ayarları ve satış verisine göre stok planlaması."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Belgeleri hazır bir ürünle bu süreç çoğu projede 6–12 hafta sürer. Belgeler sıfırdan hazırlanıyorsa takvim uzar."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sık yapılan hatalar"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Türkiye'deki fiyatla düşünmek: Raf fiyatına lojistik, vergi ve pazaryeri maliyetleri eklenmeden yapılan fiyatlama çoğu zaman zararla sonuçlanır.",
+        "Belgeleri sona bırakmak: Eksik bir sertifika veya etiket, sevkiyatı gümrükte ya da depo kabulünde durdurur.",
+        "Wildberries'e Türk şirketiyle doğrudan girmeye çalışmak: Wildberries Türkiye'deki şirketleri yabancı satıcı olarak kabul etmiyor; model baştan buna göre kurulmalıdır.",
+        "Tüm kataloğu tek seferde göndermek: Sınırlı bir pilot partiyle başlayıp satış verisine göre genişlemek riski azaltır.",
+        "Rusça içeriği hafife almak: Makine çevirisiyle hazırlanan kartlar arama sıralamasını ve dönüşümü düşürür.",
+        "Sezon takvimini kaçırmak: Rusya'da yılsonu, sevkiyat ve depo kabul süreleri nedeniyle aylar öncesinden planlanmalıdır. Bkz. [Rusya'da yılsonu sezonu 2026](/blog/rusya-yilsonu-satis-sezonu-2026)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sık sorulan sorular"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Türk şirketi Rusya'da e-ticaret yapabilir mi?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Evet. Türk şirketleri Rusya'da üç yoldan biriyle online satış yapabilir: Ozon gibi yabancı satıcı kabul eden platformlara doğrudan kayıt, Rusya'da şirket kurmak veya Rus tüzel kişiliği olan bir ithalatçı ya da konsinye ortakla çalışmak."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Rusya'da e-ticaret için şirket kurmak zorunlu mu?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hayır. Ozon üzerinden sınır ötesi satış yapılabilir veya konsinye modelde ortağın Rusya'daki şirketi kullanılabilir. Ancak Wildberries dahil tüm pazaryerlerine yerel satıcı olarak erişmek için Rusya'da (veya Wildberries'in kabul ettiği ülkelerden birinde) bir tüzel kişilik gerekir."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Türk şirketi olarak Wildberries'te satış yapılabilir mi?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Doğrudan hayır. Wildberries yabancı satıcı olarak yalnızca Rusya, Belarus, Kazakistan, Kırgızistan, Özbekistan ve Ermenistan'da kayıtlı işletmeleri kabul ediyor. Türk markaları Wildberries'te genellikle Rusya'daki bir ortak veya kendi Rus şirketleri üzerinden satış yapar."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Rusya'ya e-ihracat için hangi belgeler gerekir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ürünün kategorisine göre EAC uygunluk sertifikası veya beyanı, zorunlu kategorilerde Çestniy Znak DataMatrix kodları, Rusça etiket ve pazaryerinin istediği marka belgeleri gerekir. Ticari ithalatta bunlara ek olarak fatura, çeki listesi, menşe belgesi ve taşıma belgeleri hazırlanır."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Rusya'da e-ticarete başlamak ne kadar sürer?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Belgeleri hazır bir ürünle ilk satışlar çoğu projede 6–12 hafta içinde başlar. Bu sürenin büyük kısmını belge hazırlığı, taşıma, gümrükleme ve pazaryeri depo kabulü oluşturur."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Rusya pazaryerlerinde maliyetler ne kadar?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Komisyon oranları kategoriye göre değişir; ancak toplam maliyet yalnızca komisyondan oluşmaz. Lojistik, depolama, kabul, ödeme işlem bedelleri, kampanya indirimleri ve reklam eklendiğinde toplam pazaryeri maliyeti satış fiyatının önemli bir bölümüne ulaşır; kendi örnek modelimizde bunu %40–45 olarak hesapladık."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Rusya'dan satış gelirleri Türkiye'ye nasıl aktarılır?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu, giriş modeline bağlıdır. Sınır ötesi modelde pazaryeri hakedişleri platformun koşullarına göre ödenir; ithalatçı veya konsinye modelde ödeme dış ticaret sözleşmesi üzerinden yapılır. Bankaların uygulamaları ve yaptırım düzenlemeleri nedeniyle ödeme yolu sözleşme aşamasında netleştirilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Yaptırımlar Rusya'da e-ticareti engelliyor mu?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tüketici ürünlerinin büyük bölümünde Türkiye'den Rusya'ya ticaret sürüyor; ancak çift kullanımlı ürünler gibi bazı ürün grupları ihracat kontrollerine tabidir ve uluslararası ödemeler daha karmaşık hale geldi. Her ürün ve her ödeme yolu için ayrı bir uyum kontrolü yapılmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sonuç"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya, yılda 13 trilyon rublenin üzerinde online satış hacmi ve pazaryerleri etrafında toplanan güçlü altyapısıyla Türk markaları için en büyük e-ihracat fırsatlarından biridir. Başarının anahtarı, doğru giriş modelini seçmek, belgeleri ve lojistiği önceden hazırlamak ve her ürünü raf fiyatında kârlı olup olmadığına göre değerlendirmektir. Pazarın olgunlaştığı bu dönemde kazananlar, en hızlı girenler değil, maliyetini bilen ve operasyonunu baştan doğru kuranlar olacaktır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Russia Market Entry"
+    },
+    {
+      "type": "paragraph",
+      "text": "Türkiye'deki markaların ve üreticilerin Rusya'da Wildberries, Ozon, Yandex Market ve Lamoda üzerinden satışa başlamasını uçtan uca yönetiyoruz: pazar analizi, giriş modeli, belgeler, ithalat ve lojistik, pazaryeri yönetimi ve raporlama. Rusya pazarındaki potansiyelinizi birlikte değerlendirmek için [hizmetlerimizi inceleyebilir](/hizmetler) veya [ön analiz talep edebilirsiniz](/iletisim)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya e-ticaret rehberleri"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "[Wildberries'de satış yapmak](/blog/wildberriesde-satis-yapmak)",
+        "[Ozon'da satış yapmak](/blog/ozonda-satis-yapmak)",
+        "[Lamoda'ya nasıl girilir?](/blog/lamodaya-nasil-girilir)",
+        "[Rusya'da şirket kurmadan satış yapılabilir mi?](/blog/rusyada-sirket-kurmadan-satis-yapilabilir-mi)",
+        "[Rusya'da OOO şirketi nasıl kurulur?](/blog/rusyada-ooo-sirketi-nasil-kurulur-turk-markalari-icin-2026-rehberi)",
+        "[Rusya'ya ithalat süreci](/blog/rusyaya-ithalat-sureci-turk-markalari-icin-adim-adim-rehber)",
+        "[Rusya marketplace ürün belgeleri 2026](/blog/rusya-marketplace-urun-belgeleri-2026)",
+        "[Rusya'da e-ticaret lojistiği 2026](/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "[EXW'den raf fiyatına: Rusya'da ürün fiyatı nasıl hesaplanır?](/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026)",
+        "[Rusya marketplace unit economics](/blog/rusya-marketplace-unit-economics-karlilik-2026)",
+        "[Rusya'da KDV 2026](/blog/rusyada-kdv-2026)",
+        "[Rusya'da en çok satan ürünler 2026](/blog/rusyada-en-cok-satan-urunler-2026)"
+      ]
+    }
+  ]
+}

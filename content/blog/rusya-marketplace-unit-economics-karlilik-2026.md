@@ -191,6 +191,7 @@ tr:
     
     İlgili rehberler
     
+    * [Rusya'da e-ticaret nasıl yapılır? Kapsamlı rehber](/blog/rusyada-e-ticaret-nasil-yapilir)
     * [EXW'den raf fiyatına: Rusya'da ürün fiyatı nasıl hesaplanır?](/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026)
     * [Wildberries'de satış yapmak](/blog/wildberriesde-satis-yapmak)
     * [Ozon'da satış yapmak](/blog/ozonda-satis-yapmak)
@@ -386,6 +387,7 @@ en:
     
     Related guides
     
+    * [How to sell online in Russia: the complete guide](/en/blog/rusyada-e-ticaret-nasil-yapilir)
     * [From EXW to shelf price: Russia marketplace pricing guide](/en/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026)
     * [Selling on Wildberries](/en/blog/wildberriesde-satis-yapmak)
     * [Selling on Ozon](/en/blog/ozonda-satis-yapmak)
@@ -581,6 +583,7 @@ ru:
     
     Связанные материалы
     
+    * [Выход на e-commerce рынок России: полное руководство](/ru/blog/rusyada-e-ticaret-nasil-yapilir)
     * [От EXW до цены на полке: расчет цены товара в России](/ru/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026)
     * [Продажи на Wildberries](/ru/blog/wildberriesde-satis-yapmak)
     * [Продажи на Ozon](/ru/blog/ozonda-satis-yapmak)

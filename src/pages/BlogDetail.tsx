@@ -1,10 +1,10 @@
 import { useParams, Navigate, Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "motion/react";
-import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, ArrowRight, RefreshCw } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { blogPosts } from "../data/blogData";
-import { createBreadcrumbSchema, createArticleSchema, DEFAULT_OG_IMAGE, withBrand } from "@/utils/seo";
+import { createBreadcrumbSchema, createArticleSchema, createFaqSchema, DEFAULT_OG_IMAGE, withBrand } from "@/utils/seo";
 import { socialMetaElements } from "@/components/PageSocialMeta";
 import { hasBlogContentFor, blogDetailPath, type BlogLang } from "@/utils/blogLanguages";
 import { contactPath, servicesPath, servicePath, homePath } from "@/utils/ruPaths";
@@ -57,8 +57,12 @@ export default function BlogDetail() {
   let readTimeStr = post.readTime;
   let blocks = post.contentBlocks;
   let imageUrl = post.imageUrl;
+  let updatedDate = post.updatedAt;
+  let faq = post.faq;
 
   if (currentLang === 'ru') {
+    updatedDate = post.updatedAtRu;
+    faq = post.faqRu;
     title = post.titleRu || post.title;
     content = post.contentRu || post.content;
     excerpt = post.excerptRu || post.excerpt;
@@ -68,6 +72,8 @@ export default function BlogDetail() {
     blocks = post.contentBlocksRu || post.contentBlocks;
     imageUrl = post.imageUrlRu || post.imageUrl;
   } else if (currentLang === 'en') {
+    updatedDate = post.updatedAtEn;
+    faq = post.faqEn;
     title = post.titleEn || post.title;
     content = post.contentEn || post.content;
     excerpt = post.excerptEn || post.excerpt;
@@ -97,8 +103,10 @@ export default function BlogDetail() {
     post.slug,
     publishedDate,
     imageUrl,
-    langPrefix
+    langPrefix,
+    updatedDate
   );
+  const faqSchema = faq && faq.length > 0 ? createFaqSchema(faq) : null;
 
   const fullImageUrl = imageUrl
     ? (imageUrl.startsWith("http") ? imageUrl : `https://russiamarketentry.com${imageUrl}`)
@@ -124,6 +132,7 @@ export default function BlogDetail() {
           })}
           <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
           <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+          {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
         </Helmet>
 
       {/* Hero Header */}
@@ -154,6 +163,13 @@ export default function BlogDetail() {
               <Calendar className="w-5 h-5" />
               {publishedDate}
             </div>
+            {updatedDate && updatedDate !== publishedDate && (
+              <div className="flex items-center gap-2">
+                <RefreshCw className="w-5 h-5" />
+                {isRu ? "Обновлено: " : currentLang === "en" ? "Updated: " : "Güncellendi: "}
+                {updatedDate}
+              </div>
+            )}
             <div className="flex items-center gap-2">
               <Clock className="w-5 h-5" />
               {readTimeStr}
