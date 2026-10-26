@@ -173,7 +173,7 @@ export default function Blog() {
                   to={`${langPrefix}/blog/${post.slug}`}
                   className={`group ${blogCardHover}`}
                 >
-                  <div className="relative aspect-video bg-white">
+                  <div className="relative aspect-video bg-slate-50 p-3">
                     {getPostImage(post) ? (
                       <ResponsiveImage
                         src={getPostImage(post)}
@@ -194,7 +194,7 @@ export default function Blog() {
                             target.src = src.replace(/\.jpeg$/, ".png");
                           }
                         }}
-                        className="block h-full w-full object-contain object-left"
+                        className="block h-full w-full rounded-lg object-contain object-center"
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-slate-400">
