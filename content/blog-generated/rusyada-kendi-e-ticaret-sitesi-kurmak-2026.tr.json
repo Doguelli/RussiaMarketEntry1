@@ -1,0 +1,1122 @@
+{
+  "title": "Rusya'da Kendi E-Ticaret Sitenizi Kurmanın Zamanı Geldi mi? (2026)",
+  "excerpt": "Rusya'da kendi e-ticaret sitenizi kurun: InSales, Yandex KIT, ödeme, lojistik, Yandex Ads, ERP ve Wildberries/Ozon ile çok kanallı satış rehberi.",
+  "category": "pazaryerleri",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "**Wildberries Depo Krizi Sonrası Markalar İçin Bağımsız Satış ve Çok Kanallı E-Ticaret Stratejisi**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da e-ticaret yapmak isteyen markalar için Wildberries ve Ozon uzun süredir en önemli satış kanalları arasında yer alıyor. Hazır müşteri trafiği, geniş teslimat ağı ve gelişmiş lojistik altyapısı sayesinde bu platformlar, yeni markaların Rusya pazarına erişimini kolaylaştırıyor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ancak 2026 yılında yaşanan gelişmeler, Rusya'da faaliyet gösteren markaların satış stratejilerini yeniden değerlendirmesine neden oldu."
+    },
+    {
+      "type": "paragraph",
+      "text": "Temmuz ve ağustos aylarında Wildberries lojistik merkezlerine yönelik gerçekleşen insansız hava aracı saldırıları, bazı depolarda ciddi hasara, operasyonel kesintilere ve teslimat sorunlarına yol açtı. Saldırılardan Ozon'un lojistik altyapısı da etkilendi."
+    },
+    {
+      "type": "paragraph",
+      "text": "Reuters'ın 26 Ağustos 2026 tarihli haberine göre Tambov bölgesindeki bir Wildberries lojistik merkezi yangın sonucunda tamamen kullanılamaz hale geldi."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu gelişmeler, Rusya'da yalnızca tek bir marketplace'e ve onun lojistik altyapısına bağımlı çalışan satıcılar açısından önemli bir riskin görünür hale gelmesini sağladı."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Peki, çözüm Wildberries veya Ozon'dan ayrılmak mı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Hayır. Asıl çözüm, marketplace satışlarını korurken kendi e-ticaret sitenizi ve bağımsız stok yönetiminizi geliştirerek çok kanallı bir satış modeli oluşturmaktır.**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Üstelik 2026 yılı verileri, Rusya'da bağımsız e-ticaret sitelerine olan ilginin yeniden güçlendiğini gösteriyor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu rehberde Wildberries depo krizinin markalar açısından sonuçlarını, Rusya'da kendi e-ticaret sitesine sahip olmanın avantajlarını, kullanılabilecek altyapıları ve sürdürülebilir çok kanallı satış stratejisinin nasıl oluşturulabileceğini inceliyoruz. Rusya e-ticaret pazarına genel bakış için [kapsamlı e-ticaret rehberimizi](/blog/rusyada-e-ticaret-nasil-yapilir) de inceleyebilirsiniz."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "1. Wildberries Depo Krizi Rusya'daki E-Ticaret Operasyonlarını Nasıl Etkiledi?"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 yazında Wildberries lojistik altyapısı, farklı bölgelerde yaşanan insansız hava aracı saldırılarından ciddi şekilde etkilendi."
+    },
+    {
+      "type": "paragraph",
+      "text": "Reuters'ın 7 Ağustos tarihli haberinde, 18 Temmuz'da başlayan saldırıların ardından en az 20 Wildberries tesisinin hedef alındığı ve yaklaşık 1,18 milyon metrekarelik depo alanının hasar gördüğü veya kullanılamaz hale geldiği aktarılıyordu."
+    },
+    {
+      "type": "paragraph",
+      "text": "26 Ağustos tarihli başka bir Reuters haberinde ise Wildberries ve Ozon'a ait 20'den fazla lojistik tesisinin saldırılardan etkilendiği belirtiliyordu."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu olayların sonuçları yalnızca fiziksel depo hasarlarıyla sınırlı kalmadı."
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace'lerin lojistik operasyonları, sipariş karşılama süreçleri ve bazı teslimat noktaları da kesintilerden etkilendi."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Satıcılar açısından ortaya çıkan riskler"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Stok erişimi:** Marketplace deposunda bulunan ürünler, ilgili tesisin faaliyetleri durduğunda geçici veya kalıcı olarak erişilemez hale gelebilir. Stok kaybının kapsamı ve olası tazminat süreçleri ise olayın koşullarına ve platform sözleşmesine bağlıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Sipariş sürekliliği:** Bir deponun devre dışı kalması teslimatların başka merkezlere yönlendirilmesini gerektirebilir. Bu durum teslimat sürelerini, stok bulunabilirliğini ve müşteri deneyimini etkileyebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Nakit akışı:** Marketplace satıcıları açısından stokun satışa dönüşmesi kritik önemdedir. Satışlar durduğunda yeni siparişleri finanse etmek zorlaşabilir. Özellikle ithalat yapan şirketlerde bu durum yeniden sipariş döngüsünü etkileyebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Operasyonel bağımlılık:** Şirketin bütün ürünlerini tek platformun depolarında tutması, alternatif satış kanalları bulunsa bile stokun kullanılmasını zorlaştırabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dolayısıyla 2026'daki gelişmelerden çıkarılması gereken sonuç, belirli bir marketplace'in artık güvenilir olmadığı değildir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Asıl ders, şirketin satış ve stok altyapısının beklenmeyen durumlara karşı yeterince esnek olması gerektiğidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bir markanın Wildberries hesabı bulunabilir, Ozon'da satış yapabilir ve kendi e-ticaret sitesini de açabilir. Ancak bütün ürünler aynı lojistik sistemde bulunuyorsa gerçek anlamda bağımsız bir satış modeli kurulmuş olmaz."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Satış kanallarını çeşitlendirmek kadar stokun nerede tutulduğunu ve hangi kanallara yönlendirilebildiğini kontrol etmek de önemlidir.**"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "2. Rusya'da Kendi E-Ticaret Sitesi Neden Önem Kazanıyor ve Nasıl Kurulmalı?"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da bağımsız e-ticaret sitelerine yönelik ilginin artması yalnızca 2026'daki depo olaylarıyla açıklanamaz."
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace komisyonları, reklam giderleri, ürünler arasındaki yoğun fiyat rekabeti ve müşteri ilişkileri üzerindeki sınırlı kontrol de markaları alternatif satış kanallarına yönlendiriyor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kommersant'ın 1 Ekim 2026 tarihinde yayımladığı INFOLine tahminine göre Rusya'daki bağımsız e-ticaret hacminin yıl sonunda **5,75 trilyon rubleye** ulaşması bekleniyor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu, 2025'e kıyasla **%25,8 büyüme tahmini** anlamına geliyor. Araştırmada bağımsız e-ticaretin toplam online perakendedeki payının %34,9 seviyesine çıkabileceği öngörülüyor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu rakamlar henüz gerçekleşmiş yıl sonu sonuçları değil. Bununla birlikte sektördeki yön değişimini anlamak açısından önemli."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Marketplace satışlarını bırakmak gerekiyor mu?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'daki markaların çoğu için doğru yaklaşım Wildberries ve Ozon'u bırakmak değil, kendi web sitelerini de satış sistemine dahil etmektir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Çünkü iki satış modelinin güçlü olduğu alanlar farklıdır."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Müşteri trafiği — Wildberries / Ozon: Hazır pazaryeri kitlesi; kendi site: Trafiği marka oluşturur.",
+        "Marka kimliği — Wildberries / Ozon: Standart ürün kartı; kendi site: Markaya özel vitrin.",
+        "Müşteri ilişkileri — Wildberries / Ozon: Platform kurallarına bağlı; kendi site: İzinli CRM ve doğrudan iletişim.",
+        "Fiyatlandırma — Wildberries / Ozon: Kampanya ve platform koşullarından etkilenir; kendi site: Daha geniş ticari kontrol.",
+        "Satış maliyeti — Wildberries / Ozon: Komisyon, reklam ve lojistik; kendi site: Reklam, ödeme, site ve fulfillment.",
+        "Stok yönetimi — Wildberries / Ozon: FBO/FBS modeline bağlı; kendi site: Bağımsız depo ve ERP entegrasyonu.",
+        "Tekrar satış — Wildberries / Ozon: Platform ekosistemine bağlı; kendi site: Sadakat ve CRM programları."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Wildberries ve Ozon yeni müşterilere erişim sağlayabilir. Kendi e-ticaret sitesi ise marka deneyimini güçlendirmek, müşteri ilişkilerini geliştirmek ve doğrudan satış kanalı oluşturmak için kullanılabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle iki modeli karşı karşıya koymak yerine birbirini tamamlayan kanallar olarak planlamak daha sağlıklıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Kendi e-ticaret sitesinin en büyük avantajı: Marka kontrolü"
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace'lerde müşteriler çoğunlukla ürünleri fiyat, yorum, teslimat süresi ve rakip ürünlerle karşılaştırarak değerlendirir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu yapı satış için etkilidir ancak markanın kendisini anlatabileceği alan sınırlıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kendi sitesinde ise şirket ürünlerini çok daha kapsamlı sunabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğin bir kozmetik markası yalnızca serumlarını listelemekle kalmaz; cilt bakım rutinleri, ürün içerikleri, kullanım önerileri ve tamamlayıcı ürünleriyle bütünleşik bir alışveriş deneyimi oluşturabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bir tekstil markası sezon koleksiyonlarını, beden rehberlerini, kombin önerilerini ve marka hikâyesini müşterilerine daha etkili biçimde aktarabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu yaklaşım özellikle fiyat rekabetinden uzaklaşmak ve marka değeri oluşturmak isteyen üreticiler için önemlidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Müşteri ilişkileri ve tekrar satış"
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace üzerinden yapılan satışlarda müşteriye erişim ve iletişim imkânları platform kurallarıyla sınırlıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kendi web sitesinde ise şirket, ilgili kişisel veri ve ticari ileti izinlerini sağlayarak müşteri ilişkilerini daha doğrudan yönetebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğin bir müşteri ilk siparişinde cilt bakım ürünü satın almışsa ilerleyen dönemde tamamlayıcı ürünler hakkında bilgilendirilebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Müşterilere yeni koleksiyonlar, stok güncellemeleri veya sadakat programları sunulabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bunun markaya sağlayacağı en önemli avantaj, bütün satışların sürekli yeni reklam yatırımıyla oluşturulmasına olan bağımlılığı azaltma potansiyelidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ancak tekrar satışın gerçekleşmesi ürün kalitesine, müşteri deneyimine ve doğru pazarlama stratejisine bağlıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rusya'da hangi e-ticaret altyapısı kullanılmalı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bir web sitesi kurmanın ilk adımı doğru altyapıyı seçmektir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Burada yalnızca tasarım, tema veya kurulum fiyatına bakmak yeterli değildir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ödeme sistemleri, yerel lojistik, ürün kataloğu yönetimi, stok entegrasyonları ve teknik destek birlikte değerlendirilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "**InSales**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'daki e-ticaret operasyonları için öne çıkan altyapılardan biridir."
+    },
+    {
+      "type": "paragraph",
+      "text": "InSales üzerinden bağımsız web sitesi kurulabilir; Wildberries, Ozon ve diğer marketplace'lerle belirli entegrasyonlar gerçekleştirilebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ürün, fiyat ve stok senkronizasyonu, sipariş süreçleri ve mevcut muhasebe veya depo sistemleriyle bağlantılar planlanabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "InSales'in Wildberries ve Ozon entegrasyonlarında önemli bir teknik ayrıntı bulunur: FBO stoklarının görüntülenmesi mümkün olsa da ilgili entegrasyonların bütün FBO operasyonlarını yönetmediği resmi dokümantasyonda belirtilmektedir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dolayısıyla kullanılacak entegrasyonlar seçilirken yalnızca platform adlarının desteklenmesi değil, işletmenin ihtiyaç duyduğu işlemlerin gerçekten yapılabilmesi kontrol edilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "**Yandex KIT**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yandex'in bağımsız online mağazalar için geliştirdiği KIT de değerlendirilebilecek seçenekler arasındadır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Platformda mağaza vitrini, ödeme entegrasyonları, teslimat seçenekleri ve ürün yönetimi gibi özellikler bulunuyor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Yandex Pay, çeşitli ödeme ve fiskalizasyon servisleri, Yandex Delivery ve farklı teslimat sağlayıcılarıyla bağlantı seçenekleri sunuluyor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Özellikle Yandex ekosistemini aktif kullanacak markalar için araştırılabilecek bir çözüm."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "**1C-Bitrix**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Daha fazla özelleştirme, kapsamlı katalog ve kurumsal entegrasyon gerektiren projelerde değerlendirilebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ancak geliştirme, bakım ve teknik yönetim maliyetleri hazır altyapılardan farklı olabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "**Shopify**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Shopify konusunda ise Rusya'ya özel dikkatli değerlendirme yapılmalıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Shopify Payments'ın desteklenen ülkeleri arasında Rusya bulunmuyor. Yerel ödeme sağlayıcılarıyla entegrasyon, ilgili hizmetlerin kullanılabilirliği ve ticari kısıtlamalar ayrı ayrı doğrulanmalıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle global bir markanın mevcut Shopify altyapısının Rusya'da aynı ödeme ve operasyon modeliyle çalışacağını varsaymak doğru değildir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Web sitesinin kurulumunda hangi aşamalar bulunmalı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sürdürülebilir bir Rusya e-ticaret operasyonu için şu adımlar birlikte planlanmalıdır:"
+    },
+    {
+      "type": "paragraph",
+      "text": "**1. Ticari model:** Satışın Rusya'daki hangi şirket veya ticari yapı üzerinden gerçekleştirileceği belirlenmelidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "**2. Ürün kataloğu:** Rusça ürün açıklamaları, görseller, bedenler, teknik özellikler ve fiyatlar hazırlanmalıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "**3. Ödeme altyapısı:** Rusya'daki müşterilerin kullanabildiği ödeme sistemleri, bankacılık ve uygulanabilir fiskalizasyon yükümlülükleriyle birlikte kurulmalıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "**4. Depo ve teslimat:** Siparişlerin hangi stok noktasından çıkacağı, hangi lojistik sağlayıcısıyla teslim edileceği ve iade süreçleri belirlenmelidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "**5. ERP ve entegrasyon:** Marketplace ve kendi site siparişlerinin ortak bir sistemden takip edilmesi sağlanmalıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "**6. Analitik ve pazarlama:** Satışların hangi kanallardan geldiği, müşteri edinme maliyeti ve sipariş kârlılığı ölçülebilmelidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu süreçte Rusya'daki tüketici mevzuatı, ürün belgelendirme gereklilikleri, kişisel veri düzenlemeleri ve vergi yükümlülükleri de dikkate alınmalıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kendi e-ticaret sitesi kurmak EAC, Çestniy Znak veya diğer uygulanabilir ürün gerekliliklerini ortadan kaldırmaz."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Amaç yalnızca çalışan bir web sitesi oluşturmak değil, sipariş alabilen ve ürün teslim edebilen gerçek bir ticari sistem kurmaktır.**"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "3. Kendi E-Ticaret Sitenize Nasıl Müşteri Çekebilirsiniz?"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Wildberries ve Ozon'un en büyük avantajlarından biri hazır müşteri trafiğidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kendi e-ticaret sitesi açan markaların ise bu trafiği sıfırdan veya mevcut marka bilinirliklerini kullanarak oluşturmaları gerekir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle bağımsız site yatırımı yapılırken teknik kurulum ile dijital pazarlama bütçesi birlikte planlanmalıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya pazarında dört önemli kanal öne çıkar."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Yandex SEO: Uzun vadeli organik trafik"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yandex, Rusya'da ürün ve hizmet arayan kullanıcılara ulaşmak için önemli arama kanallarından biridir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kendi web sitesine sahip markalar, ürün ve kategori sayfalarını Rusça arama niyetlerine göre optimize edebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğin bir kozmetik markası yalnızca marka adını değil; ürün türü, içerik ve kullanım amacıyla ilgili arama sorgularını da hedefleyebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bir otomotiv parçası satıcısı OEM numaraları ve araç uyumluluğuna göre ürün sayfaları hazırlayabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Doğru SEO stratejisi:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "kategori sayfalarının düzenlenmesini,",
+        "benzersiz ürün açıklamalarını,",
+        "mobil performansın iyileştirilmesini,",
+        "teknik SEO kontrollerini,",
+        "Yandex Webmaster takibini,",
+        "yararlı rehber içeriklerinin hazırlanmasını"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "kapsar."
+    },
+    {
+      "type": "paragraph",
+      "text": "SEO'nun etkisi genellikle zaman içerisinde oluşur. Bu nedenle başlangıç döneminde tek trafik kaynağı olarak düşünülmemelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Yandex Ads: Satın alma niyetine yönelik reklam"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yandex Ads, ilgili ürünleri aktif olarak arayan kullanıcılara ulaşmak için değerlendirilebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Doğru kampanya yapısıyla reklam trafiği doğrudan ürün veya kategori sayfalarına yönlendirilebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ancak kampanyanın başarısı yalnızca ziyaretçi sayısı üzerinden ölçülmemelidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğin 10.000 kişinin siteyi ziyaret etmesi, bu ziyaretçilerin satışa dönüşmemesi halinde ticari başarı anlamına gelmez."
+    },
+    {
+      "type": "paragraph",
+      "text": "Asıl ölçülmesi gereken göstergeler:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "ziyaretçiden siparişe dönüşüm,",
+        "müşteri edinme maliyeti,",
+        "ortalama sepet tutarı,",
+        "reklam sonrası katkı marjı,",
+        "tekrar satın alma oranıdır."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu göstergeler sayesinde reklam bütçesi gerçekten satış potansiyeli taşıyan ürünlere yönlendirilebilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "VK Ads: Marka bilinirliği ve yeni müşteri edinme"
+    },
+    {
+      "type": "paragraph",
+      "text": "VK Ads, özellikle moda, kozmetik, kişisel bakım ve tüketici ürünleri için değerlendirilebilecek reklam kanallarından biridir."
+    },
+    {
+      "type": "paragraph",
+      "text": "VK üzerinden markanın ürünleri, koleksiyonları ve kampanyaları hedef kitlelere gösterilebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace'lerde müşteriler çoğu zaman ürünü ararken, sosyal medya reklamlarında müşteriye marka veya ürün ilk kez tanıtılabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle VK reklamlarının hedefi yalnızca anlık satış olmak zorunda değildir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Yeni müşteri kazanımı, marka bilinirliği ve yeniden hedefleme süreçleri birlikte planlanabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Telegram: Topluluk ve müşteri ilişkileri"
+    },
+    {
+      "type": "paragraph",
+      "text": "Telegram da Rusya'da marka iletişimi ve müşteri ilişkileri açısından değerlendirilebilecek kanallardan biridir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Özellikle mevcut müşterilere yeni ürünleri tanıtmak, topluluk oluşturmak veya B2B müşteri adaylarıyla iletişim kurmak için kullanılabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ancak Telegram kanalına takipçi toplamak tek başına ticari sonuç garantilemez."
+    },
+    {
+      "type": "paragraph",
+      "text": "Takipçilerin doğru hedef kitleden gelmesi ve kanalın müşteri edinme veya satış sürecine katkısının ölçülmesi gerekir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Trafik kaynaklarını birlikte kullanmak neden önemli?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bütün pazarlama bütçesini tek reklam kanalına yönlendirmek de marketplace bağımlılığına benzer bir risk yaratabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğin bütün satışlar ücretli Yandex reklamlarından geliyorsa reklam maliyetlerinin yükselmesi kârlılığı etkileyebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle sağlıklı model:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "**SEO + Yandex Ads + VK Ads + CRM + tekrar satış**"
+    },
+    {
+      "type": "paragraph",
+      "text": "kanallarının birlikte geliştirilmesidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "İlk dönemde ücretli reklamların payı yüksek olabilir. Zaman içerisinde organik trafik ve mevcut müşteri satışlarının artırılması hedeflenmelidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Böylece site yalnızca reklam bütçesi harcandığı zaman satış yapan bir yapıya dönüşmez."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "4. Merkezi Stok ve Çok Kanallı Satış: Asıl Operasyon Modeli"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "2026'daki depo krizinden sonra kendi site kurulumuyla birlikte değerlendirilmesi gereken en önemli konu stok yönetimidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Çünkü bir markanın bağımsız web sitesi olması, ürünlerine bağımsız şekilde erişebildiği anlamına gelmez."
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğin bütün ürünler Wildberries depolarında bulunuyorsa kendi sitesinden gelen siparişleri karşılamak için ayrıca uygun bir stok ve fulfillment planına ihtiyaç duyulabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle Russia Market Entry olarak çok kanallı satış modelinde merkezi stok ve kontrollü dağılım yaklaşımını önemsiyoruz."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Örnek operasyon yapısı"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "**Merkezi stok havuzu**"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "↓"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "**ERP / WMS / sipariş yönetimi**"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "↓"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "**Wildberries + Ozon + Kendi Site + B2B**"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "↓"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "**Kanala uygun fulfillment ve teslimat**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu modelde ürünler tek bir merkezi envanter görünümünden izlenirken, satış kanallarına uygun miktarlarda dağıtılabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğin hızlı satılan SKU'lar marketplace depolarına gönderilebilirken belirli miktarda ürün bağımsız stok noktasında tutulabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kendi site siparişleri bu stok noktasından hazırlanabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Böylece marketplace deposunda yaşanan bir aksaklık şirketin bütün siparişlerini otomatik olarak durdurmayabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "FBO ve FBS birlikte kullanılabilir mi?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace operasyonlarında FBO/FBW ve FBS modelleri farklı avantajlar sağlar."
+    },
+    {
+      "type": "paragraph",
+      "text": "**FBO/FBW:** Ürünler marketplace depolarında tutulur ve ilgili lojistik hizmetleri platform tarafından yürütülür."
+    },
+    {
+      "type": "paragraph",
+      "text": "**FBS:** Ürünler satıcı veya anlaşmalı fulfillment sağlayıcısının deposunda tutulur. Sipariş geldiğinde hazırlanarak platformun teslimat sistemine aktarılır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kendi e-ticaret sitesi ise uygun lojistik entegrasyonları üzerinden merkezi stoktan teslimat yapabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu modellerin hangisinin kullanılacağı:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "ürün kategorisine,",
+        "satış hızına,",
+        "depo maliyetine,",
+        "sipariş hacmine,",
+        "teslimat performansına,",
+        "stok güvenliği hedeflerine"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "göre belirlenmelidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ancak burada önemli bir ayrıntı var."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tek bir merkezi depo da yeni bir bağımlılık yaratabilir. Dolayısıyla riskleri azaltmak isteyen markalar, operasyon büyüklüklerine göre alternatif stok noktalarını, sigorta kapsamını ve iş sürekliliği planını değerlendirmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Stok yönetiminde otomasyonun önemi"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bir ürün hem Wildberries'te hem Ozon'da hem de markanın kendi sitesinde satışa açıksa stok bilgilerinin tutarlı olması gerekir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğin merkezi depoda 100 adet bulunan bir SKU için üç ayrı kanalda kontrolsüz şekilde 100'er adet satışa açık stok göstermek, fazla sipariş alma riskine neden olabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Doğru entegrasyonla:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "mevcut stok,",
+        "ayrılmış stok,",
+        "satışa açık stok,",
+        "transferdeki stok,",
+        "iade edilen ürünler"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "ayrı ayrı izlenebilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle e-ticaret altyapısıyla ERP veya WMS sisteminin doğru şekilde haberleşmesi önemlidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Çok kanallı e-ticaretin gerçek avantajı, satış kanallarının sayısından değil, bu kanalların aynı operasyon sistemiyle yönetilebilmesinden gelir.**"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "5. Kendi E-Ticaret Sitesi Gerçekten Daha Kârlı mı?"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace'ten bağımsız siteye geçiş düşüncesinin arkasında sıklıkla komisyon maliyetleri bulunur."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ancak kendi sitede marketplace komisyonu olmaması, daha yüksek net kârın garanti olduğu anlamına gelmez."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bağımsız sitenin de maliyetleri vardır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bunlar arasında:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "site altyapısı ve teknik bakım,",
+        "ödeme hizmeti,",
+        "reklam ve müşteri edinme,",
+        "depo ve sipariş hazırlama,",
+        "teslimat,",
+        "iade,",
+        "müşteri hizmetleri,",
+        "operasyon giderleri"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "bulunur."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle karşılaştırma toplam maliyet üzerinden yapılmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Örnek satış senaryosu"
+    },
+    {
+      "type": "paragraph",
+      "text": "Aşağıdaki tutarlar yalnızca hesaplama yaklaşımını göstermek için hazırlanmış varsayımsal rakamlardır. Güncel marketplace tarifeleri veya ortalama sektör maliyetleri değildir."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "Satış fiyatı: Marketplace 5.000 ₽; kendi site 5.000 ₽.",
+        "Ürün maliyeti: Her iki kanalda da 1.500 ₽.",
+        "Komisyon / site gider payı: Marketplace 1.500 ₽; kendi site 150 ₽.",
+        "Lojistik ve fulfillment: Marketplace 600 ₽; kendi site 450 ₽.",
+        "Reklam: Marketplace 300 ₽; kendi site 750 ₽.",
+        "Ödeme hizmeti: Marketplace senaryosunda dahil varsayıldı; kendi site 150 ₽.",
+        "İade ve operasyon: Marketplace 200 ₽; kendi site 250 ₽.",
+        "**Kalan katkı:** Marketplace 900 ₽; kendi site 1.750 ₽."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu örnekte bağımsız site daha yüksek katkı sağlıyor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ancak site reklam maliyeti 750 rubleden 1.500 rubleye yükselirse kalan tutar 1.000 rubleye düşer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dolayısıyla reklam maliyetinin kontrol edilemediği bir durumda bağımsız satış kanalının avantajı azalabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tabloda şirket vergileri ve KDV'nin gerçek muhasebe etkileri ayrıca modellenmemiştir. Gerçek bir fiyatlandırma çalışmasında aynı vergi bazlarıyla karşılaştırma yapılmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Müşteri edinme maliyeti neden kritik?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Marketplace platformları müşteriyi kendi sistemlerine çeker."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kendi e-ticaret sitesinde ise markanın müşteriyi kazanması gerekir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ancak bağımsız sitenin önemli avantajlarından biri, müşteri ilişkisini geliştirme imkânıdır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Örneğin bir kozmetik markası müşteriye ilk siparişinde reklam bütçesi harcayabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aynı müşteri ilerleyen aylarda organik arama, doğrudan site ziyareti veya izinli CRM iletişimi üzerinden tekrar satın alma yaparsa yeni reklam harcaması azalabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu nedenle kârlılık yalnızca ilk sipariş üzerinden değil, uygun olduğunda müşteri yaşam boyu değeri üzerinden de değerlendirilmelidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Kendi e-ticaret sitesi en büyük değerini yalnızca ilk satışta değil, uzun vadeli müşteri ilişkisinde oluşturabilir.**"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "6. Rusya'da Kendi E-Ticaret Sitesi İçin 90 Günlük Başlangıç Planı"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Bağımsız e-ticaret sitesi yatırımı bütün operasyonu aynı anda büyütmek zorunda değildir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Daha sağlıklı yaklaşım kontrollü başlangıç, veri toplama ve aşamalı büyümedir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "İlk 30 gün: Altyapı ve operasyon hazırlığı"
+    },
+    {
+      "type": "paragraph",
+      "text": "İlk aşamada ticari model, altyapı, ürün kataloğu ve lojistik sistemi hazırlanır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Markanın mevcut marketplace ürünleri incelenir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kendi sitede satışa açılması uygun ürünler belirlenir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu aşamada özellikle:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "InSales veya alternatif altyapının seçilmesi,",
+        "Rusça ürün kataloğu hazırlanması,",
+        "yerel ödeme sistemlerinin kurulması,",
+        "teslimat ve iade sürecinin planlanması,",
+        "stok entegrasyonlarının hazırlanması,",
+        "temel SEO yapısının oluşturulması"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "üzerinde çalışılır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Amaç yalnızca siteyi yayına almak değil, ilk siparişi sorunsuz karşılayabilecek sistemi oluşturmaktır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "31–60 gün: İlk satış ve reklam testleri"
+    },
+    {
+      "type": "paragraph",
+      "text": "İkinci aşamada kontrollü reklam ve trafik testleri başlatılır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Yandex Ads kampanyaları, uygun ürünler için VK reklamları ve SEO çalışmaları birlikte değerlendirilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu dönemde özellikle şu sorulara odaklanılır:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hangi ürünler daha fazla ilgi görüyor?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ziyaretçiler hangi aşamada alışverişten vazgeçiyor?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sipariş başına müşteri edinme maliyeti ne kadar?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Teslimat ve ödeme süreçlerinde sorun yaşanıyor mu?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bu veriler olmadan reklam bütçesini hızla büyütmek riskli olabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "61–90 gün: Optimizasyon ve büyüme"
+    },
+    {
+      "type": "paragraph",
+      "text": "Üçüncü aşamada ilk sonuçlara göre strateji geliştirilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dönüşüm oranı yüksek ürünler önceliklendirilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Reklam bütçeleri yeniden dağıtılır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kendi site ile marketplace satışlarının stok ve kârlılık performansı karşılaştırılır."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tekrar satın alma potansiyeli bulunan müşteriler için uygun CRM süreçleri hazırlanır."
+    },
+    {
+      "type": "paragraph",
+      "text": "90 gün sonunda hedef bütün Rusya pazarını kapsamak değildir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Amaç, **kendi satış kanalının ekonomik olarak çalışıp çalışmadığını ölçebilen ve büyütülebilen bir sistem** oluşturmaktır."
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "7. Russia Market Entry ile Kendi E-Ticaret ve Marketplace Operasyonunuzu Birlikte Yönetin"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Rusya'da kendi e-ticaret sitesine sahip olmak, yalnızca yeni bir internet adresi oluşturmak değildir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Doğru kurulduğunda bu yapı bir markanın:"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "satış kanallarını çeşitlendirmesini,",
+        "müşteri ilişkilerini geliştirmesini,",
+        "stoklarını daha kontrollü yönetmesini,",
+        "yeni pazarlama kanalları oluşturmasını,",
+        "marketplace bağımlılığını azaltmasını"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "sağlayabilir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ancak başarı için web sitesi, ödeme, lojistik, stok, reklam ve finans süreçlerinin birlikte çalışması gerekir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Russia Market Entry olarak markaların Rusya'daki faaliyetlerini yalnızca marketplace mağazası kurulumu üzerinden değerlendirmiyoruz."
+    },
+    {
+      "type": "paragraph",
+      "text": "**E-ticaret altyapısı kurulumu, InSales ve uygun alternatiflerin değerlendirilmesi, marketplace entegrasyonları, ürün ve stok yönetimi, ERP bağlantıları, Yandex/VK reklamları, SEO ve yerel operasyon süreçlerini** bütünleşik bir satış modeli içerisinde ele alıyoruz."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wildberries ve Ozon satışları devam ederken markanın kendi e-ticaret sitesini de geliştirmesini, doğru ürün ve operasyon yapısında önemli bir büyüme fırsatı olarak görüyoruz."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sonuç: Rusya'da Geleceğin E-Ticaret Modeli Çok Kanallı Olacak"
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 yılında yaşanan Wildberries depo olayları, Rusya'daki markalara önemli bir operasyonel gerçeği yeniden hatırlattı:"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Bütün satış ve stok operasyonunu tek bir platforma bağımlı hale getirmek sürdürülebilir büyüme açısından risk oluşturabilir.**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Öte yandan bağımsız e-ticaret alanındaki büyüme beklentileri, kendi satış kanalını geliştirmek isteyen markalar için yeni bir fırsata işaret ediyor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gelecekte güçlü konumlanan markalar yalnızca en fazla marketplace'te satış yapan şirketler olmayacak."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kendi müşteri kitlesini geliştirebilen, satış kanallarını birlikte yönetebilen ve stoklarını farklı senaryolara göre planlayabilen şirketler daha esnek bir ticari yapıya sahip olabilecek."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Rusya'da hedef Wildberries ve Ozon'dan ayrılmak değil, bu platformlara bağımlı kalmadan büyüyebilecek bir marka ve operasyon kurmaktır.**"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Russia Market Entry**, Rusya'da kendi e-ticaret sitesini kurmak veya mevcut marketplace satışlarını çok kanallı bir yapıya dönüştürmek isteyen markalara pazara giriş, teknoloji, lojistik ve satış operasyonlarının planlanmasında destek sağlar."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Rusya'da kendi satış kanalınızı kurmak ve marketplace operasyonunuzla entegre etmek için [bizimle iletişime geçin](/iletisim).**"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "İlgili rehberler"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "[Rusya'da e-ticaret nasıl yapılır?](/blog/rusyada-e-ticaret-nasil-yapilir)",
+        "[Wildberries'de satış yapmak](/blog/wildberriesde-satis-yapmak)",
+        "[Ozon'da satış yapmak](/blog/ozonda-satis-yapmak)",
+        "[Rusya'da e-ticaret lojistiği](/blog/rusyada-e-ticaret-lojistigi-2026)",
+        "[Rusya e-ticaretinde bölgesel satış stratejisi](/blog/rusya-e-ticaret-bolgesel-satis-stratejisi-2026)",
+        "[EXW'den raf fiyatına maliyet hesabı](/blog/rusya-exw-raf-fiyati-maliyet-hesaplama-2026)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sık Sorulan Sorular"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Rusya'da kendi e-ticaret sitesi açmak için şirket kurmak gerekir mi?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Şirketin hangi ülkede kurulu olduğu, satışın yerel mi sınır ötesi mi gerçekleştirileceği, ödeme ve ithalat yapısı gibi unsurlara göre gereklilikler değişir. Yerel veya sınır ötesi model seçilmeden kesin bir cevap vermek doğru değildir."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Wildberries ve Ozon'dan kendi siteme ürün aktarabilir miyim?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ürün verileri uygun API, entegrasyon veya katalog aktarım yöntemleriyle taşınabilir. Ancak görsellerin kullanım hakları, fiyat alanları, stok ilişkileri ve platformun veri kullanım koşulları kontrol edilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "InSales ile Wildberries ve Ozon birlikte yönetilebilir mi?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Belirli ürün, fiyat ve stok senkronizasyonları yapılabilir. Ancak entegrasyonların desteklediği işlem kapsamı farklıdır. Özellikle FBO ile FBS operasyonları için ilgili teknik dokümantasyon kontrol edilmelidir."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kendi e-ticaret sitesi marketplace'ten daha mı kârlıdır?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Her zaman değil. Marketplace komisyonu azalabilir ancak reklam, ödeme, lojistik, teknik altyapı ve müşteri hizmetleri maliyetleri doğar. Karşılaştırma ürün bazında gerçek katkı marjıyla yapılmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kendi web sitem varsa Wildberries deposuna ihtiyaç kalır mı?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hayır, böyle bir zorunluluk yoktur. Ancak Wildberries'teki satışlar için seçilen fulfillment modeline göre marketplace depoları avantajlı olabilir. Kendi site siparişleri için bağımsız fulfillment sistemi kurulabilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Kaynaklar"
+    },
+    {
+      "type": "bulletList",
+      "items": [
+        "1. [Reuters: “Ukrainian attacks on Wildberries strike at heart of Russia Inc” (7 Ağustos 2026)](https://www.investing.com/news/economy-news/ukrainian-attacks-on-wildberries-strike-at-heart-of-russia-inc-4845125).",
+        "2. [Reuters: “Fire destroys drone-hit Wildberries warehouse in Russia's Tambov region” (26 Ağustos 2026)](https://www.aol.com/articles/drone-sets-wildberries-warehouse-ablaze-065410000.html).",
+        "3. [Kommersant: “Селлер идет в обход” (1 Ekim 2026)](https://www.kommersant.ru/doc/8990807) — INFOLine bağımsız e-ticaret büyüme tahminleri.",
+        "4. InSales — [Wildberries entegrasyon dokümantasyonu](https://www.insales.ru/collection/integratsiya-s-wildberries/product/podklyuchenie-integratsii-s-wildberries) ve [Ozon entegrasyon dokümantasyonu](https://www.insales.ru/collection/integratsiya-s-ozon/product/upravlenie-integratsiey-s-ozon).",
+        "5. Yandex KIT — [Resmî platform sitesi](https://kit.yandex.ru/) ve [hızlı başlangıç rehberi](https://www.yandex.ru/support/kit/ru/quickstart).",
+        "6. Shopify Help Center — [Shopify Payments desteklenen ülkeler](https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries)."
+      ]
+    }
+  ]
+}
