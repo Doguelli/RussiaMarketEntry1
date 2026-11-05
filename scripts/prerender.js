@@ -106,20 +106,14 @@ const blogRoutesToPrerender = blogRoutes;
 /** Single source of truth: deduplicated prerender + sitemap URL list. */
 const routesToPrerender = [...new Set([...staticRoutesToPrerender, ...blogRoutesToPrerender])];
 
-// Motion renders entrance animations' initial state (opacity:0) into the SSR
-// markup, which leaves headings and copy invisible to crawlers that don't run
-// JS. The static HTML is made visible; browsers that run JS still hide those
-// nodes until React replaces them, so the entrance animation looks the same.
-const SSR_HIDDEN_BOOTSTRAP =
-  '<script>document.documentElement.classList.add("js")</script>' +
-  "<style>.js [data-ssr-hidden]{opacity:0}</style>";
-
+// Keep prerendered content visible both without JavaScript and while page
+// chunks load. Client-side Motion animations start when React mounts.
 function revealHiddenSsrMarkup(appHtml) {
   return appHtml.replace(/\sstyle="([^"]*)"/g, (match, style) => {
     const declarations = style.split(";").map((d) => d.trim()).filter(Boolean);
     if (!declarations.some((d) => /^opacity:\s*0(\.0+)?$/.test(d))) return match;
     const kept = declarations.filter((d) => !/^opacity:/.test(d) && !/^transform:/.test(d));
-    return kept.length ? ` data-ssr-hidden style="${kept.join(";")}"` : " data-ssr-hidden";
+    return kept.length ? ` style="${kept.join(";")}"` : "";
   });
 }
 
@@ -151,7 +145,12 @@ function mergeRouteIntoHtml(url, appHtml) {
     .replace(/<meta[^>]*property=["']og:image["'][^>]*\/?>/gi, "")
     .replace(/<meta[^>]*name=["']twitter:[^"']+["'][^>]*\/?>/gi, "");
 
-  const routeHeadTags = [SSR_HIDDEN_BOOTSTRAP, ...titles, ...metas, ...links, ...jsonLd].join("\n    ");
+  // A route-specific noindex directive (404) replaces the default index rule.
+  if (metas.some((tag) => /name=["']robots["']/i.test(tag))) {
+    html = html.replace(/<meta[^>]*name=["']robots["'][^>]*\/?>/gi, "");
+  }
+
+  const routeHeadTags = [...titles, ...metas, ...links, ...jsonLd].join("\n    ");
 
   if (routeHeadTags) {
     html = html.replace("</head>", `  ${routeHeadTags}\n</head>`);

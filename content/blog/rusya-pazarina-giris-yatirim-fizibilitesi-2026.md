@@ -115,7 +115,7 @@ en:
     
     Russia Market Entry helps manufacturers evaluate their product portfolio, viable channels, partner models and practical operating requirements before committing capital. The scope can include market and competitor research, route-to-market options and a phased launch plan.
     
-    Our objective is not to recommend Russia to every company. It is to help management make an informed commercial decision. [Request a preliminary market assessment](/en/services/market-research-strategy).
+    Our objective is not to recommend Russia to every company. It is to help management make an informed commercial decision. [Request a preliminary market assessment](/en/services/market-research-and-strategy).
     
     Frequently Asked Questions
     

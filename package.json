@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
+    "audit:seo": "node scripts/audit-seo.js",
     "cms-proxy": "decap-server"
   },
   "dependencies": {

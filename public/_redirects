@@ -14,6 +14,7 @@
 /ru/hizmetler/turkiyede-sirket-kurulumu       /ru/uslugi/registratsiya-biznesa-v-turtsii 301!
 /ru/hizmetler/ithalat-ve-gumruk-yonetimi      /ru/uslugi/import-i-tamozhnya            301!
 /ru/hizmetler/pazar-arastirmasi-ve-strateji   /ru/uslugi/issledovanie-rynka            301!
+/ru/hizmetler/medikal-ve-saglik              /ru/uslugi/meditsina-i-zdravoohranenie   301!
 /ru/operasyon-modeli                          /ru/model-raboty                         301!
 /ru/kimler-icin                               /ru/dlya-kogo                            301!
 /ru/kimler-icin/tekstil-markalari             /ru/dlya-kogo/tekstilnye-brendy          301!
@@ -22,6 +23,15 @@
 /ru/kimler-icin/kozmetik-ureticileri          /ru/dlya-kogo/proizvoditeli-kosmetiki    301!
 /ru/iletisim                                  /ru/kontakty                             301!
 /kompaniya-v-turtsii                          /ru/kompaniya-v-turtsii                  301!
+
+# Legacy routes must redirect at HTTP level before the unknown-path 404 rule.
+/en/services/market-research-strategy /en/services/market-research-and-strategy 301!
+/contact             /iletisim  301!
+/contact/*           /iletisim  301!
+/portfolio-carousel  /          301!
+/portfolio-carousel/* /         301!
+/elements            /          301!
+/elements/*          /          301!
 
 /admin/*  /admin/index.html  200
 # Valid routes are prerendered as static files. Unknown paths return a real 404.
