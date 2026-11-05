@@ -3,6 +3,7 @@ enableTr: true
 enableEn: true
 enableRu: true
 tr:
+  image: /uploads/blog/rusya-pazarina-giris-yatirim-fizibilitesi-2026-tr.png
   metaTitle: "Rusya Pazarına Giriş Fizibilitesi: Yatırım Yapmaya Değer mi? | RME"
   title: "Rusya Pazarına Girmek Şirketiniz İçin Doğru Yatırım mı? Üreticiler İçin Fizibilite ve Karar Rehberi"
   excerpt: "Rusya'ya ihracat için yatırım kararı nasıl verilir? Üç giriş senaryosu, nakit akışı, riskler ve üreticilere özel fizibilite karar çerçevesi."
@@ -67,6 +68,7 @@ tr:
     
     Kaynak: AKİT, Rusya e-ticaret ilk yarı 2026 verileri.
 en:
+  image: /uploads/blog/rusya-pazarina-giris-yatirim-fizibilitesi-2026-en.png
   metaTitle: "Russia Market Entry Feasibility: Is the Investment Worth It? | RME"
   title: "Is Entering the Russian Market the Right Investment for Your Company? A Manufacturer's Feasibility Guide"
   excerpt: "Should your company invest in Russia? Compare three entry scenarios, cash-flow requirements, risks and an actionable management decision framework."
@@ -131,6 +133,7 @@ en:
     
     Source: AKIT, Russian e-commerce data, first half of 2026.
 ru:
+  image: /uploads/blog/rusya-pazarina-giris-yatirim-fizibilitesi-2026-ru.png
   metaTitle: "Выход на рынок России: оценка инвестиций и рисков | RME"
   title: "Стоит ли вашей компании выходить на рынок России? Руководство по оценке инвестиций для производителей"
   excerpt: "Стоит ли инвестировать в выход на рынок России? Три сценария запуска, оборотный капитал, риски и критерии решения для руководства."
