@@ -228,6 +228,57 @@ export default function BlogDetail() {
         </div>
       </section>
 
+      {/* Contextual internal links for the highest-intent product research article.
+          Keep the indexed blog slug and its original SEO metadata unchanged. */}
+      {slug === "rusyada-en-cok-satan-urunler-2026" && (
+        <section className="py-10 md:py-12 bg-primary-50/40 border-y border-primary-100">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+            <div className="rounded-2xl border border-primary-100 bg-white shadow-sm p-6 md:p-8">
+              <p className="text-xs font-bold uppercase tracking-widest text-accent-500 mb-2">
+                {isRu ? "Для производителей и действующих брендов" : currentLang === "en" ? "For established manufacturers and brands" : "Üreticiler ve kurumsal markalar için"}
+              </p>
+              <h2 className="text-xl md:text-2xl font-extrabold text-primary-500 mb-3">
+                {isRu
+                  ? "Какие товары из вашего ассортимента готовы к продажам в России?"
+                  : currentLang === "en"
+                    ? "Which products in your range are ready for the Russian market?"
+                    : "Ürün portföyünüzden hangileri Rusya pazarına uygun?"}
+              </h2>
+              <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-5">
+                {isRu
+                  ? "Мы оцениваем конкурентов, цены, экономику SKU и перспективы Wildberries и Ozon для производителей с действующим ассортиментом. Это анализ инвестиционных решений, а не обещание гарантированных продаж."
+                  : currentLang === "en"
+                    ? "We assess competitors, prices, SKU profitability and Wildberries/Ozon channel fit for established manufacturers. The goal is an informed investment decision, not a guaranteed sales forecast."
+                    : "Üretim altyapısı ve ürün portföyü bulunan markalar için rakip, fiyat, SKU kârlılığı ve Wildberries/Ozon kanal uygunluğunu inceliyoruz. Amacımız garantili satış vaadi değil, veriye dayalı yatırım kararıdır."}
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  to={servicePath("pazar-arastirmasi-ve-strateji", pageLang)}
+                  className="inline-flex items-center gap-2 rounded-xl bg-primary-500 hover:bg-primary-600 text-white px-5 py-3 font-bold text-sm transition-colors"
+                >
+                  {isRu ? "Анализ рынка и ассортимента" : currentLang === "en" ? "Explore market feasibility" : "Pazar fizibilitesini inceleyin"}
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link
+                  to={servicePath("pazaryeri-yonetimi", pageLang)}
+                  className="inline-flex items-center gap-2 rounded-xl border border-primary-200 bg-white hover:bg-primary-50 text-primary-600 px-5 py-3 font-bold text-sm transition-colors"
+                >
+                  {isRu ? "Ведение маркетплейсов" : currentLang === "en" ? "Marketplace operations" : "Marketplace operasyonu"}
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+              <p className="mt-4 text-xs text-slate-500">
+                {isRu
+                  ? "Поиск оптовых покупателей и B2B-дистрибьюторов — только в медицинском секторе."
+                  : currentLang === "en"
+                    ? "Wholesale buyer and B2B distributor sourcing is limited to medical and healthcare."
+                    : "Toptan alıcı ve B2B distribütör araştırması yalnızca medikal ve sağlık alanında sunulur."}
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* End CTA */}
       <section className="py-12 md:py-16 bg-slate-50 border-t border-slate-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl text-center">
