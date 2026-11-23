@@ -82,11 +82,13 @@ export default function Contact() {
 
   const goalOptions = useMemo(
     () =>
-      GOAL_KEYS.map((key) => ({
+      GOAL_KEYS.filter(
+        (key) => formData.industry === "medical" || (key !== "b2b" && key !== "distributor" && key !== "medical")
+      ).map((key) => ({
         key,
         label: t(`contact.goal_${key}`),
       })),
-    [t, i18n.language]
+    [t, i18n.language, formData.industry]
   );
 
   const handleChange = (
@@ -94,6 +96,14 @@ export default function Contact() {
   ) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
+    if (id === "industry") {
+      // Clear medical-specific selections when switching to a non-medical sector.
+      setRussiaGoals((previous) =>
+        value === "medical"
+          ? previous
+          : previous.filter((goal) => goal !== "b2b" && goal !== "distributor" && goal !== "medical")
+      );
+    }
     if ("setCustomValidity" in e.target) {
       e.target.setCustomValidity("");
     }
@@ -114,7 +124,11 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (russiaGoals.length === 0) {
+    const allowedGoals = russiaGoals.filter(
+      (goal) =>
+        formData.industry === "medical" || (goal !== "b2b" && goal !== "distributor" && goal !== "medical")
+    );
+    if (allowedGoals.length === 0) {
       setGoalsError(true);
       return;
     }
@@ -125,7 +139,7 @@ export default function Contact() {
     const industryLabel =
       industryOptions.find((o) => o.key === formData.industry)?.label || formData.industry;
     const goalsLabel = goalOptions
-      .filter((o) => russiaGoals.includes(o.key))
+      .filter((o) => allowedGoals.includes(o.key))
       .map((o) => o.label)
       .join(", ");
 

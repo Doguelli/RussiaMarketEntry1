@@ -850,7 +850,7 @@ export const serviceDetailsEN: Record<string, any> = {
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
         <li>Companies building brand visibility and demand in Russia</li>
-        <li>Brands scaling e-commerce and B2B sales with digital channels</li>
+        <li>Established brands scaling marketplaces and digital sales in Russia</li>
         <li>Medical / healthcare and manufacturing companies</li>
         <li>Established businesses entering or already selling in Russia</li>
       </ul>
@@ -896,7 +896,7 @@ export const serviceDetailsEN: Record<string, any> = {
         content: (
           <div className="space-y-4 text-slate-600">
             <p>
-              With Yandex Ads we plan and manage search and network advertising around your business goals — focusing on qualified traffic, visibility, lead generation and e-commerce / B2B demand.
+              With Yandex Ads we plan and manage search and network advertising around your business goals — focusing on qualified traffic, product discovery, e-commerce demand and sales.
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>Search advertising</li>
@@ -984,20 +984,20 @@ export const serviceDetailsEN: Record<string, any> = {
         ),
       },
       {
-        title: "Digital Demand for B2B and Medical Brands",
+        title: "Digital Demand for Medical Brands",
         content: (
           <div className="space-y-4 text-slate-600">
             <p>
-              Digital marketing can support B2B buyer awareness, distributor visibility, corporate website traffic, lead generation and medical / healthcare brand visibility among Russian professional audiences.
+              For medical and healthcare manufacturers, digital marketing supports professional audience outreach and brand visibility. For other industries, our digital work centres on marketplaces and e-commerce sales.
             </p>
             <p>
               This is not a market-research or medical service page — it explains how digital channels support those business models.
             </p>
             <Link
-              to={servicePath("pazar-arastirmasi-ve-strateji", "en")}
+              to={servicePath("medikal-ve-saglik", "en")}
               className="inline-flex text-accent-500 font-bold hover:underline"
             >
-              Explore B2B & Market Development Solutions →
+              Explore Medical B2B Solutions →
             </Link>
           </div>
         ),
@@ -1044,7 +1044,7 @@ export const serviceDetailsEN: Record<string, any> = {
               <li>Established brands and manufacturers</li>
               <li>Companies entering or already selling in Russia</li>
               <li>E-commerce companies</li>
-              <li>B2B manufacturers</li>
+              <li>Medical and healthcare manufacturers</li>
               <li>Medical / healthcare companies</li>
             </ul>
           </div>
@@ -1126,8 +1126,8 @@ export const serviceDetailsEN: Record<string, any> = {
         a: "By creating external traffic and demand it supports product discovery, brand awareness and conversion; together with marketplace operations it can strengthen sales growth.",
       },
       {
-        q: "How can B2B companies benefit from digital marketing?",
-        a: "For corporate website traffic, buyer/distributor awareness and lead generation. For partner research, see our B2B market development service.",
+        q: "How can medical B2B companies benefit from digital marketing?",
+        a: "For professional visibility and relevant institutional audiences in healthcare. For other industries our work focuses on marketplaces and digital sales.",
       },
       {
         q: "What is the difference between marketplace ads and Yandex/VK ads?",
@@ -1432,365 +1432,32 @@ export const serviceDetailsEN: Record<string, any> = {
 
   "pazar-arastirmasi-ve-strateji": {
     icon: Target,
-    title: "B2B and Market-Entry Strategy for the Russian Market",
-    subtitle: "Market research · Buyer & distributor research · Medical B2B · Commercial development",
-    metaTitle: "Russia B2B Market Research & Entry Strategy | Commercial Development",
-    metaDescription:
-      "We build the right market-entry strategy for your brand through Russia market research, buyer and distributor research, competitor analysis and B2B commercial development.",
-    description: "We identify the right market, the right companies and the right commercial opportunities in Russia.",
-    lead:
-      "Through market research, competitor analysis, potential buyer and distributor research, company assessment and commercial development, we help you prepare for Russia in a more controlled, data-driven way.",
-    ctaLabel: "Request a Pre-Analysis",
+    title: "Russia Market Research & E-Commerce Entry Strategy",
+    subtitle: "Marketplace research · Pricing and competitors · SKU feasibility · Operations",
+    metaTitle: "Russia Market Research & Marketplace Entry Strategy | RME",
+    metaDescription: "Russian marketplace research for manufacturers: Wildberries and Ozon competitors, SKU pricing, unit economics and investment feasibility.",
+    description: "We evaluate real product demand, competitive positioning and the financial viability of a marketplace launch in Russia.",
+    lead: "For established manufacturers and brands we connect product/category analysis, competitor pricing, Wildberries and Ozon channel selection, import costs and first-stock planning. We do not provide general wholesale buyer or dealer sourcing. B2B distributor development is available exclusively for medical and healthcare companies.",
+    ctaLabel: "Request Company Market Assessment",
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
-        <li>Established brands and manufacturers</li>
-        <li>Companies with a product portfolio seriously evaluating Russia</li>
-        <li>Firms seeking distributors / importers / B2B buyers</li>
-        <li>Medical and healthcare manufacturers</li>
-        <li>Companies assessing the market before investing</li>
+        <li>{"Established manufacturers and brands"}</li>
+        <li>{"Companies with a defined product portfolio and operations"}</li>
+        <li>{"Exporters planning marketplace investment in Russia"}</li>
+        <li>{"Brands scaling an existing Russia sales operation"}</li>
       </ul>
     ),
     contentSections: [
-      {
-        title: "We Research Commercial Opportunities in Russia",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>
-              Entering Russia is not simply finding a product channel. Depending on the business model, the opportunity may involve distributors, importers, wholesalers, dealers, B2B buyers, institutional buyers where appropriate, e-commerce or marketplaces.
-            </p>
-            <p>
-              The right route depends on product, sector and commercial objective. Across our{" "}
-              <Link to={servicesPath("en")} className="text-accent-500 font-semibold hover:underline">
-                services
-              </Link>
-              , we work Research → Qualification → Targeting → Commercial Development — we do not sell raw company lists.
-            </p>
-          </div>
-        ),
-      },
-      {
-        title: "We Start with Pre-Analysis",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>
-              Before a larger market-development project, we assess your company and readiness. The goal is to clarify whether Russia is commercially relevant.
-            </p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Company / product profile and product portfolio</li>
-              <li>Target sector and Russia objective</li>
-              <li>Existing export capability where relevant</li>
-              <li>Potential sales model and market fit</li>
-            </ul>
-            <p>
-              This step clarifies commercial potential and readiness. It is meaningful for companies with a serious commercial objective — not a one-product “trial” approach.
-            </p>
-            <Link to={contactPath("en")} className="inline-flex text-accent-500 font-bold hover:underline">
-              Request a Pre-Analysis →
-            </Link>
-          </div>
-        ),
-      },
-      {
-        title: "Key Challenges When Entering the Russian Market",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Not knowing the product's real market potential</li>
-              <li>Choosing the wrong sales channel or marketplace</li>
-              <li>Insufficient analysis of competitors and price levels</li>
-              <li>Incorrect product positioning in Russia</li>
-              <li>Not knowing the right commercial partner / distributor</li>
-              <li>Unclear initial stock and operations plan</li>
-              <li>Not calculating market-entry costs in advance</li>
-              <li>Sales targets disconnected from the logistics plan</li>
-            </ul>
-          </div>
-        ),
-      },
-      {
-        title: "Russia Market Research",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>
-              Market research lays the foundation for target-company work. We assess category structure, competitors, pricing dynamics and opportunities for your product in Russia.
-            </p>
-            <p className="font-semibold text-primary-500">Market Analysis</p>
-            <p>
-              We review category structure, demand dynamics, sales channels and opportunities to build a meaningful frame for your product — based on product, category, competitor, price and sales data where possible, not guesswork.
-            </p>
-            <p className="font-semibold text-primary-500">Product and Category Analysis</p>
-            <p>
-              We assess which products may be more suitable for entry and help prioritize your range for the Russian market.
-            </p>
-            <p className="text-[14px]">
-              <Link to={blogDetailPath("rusyada-en-cok-satan-urunler-2026", "en")} className="text-accent-500 font-semibold hover:underline">
-                Top product groups in Russia
-              </Link>
-              {" · "}
-              <Link to={blogDetailPath("rusyada-e-ticaret-nasil-yapilir", "en")} className="text-accent-500 font-semibold hover:underline">
-                E-commerce in Russia guide
-              </Link>
-            </p>
-          </div>
-        ),
-      },
-      {
-        title: "Competitor Analysis",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>We examine competing brands against criteria such as:</p>
-            <ul className="list-disc pl-5 space-y-2 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:space-y-2">
-              <li>Price</li>
-              <li>Product range</li>
-              <li>Sales performance</li>
-              <li>Reviews</li>
-              <li>Content</li>
-              <li>Campaigns</li>
-              <li>Marketplace positioning</li>
-              <li>Channel / partner structure (where visible)</li>
-            </ul>
-          </div>
-        ),
-      },
-      {
-        title: "Pricing, Commercial Model and Marketplace Selection",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>
-              We do not set Russia pricing from competitor prices alone. Product cost, logistics, marketplace fees, taxes, advertising and target profitability are evaluated together into a commercial model.
-            </p>
-            <p>
-              Not every marketplace has the same audience or sales model. We assess which of Wildberries · Ozon · Yandex Market · Lamoda may be priorities — and we weigh B2B models in the same frame.
-            </p>
-            <p className="font-semibold text-primary-500">Initial Stock and Operations Plan</p>
-            <p>An important part of entry strategy is the initial stock plan:</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>How much product should be shipped?</li>
-              <li>Which products should we start with?</li>
-              <li>Where should stock be held?</li>
-              <li>How much should go to each channel?</li>
-              <li>How should stock be managed as sales grow?</li>
-            </ul>
-            <p className="text-[14px] space-x-1">
-              <Link to={servicePath("lojistik-ve-depo", "en")} className="text-accent-500 font-semibold hover:underline">
-                Logistics & warehousing
-              </Link>
-              <span>·</span>
-              <Link to={servicePath("operasyon-kurulumu", "en")} className="text-accent-500 font-semibold hover:underline">
-                Operations setup
-              </Link>
-            </p>
-          </div>
-        ),
-      },
-      {
-        title: "Buyer, Distributor and Importer Research",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>
-              A critical step in B2B market development is researching and identifying relevant companies. Fit to product and sector matters more than raw volume.
-            </p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>B2B buyers</li>
-              <li>Distributors</li>
-              <li>Importers</li>
-              <li>Wholesalers</li>
-              <li>Dealers</li>
-              <li>Commercial partner candidates</li>
-            </ul>
-            <p>
-              We do not promise a fixed number of companies or a guaranteed distributor. The aim is to find qualified candidates ready for assessment.
-            </p>
-          </div>
-        ),
-      },
-      {
-        title: "We Assess Potential Partners",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>
-              Potential companies can be assessed on sector relevance, product compatibility, business model, market presence, distribution structure, product portfolio and commercial suitability.
-            </p>
-            <p className="text-[14px] text-slate-500">
-              We do not claim access to confidential company information. Assessment is based on open sources and commercially available signals within project scope.
-            </p>
-          </div>
-        ),
-      },
-      {
-        title: "B2B Commercial Development",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>
-              Work does not have to stop at research. Depending on project scope, it can continue into target prioritization, commercial communication, partner outreach where agreed, support for organizing commercial meetings where appropriate, opportunity follow-up and refining the market-entry strategy.
-            </p>
-            <p>
-              We do not guarantee meetings, sales or distributor agreements. Support is provided by mutual agreement and within project scope.
-            </p>
-          </div>
-        ),
-      },
-      {
-        title: "B2B Market Development in Medical & Healthcare",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>
-              Medical and healthcare is a strategic specialization. Our team's 15+ years of industry experience and Russia market expertise support commercial development for medical devices, equipment, consumables, healthcare products and, where relevant, hospital / institutional supply channels.
-            </p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Medical devices and equipment</li>
-              <li>Medical consumables</li>
-              <li>Healthcare products</li>
-              <li>Sector distributors / importers / B2B buyers</li>
-            </ul>
-            <p>
-              Success in medical markets requires understanding sector structure, relevant companies, product positioning, commercial channels and regulatory context. Research and coordination can be provided; we do not claim guaranteed certification, legal representation, or hospital/government procurement access.
-            </p>
-          </div>
-        ),
-      },
-      {
-        title: "We Evaluate E-Commerce and B2B Channels Together",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>
-              Depending on product and business model, Russia entry may involve B2B, e-commerce, marketplaces, distributors or hybrid models. We evaluate these options together during research.
-            </p>
-            <Link
-              to={servicePath("pazaryeri-yonetimi", "en")}
-              className="inline-flex text-accent-500 font-bold hover:underline"
-            >
-              Marketplace Management in Russia →
-            </Link>
-          </div>
-        ),
-      },
-      {
-        title: "We Support Commercial Development with Digital Channels",
-        content: (
-          <div className="space-y-3 text-slate-600">
-            <p>
-              Where appropriate, Russian digital channels can support commercial development through B2B visibility, buyer and distributor awareness, corporate website traffic and lead generation (Yandex Ads, VK Ads, Telegram Native Advertising).
-            </p>
-            <p className="text-[14px]">
-              This page focuses on B2B and medical market development. Digital marketing is a separate service:{" "}
-              <Link to={servicePath("marka-buyutme", "en")} className="text-accent-500 font-semibold hover:underline">
-                Digital Marketing in Russia
-              </Link>
-            </p>
-          </div>
-        ),
-      },
-      {
-        title: "How Is the Market-Entry Strategy Built?",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <div className="flex flex-wrap items-center gap-2 text-[14px] font-semibold text-primary-600">
-              {[
-                "Product Analysis",
-                "Russia Market Analysis",
-                "Category & Competitor Analysis",
-                "Channel / Partner Selection",
-                "Pricing & Profitability Model",
-                "Initial Product Range",
-                "Stock & Logistics Plan",
-                "Market Entry",
-                "Optimization Based on Data",
-              ].map((step, i, arr) => (
-                <span key={step} className="inline-flex items-center gap-2">
-                  <span className="bg-slate-50 border border-slate-100 rounded-xl px-4 py-2">{step}</span>
-                  {i < arr.length - 1 && <span className="text-accent-500">→</span>}
-                </span>
-              ))}
-            </div>
-            <p>
-              We do not leave research as a report only — we connect it to operations: Marketplace · Logistics · Stock · Price · Marketing · Sales. The real value of good market research is an actionable entry plan.
-            </p>
-            <p className="text-[14px] space-x-1">
-              <Link to={servicePath("turkiyede-sirket-kurulumu", "en")} className="text-accent-500 font-semibold hover:underline">
-                Company formation in Turkey
-              </Link>
-              <span>·</span>
-              <Link to={contactPath("en")} className="text-accent-500 font-semibold hover:underline">
-                Contact
-              </Link>
-            </p>
-          </div>
-        ),
-      },
-      {
-        title: "Who Is This For?",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            <p>
-              This service is for companies with a product portfolio, manufacturing capability, brand or a clear commercial objective. We focus on firms seriously evaluating Russia — not one-product “trial” approaches with low commercial potential or readiness.
-            </p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Established brands and manufacturers</li>
-              <li>Companies with a product portfolio</li>
-              <li>Firms seeking distributors / importers / B2B buyers</li>
-              <li>B2B and medical / healthcare manufacturers</li>
-              <li>Companies assessing Russia before investing</li>
-            </ul>
-          </div>
-        ),
-      },
-      {
-        title: "How We Work",
-        content: (
-          <div className="space-y-4 text-slate-600">
-            {[
-              { n: "01", t: "Pre-Analysis", d: "We assess your company, products and Russia objective." },
-              { n: "02", t: "Market Research", d: "We review product, category, competitors, pricing and market structure." },
-              { n: "03", t: "Target Company Research", d: "We research potential buyers, distributors, importers and commercial partners." },
-              { n: "04", t: "Assessment & Commercial Development", d: "We prioritize suitable companies and, within project scope, support commercial communication." },
-              { n: "05", t: "Market-Entry Strategy", d: "With the findings, we build an actionable Russia market-entry model." },
-            ].map((s) => (
-              <div key={s.n} className="flex gap-4 border-b border-slate-100 last:border-0 pb-4 last:pb-0">
-                <span className="font-extrabold text-accent-500 text-[18px] w-10 flex-shrink-0">{s.n}</span>
-                <div>
-                  <p className="font-bold text-primary-500">{s.t}</p>
-                  <p>{s.d}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        ),
-      },
+      { title: "Product and Category Potential", content: (<p className="text-slate-600 leading-relaxed">{"We review demand, competitors and price positioning on Wildberries, Ozon and relevant digital channels. Category growth is not a product-level sales guarantee."}</p>) },
+      { title: "SKU Pricing and Unit Economics", content: (<p className="text-slate-600 leading-relaxed">{"We assess product cost, duties, logistics, marketplace fees, advertising and returns under realistic margin scenarios."}</p>) },
+      { title: "Initial Inventory and Operations", content: (<p className="text-slate-600 leading-relaxed">{"We evaluate first-shipment volumes, Russian content, compliance, fulfilment and replenishment options."}</p>) },
+      { title: "Medical B2B Exception", content: (<p className="text-slate-600 leading-relaxed">{"Distributor, wholesale buyer and institutional purchasing development is scoped only for medical and healthcare projects, not for other sectors."}</p>) },
+      { title: "Our Working Method", content: (<p className="text-slate-600 leading-relaxed">{"We assess the company and range, validate competition and channels, then prepare an investment and operating roadmap with measurable decision points."}</p>) },
     ],
     faqs: [
-      {
-        q: "Do you provide B2B market research in Russia?",
-        a: "Yes. Alongside category, competitor and channel analysis, we assess B2B commercial opportunities and work Research → Qualification → Commercial Development.",
-      },
-      {
-        q: "Do you research distributors and importers?",
-        a: "Yes. We research potential buyers, distributors, importers, wholesalers and dealers relevant to your product and sector. We do not promise a fixed company count or guaranteed outcomes.",
-      },
-      {
-        q: "How do you assess potential companies?",
-        a: "By sector relevance, product compatibility, business model, market presence, distribution structure and commercial suitability. We do not claim access to confidential information.",
-      },
-      {
-        q: "Why is pre-analysis needed before entering Russia?",
-        a: "Pre-analysis clarifies commercial potential, readiness and the right sales model — helping avoid the wrong channel or premature investment.",
-      },
-      {
-        q: "Do you research the Russian market for medical companies?",
-        a: "Yes. We support B2B market development and partner research for medical devices, equipment, consumables and healthcare products. We do not guarantee certification or hospital/government access.",
-      },
-      {
-        q: "What is the difference between B2B research and market research?",
-        a: "Market research studies category, competitors, pricing and channels. B2B research identifies and assesses target companies (buyers, distributors, importers, etc.). They work together.",
-      },
-      {
-        q: "Do you support organizing commercial meetings?",
-        a: "Within project scope and by mutual agreement, we can support commercial communication and, where appropriate, organizing meetings. Meetings or deals are not guaranteed.",
-      },
-      {
-        q: "Can e-commerce and B2B models be evaluated together?",
-        a: "Yes. Depending on the product, B2B, e-commerce, marketplace or hybrid models can be evaluated together. See our marketplace management page for operational marketplace work.",
-      },
+      { q: "Do you find distributors in every industry?", a: "No. B2B distributor and institutional buyer development is exclusively for medical and healthcare. Other industries are served through marketplace research and digital sales operations." },
+      { q: "Does research guarantee sales?", a: "No. It helps evaluate opportunities and investment risks; results are not guaranteed." },
+      { q: "Who is this service for?", a: "Established companies with a real product portfolio, operational readiness and defined Russia market objectives." },
     ],
   },
   "medikal-ve-saglik": medicalServiceEN,

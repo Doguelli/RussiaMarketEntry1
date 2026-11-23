@@ -94,7 +94,7 @@ export const forWhomData: ForWhomContent[] = [
     slug: "ureticiler",
     title: "Üreticiler İçin Rusya Pazarı Çözümü",
     shortTitle: "Üreticiler",
-    description: "Sadece B2B ihracatla yetinmeyin. Konsinye model ile üretim gücünüzü doğrudan Rusya'daki son kullanıcıya ulaştırarak yüksek kârlılık elde edin.",
+    description: "Ürün portföyü ve üretim altyapısı bulunan şirketler için Rusya marketplace, ithalat ve yerel operasyonlarını birlikte planlıyoruz.",
     icon: <Factory className="w-4 h-4" />,
     color: "text-accent-500",
     bgColor: "bg-accent-500",
@@ -102,7 +102,7 @@ export const forWhomData: ForWhomContent[] = [
     content: (
       <>
         <p className="text-[18px] leading-relaxed text-slate-600 mb-6 max-w-4xl">
-          Toptan satışa ek olarak, ürettiğiniz ürünleri doğrudan tüketicilere sunmak, kar marjını maksimize etmenin en etkili yoludur. Konsinye model ile riskleri azaltarak marka olmadan da yüksek satış hacimlerine ulaşabilirsiniz.
+          Rusya'da doğrudan tüketiciye satış, kategori araştırması, ürün uygunluğu, fiyatlandırma ve sürdürülebilir stok yönetimi gerektirir. Hangi modelin uygun olduğunu ürün ve yatırım kapasitesi üzerinden değerlendiriyoruz.
         </p>
 
         <div className="bg-primary-50 border-l-4 border-primary-500 p-6 rounded-r-2xl mb-12">
@@ -123,7 +123,7 @@ export const forWhomData: ForWhomContent[] = [
           </div>
           <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
             <h4 className="text-[20px] font-bold text-primary-500 mb-4">Hızlı Geri Dönüş</h4>
-            <p className="text-slate-600 text-[14px]">Doğru ürün grupları seçildiğinde, satışlar hızlıca başlar. Wildberries ve Ozon üzerinden milyonlarca kullanıcıya anında erişim sağlanır.</p>
+            <p className="text-slate-600 text-[14px]">Wildberries ve Ozon geniş tüketici erişimi sunar; satışın hızı ve kârlılığı ürün, fiyat, reklam ve lojistik koşullarına bağlıdır.</p>
           </div>
           <Link
             to={servicePath("lojistik-ve-depo", false)}
