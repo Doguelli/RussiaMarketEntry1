@@ -850,7 +850,7 @@ export const serviceDetailsEN: Record<string, any> = {
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
         <li>Companies building brand visibility and demand in Russia</li>
-        <li>Brands scaling e-commerce and B2B sales with digital channels</li>
+        <li>Established brands scaling marketplaces and digital sales in Russia</li>
         <li>Medical / healthcare and manufacturing companies</li>
         <li>Established businesses entering or already selling in Russia</li>
       </ul>
@@ -896,7 +896,7 @@ export const serviceDetailsEN: Record<string, any> = {
         content: (
           <div className="space-y-4 text-slate-600">
             <p>
-              With Yandex Ads we plan and manage search and network advertising around your business goals — focusing on qualified traffic, visibility, lead generation and e-commerce / B2B demand.
+              With Yandex Ads we plan and manage search and network advertising around your business goals — focusing on qualified traffic, product discovery, e-commerce demand and sales.
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>Search advertising</li>
@@ -984,20 +984,20 @@ export const serviceDetailsEN: Record<string, any> = {
         ),
       },
       {
-        title: "Digital Demand for B2B and Medical Brands",
+        title: "Digital Demand for Medical Brands",
         content: (
           <div className="space-y-4 text-slate-600">
             <p>
-              Digital marketing can support B2B buyer awareness, distributor visibility, corporate website traffic, lead generation and medical / healthcare brand visibility among Russian professional audiences.
+              For medical and healthcare manufacturers, digital marketing supports professional audience outreach and brand visibility. For other industries, our digital work centres on marketplaces and e-commerce sales.
             </p>
             <p>
               This is not a market-research or medical service page — it explains how digital channels support those business models.
             </p>
             <Link
-              to={servicePath("pazar-arastirmasi-ve-strateji", "en")}
+              to={servicePath("medikal-ve-saglik", "en")}
               className="inline-flex text-accent-500 font-bold hover:underline"
             >
-              Explore B2B & Market Development Solutions →
+              Explore Medical B2B Solutions →
             </Link>
           </div>
         ),
@@ -1044,7 +1044,7 @@ export const serviceDetailsEN: Record<string, any> = {
               <li>Established brands and manufacturers</li>
               <li>Companies entering or already selling in Russia</li>
               <li>E-commerce companies</li>
-              <li>B2B manufacturers</li>
+              <li>Medical and healthcare manufacturers</li>
               <li>Medical / healthcare companies</li>
             </ul>
           </div>
@@ -1126,8 +1126,8 @@ export const serviceDetailsEN: Record<string, any> = {
         a: "By creating external traffic and demand it supports product discovery, brand awareness and conversion; together with marketplace operations it can strengthen sales growth.",
       },
       {
-        q: "How can B2B companies benefit from digital marketing?",
-        a: "For corporate website traffic, buyer/distributor awareness and lead generation. For partner research, see our B2B market development service.",
+        q: "How can medical B2B companies benefit from digital marketing?",
+        a: "For professional visibility and relevant institutional audiences in healthcare. For other industries our work focuses on marketplaces and digital sales.",
       },
       {
         q: "What is the difference between marketplace ads and Yandex/VK ads?",
