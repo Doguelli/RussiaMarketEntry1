@@ -151,7 +151,7 @@ export default function Home() {
       "Yandex Ads",
       "VK Ads",
       "Telegram Native",
-      isRu ? "B2B и Medical" : isEn ? "B2B and Medical" : "B2B ve Medical",
+      isRu ? "Медицинский B2B" : isEn ? "Medical B2B" : "Medikal B2B",
     ],
     url: homePath(pageLang),
   });
@@ -159,6 +159,7 @@ export default function Home() {
   const faqSchema = createFaqSchema(faqs);
   const canonicalHomeUrl = absoluteUrl(homePath(pageLang));
 
+  // The B2B panel below is explicitly limited to medical and healthcare products.
   const b2bItems = [
     t("home.b2b_li1"),
     t("home.b2b_li2"),
