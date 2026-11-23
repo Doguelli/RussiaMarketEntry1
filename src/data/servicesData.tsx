@@ -891,7 +891,7 @@ export const serviceDetails: Record<string, any> = {
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
         <li>Rusya'da marka görünürlüğü ve talep oluşturmak isteyen firmalar</li>
-        <li>E-ticaret ve B2B satışlarını dijital kanallarla büyütmek isteyen markalar</li>
+        <li>Rusya'da marketplace ve dijital satışlarını büyütmek isteyen yerleşik markalar</li>
         <li>Medikal / sağlık ve üretici şirketler</li>
         <li>Rusya'ya giren veya halihazırda satan kurumsal işletmeler</li>
       </ul>
@@ -937,7 +937,7 @@ export const serviceDetails: Record<string, any> = {
         content: (
           <div className="space-y-4 text-slate-600">
             <p>
-              Yandex Ads ile Rusya'da arama ve ağ reklamlarını markanızın hedeflerine göre planlıyor ve yönetiyoruz. Odak; nitelikli trafik, görünürlük, lead generation ve satış / B2B talep üretimidir.
+              Yandex Ads ile Rusya'da arama ve ağ reklamlarını markanızın hedeflerine göre planlıyor ve yönetiyoruz. Odak; nitelikli trafik, ürün keşfi, dijital satış ve marka büyümesidir.
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>Arama reklamları</li>
@@ -1025,20 +1025,20 @@ export const serviceDetails: Record<string, any> = {
         ),
       },
       {
-        title: "B2B ve Medikal Markalar İçin Dijital Talep",
+        title: "Medikal Sektörde Dijital Talep",
         content: (
           <div className="space-y-4 text-slate-600">
             <p>
-              Dijital pazarlama; B2B alıcı farkındalığı, distribütör görünürlüğü, kurumsal site trafiği, lead generation ve medikal / sağlık markalarının Rus profesyonel kitlelerde görünürlüğünü destekleyebilir.
+              Medikal ve sağlık üreticileri için dijital pazarlama, uzman kitlelere ulaşmayı ve kurumsal marka görünürlüğünü destekleyebilir. Diğer sektörlerde dijital çalışmalarımız e-ticaret ve marketplace satışlarına odaklanır.
             </p>
             <p>
               Bu bölüm pazar araştırması veya medikal hizmet sayfası değildir; dijital kanalların bu iş modellerine nasıl katkı verdiğini açıklar.
             </p>
             <Link
-              to={servicePath("pazar-arastirmasi-ve-strateji", false)}
+              to={servicePath("medikal-ve-saglik", false)}
               className="inline-flex text-accent-500 font-bold hover:underline"
             >
-              B2B ve Pazar Geliştirme Çözümlerini İncele →
+              Medikal B2B Çözümlerini İncele →
             </Link>
           </div>
         ),
@@ -1085,7 +1085,7 @@ export const serviceDetails: Record<string, any> = {
               <li>Yerleşik markalar ve üreticiler</li>
               <li>Rusya'ya giren veya halihazırda satan şirketler</li>
               <li>E-ticaret şirketleri</li>
-              <li>B2B üreticiler</li>
+              <li>Medikal ve sağlık üreticileri</li>
               <li>Medikal / sağlık şirketleri</li>
             </ul>
           </div>
@@ -1167,8 +1167,8 @@ export const serviceDetails: Record<string, any> = {
         a: "Harici trafik ve talep oluşturarak ürün keşfini, marka farkındalığını ve dönüşümü destekler; pazaryeri operasyonuyla birlikte çalıştığında satış büyümesini güçlendirebilir.",
       },
       {
-        q: "B2B firmalar dijital pazarlamadan nasıl yararlanabilir?",
-        a: "Kurumsal site trafiği, alıcı / distribütör farkındalığı ve lead generation için kullanılabilir. Pazar ve partner araştırması için B2B pazar geliştirme hizmetimizi de inceleyebilirsiniz.",
+        q: "Medikal B2B firmaları dijital pazarlamadan nasıl yararlanabilir?",
+        a: "Medikal firmalarda kurumsal görünürlük, uzman kitleye ulaşma ve ilgili ticari bağlantılar için kullanılabilir. Diğer sektörlerde marketplace ve dijital satışa odaklanıyoruz.",
       },
       {
         q: "Pazaryeri reklamları ile Yandex / VK reklamları arasındaki fark nedir?",
