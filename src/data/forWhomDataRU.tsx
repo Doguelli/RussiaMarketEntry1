@@ -82,7 +82,7 @@ export const forWhomDataRU: ForWhomContent[] = [
     slug: "ureticiler",
     title: "Решения для производителей и фабрик",
     shortTitle: "Производители",
-    description: "Не ограничивайтесь только оптом B2B. Получайте максимальную маржинальность, поставляя продукцию напрямую конечным покупателям через маркетплейсы.",
+    description: "Для действующих производителей оцениваем выход на маркетплейсы России, импорт, ценообразование и локальные операции.",
     icon: <Factory className="w-4 h-4" />,
     color: "text-accent-500",
     bgColor: "bg-accent-500",
@@ -90,7 +90,7 @@ export const forWhomDataRU: ForWhomContent[] = [
     content: (
       <>
         <p className="text-[18px] leading-relaxed text-slate-600 mb-6 max-w-4xl">
-          В дополнение к оптовым контрактам прямые продажи через маркетплейсы позволяют максимизировать прибыль с каждой единицы товара. Вы получаете доступ к десяткам миллионов покупателей с минимальными рисками.
+          Прямые продажи через маркетплейсы требуют исследования спроса, проверки документов, расчёта экономики, рекламы и стабильных запасов. Выбираем модель с учётом готовности производителя.
         </p>
 
         <div className="bg-primary-50 border-l-4 border-primary-500 p-6 rounded-r-2xl mb-12">
@@ -111,7 +111,7 @@ export const forWhomDataRU: ForWhomContent[] = [
           </div>
           <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
             <h4 className="text-[20px] font-bold text-primary-500 mb-4">Быстрый оборот</h4>
-            <p className="text-slate-600 text-[14px]">При выборе востребованных артикулов продажи начинаются с первых дней размещения на Wildberries и Ozon.</p>
+            <p className="text-slate-600 text-[14px]">Даже востребованным товарам необходимы корректные цены, реклама, контент и логистика. Скорость старта и объем продаж не гарантируются.</p>
           </div>
           <Link
             to={servicePath("lojistik-ve-depo", true)}
