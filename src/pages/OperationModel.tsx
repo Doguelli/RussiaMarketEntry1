@@ -92,7 +92,7 @@ export default function OperationModel() {
       to: servicePath("pazaryeri-yonetimi", pageLang),
     },
     {
-      id: "b2b",
+      id: "market-research",
       title: t("op_model_page.model2_title"),
       desc: t("op_model_page.model2_desc"),
       to: servicePath("pazar-arastirmasi-ve-strateji", pageLang),
@@ -104,10 +104,10 @@ export default function OperationModel() {
       to: servicePath(MEDICAL_SERVICE_ID, pageLang),
     },
     {
-      id: "hybrid",
+      id: "medical-b2b",
       title: t("op_model_page.model4_title"),
       desc: t("op_model_page.model4_desc"),
-      to: servicePath("operasyon-kurulumu", pageLang),
+      to: servicePath(MEDICAL_SERVICE_ID, pageLang),
     },
   ];
 
