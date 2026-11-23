@@ -184,14 +184,14 @@ export const serviceDetails: Record<string, any> = {
     icon: ShoppingCart,
     title: "Rusya'da Pazaryeri Satışlarınızı Yönetiyor ve Büyütüyoruz",
     subtitle: "Wildberries, Ozon, Yandex Market ve Lamoda",
-    metaTitle: "Wildberries, Ozon, Yandex Market ve Lamoda Satış Yönetimi | Rusya",
+    metaTitle: "Rusya Pazaryeri Yönetimi | Wildberries ve Ozon – RME",
     metaDescription:
-      "Wildberries, Ozon, Yandex Market ve Lamoda'da ürün, fiyat, kampanya, reklam ve satış operasyonlarınızı yönetiyor; Rusya'daki e-ticaret performansınızı büyütüyoruz.",
+      "Türk üreticiler için Rusya'da Wildberries ve Ozon mağaza yönetimi: ürün, reklam, fiyat, stok, lojistik ve satış performansı.",
     description:
-      "Rusya'nın önde gelen pazaryerlerinde satış operasyonunuzu tek bir yapı üzerinden yönetiyoruz.",
+      "Ürün portföyü hazır markaların Rusya pazaryerlerinde satış ve operasyon süreçlerini yönetiyoruz.",
     lead:
-      "Mağaza kurulumu, ürün içerikleri, fiyatlandırma, kampanyalar, reklam, stok, performans ve operasyon süreçlerini birlikte yöneterek markanızın Rusya'daki satışlarını sürdürülebilir şekilde büyütüyoruz.",
-    ctaLabel: "Ön Analiz Talep Et",
+      "Türkiye'de üretim yapan veya yerleşik bir markası olan şirketler için Wildberries, Ozon, Yandex Market ve Lamoda operasyonlarını ürün portföyü, fiyatlandırma, reklam, stok, fulfillment ve gerçek SKU kârlılığıyla birlikte planlıyoruz. Genel toptan alıcı bulma hizmeti sunmuyoruz.",
+    ctaLabel: "Markanız İçin Marketplace Ön Analizi",
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
         <li>Türkiye'de üretim yapan markalar</li>
@@ -880,14 +880,14 @@ export const serviceDetails: Record<string, any> = {
     icon: TrendingUp,
     title: "Rusya'da Dijital Pazarlama ve Marka Büyütme",
     subtitle: "Yandex Ads · VK Ads · Telegram Native Advertising · SEO",
-    metaTitle: "Rusya'da Dijital Pazarlama ve Marka Büyütme | Yandex, VK, Telegram",
+    metaTitle: "Rusya Dijital Pazarlama | Yandex Ads, VK ve Marketplace",
     metaDescription:
-      "Rusya'da markanızın görünürlüğünü ve satışlarını Yandex Ads, VK Ads, Telegram Native Advertising, SEO ve performans odaklı dijital pazarlama ile büyütüyoruz.",
+      "Rusya'da üretici ve markalar için Yandex Ads, VK Ads, SEO ve marketplace'e dış trafik: ölçülebilir dijital pazarlama ve büyüme.",
     description:
-      "Rusya'da markanız için görünürlükten satışa uzanan dijital büyüme sistemi kuruyoruz.",
+      "Rusya'da mevcut üretici ve markaların dijital görünürlüğünü, satış kanalına uygun reklam stratejisiyle geliştiriyoruz.",
     lead:
-      "Yandex Ads, VK Ads, Telegram Native Advertising, SEO ve veri odaklı performans çalışmalarıyla markanızın Rusya'daki hedef kitlesine ulaşmasına ve sürdürülebilir talep oluşturmasına yardımcı oluyoruz.",
-    ctaLabel: "Ön Analiz Talep Et",
+      "Ürün portföyü ve ticari altyapısı bulunan markalar için Yandex Ads, VK Ads, SEO ve marketplace dışı talep çalışmalarını Rusya'daki satış kanallarına bağlıyoruz. B2B distribütör geliştirme hizmetimiz yalnızca medikal ve sağlık projeleri içindir.",
+    ctaLabel: "Markanız İçin Dijital Büyüme Analizi",
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
         <li>Rusya'da marka görünürlüğü ve talep oluşturmak isteyen firmalar</li>
