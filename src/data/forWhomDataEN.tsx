@@ -60,7 +60,7 @@ export const forWhomDataEN: ForWhomContent[] = [
     slug: "ureticiler",
     title: "Russian Market Solution for Manufacturers",
     shortTitle: "Manufacturers",
-    description: "Don't settle for B2B exports alone. Achieve high profitability by delivering your production power directly to the end user in Russia with the consignment model.",
+    description: "For established manufacturers, we evaluate Russia marketplace entry, pricing, imports and local operations based on real product and investment readiness.",
     icon: <Factory className="w-4 h-4" />,
     color: "text-accent-500",
     bgColor: "bg-accent-500",
@@ -68,7 +68,7 @@ export const forWhomDataEN: ForWhomContent[] = [
     content: (
       <>
         <p className="text-[18px] leading-relaxed text-slate-600 mb-6 max-w-4xl">
-          In addition to wholesale, presenting your manufactured products directly to consumers is the most effective way to maximize profit margins. By reducing risks with the consignment model, you can reach high sales volumes even without being a brand.
+          Selling directly to consumers in Russia requires category research, compliance, pricing, advertising and dependable inventory. We evaluate the best operating model for each established manufacturer.
         </p>
 
         <div className="bg-primary-50 border-l-4 border-primary-500 p-6 rounded-r-2xl mb-12">
