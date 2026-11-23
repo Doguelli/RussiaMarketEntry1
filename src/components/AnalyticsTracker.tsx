@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { getConsent, onConsentChange } from "@/utils/consent";
 
@@ -66,6 +66,8 @@ export default function AnalyticsTracker() {
   const location = useLocation();
   const measurementId = (import.meta as any).env.VITE_GA_MEASUREMENT_ID || "G-ZPTMJFB9WS";
   const isFirstMetrikaHit = useRef(true);
+  const [analyticsConsent, setAnalyticsConsent] = useState(() => getConsent());
+  const lastTrackedGaPage = useRef<string | null>(null);
 
   useEffect(() => {
     if (!measurementId || typeof document === "undefined") return;
@@ -107,6 +109,8 @@ export default function AnalyticsTracker() {
     () =>
       onConsentChange((choice) => {
         window.gtag?.("consent", "update", { analytics_storage: choice });
+        setAnalyticsConsent(choice);
+        if (choice !== "granted") lastTrackedGaPage.current = null;
       }),
     []
   );
@@ -116,15 +120,20 @@ export default function AnalyticsTracker() {
     injectYandexMetrika();
   }, []);
 
-  // 2. Track GA page views when pathname/search changes
+  // Track explicit page_view events only after consent, including when consent
+  // is granted after initial load. Avoid duplicate hits under React Strict Mode.
+  // GA4 can otherwise record a session without a landing page ("not set").
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    if (window.gtag && measurementId) {
-      window.gtag("config", measurementId, {
-        page_path: location.pathname + location.search,
-      });
-    }
-  }, [location, measurementId]);
+    if (typeof window === "undefined" || !window.gtag || !measurementId || analyticsConsent !== "granted") return;
+    const pagePath = location.pathname + location.search;
+    if (lastTrackedGaPage.current === pagePath) return;
+    lastTrackedGaPage.current = pagePath;
+    window.gtag("event", "page_view", {
+      page_location: window.location.href,
+      page_path: pagePath,
+      page_title: document.title,
+    });
+  }, [location.pathname, location.search, measurementId, analyticsConsent]);
 
   // SPA hits for Metrika (init already counted the first pageview)
   useEffect(() => {
