@@ -185,14 +185,14 @@ export const serviceDetailsEN: Record<string, any> = {
     icon: ShoppingCart,
     title: "We Manage and Grow Your Marketplace Sales in Russia",
     subtitle: "Wildberries, Ozon, Yandex Market and Lamoda",
-    metaTitle: "Wildberries, Ozon, Yandex Market & Lamoda Sales Management | Russia",
+    metaTitle: "Russia Marketplace Management | Wildberries & Ozon – RME",
     metaDescription:
-      "We manage product, pricing, campaigns, advertising and sales operations on Wildberries, Ozon, Yandex Market and Lamoda — and grow your e-commerce performance in Russia.",
+      "Wildberries and Ozon store management for established manufacturers: listings, advertising, pricing, stock, logistics and SKU profitability.",
     description:
-      "We run your sales operations on Russia’s leading marketplaces as one integrated system.",
+      "We manage marketplace sales and operations in Russia for manufacturers and established brands.",
     lead:
-      "From store setup and product content to pricing, campaigns, advertising, inventory, performance and operations, we manage the full cycle so your brand can grow sales in Russia sustainably.",
-    ctaLabel: "Request a Pre-Analysis",
+      "For manufacturers and established brands with a real product portfolio, we connect Wildberries, Ozon, Yandex Market and Lamoda operations with pricing, advertising, inventory, fulfillment and contribution margins. We do not offer general wholesale buyer sourcing.",
+    ctaLabel: "Request a Marketplace Assessment",
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
         <li>Brands that manufacture in Turkey</li>
@@ -839,14 +839,14 @@ export const serviceDetailsEN: Record<string, any> = {
     icon: TrendingUp,
     title: "Digital Marketing and Brand Growth in Russia",
     subtitle: "Yandex Ads · VK Ads · Telegram Native Advertising · SEO",
-    metaTitle: "Digital Marketing & Brand Growth in Russia | Yandex, VK, Telegram",
+    metaTitle: "Russia Digital Marketing | Yandex Ads, VK & Marketplaces",
     metaDescription:
-      "We grow your brand visibility and sales in Russia with Yandex Ads, VK Ads, Telegram Native Advertising, SEO and performance-focused digital marketing.",
+      "Digital growth for established brands in Russia: Yandex Ads, VK Ads, SEO and traffic to marketplace stores with measurable performance.",
     description:
-      "We build a digital growth system for your brand in Russia — from visibility to sales.",
+      "We connect Russian digital advertising to marketplace and e-commerce outcomes for established brands.",
     lead:
-      "With Yandex Ads, VK Ads, Telegram Native Advertising, SEO and data-driven performance work, we help your brand reach the right audience in Russia and create sustainable demand.",
-    ctaLabel: "Request a Pre-Analysis",
+      "We help established manufacturers and brands connect Yandex Ads, VK Ads, SEO and off-platform demand to their Russia sales channels. B2B distributor development is available exclusively for medical and healthcare projects.",
+    ctaLabel: "Request a Digital Growth Assessment",
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
         <li>Companies building brand visibility and demand in Russia</li>
