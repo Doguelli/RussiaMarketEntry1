@@ -6,7 +6,6 @@ import {
   ArrowRight,
   CheckCircle2,
   ShoppingCart,
-  Handshake,
   HeartPulse,
   Megaphone,
   Settings,
