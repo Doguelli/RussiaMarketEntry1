@@ -73,14 +73,14 @@ export const serviceDetailsRU: Record<string, any> = {
     icon: ShoppingCart,
     title: "Управляем и масштабируем ваши продажи на маркетплейсах в России",
     subtitle: "Wildberries, Ozon, Yandex Market и Lamoda",
-    metaTitle: "Ведение Wildberries, Ozon, Yandex Market и Lamoda | Россия",
+    metaTitle: "Управление Wildberries и Ozon в России | RME",
     metaDescription:
-      "Управляем товарами, ценами, акциями, рекламой и продажами на Wildberries, Ozon, Yandex Market и Lamoda — и растим ваш e-commerce в России.",
+      "Ведение Wildberries и Ozon для производителей: карточки товаров, реклама, цены, остатки, логистика и экономика SKU.",
     description:
-      "Ведем продажи на ведущих маркетплейсах России как единую операционную систему.",
+      "Управляем продажами и операциями на маркетплейсах России для действующих производителей и брендов.",
     lead:
-      "От настройки магазина и контента до цен, акций, рекламы, остатков, аналитики и операционных процессов — управляем циклом целиком, чтобы продажи бренда в России росли устойчиво.",
-    ctaLabel: "Запросить предварительный анализ",
+      "Для производителей и действующих брендов с ассортиментом объединяем ведение Wildberries, Ozon, Yandex Market и Lamoda с ценами, рекламой, запасами, фулфилментом и экономикой SKU. Общий поиск оптовых покупателей не предоставляем.",
+    ctaLabel: "Запросить анализ маркетплейсов",
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
         <li>Бренды с производством в Турции</li>
@@ -627,14 +627,14 @@ export const serviceDetailsRU: Record<string, any> = {
     icon: TrendingUp,
     title: "Digital-маркетинг и рост бренда в России",
     subtitle: "Yandex Ads · VK Ads · Telegram Native Advertising · SEO",
-    metaTitle: "Digital-маркетинг и рост бренда в России | Yandex, VK, Telegram",
+    metaTitle: "Digital-маркетинг в России | Яндекс, VK и маркетплейсы",
     metaDescription:
-      "Растим видимость и продажи бренда в России через Yandex Ads, VK Ads, Telegram Native Advertising, SEO и performance-маркетинг.",
+      "Digital-продвижение брендов России: Яндекс Директ, VK Ads, SEO и внешний трафик на маркетплейсы с измеримыми результатами.",
     description:
-      "Строим для вашего бренда в России цифровую систему роста — от видимости до продаж.",
+      "Связываем digital-рекламу бренда с продажами на маркетплейсах и в e-commerce России.",
     lead:
-      "С помощью Yandex Ads, VK Ads, Telegram Native Advertising, SEO и data-driven performance помогаем бренду выходить на целевую аудиторию в России и формировать устойчивый спрос.",
-    ctaLabel: "Запросить предварительный анализ",
+      "Для действующих производителей и брендов развиваем Яндекс Директ, VK Ads, SEO и внешний трафик на площадки России. Поиск B2B-дистрибьюторов проводится исключительно для медицинского и healthcare-сектора.",
+    ctaLabel: "Запросить анализ digital-продвижения",
     forWhom: (
       <ul className="list-disc pl-5 space-y-2 text-[15px]">
         <li>Компании, которым нужна видимость бренда и спрос в России</li>
